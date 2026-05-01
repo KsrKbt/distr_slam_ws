@@ -1,0 +1,1 @@
+Invoking command in '/root/distr_slam_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_ros_msgs

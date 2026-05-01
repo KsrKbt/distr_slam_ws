@@ -1,0 +1,20 @@
+[ 60%] Built target cartographer_ros
+[ 71%] Built target cartographer_pbstream_to_ros_map
+[ 71%] Built target cartographer_pbstream_map_publisher
+[ 88%] Built target cartographer_assets_writer
+[ 88%] Built target cartographer_occupancy_grid_node
+[ 88%] [32mBuilding CXX object CMakeFiles/cartographer_node.dir/src/node_main.cpp.o[0m
+[ 91%] Built target cartographer_offline_node
+[ 97%] Built target cartographer_rosbag_validate
+[100%] [32m[1mLinking CXX executable cartographer_node[0m
+/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: warning: relocation against `_ZN3fLB42FLAGS_start_trajectory_with_default_topicsE' in read-only section `.text'
+/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `cartographer_ros::(anonymous namespace)::Run()':
+node_main.cpp:(.text+0xfc): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'
+/usr/bin/ld: node_main.cpp:(.text+0x207): undefined reference to `fLB::FLAGS_start_trajectory_with_default_topics'
+/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `main':
+node_main.cpp:(.text+0x611): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cartographer_node.dir/build.make:288: cartographer_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/cartographer_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,329 @@
+[0.000000] (-) TimerEvent: {}
+[0.000168] (-) JobUnselected: {'identifier': 'cartographer'}
+[0.000200] (-) JobUnselected: {'identifier': 'cartographer_ros_msgs'}
+[0.000210] (-) JobUnselected: {'identifier': 'cartographer_rviz'}
+[0.000217] (cartographer_ros) JobQueued: {'identifier': 'cartographer_ros', 'dependencies': OrderedDict({'cartographer': '/root/distr_slam_ws/install/cartographer', 'cartographer_ros_msgs': '/root/distr_slam_ws/install/cartographer_ros_msgs'})}
+[0.000456] (cartographer_ros) JobStarted: {'identifier': 'cartographer_ros'}
+[0.008674] (cartographer_ros) JobProgress: {'identifier': 'cartographer_ros', 'progress': 'cmake'}
+[0.009237] (cartographer_ros) JobProgress: {'identifier': 'cartographer_ros', 'progress': 'build'}
+[0.009718] (cartographer_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/distr_slam_ws/build/cartographer_ros', '--', '-j24', '-l24'], 'cwd': '/root/distr_slam_ws/build/cartographer_ros', 'env': OrderedDict({'HOSTNAME': 'doraemon', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/root/distr_slam_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '1', 'QT_X11_NO_MITSHM': '1', 'PATH': '/root/distr_slam_ws/install/cartographer/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/distr_slam_ws/build/cartographer_ros', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098377] (cartographer_ros) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/offline_node.cpp.o\x1b[0m\n'}
+[0.099901] (-) TimerEvent: {}
+[0.200139] (-) TimerEvent: {}
+[0.300436] (-) TimerEvent: {}
+[0.400726] (-) TimerEvent: {}
+[0.501016] (-) TimerEvent: {}
+[0.601344] (-) TimerEvent: {}
+[0.701644] (-) TimerEvent: {}
+[0.801915] (-) TimerEvent: {}
+[0.902204] (-) TimerEvent: {}
+[1.002526] (-) TimerEvent: {}
+[1.102819] (-) TimerEvent: {}
+[1.203101] (-) TimerEvent: {}
+[1.303432] (-) TimerEvent: {}
+[1.403779] (-) TimerEvent: {}
+[1.504094] (-) TimerEvent: {}
+[1.604501] (-) TimerEvent: {}
+[1.704761] (-) TimerEvent: {}
+[1.805054] (-) TimerEvent: {}
+[1.905366] (-) TimerEvent: {}
+[2.005659] (-) TimerEvent: {}
+[2.105966] (-) TimerEvent: {}
+[2.206263] (-) TimerEvent: {}
+[2.306551] (-) TimerEvent: {}
+[2.406861] (-) TimerEvent: {}
+[2.507176] (-) TimerEvent: {}
+[2.607468] (-) TimerEvent: {}
+[2.707756] (-) TimerEvent: {}
+[2.808055] (-) TimerEvent: {}
+[2.908394] (-) TimerEvent: {}
+[3.008696] (-) TimerEvent: {}
+[3.108988] (-) TimerEvent: {}
+[3.209306] (-) TimerEvent: {}
+[3.309614] (-) TimerEvent: {}
+[3.409914] (-) TimerEvent: {}
+[3.510219] (-) TimerEvent: {}
+[3.610531] (-) TimerEvent: {}
+[3.710832] (-) TimerEvent: {}
+[3.811129] (-) TimerEvent: {}
+[3.911439] (-) TimerEvent: {}
+[4.011749] (-) TimerEvent: {}
+[4.112050] (-) TimerEvent: {}
+[4.212394] (-) TimerEvent: {}
+[4.312692] (-) TimerEvent: {}
+[4.412996] (-) TimerEvent: {}
+[4.513316] (-) TimerEvent: {}
+[4.613613] (-) TimerEvent: {}
+[4.713914] (-) TimerEvent: {}
+[4.814222] (-) TimerEvent: {}
+[4.914507] (-) TimerEvent: {}
+[5.014807] (-) TimerEvent: {}
+[5.115157] (-) TimerEvent: {}
+[5.215489] (-) TimerEvent: {}
+[5.315789] (-) TimerEvent: {}
+[5.416093] (-) TimerEvent: {}
+[5.516420] (-) TimerEvent: {}
+[5.616748] (-) TimerEvent: {}
+[5.717035] (-) TimerEvent: {}
+[5.817326] (-) TimerEvent: {}
+[5.917590] (-) TimerEvent: {}
+[6.017866] (-) TimerEvent: {}
+[6.118155] (-) TimerEvent: {}
+[6.218422] (-) TimerEvent: {}
+[6.318705] (-) TimerEvent: {}
+[6.418967] (-) TimerEvent: {}
+[6.519220] (-) TimerEvent: {}
+[6.619498] (-) TimerEvent: {}
+[6.719819] (-) TimerEvent: {}
+[6.820127] (-) TimerEvent: {}
+[6.920438] (-) TimerEvent: {}
+[7.020724] (-) TimerEvent: {}
+[7.121091] (-) TimerEvent: {}
+[7.221509] (-) TimerEvent: {}
+[7.235441] (cartographer_ros) StdoutLine: {'line': b'[  5%] \x1b[32m\x1b[1mLinking CXX shared library libcartographer_ros.so\x1b[0m\n'}
+[7.321637] (-) TimerEvent: {}
+[7.421943] (-) TimerEvent: {}
+[7.522305] (-) TimerEvent: {}
+[7.622749] (-) TimerEvent: {}
+[7.723165] (-) TimerEvent: {}
+[7.823515] (-) TimerEvent: {}
+[7.923868] (-) TimerEvent: {}
+[8.024251] (-) TimerEvent: {}
+[8.124676] (-) TimerEvent: {}
+[8.225069] (-) TimerEvent: {}
+[8.325504] (-) TimerEvent: {}
+[8.425807] (-) TimerEvent: {}
+[8.526189] (-) TimerEvent: {}
+[8.626510] (-) TimerEvent: {}
+[8.726770] (-) TimerEvent: {}
+[8.733660] (cartographer_ros) StdoutLine: {'line': b'[ 60%] Built target cartographer_ros\n'}
+[8.754683] (cartographer_ros) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable cartographer_pbstream_to_ros_map\x1b[0m\n'}
+[8.754941] (cartographer_ros) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable cartographer_pbstream_map_publisher\x1b[0m\n'}
+[8.755041] (cartographer_ros) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable cartographer_rosbag_validate\x1b[0m\n'}
+[8.759776] (cartographer_ros) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable cartographer_offline_node\x1b[0m\n'}
+[8.760004] (cartographer_ros) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX executable cartographer_occupancy_grid_node\x1b[0m\n'}
+[8.760314] (cartographer_ros) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable cartographer_assets_writer\x1b[0m\n'}
+[8.763333] (cartographer_ros) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/cartographer_node.dir/src/node_main.cpp.o\x1b[0m\n'}
+[8.826973] (-) TimerEvent: {}
+[8.927842] (-) TimerEvent: {}
+[9.029163] (-) TimerEvent: {}
+[9.130382] (-) TimerEvent: {}
+[9.231631] (-) TimerEvent: {}
+[9.333011] (-) TimerEvent: {}
+[9.434232] (-) TimerEvent: {}
+[9.535161] (-) TimerEvent: {}
+[9.636428] (-) TimerEvent: {}
+[9.737626] (-) TimerEvent: {}
+[9.838934] (-) TimerEvent: {}
+[9.939580] (-) TimerEvent: {}
+[10.039977] (-) TimerEvent: {}
+[10.140365] (-) TimerEvent: {}
+[10.240740] (-) TimerEvent: {}
+[10.341191] (-) TimerEvent: {}
+[10.441574] (-) TimerEvent: {}
+[10.541997] (-) TimerEvent: {}
+[10.642643] (-) TimerEvent: {}
+[10.743399] (-) TimerEvent: {}
+[10.843977] (-) TimerEvent: {}
+[10.944541] (-) TimerEvent: {}
+[11.045164] (-) TimerEvent: {}
+[11.145616] (-) TimerEvent: {}
+[11.245988] (-) TimerEvent: {}
+[11.346414] (-) TimerEvent: {}
+[11.446848] (-) TimerEvent: {}
+[11.547297] (-) TimerEvent: {}
+[11.647762] (-) TimerEvent: {}
+[11.748228] (-) TimerEvent: {}
+[11.848730] (-) TimerEvent: {}
+[11.949213] (-) TimerEvent: {}
+[12.049586] (-) TimerEvent: {}
+[12.149998] (-) TimerEvent: {}
+[12.250423] (-) TimerEvent: {}
+[12.350878] (-) TimerEvent: {}
+[12.451532] (-) TimerEvent: {}
+[12.552624] (-) TimerEvent: {}
+[12.653737] (-) TimerEvent: {}
+[12.754884] (-) TimerEvent: {}
+[12.855986] (-) TimerEvent: {}
+[12.957282] (-) TimerEvent: {}
+[13.058474] (-) TimerEvent: {}
+[13.159709] (-) TimerEvent: {}
+[13.260979] (-) TimerEvent: {}
+[13.362213] (-) TimerEvent: {}
+[13.463461] (-) TimerEvent: {}
+[13.564547] (-) TimerEvent: {}
+[13.665671] (-) TimerEvent: {}
+[13.766826] (-) TimerEvent: {}
+[13.867905] (-) TimerEvent: {}
+[13.969078] (-) TimerEvent: {}
+[14.070267] (-) TimerEvent: {}
+[14.171451] (-) TimerEvent: {}
+[14.272574] (-) TimerEvent: {}
+[14.373638] (-) TimerEvent: {}
+[14.474734] (-) TimerEvent: {}
+[14.575710] (-) TimerEvent: {}
+[14.676612] (-) TimerEvent: {}
+[14.698527] (cartographer_ros) StdoutLine: {'line': b'[ 82%] Built target cartographer_pbstream_to_ros_map\n'}
+[14.776780] (-) TimerEvent: {}
+[14.814702] (cartographer_ros) StdoutLine: {'line': b'[ 85%] Built target cartographer_pbstream_map_publisher\n'}
+[14.853149] (cartographer_ros) StdoutLine: {'line': b'[ 88%] Built target cartographer_assets_writer\n'}
+[14.876894] (-) TimerEvent: {}
+[14.967986] (cartographer_ros) StdoutLine: {'line': b'[ 91%] Built target cartographer_rosbag_validate\n'}
+[14.977074] (-) TimerEvent: {}
+[15.047980] (cartographer_ros) StdoutLine: {'line': b'[ 94%] Built target cartographer_offline_node\n'}
+[15.077176] (-) TimerEvent: {}
+[15.116611] (cartographer_ros) StdoutLine: {'line': b'[ 97%] Built target cartographer_occupancy_grid_node\n'}
+[15.177359] (-) TimerEvent: {}
+[15.277728] (-) TimerEvent: {}
+[15.378094] (-) TimerEvent: {}
+[15.478469] (-) TimerEvent: {}
+[15.578830] (-) TimerEvent: {}
+[15.679206] (-) TimerEvent: {}
+[15.779580] (-) TimerEvent: {}
+[15.879941] (-) TimerEvent: {}
+[15.980314] (-) TimerEvent: {}
+[16.080682] (-) TimerEvent: {}
+[16.181048] (-) TimerEvent: {}
+[16.281492] (-) TimerEvent: {}
+[16.381792] (-) TimerEvent: {}
+[16.482094] (-) TimerEvent: {}
+[16.582411] (-) TimerEvent: {}
+[16.682714] (-) TimerEvent: {}
+[16.783021] (-) TimerEvent: {}
+[16.883357] (-) TimerEvent: {}
+[16.983657] (-) TimerEvent: {}
+[17.083988] (-) TimerEvent: {}
+[17.184307] (-) TimerEvent: {}
+[17.284616] (-) TimerEvent: {}
+[17.384903] (-) TimerEvent: {}
+[17.485180] (-) TimerEvent: {}
+[17.585451] (-) TimerEvent: {}
+[17.606631] (cartographer_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cartographer_node\x1b[0m\n'}
+[17.685620] (-) TimerEvent: {}
+[17.785956] (-) TimerEvent: {}
+[17.886428] (-) TimerEvent: {}
+[17.986754] (-) TimerEvent: {}
+[18.087075] (-) TimerEvent: {}
+[18.187484] (-) TimerEvent: {}
+[18.287759] (-) TimerEvent: {}
+[18.388060] (-) TimerEvent: {}
+[18.458691] (cartographer_ros) StdoutLine: {'line': b'[100%] Built target cartographer_node\n'}
+[18.465249] (cartographer_ros) CommandEnded: {'returncode': 0}
+[18.465560] (cartographer_ros) JobProgress: {'identifier': 'cartographer_ros', 'progress': 'install'}
+[18.469843] (cartographer_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/distr_slam_ws/build/cartographer_ros'], 'cwd': '/root/distr_slam_ws/build/cartographer_ros', 'env': OrderedDict({'HOSTNAME': 'doraemon', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/root/distr_slam_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '1', 'QT_X11_NO_MITSHM': '1', 'PATH': '/root/distr_slam_ws/install/cartographer/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/distr_slam_ws/build/cartographer_ros', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.476476] (cartographer_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.476785] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/libcartographer_ros.so\n'}
+[18.488137] (-) TimerEvent: {}
+[18.501910] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/libcartographer_ros.so" to ""\n'}
+[18.502029] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_node\n'}
+[18.502772] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_node" to ""\n'}
+[18.502859] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_occupancy_grid_node\n'}
+[18.506815] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_occupancy_grid_node" to ""\n'}
+[18.506883] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_offline_node\n'}
+[18.507221] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_offline_node" to ""\n'}
+[18.507290] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_assets_writer\n'}
+[18.507923] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_assets_writer" to ""\n'}
+[18.507998] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_map_publisher\n'}
+[18.508679] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_map_publisher" to ""\n'}
+[18.508743] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_to_ros_map\n'}
+[18.508944] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_to_ros_map" to ""\n'}
+[18.509015] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_rosbag_validate\n'}
+[18.509617] (cartographer_ros) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_rosbag_validate" to ""\n'}
+[18.509669] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros\n'}
+[18.509705] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros\n'}
+[18.509749] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/assets_writer.h\n'}
+[18.509778] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/time_conversion.h\n'}
+[18.509806] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/sensor_bridge.h\n'}
+[18.509849] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics\n'}
+[18.509877] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal\n'}
+[18.509904] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/family.h\n'}
+[18.509952] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/counter.h\n'}
+[18.509980] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/histogram.h\n'}
+[18.510007] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/gauge.h\n'}
+[18.510034] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/family_factory.h\n'}
+[18.510060] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node_options.h\n'}
+[18.510087] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/submap.h\n'}
+[18.510116] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node.h\n'}
+[18.510143] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/urdf_reader.h\n'}
+[18.510172] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/map_builder_bridge.h\n'}
+[18.510205] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/offline_node.h\n'}
+[18.510232] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_map_writing_points_processor.h\n'}
+[18.510259] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_map.h\n'}
+[18.510285] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/playable_bag.h\n'}
+[18.510312] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/trajectory_options.h\n'}
+[18.510361] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_log_sink.h\n'}
+[18.510389] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/tf_bridge.h\n'}
+[18.510416] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/msg_conversion.h\n'}
+[18.510442] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node_constants.h\n'}
+[18.510469] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files\n'}
+[18.510496] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/mir-100-mapping.lua\n'}
+[18.510537] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_3d_localization.lua\n'}
+[18.510564] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/taurob_tracker.lua\n'}
+[18.510590] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_3d.lua\n'}
+[18.510616] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_server.lua\n'}
+[18.510643] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_localization_evaluation.lua\n'}
+[18.510669] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/visualize_pbstream.lua\n'}
+[18.510695] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/transform.lua\n'}
+[18.510721] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_2d.lua\n'}
+[18.510748] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/my_robot.lua\n'}
+[18.510774] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/pr2.lua\n'}
+[18.510800] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_ros_map.lua\n'}
+[18.510826] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/demo_3d.rviz\n'}
+[18.510852] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d.lua\n'}
+[18.510877] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/revo_lds.lua\n'}
+[18.510937] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_3d.lua\n'}
+[18.510962] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_localization.lua\n'}
+[18.510988] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_2d_ci.lua\n'}
+[18.511014] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/demo_2d.rviz\n'}
+[18.511040] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf\n'}
+[18.511065] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/mir-100.urdf\n'}
+[18.511100] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/backpack_2d.urdf\n'}
+[18.511130] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/backpack_3d.urdf\n'}
+[18.511157] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch\n'}
+[18.511183] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_3d_localization.launch.py\n'}
+[18.511222] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_taurob_tracker.launch.py\n'}
+[18.511248] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/grpc_demo_backpack_2d_localization.launch\n'}
+[18.511275] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_mir_100_rviz.launch.py\n'}
+[18.511302] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_3d.launch.py\n'}
+[18.511330] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_pr2.launch\n'}
+[18.511356] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d.launch.py\n'}
+[18.511381] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d_localization.launch.py\n'}
+[18.511407] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_backpack_2d.launch.py\n'}
+[18.511433] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/backpack_3d.launch.py\n'}
+[18.511460] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/my_robot.launch.py\n'}
+[18.511486] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_backpack_3d.launch.py\n'}
+[18.511512] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_backpack_3d.launch.py\n'}
+[18.511537] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_backpack_2d.launch.py\n'}
+[18.511563] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/visualize_pbstream.launch.py\n'}
+[18.511589] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/grpc_demo_backpack_2d.launch\n'}
+[18.511615] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_revo_lds.launch.py\n'}
+[18.511640] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/taurob_tracker.launch.py\n'}
+[18.511666] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_node.launch.py\n'}
+[18.511691] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_ros_map.launch.py\n'}
+[18.511717] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/backpack_2d.launch.py\n'}
+[18.511741] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/library_path.sh\n'}
+[18.511767] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/library_path.dsv\n'}
+[18.511794] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/package_run_dependencies/cartographer_ros\n'}
+[18.511828] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/parent_prefix_path/cartographer_ros\n'}
+[18.511853] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/ament_prefix_path.sh\n'}
+[18.511881] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/ament_prefix_path.dsv\n'}
+[18.511906] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/path.sh\n'}
+[18.511931] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/path.dsv\n'}
+[18.511957] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.bash\n'}
+[18.511982] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.sh\n'}
+[18.512006] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.zsh\n'}
+[18.512031] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.dsv\n'}
+[18.512055] (cartographer_ros) StdoutLine: {'line': b'-- Installing: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/package.dsv\n'}
+[18.512079] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/packages/cartographer_ros\n'}
+[18.512106] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosExport.cmake\n'}
+[18.512136] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosExport-noconfig.cmake\n'}
+[18.512163] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.512190] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.512216] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.512242] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.512269] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosConfig.cmake\n'}
+[18.512295] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosConfig-version.cmake\n'}
+[18.512321] (cartographer_ros) StdoutLine: {'line': b'-- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/package.xml\n'}
+[18.512683] (cartographer_ros) CommandEnded: {'returncode': 0}
+[18.523401] (cartographer_ros) JobEnded: {'identifier': 'cartographer_ros', 'rc': 0}
+[18.523812] (-) EventReactorShutdown: {}

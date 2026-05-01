@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.000342] (cartographer) JobQueued: {'identifier': 'cartographer', 'dependencies': OrderedDict()}
+[0.000370] (cartographer_ros_msgs) JobQueued: {'identifier': 'cartographer_ros_msgs', 'dependencies': OrderedDict()}
+[0.000380] (cartographer_ros) JobQueued: {'identifier': 'cartographer_ros', 'dependencies': OrderedDict({'cartographer': '/root/distr_slam_ws/install/cartographer', 'cartographer_ros_msgs': '/root/distr_slam_ws/install/cartographer_ros_msgs'})}
+[0.000389] (cartographer_rviz) JobQueued: {'identifier': 'cartographer_rviz', 'dependencies': OrderedDict({'cartographer': '/root/distr_slam_ws/install/cartographer', 'cartographer_ros_msgs': '/root/distr_slam_ws/install/cartographer_ros_msgs', 'cartographer_ros': '/root/distr_slam_ws/install/cartographer_ros'})}
+[0.000397] (cartographer) JobStarted: {'identifier': 'cartographer'}
+[0.003514] (cartographer_ros_msgs) JobStarted: {'identifier': 'cartographer_ros_msgs'}
+[0.005408] (cartographer) JobProgress: {'identifier': 'cartographer', 'progress': 'cmake'}
+[0.005612] (cartographer) Command: {'cmd': ['/usr/bin/cmake', '/root/distr_slam_ws/src/cartographer', '-DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer'], 'cwd': '/root/distr_slam_ws/build/cartographer', 'env': OrderedDict({'HOSTNAME': 'doraemon', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root/distr_slam_ws/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '1', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/distr_slam_ws/build/cartographer', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.007432] (cartographer_ros_msgs) JobProgress: {'identifier': 'cartographer_ros_msgs', 'progress': 'cmake'}
+[0.007696] (cartographer_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs', '-DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_ros_msgs'], 'cwd': '/root/distr_slam_ws/build/cartographer_ros_msgs', 'env': OrderedDict({'HOSTNAME': 'doraemon', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root/distr_slam_ws/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '1', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/distr_slam_ws/build/cartographer_ros_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.056130] (cartographer) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.058256] (cartographer_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099946] (-) TimerEvent: {}
+[0.105011] (cartographer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.106691] (cartographer_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.113300] (cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.119373] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200109] (-) TimerEvent: {}
+[0.209030] (cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.230103] (cartographer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.230466] (cartographer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.230936] (cartographer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.236104] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.239375] (cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.244027] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.244180] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.244504] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.250777] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300181] (-) TimerEvent: {}
+[0.363201] (cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367236] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367929] (cartographer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.368057] (cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.368331] (cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.368859] (cartographer) StdoutLine: {'line': b'-- Build type: Release\n'}
+[0.372043] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.372189] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.372407] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.374010] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.374791] (cartographer) StdoutLine: {'line': b'Files /root/distr_slam_ws/build/cartographer/AllFiles.cmake and - differ\n'}
+[0.400261] (-) TimerEvent: {}
+[0.478339] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.488294] (cartographer) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.489152] (cartographer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.500327] (-) TimerEvent: {}
+[0.536579] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.539448] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.550284] (cartographer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.551095] (cartographer) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.555286] (cartographer) StdoutLine: {'line': b'-- Found GMock: gmock_main  \n'}
+[0.561731] (cartographer) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:32 (find_package):\n'}
+[0.561861] (cartographer) StderrLine: {'line': b'  By not providing "Findabsl.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.561937] (cartographer) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "absl", but\n'}
+[0.562002] (cartographer) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.562064] (cartographer) StderrLine: {'line': b'\n'}
+[0.562127] (cartographer) StderrLine: {'line': b'  Could not find a package configuration file provided by "absl" with any of\n'}
+[0.562189] (cartographer) StderrLine: {'line': b'  the following names:\n'}
+[0.562252] (cartographer) StderrLine: {'line': b'\n'}
+[0.562313] (cartographer) StderrLine: {'line': b'    abslConfig.cmake\n'}
+[0.562465] (cartographer) StderrLine: {'line': b'    absl-config.cmake\n'}
+[0.562548] (cartographer) StderrLine: {'line': b'\n'}
+[0.562578] (cartographer) StderrLine: {'line': b'  Add the installation prefix of "absl" to CMAKE_PREFIX_PATH or set\n'}
+[0.562607] (cartographer) StderrLine: {'line': b'  "absl_DIR" to a directory containing one of the above files.  If "absl"\n'}
+[0.562632] (cartographer) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.562658] (cartographer) StderrLine: {'line': b'  installed.\n'}
+[0.562683] (cartographer) StderrLine: {'line': b'\n'}
+[0.562709] (cartographer) StderrLine: {'line': b'\x1b[0m\n'}
+[0.562734] (cartographer) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.565070] (cartographer) CommandEnded: {'returncode': 1}
+[0.566445] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.579751] (cartographer) JobEnded: {'identifier': 'cartographer', 'rc': 1}
+[0.591195] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.593011] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.600381] (-) TimerEvent: {}
+[0.601007] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.700464] (-) TimerEvent: {}
+[0.800645] (-) TimerEvent: {}
+[0.900821] (-) TimerEvent: {}
+[1.001040] (-) TimerEvent: {}
+[1.101238] (-) TimerEvent: {}
+[1.119865] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[1.123438] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[1.125868] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)\n'}
+[1.127919] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.201399] (-) TimerEvent: {}
+[1.301767] (-) TimerEvent: {}
+[1.401934] (-) TimerEvent: {}
+[1.502110] (-) TimerEvent: {}
+[1.571007] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.602233] (-) TimerEvent: {}
+[1.702543] (-) TimerEvent: {}
+[1.803030] (-) TimerEvent: {}
+[1.903498] (-) TimerEvent: {}
+[2.003783] (-) TimerEvent: {}
+[2.104060] (-) TimerEvent: {}
+[2.138622] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.141155] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.204263] (-) TimerEvent: {}
+[2.244807] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.304381] (-) TimerEvent: {}
+[2.404705] (-) TimerEvent: {}
+[2.505000] (-) TimerEvent: {}
+[2.605292] (-) TimerEvent: {}
+[2.623261] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.660919] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[2.662401] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[2.694026] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.698591] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.705403] (-) TimerEvent: {}
+[2.741787] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.749575] (cartographer_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/distr_slam_ws/build/cartographer_ros_msgs\n'}
+[2.755556] (cartographer_ros_msgs) JobEnded: {'identifier': 'cartographer_ros_msgs', 'rc': 'SIGINT'}
+[2.765938] (cartographer_ros) JobSkipped: {'identifier': 'cartographer_ros'}
+[2.765968] (cartographer_rviz) JobSkipped: {'identifier': 'cartographer_rviz'}
+[2.765976] (-) EventReactorShutdown: {}

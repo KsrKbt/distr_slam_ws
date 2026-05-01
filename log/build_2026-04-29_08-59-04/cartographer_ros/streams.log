@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j24 -l24
+[0.112s] [ 60%] Built target cartographer_ros
+[0.138s] [ 71%] Built target cartographer_pbstream_to_ros_map
+[0.139s] [ 71%] Built target cartographer_pbstream_map_publisher
+[0.143s] [ 88%] Built target cartographer_assets_writer
+[0.143s] [ 88%] Built target cartographer_occupancy_grid_node
+[0.143s] [ 88%] [32mBuilding CXX object CMakeFiles/cartographer_node.dir/src/node_main.cpp.o[0m
+[0.143s] [ 91%] Built target cartographer_offline_node
+[0.143s] [ 97%] Built target cartographer_rosbag_validate
+[4.541s] [100%] [32m[1mLinking CXX executable cartographer_node[0m
+[5.319s] /usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: warning: relocation against `_ZN3fLB42FLAGS_start_trajectory_with_default_topicsE' in read-only section `.text'
+[5.341s] /usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `cartographer_ros::(anonymous namespace)::Run()':
+[5.341s] node_main.cpp:(.text+0xfc): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'
+[5.341s] /usr/bin/ld: node_main.cpp:(.text+0x207): undefined reference to `fLB::FLAGS_start_trajectory_with_default_topics'
+[5.341s] /usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `main':
+[5.341s] node_main.cpp:(.text+0x611): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'
+[5.352s] /usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+[5.359s] collect2: error: ld returned 1 exit status
+[5.361s] gmake[2]: *** [CMakeFiles/cartographer_node.dir/build.make:288: cartographer_node] Error 1
+[5.361s] gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/cartographer_node.dir/all] Error 2
+[5.361s] gmake: *** [Makefile:146: all] Error 2
+[5.363s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '2': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j24 -l24

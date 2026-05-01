@@ -1,0 +1,11 @@
+[  2%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/offline_node.cpp.o[0m
+[  5%] [32m[1mLinking CXX shared library libcartographer_ros.so[0m
+[ 60%] Built target cartographer_ros
+[ 68%] [32m[1mLinking CXX executable cartographer_pbstream_map_publisher[0m
+[ 68%] [32m[1mLinking CXX executable cartographer_rosbag_validate[0m
+[ 68%] [32m[1mLinking CXX executable cartographer_pbstream_to_ros_map[0m
+[ 71%] [32m[1mLinking CXX executable cartographer_occupancy_grid_node[0m
+[ 74%] [32m[1mLinking CXX executable cartographer_assets_writer[0m
+[ 80%] [32m[1mLinking CXX executable cartographer_node[0m
+[ 80%] [32m[1mLinking CXX executable cartographer_offline_node[0m
+[ 82%] Built target cartographer_node

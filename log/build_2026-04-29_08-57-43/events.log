@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000104] (-) JobUnselected: {'identifier': 'cartographer'}
+[0.000155] (-) JobUnselected: {'identifier': 'cartographer_ros_msgs'}
+[0.000207] (-) JobUnselected: {'identifier': 'cartographer_rviz'}
+[0.000224] (cartographer_ros) JobQueued: {'identifier': 'cartographer_ros', 'dependencies': OrderedDict({'cartographer': '/root/distr_slam_ws/install/cartographer', 'cartographer_ros_msgs': '/root/distr_slam_ws/install/cartographer_ros_msgs'})}
+[0.000259] (cartographer_ros) JobStarted: {'identifier': 'cartographer_ros'}
+[0.008247] (cartographer_ros) JobProgress: {'identifier': 'cartographer_ros', 'progress': 'cmake'}
+[0.008841] (cartographer_ros) JobProgress: {'identifier': 'cartographer_ros', 'progress': 'build'}
+[0.009429] (cartographer_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/distr_slam_ws/build/cartographer_ros', '--', '-j24', '-l24'], 'cwd': '/root/distr_slam_ws/build/cartographer_ros', 'env': OrderedDict({'HOSTNAME': 'doraemon', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/root/distr_slam_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '1', 'QT_X11_NO_MITSHM': '1', 'PATH': '/root/distr_slam_ws/install/cartographer/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/distr_slam_ws/build/cartographer_ros', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099695] (-) TimerEvent: {}
+[0.141731] (cartographer_ros) StdoutLine: {'line': b'[ 60%] Built target cartographer_ros\n'}
+[0.169461] (cartographer_ros) StdoutLine: {'line': b'[ 65%] Built target cartographer_offline_node\n'}
+[0.170327] (cartographer_ros) StdoutLine: {'line': b'[ 82%] Built target cartographer_assets_writer\n'}
+[0.170374] (cartographer_ros) StdoutLine: {'line': b'[ 82%] Built target cartographer_pbstream_to_ros_map\n'}
+[0.170416] (cartographer_ros) StdoutLine: {'line': b'[ 82%] Built target cartographer_rosbag_validate\n'}
+[0.170603] (cartographer_ros) StdoutLine: {'line': b'[ 88%] Built target cartographer_occupancy_grid_node\n'}
+[0.173230] (cartographer_ros) StdoutLine: {'line': b'[ 94%] Built target cartographer_pbstream_map_publisher\n'}
+[0.177041] (cartographer_ros) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/cartographer_node.dir/src/node_main.cpp.o\x1b[0m\n'}
+[0.199749] (-) TimerEvent: {}
+[0.299943] (-) TimerEvent: {}
+[0.400238] (-) TimerEvent: {}
+[0.500532] (-) TimerEvent: {}
+[0.600871] (-) TimerEvent: {}
+[0.701154] (-) TimerEvent: {}
+[0.801471] (-) TimerEvent: {}
+[0.901793] (-) TimerEvent: {}
+[1.002092] (-) TimerEvent: {}
+[1.102400] (-) TimerEvent: {}
+[1.202701] (-) TimerEvent: {}
+[1.303007] (-) TimerEvent: {}
+[1.403297] (-) TimerEvent: {}
+[1.503625] (-) TimerEvent: {}
+[1.603925] (-) TimerEvent: {}
+[1.704230] (-) TimerEvent: {}
+[1.804541] (-) TimerEvent: {}
+[1.904858] (-) TimerEvent: {}
+[2.005160] (-) TimerEvent: {}
+[2.105453] (-) TimerEvent: {}
+[2.205753] (-) TimerEvent: {}
+[2.306059] (-) TimerEvent: {}
+[2.406393] (-) TimerEvent: {}
+[2.506659] (-) TimerEvent: {}
+[2.606981] (-) TimerEvent: {}
+[2.707291] (-) TimerEvent: {}
+[2.807610] (-) TimerEvent: {}
+[2.907946] (-) TimerEvent: {}
+[3.008331] (-) TimerEvent: {}
+[3.108609] (-) TimerEvent: {}
+[3.208874] (-) TimerEvent: {}
+[3.309197] (-) TimerEvent: {}
+[3.409489] (-) TimerEvent: {}
+[3.509790] (-) TimerEvent: {}
+[3.610085] (-) TimerEvent: {}
+[3.710394] (-) TimerEvent: {}
+[3.810703] (-) TimerEvent: {}
+[3.911009] (-) TimerEvent: {}
+[4.011315] (-) TimerEvent: {}
+[4.111648] (-) TimerEvent: {}
+[4.211957] (-) TimerEvent: {}
+[4.312257] (-) TimerEvent: {}
+[4.412556] (-) TimerEvent: {}
+[4.512834] (-) TimerEvent: {}
+[4.587571] (cartographer_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cartographer_node\x1b[0m\n'}
+[4.612922] (-) TimerEvent: {}
+[4.713219] (-) TimerEvent: {}
+[4.813591] (-) TimerEvent: {}
+[4.913931] (-) TimerEvent: {}
+[5.014257] (-) TimerEvent: {}
+[5.114630] (-) TimerEvent: {}
+[5.214943] (-) TimerEvent: {}
+[5.315257] (-) TimerEvent: {}
+[5.334290] (cartographer_ros) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: warning: relocation against `_ZN3fLS28FLAGS_configuration_basenameB5cxx11E' in read-only section `.text'\n"}
+[5.356498] (cartographer_ros) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `cartographer_ros::(anonymous namespace)::Run()':\n"}
+[5.356637] (cartographer_ros) StderrLine: {'line': b"node_main.cpp:(.text+0xfc): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'\n"}
+[5.356669] (cartographer_ros) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/cartographer_node.dir/src/node_main.cpp.o: in function `main':\n"}
+[5.356697] (cartographer_ros) StderrLine: {'line': b"node_main.cpp:(.text+0x611): undefined reference to `fLS::FLAGS_configuration_basename[abi:cxx11]'\n"}
+[5.366925] (cartographer_ros) StderrLine: {'line': b'/usr/bin/ld: warning: creating DT_TEXTREL in a PIE\n'}
+[5.373915] (cartographer_ros) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[5.375717] (cartographer_ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cartographer_node.dir/build.make:288: cartographer_node] Error 1\n'}
+[5.376202] (cartographer_ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/cartographer_node.dir/all] Error 2\n'}
+[5.376601] (cartographer_ros) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.378324] (cartographer_ros) CommandEnded: {'returncode': 2}
+[5.386672] (cartographer_ros) JobEnded: {'identifier': 'cartographer_ros', 'rc': 2}
+[5.397183] (-) EventReactorShutdown: {}
