@@ -23,9 +23,9 @@ cartographer_ros_msgs__msg__MetricFamily__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
+#include "cartographer_ros_msgs/msg/detail/histogram_bucket__functions.h"
 #include "cartographer_ros_msgs/msg/detail/metric_label__functions.h"
 #include "cartographer_ros_msgs/msg/detail/metric__functions.h"
-#include "cartographer_ros_msgs/msg/detail/histogram_bucket__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

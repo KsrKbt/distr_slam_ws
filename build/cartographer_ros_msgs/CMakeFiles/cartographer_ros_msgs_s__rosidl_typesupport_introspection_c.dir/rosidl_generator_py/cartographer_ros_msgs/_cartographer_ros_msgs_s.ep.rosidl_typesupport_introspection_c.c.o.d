@@ -296,4 +296,10 @@ CMakeFiles/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.dir/rosid
  /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/submap_query__functions.h \
  /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.h \
  /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__struct.h \
- /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.h
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__struct.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__struct.h \
+ /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.h

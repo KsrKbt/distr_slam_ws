@@ -86,6 +86,8 @@ CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/carto
 CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs/srv/TrajectoryQuery.srv
 CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs/srv/SubmapQuery.srv
 CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs/srv/WriteState.srv
+CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs/srv/GetSlamState.srv
+CMakeFiles/cartographer_ros_msgs: /root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs/srv/SetSlamState.srv
 CMakeFiles/cartographer_ros_msgs: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/cartographer_ros_msgs: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/cartographer_ros_msgs: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl

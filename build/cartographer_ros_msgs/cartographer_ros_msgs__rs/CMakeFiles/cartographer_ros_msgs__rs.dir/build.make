@@ -106,6 +106,8 @@ rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartog
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl
+rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl
+rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/msg/BagfileProgress.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/msg/HistogramBucket.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/msg/LandmarkEntry.idl
@@ -126,6 +128,8 @@ rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartog
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl
+rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl
+rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_rs/cartographer_ros_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl

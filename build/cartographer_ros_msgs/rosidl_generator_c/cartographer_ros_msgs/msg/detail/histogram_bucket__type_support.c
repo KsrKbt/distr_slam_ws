@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "cartographer_ros_msgs/msg/detail/histogram_bucket__functions.h"
-#include "cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "cartographer_ros_msgs/msg/detail/histogram_bucket__struct.h"
+#include "cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

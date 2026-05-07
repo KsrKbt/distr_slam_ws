@@ -233,5 +233,26 @@ void WritePbStream(
   SerializeLandmarkNodes(pose_graph.GetLandmarkNodes(), writer);
 }
 
+// mapping_state_serialization.cc の末尾に追記
+void WriteMinimalPbStream(
+    const mapping::PoseGraph& pose_graph,
+    const std::vector<mapping::proto::TrajectoryBuilderOptionsWithSensorIds>&
+        trajectory_builder_options,
+    ProtoStreamWriterInterface* const writer) {
+  
+  writer->WriteProto(CreateHeader());
+  // 未完成のサブマップは除外 (false)
+  writer->WriteProto(SerializePoseGraph(pose_graph, false));
+  
+  // 完成済みサブマップのみシリアライズ
+  SerializeSubmaps(pose_graph.GetAllSubmapData(), false, writer);
+  
+  // 軌跡ノードとデータ（グラフ構造の維持に必須）
+  SerializeTrajectoryNodes(pose_graph.GetTrajectoryNodes(), writer);
+  SerializeTrajectoryData(pose_graph.GetTrajectoryData(), writer);
+  
+  // ※ ImuData, OdometryData, FixedFramePoseData は不要なので省くことで劇的に軽量化
+}
+
 }  // namespace io
 }  // namespace cartographer

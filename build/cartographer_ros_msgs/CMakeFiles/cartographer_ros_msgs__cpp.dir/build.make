@@ -166,6 +166,16 @@ CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msg
 CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__struct.hpp
 CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__traits.hpp
 CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__type_support.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/get_slam_state.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__builder.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__struct.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__traits.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/set_slam_state.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__builder.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__struct.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__traits.hpp
+CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.hpp
 CMakeFiles/cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -207,6 +217,8 @@ rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adap
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl
+rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl
+rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl
@@ -572,6 +584,36 @@ rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__traits.hpp: r
 rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__type_support.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__type_support.hpp
 
+rosidl_generator_cpp/cartographer_ros_msgs/srv/get_slam_state.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/get_slam_state.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__builder.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__builder.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__struct.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__struct.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__traits.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__traits.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/set_slam_state.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/set_slam_state.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__builder.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__builder.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__struct.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__struct.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__traits.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__traits.hpp
+
+rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.hpp
+
 rosidl_generator_cpp/cartographer_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/cartographer_ros_msgs/msg/bagfile_progress.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/cartographer_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -646,6 +688,10 @@ cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detai
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/finish_trajectory__struct.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/finish_trajectory__traits.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__builder.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__struct.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__traits.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_trajectory_states__builder.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_trajectory_states__struct.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/get_trajectory_states__traits.hpp
@@ -654,6 +700,10 @@ cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detai
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/read_metrics__struct.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/read_metrics__traits.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/read_metrics__type_support.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__builder.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__struct.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__traits.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/start_trajectory__builder.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/start_trajectory__struct.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/start_trajectory__traits.hpp
@@ -671,8 +721,10 @@ cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detai
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__traits.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/detail/write_state__type_support.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/finish_trajectory.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/get_slam_state.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/get_trajectory_states.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/read_metrics.hpp
+cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/set_slam_state.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/start_trajectory.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/submap_query.hpp
 cartographer_ros_msgs__cpp: rosidl_generator_cpp/cartographer_ros_msgs/srv/trajectory_query.hpp

@@ -779,6 +779,200 @@ impl rosidl_runtime_rs::Message for WriteState_Response {
 }
 
 
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState_Request
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct GetSlamState_Request {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub structure_needs_at_least_one_member: u8,
+
+}
+
+
+
+impl Default for GetSlamState_Request {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::GetSlamState_Request::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for GetSlamState_Request {
+  type RmwMsg = super::srv::rmw::GetSlamState_Request;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        structure_needs_at_least_one_member: msg.structure_needs_at_least_one_member,
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+      structure_needs_at_least_one_member: msg.structure_needs_at_least_one_member,
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      structure_needs_at_least_one_member: msg.structure_needs_at_least_one_member,
+    }
+  }
+}
+
+
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState_Response
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct GetSlamState_Response {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub status: super::msg::StatusCode,
+
+    /// 出力されたメモリ上のパス (例: /dev/shm/state.pbstream)
+    pub ram_disk_path: std::string::String,
+
+}
+
+
+
+impl Default for GetSlamState_Response {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::GetSlamState_Response::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for GetSlamState_Response {
+  type RmwMsg = super::srv::rmw::GetSlamState_Response;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        status: super::msg::StatusCode::into_rmw_message(std::borrow::Cow::Owned(msg.status)).into_owned(),
+        ram_disk_path: msg.ram_disk_path.as_str().into(),
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        status: super::msg::StatusCode::into_rmw_message(std::borrow::Cow::Borrowed(&msg.status)).into_owned(),
+        ram_disk_path: msg.ram_disk_path.as_str().into(),
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      status: super::msg::StatusCode::from_rmw_message(msg.status),
+      ram_disk_path: msg.ram_disk_path.to_string(),
+    }
+  }
+}
+
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState_Request
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct SetSlamState_Request {
+    /// 読み込むメモリ上のパス
+    pub ram_disk_path: std::string::String,
+
+    /// 地図を凍結するか (Pure Localizationならtrue)
+    pub load_frozen_state: bool,
+
+}
+
+
+
+impl Default for SetSlamState_Request {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::SetSlamState_Request::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for SetSlamState_Request {
+  type RmwMsg = super::srv::rmw::SetSlamState_Request;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        ram_disk_path: msg.ram_disk_path.as_str().into(),
+        load_frozen_state: msg.load_frozen_state,
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        ram_disk_path: msg.ram_disk_path.as_str().into(),
+      load_frozen_state: msg.load_frozen_state,
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      ram_disk_path: msg.ram_disk_path.to_string(),
+      load_frozen_state: msg.load_frozen_state,
+    }
+  }
+}
+
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState_Response
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct SetSlamState_Response {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub status: super::msg::StatusCode,
+
+}
+
+
+
+impl Default for SetSlamState_Response {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::srv::rmw::SetSlamState_Response::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for SetSlamState_Response {
+  type RmwMsg = super::srv::rmw::SetSlamState_Response;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        status: super::msg::StatusCode::into_rmw_message(std::borrow::Cow::Owned(msg.status)).into_owned(),
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        status: super::msg::StatusCode::into_rmw_message(std::borrow::Cow::Borrowed(&msg.status)).into_owned(),
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      status: super::msg::StatusCode::from_rmw_message(msg.status),
+    }
+  }
+}
+
+
 
 
 
@@ -931,6 +1125,50 @@ impl rosidl_runtime_rs::Service for WriteState {
     fn get_type_support() -> *const std::ffi::c_void {
         // SAFETY: No preconditions for this function.
         unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__WriteState() }
+    }
+}
+
+
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__GetSlamState() -> *const std::ffi::c_void;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState
+#[allow(missing_docs, non_camel_case_types)]
+pub struct GetSlamState;
+
+impl rosidl_runtime_rs::Service for GetSlamState {
+    type Request = GetSlamState_Request;
+    type Response = GetSlamState_Response;
+
+    fn get_type_support() -> *const std::ffi::c_void {
+        // SAFETY: No preconditions for this function.
+        unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__GetSlamState() }
+    }
+}
+
+
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__SetSlamState() -> *const std::ffi::c_void;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState
+#[allow(missing_docs, non_camel_case_types)]
+pub struct SetSlamState;
+
+impl rosidl_runtime_rs::Service for SetSlamState {
+    type Request = SetSlamState_Request;
+    type Response = SetSlamState_Response;
+
+    fn get_type_support() -> *const std::ffi::c_void {
+        // SAFETY: No preconditions for this function.
+        unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__SetSlamState() }
     }
 }
 

@@ -51,6 +51,9 @@ find_package(tf2_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(urdf REQUIRED)
 find_package(visualization_msgs REQUIRED)
+find_package(std_srvs REQUIRED) #追記
+find_package(PkgConfig REQUIRED) #追記
+pkg_check_modules(hiredis REQUIRED hiredis) #追記
 
 # glog is not linked, however we look for it to detect the glog version
 # and use a different code path if glog >= 0.7.0 is detected
@@ -87,12 +90,23 @@ add_library(${PROJECT_NAME} SHARED
   src/metrics/internal/family.cpp
   src/metrics/internal/histogram.cpp
 )
+
+# hiredisのヘッダファイルのパスを通す
+target_include_directories(${PROJECT_NAME} PUBLIC
+  ${hiredis_INCLUDE_DIRS}
+)
+# hiredisのライブラリをリンクする
+target_link_libraries(${PROJECT_NAME} PUBLIC
+  ${hiredis_LIBRARIES}
+)
+
 target_include_directories(${PROJECT_NAME} PUBLIC
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>"
   "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>"
   ${CAIRO_INCLUDE_DIRS}
   ${pcl_conversions_INCLUDE_DIRS}
+  ${std_srvs_INCLUDE_DIRS} #追記
 )
 if ("$ENV{ROS_DISTRO}" STRLESS "kilted")
   # In Kilted, pcl_conversions was converted over to an INTERFACE target,
@@ -119,6 +133,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   ${sensor_msgs_TARGETS}
   tf2_ros::tf2_ros
   ${visualization_msgs_TARGETS}
+  ${std_srvs_TARGETS} #追記
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE
   ${CAIRO_LIBRARIES}
@@ -292,6 +307,7 @@ ament_export_dependencies(
   sensor_msgs
   tf2_ros
   visualization_msgs
+  std_srvs # 追記
 )
 ament_package()
 

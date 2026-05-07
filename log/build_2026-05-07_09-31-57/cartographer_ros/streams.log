@@ -1,0 +1,101 @@
+[0.007s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/distr_slam_ws/src/cartographer_ros/cartographer_ros -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_ros
+[0.095s] -- The C compiler identification is GNU 13.3.0
+[0.130s] -- The CXX compiler identification is GNU 13.3.0
+[0.143s] -- Detecting C compiler ABI info
+[0.316s] -- Detecting C compiler ABI info - done
+[0.335s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.335s] -- Detecting C compile features
+[0.336s] -- Detecting C compile features - done
+[0.348s] -- Detecting CXX compiler ABI info
+[0.476s] -- Detecting CXX compiler ABI info - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.482s] -- Detecting CXX compile features
+[0.482s] -- Detecting CXX compile features - done
+[0.484s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.630s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.690s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.793s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.795s] -- Found Threads: TRUE  
+[0.810s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.831s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.838s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.350s] -- Found AMD headers in: /usr/include/suitesparse
+[1.351s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[1.351s] -- Found CAMD headers in: /usr/include/suitesparse
+[1.352s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[1.352s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[1.352s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[1.353s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[1.353s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[1.353s] -- Found COLAMD headers in: /usr/include/suitesparse
+[1.354s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[1.354s] -- Found SPQR headers in: /usr/include/suitesparse
+[1.354s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[1.354s] -- Found Config headers in: /usr/include/suitesparse
+[1.355s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[1.358s] -- Found Intel Thread Building Blocks (TBB) library (2021.11 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[1.358s] -- Looking for shm_open in rt
+[1.487s] -- Looking for shm_open in rt - found
+[1.488s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[1.492s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[1.494s] -- Found SuiteSparse: /usr/include/suitesparse (found suitable version "7.6.1", minimum required is "7.6.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config 
+[1.507s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[1.513s] -- Found required Ceres dependency: glog
+[1.513s] -- Found required Ceres dependency: gflags
+[1.513s] -- Found Ceres version: 2.2.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]
+[1.519s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: iostreams 
+[1.520s] -- Found cartographer_ros_msgs: 2.0.9003 (/root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake)
+[1.563s] -- Found Unwind: /usr/include/x86_64-linux-gnu (found suitable version "1.6.2", minimum required is "1.6.2") 
+[1.564s] -- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.590s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.65.0") found components: system filesystem iostreams serialization 
+[1.591s] -- looking for PCL_COMMON
+[1.591s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.591s] -- Found PCL: pcl_common;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization  
+[1.592s] -- Found pcl_conversions: 2.6.4 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[1.622s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.624s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.697s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.716s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.741s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.818s] -- Found ros_environment: 4.2.1 (/opt/ros/jazzy/share/ros_environment/cmake)
+[1.819s] -- Found rosbag2_cpp: 0.26.10 (/opt/ros/jazzy/share/rosbag2_cpp/cmake)
+[1.836s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.838s] -- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+[1.841s] -- Found tf2_eigen: 0.36.20 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+[1.906s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[1.912s] -- Found visualization_msgs: 5.3.7 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.928s] -- Found std_srvs: 5.3.7 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.939s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[1.940s] -- Checking for module 'hiredis'
+[1.949s] --   Found hiredis, version 1.2.0
+[2.003s] -- Checking for one of the modules 'cairo>=1.12.16'
+[2.233s] Error parsing '/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/package.xml':
+[2.233s] Traceback (most recent call last):
+[2.233s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.233s]     main()
+[2.233s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.233s]     raise e
+[2.233s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.233s]     package = parse_package_string(
+[2.233s]               ^^^^^^^^^^^^^^^^^^^^^
+[2.233s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[2.233s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[2.233s] catkin_pkg.package.InvalidPackage: Error(s) in package '/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/package.xml':
+[2.233s] Error(s):
+[2.233s] - The generic dependency on 'std_srvs' is redundant with: build_depend, exec_depend
+[2.239s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.239s]   execute_process(/usr/bin/python3
+[2.239s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.239s]   /root/distr_slam_ws/src/cartographer_ros/cartographer_ros/package.xml
+[2.239s]   /root/distr_slam_ws/build/cartographer_ros/ament_cmake_core/package.cmake)
+[2.239s]   returned error code 1
+[2.239s] Call Stack (most recent call first):
+[2.239s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.239s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[2.239s]   CMakeLists.txt:312 (ament_package)
+[2.239s] 
+[2.239s] [0m
+[2.239s] -- Configuring incomplete, errors occurred!
+[2.249s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '1': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/distr_slam_ws/src/cartographer_ros/cartographer_ros -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_ros

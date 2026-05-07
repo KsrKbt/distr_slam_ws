@@ -22,7 +22,9 @@
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/StartTrajectory.idl",
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/TrajectoryQuery.idl",
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/SubmapQuery.idl",
-    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/WriteState.idl"
+    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/WriteState.idl",
+    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/GetSlamState.idl",
+    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/SetSlamState.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -125,6 +127,8 @@
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl",
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl",
     "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl",
+    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl",
+    "/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",

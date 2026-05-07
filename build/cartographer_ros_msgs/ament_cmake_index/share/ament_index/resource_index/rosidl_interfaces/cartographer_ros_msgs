@@ -26,10 +26,14 @@ msg/TrajectoryStates.idl
 msg/TrajectoryStates.msg
 srv/FinishTrajectory.idl
 srv/FinishTrajectory.srv
+srv/GetSlamState.idl
+srv/GetSlamState.srv
 srv/GetTrajectoryStates.idl
 srv/GetTrajectoryStates.srv
 srv/ReadMetrics.idl
 srv/ReadMetrics.srv
+srv/SetSlamState.idl
+srv/SetSlamState.srv
 srv/StartTrajectory.idl
 srv/StartTrajectory.srv
 srv/SubmapQuery.idl

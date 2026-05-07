@@ -1118,6 +1118,310 @@ impl rosidl_runtime_rs::RmwMessage for WriteState_Response where Self: Sized {
 }
 
 
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__GetSlamState_Request() -> *const std::ffi::c_void;
+}
+
+#[link(name = "cartographer_ros_msgs__rosidl_generator_c")]
+extern "C" {
+    fn cartographer_ros_msgs__srv__GetSlamState_Request__init(msg: *mut GetSlamState_Request) -> bool;
+    fn cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Request>, size: usize) -> bool;
+    fn cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Request>);
+    fn cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<GetSlamState_Request>, out_seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Request>) -> bool;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState_Request
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct GetSlamState_Request {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub structure_needs_at_least_one_member: u8,
+
+}
+
+
+
+impl Default for GetSlamState_Request {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !cartographer_ros_msgs__srv__GetSlamState_Request__init(&mut msg as *mut _) {
+        panic!("Call to cartographer_ros_msgs__srv__GetSlamState_Request__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for GetSlamState_Request {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Request__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for GetSlamState_Request {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for GetSlamState_Request where Self: Sized {
+  const TYPE_NAME: &'static str = "cartographer_ros_msgs/srv/GetSlamState_Request";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__GetSlamState_Request() }
+  }
+}
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__GetSlamState_Response() -> *const std::ffi::c_void;
+}
+
+#[link(name = "cartographer_ros_msgs__rosidl_generator_c")]
+extern "C" {
+    fn cartographer_ros_msgs__srv__GetSlamState_Response__init(msg: *mut GetSlamState_Response) -> bool;
+    fn cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Response>, size: usize) -> bool;
+    fn cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Response>);
+    fn cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<GetSlamState_Response>, out_seq: *mut rosidl_runtime_rs::Sequence<GetSlamState_Response>) -> bool;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState_Response
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct GetSlamState_Response {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub status: super::super::msg::rmw::StatusCode,
+
+    /// 出力されたメモリ上のパス (例: /dev/shm/state.pbstream)
+    pub ram_disk_path: rosidl_runtime_rs::String,
+
+}
+
+
+
+impl Default for GetSlamState_Response {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !cartographer_ros_msgs__srv__GetSlamState_Response__init(&mut msg as *mut _) {
+        panic!("Call to cartographer_ros_msgs__srv__GetSlamState_Response__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for GetSlamState_Response {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__GetSlamState_Response__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for GetSlamState_Response {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for GetSlamState_Response where Self: Sized {
+  const TYPE_NAME: &'static str = "cartographer_ros_msgs/srv/GetSlamState_Response";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__GetSlamState_Response() }
+  }
+}
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__SetSlamState_Request() -> *const std::ffi::c_void;
+}
+
+#[link(name = "cartographer_ros_msgs__rosidl_generator_c")]
+extern "C" {
+    fn cartographer_ros_msgs__srv__SetSlamState_Request__init(msg: *mut SetSlamState_Request) -> bool;
+    fn cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Request>, size: usize) -> bool;
+    fn cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Request>);
+    fn cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<SetSlamState_Request>, out_seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Request>) -> bool;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState_Request
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct SetSlamState_Request {
+    /// 読み込むメモリ上のパス
+    pub ram_disk_path: rosidl_runtime_rs::String,
+
+    /// 地図を凍結するか (Pure Localizationならtrue)
+    pub load_frozen_state: bool,
+
+}
+
+
+
+impl Default for SetSlamState_Request {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !cartographer_ros_msgs__srv__SetSlamState_Request__init(&mut msg as *mut _) {
+        panic!("Call to cartographer_ros_msgs__srv__SetSlamState_Request__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for SetSlamState_Request {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Request__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for SetSlamState_Request {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for SetSlamState_Request where Self: Sized {
+  const TYPE_NAME: &'static str = "cartographer_ros_msgs/srv/SetSlamState_Request";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__SetSlamState_Request() }
+  }
+}
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__SetSlamState_Response() -> *const std::ffi::c_void;
+}
+
+#[link(name = "cartographer_ros_msgs__rosidl_generator_c")]
+extern "C" {
+    fn cartographer_ros_msgs__srv__SetSlamState_Response__init(msg: *mut SetSlamState_Response) -> bool;
+    fn cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__init(seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Response>, size: usize) -> bool;
+    fn cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__fini(seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Response>);
+    fn cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__copy(in_seq: &rosidl_runtime_rs::Sequence<SetSlamState_Response>, out_seq: *mut rosidl_runtime_rs::Sequence<SetSlamState_Response>) -> bool;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState_Response
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+
+
+// This struct is not documented.
+#[allow(missing_docs)]
+
+#[allow(non_camel_case_types)]
+#[repr(C)]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct SetSlamState_Response {
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub status: super::super::msg::rmw::StatusCode,
+
+}
+
+
+
+impl Default for SetSlamState_Response {
+  fn default() -> Self {
+    unsafe {
+      let mut msg = std::mem::zeroed();
+      if !cartographer_ros_msgs__srv__SetSlamState_Response__init(&mut msg as *mut _) {
+        panic!("Call to cartographer_ros_msgs__srv__SetSlamState_Response__init() failed");
+      }
+      msg
+    }
+  }
+}
+
+impl rosidl_runtime_rs::SequenceAlloc for SetSlamState_Response {
+  fn sequence_init(seq: &mut rosidl_runtime_rs::Sequence<Self>, size: usize) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__init(seq as *mut _, size) }
+  }
+  fn sequence_fini(seq: &mut rosidl_runtime_rs::Sequence<Self>) {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__fini(seq as *mut _) }
+  }
+  fn sequence_copy(in_seq: &rosidl_runtime_rs::Sequence<Self>, out_seq: &mut rosidl_runtime_rs::Sequence<Self>) -> bool {
+    // SAFETY: This is safe since the pointer is guaranteed to be valid/initialized.
+    unsafe { cartographer_ros_msgs__srv__SetSlamState_Response__Sequence__copy(in_seq, out_seq as *mut _) }
+  }
+}
+
+impl rosidl_runtime_rs::Message for SetSlamState_Response {
+  type RmwMsg = Self;
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> { msg_cow }
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self { msg }
+}
+
+impl rosidl_runtime_rs::RmwMessage for SetSlamState_Response where Self: Sized {
+  const TYPE_NAME: &'static str = "cartographer_ros_msgs/srv/SetSlamState_Response";
+  fn get_type_support() -> *const std::ffi::c_void {
+    // SAFETY: No preconditions for this function.
+    unsafe { rosidl_typesupport_c__get_message_type_support_handle__cartographer_ros_msgs__srv__SetSlamState_Response() }
+  }
+}
+
+
 
 
 
@@ -1270,6 +1574,50 @@ impl rosidl_runtime_rs::Service for WriteState {
     fn get_type_support() -> *const std::ffi::c_void {
         // SAFETY: No preconditions for this function.
         unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__WriteState() }
+    }
+}
+
+
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__GetSlamState() -> *const std::ffi::c_void;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__GetSlamState
+#[allow(missing_docs, non_camel_case_types)]
+pub struct GetSlamState;
+
+impl rosidl_runtime_rs::Service for GetSlamState {
+    type Request = GetSlamState_Request;
+    type Response = GetSlamState_Response;
+
+    fn get_type_support() -> *const std::ffi::c_void {
+        // SAFETY: No preconditions for this function.
+        unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__GetSlamState() }
+    }
+}
+
+
+
+
+#[link(name = "cartographer_ros_msgs__rosidl_typesupport_c")]
+extern "C" {
+    fn rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__SetSlamState() -> *const std::ffi::c_void;
+}
+
+// Corresponds to cartographer_ros_msgs__srv__SetSlamState
+#[allow(missing_docs, non_camel_case_types)]
+pub struct SetSlamState;
+
+impl rosidl_runtime_rs::Service for SetSlamState {
+    type Request = SetSlamState_Request;
+    type Response = SetSlamState_Response;
+
+    fn get_type_support() -> *const std::ffi::c_void {
+        // SAFETY: No preconditions for this function.
+        unsafe { rosidl_typesupport_c__get_service_type_support_handle__cartographer_ros_msgs__srv__SetSlamState() }
     }
 }
 

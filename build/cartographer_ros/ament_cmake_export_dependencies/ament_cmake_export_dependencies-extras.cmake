@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "absl;builtin_interfaces;cartographer;cartographer_ros_msgs;geometry_msgs;nav_msgs;rclcpp;rosbag2_cpp;rosbag2_storage;sensor_msgs;tf2_ros;visualization_msgs")
+set(_exported_dependencies "absl;builtin_interfaces;cartographer;cartographer_ros_msgs;geometry_msgs;nav_msgs;rclcpp;rosbag2_cpp;rosbag2_storage;sensor_msgs;tf2_ros;visualization_msgs;std_srvs")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

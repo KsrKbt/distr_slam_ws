@@ -213,6 +213,14 @@ cartographer_node: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_
 cartographer_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 cartographer_node: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_c.so
 cartographer_node: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+cartographer_node: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
 cartographer_node: /opt/ros/jazzy/lib/libtf2.so
 cartographer_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
 cartographer_node: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so

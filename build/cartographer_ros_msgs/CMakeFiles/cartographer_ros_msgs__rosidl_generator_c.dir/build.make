@@ -108,6 +108,8 @@ rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl
+rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl
+rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl
@@ -413,6 +415,30 @@ rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__struct.h: rosid
 rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.h
 
+rosidl_generator_c/cartographer_ros_msgs/srv/get_slam_state.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/get_slam_state.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__struct.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__struct.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/set_slam_state.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/set_slam_state.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__struct.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__struct.h
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h
+
 rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c
 
@@ -592,6 +618,24 @@ rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.c: ro
 
 rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c
+
+rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c: rosidl_generator_c/cartographer_ros_msgs/msg/bagfile_progress.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
 
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c.o: rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c
@@ -1433,6 +1477,90 @@ CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cart
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.s
 
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.s
+
 # Object files for target cartographer_ros_msgs__rosidl_generator_c
 cartographer_ros_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c.o" \
@@ -1494,7 +1622,13 @@ cartographer_ros_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/submap_query__type_support.c.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__description.c.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.c.o" \
-"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.o"
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o"
 
 # External object files for target cartographer_ros_msgs__rosidl_generator_c
 cartographer_ros_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -1559,6 +1693,12 @@ libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msg
 libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__description.c.o
 libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.c.o
 libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o
+libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o
 libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/build.make
 libcartographer_ros_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 libcartographer_ros_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
@@ -1567,7 +1707,7 @@ libcartographer_ros_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/libbuiltin_i
 libcartographer_ros_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libcartographer_ros_msgs__rosidl_generator_c.so: /opt/ros/jazzy/lib/librcutils.so
 libcartographer_ros_msgs__rosidl_generator_c.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking C shared library libcartographer_ros_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking C shared library libcartographer_ros_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1675,6 +1815,12 @@ CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__struct.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__struct.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__description.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__functions.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__functions.h
@@ -1687,6 +1833,12 @@ CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__struct.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__type_support.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__type_support.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__struct.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__description.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__functions.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__functions.h
@@ -1712,8 +1864,10 @@ CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/finish_trajectory.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/get_slam_state.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/get_trajectory_states.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/read_metrics.h
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/set_slam_state.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/start_trajectory.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/submap_query.h
 CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/cartographer_ros_msgs/srv/trajectory_query.h

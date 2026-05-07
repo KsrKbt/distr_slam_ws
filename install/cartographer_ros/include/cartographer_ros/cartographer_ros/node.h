@@ -52,6 +52,8 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
+//追記
+#include "std_srvs/srv/trigger.hpp"
 
 namespace cartographer_ros {
 
@@ -151,6 +153,15 @@ class Node {
       cartographer_ros_msgs::srv::GetTrajectoryStates::Response::SharedPtr response);
   bool handleReadMetrics(const cartographer_ros_msgs::srv::ReadMetrics::Request::SharedPtr,
       cartographer_ros_msgs::srv::ReadMetrics::Response::SharedPtr response);
+
+  // ＝＝＝ ここから追加 ＝＝＝
+  void HandleExportStateToRedis(
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> response);
+
+  void HandleImportStateFromRedis(
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> response);
 
   // Returns the set of SensorIds expected for a trajectory.
   // 'SensorId::id' is the expected ROS topic name.

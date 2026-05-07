@@ -349,6 +349,34 @@ CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/ca
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.s
 
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o: rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o: rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c > CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c -o CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.s
+
 # Object files for target cartographer_ros_msgs__rosidl_generator_py
 cartographer_ros_msgs__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_bagfile_progress_s.c.o" \
@@ -370,7 +398,9 @@ cartographer_ros_msgs__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_start_trajectory_s.c.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_trajectory_query_s.c.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_submap_query_s.c.o" \
-"CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o"
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o"
 
 # External object files for target cartographer_ros_msgs__rosidl_generator_py
 cartographer_ros_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
@@ -395,6 +425,8 @@ libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_ms
 libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_trajectory_query_s.c.o
 libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_submap_query_s.c.o
 libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o
+libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o
+libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o
 libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/build.make
 libcartographer_ros_msgs__rosidl_generator_py.so: libcartographer_ros_msgs__rosidl_typesupport_c.so
 libcartographer_ros_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
@@ -441,7 +473,7 @@ libcartographer_ros_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_
 libcartographer_ros_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libcartographer_ros_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librcutils.so
 libcartographer_ros_msgs__rosidl_generator_py.so: CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C shared library libcartographer_ros_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C shared library libcartographer_ros_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

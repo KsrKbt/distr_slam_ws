@@ -95,6 +95,8 @@ rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: rosidl_adapter/cartographer_ros_msgs/srv/TrajectoryQuery.idl
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: rosidl_adapter/cartographer_ros_msgs/srv/SubmapQuery.idl
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: rosidl_adapter/cartographer_ros_msgs/srv/WriteState.idl
+rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: rosidl_adapter/cartographer_ros_msgs/srv/GetSlamState.idl
+rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: rosidl_adapter/cartographer_ros_msgs/srv/SetSlamState.idl
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl
@@ -219,6 +221,12 @@ rosidl_typesupport_cpp/cartographer_ros_msgs/srv/submap_query__type_support.cpp:
 
 rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp
+
+rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp
+
+rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp
 
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp.o: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp.o: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp
@@ -500,6 +508,34 @@ CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp -o CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.s
 
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp
+
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp > CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp -o CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.s
+
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o -MF CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o.d -o CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o -c /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp
+
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp > CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.i
+
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp -o CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.s
+
 # Object files for target cartographer_ros_msgs__rosidl_typesupport_cpp
 cartographer_ros_msgs__rosidl_typesupport_cpp_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp.o" \
@@ -521,7 +557,9 @@ cartographer_ros_msgs__rosidl_typesupport_cpp_OBJECTS = \
 "CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/start_trajectory__type_support.cpp.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/trajectory_query__type_support.cpp.o" \
 "CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/submap_query__type_support.cpp.o" \
-"CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.o"
+"CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o" \
+"CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o"
 
 # External object files for target cartographer_ros_msgs__rosidl_typesupport_cpp
 cartographer_ros_msgs__rosidl_typesupport_cpp_EXTERNAL_OBJECTS =
@@ -546,6 +584,8 @@ libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/trajectory_query__type_support.cpp.o
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/submap_query__type_support.cpp.o
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.o
+libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o
+libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/build.make
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: libcartographer_ros_msgs__rosidl_generator_c.so
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
@@ -561,7 +601,7 @@ libcartographer_ros_msgs__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/libbuilt
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: /opt/ros/jazzy/lib/librcutils.so
 libcartographer_ros_msgs__rosidl_typesupport_cpp.so: CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/distr_slam_ws/build/cartographer_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -586,8 +626,10 @@ CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_type
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/submap_texture__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/msg/trajectory_states__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/finish_trajectory__type_support.cpp
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_trajectory_states__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/read_metrics__type_support.cpp
+CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/start_trajectory__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/submap_query__type_support.cpp
 CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/cartographer_ros_msgs/srv/trajectory_query__type_support.cpp

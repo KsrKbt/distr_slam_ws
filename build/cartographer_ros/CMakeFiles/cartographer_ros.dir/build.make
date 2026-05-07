@@ -417,6 +417,12 @@ libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesup
 libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
 libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
 libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_py.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
 libcartographer_ros.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 libcartographer_ros.so: /opt/ros/jazzy/lib/liburdf.so
 libcartographer_ros.so: /usr/lib/x86_64-linux-gnu/libceres.so.2.2.0
@@ -474,6 +480,8 @@ libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_typesup
 libcartographer_ros.so: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 libcartographer_ros.so: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_c.so
 libcartographer_ros.so: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+libcartographer_ros.so: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
 libcartographer_ros.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0
 libcartographer_ros.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 libcartographer_ros.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0

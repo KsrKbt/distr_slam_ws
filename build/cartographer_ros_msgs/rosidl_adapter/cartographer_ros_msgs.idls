@@ -18,3 +18,5 @@
 /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/TrajectoryQuery.idl
 /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/SubmapQuery.idl
 /root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/WriteState.idl
+/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/GetSlamState.idl
+/root/distr_slam_ws/build/cartographer_ros_msgs/rosidl_adapter/cartographer_ros_msgs:srv/SetSlamState.idl

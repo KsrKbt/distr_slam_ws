@@ -20,6 +20,8 @@
     "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/StartTrajectory.srv",
     "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/TrajectoryQuery.srv",
     "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/SubmapQuery.srv",
-    "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/WriteState.srv"
+    "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/WriteState.srv",
+    "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/GetSlamState.srv",
+    "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros_msgs:srv/SetSlamState.srv"
   ]
 }

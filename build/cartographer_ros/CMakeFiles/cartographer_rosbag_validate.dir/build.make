@@ -175,6 +175,14 @@ cartographer_rosbag_validate: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_t
 cartographer_rosbag_validate: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 cartographer_rosbag_validate: /opt/ros/jazzy/lib/libvisualization_msgs__rosidl_generator_c.so
 cartographer_rosbag_validate: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+cartographer_rosbag_validate: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
 cartographer_rosbag_validate: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0
 cartographer_rosbag_validate: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
 cartographer_rosbag_validate: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so

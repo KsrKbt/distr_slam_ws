@@ -47,6 +47,14 @@
 #include "tf2_eigen/tf2_eigen.hpp"
 #include "visualization_msgs/msg/marker_array.hpp"
 
+//以下追加
+#include <fstream>
+#include <cstdio>
+#include "absl/synchronization/mutex.h"
+#include "cartographer/io/proto_stream.h"
+#include <hiredis/hiredis.h>
+#include "std_srvs/srv/trigger.hpp"
+
 namespace cartographer_ros {
 
 namespace carto = ::cartographer;
@@ -913,6 +921,94 @@ void Node::MaybeWarnAboutTopicMismatch() {
 //    LOG(WARNING) << "Currently available topics are: "
 //                 << published_topics_string.str();
 //  }
+}
+
+
+
+// ==========================================
+// コンテナA側: Redisへのエクスポート (RAMディスク経由)
+// ==========================================
+void Node::HandleExportStateToRedis(
+    const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+  // 警告回避
+  (void)request;
+  
+  // 修正1: absl::Mutex を使った正しいロック
+  absl::MutexLock lock(&mutex_);
+
+  // RAMディスク上のファイルパス (完全にメモリ上での処理)
+  const std::string ram_file = "/dev/shm/export_state.pbstream";
+  // ブリッジの標準関数に直接ファイルパスとフラグ(未完成を除外=false)を渡す
+  bool write_success = map_builder_bridge_->SerializeState(ram_file, false);
+  if (!write_success) {
+    response->success = false;
+    response->message = "Failed to serialize state to RAM disk.";
+    return;
+  }
+  // RAM上のファイルからバイト列を std::string に一括読み込み
+  std::ifstream in(ram_file, std::ios::binary);
+  std::string state_data((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+  in.close();
+
+  // Redisへの書き込み
+  redisContext *c = redisConnect("redis_host", 6379);
+  if (c != nullptr && !c->err) {
+    redisReply *reply = (redisReply*)redisCommand(c, "SET robot1_state %b", state_data.data(), state_data.size());
+    freeReplyObject(reply);
+    response->success = true;
+    response->message = "Minimal state exported to Redis (via RAM disk).";
+  } else {
+    response->success = false;
+    response->message = "Failed to connect to Redis.";
+  }
+  if (c) redisFree(c);
+
+  // 一時ファイル(RAM)を削除してメモリを解放
+  std::remove(ram_file.c_str());
+}
+
+// ==========================================
+// コンテナB側: Redisからのインポートと起動 (RAMディスク経由)
+// ==========================================
+void Node::HandleImportStateFromRedis(
+    const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+  (void)request;
+  
+  absl::MutexLock lock(&mutex_);
+
+  redisContext *c = redisConnect("redis_host", 6379);
+  if (c == nullptr || c->err) {
+    response->success = false;
+    response->message = "Failed to connect to Redis.";
+    if (c) redisFree(c);
+    return;
+  }
+
+  redisReply *reply = (redisReply*)redisCommand(c, "GET robot1_state");
+  if (reply->type == REDIS_REPLY_STRING) {
+    const std::string ram_file = "/dev/shm/import_state.pbstream";
+    
+    // Redisのバイト列をRAMディスクに書き出し
+    std::ofstream out(ram_file, std::ios::binary);
+    out.write(reply->str, reply->len);
+    out.close();
+
+    // 修正3: 標準APIを使ってファイルパスからロード
+    map_builder_bridge_->LoadState(ram_file, true);
+
+    // 一時ファイル(RAM)を削除
+    std::remove(ram_file.c_str());
+
+    response->success = true;
+    response->message = "State loaded successfully. Ready to start new trajectory.";
+  } else {
+    response->success = false;
+    response->message = "No state found in Redis.";
+  }
+  freeReplyObject(reply);
+  redisFree(c);
 }
 
 }  // namespace cartographer_ros

@@ -1,0 +1,78 @@
+[0.008s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j24 -l24
+[0.026s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.183s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.196s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.201s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.207s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.213s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.299s] -- Found AMD headers in: /usr/include/suitesparse
+[0.299s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[0.299s] -- Found CAMD headers in: /usr/include/suitesparse
+[0.299s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[0.300s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[0.300s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[0.300s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[0.300s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[0.300s] -- Found COLAMD headers in: /usr/include/suitesparse
+[0.300s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[0.300s] -- Found SPQR headers in: /usr/include/suitesparse
+[0.300s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[0.300s] -- Found Config headers in: /usr/include/suitesparse
+[0.300s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[0.300s] -- Found Intel Thread Building Blocks (TBB) library (2021.11 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[0.300s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[0.303s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[0.304s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[0.306s] -- Found required Ceres dependency: glog
+[0.306s] -- Found required Ceres dependency: gflags
+[0.306s] -- Found Ceres version: 2.2.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]
+[0.311s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: iostreams 
+[0.311s] -- Found cartographer_ros_msgs: 2.0.9003 (/root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake)
+[0.351s] -- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.373s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.65.0") found components: system filesystem iostreams serialization 
+[0.374s] -- looking for PCL_COMMON
+[0.374s] -- Found pcl_conversions: 2.6.4 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[0.397s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.398s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.441s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.510s] -- Found ros_environment: 4.2.1 (/opt/ros/jazzy/share/ros_environment/cmake)
+[0.510s] -- Found rosbag2_cpp: 0.26.10 (/opt/ros/jazzy/share/rosbag2_cpp/cmake)
+[0.517s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[0.519s] -- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+[0.521s] -- Found tf2_eigen: 0.36.20 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+[0.580s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[0.583s] -- Found visualization_msgs: 5.3.7 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[0.602s] -- Checking for module 'hiredis'
+[0.612s] --   Found hiredis, version 1.2.0
+[0.744s] -- Configuring done (0.7s)
+[0.792s] -- Generating done (0.0s)
+[0.805s] -- Build files have been written to: /root/distr_slam_ws/build/cartographer_ros
+[0.897s] [  2%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/assets_writer.cpp.o[0m
+[0.901s] [  5%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/map_builder_bridge.cpp.o[0m
+[0.901s] [  8%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/node.cpp.o[0m
+[0.902s] [ 11%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/node_options.cpp.o[0m
+[0.902s] [ 17%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/msg_conversion.cpp.o[0m
+[0.902s] [ 17%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/node_constants.cpp.o[0m
+[0.904s] [ 20%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/offline_node.cpp.o[0m
+[0.904s] [ 22%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/playable_bag.cpp.o[0m
+[0.905s] [ 25%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/ros_log_sink.cpp.o[0m
+[0.905s] [ 28%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/ros_map.cpp.o[0m
+[0.909s] [ 31%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/sensor_bridge.cpp.o[0m
+[0.910s] [ 34%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/ros_map_writing_points_processor.cpp.o[0m
+[0.911s] [ 37%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/submap.cpp.o[0m
+[0.913s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/time_conversion.cpp.o[0m
+[0.914s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/tf_bridge.cpp.o[0m
+[0.918s] [ 51%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/urdf_reader.cpp.o[0m
+[0.918s] [ 51%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/metrics/family_factory.cpp.o[0m
+[0.918s] [ 51%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/trajectory_options.cpp.o[0m
+[0.919s] [ 54%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/metrics/internal/family.cpp.o[0m
+[0.919s] [ 57%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/metrics/internal/histogram.cpp.o[0m
+[3.191s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:52:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+[3.191s]    52 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+[3.191s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.191s] compilation terminated.
+[3.206s] gmake[2]: *** [CMakeFiles/cartographer_ros.dir/build.make:132: CMakeFiles/cartographer_ros.dir/src/node.cpp.o] Error 1
+[3.206s] gmake[2]: *** Waiting for unfinished jobs....
+[11.570s] gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/cartographer_ros.dir/all] Error 2
+[11.570s] gmake: *** [Makefile:146: all] Error 2
+[11.572s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '2': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j24 -l24
