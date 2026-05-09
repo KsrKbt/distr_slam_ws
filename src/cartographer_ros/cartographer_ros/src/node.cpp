@@ -192,6 +192,21 @@ Node::Node(
     [this]() {
       PublishConstraintList();
     });
+
+  // ＝＝＝ コンストラクタ内にこれを追加 ＝＝＝
+  export_state_service_ = node_->create_service<std_srvs::srv::Trigger>(
+    "export_state_to_redis",
+    [this](const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+            std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+      HandleExportStateToRedis(request, response);
+    });
+
+  import_state_service_ = node_->create_service<std_srvs::srv::Trigger>(
+    "import_state_from_redis",
+    [this](const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+            std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+      HandleImportStateFromRedis(request, response);
+    });
 }
 
 Node::~Node() { FinishAllTrajectories(); }

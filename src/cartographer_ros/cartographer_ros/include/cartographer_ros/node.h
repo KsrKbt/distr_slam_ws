@@ -211,7 +211,9 @@ class Node {
   ::rclcpp::Service<cartographer_ros_msgs::srv::WriteState>::SharedPtr write_state_server_;
   ::rclcpp::Service<cartographer_ros_msgs::srv::GetTrajectoryStates>::SharedPtr get_trajectory_states_server_;
   ::rclcpp::Service<cartographer_ros_msgs::srv::ReadMetrics>::SharedPtr read_metrics_server_;
-
+  // ＝＝＝ ここから追加 ＝＝＝
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr export_state_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr import_state_service_;
 
   struct TrajectorySensorSamplers {
     TrajectorySensorSamplers(const double rangefinder_sampling_ratio,
