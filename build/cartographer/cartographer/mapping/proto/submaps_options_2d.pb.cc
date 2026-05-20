@@ -14,54 +14,54 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fgrid_5f2d_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GridOptions2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR SubmapsOptions2D::SubmapsOptions2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.grid_options_2d_)*/nullptr
-  , /*decltype(_impl_.range_data_inserter_options_)*/nullptr
-  , /*decltype(_impl_.num_range_data_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SubmapsOptions2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubmapsOptions2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubmapsOptions2DDefaultTypeInternal() {}
-  union {
-    SubmapsOptions2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubmapsOptions2DDefaultTypeInternal _SubmapsOptions2D_default_instance_;
+class SubmapsOptions2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SubmapsOptions2D> _instance;
+} _SubmapsOptions2D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = nullptr;
+static void InitDefaultsscc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_SubmapsOptions2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::SubmapsOptions2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::SubmapsOptions2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto}, {
+      &scc_info_GridOptions2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_5foptions_2eproto.base,
+      &scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, _impl_.num_range_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, _impl_.grid_options_2d_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, _impl_.range_data_inserter_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, num_range_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, grid_options_2d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapsOptions2D, range_data_inserter_options_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::SubmapsOptions2D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::SubmapsOptions2D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_SubmapsOptions2D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_SubmapsOptions2D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -77,31 +77,35 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmaps_5f
   "apping.proto.RangeDataInserterOptionsb\006p"
   "roto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_deps[2] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_deps[2] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_5foptions_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = {
-    false, false, 405, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto,
-    "cartographer/mapping/proto/submaps_options_2d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_deps, 2, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_sccs[1] = {
+  &scc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto, "cartographer/mapping/proto/submaps_options_2d.proto", 405,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_deps, 1, 2,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void SubmapsOptions2D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_SubmapsOptions2D_default_instance_._instance.get_mutable()->grid_options_2d_ = const_cast< ::cartographer::mapping::proto::GridOptions2D*>(
+      ::cartographer::mapping::proto::GridOptions2D::internal_default_instance());
+  ::cartographer::mapping::proto::_SubmapsOptions2D_default_instance_._instance.get_mutable()->range_data_inserter_options_ = const_cast< ::cartographer::mapping::proto::RangeDataInserterOptions*>(
+      ::cartographer::mapping::proto::RangeDataInserterOptions::internal_default_instance());
+}
 class SubmapsOptions2D::_Internal {
  public:
   static const ::cartographer::mapping::proto::GridOptions2D& grid_options_2d(const SubmapsOptions2D* msg);
@@ -110,180 +114,180 @@ class SubmapsOptions2D::_Internal {
 
 const ::cartographer::mapping::proto::GridOptions2D&
 SubmapsOptions2D::_Internal::grid_options_2d(const SubmapsOptions2D* msg) {
-  return *msg->_impl_.grid_options_2d_;
+  return *msg->grid_options_2d_;
 }
 const ::cartographer::mapping::proto::RangeDataInserterOptions&
 SubmapsOptions2D::_Internal::range_data_inserter_options(const SubmapsOptions2D* msg) {
-  return *msg->_impl_.range_data_inserter_options_;
+  return *msg->range_data_inserter_options_;
 }
 void SubmapsOptions2D::clear_grid_options_2d() {
-  if (GetArenaForAllocation() == nullptr && _impl_.grid_options_2d_ != nullptr) {
-    delete _impl_.grid_options_2d_;
+  if (GetArena() == nullptr && grid_options_2d_ != nullptr) {
+    delete grid_options_2d_;
   }
-  _impl_.grid_options_2d_ = nullptr;
+  grid_options_2d_ = nullptr;
 }
 void SubmapsOptions2D::clear_range_data_inserter_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.range_data_inserter_options_ != nullptr) {
-    delete _impl_.range_data_inserter_options_;
+  if (GetArena() == nullptr && range_data_inserter_options_ != nullptr) {
+    delete range_data_inserter_options_;
   }
-  _impl_.range_data_inserter_options_ = nullptr;
+  range_data_inserter_options_ = nullptr;
 }
-SubmapsOptions2D::SubmapsOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+SubmapsOptions2D::SubmapsOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.SubmapsOptions2D)
 }
 SubmapsOptions2D::SubmapsOptions2D(const SubmapsOptions2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SubmapsOptions2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.grid_options_2d_){nullptr}
-    , decltype(_impl_.range_data_inserter_options_){nullptr}
-    , decltype(_impl_.num_range_data_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_grid_options_2d()) {
-    _this->_impl_.grid_options_2d_ = new ::cartographer::mapping::proto::GridOptions2D(*from._impl_.grid_options_2d_);
+    grid_options_2d_ = new ::cartographer::mapping::proto::GridOptions2D(*from.grid_options_2d_);
+  } else {
+    grid_options_2d_ = nullptr;
   }
   if (from._internal_has_range_data_inserter_options()) {
-    _this->_impl_.range_data_inserter_options_ = new ::cartographer::mapping::proto::RangeDataInserterOptions(*from._impl_.range_data_inserter_options_);
+    range_data_inserter_options_ = new ::cartographer::mapping::proto::RangeDataInserterOptions(*from.range_data_inserter_options_);
+  } else {
+    range_data_inserter_options_ = nullptr;
   }
-  _this->_impl_.num_range_data_ = from._impl_.num_range_data_;
+  num_range_data_ = from.num_range_data_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapsOptions2D)
 }
 
-inline void SubmapsOptions2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.grid_options_2d_){nullptr}
-    , decltype(_impl_.range_data_inserter_options_){nullptr}
-    , decltype(_impl_.num_range_data_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void SubmapsOptions2D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto.base);
+  ::memset(&grid_options_2d_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_range_data_) -
+      reinterpret_cast<char*>(&grid_options_2d_)) + sizeof(num_range_data_));
 }
 
 SubmapsOptions2D::~SubmapsOptions2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapsOptions2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void SubmapsOptions2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.grid_options_2d_;
-  if (this != internal_default_instance()) delete _impl_.range_data_inserter_options_;
+void SubmapsOptions2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete grid_options_2d_;
+  if (this != internal_default_instance()) delete range_data_inserter_options_;
 }
 
+void SubmapsOptions2D::ArenaDtor(void* object) {
+  SubmapsOptions2D* _this = reinterpret_cast< SubmapsOptions2D* >(object);
+  (void)_this;
+}
+void SubmapsOptions2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void SubmapsOptions2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const SubmapsOptions2D& SubmapsOptions2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SubmapsOptions2D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SubmapsOptions2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapsOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.grid_options_2d_ != nullptr) {
-    delete _impl_.grid_options_2d_;
+  if (GetArena() == nullptr && grid_options_2d_ != nullptr) {
+    delete grid_options_2d_;
   }
-  _impl_.grid_options_2d_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.range_data_inserter_options_ != nullptr) {
-    delete _impl_.range_data_inserter_options_;
+  grid_options_2d_ = nullptr;
+  if (GetArena() == nullptr && range_data_inserter_options_ != nullptr) {
+    delete range_data_inserter_options_;
   }
-  _impl_.range_data_inserter_options_ = nullptr;
-  _impl_.num_range_data_ = 0;
+  range_data_inserter_options_ = nullptr;
+  num_range_data_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SubmapsOptions2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* SubmapsOptions2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 num_range_data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.GridOptions2D grid_options_2d = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_grid_options_2d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.RangeDataInserterOptions range_data_inserter_options = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_range_data_inserter_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* SubmapsOptions2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SubmapsOptions2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapsOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 num_range_data = 1;
-  if (this->_internal_num_range_data() != 0) {
+  if (this->num_range_data() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_num_range_data(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_num_range_data(), target);
   }
 
   // .cartographer.mapping.proto.GridOptions2D grid_options_2d = 2;
-  if (this->_internal_has_grid_options_2d()) {
+  if (this->has_grid_options_2d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::grid_options_2d(this),
-        _Internal::grid_options_2d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::grid_options_2d(this), target, stream);
   }
 
   // .cartographer.mapping.proto.RangeDataInserterOptions range_data_inserter_options = 3;
-  if (this->_internal_has_range_data_inserter_options()) {
+  if (this->has_range_data_inserter_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::range_data_inserter_options(this),
-        _Internal::range_data_inserter_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::range_data_inserter_options(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapsOptions2D)
@@ -294,59 +298,78 @@ size_t SubmapsOptions2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapsOptions2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.GridOptions2D grid_options_2d = 2;
-  if (this->_internal_has_grid_options_2d()) {
+  if (this->has_grid_options_2d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.grid_options_2d_);
+        *grid_options_2d_);
   }
 
   // .cartographer.mapping.proto.RangeDataInserterOptions range_data_inserter_options = 3;
-  if (this->_internal_has_range_data_inserter_options()) {
+  if (this->has_range_data_inserter_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.range_data_inserter_options_);
+        *range_data_inserter_options_);
   }
 
   // int32 num_range_data = 1;
-  if (this->_internal_num_range_data() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_num_range_data());
+  if (this->num_range_data() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_num_range_data());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubmapsOptions2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SubmapsOptions2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubmapsOptions2D::GetClassData() const { return &_class_data_; }
+void SubmapsOptions2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapsOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SubmapsOptions2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SubmapsOptions2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapsOptions2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapsOptions2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void SubmapsOptions2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SubmapsOptions2D*>(&to_msg);
-  auto& from = static_cast<const SubmapsOptions2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapsOptions2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void SubmapsOptions2D::MergeFrom(const SubmapsOptions2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapsOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_grid_options_2d()) {
-    _this->_internal_mutable_grid_options_2d()->::cartographer::mapping::proto::GridOptions2D::MergeFrom(
-        from._internal_grid_options_2d());
+  if (from.has_grid_options_2d()) {
+    _internal_mutable_grid_options_2d()->::cartographer::mapping::proto::GridOptions2D::MergeFrom(from._internal_grid_options_2d());
   }
-  if (from._internal_has_range_data_inserter_options()) {
-    _this->_internal_mutable_range_data_inserter_options()->::cartographer::mapping::proto::RangeDataInserterOptions::MergeFrom(
-        from._internal_range_data_inserter_options());
+  if (from.has_range_data_inserter_options()) {
+    _internal_mutable_range_data_inserter_options()->::cartographer::mapping::proto::RangeDataInserterOptions::MergeFrom(from._internal_range_data_inserter_options());
   }
-  if (from._internal_num_range_data() != 0) {
-    _this->_internal_set_num_range_data(from._internal_num_range_data());
+  if (from.num_range_data() != 0) {
+    _internal_set_num_range_data(from._internal_num_range_data());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SubmapsOptions2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapsOptions2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void SubmapsOptions2D::CopyFrom(const SubmapsOptions2D& from) {
@@ -362,28 +385,26 @@ bool SubmapsOptions2D::IsInitialized() const {
 
 void SubmapsOptions2D::InternalSwap(SubmapsOptions2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SubmapsOptions2D, _impl_.num_range_data_)
-      + sizeof(SubmapsOptions2D::_impl_.num_range_data_)
-      - PROTOBUF_FIELD_OFFSET(SubmapsOptions2D, _impl_.grid_options_2d_)>(
-          reinterpret_cast<char*>(&_impl_.grid_options_2d_),
-          reinterpret_cast<char*>(&other->_impl_.grid_options_2d_));
+      PROTOBUF_FIELD_OFFSET(SubmapsOptions2D, num_range_data_)
+      + sizeof(SubmapsOptions2D::num_range_data_)
+      - PROTOBUF_FIELD_OFFSET(SubmapsOptions2D, grid_options_2d_)>(
+          reinterpret_cast<char*>(&grid_options_2d_),
+          reinterpret_cast<char*>(&other->grid_options_2d_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SubmapsOptions2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f2d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SubmapsOptions2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SubmapsOptions2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SubmapsOptions2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SubmapsOptions2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::SubmapsOptions2D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

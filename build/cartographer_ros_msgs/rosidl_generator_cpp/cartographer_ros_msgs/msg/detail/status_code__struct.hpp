@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:msg/StatusCode.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/msg/status_code.hpp"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__STATUS_CODE__STRUCT_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__STATUS_CODE__STRUCT_HPP_
 

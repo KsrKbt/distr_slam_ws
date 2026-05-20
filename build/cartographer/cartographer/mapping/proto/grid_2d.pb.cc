@@ -14,92 +14,94 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fmap_5flimits_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MapLimits_cartographer_2fmapping_2fproto_2fmap_5flimits_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fprobability_5fgrid_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProbabilityGrid_cartographer_2fmapping_2fproto_2fprobability_5fgrid_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftsdf_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TSDF2D_cartographer_2fmapping_2fproto_2ftsdf_5f2d_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR Grid2D_CellBox::Grid2D_CellBox(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.max_x_)*/0
-  , /*decltype(_impl_.max_y_)*/0
-  , /*decltype(_impl_.min_x_)*/0
-  , /*decltype(_impl_.min_y_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Grid2D_CellBoxDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Grid2D_CellBoxDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Grid2D_CellBoxDefaultTypeInternal() {}
-  union {
-    Grid2D_CellBox _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Grid2D_CellBoxDefaultTypeInternal _Grid2D_CellBox_default_instance_;
-PROTOBUF_CONSTEXPR Grid2D::Grid2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.cells_)*/{}
-  , /*decltype(_impl_._cells_cached_byte_size_)*/{0}
-  , /*decltype(_impl_.limits_)*/nullptr
-  , /*decltype(_impl_.known_cells_box_)*/nullptr
-  , /*decltype(_impl_.min_correspondence_cost_)*/0
-  , /*decltype(_impl_.max_correspondence_cost_)*/0
-  , /*decltype(_impl_.grid_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_._oneof_case_)*/{}} {}
-struct Grid2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Grid2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Grid2DDefaultTypeInternal() {}
-  union {
-    Grid2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Grid2DDefaultTypeInternal _Grid2D_default_instance_;
+class Grid2D_CellBoxDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Grid2D_CellBox> _instance;
+} _Grid2D_CellBox_default_instance_;
+class Grid2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Grid2D> _instance;
+  const ::cartographer::mapping::proto::ProbabilityGrid* probability_grid_2d_;
+  const ::cartographer::mapping::proto::TSDF2D* tsdf_2d_;
+} _Grid2D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto[2];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = nullptr;
+static void InitDefaultsscc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_Grid2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Grid2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Grid2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto}, {
+      &scc_info_MapLimits_cartographer_2fmapping_2fproto_2fmap_5flimits_2eproto.base,
+      &scc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base,
+      &scc_info_ProbabilityGrid_cartographer_2fmapping_2fproto_2fprobability_5fgrid_2eproto.base,
+      &scc_info_TSDF2D_cartographer_2fmapping_2fproto_2ftsdf_5f2d_2eproto.base,}};
+
+static void InitDefaultsscc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_Grid2D_CellBox_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Grid2D_CellBox();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Grid2D_CellBox::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, _impl_.max_x_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, _impl_.max_y_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, _impl_.min_x_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, _impl_.min_y_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, max_x_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, max_y_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, min_x_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D_CellBox, min_y_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_._oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.limits_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.cells_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.known_cells_box_),
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.min_correspondence_cost_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.max_correspondence_cost_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, _impl_.grid_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, limits_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, cells_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, known_cells_box_),
+  offsetof(::cartographer::mapping::proto::Grid2DDefaultTypeInternal, probability_grid_2d_),
+  offsetof(::cartographer::mapping::proto::Grid2DDefaultTypeInternal, tsdf_2d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, min_correspondence_cost_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, max_correspondence_cost_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Grid2D, grid_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::Grid2D_CellBox)},
-  { 10, -1, -1, sizeof(::cartographer::mapping::proto::Grid2D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::Grid2D_CellBox)},
+  { 9, -1, sizeof(::cartographer::mapping::proto::Grid2D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_Grid2D_CellBox_default_instance_._instance,
-  &::cartographer::mapping::proto::_Grid2D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Grid2D_CellBox_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Grid2D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -121,194 +123,185 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fgrid_5f2d_
   "min_x\030\003 \001(\005\022\r\n\005min_y\030\004 \001(\005B\006\n\004gridb\006prot"
   "o3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_deps[3] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_deps[3] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fmap_5flimits_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fprobability_5fgrid_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5f2d_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = {
-    false, false, 642, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto,
-    "cartographer/mapping/proto/grid_2d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_deps, 3, 2,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_sccs[2] = {
+  &scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base,
+  &scc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto, "cartographer/mapping/proto/grid_2d.proto", 642,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_deps, 2, 3,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto, 2, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void Grid2D_CellBox::InitAsDefaultInstance() {
+}
 class Grid2D_CellBox::_Internal {
  public:
 };
 
-Grid2D_CellBox::Grid2D_CellBox(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Grid2D_CellBox::Grid2D_CellBox(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Grid2D.CellBox)
 }
 Grid2D_CellBox::Grid2D_CellBox(const Grid2D_CellBox& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Grid2D_CellBox* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_x_){}
-    , decltype(_impl_.max_y_){}
-    , decltype(_impl_.min_x_){}
-    , decltype(_impl_.min_y_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.max_x_, &from._impl_.max_x_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.min_y_) -
-    reinterpret_cast<char*>(&_impl_.max_x_)) + sizeof(_impl_.min_y_));
+  ::memcpy(&max_x_, &from.max_x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&min_y_) -
+    reinterpret_cast<char*>(&max_x_)) + sizeof(min_y_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Grid2D.CellBox)
 }
 
-inline void Grid2D_CellBox::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_x_){0}
-    , decltype(_impl_.max_y_){0}
-    , decltype(_impl_.min_x_){0}
-    , decltype(_impl_.min_y_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void Grid2D_CellBox::SharedCtor() {
+  ::memset(&max_x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&min_y_) -
+      reinterpret_cast<char*>(&max_x_)) + sizeof(min_y_));
 }
 
 Grid2D_CellBox::~Grid2D_CellBox() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Grid2D.CellBox)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Grid2D_CellBox::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void Grid2D_CellBox::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void Grid2D_CellBox::ArenaDtor(void* object) {
+  Grid2D_CellBox* _this = reinterpret_cast< Grid2D_CellBox* >(object);
+  (void)_this;
+}
+void Grid2D_CellBox::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Grid2D_CellBox::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const Grid2D_CellBox& Grid2D_CellBox::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Grid2D_CellBox_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Grid2D_CellBox::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Grid2D.CellBox)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.max_x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.min_y_) -
-      reinterpret_cast<char*>(&_impl_.max_x_)) + sizeof(_impl_.min_y_));
+  ::memset(&max_x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&min_y_) -
+      reinterpret_cast<char*>(&max_x_)) + sizeof(min_y_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Grid2D_CellBox::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Grid2D_CellBox::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 max_x = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.max_x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          max_x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 max_y = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.max_y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          max_y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 min_x = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.min_x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          min_x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 min_y = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
-          _impl_.min_y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          min_y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Grid2D_CellBox::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Grid2D_CellBox::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Grid2D.CellBox)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 max_x = 1;
-  if (this->_internal_max_x() != 0) {
+  if (this->max_x() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_max_x(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_max_x(), target);
   }
 
   // int32 max_y = 2;
-  if (this->_internal_max_y() != 0) {
+  if (this->max_y() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_max_y(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_max_y(), target);
   }
 
   // int32 min_x = 3;
-  if (this->_internal_min_x() != 0) {
+  if (this->min_x() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(3, this->_internal_min_x(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_min_x(), target);
   }
 
   // int32 min_y = 4;
-  if (this->_internal_min_y() != 0) {
+  if (this->min_y() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(4, this->_internal_min_y(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_min_y(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Grid2D.CellBox)
@@ -319,61 +312,88 @@ size_t Grid2D_CellBox::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Grid2D.CellBox)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 max_x = 1;
-  if (this->_internal_max_x() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_max_x());
+  if (this->max_x() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_max_x());
   }
 
   // int32 max_y = 2;
-  if (this->_internal_max_y() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_max_y());
+  if (this->max_y() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_max_y());
   }
 
   // int32 min_x = 3;
-  if (this->_internal_min_x() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_min_x());
+  if (this->min_x() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_min_x());
   }
 
   // int32 min_y = 4;
-  if (this->_internal_min_y() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_min_y());
+  if (this->min_y() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_min_y());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Grid2D_CellBox::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Grid2D_CellBox::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Grid2D_CellBox::GetClassData() const { return &_class_data_; }
+void Grid2D_CellBox::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Grid2D.CellBox)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Grid2D_CellBox* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Grid2D_CellBox>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Grid2D.CellBox)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Grid2D.CellBox)
+    MergeFrom(*source);
+  }
+}
 
-
-void Grid2D_CellBox::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Grid2D_CellBox*>(&to_msg);
-  auto& from = static_cast<const Grid2D_CellBox&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Grid2D.CellBox)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Grid2D_CellBox::MergeFrom(const Grid2D_CellBox& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Grid2D.CellBox)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_max_x() != 0) {
-    _this->_internal_set_max_x(from._internal_max_x());
+  if (from.max_x() != 0) {
+    _internal_set_max_x(from._internal_max_x());
   }
-  if (from._internal_max_y() != 0) {
-    _this->_internal_set_max_y(from._internal_max_y());
+  if (from.max_y() != 0) {
+    _internal_set_max_y(from._internal_max_y());
   }
-  if (from._internal_min_x() != 0) {
-    _this->_internal_set_min_x(from._internal_min_x());
+  if (from.min_x() != 0) {
+    _internal_set_min_x(from._internal_min_x());
   }
-  if (from._internal_min_y() != 0) {
-    _this->_internal_set_min_y(from._internal_min_y());
+  if (from.min_y() != 0) {
+    _internal_set_min_y(from._internal_min_y());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Grid2D_CellBox::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Grid2D.CellBox)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Grid2D_CellBox::CopyFrom(const Grid2D_CellBox& from) {
@@ -389,23 +409,32 @@ bool Grid2D_CellBox::IsInitialized() const {
 
 void Grid2D_CellBox::InternalSwap(Grid2D_CellBox* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Grid2D_CellBox, _impl_.min_y_)
-      + sizeof(Grid2D_CellBox::_impl_.min_y_)
-      - PROTOBUF_FIELD_OFFSET(Grid2D_CellBox, _impl_.max_x_)>(
-          reinterpret_cast<char*>(&_impl_.max_x_),
-          reinterpret_cast<char*>(&other->_impl_.max_x_));
+      PROTOBUF_FIELD_OFFSET(Grid2D_CellBox, min_y_)
+      + sizeof(Grid2D_CellBox::min_y_)
+      - PROTOBUF_FIELD_OFFSET(Grid2D_CellBox, max_x_)>(
+          reinterpret_cast<char*>(&max_x_),
+          reinterpret_cast<char*>(&other->max_x_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Grid2D_CellBox::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void Grid2D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_Grid2D_default_instance_._instance.get_mutable()->limits_ = const_cast< ::cartographer::mapping::proto::MapLimits*>(
+      ::cartographer::mapping::proto::MapLimits::internal_default_instance());
+  ::cartographer::mapping::proto::_Grid2D_default_instance_._instance.get_mutable()->known_cells_box_ = const_cast< ::cartographer::mapping::proto::Grid2D_CellBox*>(
+      ::cartographer::mapping::proto::Grid2D_CellBox::internal_default_instance());
+  ::cartographer::mapping::proto::_Grid2D_default_instance_.probability_grid_2d_ = const_cast< ::cartographer::mapping::proto::ProbabilityGrid*>(
+      ::cartographer::mapping::proto::ProbabilityGrid::internal_default_instance());
+  ::cartographer::mapping::proto::_Grid2D_default_instance_.tsdf_2d_ = const_cast< ::cartographer::mapping::proto::TSDF2D*>(
+      ::cartographer::mapping::proto::TSDF2D::internal_default_instance());
+}
 class Grid2D::_Internal {
  public:
   static const ::cartographer::mapping::proto::MapLimits& limits(const Grid2D* msg);
@@ -416,114 +445,104 @@ class Grid2D::_Internal {
 
 const ::cartographer::mapping::proto::MapLimits&
 Grid2D::_Internal::limits(const Grid2D* msg) {
-  return *msg->_impl_.limits_;
+  return *msg->limits_;
 }
 const ::cartographer::mapping::proto::Grid2D_CellBox&
 Grid2D::_Internal::known_cells_box(const Grid2D* msg) {
-  return *msg->_impl_.known_cells_box_;
+  return *msg->known_cells_box_;
 }
 const ::cartographer::mapping::proto::ProbabilityGrid&
 Grid2D::_Internal::probability_grid_2d(const Grid2D* msg) {
-  return *msg->_impl_.grid_.probability_grid_2d_;
+  return *msg->grid_.probability_grid_2d_;
 }
 const ::cartographer::mapping::proto::TSDF2D&
 Grid2D::_Internal::tsdf_2d(const Grid2D* msg) {
-  return *msg->_impl_.grid_.tsdf_2d_;
+  return *msg->grid_.tsdf_2d_;
 }
 void Grid2D::clear_limits() {
-  if (GetArenaForAllocation() == nullptr && _impl_.limits_ != nullptr) {
-    delete _impl_.limits_;
+  if (GetArena() == nullptr && limits_ != nullptr) {
+    delete limits_;
   }
-  _impl_.limits_ = nullptr;
+  limits_ = nullptr;
 }
 void Grid2D::set_allocated_probability_grid_2d(::cartographer::mapping::proto::ProbabilityGrid* probability_grid_2d) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_grid();
   if (probability_grid_2d) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
-                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(probability_grid_2d));
+      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(probability_grid_2d)->GetArena();
     if (message_arena != submessage_arena) {
       probability_grid_2d = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, probability_grid_2d, submessage_arena);
     }
     set_has_probability_grid_2d();
-    _impl_.grid_.probability_grid_2d_ = probability_grid_2d;
+    grid_.probability_grid_2d_ = probability_grid_2d;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.Grid2D.probability_grid_2d)
 }
 void Grid2D::clear_probability_grid_2d() {
   if (_internal_has_probability_grid_2d()) {
-    if (GetArenaForAllocation() == nullptr) {
-      delete _impl_.grid_.probability_grid_2d_;
+    if (GetArena() == nullptr) {
+      delete grid_.probability_grid_2d_;
     }
     clear_has_grid();
   }
 }
 void Grid2D::set_allocated_tsdf_2d(::cartographer::mapping::proto::TSDF2D* tsdf_2d) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_grid();
   if (tsdf_2d) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
-                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(tsdf_2d));
+      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(tsdf_2d)->GetArena();
     if (message_arena != submessage_arena) {
       tsdf_2d = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, tsdf_2d, submessage_arena);
     }
     set_has_tsdf_2d();
-    _impl_.grid_.tsdf_2d_ = tsdf_2d;
+    grid_.tsdf_2d_ = tsdf_2d;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.Grid2D.tsdf_2d)
 }
 void Grid2D::clear_tsdf_2d() {
   if (_internal_has_tsdf_2d()) {
-    if (GetArenaForAllocation() == nullptr) {
-      delete _impl_.grid_.tsdf_2d_;
+    if (GetArena() == nullptr) {
+      delete grid_.tsdf_2d_;
     }
     clear_has_grid();
   }
 }
-Grid2D::Grid2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Grid2D::Grid2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  cells_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Grid2D)
 }
 Grid2D::Grid2D(const Grid2D& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Grid2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.cells_){from._impl_.cells_}
-    , /*decltype(_impl_._cells_cached_byte_size_)*/{0}
-    , decltype(_impl_.limits_){nullptr}
-    , decltype(_impl_.known_cells_box_){nullptr}
-    , decltype(_impl_.min_correspondence_cost_){}
-    , decltype(_impl_.max_correspondence_cost_){}
-    , decltype(_impl_.grid_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , /*decltype(_impl_._oneof_case_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      cells_(from.cells_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_limits()) {
-    _this->_impl_.limits_ = new ::cartographer::mapping::proto::MapLimits(*from._impl_.limits_);
+    limits_ = new ::cartographer::mapping::proto::MapLimits(*from.limits_);
+  } else {
+    limits_ = nullptr;
   }
   if (from._internal_has_known_cells_box()) {
-    _this->_impl_.known_cells_box_ = new ::cartographer::mapping::proto::Grid2D_CellBox(*from._impl_.known_cells_box_);
+    known_cells_box_ = new ::cartographer::mapping::proto::Grid2D_CellBox(*from.known_cells_box_);
+  } else {
+    known_cells_box_ = nullptr;
   }
-  ::memcpy(&_impl_.min_correspondence_cost_, &from._impl_.min_correspondence_cost_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.max_correspondence_cost_) -
-    reinterpret_cast<char*>(&_impl_.min_correspondence_cost_)) + sizeof(_impl_.max_correspondence_cost_));
+  ::memcpy(&min_correspondence_cost_, &from.min_correspondence_cost_,
+    static_cast<size_t>(reinterpret_cast<char*>(&max_correspondence_cost_) -
+    reinterpret_cast<char*>(&min_correspondence_cost_)) + sizeof(max_correspondence_cost_));
   clear_has_grid();
   switch (from.grid_case()) {
     case kProbabilityGrid2D: {
-      _this->_internal_mutable_probability_grid_2d()->::cartographer::mapping::proto::ProbabilityGrid::MergeFrom(
-          from._internal_probability_grid_2d());
+      _internal_mutable_probability_grid_2d()->::cartographer::mapping::proto::ProbabilityGrid::MergeFrom(from._internal_probability_grid_2d());
       break;
     }
     case kTsdf2D: {
-      _this->_internal_mutable_tsdf_2d()->::cartographer::mapping::proto::TSDF2D::MergeFrom(
-          from._internal_tsdf_2d());
+      _internal_mutable_tsdf_2d()->::cartographer::mapping::proto::TSDF2D::MergeFrom(from._internal_tsdf_2d());
       break;
     }
     case GRID_NOT_SET: {
@@ -533,59 +552,56 @@ Grid2D::Grid2D(const Grid2D& from)
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Grid2D)
 }
 
-inline void Grid2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.cells_){arena}
-    , /*decltype(_impl_._cells_cached_byte_size_)*/{0}
-    , decltype(_impl_.limits_){nullptr}
-    , decltype(_impl_.known_cells_box_){nullptr}
-    , decltype(_impl_.min_correspondence_cost_){0}
-    , decltype(_impl_.max_correspondence_cost_){0}
-    , decltype(_impl_.grid_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , /*decltype(_impl_._oneof_case_)*/{}
-  };
+void Grid2D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base);
+  ::memset(&limits_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_correspondence_cost_) -
+      reinterpret_cast<char*>(&limits_)) + sizeof(max_correspondence_cost_));
   clear_has_grid();
 }
 
 Grid2D::~Grid2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Grid2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Grid2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.cells_.~RepeatedField();
-  if (this != internal_default_instance()) delete _impl_.limits_;
-  if (this != internal_default_instance()) delete _impl_.known_cells_box_;
+void Grid2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete limits_;
+  if (this != internal_default_instance()) delete known_cells_box_;
   if (has_grid()) {
     clear_grid();
   }
 }
 
-void Grid2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+void Grid2D::ArenaDtor(void* object) {
+  Grid2D* _this = reinterpret_cast< Grid2D* >(object);
+  (void)_this;
 }
+void Grid2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Grid2D::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Grid2D& Grid2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Grid2D::clear_grid() {
 // @@protoc_insertion_point(one_of_clear_start:cartographer.mapping.proto.Grid2D)
   switch (grid_case()) {
     case kProbabilityGrid2D: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.grid_.probability_grid_2d_;
+      if (GetArena() == nullptr) {
+        delete grid_.probability_grid_2d_;
       }
       break;
     }
     case kTsdf2D: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.grid_.tsdf_2d_;
+      if (GetArena() == nullptr) {
+        delete grid_.tsdf_2d_;
       }
       break;
     }
@@ -593,136 +609,131 @@ void Grid2D::clear_grid() {
       break;
     }
   }
-  _impl_._oneof_case_[0] = GRID_NOT_SET;
+  _oneof_case_[0] = GRID_NOT_SET;
 }
 
 
 void Grid2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Grid2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.cells_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.limits_ != nullptr) {
-    delete _impl_.limits_;
+  cells_.Clear();
+  if (GetArena() == nullptr && limits_ != nullptr) {
+    delete limits_;
   }
-  _impl_.limits_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.known_cells_box_ != nullptr) {
-    delete _impl_.known_cells_box_;
+  limits_ = nullptr;
+  if (GetArena() == nullptr && known_cells_box_ != nullptr) {
+    delete known_cells_box_;
   }
-  _impl_.known_cells_box_ = nullptr;
-  ::memset(&_impl_.min_correspondence_cost_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.max_correspondence_cost_) -
-      reinterpret_cast<char*>(&_impl_.min_correspondence_cost_)) + sizeof(_impl_.max_correspondence_cost_));
+  known_cells_box_ = nullptr;
+  ::memset(&min_correspondence_cost_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_correspondence_cost_) -
+      reinterpret_cast<char*>(&min_correspondence_cost_)) + sizeof(max_correspondence_cost_));
   clear_grid();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Grid2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Grid2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.MapLimits limits = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_limits(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated int32 cells = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cells(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 16) {
-          _internal_add_cells(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_cells(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Grid2D.CellBox known_cells_box = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_known_cells_box(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.ProbabilityGrid probability_grid_2d = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_probability_grid_2d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TSDF2D tsdf_2d = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_tsdf_2d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // float min_correspondence_cost = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 53)) {
-          _impl_.min_correspondence_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53)) {
+          min_correspondence_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // float max_correspondence_cost = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 61)) {
-          _impl_.max_correspondence_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 61)) {
+          max_correspondence_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Grid2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Grid2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Grid2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.MapLimits limits = 1;
-  if (this->_internal_has_limits()) {
+  if (this->has_limits()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::limits(this),
-        _Internal::limits(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::limits(this), target, stream);
   }
 
   // repeated int32 cells = 2;
   {
-    int byte_size = _impl_._cells_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _cells_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           2, _internal_cells(), byte_size, target);
@@ -730,48 +741,43 @@ uint8_t* Grid2D::_InternalSerialize(
   }
 
   // .cartographer.mapping.proto.Grid2D.CellBox known_cells_box = 3;
-  if (this->_internal_has_known_cells_box()) {
+  if (this->has_known_cells_box()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::known_cells_box(this),
-        _Internal::known_cells_box(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::known_cells_box(this), target, stream);
   }
 
   // .cartographer.mapping.proto.ProbabilityGrid probability_grid_2d = 4;
   if (_internal_has_probability_grid_2d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::probability_grid_2d(this),
-        _Internal::probability_grid_2d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::probability_grid_2d(this), target, stream);
   }
 
   // .cartographer.mapping.proto.TSDF2D tsdf_2d = 5;
   if (_internal_has_tsdf_2d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::tsdf_2d(this),
-        _Internal::tsdf_2d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        5, _Internal::tsdf_2d(this), target, stream);
   }
 
   // float min_correspondence_cost = 6;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_correspondence_cost = this->_internal_min_correspondence_cost();
-  uint32_t raw_min_correspondence_cost;
-  memcpy(&raw_min_correspondence_cost, &tmp_min_correspondence_cost, sizeof(tmp_min_correspondence_cost));
-  if (raw_min_correspondence_cost != 0) {
+  if (!(this->min_correspondence_cost() <= 0 && this->min_correspondence_cost() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(6, this->_internal_min_correspondence_cost(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_min_correspondence_cost(), target);
   }
 
   // float max_correspondence_cost = 7;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_correspondence_cost = this->_internal_max_correspondence_cost();
-  uint32_t raw_max_correspondence_cost;
-  memcpy(&raw_max_correspondence_cost, &tmp_max_correspondence_cost, sizeof(tmp_max_correspondence_cost));
-  if (raw_max_correspondence_cost != 0) {
+  if (!(this->max_correspondence_cost() <= 0 && this->max_correspondence_cost() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(7, this->_internal_max_correspondence_cost(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_max_correspondence_cost(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Grid2D)
@@ -782,53 +788,46 @@ size_t Grid2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Grid2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated int32 cells = 2;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      Int32Size(this->_impl_.cells_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->cells_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._cells_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _cells_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // .cartographer.mapping.proto.MapLimits limits = 1;
-  if (this->_internal_has_limits()) {
+  if (this->has_limits()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.limits_);
+        *limits_);
   }
 
   // .cartographer.mapping.proto.Grid2D.CellBox known_cells_box = 3;
-  if (this->_internal_has_known_cells_box()) {
+  if (this->has_known_cells_box()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.known_cells_box_);
+        *known_cells_box_);
   }
 
   // float min_correspondence_cost = 6;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_correspondence_cost = this->_internal_min_correspondence_cost();
-  uint32_t raw_min_correspondence_cost;
-  memcpy(&raw_min_correspondence_cost, &tmp_min_correspondence_cost, sizeof(tmp_min_correspondence_cost));
-  if (raw_min_correspondence_cost != 0) {
+  if (!(this->min_correspondence_cost() <= 0 && this->min_correspondence_cost() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float max_correspondence_cost = 7;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_correspondence_cost = this->_internal_max_correspondence_cost();
-  uint32_t raw_max_correspondence_cost;
-  memcpy(&raw_max_correspondence_cost, &tmp_max_correspondence_cost, sizeof(tmp_max_correspondence_cost));
-  if (raw_max_correspondence_cost != 0) {
+  if (!(this->max_correspondence_cost() <= 0 && this->max_correspondence_cost() >= 0)) {
     total_size += 1 + 4;
   }
 
@@ -837,77 +836,84 @@ size_t Grid2D::ByteSizeLong() const {
     case kProbabilityGrid2D: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.grid_.probability_grid_2d_);
+          *grid_.probability_grid_2d_);
       break;
     }
     // .cartographer.mapping.proto.TSDF2D tsdf_2d = 5;
     case kTsdf2D: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.grid_.tsdf_2d_);
+          *grid_.tsdf_2d_);
       break;
     }
     case GRID_NOT_SET: {
       break;
     }
   }
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Grid2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Grid2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Grid2D::GetClassData() const { return &_class_data_; }
+void Grid2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Grid2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Grid2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Grid2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Grid2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Grid2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void Grid2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Grid2D*>(&to_msg);
-  auto& from = static_cast<const Grid2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Grid2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Grid2D::MergeFrom(const Grid2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Grid2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.cells_.MergeFrom(from._impl_.cells_);
-  if (from._internal_has_limits()) {
-    _this->_internal_mutable_limits()->::cartographer::mapping::proto::MapLimits::MergeFrom(
-        from._internal_limits());
+  cells_.MergeFrom(from.cells_);
+  if (from.has_limits()) {
+    _internal_mutable_limits()->::cartographer::mapping::proto::MapLimits::MergeFrom(from._internal_limits());
   }
-  if (from._internal_has_known_cells_box()) {
-    _this->_internal_mutable_known_cells_box()->::cartographer::mapping::proto::Grid2D_CellBox::MergeFrom(
-        from._internal_known_cells_box());
+  if (from.has_known_cells_box()) {
+    _internal_mutable_known_cells_box()->::cartographer::mapping::proto::Grid2D_CellBox::MergeFrom(from._internal_known_cells_box());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_correspondence_cost = from._internal_min_correspondence_cost();
-  uint32_t raw_min_correspondence_cost;
-  memcpy(&raw_min_correspondence_cost, &tmp_min_correspondence_cost, sizeof(tmp_min_correspondence_cost));
-  if (raw_min_correspondence_cost != 0) {
-    _this->_internal_set_min_correspondence_cost(from._internal_min_correspondence_cost());
+  if (!(from.min_correspondence_cost() <= 0 && from.min_correspondence_cost() >= 0)) {
+    _internal_set_min_correspondence_cost(from._internal_min_correspondence_cost());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_correspondence_cost = from._internal_max_correspondence_cost();
-  uint32_t raw_max_correspondence_cost;
-  memcpy(&raw_max_correspondence_cost, &tmp_max_correspondence_cost, sizeof(tmp_max_correspondence_cost));
-  if (raw_max_correspondence_cost != 0) {
-    _this->_internal_set_max_correspondence_cost(from._internal_max_correspondence_cost());
+  if (!(from.max_correspondence_cost() <= 0 && from.max_correspondence_cost() >= 0)) {
+    _internal_set_max_correspondence_cost(from._internal_max_correspondence_cost());
   }
   switch (from.grid_case()) {
     case kProbabilityGrid2D: {
-      _this->_internal_mutable_probability_grid_2d()->::cartographer::mapping::proto::ProbabilityGrid::MergeFrom(
-          from._internal_probability_grid_2d());
+      _internal_mutable_probability_grid_2d()->::cartographer::mapping::proto::ProbabilityGrid::MergeFrom(from._internal_probability_grid_2d());
       break;
     }
     case kTsdf2D: {
-      _this->_internal_mutable_tsdf_2d()->::cartographer::mapping::proto::TSDF2D::MergeFrom(
-          from._internal_tsdf_2d());
+      _internal_mutable_tsdf_2d()->::cartographer::mapping::proto::TSDF2D::MergeFrom(from._internal_tsdf_2d());
       break;
     }
     case GRID_NOT_SET: {
       break;
     }
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Grid2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Grid2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Grid2D::CopyFrom(const Grid2D& from) {
@@ -923,35 +929,32 @@ bool Grid2D::IsInitialized() const {
 
 void Grid2D::InternalSwap(Grid2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.cells_.InternalSwap(&other->_impl_.cells_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  cells_.InternalSwap(&other->cells_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Grid2D, _impl_.max_correspondence_cost_)
-      + sizeof(Grid2D::_impl_.max_correspondence_cost_)
-      - PROTOBUF_FIELD_OFFSET(Grid2D, _impl_.limits_)>(
-          reinterpret_cast<char*>(&_impl_.limits_),
-          reinterpret_cast<char*>(&other->_impl_.limits_));
-  swap(_impl_.grid_, other->_impl_.grid_);
-  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+      PROTOBUF_FIELD_OFFSET(Grid2D, max_correspondence_cost_)
+      + sizeof(Grid2D::max_correspondence_cost_)
+      - PROTOBUF_FIELD_OFFSET(Grid2D, limits_)>(
+          reinterpret_cast<char*>(&limits_),
+          reinterpret_cast<char*>(&other->limits_));
+  swap(grid_, other->grid_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Grid2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Grid2D_CellBox*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Grid2D_CellBox >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Grid2D_CellBox* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Grid2D_CellBox >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Grid2D_CellBox >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Grid2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Grid2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Grid2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Grid2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Grid2D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

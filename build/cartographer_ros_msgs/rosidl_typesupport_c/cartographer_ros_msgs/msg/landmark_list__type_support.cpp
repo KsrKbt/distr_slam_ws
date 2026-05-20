@@ -6,7 +6,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "cartographer_ros_msgs/msg/detail/landmark_list__struct.h"
 #include "cartographer_ros_msgs/msg/detail/landmark_list__type_support.h"
-#include "cartographer_ros_msgs/msg/detail/landmark_list__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t LandmarkList_message_type_support_han
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_LandmarkList_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &cartographer_ros_msgs__msg__LandmarkList__get_type_hash,
-  &cartographer_ros_msgs__msg__LandmarkList__get_type_description,
-  &cartographer_ros_msgs__msg__LandmarkList__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c

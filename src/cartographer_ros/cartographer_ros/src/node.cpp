@@ -955,7 +955,7 @@ void Node::HandleExportStateToRedis(
   // RAMディスク上のファイルパス (完全にメモリ上での処理)
   const std::string ram_file = "/dev/shm/export_state.pbstream";
   // ブリッジの標準関数に直接ファイルパスとフラグ(未完成を除外=false)を渡す
-  bool write_success = map_builder_bridge_->SerializeState(ram_file, false);
+  bool write_success = map_builder_bridge_->SerializeState(ram_file, true);
   if (!write_success) {
     response->success = false;
     response->message = "Failed to serialize state to RAM disk.";

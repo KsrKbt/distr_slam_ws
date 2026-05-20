@@ -14,64 +14,57 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR TSDFRangeDataInserterOptions2D::TSDFRangeDataInserterOptions2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.normal_estimation_options_)*/nullptr
-  , /*decltype(_impl_.truncation_distance_)*/0
-  , /*decltype(_impl_.maximum_weight_)*/0
-  , /*decltype(_impl_.update_free_space_)*/false
-  , /*decltype(_impl_.project_sdf_distance_to_scan_normal_)*/false
-  , /*decltype(_impl_.update_weight_range_exponent_)*/0
-  , /*decltype(_impl_.update_weight_angle_scan_normal_to_ray_kernel_bandwidth_)*/0
-  , /*decltype(_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TSDFRangeDataInserterOptions2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TSDFRangeDataInserterOptions2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TSDFRangeDataInserterOptions2DDefaultTypeInternal() {}
-  union {
-    TSDFRangeDataInserterOptions2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TSDFRangeDataInserterOptions2DDefaultTypeInternal _TSDFRangeDataInserterOptions2D_default_instance_;
+class TSDFRangeDataInserterOptions2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TSDFRangeDataInserterOptions2D> _instance;
+} _TSDFRangeDataInserterOptions2D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = nullptr;
+static void InitDefaultsscc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_TSDFRangeDataInserterOptions2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto}, {
+      &scc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.truncation_distance_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.maximum_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.update_free_space_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.normal_estimation_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.project_sdf_distance_to_scan_normal_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.update_weight_range_exponent_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.update_weight_angle_scan_normal_to_ray_kernel_bandwidth_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, _impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, truncation_distance_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, maximum_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, update_free_space_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, normal_estimation_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, project_sdf_distance_to_scan_normal_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, update_weight_range_exponent_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, update_weight_angle_scan_normal_to_ray_kernel_bandwidth_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D, update_weight_distance_cell_to_hit_kernel_bandwidth_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_TSDFRangeDataInserterOptions2D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_TSDFRangeDataInserterOptions2D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -91,30 +84,32 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftsdf_5fran
   "date_weight_distance_cell_to_hit_kernel_"
   "bandwidth\030\010 \001(\001b\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_deps[1] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_deps[1] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = {
-    false, false, 583, descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
-    "cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_deps, 1, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_sccs[1] = {
+  &scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto, "cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.proto", 583,
+  &descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_deps, 1, 1,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void TSDFRangeDataInserterOptions2D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_TSDFRangeDataInserterOptions2D_default_instance_._instance.get_mutable()->normal_estimation_options_ = const_cast< ::cartographer::mapping::proto::NormalEstimationOptions2D*>(
+      ::cartographer::mapping::proto::NormalEstimationOptions2D::internal_default_instance());
+}
 class TSDFRangeDataInserterOptions2D::_Internal {
  public:
   static const ::cartographer::mapping::proto::NormalEstimationOptions2D& normal_estimation_options(const TSDFRangeDataInserterOptions2D* msg);
@@ -122,261 +117,227 @@ class TSDFRangeDataInserterOptions2D::_Internal {
 
 const ::cartographer::mapping::proto::NormalEstimationOptions2D&
 TSDFRangeDataInserterOptions2D::_Internal::normal_estimation_options(const TSDFRangeDataInserterOptions2D* msg) {
-  return *msg->_impl_.normal_estimation_options_;
+  return *msg->normal_estimation_options_;
 }
 void TSDFRangeDataInserterOptions2D::clear_normal_estimation_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.normal_estimation_options_ != nullptr) {
-    delete _impl_.normal_estimation_options_;
+  if (GetArena() == nullptr && normal_estimation_options_ != nullptr) {
+    delete normal_estimation_options_;
   }
-  _impl_.normal_estimation_options_ = nullptr;
+  normal_estimation_options_ = nullptr;
 }
-TSDFRangeDataInserterOptions2D::TSDFRangeDataInserterOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TSDFRangeDataInserterOptions2D::TSDFRangeDataInserterOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
 }
 TSDFRangeDataInserterOptions2D::TSDFRangeDataInserterOptions2D(const TSDFRangeDataInserterOptions2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TSDFRangeDataInserterOptions2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.normal_estimation_options_){nullptr}
-    , decltype(_impl_.truncation_distance_){}
-    , decltype(_impl_.maximum_weight_){}
-    , decltype(_impl_.update_free_space_){}
-    , decltype(_impl_.project_sdf_distance_to_scan_normal_){}
-    , decltype(_impl_.update_weight_range_exponent_){}
-    , decltype(_impl_.update_weight_angle_scan_normal_to_ray_kernel_bandwidth_){}
-    , decltype(_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_normal_estimation_options()) {
-    _this->_impl_.normal_estimation_options_ = new ::cartographer::mapping::proto::NormalEstimationOptions2D(*from._impl_.normal_estimation_options_);
+    normal_estimation_options_ = new ::cartographer::mapping::proto::NormalEstimationOptions2D(*from.normal_estimation_options_);
+  } else {
+    normal_estimation_options_ = nullptr;
   }
-  ::memcpy(&_impl_.truncation_distance_, &from._impl_.truncation_distance_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_) -
-    reinterpret_cast<char*>(&_impl_.truncation_distance_)) + sizeof(_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_));
+  ::memcpy(&truncation_distance_, &from.truncation_distance_,
+    static_cast<size_t>(reinterpret_cast<char*>(&update_weight_distance_cell_to_hit_kernel_bandwidth_) -
+    reinterpret_cast<char*>(&truncation_distance_)) + sizeof(update_weight_distance_cell_to_hit_kernel_bandwidth_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
 }
 
-inline void TSDFRangeDataInserterOptions2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.normal_estimation_options_){nullptr}
-    , decltype(_impl_.truncation_distance_){0}
-    , decltype(_impl_.maximum_weight_){0}
-    , decltype(_impl_.update_free_space_){false}
-    , decltype(_impl_.project_sdf_distance_to_scan_normal_){false}
-    , decltype(_impl_.update_weight_range_exponent_){0}
-    , decltype(_impl_.update_weight_angle_scan_normal_to_ray_kernel_bandwidth_){0}
-    , decltype(_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TSDFRangeDataInserterOptions2D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto.base);
+  ::memset(&normal_estimation_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&update_weight_distance_cell_to_hit_kernel_bandwidth_) -
+      reinterpret_cast<char*>(&normal_estimation_options_)) + sizeof(update_weight_distance_cell_to_hit_kernel_bandwidth_));
 }
 
 TSDFRangeDataInserterOptions2D::~TSDFRangeDataInserterOptions2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TSDFRangeDataInserterOptions2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.normal_estimation_options_;
+void TSDFRangeDataInserterOptions2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete normal_estimation_options_;
 }
 
+void TSDFRangeDataInserterOptions2D::ArenaDtor(void* object) {
+  TSDFRangeDataInserterOptions2D* _this = reinterpret_cast< TSDFRangeDataInserterOptions2D* >(object);
+  (void)_this;
+}
+void TSDFRangeDataInserterOptions2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TSDFRangeDataInserterOptions2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TSDFRangeDataInserterOptions2D& TSDFRangeDataInserterOptions2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TSDFRangeDataInserterOptions2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.normal_estimation_options_ != nullptr) {
-    delete _impl_.normal_estimation_options_;
+  if (GetArena() == nullptr && normal_estimation_options_ != nullptr) {
+    delete normal_estimation_options_;
   }
-  _impl_.normal_estimation_options_ = nullptr;
-  ::memset(&_impl_.truncation_distance_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_) -
-      reinterpret_cast<char*>(&_impl_.truncation_distance_)) + sizeof(_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_));
+  normal_estimation_options_ = nullptr;
+  ::memset(&truncation_distance_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&update_weight_distance_cell_to_hit_kernel_bandwidth_) -
+      reinterpret_cast<char*>(&truncation_distance_)) + sizeof(update_weight_distance_cell_to_hit_kernel_bandwidth_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TSDFRangeDataInserterOptions2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TSDFRangeDataInserterOptions2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // double truncation_distance = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
-          _impl_.truncation_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          truncation_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double maximum_weight = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.maximum_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          maximum_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool update_free_space = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.update_free_space_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          update_free_space_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.NormalEstimationOptions2D normal_estimation_options = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_normal_estimation_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool project_sdf_distance_to_scan_normal = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
-          _impl_.project_sdf_distance_to_scan_normal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          project_sdf_distance_to_scan_normal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 update_weight_range_exponent = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
-          _impl_.update_weight_range_exponent_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          update_weight_range_exponent_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double update_weight_angle_scan_normal_to_ray_kernel_bandwidth = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
-          _impl_.update_weight_angle_scan_normal_to_ray_kernel_bandwidth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          update_weight_angle_scan_normal_to_ray_kernel_bandwidth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double update_weight_distance_cell_to_hit_kernel_bandwidth = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
-          _impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+          update_weight_distance_cell_to_hit_kernel_bandwidth_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TSDFRangeDataInserterOptions2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TSDFRangeDataInserterOptions2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double truncation_distance = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_truncation_distance = this->_internal_truncation_distance();
-  uint64_t raw_truncation_distance;
-  memcpy(&raw_truncation_distance, &tmp_truncation_distance, sizeof(tmp_truncation_distance));
-  if (raw_truncation_distance != 0) {
+  if (!(this->truncation_distance() <= 0 && this->truncation_distance() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_truncation_distance(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_truncation_distance(), target);
   }
 
   // double maximum_weight = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_maximum_weight = this->_internal_maximum_weight();
-  uint64_t raw_maximum_weight;
-  memcpy(&raw_maximum_weight, &tmp_maximum_weight, sizeof(tmp_maximum_weight));
-  if (raw_maximum_weight != 0) {
+  if (!(this->maximum_weight() <= 0 && this->maximum_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_maximum_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_maximum_weight(), target);
   }
 
   // bool update_free_space = 3;
-  if (this->_internal_update_free_space() != 0) {
+  if (this->update_free_space() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_update_free_space(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_update_free_space(), target);
   }
 
   // .cartographer.mapping.proto.NormalEstimationOptions2D normal_estimation_options = 4;
-  if (this->_internal_has_normal_estimation_options()) {
+  if (this->has_normal_estimation_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::normal_estimation_options(this),
-        _Internal::normal_estimation_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::normal_estimation_options(this), target, stream);
   }
 
   // bool project_sdf_distance_to_scan_normal = 5;
-  if (this->_internal_project_sdf_distance_to_scan_normal() != 0) {
+  if (this->project_sdf_distance_to_scan_normal() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(5, this->_internal_project_sdf_distance_to_scan_normal(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_project_sdf_distance_to_scan_normal(), target);
   }
 
   // int32 update_weight_range_exponent = 6;
-  if (this->_internal_update_weight_range_exponent() != 0) {
+  if (this->update_weight_range_exponent() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(6, this->_internal_update_weight_range_exponent(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_update_weight_range_exponent(), target);
   }
 
   // double update_weight_angle_scan_normal_to_ray_kernel_bandwidth = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth = this->_internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth();
-  uint64_t raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth;
-  memcpy(&raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, &tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, sizeof(tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth));
-  if (raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth != 0) {
+  if (!(this->update_weight_angle_scan_normal_to_ray_kernel_bandwidth() <= 0 && this->update_weight_angle_scan_normal_to_ray_kernel_bandwidth() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth(), target);
   }
 
   // double update_weight_distance_cell_to_hit_kernel_bandwidth = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_distance_cell_to_hit_kernel_bandwidth = this->_internal_update_weight_distance_cell_to_hit_kernel_bandwidth();
-  uint64_t raw_update_weight_distance_cell_to_hit_kernel_bandwidth;
-  memcpy(&raw_update_weight_distance_cell_to_hit_kernel_bandwidth, &tmp_update_weight_distance_cell_to_hit_kernel_bandwidth, sizeof(tmp_update_weight_distance_cell_to_hit_kernel_bandwidth));
-  if (raw_update_weight_distance_cell_to_hit_kernel_bandwidth != 0) {
+  if (!(this->update_weight_distance_cell_to_hit_kernel_bandwidth() <= 0 && this->update_weight_distance_cell_to_hit_kernel_bandwidth() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_update_weight_distance_cell_to_hit_kernel_bandwidth(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_update_weight_distance_cell_to_hit_kernel_bandwidth(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
@@ -387,128 +348,116 @@ size_t TSDFRangeDataInserterOptions2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.NormalEstimationOptions2D normal_estimation_options = 4;
-  if (this->_internal_has_normal_estimation_options()) {
+  if (this->has_normal_estimation_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.normal_estimation_options_);
+        *normal_estimation_options_);
   }
 
   // double truncation_distance = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_truncation_distance = this->_internal_truncation_distance();
-  uint64_t raw_truncation_distance;
-  memcpy(&raw_truncation_distance, &tmp_truncation_distance, sizeof(tmp_truncation_distance));
-  if (raw_truncation_distance != 0) {
+  if (!(this->truncation_distance() <= 0 && this->truncation_distance() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double maximum_weight = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_maximum_weight = this->_internal_maximum_weight();
-  uint64_t raw_maximum_weight;
-  memcpy(&raw_maximum_weight, &tmp_maximum_weight, sizeof(tmp_maximum_weight));
-  if (raw_maximum_weight != 0) {
+  if (!(this->maximum_weight() <= 0 && this->maximum_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // bool update_free_space = 3;
-  if (this->_internal_update_free_space() != 0) {
+  if (this->update_free_space() != 0) {
     total_size += 1 + 1;
   }
 
   // bool project_sdf_distance_to_scan_normal = 5;
-  if (this->_internal_project_sdf_distance_to_scan_normal() != 0) {
+  if (this->project_sdf_distance_to_scan_normal() != 0) {
     total_size += 1 + 1;
   }
 
   // int32 update_weight_range_exponent = 6;
-  if (this->_internal_update_weight_range_exponent() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_update_weight_range_exponent());
+  if (this->update_weight_range_exponent() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_update_weight_range_exponent());
   }
 
   // double update_weight_angle_scan_normal_to_ray_kernel_bandwidth = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth = this->_internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth();
-  uint64_t raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth;
-  memcpy(&raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, &tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, sizeof(tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth));
-  if (raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth != 0) {
+  if (!(this->update_weight_angle_scan_normal_to_ray_kernel_bandwidth() <= 0 && this->update_weight_angle_scan_normal_to_ray_kernel_bandwidth() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double update_weight_distance_cell_to_hit_kernel_bandwidth = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_distance_cell_to_hit_kernel_bandwidth = this->_internal_update_weight_distance_cell_to_hit_kernel_bandwidth();
-  uint64_t raw_update_weight_distance_cell_to_hit_kernel_bandwidth;
-  memcpy(&raw_update_weight_distance_cell_to_hit_kernel_bandwidth, &tmp_update_weight_distance_cell_to_hit_kernel_bandwidth, sizeof(tmp_update_weight_distance_cell_to_hit_kernel_bandwidth));
-  if (raw_update_weight_distance_cell_to_hit_kernel_bandwidth != 0) {
+  if (!(this->update_weight_distance_cell_to_hit_kernel_bandwidth() <= 0 && this->update_weight_distance_cell_to_hit_kernel_bandwidth() >= 0)) {
     total_size += 1 + 8;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TSDFRangeDataInserterOptions2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TSDFRangeDataInserterOptions2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TSDFRangeDataInserterOptions2D::GetClassData() const { return &_class_data_; }
+void TSDFRangeDataInserterOptions2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TSDFRangeDataInserterOptions2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TSDFRangeDataInserterOptions2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void TSDFRangeDataInserterOptions2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TSDFRangeDataInserterOptions2D*>(&to_msg);
-  auto& from = static_cast<const TSDFRangeDataInserterOptions2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TSDFRangeDataInserterOptions2D::MergeFrom(const TSDFRangeDataInserterOptions2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_normal_estimation_options()) {
-    _this->_internal_mutable_normal_estimation_options()->::cartographer::mapping::proto::NormalEstimationOptions2D::MergeFrom(
-        from._internal_normal_estimation_options());
+  if (from.has_normal_estimation_options()) {
+    _internal_mutable_normal_estimation_options()->::cartographer::mapping::proto::NormalEstimationOptions2D::MergeFrom(from._internal_normal_estimation_options());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_truncation_distance = from._internal_truncation_distance();
-  uint64_t raw_truncation_distance;
-  memcpy(&raw_truncation_distance, &tmp_truncation_distance, sizeof(tmp_truncation_distance));
-  if (raw_truncation_distance != 0) {
-    _this->_internal_set_truncation_distance(from._internal_truncation_distance());
+  if (!(from.truncation_distance() <= 0 && from.truncation_distance() >= 0)) {
+    _internal_set_truncation_distance(from._internal_truncation_distance());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_maximum_weight = from._internal_maximum_weight();
-  uint64_t raw_maximum_weight;
-  memcpy(&raw_maximum_weight, &tmp_maximum_weight, sizeof(tmp_maximum_weight));
-  if (raw_maximum_weight != 0) {
-    _this->_internal_set_maximum_weight(from._internal_maximum_weight());
+  if (!(from.maximum_weight() <= 0 && from.maximum_weight() >= 0)) {
+    _internal_set_maximum_weight(from._internal_maximum_weight());
   }
-  if (from._internal_update_free_space() != 0) {
-    _this->_internal_set_update_free_space(from._internal_update_free_space());
+  if (from.update_free_space() != 0) {
+    _internal_set_update_free_space(from._internal_update_free_space());
   }
-  if (from._internal_project_sdf_distance_to_scan_normal() != 0) {
-    _this->_internal_set_project_sdf_distance_to_scan_normal(from._internal_project_sdf_distance_to_scan_normal());
+  if (from.project_sdf_distance_to_scan_normal() != 0) {
+    _internal_set_project_sdf_distance_to_scan_normal(from._internal_project_sdf_distance_to_scan_normal());
   }
-  if (from._internal_update_weight_range_exponent() != 0) {
-    _this->_internal_set_update_weight_range_exponent(from._internal_update_weight_range_exponent());
+  if (from.update_weight_range_exponent() != 0) {
+    _internal_set_update_weight_range_exponent(from._internal_update_weight_range_exponent());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth = from._internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth();
-  uint64_t raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth;
-  memcpy(&raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, &tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth, sizeof(tmp_update_weight_angle_scan_normal_to_ray_kernel_bandwidth));
-  if (raw_update_weight_angle_scan_normal_to_ray_kernel_bandwidth != 0) {
-    _this->_internal_set_update_weight_angle_scan_normal_to_ray_kernel_bandwidth(from._internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth());
+  if (!(from.update_weight_angle_scan_normal_to_ray_kernel_bandwidth() <= 0 && from.update_weight_angle_scan_normal_to_ray_kernel_bandwidth() >= 0)) {
+    _internal_set_update_weight_angle_scan_normal_to_ray_kernel_bandwidth(from._internal_update_weight_angle_scan_normal_to_ray_kernel_bandwidth());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_update_weight_distance_cell_to_hit_kernel_bandwidth = from._internal_update_weight_distance_cell_to_hit_kernel_bandwidth();
-  uint64_t raw_update_weight_distance_cell_to_hit_kernel_bandwidth;
-  memcpy(&raw_update_weight_distance_cell_to_hit_kernel_bandwidth, &tmp_update_weight_distance_cell_to_hit_kernel_bandwidth, sizeof(tmp_update_weight_distance_cell_to_hit_kernel_bandwidth));
-  if (raw_update_weight_distance_cell_to_hit_kernel_bandwidth != 0) {
-    _this->_internal_set_update_weight_distance_cell_to_hit_kernel_bandwidth(from._internal_update_weight_distance_cell_to_hit_kernel_bandwidth());
+  if (!(from.update_weight_distance_cell_to_hit_kernel_bandwidth() <= 0 && from.update_weight_distance_cell_to_hit_kernel_bandwidth() >= 0)) {
+    _internal_set_update_weight_distance_cell_to_hit_kernel_bandwidth(from._internal_update_weight_distance_cell_to_hit_kernel_bandwidth());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TSDFRangeDataInserterOptions2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TSDFRangeDataInserterOptions2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TSDFRangeDataInserterOptions2D::CopyFrom(const TSDFRangeDataInserterOptions2D& from) {
@@ -524,28 +473,26 @@ bool TSDFRangeDataInserterOptions2D::IsInitialized() const {
 
 void TSDFRangeDataInserterOptions2D::InternalSwap(TSDFRangeDataInserterOptions2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TSDFRangeDataInserterOptions2D, _impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_)
-      + sizeof(TSDFRangeDataInserterOptions2D::_impl_.update_weight_distance_cell_to_hit_kernel_bandwidth_)
-      - PROTOBUF_FIELD_OFFSET(TSDFRangeDataInserterOptions2D, _impl_.normal_estimation_options_)>(
-          reinterpret_cast<char*>(&_impl_.normal_estimation_options_),
-          reinterpret_cast<char*>(&other->_impl_.normal_estimation_options_));
+      PROTOBUF_FIELD_OFFSET(TSDFRangeDataInserterOptions2D, update_weight_distance_cell_to_hit_kernel_bandwidth_)
+      + sizeof(TSDFRangeDataInserterOptions2D::update_weight_distance_cell_to_hit_kernel_bandwidth_)
+      - PROTOBUF_FIELD_OFFSET(TSDFRangeDataInserterOptions2D, normal_estimation_options_)>(
+          reinterpret_cast<char*>(&normal_estimation_options_),
+          reinterpret_cast<char*>(&other->normal_estimation_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TSDFRangeDataInserterOptions2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

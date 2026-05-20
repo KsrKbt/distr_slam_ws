@@ -14,94 +14,91 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2fconstraint_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_ConstraintBuilderOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2fconstraint_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.min_covered_area_)*/0
-  , /*decltype(_impl_.fresh_submaps_count_)*/0
-  , /*decltype(_impl_.min_added_submaps_count_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseGraphOptions_OverlappingSubmapsTrimmerOptions2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseGraphOptions_OverlappingSubmapsTrimmerOptions2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseGraphOptions_OverlappingSubmapsTrimmerOptions2DDefaultTypeInternal() {}
-  union {
-    PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseGraphOptions_OverlappingSubmapsTrimmerOptions2DDefaultTypeInternal _PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_default_instance_;
-PROTOBUF_CONSTEXPR PoseGraphOptions::PoseGraphOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.constraint_builder_options_)*/nullptr
-  , /*decltype(_impl_.optimization_problem_options_)*/nullptr
-  , /*decltype(_impl_.overlapping_submaps_trimmer_2d_)*/nullptr
-  , /*decltype(_impl_.optimize_every_n_nodes_)*/0
-  , /*decltype(_impl_.max_num_final_iterations_)*/0
-  , /*decltype(_impl_.global_sampling_ratio_)*/0
-  , /*decltype(_impl_.matcher_translation_weight_)*/0
-  , /*decltype(_impl_.matcher_rotation_weight_)*/0
-  , /*decltype(_impl_.global_constraint_search_after_n_seconds_)*/0
-  , /*decltype(_impl_.log_residual_histograms_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseGraphOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseGraphOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseGraphOptionsDefaultTypeInternal() {}
-  union {
-    PoseGraphOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseGraphOptionsDefaultTypeInternal _PoseGraphOptions_default_instance_;
+class PoseGraphOptions_OverlappingSubmapsTrimmerOptions2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D> _instance;
+} _PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_default_instance_;
+class PoseGraphOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseGraphOptions> _instance;
+} _PoseGraphOptions_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto[2];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = nullptr;
+static void InitDefaultsscc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseGraphOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseGraphOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseGraphOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto}, {
+      &scc_info_ConstraintBuilderOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2fconstraint_5fbuilder_5foptions_2eproto.base,
+      &scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto.base,
+      &scc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base,}};
+
+static void InitDefaultsscc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _impl_.fresh_submaps_count_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _impl_.min_covered_area_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _impl_.min_added_submaps_count_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, fresh_submaps_count_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, min_covered_area_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, min_added_submaps_count_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.optimize_every_n_nodes_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.constraint_builder_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.matcher_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.matcher_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.optimization_problem_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.max_num_final_iterations_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.global_sampling_ratio_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.log_residual_histograms_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.global_constraint_search_after_n_seconds_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, _impl_.overlapping_submaps_trimmer_2d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, optimize_every_n_nodes_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, constraint_builder_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, matcher_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, matcher_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, optimization_problem_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, max_num_final_iterations_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, global_sampling_ratio_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, log_residual_histograms_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, global_constraint_search_after_n_seconds_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraphOptions, overlapping_submaps_trimmer_2d_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D)},
-  { 9, -1, -1, sizeof(::cartographer::mapping::proto::PoseGraphOptions)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D)},
+  { 8, -1, sizeof(::cartographer::mapping::proto::PoseGraphOptions)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_default_instance_._instance,
-  &::cartographer::mapping::proto::_PoseGraphOptions_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseGraphOptions_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -131,181 +128,171 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgra
   "\022\037\n\027min_added_submaps_count\030\003 \001(\005b\006proto"
   "3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_deps[2] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_deps[2] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2fconstraint_5fbuilder_5foptions_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = {
-    false, false, 961, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto,
-    "cartographer/mapping/proto/pose_graph_options.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_deps, 2, 2,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_sccs[2] = {
+  &scc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base,
+  &scc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto, "cartographer/mapping/proto/pose_graph_options.proto", 961,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_deps, 2, 2,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto, 2, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::InitAsDefaultInstance() {
+}
 class PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_Internal {
  public:
 };
 
-PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
 }
 PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.min_covered_area_){}
-    , decltype(_impl_.fresh_submaps_count_){}
-    , decltype(_impl_.min_added_submaps_count_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.min_covered_area_, &from._impl_.min_covered_area_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.min_added_submaps_count_) -
-    reinterpret_cast<char*>(&_impl_.min_covered_area_)) + sizeof(_impl_.min_added_submaps_count_));
+  ::memcpy(&min_covered_area_, &from.min_covered_area_,
+    static_cast<size_t>(reinterpret_cast<char*>(&min_added_submaps_count_) -
+    reinterpret_cast<char*>(&min_covered_area_)) + sizeof(min_added_submaps_count_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
 }
 
-inline void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.min_covered_area_){0}
-    , decltype(_impl_.fresh_submaps_count_){0}
-    , decltype(_impl_.min_added_submaps_count_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::SharedCtor() {
+  ::memset(&min_covered_area_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&min_added_submaps_count_) -
+      reinterpret_cast<char*>(&min_covered_area_)) + sizeof(min_added_submaps_count_));
 }
 
 PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::~PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::ArenaDtor(void* object) {
+  PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* _this = reinterpret_cast< PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* >(object);
+  (void)_this;
+}
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D& PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.min_covered_area_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.min_added_submaps_count_) -
-      reinterpret_cast<char*>(&_impl_.min_covered_area_)) + sizeof(_impl_.min_added_submaps_count_));
+  ::memset(&min_covered_area_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&min_added_submaps_count_) -
+      reinterpret_cast<char*>(&min_covered_area_)) + sizeof(min_added_submaps_count_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 fresh_submaps_count = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.fresh_submaps_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          fresh_submaps_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double min_covered_area = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.min_covered_area_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          min_covered_area_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 min_added_submaps_count = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.min_added_submaps_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          min_added_submaps_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 fresh_submaps_count = 1;
-  if (this->_internal_fresh_submaps_count() != 0) {
+  if (this->fresh_submaps_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_fresh_submaps_count(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_fresh_submaps_count(), target);
   }
 
   // double min_covered_area = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_min_covered_area = this->_internal_min_covered_area();
-  uint64_t raw_min_covered_area;
-  memcpy(&raw_min_covered_area, &tmp_min_covered_area, sizeof(tmp_min_covered_area));
-  if (raw_min_covered_area != 0) {
+  if (!(this->min_covered_area() <= 0 && this->min_covered_area() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_min_covered_area(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_min_covered_area(), target);
   }
 
   // int32 min_added_submaps_count = 3;
-  if (this->_internal_min_added_submaps_count() != 0) {
+  if (this->min_added_submaps_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(3, this->_internal_min_added_submaps_count(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_min_added_submaps_count(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
@@ -316,61 +303,76 @@ size_t PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::ByteSizeLong() const
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // double min_covered_area = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_min_covered_area = this->_internal_min_covered_area();
-  uint64_t raw_min_covered_area;
-  memcpy(&raw_min_covered_area, &tmp_min_covered_area, sizeof(tmp_min_covered_area));
-  if (raw_min_covered_area != 0) {
+  if (!(this->min_covered_area() <= 0 && this->min_covered_area() >= 0)) {
     total_size += 1 + 8;
   }
 
   // int32 fresh_submaps_count = 1;
-  if (this->_internal_fresh_submaps_count() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_fresh_submaps_count());
+  if (this->fresh_submaps_count() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_fresh_submaps_count());
   }
 
   // int32 min_added_submaps_count = 3;
-  if (this->_internal_min_added_submaps_count() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_min_added_submaps_count());
+  if (this->min_added_submaps_count() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_min_added_submaps_count());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::GetClassData() const { return &_class_data_; }
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D*>(&to_msg);
-  auto& from = static_cast<const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeFrom(const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_min_covered_area = from._internal_min_covered_area();
-  uint64_t raw_min_covered_area;
-  memcpy(&raw_min_covered_area, &tmp_min_covered_area, sizeof(tmp_min_covered_area));
-  if (raw_min_covered_area != 0) {
-    _this->_internal_set_min_covered_area(from._internal_min_covered_area());
+  if (!(from.min_covered_area() <= 0 && from.min_covered_area() >= 0)) {
+    _internal_set_min_covered_area(from._internal_min_covered_area());
   }
-  if (from._internal_fresh_submaps_count() != 0) {
-    _this->_internal_set_fresh_submaps_count(from._internal_fresh_submaps_count());
+  if (from.fresh_submaps_count() != 0) {
+    _internal_set_fresh_submaps_count(from._internal_fresh_submaps_count());
   }
-  if (from._internal_min_added_submaps_count() != 0) {
-    _this->_internal_set_min_added_submaps_count(from._internal_min_added_submaps_count());
+  if (from.min_added_submaps_count() != 0) {
+    _internal_set_min_added_submaps_count(from._internal_min_added_submaps_count());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::CopyFrom(const PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D& from) {
@@ -386,23 +388,30 @@ bool PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::IsInitialized() const 
 
 void PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::InternalSwap(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _impl_.min_added_submaps_count_)
-      + sizeof(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::_impl_.min_added_submaps_count_)
-      - PROTOBUF_FIELD_OFFSET(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, _impl_.min_covered_area_)>(
-          reinterpret_cast<char*>(&_impl_.min_covered_area_),
-          reinterpret_cast<char*>(&other->_impl_.min_covered_area_));
+      PROTOBUF_FIELD_OFFSET(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, min_added_submaps_count_)
+      + sizeof(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::min_added_submaps_count_)
+      - PROTOBUF_FIELD_OFFSET(PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D, min_covered_area_)>(
+          reinterpret_cast<char*>(&min_covered_area_),
+          reinterpret_cast<char*>(&other->min_covered_area_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PoseGraphOptions::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_PoseGraphOptions_default_instance_._instance.get_mutable()->constraint_builder_options_ = const_cast< ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions*>(
+      ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_PoseGraphOptions_default_instance_._instance.get_mutable()->optimization_problem_options_ = const_cast< ::cartographer::mapping::optimization::proto::OptimizationProblemOptions*>(
+      ::cartographer::mapping::optimization::proto::OptimizationProblemOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_PoseGraphOptions_default_instance_._instance.get_mutable()->overlapping_submaps_trimmer_2d_ = const_cast< ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D*>(
+      ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::internal_default_instance());
+}
 class PoseGraphOptions::_Internal {
  public:
   static const ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions& constraint_builder_options(const PoseGraphOptions* msg);
@@ -412,325 +421,291 @@ class PoseGraphOptions::_Internal {
 
 const ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions&
 PoseGraphOptions::_Internal::constraint_builder_options(const PoseGraphOptions* msg) {
-  return *msg->_impl_.constraint_builder_options_;
+  return *msg->constraint_builder_options_;
 }
 const ::cartographer::mapping::optimization::proto::OptimizationProblemOptions&
 PoseGraphOptions::_Internal::optimization_problem_options(const PoseGraphOptions* msg) {
-  return *msg->_impl_.optimization_problem_options_;
+  return *msg->optimization_problem_options_;
 }
 const ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D&
 PoseGraphOptions::_Internal::overlapping_submaps_trimmer_2d(const PoseGraphOptions* msg) {
-  return *msg->_impl_.overlapping_submaps_trimmer_2d_;
+  return *msg->overlapping_submaps_trimmer_2d_;
 }
 void PoseGraphOptions::clear_constraint_builder_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.constraint_builder_options_ != nullptr) {
-    delete _impl_.constraint_builder_options_;
+  if (GetArena() == nullptr && constraint_builder_options_ != nullptr) {
+    delete constraint_builder_options_;
   }
-  _impl_.constraint_builder_options_ = nullptr;
+  constraint_builder_options_ = nullptr;
 }
 void PoseGraphOptions::clear_optimization_problem_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.optimization_problem_options_ != nullptr) {
-    delete _impl_.optimization_problem_options_;
+  if (GetArena() == nullptr && optimization_problem_options_ != nullptr) {
+    delete optimization_problem_options_;
   }
-  _impl_.optimization_problem_options_ = nullptr;
+  optimization_problem_options_ = nullptr;
 }
-PoseGraphOptions::PoseGraphOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseGraphOptions::PoseGraphOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseGraphOptions)
 }
 PoseGraphOptions::PoseGraphOptions(const PoseGraphOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseGraphOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constraint_builder_options_){nullptr}
-    , decltype(_impl_.optimization_problem_options_){nullptr}
-    , decltype(_impl_.overlapping_submaps_trimmer_2d_){nullptr}
-    , decltype(_impl_.optimize_every_n_nodes_){}
-    , decltype(_impl_.max_num_final_iterations_){}
-    , decltype(_impl_.global_sampling_ratio_){}
-    , decltype(_impl_.matcher_translation_weight_){}
-    , decltype(_impl_.matcher_rotation_weight_){}
-    , decltype(_impl_.global_constraint_search_after_n_seconds_){}
-    , decltype(_impl_.log_residual_histograms_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_constraint_builder_options()) {
-    _this->_impl_.constraint_builder_options_ = new ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions(*from._impl_.constraint_builder_options_);
+    constraint_builder_options_ = new ::cartographer::mapping::constraints::proto::ConstraintBuilderOptions(*from.constraint_builder_options_);
+  } else {
+    constraint_builder_options_ = nullptr;
   }
   if (from._internal_has_optimization_problem_options()) {
-    _this->_impl_.optimization_problem_options_ = new ::cartographer::mapping::optimization::proto::OptimizationProblemOptions(*from._impl_.optimization_problem_options_);
+    optimization_problem_options_ = new ::cartographer::mapping::optimization::proto::OptimizationProblemOptions(*from.optimization_problem_options_);
+  } else {
+    optimization_problem_options_ = nullptr;
   }
   if (from._internal_has_overlapping_submaps_trimmer_2d()) {
-    _this->_impl_.overlapping_submaps_trimmer_2d_ = new ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(*from._impl_.overlapping_submaps_trimmer_2d_);
+    overlapping_submaps_trimmer_2d_ = new ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D(*from.overlapping_submaps_trimmer_2d_);
+  } else {
+    overlapping_submaps_trimmer_2d_ = nullptr;
   }
-  ::memcpy(&_impl_.optimize_every_n_nodes_, &from._impl_.optimize_every_n_nodes_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.log_residual_histograms_) -
-    reinterpret_cast<char*>(&_impl_.optimize_every_n_nodes_)) + sizeof(_impl_.log_residual_histograms_));
+  ::memcpy(&optimize_every_n_nodes_, &from.optimize_every_n_nodes_,
+    static_cast<size_t>(reinterpret_cast<char*>(&log_residual_histograms_) -
+    reinterpret_cast<char*>(&optimize_every_n_nodes_)) + sizeof(log_residual_histograms_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseGraphOptions)
 }
 
-inline void PoseGraphOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constraint_builder_options_){nullptr}
-    , decltype(_impl_.optimization_problem_options_){nullptr}
-    , decltype(_impl_.overlapping_submaps_trimmer_2d_){nullptr}
-    , decltype(_impl_.optimize_every_n_nodes_){0}
-    , decltype(_impl_.max_num_final_iterations_){0}
-    , decltype(_impl_.global_sampling_ratio_){0}
-    , decltype(_impl_.matcher_translation_weight_){0}
-    , decltype(_impl_.matcher_rotation_weight_){0}
-    , decltype(_impl_.global_constraint_search_after_n_seconds_){0}
-    , decltype(_impl_.log_residual_histograms_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void PoseGraphOptions::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base);
+  ::memset(&constraint_builder_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&log_residual_histograms_) -
+      reinterpret_cast<char*>(&constraint_builder_options_)) + sizeof(log_residual_histograms_));
 }
 
 PoseGraphOptions::~PoseGraphOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseGraphOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseGraphOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.constraint_builder_options_;
-  if (this != internal_default_instance()) delete _impl_.optimization_problem_options_;
-  if (this != internal_default_instance()) delete _impl_.overlapping_submaps_trimmer_2d_;
+void PoseGraphOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete constraint_builder_options_;
+  if (this != internal_default_instance()) delete optimization_problem_options_;
+  if (this != internal_default_instance()) delete overlapping_submaps_trimmer_2d_;
 }
 
+void PoseGraphOptions::ArenaDtor(void* object) {
+  PoseGraphOptions* _this = reinterpret_cast< PoseGraphOptions* >(object);
+  (void)_this;
+}
+void PoseGraphOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseGraphOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseGraphOptions& PoseGraphOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseGraphOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseGraphOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseGraphOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.constraint_builder_options_ != nullptr) {
-    delete _impl_.constraint_builder_options_;
+  if (GetArena() == nullptr && constraint_builder_options_ != nullptr) {
+    delete constraint_builder_options_;
   }
-  _impl_.constraint_builder_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.optimization_problem_options_ != nullptr) {
-    delete _impl_.optimization_problem_options_;
+  constraint_builder_options_ = nullptr;
+  if (GetArena() == nullptr && optimization_problem_options_ != nullptr) {
+    delete optimization_problem_options_;
   }
-  _impl_.optimization_problem_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.overlapping_submaps_trimmer_2d_ != nullptr) {
-    delete _impl_.overlapping_submaps_trimmer_2d_;
+  optimization_problem_options_ = nullptr;
+  if (GetArena() == nullptr && overlapping_submaps_trimmer_2d_ != nullptr) {
+    delete overlapping_submaps_trimmer_2d_;
   }
-  _impl_.overlapping_submaps_trimmer_2d_ = nullptr;
-  ::memset(&_impl_.optimize_every_n_nodes_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.log_residual_histograms_) -
-      reinterpret_cast<char*>(&_impl_.optimize_every_n_nodes_)) + sizeof(_impl_.log_residual_histograms_));
+  overlapping_submaps_trimmer_2d_ = nullptr;
+  ::memset(&optimize_every_n_nodes_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&log_residual_histograms_) -
+      reinterpret_cast<char*>(&optimize_every_n_nodes_)) + sizeof(log_residual_histograms_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseGraphOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseGraphOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 optimize_every_n_nodes = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.optimize_every_n_nodes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          optimize_every_n_nodes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.constraints.proto.ConstraintBuilderOptions constraint_builder_options = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_constraint_builder_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.optimization.proto.OptimizationProblemOptions optimization_problem_options = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_optimization_problem_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double global_sampling_ratio = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
-          _impl_.global_sampling_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+          global_sampling_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 max_num_final_iterations = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
-          _impl_.max_num_final_iterations_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          max_num_final_iterations_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double matcher_translation_weight = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
-          _impl_.matcher_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          matcher_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double matcher_rotation_weight = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
-          _impl_.matcher_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+          matcher_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool log_residual_histograms = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
-          _impl_.log_residual_histograms_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          log_residual_histograms_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double global_constraint_search_after_n_seconds = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 81)) {
-          _impl_.global_constraint_search_after_n_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+          global_constraint_search_after_n_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D overlapping_submaps_trimmer_2d = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_overlapping_submaps_trimmer_2d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseGraphOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseGraphOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseGraphOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 optimize_every_n_nodes = 1;
-  if (this->_internal_optimize_every_n_nodes() != 0) {
+  if (this->optimize_every_n_nodes() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_optimize_every_n_nodes(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_optimize_every_n_nodes(), target);
   }
 
   // .cartographer.mapping.constraints.proto.ConstraintBuilderOptions constraint_builder_options = 3;
-  if (this->_internal_has_constraint_builder_options()) {
+  if (this->has_constraint_builder_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::constraint_builder_options(this),
-        _Internal::constraint_builder_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::constraint_builder_options(this), target, stream);
   }
 
   // .cartographer.mapping.optimization.proto.OptimizationProblemOptions optimization_problem_options = 4;
-  if (this->_internal_has_optimization_problem_options()) {
+  if (this->has_optimization_problem_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::optimization_problem_options(this),
-        _Internal::optimization_problem_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::optimization_problem_options(this), target, stream);
   }
 
   // double global_sampling_ratio = 5;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_sampling_ratio = this->_internal_global_sampling_ratio();
-  uint64_t raw_global_sampling_ratio;
-  memcpy(&raw_global_sampling_ratio, &tmp_global_sampling_ratio, sizeof(tmp_global_sampling_ratio));
-  if (raw_global_sampling_ratio != 0) {
+  if (!(this->global_sampling_ratio() <= 0 && this->global_sampling_ratio() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_global_sampling_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_global_sampling_ratio(), target);
   }
 
   // int32 max_num_final_iterations = 6;
-  if (this->_internal_max_num_final_iterations() != 0) {
+  if (this->max_num_final_iterations() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(6, this->_internal_max_num_final_iterations(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_max_num_final_iterations(), target);
   }
 
   // double matcher_translation_weight = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_translation_weight = this->_internal_matcher_translation_weight();
-  uint64_t raw_matcher_translation_weight;
-  memcpy(&raw_matcher_translation_weight, &tmp_matcher_translation_weight, sizeof(tmp_matcher_translation_weight));
-  if (raw_matcher_translation_weight != 0) {
+  if (!(this->matcher_translation_weight() <= 0 && this->matcher_translation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_matcher_translation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_matcher_translation_weight(), target);
   }
 
   // double matcher_rotation_weight = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_rotation_weight = this->_internal_matcher_rotation_weight();
-  uint64_t raw_matcher_rotation_weight;
-  memcpy(&raw_matcher_rotation_weight, &tmp_matcher_rotation_weight, sizeof(tmp_matcher_rotation_weight));
-  if (raw_matcher_rotation_weight != 0) {
+  if (!(this->matcher_rotation_weight() <= 0 && this->matcher_rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_matcher_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_matcher_rotation_weight(), target);
   }
 
   // bool log_residual_histograms = 9;
-  if (this->_internal_log_residual_histograms() != 0) {
+  if (this->log_residual_histograms() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(9, this->_internal_log_residual_histograms(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_log_residual_histograms(), target);
   }
 
   // double global_constraint_search_after_n_seconds = 10;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_constraint_search_after_n_seconds = this->_internal_global_constraint_search_after_n_seconds();
-  uint64_t raw_global_constraint_search_after_n_seconds;
-  memcpy(&raw_global_constraint_search_after_n_seconds, &tmp_global_constraint_search_after_n_seconds, sizeof(tmp_global_constraint_search_after_n_seconds));
-  if (raw_global_constraint_search_after_n_seconds != 0) {
+  if (!(this->global_constraint_search_after_n_seconds() <= 0 && this->global_constraint_search_after_n_seconds() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(10, this->_internal_global_constraint_search_after_n_seconds(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_global_constraint_search_after_n_seconds(), target);
   }
 
   // .cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D overlapping_submaps_trimmer_2d = 11;
-  if (this->_internal_has_overlapping_submaps_trimmer_2d()) {
+  if (this->has_overlapping_submaps_trimmer_2d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(11, _Internal::overlapping_submaps_trimmer_2d(this),
-        _Internal::overlapping_submaps_trimmer_2d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        11, _Internal::overlapping_submaps_trimmer_2d(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseGraphOptions)
@@ -741,150 +716,138 @@ size_t PoseGraphOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseGraphOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.constraints.proto.ConstraintBuilderOptions constraint_builder_options = 3;
-  if (this->_internal_has_constraint_builder_options()) {
+  if (this->has_constraint_builder_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.constraint_builder_options_);
+        *constraint_builder_options_);
   }
 
   // .cartographer.mapping.optimization.proto.OptimizationProblemOptions optimization_problem_options = 4;
-  if (this->_internal_has_optimization_problem_options()) {
+  if (this->has_optimization_problem_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.optimization_problem_options_);
+        *optimization_problem_options_);
   }
 
   // .cartographer.mapping.proto.PoseGraphOptions.OverlappingSubmapsTrimmerOptions2D overlapping_submaps_trimmer_2d = 11;
-  if (this->_internal_has_overlapping_submaps_trimmer_2d()) {
+  if (this->has_overlapping_submaps_trimmer_2d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.overlapping_submaps_trimmer_2d_);
+        *overlapping_submaps_trimmer_2d_);
   }
 
   // int32 optimize_every_n_nodes = 1;
-  if (this->_internal_optimize_every_n_nodes() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_optimize_every_n_nodes());
+  if (this->optimize_every_n_nodes() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_optimize_every_n_nodes());
   }
 
   // int32 max_num_final_iterations = 6;
-  if (this->_internal_max_num_final_iterations() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_max_num_final_iterations());
+  if (this->max_num_final_iterations() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_max_num_final_iterations());
   }
 
   // double global_sampling_ratio = 5;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_sampling_ratio = this->_internal_global_sampling_ratio();
-  uint64_t raw_global_sampling_ratio;
-  memcpy(&raw_global_sampling_ratio, &tmp_global_sampling_ratio, sizeof(tmp_global_sampling_ratio));
-  if (raw_global_sampling_ratio != 0) {
+  if (!(this->global_sampling_ratio() <= 0 && this->global_sampling_ratio() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double matcher_translation_weight = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_translation_weight = this->_internal_matcher_translation_weight();
-  uint64_t raw_matcher_translation_weight;
-  memcpy(&raw_matcher_translation_weight, &tmp_matcher_translation_weight, sizeof(tmp_matcher_translation_weight));
-  if (raw_matcher_translation_weight != 0) {
+  if (!(this->matcher_translation_weight() <= 0 && this->matcher_translation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double matcher_rotation_weight = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_rotation_weight = this->_internal_matcher_rotation_weight();
-  uint64_t raw_matcher_rotation_weight;
-  memcpy(&raw_matcher_rotation_weight, &tmp_matcher_rotation_weight, sizeof(tmp_matcher_rotation_weight));
-  if (raw_matcher_rotation_weight != 0) {
+  if (!(this->matcher_rotation_weight() <= 0 && this->matcher_rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double global_constraint_search_after_n_seconds = 10;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_constraint_search_after_n_seconds = this->_internal_global_constraint_search_after_n_seconds();
-  uint64_t raw_global_constraint_search_after_n_seconds;
-  memcpy(&raw_global_constraint_search_after_n_seconds, &tmp_global_constraint_search_after_n_seconds, sizeof(tmp_global_constraint_search_after_n_seconds));
-  if (raw_global_constraint_search_after_n_seconds != 0) {
+  if (!(this->global_constraint_search_after_n_seconds() <= 0 && this->global_constraint_search_after_n_seconds() >= 0)) {
     total_size += 1 + 8;
   }
 
   // bool log_residual_histograms = 9;
-  if (this->_internal_log_residual_histograms() != 0) {
+  if (this->log_residual_histograms() != 0) {
     total_size += 1 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseGraphOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseGraphOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseGraphOptions::GetClassData() const { return &_class_data_; }
+void PoseGraphOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseGraphOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseGraphOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseGraphOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseGraphOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseGraphOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseGraphOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseGraphOptions*>(&to_msg);
-  auto& from = static_cast<const PoseGraphOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraphOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseGraphOptions::MergeFrom(const PoseGraphOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraphOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_constraint_builder_options()) {
-    _this->_internal_mutable_constraint_builder_options()->::cartographer::mapping::constraints::proto::ConstraintBuilderOptions::MergeFrom(
-        from._internal_constraint_builder_options());
+  if (from.has_constraint_builder_options()) {
+    _internal_mutable_constraint_builder_options()->::cartographer::mapping::constraints::proto::ConstraintBuilderOptions::MergeFrom(from._internal_constraint_builder_options());
   }
-  if (from._internal_has_optimization_problem_options()) {
-    _this->_internal_mutable_optimization_problem_options()->::cartographer::mapping::optimization::proto::OptimizationProblemOptions::MergeFrom(
-        from._internal_optimization_problem_options());
+  if (from.has_optimization_problem_options()) {
+    _internal_mutable_optimization_problem_options()->::cartographer::mapping::optimization::proto::OptimizationProblemOptions::MergeFrom(from._internal_optimization_problem_options());
   }
-  if (from._internal_has_overlapping_submaps_trimmer_2d()) {
-    _this->_internal_mutable_overlapping_submaps_trimmer_2d()->::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeFrom(
-        from._internal_overlapping_submaps_trimmer_2d());
+  if (from.has_overlapping_submaps_trimmer_2d()) {
+    _internal_mutable_overlapping_submaps_trimmer_2d()->::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D::MergeFrom(from._internal_overlapping_submaps_trimmer_2d());
   }
-  if (from._internal_optimize_every_n_nodes() != 0) {
-    _this->_internal_set_optimize_every_n_nodes(from._internal_optimize_every_n_nodes());
+  if (from.optimize_every_n_nodes() != 0) {
+    _internal_set_optimize_every_n_nodes(from._internal_optimize_every_n_nodes());
   }
-  if (from._internal_max_num_final_iterations() != 0) {
-    _this->_internal_set_max_num_final_iterations(from._internal_max_num_final_iterations());
+  if (from.max_num_final_iterations() != 0) {
+    _internal_set_max_num_final_iterations(from._internal_max_num_final_iterations());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_sampling_ratio = from._internal_global_sampling_ratio();
-  uint64_t raw_global_sampling_ratio;
-  memcpy(&raw_global_sampling_ratio, &tmp_global_sampling_ratio, sizeof(tmp_global_sampling_ratio));
-  if (raw_global_sampling_ratio != 0) {
-    _this->_internal_set_global_sampling_ratio(from._internal_global_sampling_ratio());
+  if (!(from.global_sampling_ratio() <= 0 && from.global_sampling_ratio() >= 0)) {
+    _internal_set_global_sampling_ratio(from._internal_global_sampling_ratio());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_translation_weight = from._internal_matcher_translation_weight();
-  uint64_t raw_matcher_translation_weight;
-  memcpy(&raw_matcher_translation_weight, &tmp_matcher_translation_weight, sizeof(tmp_matcher_translation_weight));
-  if (raw_matcher_translation_weight != 0) {
-    _this->_internal_set_matcher_translation_weight(from._internal_matcher_translation_weight());
+  if (!(from.matcher_translation_weight() <= 0 && from.matcher_translation_weight() >= 0)) {
+    _internal_set_matcher_translation_weight(from._internal_matcher_translation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_matcher_rotation_weight = from._internal_matcher_rotation_weight();
-  uint64_t raw_matcher_rotation_weight;
-  memcpy(&raw_matcher_rotation_weight, &tmp_matcher_rotation_weight, sizeof(tmp_matcher_rotation_weight));
-  if (raw_matcher_rotation_weight != 0) {
-    _this->_internal_set_matcher_rotation_weight(from._internal_matcher_rotation_weight());
+  if (!(from.matcher_rotation_weight() <= 0 && from.matcher_rotation_weight() >= 0)) {
+    _internal_set_matcher_rotation_weight(from._internal_matcher_rotation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_global_constraint_search_after_n_seconds = from._internal_global_constraint_search_after_n_seconds();
-  uint64_t raw_global_constraint_search_after_n_seconds;
-  memcpy(&raw_global_constraint_search_after_n_seconds, &tmp_global_constraint_search_after_n_seconds, sizeof(tmp_global_constraint_search_after_n_seconds));
-  if (raw_global_constraint_search_after_n_seconds != 0) {
-    _this->_internal_set_global_constraint_search_after_n_seconds(from._internal_global_constraint_search_after_n_seconds());
+  if (!(from.global_constraint_search_after_n_seconds() <= 0 && from.global_constraint_search_after_n_seconds() >= 0)) {
+    _internal_set_global_constraint_search_after_n_seconds(from._internal_global_constraint_search_after_n_seconds());
   }
-  if (from._internal_log_residual_histograms() != 0) {
-    _this->_internal_set_log_residual_histograms(from._internal_log_residual_histograms());
+  if (from.log_residual_histograms() != 0) {
+    _internal_set_log_residual_histograms(from._internal_log_residual_histograms());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PoseGraphOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseGraphOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseGraphOptions::CopyFrom(const PoseGraphOptions& from) {
@@ -900,32 +863,29 @@ bool PoseGraphOptions::IsInitialized() const {
 
 void PoseGraphOptions::InternalSwap(PoseGraphOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PoseGraphOptions, _impl_.log_residual_histograms_)
-      + sizeof(PoseGraphOptions::_impl_.log_residual_histograms_)
-      - PROTOBUF_FIELD_OFFSET(PoseGraphOptions, _impl_.constraint_builder_options_)>(
-          reinterpret_cast<char*>(&_impl_.constraint_builder_options_),
-          reinterpret_cast<char*>(&other->_impl_.constraint_builder_options_));
+      PROTOBUF_FIELD_OFFSET(PoseGraphOptions, log_residual_histograms_)
+      + sizeof(PoseGraphOptions::log_residual_histograms_)
+      - PROTOBUF_FIELD_OFFSET(PoseGraphOptions, constraint_builder_options_)>(
+          reinterpret_cast<char*>(&constraint_builder_options_),
+          reinterpret_cast<char*>(&other->constraint_builder_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseGraphOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_5foptions_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseGraphOptions_OverlappingSubmapsTrimmerOptions2D >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraphOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraphOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraphOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraphOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseGraphOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -9,7 +9,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
-#include "cartographer_ros_msgs/msg/detail/metric_label__functions.h"
 #include "cartographer_ros_msgs/msg/detail/metric_label__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -44,7 +43,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MetricLabel_m
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -62,7 +60,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MetricLabel_m
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -82,7 +79,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMembers MetricLabel_
   "MetricLabel",  // message name
   2,  // number of fields
   sizeof(cartographer_ros_msgs::msg::MetricLabel),
-  false,  // has_any_key_member_
   MetricLabel_message_member_array,  // message members
   MetricLabel_init_function,  // function to initialize message memory (memory has to be allocated)
   MetricLabel_fini_function  // function to terminate message instance (will not free memory)
@@ -92,9 +88,6 @@ static const rosidl_message_type_support_t MetricLabel_message_type_support_hand
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &MetricLabel_message_members,
   get_message_typesupport_handle_function,
-  &cartographer_ros_msgs__msg__MetricLabel__get_type_hash,
-  &cartographer_ros_msgs__msg__MetricLabel__get_type_description,
-  &cartographer_ros_msgs__msg__MetricLabel__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

@@ -14,88 +14,89 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR Submap2D::Submap2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.local_pose_)*/nullptr
-  , /*decltype(_impl_.grid_)*/nullptr
-  , /*decltype(_impl_.num_range_data_)*/0
-  , /*decltype(_impl_.finished_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Submap2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Submap2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Submap2DDefaultTypeInternal() {}
-  union {
-    Submap2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Submap2DDefaultTypeInternal _Submap2D_default_instance_;
-PROTOBUF_CONSTEXPR Submap3D::Submap3D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.rotational_scan_matcher_histogram_)*/{}
-  , /*decltype(_impl_.local_pose_)*/nullptr
-  , /*decltype(_impl_.high_resolution_hybrid_grid_)*/nullptr
-  , /*decltype(_impl_.low_resolution_hybrid_grid_)*/nullptr
-  , /*decltype(_impl_.num_range_data_)*/0
-  , /*decltype(_impl_.finished_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct Submap3DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR Submap3DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~Submap3DDefaultTypeInternal() {}
-  union {
-    Submap3D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Submap3DDefaultTypeInternal _Submap3D_default_instance_;
+class Submap2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Submap2D> _instance;
+} _Submap2D_default_instance_;
+class Submap3DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Submap3D> _instance;
+} _Submap3D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto[2];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto = nullptr;
+static void InitDefaultsscc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fsubmap_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_Submap2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Submap2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Submap2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto}, {
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,
+      &scc_info_Grid2D_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto.base,}};
+
+static void InitDefaultsscc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_Submap3D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Submap3D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Submap3D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto}, {
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,
+      &scc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fsubmap_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, _impl_.local_pose_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, _impl_.num_range_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, _impl_.finished_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, _impl_.grid_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, local_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, num_range_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, finished_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap2D, grid_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.local_pose_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.num_range_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.finished_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.high_resolution_hybrid_grid_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.low_resolution_hybrid_grid_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, _impl_.rotational_scan_matcher_histogram_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, local_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, num_range_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, finished_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, high_resolution_hybrid_grid_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, low_resolution_hybrid_grid_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap3D, rotational_scan_matcher_histogram_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::Submap2D)},
-  { 10, -1, -1, sizeof(::cartographer::mapping::proto::Submap3D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::Submap2D)},
+  { 9, -1, sizeof(::cartographer::mapping::proto::Submap3D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_Submap2D_default_instance_._instance,
-  &::cartographer::mapping::proto::_Submap3D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Submap2D_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Submap3D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmap_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -118,32 +119,37 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmap_2ep
   "tational_scan_matcher_histogram\030\006 \003(\002b\006p"
   "roto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_deps[3] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_deps[3] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fgrid_5f2d_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto,
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto = {
-    false, false, 685, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmap_2eproto,
-    "cartographer/mapping/proto/submap.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_deps, 3, 2,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fsubmap_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_sccs[2] = {
+  &scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base,
+  &scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fsubmap_2eproto, "cartographer/mapping/proto/submap.proto", 685,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_deps, 2, 3,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fsubmap_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto, 2, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fsubmap_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fsubmap_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fsubmap_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void Submap2D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_Submap2D_default_instance_._instance.get_mutable()->local_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+  ::cartographer::mapping::proto::_Submap2D_default_instance_._instance.get_mutable()->grid_ = const_cast< ::cartographer::mapping::proto::Grid2D*>(
+      ::cartographer::mapping::proto::Grid2D::internal_default_instance());
+}
 class Submap2D::_Internal {
  public:
   static const ::cartographer::transform::proto::Rigid3d& local_pose(const Submap2D* msg);
@@ -152,200 +158,197 @@ class Submap2D::_Internal {
 
 const ::cartographer::transform::proto::Rigid3d&
 Submap2D::_Internal::local_pose(const Submap2D* msg) {
-  return *msg->_impl_.local_pose_;
+  return *msg->local_pose_;
 }
 const ::cartographer::mapping::proto::Grid2D&
 Submap2D::_Internal::grid(const Submap2D* msg) {
-  return *msg->_impl_.grid_;
+  return *msg->grid_;
 }
 void Submap2D::clear_local_pose() {
-  if (GetArenaForAllocation() == nullptr && _impl_.local_pose_ != nullptr) {
-    delete _impl_.local_pose_;
+  if (GetArena() == nullptr && local_pose_ != nullptr) {
+    delete local_pose_;
   }
-  _impl_.local_pose_ = nullptr;
+  local_pose_ = nullptr;
 }
 void Submap2D::clear_grid() {
-  if (GetArenaForAllocation() == nullptr && _impl_.grid_ != nullptr) {
-    delete _impl_.grid_;
+  if (GetArena() == nullptr && grid_ != nullptr) {
+    delete grid_;
   }
-  _impl_.grid_ = nullptr;
+  grid_ = nullptr;
 }
-Submap2D::Submap2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Submap2D::Submap2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Submap2D)
 }
 Submap2D::Submap2D(const Submap2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Submap2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.local_pose_){nullptr}
-    , decltype(_impl_.grid_){nullptr}
-    , decltype(_impl_.num_range_data_){}
-    , decltype(_impl_.finished_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_local_pose()) {
-    _this->_impl_.local_pose_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.local_pose_);
+    local_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.local_pose_);
+  } else {
+    local_pose_ = nullptr;
   }
   if (from._internal_has_grid()) {
-    _this->_impl_.grid_ = new ::cartographer::mapping::proto::Grid2D(*from._impl_.grid_);
+    grid_ = new ::cartographer::mapping::proto::Grid2D(*from.grid_);
+  } else {
+    grid_ = nullptr;
   }
-  ::memcpy(&_impl_.num_range_data_, &from._impl_.num_range_data_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.finished_) -
-    reinterpret_cast<char*>(&_impl_.num_range_data_)) + sizeof(_impl_.finished_));
+  ::memcpy(&num_range_data_, &from.num_range_data_,
+    static_cast<size_t>(reinterpret_cast<char*>(&finished_) -
+    reinterpret_cast<char*>(&num_range_data_)) + sizeof(finished_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Submap2D)
 }
 
-inline void Submap2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.local_pose_){nullptr}
-    , decltype(_impl_.grid_){nullptr}
-    , decltype(_impl_.num_range_data_){0}
-    , decltype(_impl_.finished_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void Submap2D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base);
+  ::memset(&local_pose_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&finished_) -
+      reinterpret_cast<char*>(&local_pose_)) + sizeof(finished_));
 }
 
 Submap2D::~Submap2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Submap2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Submap2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.local_pose_;
-  if (this != internal_default_instance()) delete _impl_.grid_;
+void Submap2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete local_pose_;
+  if (this != internal_default_instance()) delete grid_;
 }
 
+void Submap2D::ArenaDtor(void* object) {
+  Submap2D* _this = reinterpret_cast< Submap2D* >(object);
+  (void)_this;
+}
+void Submap2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Submap2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const Submap2D& Submap2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Submap2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Submap2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.local_pose_ != nullptr) {
-    delete _impl_.local_pose_;
+  if (GetArena() == nullptr && local_pose_ != nullptr) {
+    delete local_pose_;
   }
-  _impl_.local_pose_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.grid_ != nullptr) {
-    delete _impl_.grid_;
+  local_pose_ = nullptr;
+  if (GetArena() == nullptr && grid_ != nullptr) {
+    delete grid_;
   }
-  _impl_.grid_ = nullptr;
-  ::memset(&_impl_.num_range_data_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.finished_) -
-      reinterpret_cast<char*>(&_impl_.num_range_data_)) + sizeof(_impl_.finished_));
+  grid_ = nullptr;
+  ::memset(&num_range_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&finished_) -
+      reinterpret_cast<char*>(&num_range_data_)) + sizeof(finished_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Submap2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Submap2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.transform.proto.Rigid3d local_pose = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_local_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 num_range_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool finished = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.finished_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          finished_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Grid2D grid = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_grid(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Submap2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Submap2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Submap2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d local_pose = 1;
-  if (this->_internal_has_local_pose()) {
+  if (this->has_local_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::local_pose(this),
-        _Internal::local_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::local_pose(this), target, stream);
   }
 
   // int32 num_range_data = 2;
-  if (this->_internal_num_range_data() != 0) {
+  if (this->num_range_data() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_num_range_data(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_num_range_data(), target);
   }
 
   // bool finished = 3;
-  if (this->_internal_finished() != 0) {
+  if (this->finished() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_finished(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_finished(), target);
   }
 
   // .cartographer.mapping.proto.Grid2D grid = 4;
-  if (this->_internal_has_grid()) {
+  if (this->has_grid()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::grid(this),
-        _Internal::grid(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::grid(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Submap2D)
@@ -356,67 +359,86 @@ size_t Submap2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Submap2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d local_pose = 1;
-  if (this->_internal_has_local_pose()) {
+  if (this->has_local_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.local_pose_);
+        *local_pose_);
   }
 
   // .cartographer.mapping.proto.Grid2D grid = 4;
-  if (this->_internal_has_grid()) {
+  if (this->has_grid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.grid_);
+        *grid_);
   }
 
   // int32 num_range_data = 2;
-  if (this->_internal_num_range_data() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_num_range_data());
+  if (this->num_range_data() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_num_range_data());
   }
 
   // bool finished = 3;
-  if (this->_internal_finished() != 0) {
+  if (this->finished() != 0) {
     total_size += 1 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Submap2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Submap2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Submap2D::GetClassData() const { return &_class_data_; }
+void Submap2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Submap2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Submap2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Submap2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Submap2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Submap2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void Submap2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Submap2D*>(&to_msg);
-  auto& from = static_cast<const Submap2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Submap2D::MergeFrom(const Submap2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_local_pose()) {
-    _this->_internal_mutable_local_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_local_pose());
+  if (from.has_local_pose()) {
+    _internal_mutable_local_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_local_pose());
   }
-  if (from._internal_has_grid()) {
-    _this->_internal_mutable_grid()->::cartographer::mapping::proto::Grid2D::MergeFrom(
-        from._internal_grid());
+  if (from.has_grid()) {
+    _internal_mutable_grid()->::cartographer::mapping::proto::Grid2D::MergeFrom(from._internal_grid());
   }
-  if (from._internal_num_range_data() != 0) {
-    _this->_internal_set_num_range_data(from._internal_num_range_data());
+  if (from.num_range_data() != 0) {
+    _internal_set_num_range_data(from._internal_num_range_data());
   }
-  if (from._internal_finished() != 0) {
-    _this->_internal_set_finished(from._internal_finished());
+  if (from.finished() != 0) {
+    _internal_set_finished(from._internal_finished());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Submap2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Submap2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Submap2D::CopyFrom(const Submap2D& from) {
@@ -432,23 +454,30 @@ bool Submap2D::IsInitialized() const {
 
 void Submap2D::InternalSwap(Submap2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Submap2D, _impl_.finished_)
-      + sizeof(Submap2D::_impl_.finished_)
-      - PROTOBUF_FIELD_OFFSET(Submap2D, _impl_.local_pose_)>(
-          reinterpret_cast<char*>(&_impl_.local_pose_),
-          reinterpret_cast<char*>(&other->_impl_.local_pose_));
+      PROTOBUF_FIELD_OFFSET(Submap2D, finished_)
+      + sizeof(Submap2D::finished_)
+      - PROTOBUF_FIELD_OFFSET(Submap2D, local_pose_)>(
+          reinterpret_cast<char*>(&local_pose_),
+          reinterpret_cast<char*>(&other->local_pose_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Submap2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void Submap3D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_Submap3D_default_instance_._instance.get_mutable()->local_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+  ::cartographer::mapping::proto::_Submap3D_default_instance_._instance.get_mutable()->high_resolution_hybrid_grid_ = const_cast< ::cartographer::mapping::proto::HybridGrid*>(
+      ::cartographer::mapping::proto::HybridGrid::internal_default_instance());
+  ::cartographer::mapping::proto::_Submap3D_default_instance_._instance.get_mutable()->low_resolution_hybrid_grid_ = const_cast< ::cartographer::mapping::proto::HybridGrid*>(
+      ::cartographer::mapping::proto::HybridGrid::internal_default_instance());
+}
 class Submap3D::_Internal {
  public:
   static const ::cartographer::transform::proto::Rigid3d& local_pose(const Submap3D* msg);
@@ -458,246 +487,241 @@ class Submap3D::_Internal {
 
 const ::cartographer::transform::proto::Rigid3d&
 Submap3D::_Internal::local_pose(const Submap3D* msg) {
-  return *msg->_impl_.local_pose_;
+  return *msg->local_pose_;
 }
 const ::cartographer::mapping::proto::HybridGrid&
 Submap3D::_Internal::high_resolution_hybrid_grid(const Submap3D* msg) {
-  return *msg->_impl_.high_resolution_hybrid_grid_;
+  return *msg->high_resolution_hybrid_grid_;
 }
 const ::cartographer::mapping::proto::HybridGrid&
 Submap3D::_Internal::low_resolution_hybrid_grid(const Submap3D* msg) {
-  return *msg->_impl_.low_resolution_hybrid_grid_;
+  return *msg->low_resolution_hybrid_grid_;
 }
 void Submap3D::clear_local_pose() {
-  if (GetArenaForAllocation() == nullptr && _impl_.local_pose_ != nullptr) {
-    delete _impl_.local_pose_;
+  if (GetArena() == nullptr && local_pose_ != nullptr) {
+    delete local_pose_;
   }
-  _impl_.local_pose_ = nullptr;
+  local_pose_ = nullptr;
 }
 void Submap3D::clear_high_resolution_hybrid_grid() {
-  if (GetArenaForAllocation() == nullptr && _impl_.high_resolution_hybrid_grid_ != nullptr) {
-    delete _impl_.high_resolution_hybrid_grid_;
+  if (GetArena() == nullptr && high_resolution_hybrid_grid_ != nullptr) {
+    delete high_resolution_hybrid_grid_;
   }
-  _impl_.high_resolution_hybrid_grid_ = nullptr;
+  high_resolution_hybrid_grid_ = nullptr;
 }
 void Submap3D::clear_low_resolution_hybrid_grid() {
-  if (GetArenaForAllocation() == nullptr && _impl_.low_resolution_hybrid_grid_ != nullptr) {
-    delete _impl_.low_resolution_hybrid_grid_;
+  if (GetArena() == nullptr && low_resolution_hybrid_grid_ != nullptr) {
+    delete low_resolution_hybrid_grid_;
   }
-  _impl_.low_resolution_hybrid_grid_ = nullptr;
+  low_resolution_hybrid_grid_ = nullptr;
 }
-Submap3D::Submap3D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Submap3D::Submap3D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  rotational_scan_matcher_histogram_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Submap3D)
 }
 Submap3D::Submap3D(const Submap3D& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Submap3D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.rotational_scan_matcher_histogram_){from._impl_.rotational_scan_matcher_histogram_}
-    , decltype(_impl_.local_pose_){nullptr}
-    , decltype(_impl_.high_resolution_hybrid_grid_){nullptr}
-    , decltype(_impl_.low_resolution_hybrid_grid_){nullptr}
-    , decltype(_impl_.num_range_data_){}
-    , decltype(_impl_.finished_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      rotational_scan_matcher_histogram_(from.rotational_scan_matcher_histogram_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_local_pose()) {
-    _this->_impl_.local_pose_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.local_pose_);
+    local_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.local_pose_);
+  } else {
+    local_pose_ = nullptr;
   }
   if (from._internal_has_high_resolution_hybrid_grid()) {
-    _this->_impl_.high_resolution_hybrid_grid_ = new ::cartographer::mapping::proto::HybridGrid(*from._impl_.high_resolution_hybrid_grid_);
+    high_resolution_hybrid_grid_ = new ::cartographer::mapping::proto::HybridGrid(*from.high_resolution_hybrid_grid_);
+  } else {
+    high_resolution_hybrid_grid_ = nullptr;
   }
   if (from._internal_has_low_resolution_hybrid_grid()) {
-    _this->_impl_.low_resolution_hybrid_grid_ = new ::cartographer::mapping::proto::HybridGrid(*from._impl_.low_resolution_hybrid_grid_);
+    low_resolution_hybrid_grid_ = new ::cartographer::mapping::proto::HybridGrid(*from.low_resolution_hybrid_grid_);
+  } else {
+    low_resolution_hybrid_grid_ = nullptr;
   }
-  ::memcpy(&_impl_.num_range_data_, &from._impl_.num_range_data_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.finished_) -
-    reinterpret_cast<char*>(&_impl_.num_range_data_)) + sizeof(_impl_.finished_));
+  ::memcpy(&num_range_data_, &from.num_range_data_,
+    static_cast<size_t>(reinterpret_cast<char*>(&finished_) -
+    reinterpret_cast<char*>(&num_range_data_)) + sizeof(finished_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Submap3D)
 }
 
-inline void Submap3D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.rotational_scan_matcher_histogram_){arena}
-    , decltype(_impl_.local_pose_){nullptr}
-    , decltype(_impl_.high_resolution_hybrid_grid_){nullptr}
-    , decltype(_impl_.low_resolution_hybrid_grid_){nullptr}
-    , decltype(_impl_.num_range_data_){0}
-    , decltype(_impl_.finished_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void Submap3D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base);
+  ::memset(&local_pose_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&finished_) -
+      reinterpret_cast<char*>(&local_pose_)) + sizeof(finished_));
 }
 
 Submap3D::~Submap3D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Submap3D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Submap3D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.rotational_scan_matcher_histogram_.~RepeatedField();
-  if (this != internal_default_instance()) delete _impl_.local_pose_;
-  if (this != internal_default_instance()) delete _impl_.high_resolution_hybrid_grid_;
-  if (this != internal_default_instance()) delete _impl_.low_resolution_hybrid_grid_;
+void Submap3D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete local_pose_;
+  if (this != internal_default_instance()) delete high_resolution_hybrid_grid_;
+  if (this != internal_default_instance()) delete low_resolution_hybrid_grid_;
 }
 
+void Submap3D::ArenaDtor(void* object) {
+  Submap3D* _this = reinterpret_cast< Submap3D* >(object);
+  (void)_this;
+}
+void Submap3D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Submap3D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const Submap3D& Submap3D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Submap3D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Submap3D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.rotational_scan_matcher_histogram_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.local_pose_ != nullptr) {
-    delete _impl_.local_pose_;
+  rotational_scan_matcher_histogram_.Clear();
+  if (GetArena() == nullptr && local_pose_ != nullptr) {
+    delete local_pose_;
   }
-  _impl_.local_pose_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.high_resolution_hybrid_grid_ != nullptr) {
-    delete _impl_.high_resolution_hybrid_grid_;
+  local_pose_ = nullptr;
+  if (GetArena() == nullptr && high_resolution_hybrid_grid_ != nullptr) {
+    delete high_resolution_hybrid_grid_;
   }
-  _impl_.high_resolution_hybrid_grid_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.low_resolution_hybrid_grid_ != nullptr) {
-    delete _impl_.low_resolution_hybrid_grid_;
+  high_resolution_hybrid_grid_ = nullptr;
+  if (GetArena() == nullptr && low_resolution_hybrid_grid_ != nullptr) {
+    delete low_resolution_hybrid_grid_;
   }
-  _impl_.low_resolution_hybrid_grid_ = nullptr;
-  ::memset(&_impl_.num_range_data_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.finished_) -
-      reinterpret_cast<char*>(&_impl_.num_range_data_)) + sizeof(_impl_.finished_));
+  low_resolution_hybrid_grid_ = nullptr;
+  ::memset(&num_range_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&finished_) -
+      reinterpret_cast<char*>(&num_range_data_)) + sizeof(finished_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Submap3D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Submap3D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.transform.proto.Rigid3d local_pose = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_local_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 num_range_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          num_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool finished = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.finished_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          finished_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.HybridGrid high_resolution_hybrid_grid = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_high_resolution_hybrid_grid(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.HybridGrid low_resolution_hybrid_grid = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_low_resolution_hybrid_grid(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated float rotational_scan_matcher_histogram = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_rotational_scan_matcher_histogram(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 53) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53) {
           _internal_add_rotational_scan_matcher_histogram(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Submap3D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Submap3D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Submap3D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d local_pose = 1;
-  if (this->_internal_has_local_pose()) {
+  if (this->has_local_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::local_pose(this),
-        _Internal::local_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::local_pose(this), target, stream);
   }
 
   // int32 num_range_data = 2;
-  if (this->_internal_num_range_data() != 0) {
+  if (this->num_range_data() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_num_range_data(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_num_range_data(), target);
   }
 
   // bool finished = 3;
-  if (this->_internal_finished() != 0) {
+  if (this->finished() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_finished(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_finished(), target);
   }
 
   // .cartographer.mapping.proto.HybridGrid high_resolution_hybrid_grid = 4;
-  if (this->_internal_has_high_resolution_hybrid_grid()) {
+  if (this->has_high_resolution_hybrid_grid()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::high_resolution_hybrid_grid(this),
-        _Internal::high_resolution_hybrid_grid(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::high_resolution_hybrid_grid(this), target, stream);
   }
 
   // .cartographer.mapping.proto.HybridGrid low_resolution_hybrid_grid = 5;
-  if (this->_internal_has_low_resolution_hybrid_grid()) {
+  if (this->has_low_resolution_hybrid_grid()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::low_resolution_hybrid_grid(this),
-        _Internal::low_resolution_hybrid_grid(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        5, _Internal::low_resolution_hybrid_grid(this), target, stream);
   }
 
   // repeated float rotational_scan_matcher_histogram = 6;
@@ -706,7 +730,7 @@ uint8_t* Submap3D::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Submap3D)
@@ -717,7 +741,7 @@ size_t Submap3D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Submap3D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -727,80 +751,102 @@ size_t Submap3D::ByteSizeLong() const {
     size_t data_size = 4UL * count;
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _rotational_scan_matcher_histogram_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // .cartographer.transform.proto.Rigid3d local_pose = 1;
-  if (this->_internal_has_local_pose()) {
+  if (this->has_local_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.local_pose_);
+        *local_pose_);
   }
 
   // .cartographer.mapping.proto.HybridGrid high_resolution_hybrid_grid = 4;
-  if (this->_internal_has_high_resolution_hybrid_grid()) {
+  if (this->has_high_resolution_hybrid_grid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.high_resolution_hybrid_grid_);
+        *high_resolution_hybrid_grid_);
   }
 
   // .cartographer.mapping.proto.HybridGrid low_resolution_hybrid_grid = 5;
-  if (this->_internal_has_low_resolution_hybrid_grid()) {
+  if (this->has_low_resolution_hybrid_grid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.low_resolution_hybrid_grid_);
+        *low_resolution_hybrid_grid_);
   }
 
   // int32 num_range_data = 2;
-  if (this->_internal_num_range_data() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_num_range_data());
+  if (this->num_range_data() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_num_range_data());
   }
 
   // bool finished = 3;
-  if (this->_internal_finished() != 0) {
+  if (this->finished() != 0) {
     total_size += 1 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Submap3D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Submap3D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Submap3D::GetClassData() const { return &_class_data_; }
+void Submap3D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Submap3D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Submap3D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Submap3D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Submap3D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Submap3D)
+    MergeFrom(*source);
+  }
+}
 
-
-void Submap3D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Submap3D*>(&to_msg);
-  auto& from = static_cast<const Submap3D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap3D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Submap3D::MergeFrom(const Submap3D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap3D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.rotational_scan_matcher_histogram_.MergeFrom(from._impl_.rotational_scan_matcher_histogram_);
-  if (from._internal_has_local_pose()) {
-    _this->_internal_mutable_local_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_local_pose());
+  rotational_scan_matcher_histogram_.MergeFrom(from.rotational_scan_matcher_histogram_);
+  if (from.has_local_pose()) {
+    _internal_mutable_local_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_local_pose());
   }
-  if (from._internal_has_high_resolution_hybrid_grid()) {
-    _this->_internal_mutable_high_resolution_hybrid_grid()->::cartographer::mapping::proto::HybridGrid::MergeFrom(
-        from._internal_high_resolution_hybrid_grid());
+  if (from.has_high_resolution_hybrid_grid()) {
+    _internal_mutable_high_resolution_hybrid_grid()->::cartographer::mapping::proto::HybridGrid::MergeFrom(from._internal_high_resolution_hybrid_grid());
   }
-  if (from._internal_has_low_resolution_hybrid_grid()) {
-    _this->_internal_mutable_low_resolution_hybrid_grid()->::cartographer::mapping::proto::HybridGrid::MergeFrom(
-        from._internal_low_resolution_hybrid_grid());
+  if (from.has_low_resolution_hybrid_grid()) {
+    _internal_mutable_low_resolution_hybrid_grid()->::cartographer::mapping::proto::HybridGrid::MergeFrom(from._internal_low_resolution_hybrid_grid());
   }
-  if (from._internal_num_range_data() != 0) {
-    _this->_internal_set_num_range_data(from._internal_num_range_data());
+  if (from.num_range_data() != 0) {
+    _internal_set_num_range_data(from._internal_num_range_data());
   }
-  if (from._internal_finished() != 0) {
-    _this->_internal_set_finished(from._internal_finished());
+  if (from.finished() != 0) {
+    _internal_set_finished(from._internal_finished());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Submap3D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Submap3D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Submap3D::CopyFrom(const Submap3D& from) {
@@ -816,33 +862,30 @@ bool Submap3D::IsInitialized() const {
 
 void Submap3D::InternalSwap(Submap3D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.rotational_scan_matcher_histogram_.InternalSwap(&other->_impl_.rotational_scan_matcher_histogram_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  rotational_scan_matcher_histogram_.InternalSwap(&other->rotational_scan_matcher_histogram_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Submap3D, _impl_.finished_)
-      + sizeof(Submap3D::_impl_.finished_)
-      - PROTOBUF_FIELD_OFFSET(Submap3D, _impl_.local_pose_)>(
-          reinterpret_cast<char*>(&_impl_.local_pose_),
-          reinterpret_cast<char*>(&other->_impl_.local_pose_));
+      PROTOBUF_FIELD_OFFSET(Submap3D, finished_)
+      + sizeof(Submap3D::finished_)
+      - PROTOBUF_FIELD_OFFSET(Submap3D, local_pose_)>(
+          reinterpret_cast<char*>(&local_pose_),
+          reinterpret_cast<char*>(&other->local_pose_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Submap3D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fsubmap_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Submap2D >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap3D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap3D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap3D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap3D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Submap3D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

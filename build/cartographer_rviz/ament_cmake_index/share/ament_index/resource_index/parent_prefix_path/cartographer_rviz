@@ -1,1 +1,1 @@
-/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/opt/ros/jazzy
+/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/opt/ros/humble

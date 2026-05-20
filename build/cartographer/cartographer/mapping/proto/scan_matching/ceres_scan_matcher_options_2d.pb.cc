@@ -14,58 +14,55 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace scan_matching {
 namespace proto {
-PROTOBUF_CONSTEXPR CeresScanMatcherOptions2D::CeresScanMatcherOptions2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.ceres_solver_options_)*/nullptr
-  , /*decltype(_impl_.occupied_space_weight_)*/0
-  , /*decltype(_impl_.translation_weight_)*/0
-  , /*decltype(_impl_.rotation_weight_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct CeresScanMatcherOptions2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CeresScanMatcherOptions2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CeresScanMatcherOptions2DDefaultTypeInternal() {}
-  union {
-    CeresScanMatcherOptions2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CeresScanMatcherOptions2DDefaultTypeInternal _CeresScanMatcherOptions2D_default_instance_;
+class CeresScanMatcherOptions2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CeresScanMatcherOptions2D> _instance;
+} _CeresScanMatcherOptions2D_default_instance_;
 }  // namespace proto
 }  // namespace scan_matching
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = nullptr;
+static void InitDefaultsscc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::scan_matching::proto::_CeresScanMatcherOptions2D_default_instance_;
+    new (ptr) ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto}, {
+      &scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, _impl_.occupied_space_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, _impl_.translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, _impl_.rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, _impl_.ceres_solver_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, occupied_space_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D, ceres_solver_options_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::scan_matching::proto::_CeresScanMatcherOptions2D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::scan_matching::proto::_CeresScanMatcherOptions2D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -80,24 +77,22 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fscan_5fmat
   ".cartographer.common.proto.CeresSolverOp"
   "tionsb\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_deps[1] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_deps[1] = {
   &::descriptor_table_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = {
-    false, false, 373, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto,
-    "cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_deps, 1, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_sccs[1] = {
+  &scc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto, "cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.proto", 373,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_deps, 1, 1,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace scan_matching {
@@ -105,6 +100,10 @@ namespace proto {
 
 // ===================================================================
 
+void CeresScanMatcherOptions2D::InitAsDefaultInstance() {
+  ::cartographer::mapping::scan_matching::proto::_CeresScanMatcherOptions2D_default_instance_._instance.get_mutable()->ceres_solver_options_ = const_cast< ::cartographer::common::proto::CeresSolverOptions*>(
+      ::cartographer::common::proto::CeresSolverOptions::internal_default_instance());
+}
 class CeresScanMatcherOptions2D::_Internal {
  public:
   static const ::cartographer::common::proto::CeresSolverOptions& ceres_solver_options(const CeresScanMatcherOptions2D* msg);
@@ -112,193 +111,175 @@ class CeresScanMatcherOptions2D::_Internal {
 
 const ::cartographer::common::proto::CeresSolverOptions&
 CeresScanMatcherOptions2D::_Internal::ceres_solver_options(const CeresScanMatcherOptions2D* msg) {
-  return *msg->_impl_.ceres_solver_options_;
+  return *msg->ceres_solver_options_;
 }
 void CeresScanMatcherOptions2D::clear_ceres_solver_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.ceres_solver_options_ != nullptr) {
-    delete _impl_.ceres_solver_options_;
+  if (GetArena() == nullptr && ceres_solver_options_ != nullptr) {
+    delete ceres_solver_options_;
   }
-  _impl_.ceres_solver_options_ = nullptr;
+  ceres_solver_options_ = nullptr;
 }
-CeresScanMatcherOptions2D::CeresScanMatcherOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+CeresScanMatcherOptions2D::CeresScanMatcherOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
 }
 CeresScanMatcherOptions2D::CeresScanMatcherOptions2D(const CeresScanMatcherOptions2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  CeresScanMatcherOptions2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.ceres_solver_options_){nullptr}
-    , decltype(_impl_.occupied_space_weight_){}
-    , decltype(_impl_.translation_weight_){}
-    , decltype(_impl_.rotation_weight_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_ceres_solver_options()) {
-    _this->_impl_.ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from._impl_.ceres_solver_options_);
+    ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from.ceres_solver_options_);
+  } else {
+    ceres_solver_options_ = nullptr;
   }
-  ::memcpy(&_impl_.occupied_space_weight_, &from._impl_.occupied_space_weight_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.rotation_weight_) -
-    reinterpret_cast<char*>(&_impl_.occupied_space_weight_)) + sizeof(_impl_.rotation_weight_));
+  ::memcpy(&occupied_space_weight_, &from.occupied_space_weight_,
+    static_cast<size_t>(reinterpret_cast<char*>(&rotation_weight_) -
+    reinterpret_cast<char*>(&occupied_space_weight_)) + sizeof(rotation_weight_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
 }
 
-inline void CeresScanMatcherOptions2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.ceres_solver_options_){nullptr}
-    , decltype(_impl_.occupied_space_weight_){0}
-    , decltype(_impl_.translation_weight_){0}
-    , decltype(_impl_.rotation_weight_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void CeresScanMatcherOptions2D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto.base);
+  ::memset(&ceres_solver_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_weight_) -
+      reinterpret_cast<char*>(&ceres_solver_options_)) + sizeof(rotation_weight_));
 }
 
 CeresScanMatcherOptions2D::~CeresScanMatcherOptions2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void CeresScanMatcherOptions2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.ceres_solver_options_;
+void CeresScanMatcherOptions2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete ceres_solver_options_;
 }
 
+void CeresScanMatcherOptions2D::ArenaDtor(void* object) {
+  CeresScanMatcherOptions2D* _this = reinterpret_cast< CeresScanMatcherOptions2D* >(object);
+  (void)_this;
+}
+void CeresScanMatcherOptions2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void CeresScanMatcherOptions2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const CeresScanMatcherOptions2D& CeresScanMatcherOptions2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CeresScanMatcherOptions2D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void CeresScanMatcherOptions2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.ceres_solver_options_ != nullptr) {
-    delete _impl_.ceres_solver_options_;
+  if (GetArena() == nullptr && ceres_solver_options_ != nullptr) {
+    delete ceres_solver_options_;
   }
-  _impl_.ceres_solver_options_ = nullptr;
-  ::memset(&_impl_.occupied_space_weight_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.rotation_weight_) -
-      reinterpret_cast<char*>(&_impl_.occupied_space_weight_)) + sizeof(_impl_.rotation_weight_));
+  ceres_solver_options_ = nullptr;
+  ::memset(&occupied_space_weight_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_weight_) -
+      reinterpret_cast<char*>(&occupied_space_weight_)) + sizeof(rotation_weight_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CeresScanMatcherOptions2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CeresScanMatcherOptions2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // double occupied_space_weight = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
-          _impl_.occupied_space_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          occupied_space_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double translation_weight = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double rotation_weight = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
-          _impl_.rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_ceres_solver_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* CeresScanMatcherOptions2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* CeresScanMatcherOptions2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double occupied_space_weight = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_occupied_space_weight = this->_internal_occupied_space_weight();
-  uint64_t raw_occupied_space_weight;
-  memcpy(&raw_occupied_space_weight, &tmp_occupied_space_weight, sizeof(tmp_occupied_space_weight));
-  if (raw_occupied_space_weight != 0) {
+  if (!(this->occupied_space_weight() <= 0 && this->occupied_space_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_occupied_space_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_occupied_space_weight(), target);
   }
 
   // double translation_weight = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = this->_internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
+  if (!(this->translation_weight() <= 0 && this->translation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_translation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_translation_weight(), target);
   }
 
   // double rotation_weight = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = this->_internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
+  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_rotation_weight(), target);
   }
 
   // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 9;
-  if (this->_internal_has_ceres_solver_options()) {
+  if (this->has_ceres_solver_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(9, _Internal::ceres_solver_options(this),
-        _Internal::ceres_solver_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        9, _Internal::ceres_solver_options(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
@@ -309,88 +290,82 @@ size_t CeresScanMatcherOptions2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 9;
-  if (this->_internal_has_ceres_solver_options()) {
+  if (this->has_ceres_solver_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.ceres_solver_options_);
+        *ceres_solver_options_);
   }
 
   // double occupied_space_weight = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_occupied_space_weight = this->_internal_occupied_space_weight();
-  uint64_t raw_occupied_space_weight;
-  memcpy(&raw_occupied_space_weight, &tmp_occupied_space_weight, sizeof(tmp_occupied_space_weight));
-  if (raw_occupied_space_weight != 0) {
+  if (!(this->occupied_space_weight() <= 0 && this->occupied_space_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double translation_weight = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = this->_internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
+  if (!(this->translation_weight() <= 0 && this->translation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double rotation_weight = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = this->_internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
+  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CeresScanMatcherOptions2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    CeresScanMatcherOptions2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CeresScanMatcherOptions2D::GetClassData() const { return &_class_data_; }
+void CeresScanMatcherOptions2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CeresScanMatcherOptions2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CeresScanMatcherOptions2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void CeresScanMatcherOptions2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<CeresScanMatcherOptions2D*>(&to_msg);
-  auto& from = static_cast<const CeresScanMatcherOptions2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void CeresScanMatcherOptions2D::MergeFrom(const CeresScanMatcherOptions2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_ceres_solver_options()) {
-    _this->_internal_mutable_ceres_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(
-        from._internal_ceres_solver_options());
+  if (from.has_ceres_solver_options()) {
+    _internal_mutable_ceres_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(from._internal_ceres_solver_options());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_occupied_space_weight = from._internal_occupied_space_weight();
-  uint64_t raw_occupied_space_weight;
-  memcpy(&raw_occupied_space_weight, &tmp_occupied_space_weight, sizeof(tmp_occupied_space_weight));
-  if (raw_occupied_space_weight != 0) {
-    _this->_internal_set_occupied_space_weight(from._internal_occupied_space_weight());
+  if (!(from.occupied_space_weight() <= 0 && from.occupied_space_weight() >= 0)) {
+    _internal_set_occupied_space_weight(from._internal_occupied_space_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = from._internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
-    _this->_internal_set_translation_weight(from._internal_translation_weight());
+  if (!(from.translation_weight() <= 0 && from.translation_weight() >= 0)) {
+    _internal_set_translation_weight(from._internal_translation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = from._internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
-    _this->_internal_set_rotation_weight(from._internal_rotation_weight());
+  if (!(from.rotation_weight() <= 0 && from.rotation_weight() >= 0)) {
+    _internal_set_rotation_weight(from._internal_rotation_weight());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CeresScanMatcherOptions2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void CeresScanMatcherOptions2D::CopyFrom(const CeresScanMatcherOptions2D& from) {
@@ -406,20 +381,19 @@ bool CeresScanMatcherOptions2D::IsInitialized() const {
 
 void CeresScanMatcherOptions2D::InternalSwap(CeresScanMatcherOptions2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CeresScanMatcherOptions2D, _impl_.rotation_weight_)
-      + sizeof(CeresScanMatcherOptions2D::_impl_.rotation_weight_)
-      - PROTOBUF_FIELD_OFFSET(CeresScanMatcherOptions2D, _impl_.ceres_solver_options_)>(
-          reinterpret_cast<char*>(&_impl_.ceres_solver_options_),
-          reinterpret_cast<char*>(&other->_impl_.ceres_solver_options_));
+      PROTOBUF_FIELD_OFFSET(CeresScanMatcherOptions2D, rotation_weight_)
+      + sizeof(CeresScanMatcherOptions2D::rotation_weight_)
+      - PROTOBUF_FIELD_OFFSET(CeresScanMatcherOptions2D, ceres_solver_options_)>(
+          reinterpret_cast<char*>(&ceres_solver_options_),
+          reinterpret_cast<char*>(&other->ceres_solver_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CeresScanMatcherOptions2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f2d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
@@ -427,8 +401,7 @@ void CeresScanMatcherOptions2D::InternalSwap(CeresScanMatcherOptions2D* other) {
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D* Arena::CreateMaybeMessage< ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions2D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

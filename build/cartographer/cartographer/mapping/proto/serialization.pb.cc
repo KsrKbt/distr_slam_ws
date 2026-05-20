@@ -14,282 +14,354 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fsubmap_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fsubmap_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fserialization_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fnode_5fdata_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_TrajectoryNodeData_cartographer_2fmapping_2fproto_2ftrajectory_5fnode_5fdata_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fsensor_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FixedFramePoseData_cartographer_2fsensor_2fproto_2fsensor_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fsensor_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuData_cartographer_2fsensor_2fproto_2fsensor_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fsensor_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LandmarkData_cartographer_2fsensor_2fproto_2fsensor_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fsensor_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OdometryData_cartographer_2fsensor_2fproto_2fsensor_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Quaterniond_cartographer_2ftransform_2fproto_2ftransform_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR Submap::Submap(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.submap_id_)*/nullptr
-  , /*decltype(_impl_.submap_2d_)*/nullptr
-  , /*decltype(_impl_.submap_3d_)*/nullptr
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SubmapDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubmapDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubmapDefaultTypeInternal() {}
-  union {
-    Submap _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubmapDefaultTypeInternal _Submap_default_instance_;
-PROTOBUF_CONSTEXPR Node::Node(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.node_id_)*/nullptr
-  , /*decltype(_impl_.node_data_)*/nullptr
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct NodeDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR NodeDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~NodeDefaultTypeInternal() {}
-  union {
-    Node _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NodeDefaultTypeInternal _Node_default_instance_;
-PROTOBUF_CONSTEXPR ImuData::ImuData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.imu_data_)*/nullptr
-  , /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ImuDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ImuDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ImuDataDefaultTypeInternal() {}
-  union {
-    ImuData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ImuDataDefaultTypeInternal _ImuData_default_instance_;
-PROTOBUF_CONSTEXPR OdometryData::OdometryData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.odometry_data_)*/nullptr
-  , /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct OdometryDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR OdometryDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~OdometryDataDefaultTypeInternal() {}
-  union {
-    OdometryData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OdometryDataDefaultTypeInternal _OdometryData_default_instance_;
-PROTOBUF_CONSTEXPR FixedFramePoseData::FixedFramePoseData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.fixed_frame_pose_data_)*/nullptr
-  , /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct FixedFramePoseDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR FixedFramePoseDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~FixedFramePoseDataDefaultTypeInternal() {}
-  union {
-    FixedFramePoseData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FixedFramePoseDataDefaultTypeInternal _FixedFramePoseData_default_instance_;
-PROTOBUF_CONSTEXPR LandmarkData::LandmarkData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.landmark_data_)*/nullptr
-  , /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct LandmarkDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LandmarkDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LandmarkDataDefaultTypeInternal() {}
-  union {
-    LandmarkData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LandmarkDataDefaultTypeInternal _LandmarkData_default_instance_;
-PROTOBUF_CONSTEXPR TrajectoryData::TrajectoryData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.imu_calibration_)*/nullptr
-  , /*decltype(_impl_.fixed_frame_origin_in_map_)*/nullptr
-  , /*decltype(_impl_.gravity_constant_)*/0
-  , /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TrajectoryDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TrajectoryDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TrajectoryDataDefaultTypeInternal() {}
-  union {
-    TrajectoryData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TrajectoryDataDefaultTypeInternal _TrajectoryData_default_instance_;
-PROTOBUF_CONSTEXPR LocalSlamResultData::LocalSlamResultData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.submaps_)*/{}
-  , /*decltype(_impl_.node_data_)*/nullptr
-  , /*decltype(_impl_.timestamp_)*/int64_t{0}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct LocalSlamResultDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LocalSlamResultDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LocalSlamResultDataDefaultTypeInternal() {}
-  union {
-    LocalSlamResultData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LocalSlamResultDataDefaultTypeInternal _LocalSlamResultData_default_instance_;
-PROTOBUF_CONSTEXPR SerializationHeader::SerializationHeader(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.format_version_)*/0u
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SerializationHeaderDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SerializationHeaderDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SerializationHeaderDefaultTypeInternal() {}
-  union {
-    SerializationHeader _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SerializationHeaderDefaultTypeInternal _SerializationHeader_default_instance_;
-PROTOBUF_CONSTEXPR SerializedData::SerializedData(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.data_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_._oneof_case_)*/{}} {}
-struct SerializedDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SerializedDataDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SerializedDataDefaultTypeInternal() {}
-  union {
-    SerializedData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SerializedDataDefaultTypeInternal _SerializedData_default_instance_;
+class SubmapDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Submap> _instance;
+} _Submap_default_instance_;
+class NodeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Node> _instance;
+} _Node_default_instance_;
+class ImuDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ImuData> _instance;
+} _ImuData_default_instance_;
+class OdometryDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OdometryData> _instance;
+} _OdometryData_default_instance_;
+class FixedFramePoseDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FixedFramePoseData> _instance;
+} _FixedFramePoseData_default_instance_;
+class LandmarkDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LandmarkData> _instance;
+} _LandmarkData_default_instance_;
+class TrajectoryDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TrajectoryData> _instance;
+} _TrajectoryData_default_instance_;
+class LocalSlamResultDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LocalSlamResultData> _instance;
+} _LocalSlamResultData_default_instance_;
+class SerializationHeaderDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SerializationHeader> _instance;
+} _SerializationHeader_default_instance_;
+class SerializedDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SerializedData> _instance;
+  const ::cartographer::mapping::proto::PoseGraph* pose_graph_;
+  const ::cartographer::mapping::proto::AllTrajectoryBuilderOptions* all_trajectory_builder_options_;
+  const ::cartographer::mapping::proto::Submap* submap_;
+  const ::cartographer::mapping::proto::Node* node_;
+  const ::cartographer::mapping::proto::TrajectoryData* trajectory_data_;
+  const ::cartographer::mapping::proto::ImuData* imu_data_;
+  const ::cartographer::mapping::proto::OdometryData* odometry_data_;
+  const ::cartographer::mapping::proto::FixedFramePoseData* fixed_frame_pose_data_;
+  const ::cartographer::mapping::proto::LandmarkData* landmark_data_;
+} _SerializedData_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[10];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto = nullptr;
+static void InitDefaultsscc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fserialization_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_FixedFramePoseData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::FixedFramePoseData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::FixedFramePoseData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_FixedFramePoseData_cartographer_2fsensor_2fproto_2fsensor_2eproto.base,}};
+
+static void InitDefaultsscc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_ImuData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::ImuData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::ImuData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_ImuData_cartographer_2fsensor_2fproto_2fsensor_2eproto.base,}};
+
+static void InitDefaultsscc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_LandmarkData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::LandmarkData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::LandmarkData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_LandmarkData_cartographer_2fsensor_2fproto_2fsensor_2eproto.base,}};
+
+static void InitDefaultsscc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_LocalSlamResultData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::LocalSlamResultData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::LocalSlamResultData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_TrajectoryNodeData_cartographer_2fmapping_2fproto_2ftrajectory_5fnode_5fdata_2eproto.base,
+      &scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,}};
+
+static void InitDefaultsscc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_Node_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Node();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Node::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_TrajectoryNodeData_cartographer_2fmapping_2fproto_2ftrajectory_5fnode_5fdata_2eproto.base,}};
+
+static void InitDefaultsscc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_OdometryData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::OdometryData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::OdometryData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_OdometryData_cartographer_2fsensor_2fproto_2fsensor_2eproto.base,}};
+
+static void InitDefaultsscc_info_SerializationHeader_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_SerializationHeader_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::SerializationHeader();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::SerializationHeader::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SerializationHeader_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SerializationHeader_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {}};
+
+static void InitDefaultsscc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_SerializedData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::SerializedData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::SerializedData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<9> scc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 9, 0, InitDefaultsscc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+      &scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+      &scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,}};
+
+static void InitDefaultsscc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_Submap_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::Submap();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::Submap::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_Submap2D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base,
+      &scc_info_Submap3D_cartographer_2fmapping_2fproto_2fsubmap_2eproto.base,}};
+
+static void InitDefaultsscc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_TrajectoryData_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::TrajectoryData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::TrajectoryData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto}, {
+      &scc_info_Quaterniond_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[10];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fserialization_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, _impl_.submap_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, _impl_.submap_2d_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, _impl_.submap_3d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, submap_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, submap_2d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Submap, submap_3d_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Node, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Node, _impl_.node_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Node, _impl_.node_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Node, node_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::Node, node_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuData, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuData, _impl_.imu_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuData, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuData, imu_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::OdometryData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::OdometryData, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::OdometryData, _impl_.odometry_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::OdometryData, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::OdometryData, odometry_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::FixedFramePoseData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::FixedFramePoseData, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::FixedFramePoseData, _impl_.fixed_frame_pose_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::FixedFramePoseData, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::FixedFramePoseData, fixed_frame_pose_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LandmarkData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LandmarkData, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LandmarkData, _impl_.landmark_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LandmarkData, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LandmarkData, landmark_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, _impl_.gravity_constant_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, _impl_.imu_calibration_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, _impl_.fixed_frame_origin_in_map_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, gravity_constant_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, imu_calibration_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryData, fixed_frame_origin_in_map_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, _impl_.timestamp_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, _impl_.node_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, _impl_.submaps_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, node_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalSlamResultData, submaps_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializationHeader, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializationHeader, _impl_.format_version_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializationHeader, format_version_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializedData, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializedData, _impl_._oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializedData, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  ::_pbi::kInvalidFieldOffsetTag,
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializedData, _impl_.data_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, pose_graph_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, all_trajectory_builder_options_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, submap_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, node_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, trajectory_data_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, imu_data_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, odometry_data_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, fixed_frame_pose_data_),
+  offsetof(::cartographer::mapping::proto::SerializedDataDefaultTypeInternal, landmark_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SerializedData, data_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::Submap)},
-  { 9, -1, -1, sizeof(::cartographer::mapping::proto::Node)},
-  { 17, -1, -1, sizeof(::cartographer::mapping::proto::ImuData)},
-  { 25, -1, -1, sizeof(::cartographer::mapping::proto::OdometryData)},
-  { 33, -1, -1, sizeof(::cartographer::mapping::proto::FixedFramePoseData)},
-  { 41, -1, -1, sizeof(::cartographer::mapping::proto::LandmarkData)},
-  { 49, -1, -1, sizeof(::cartographer::mapping::proto::TrajectoryData)},
-  { 59, -1, -1, sizeof(::cartographer::mapping::proto::LocalSlamResultData)},
-  { 68, -1, -1, sizeof(::cartographer::mapping::proto::SerializationHeader)},
-  { 75, -1, -1, sizeof(::cartographer::mapping::proto::SerializedData)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::Submap)},
+  { 8, -1, sizeof(::cartographer::mapping::proto::Node)},
+  { 15, -1, sizeof(::cartographer::mapping::proto::ImuData)},
+  { 22, -1, sizeof(::cartographer::mapping::proto::OdometryData)},
+  { 29, -1, sizeof(::cartographer::mapping::proto::FixedFramePoseData)},
+  { 36, -1, sizeof(::cartographer::mapping::proto::LandmarkData)},
+  { 43, -1, sizeof(::cartographer::mapping::proto::TrajectoryData)},
+  { 52, -1, sizeof(::cartographer::mapping::proto::LocalSlamResultData)},
+  { 60, -1, sizeof(::cartographer::mapping::proto::SerializationHeader)},
+  { 66, -1, sizeof(::cartographer::mapping::proto::SerializedData)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_Submap_default_instance_._instance,
-  &::cartographer::mapping::proto::_Node_default_instance_._instance,
-  &::cartographer::mapping::proto::_ImuData_default_instance_._instance,
-  &::cartographer::mapping::proto::_OdometryData_default_instance_._instance,
-  &::cartographer::mapping::proto::_FixedFramePoseData_default_instance_._instance,
-  &::cartographer::mapping::proto::_LandmarkData_default_instance_._instance,
-  &::cartographer::mapping::proto::_TrajectoryData_default_instance_._instance,
-  &::cartographer::mapping::proto::_LocalSlamResultData_default_instance_._instance,
-  &::cartographer::mapping::proto::_SerializationHeader_default_instance_._instance,
-  &::cartographer::mapping::proto::_SerializedData_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Submap_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_Node_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_ImuData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_OdometryData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_FixedFramePoseData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_LandmarkData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_TrajectoryData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_LocalSlamResultData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_SerializationHeader_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_SerializedData_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fserialization_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -348,7 +420,7 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fserializat
   "rk_data\030\t \001(\0132(.cartographer.mapping.pro"
   "to.LandmarkDataH\000B\006\n\004datab\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_deps[6] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_deps[6] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fsubmap_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto,
@@ -356,27 +428,42 @@ static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapp
   &::descriptor_table_cartographer_2fsensor_2fproto_2fsensor_2eproto,
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto = {
-    false, false, 2153, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fserialization_2eproto,
-    "cartographer/mapping/proto/serialization.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_deps, 6, 10,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fserialization_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_sccs[10] = {
+  &scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_SerializationHeader_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
+  &scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fserialization_2eproto, "cartographer/mapping/proto/serialization.proto", 2153,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_deps, 10, 6,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fserialization_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto, 10, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fserialization_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fserialization_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fserialization_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void Submap::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_Submap_default_instance_._instance.get_mutable()->submap_id_ = const_cast< ::cartographer::mapping::proto::SubmapId*>(
+      ::cartographer::mapping::proto::SubmapId::internal_default_instance());
+  ::cartographer::mapping::proto::_Submap_default_instance_._instance.get_mutable()->submap_2d_ = const_cast< ::cartographer::mapping::proto::Submap2D*>(
+      ::cartographer::mapping::proto::Submap2D::internal_default_instance());
+  ::cartographer::mapping::proto::_Submap_default_instance_._instance.get_mutable()->submap_3d_ = const_cast< ::cartographer::mapping::proto::Submap3D*>(
+      ::cartographer::mapping::proto::Submap3D::internal_default_instance());
+}
 class Submap::_Internal {
  public:
   static const ::cartographer::mapping::proto::SubmapId& submap_id(const Submap* msg);
@@ -386,197 +473,200 @@ class Submap::_Internal {
 
 const ::cartographer::mapping::proto::SubmapId&
 Submap::_Internal::submap_id(const Submap* msg) {
-  return *msg->_impl_.submap_id_;
+  return *msg->submap_id_;
 }
 const ::cartographer::mapping::proto::Submap2D&
 Submap::_Internal::submap_2d(const Submap* msg) {
-  return *msg->_impl_.submap_2d_;
+  return *msg->submap_2d_;
 }
 const ::cartographer::mapping::proto::Submap3D&
 Submap::_Internal::submap_3d(const Submap* msg) {
-  return *msg->_impl_.submap_3d_;
+  return *msg->submap_3d_;
 }
 void Submap::clear_submap_id() {
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_id_ != nullptr) {
-    delete _impl_.submap_id_;
+  if (GetArena() == nullptr && submap_id_ != nullptr) {
+    delete submap_id_;
   }
-  _impl_.submap_id_ = nullptr;
+  submap_id_ = nullptr;
 }
 void Submap::clear_submap_2d() {
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_2d_ != nullptr) {
-    delete _impl_.submap_2d_;
+  if (GetArena() == nullptr && submap_2d_ != nullptr) {
+    delete submap_2d_;
   }
-  _impl_.submap_2d_ = nullptr;
+  submap_2d_ = nullptr;
 }
 void Submap::clear_submap_3d() {
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_3d_ != nullptr) {
-    delete _impl_.submap_3d_;
+  if (GetArena() == nullptr && submap_3d_ != nullptr) {
+    delete submap_3d_;
   }
-  _impl_.submap_3d_ = nullptr;
+  submap_3d_ = nullptr;
 }
-Submap::Submap(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Submap::Submap(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Submap)
 }
 Submap::Submap(const Submap& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Submap* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submap_id_){nullptr}
-    , decltype(_impl_.submap_2d_){nullptr}
-    , decltype(_impl_.submap_3d_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_submap_id()) {
-    _this->_impl_.submap_id_ = new ::cartographer::mapping::proto::SubmapId(*from._impl_.submap_id_);
+    submap_id_ = new ::cartographer::mapping::proto::SubmapId(*from.submap_id_);
+  } else {
+    submap_id_ = nullptr;
   }
   if (from._internal_has_submap_2d()) {
-    _this->_impl_.submap_2d_ = new ::cartographer::mapping::proto::Submap2D(*from._impl_.submap_2d_);
+    submap_2d_ = new ::cartographer::mapping::proto::Submap2D(*from.submap_2d_);
+  } else {
+    submap_2d_ = nullptr;
   }
   if (from._internal_has_submap_3d()) {
-    _this->_impl_.submap_3d_ = new ::cartographer::mapping::proto::Submap3D(*from._impl_.submap_3d_);
+    submap_3d_ = new ::cartographer::mapping::proto::Submap3D(*from.submap_3d_);
+  } else {
+    submap_3d_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Submap)
 }
 
-inline void Submap::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submap_id_){nullptr}
-    , decltype(_impl_.submap_2d_){nullptr}
-    , decltype(_impl_.submap_3d_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void Submap::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&submap_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&submap_3d_) -
+      reinterpret_cast<char*>(&submap_id_)) + sizeof(submap_3d_));
 }
 
 Submap::~Submap() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Submap)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Submap::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.submap_id_;
-  if (this != internal_default_instance()) delete _impl_.submap_2d_;
-  if (this != internal_default_instance()) delete _impl_.submap_3d_;
+void Submap::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete submap_id_;
+  if (this != internal_default_instance()) delete submap_2d_;
+  if (this != internal_default_instance()) delete submap_3d_;
 }
 
+void Submap::ArenaDtor(void* object) {
+  Submap* _this = reinterpret_cast< Submap* >(object);
+  (void)_this;
+}
+void Submap::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Submap::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const Submap& Submap::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Submap_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Submap::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Submap)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_id_ != nullptr) {
-    delete _impl_.submap_id_;
+  if (GetArena() == nullptr && submap_id_ != nullptr) {
+    delete submap_id_;
   }
-  _impl_.submap_id_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_2d_ != nullptr) {
-    delete _impl_.submap_2d_;
+  submap_id_ = nullptr;
+  if (GetArena() == nullptr && submap_2d_ != nullptr) {
+    delete submap_2d_;
   }
-  _impl_.submap_2d_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_3d_ != nullptr) {
-    delete _impl_.submap_3d_;
+  submap_2d_ = nullptr;
+  if (GetArena() == nullptr && submap_3d_ != nullptr) {
+    delete submap_3d_;
   }
-  _impl_.submap_3d_ = nullptr;
+  submap_3d_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Submap::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Submap::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.SubmapId submap_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_submap_id(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Submap2D submap_2d = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_submap_2d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Submap3D submap_3d = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_submap_3d(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Submap::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Submap::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Submap)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.SubmapId submap_id = 1;
-  if (this->_internal_has_submap_id()) {
+  if (this->has_submap_id()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::submap_id(this),
-        _Internal::submap_id(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::submap_id(this), target, stream);
   }
 
   // .cartographer.mapping.proto.Submap2D submap_2d = 2;
-  if (this->_internal_has_submap_2d()) {
+  if (this->has_submap_2d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::submap_2d(this),
-        _Internal::submap_2d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::submap_2d(this), target, stream);
   }
 
   // .cartographer.mapping.proto.Submap3D submap_3d = 3;
-  if (this->_internal_has_submap_3d()) {
+  if (this->has_submap_3d()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::submap_3d(this),
-        _Internal::submap_3d(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::submap_3d(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Submap)
@@ -587,62 +677,78 @@ size_t Submap::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Submap)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.SubmapId submap_id = 1;
-  if (this->_internal_has_submap_id()) {
+  if (this->has_submap_id()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.submap_id_);
+        *submap_id_);
   }
 
   // .cartographer.mapping.proto.Submap2D submap_2d = 2;
-  if (this->_internal_has_submap_2d()) {
+  if (this->has_submap_2d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.submap_2d_);
+        *submap_2d_);
   }
 
   // .cartographer.mapping.proto.Submap3D submap_3d = 3;
-  if (this->_internal_has_submap_3d()) {
+  if (this->has_submap_3d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.submap_3d_);
+        *submap_3d_);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Submap::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Submap::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Submap::GetClassData() const { return &_class_data_; }
+void Submap::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Submap)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Submap* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Submap>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Submap)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Submap)
+    MergeFrom(*source);
+  }
+}
 
-
-void Submap::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Submap*>(&to_msg);
-  auto& from = static_cast<const Submap&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Submap::MergeFrom(const Submap& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Submap)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_submap_id()) {
-    _this->_internal_mutable_submap_id()->::cartographer::mapping::proto::SubmapId::MergeFrom(
-        from._internal_submap_id());
+  if (from.has_submap_id()) {
+    _internal_mutable_submap_id()->::cartographer::mapping::proto::SubmapId::MergeFrom(from._internal_submap_id());
   }
-  if (from._internal_has_submap_2d()) {
-    _this->_internal_mutable_submap_2d()->::cartographer::mapping::proto::Submap2D::MergeFrom(
-        from._internal_submap_2d());
+  if (from.has_submap_2d()) {
+    _internal_mutable_submap_2d()->::cartographer::mapping::proto::Submap2D::MergeFrom(from._internal_submap_2d());
   }
-  if (from._internal_has_submap_3d()) {
-    _this->_internal_mutable_submap_3d()->::cartographer::mapping::proto::Submap3D::MergeFrom(
-        from._internal_submap_3d());
+  if (from.has_submap_3d()) {
+    _internal_mutable_submap_3d()->::cartographer::mapping::proto::Submap3D::MergeFrom(from._internal_submap_3d());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Submap::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Submap)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Submap::CopyFrom(const Submap& from) {
@@ -658,23 +764,28 @@ bool Submap::IsInitialized() const {
 
 void Submap::InternalSwap(Submap* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Submap, _impl_.submap_3d_)
-      + sizeof(Submap::_impl_.submap_3d_)
-      - PROTOBUF_FIELD_OFFSET(Submap, _impl_.submap_id_)>(
-          reinterpret_cast<char*>(&_impl_.submap_id_),
-          reinterpret_cast<char*>(&other->_impl_.submap_id_));
+      PROTOBUF_FIELD_OFFSET(Submap, submap_3d_)
+      + sizeof(Submap::submap_3d_)
+      - PROTOBUF_FIELD_OFFSET(Submap, submap_id_)>(
+          reinterpret_cast<char*>(&submap_id_),
+          reinterpret_cast<char*>(&other->submap_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Submap::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void Node::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_Node_default_instance_._instance.get_mutable()->node_id_ = const_cast< ::cartographer::mapping::proto::NodeId*>(
+      ::cartographer::mapping::proto::NodeId::internal_default_instance());
+  ::cartographer::mapping::proto::_Node_default_instance_._instance.get_mutable()->node_data_ = const_cast< ::cartographer::mapping::proto::TrajectoryNodeData*>(
+      ::cartographer::mapping::proto::TrajectoryNodeData::internal_default_instance());
+}
 class Node::_Internal {
  public:
   static const ::cartographer::mapping::proto::NodeId& node_id(const Node* msg);
@@ -683,162 +794,165 @@ class Node::_Internal {
 
 const ::cartographer::mapping::proto::NodeId&
 Node::_Internal::node_id(const Node* msg) {
-  return *msg->_impl_.node_id_;
+  return *msg->node_id_;
 }
 const ::cartographer::mapping::proto::TrajectoryNodeData&
 Node::_Internal::node_data(const Node* msg) {
-  return *msg->_impl_.node_data_;
+  return *msg->node_data_;
 }
 void Node::clear_node_id() {
-  if (GetArenaForAllocation() == nullptr && _impl_.node_id_ != nullptr) {
-    delete _impl_.node_id_;
+  if (GetArena() == nullptr && node_id_ != nullptr) {
+    delete node_id_;
   }
-  _impl_.node_id_ = nullptr;
+  node_id_ = nullptr;
 }
 void Node::clear_node_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.node_data_ != nullptr) {
-    delete _impl_.node_data_;
+  if (GetArena() == nullptr && node_data_ != nullptr) {
+    delete node_data_;
   }
-  _impl_.node_data_ = nullptr;
+  node_data_ = nullptr;
 }
-Node::Node(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Node::Node(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.Node)
 }
 Node::Node(const Node& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Node* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.node_id_){nullptr}
-    , decltype(_impl_.node_data_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_node_id()) {
-    _this->_impl_.node_id_ = new ::cartographer::mapping::proto::NodeId(*from._impl_.node_id_);
+    node_id_ = new ::cartographer::mapping::proto::NodeId(*from.node_id_);
+  } else {
+    node_id_ = nullptr;
   }
   if (from._internal_has_node_data()) {
-    _this->_impl_.node_data_ = new ::cartographer::mapping::proto::TrajectoryNodeData(*from._impl_.node_data_);
+    node_data_ = new ::cartographer::mapping::proto::TrajectoryNodeData(*from.node_data_);
+  } else {
+    node_data_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.Node)
 }
 
-inline void Node::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.node_id_){nullptr}
-    , decltype(_impl_.node_data_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void Node::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&node_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&node_data_) -
+      reinterpret_cast<char*>(&node_id_)) + sizeof(node_data_));
 }
 
 Node::~Node() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.Node)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Node::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.node_id_;
-  if (this != internal_default_instance()) delete _impl_.node_data_;
+void Node::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete node_id_;
+  if (this != internal_default_instance()) delete node_data_;
 }
 
+void Node::ArenaDtor(void* object) {
+  Node* _this = reinterpret_cast< Node* >(object);
+  (void)_this;
+}
+void Node::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Node::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const Node& Node::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Node_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Node::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.Node)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.node_id_ != nullptr) {
-    delete _impl_.node_id_;
+  if (GetArena() == nullptr && node_id_ != nullptr) {
+    delete node_id_;
   }
-  _impl_.node_id_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.node_data_ != nullptr) {
-    delete _impl_.node_data_;
+  node_id_ = nullptr;
+  if (GetArena() == nullptr && node_data_ != nullptr) {
+    delete node_data_;
   }
-  _impl_.node_data_ = nullptr;
+  node_data_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Node::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Node::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.NodeId node_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_node_id(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TrajectoryNodeData node_data = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_node_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* Node::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* Node::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.Node)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.NodeId node_id = 1;
-  if (this->_internal_has_node_id()) {
+  if (this->has_node_id()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::node_id(this),
-        _Internal::node_id(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::node_id(this), target, stream);
   }
 
   // .cartographer.mapping.proto.TrajectoryNodeData node_data = 5;
-  if (this->_internal_has_node_data()) {
+  if (this->has_node_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::node_data(this),
-        _Internal::node_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        5, _Internal::node_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.Node)
@@ -849,51 +963,68 @@ size_t Node::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.Node)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.NodeId node_id = 1;
-  if (this->_internal_has_node_id()) {
+  if (this->has_node_id()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.node_id_);
+        *node_id_);
   }
 
   // .cartographer.mapping.proto.TrajectoryNodeData node_data = 5;
-  if (this->_internal_has_node_data()) {
+  if (this->has_node_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.node_data_);
+        *node_data_);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Node::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Node::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Node::GetClassData() const { return &_class_data_; }
+void Node::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.Node)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Node* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Node>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.Node)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.Node)
+    MergeFrom(*source);
+  }
+}
 
-
-void Node::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Node*>(&to_msg);
-  auto& from = static_cast<const Node&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Node)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void Node::MergeFrom(const Node& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.Node)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_node_id()) {
-    _this->_internal_mutable_node_id()->::cartographer::mapping::proto::NodeId::MergeFrom(
-        from._internal_node_id());
+  if (from.has_node_id()) {
+    _internal_mutable_node_id()->::cartographer::mapping::proto::NodeId::MergeFrom(from._internal_node_id());
   }
-  if (from._internal_has_node_data()) {
-    _this->_internal_mutable_node_data()->::cartographer::mapping::proto::TrajectoryNodeData::MergeFrom(
-        from._internal_node_data());
+  if (from.has_node_data()) {
+    _internal_mutable_node_data()->::cartographer::mapping::proto::TrajectoryNodeData::MergeFrom(from._internal_node_data());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Node::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.Node)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Node::CopyFrom(const Node& from) {
@@ -909,23 +1040,26 @@ bool Node::IsInitialized() const {
 
 void Node::InternalSwap(Node* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Node, _impl_.node_data_)
-      + sizeof(Node::_impl_.node_data_)
-      - PROTOBUF_FIELD_OFFSET(Node, _impl_.node_id_)>(
-          reinterpret_cast<char*>(&_impl_.node_id_),
-          reinterpret_cast<char*>(&other->_impl_.node_id_));
+      PROTOBUF_FIELD_OFFSET(Node, node_data_)
+      + sizeof(Node::node_data_)
+      - PROTOBUF_FIELD_OFFSET(Node, node_id_)>(
+          reinterpret_cast<char*>(&node_id_),
+          reinterpret_cast<char*>(&other->node_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Node::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void ImuData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_ImuData_default_instance_._instance.get_mutable()->imu_data_ = const_cast< ::cartographer::sensor::proto::ImuData*>(
+      ::cartographer::sensor::proto::ImuData::internal_default_instance());
+}
 class ImuData::_Internal {
  public:
   static const ::cartographer::sensor::proto::ImuData& imu_data(const ImuData* msg);
@@ -933,145 +1067,145 @@ class ImuData::_Internal {
 
 const ::cartographer::sensor::proto::ImuData&
 ImuData::_Internal::imu_data(const ImuData* msg) {
-  return *msg->_impl_.imu_data_;
+  return *msg->imu_data_;
 }
 void ImuData::clear_imu_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.imu_data_ != nullptr) {
-    delete _impl_.imu_data_;
+  if (GetArena() == nullptr && imu_data_ != nullptr) {
+    delete imu_data_;
   }
-  _impl_.imu_data_ = nullptr;
+  imu_data_ = nullptr;
 }
-ImuData::ImuData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ImuData::ImuData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.ImuData)
 }
 ImuData::ImuData(const ImuData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  ImuData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_imu_data()) {
-    _this->_impl_.imu_data_ = new ::cartographer::sensor::proto::ImuData(*from._impl_.imu_data_);
+    imu_data_ = new ::cartographer::sensor::proto::ImuData(*from.imu_data_);
+  } else {
+    imu_data_ = nullptr;
   }
-  _this->_impl_.trajectory_id_ = from._impl_.trajectory_id_;
+  trajectory_id_ = from.trajectory_id_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.ImuData)
 }
 
-inline void ImuData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void ImuData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&imu_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&imu_data_)) + sizeof(trajectory_id_));
 }
 
 ImuData::~ImuData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.ImuData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void ImuData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.imu_data_;
+void ImuData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete imu_data_;
 }
 
+void ImuData::ArenaDtor(void* object) {
+  ImuData* _this = reinterpret_cast< ImuData* >(object);
+  (void)_this;
+}
+void ImuData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ImuData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const ImuData& ImuData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ImuData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ImuData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.ImuData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.imu_data_ != nullptr) {
-    delete _impl_.imu_data_;
+  if (GetArena() == nullptr && imu_data_ != nullptr) {
+    delete imu_data_;
   }
-  _impl_.imu_data_ = nullptr;
-  _impl_.trajectory_id_ = 0;
+  imu_data_ = nullptr;
+  trajectory_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ImuData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* ImuData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.ImuData imu_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_imu_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* ImuData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ImuData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.ImuData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // .cartographer.sensor.proto.ImuData imu_data = 2;
-  if (this->_internal_has_imu_data()) {
+  if (this->has_imu_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::imu_data(this),
-        _Internal::imu_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::imu_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.ImuData)
@@ -1082,48 +1216,68 @@ size_t ImuData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.ImuData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.sensor.proto.ImuData imu_data = 2;
-  if (this->_internal_has_imu_data()) {
+  if (this->has_imu_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.imu_data_);
+        *imu_data_);
   }
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ImuData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    ImuData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ImuData::GetClassData() const { return &_class_data_; }
+void ImuData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.ImuData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ImuData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ImuData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.ImuData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.ImuData)
+    MergeFrom(*source);
+  }
+}
 
-
-void ImuData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<ImuData*>(&to_msg);
-  auto& from = static_cast<const ImuData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ImuData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void ImuData::MergeFrom(const ImuData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ImuData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_imu_data()) {
-    _this->_internal_mutable_imu_data()->::cartographer::sensor::proto::ImuData::MergeFrom(
-        from._internal_imu_data());
+  if (from.has_imu_data()) {
+    _internal_mutable_imu_data()->::cartographer::sensor::proto::ImuData::MergeFrom(from._internal_imu_data());
   }
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ImuData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.ImuData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void ImuData::CopyFrom(const ImuData& from) {
@@ -1139,23 +1293,26 @@ bool ImuData::IsInitialized() const {
 
 void ImuData::InternalSwap(ImuData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ImuData, _impl_.trajectory_id_)
-      + sizeof(ImuData::_impl_.trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(ImuData, _impl_.imu_data_)>(
-          reinterpret_cast<char*>(&_impl_.imu_data_),
-          reinterpret_cast<char*>(&other->_impl_.imu_data_));
+      PROTOBUF_FIELD_OFFSET(ImuData, trajectory_id_)
+      + sizeof(ImuData::trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(ImuData, imu_data_)>(
+          reinterpret_cast<char*>(&imu_data_),
+          reinterpret_cast<char*>(&other->imu_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ImuData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[2]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void OdometryData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_OdometryData_default_instance_._instance.get_mutable()->odometry_data_ = const_cast< ::cartographer::sensor::proto::OdometryData*>(
+      ::cartographer::sensor::proto::OdometryData::internal_default_instance());
+}
 class OdometryData::_Internal {
  public:
   static const ::cartographer::sensor::proto::OdometryData& odometry_data(const OdometryData* msg);
@@ -1163,145 +1320,145 @@ class OdometryData::_Internal {
 
 const ::cartographer::sensor::proto::OdometryData&
 OdometryData::_Internal::odometry_data(const OdometryData* msg) {
-  return *msg->_impl_.odometry_data_;
+  return *msg->odometry_data_;
 }
 void OdometryData::clear_odometry_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.odometry_data_ != nullptr) {
-    delete _impl_.odometry_data_;
+  if (GetArena() == nullptr && odometry_data_ != nullptr) {
+    delete odometry_data_;
   }
-  _impl_.odometry_data_ = nullptr;
+  odometry_data_ = nullptr;
 }
-OdometryData::OdometryData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+OdometryData::OdometryData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.OdometryData)
 }
 OdometryData::OdometryData(const OdometryData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  OdometryData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.odometry_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_odometry_data()) {
-    _this->_impl_.odometry_data_ = new ::cartographer::sensor::proto::OdometryData(*from._impl_.odometry_data_);
+    odometry_data_ = new ::cartographer::sensor::proto::OdometryData(*from.odometry_data_);
+  } else {
+    odometry_data_ = nullptr;
   }
-  _this->_impl_.trajectory_id_ = from._impl_.trajectory_id_;
+  trajectory_id_ = from.trajectory_id_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.OdometryData)
 }
 
-inline void OdometryData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.odometry_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void OdometryData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&odometry_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&odometry_data_)) + sizeof(trajectory_id_));
 }
 
 OdometryData::~OdometryData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.OdometryData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void OdometryData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.odometry_data_;
+void OdometryData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete odometry_data_;
 }
 
+void OdometryData::ArenaDtor(void* object) {
+  OdometryData* _this = reinterpret_cast< OdometryData* >(object);
+  (void)_this;
+}
+void OdometryData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void OdometryData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const OdometryData& OdometryData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OdometryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void OdometryData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.OdometryData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.odometry_data_ != nullptr) {
-    delete _impl_.odometry_data_;
+  if (GetArena() == nullptr && odometry_data_ != nullptr) {
+    delete odometry_data_;
   }
-  _impl_.odometry_data_ = nullptr;
-  _impl_.trajectory_id_ = 0;
+  odometry_data_ = nullptr;
+  trajectory_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* OdometryData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* OdometryData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.OdometryData odometry_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_odometry_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* OdometryData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* OdometryData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.OdometryData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // .cartographer.sensor.proto.OdometryData odometry_data = 2;
-  if (this->_internal_has_odometry_data()) {
+  if (this->has_odometry_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::odometry_data(this),
-        _Internal::odometry_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::odometry_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.OdometryData)
@@ -1312,48 +1469,68 @@ size_t OdometryData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.OdometryData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.sensor.proto.OdometryData odometry_data = 2;
-  if (this->_internal_has_odometry_data()) {
+  if (this->has_odometry_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.odometry_data_);
+        *odometry_data_);
   }
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OdometryData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    OdometryData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OdometryData::GetClassData() const { return &_class_data_; }
+void OdometryData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.OdometryData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const OdometryData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OdometryData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.OdometryData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.OdometryData)
+    MergeFrom(*source);
+  }
+}
 
-
-void OdometryData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<OdometryData*>(&to_msg);
-  auto& from = static_cast<const OdometryData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.OdometryData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void OdometryData::MergeFrom(const OdometryData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.OdometryData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_odometry_data()) {
-    _this->_internal_mutable_odometry_data()->::cartographer::sensor::proto::OdometryData::MergeFrom(
-        from._internal_odometry_data());
+  if (from.has_odometry_data()) {
+    _internal_mutable_odometry_data()->::cartographer::sensor::proto::OdometryData::MergeFrom(from._internal_odometry_data());
   }
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void OdometryData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.OdometryData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void OdometryData::CopyFrom(const OdometryData& from) {
@@ -1369,23 +1546,26 @@ bool OdometryData::IsInitialized() const {
 
 void OdometryData::InternalSwap(OdometryData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(OdometryData, _impl_.trajectory_id_)
-      + sizeof(OdometryData::_impl_.trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(OdometryData, _impl_.odometry_data_)>(
-          reinterpret_cast<char*>(&_impl_.odometry_data_),
-          reinterpret_cast<char*>(&other->_impl_.odometry_data_));
+      PROTOBUF_FIELD_OFFSET(OdometryData, trajectory_id_)
+      + sizeof(OdometryData::trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(OdometryData, odometry_data_)>(
+          reinterpret_cast<char*>(&odometry_data_),
+          reinterpret_cast<char*>(&other->odometry_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata OdometryData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[3]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void FixedFramePoseData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_FixedFramePoseData_default_instance_._instance.get_mutable()->fixed_frame_pose_data_ = const_cast< ::cartographer::sensor::proto::FixedFramePoseData*>(
+      ::cartographer::sensor::proto::FixedFramePoseData::internal_default_instance());
+}
 class FixedFramePoseData::_Internal {
  public:
   static const ::cartographer::sensor::proto::FixedFramePoseData& fixed_frame_pose_data(const FixedFramePoseData* msg);
@@ -1393,145 +1573,145 @@ class FixedFramePoseData::_Internal {
 
 const ::cartographer::sensor::proto::FixedFramePoseData&
 FixedFramePoseData::_Internal::fixed_frame_pose_data(const FixedFramePoseData* msg) {
-  return *msg->_impl_.fixed_frame_pose_data_;
+  return *msg->fixed_frame_pose_data_;
 }
 void FixedFramePoseData::clear_fixed_frame_pose_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.fixed_frame_pose_data_ != nullptr) {
-    delete _impl_.fixed_frame_pose_data_;
+  if (GetArena() == nullptr && fixed_frame_pose_data_ != nullptr) {
+    delete fixed_frame_pose_data_;
   }
-  _impl_.fixed_frame_pose_data_ = nullptr;
+  fixed_frame_pose_data_ = nullptr;
 }
-FixedFramePoseData::FixedFramePoseData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+FixedFramePoseData::FixedFramePoseData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.FixedFramePoseData)
 }
 FixedFramePoseData::FixedFramePoseData(const FixedFramePoseData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  FixedFramePoseData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.fixed_frame_pose_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_fixed_frame_pose_data()) {
-    _this->_impl_.fixed_frame_pose_data_ = new ::cartographer::sensor::proto::FixedFramePoseData(*from._impl_.fixed_frame_pose_data_);
+    fixed_frame_pose_data_ = new ::cartographer::sensor::proto::FixedFramePoseData(*from.fixed_frame_pose_data_);
+  } else {
+    fixed_frame_pose_data_ = nullptr;
   }
-  _this->_impl_.trajectory_id_ = from._impl_.trajectory_id_;
+  trajectory_id_ = from.trajectory_id_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.FixedFramePoseData)
 }
 
-inline void FixedFramePoseData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.fixed_frame_pose_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void FixedFramePoseData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&fixed_frame_pose_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&fixed_frame_pose_data_)) + sizeof(trajectory_id_));
 }
 
 FixedFramePoseData::~FixedFramePoseData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.FixedFramePoseData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void FixedFramePoseData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.fixed_frame_pose_data_;
+void FixedFramePoseData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete fixed_frame_pose_data_;
 }
 
+void FixedFramePoseData::ArenaDtor(void* object) {
+  FixedFramePoseData* _this = reinterpret_cast< FixedFramePoseData* >(object);
+  (void)_this;
+}
+void FixedFramePoseData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FixedFramePoseData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const FixedFramePoseData& FixedFramePoseData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FixedFramePoseData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void FixedFramePoseData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.FixedFramePoseData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.fixed_frame_pose_data_ != nullptr) {
-    delete _impl_.fixed_frame_pose_data_;
+  if (GetArena() == nullptr && fixed_frame_pose_data_ != nullptr) {
+    delete fixed_frame_pose_data_;
   }
-  _impl_.fixed_frame_pose_data_ = nullptr;
-  _impl_.trajectory_id_ = 0;
+  fixed_frame_pose_data_ = nullptr;
+  trajectory_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* FixedFramePoseData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* FixedFramePoseData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.FixedFramePoseData fixed_frame_pose_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_fixed_frame_pose_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* FixedFramePoseData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FixedFramePoseData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.FixedFramePoseData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // .cartographer.sensor.proto.FixedFramePoseData fixed_frame_pose_data = 2;
-  if (this->_internal_has_fixed_frame_pose_data()) {
+  if (this->has_fixed_frame_pose_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::fixed_frame_pose_data(this),
-        _Internal::fixed_frame_pose_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::fixed_frame_pose_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.FixedFramePoseData)
@@ -1542,48 +1722,68 @@ size_t FixedFramePoseData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.FixedFramePoseData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.sensor.proto.FixedFramePoseData fixed_frame_pose_data = 2;
-  if (this->_internal_has_fixed_frame_pose_data()) {
+  if (this->has_fixed_frame_pose_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.fixed_frame_pose_data_);
+        *fixed_frame_pose_data_);
   }
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FixedFramePoseData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    FixedFramePoseData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FixedFramePoseData::GetClassData() const { return &_class_data_; }
+void FixedFramePoseData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.FixedFramePoseData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FixedFramePoseData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FixedFramePoseData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.FixedFramePoseData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.FixedFramePoseData)
+    MergeFrom(*source);
+  }
+}
 
-
-void FixedFramePoseData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<FixedFramePoseData*>(&to_msg);
-  auto& from = static_cast<const FixedFramePoseData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.FixedFramePoseData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void FixedFramePoseData::MergeFrom(const FixedFramePoseData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.FixedFramePoseData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_fixed_frame_pose_data()) {
-    _this->_internal_mutable_fixed_frame_pose_data()->::cartographer::sensor::proto::FixedFramePoseData::MergeFrom(
-        from._internal_fixed_frame_pose_data());
+  if (from.has_fixed_frame_pose_data()) {
+    _internal_mutable_fixed_frame_pose_data()->::cartographer::sensor::proto::FixedFramePoseData::MergeFrom(from._internal_fixed_frame_pose_data());
   }
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void FixedFramePoseData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.FixedFramePoseData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void FixedFramePoseData::CopyFrom(const FixedFramePoseData& from) {
@@ -1599,23 +1799,26 @@ bool FixedFramePoseData::IsInitialized() const {
 
 void FixedFramePoseData::InternalSwap(FixedFramePoseData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(FixedFramePoseData, _impl_.trajectory_id_)
-      + sizeof(FixedFramePoseData::_impl_.trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(FixedFramePoseData, _impl_.fixed_frame_pose_data_)>(
-          reinterpret_cast<char*>(&_impl_.fixed_frame_pose_data_),
-          reinterpret_cast<char*>(&other->_impl_.fixed_frame_pose_data_));
+      PROTOBUF_FIELD_OFFSET(FixedFramePoseData, trajectory_id_)
+      + sizeof(FixedFramePoseData::trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(FixedFramePoseData, fixed_frame_pose_data_)>(
+          reinterpret_cast<char*>(&fixed_frame_pose_data_),
+          reinterpret_cast<char*>(&other->fixed_frame_pose_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FixedFramePoseData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[4]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void LandmarkData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_LandmarkData_default_instance_._instance.get_mutable()->landmark_data_ = const_cast< ::cartographer::sensor::proto::LandmarkData*>(
+      ::cartographer::sensor::proto::LandmarkData::internal_default_instance());
+}
 class LandmarkData::_Internal {
  public:
   static const ::cartographer::sensor::proto::LandmarkData& landmark_data(const LandmarkData* msg);
@@ -1623,145 +1826,145 @@ class LandmarkData::_Internal {
 
 const ::cartographer::sensor::proto::LandmarkData&
 LandmarkData::_Internal::landmark_data(const LandmarkData* msg) {
-  return *msg->_impl_.landmark_data_;
+  return *msg->landmark_data_;
 }
 void LandmarkData::clear_landmark_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.landmark_data_ != nullptr) {
-    delete _impl_.landmark_data_;
+  if (GetArena() == nullptr && landmark_data_ != nullptr) {
+    delete landmark_data_;
   }
-  _impl_.landmark_data_ = nullptr;
+  landmark_data_ = nullptr;
 }
-LandmarkData::LandmarkData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+LandmarkData::LandmarkData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.LandmarkData)
 }
 LandmarkData::LandmarkData(const LandmarkData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  LandmarkData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.landmark_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_landmark_data()) {
-    _this->_impl_.landmark_data_ = new ::cartographer::sensor::proto::LandmarkData(*from._impl_.landmark_data_);
+    landmark_data_ = new ::cartographer::sensor::proto::LandmarkData(*from.landmark_data_);
+  } else {
+    landmark_data_ = nullptr;
   }
-  _this->_impl_.trajectory_id_ = from._impl_.trajectory_id_;
+  trajectory_id_ = from.trajectory_id_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.LandmarkData)
 }
 
-inline void LandmarkData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.landmark_data_){nullptr}
-    , decltype(_impl_.trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void LandmarkData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&landmark_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&landmark_data_)) + sizeof(trajectory_id_));
 }
 
 LandmarkData::~LandmarkData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.LandmarkData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void LandmarkData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.landmark_data_;
+void LandmarkData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete landmark_data_;
 }
 
+void LandmarkData::ArenaDtor(void* object) {
+  LandmarkData* _this = reinterpret_cast< LandmarkData* >(object);
+  (void)_this;
+}
+void LandmarkData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void LandmarkData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const LandmarkData& LandmarkData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LandmarkData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LandmarkData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.LandmarkData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.landmark_data_ != nullptr) {
-    delete _impl_.landmark_data_;
+  if (GetArena() == nullptr && landmark_data_ != nullptr) {
+    delete landmark_data_;
   }
-  _impl_.landmark_data_ = nullptr;
-  _impl_.trajectory_id_ = 0;
+  landmark_data_ = nullptr;
+  trajectory_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* LandmarkData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* LandmarkData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.LandmarkData landmark_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_landmark_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* LandmarkData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* LandmarkData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.LandmarkData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // .cartographer.sensor.proto.LandmarkData landmark_data = 2;
-  if (this->_internal_has_landmark_data()) {
+  if (this->has_landmark_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::landmark_data(this),
-        _Internal::landmark_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::landmark_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.LandmarkData)
@@ -1772,48 +1975,68 @@ size_t LandmarkData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.LandmarkData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.sensor.proto.LandmarkData landmark_data = 2;
-  if (this->_internal_has_landmark_data()) {
+  if (this->has_landmark_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.landmark_data_);
+        *landmark_data_);
   }
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LandmarkData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    LandmarkData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LandmarkData::GetClassData() const { return &_class_data_; }
+void LandmarkData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.LandmarkData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LandmarkData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LandmarkData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.LandmarkData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.LandmarkData)
+    MergeFrom(*source);
+  }
+}
 
-
-void LandmarkData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<LandmarkData*>(&to_msg);
-  auto& from = static_cast<const LandmarkData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LandmarkData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void LandmarkData::MergeFrom(const LandmarkData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LandmarkData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_landmark_data()) {
-    _this->_internal_mutable_landmark_data()->::cartographer::sensor::proto::LandmarkData::MergeFrom(
-        from._internal_landmark_data());
+  if (from.has_landmark_data()) {
+    _internal_mutable_landmark_data()->::cartographer::sensor::proto::LandmarkData::MergeFrom(from._internal_landmark_data());
   }
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LandmarkData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.LandmarkData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void LandmarkData::CopyFrom(const LandmarkData& from) {
@@ -1829,23 +2052,28 @@ bool LandmarkData::IsInitialized() const {
 
 void LandmarkData::InternalSwap(LandmarkData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LandmarkData, _impl_.trajectory_id_)
-      + sizeof(LandmarkData::_impl_.trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(LandmarkData, _impl_.landmark_data_)>(
-          reinterpret_cast<char*>(&_impl_.landmark_data_),
-          reinterpret_cast<char*>(&other->_impl_.landmark_data_));
+      PROTOBUF_FIELD_OFFSET(LandmarkData, trajectory_id_)
+      + sizeof(LandmarkData::trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(LandmarkData, landmark_data_)>(
+          reinterpret_cast<char*>(&landmark_data_),
+          reinterpret_cast<char*>(&other->landmark_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LandmarkData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[5]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void TrajectoryData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_TrajectoryData_default_instance_._instance.get_mutable()->imu_calibration_ = const_cast< ::cartographer::transform::proto::Quaterniond*>(
+      ::cartographer::transform::proto::Quaterniond::internal_default_instance());
+  ::cartographer::mapping::proto::_TrajectoryData_default_instance_._instance.get_mutable()->fixed_frame_origin_in_map_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+}
 class TrajectoryData::_Internal {
  public:
   static const ::cartographer::transform::proto::Quaterniond& imu_calibration(const TrajectoryData* msg);
@@ -1854,204 +2082,197 @@ class TrajectoryData::_Internal {
 
 const ::cartographer::transform::proto::Quaterniond&
 TrajectoryData::_Internal::imu_calibration(const TrajectoryData* msg) {
-  return *msg->_impl_.imu_calibration_;
+  return *msg->imu_calibration_;
 }
 const ::cartographer::transform::proto::Rigid3d&
 TrajectoryData::_Internal::fixed_frame_origin_in_map(const TrajectoryData* msg) {
-  return *msg->_impl_.fixed_frame_origin_in_map_;
+  return *msg->fixed_frame_origin_in_map_;
 }
 void TrajectoryData::clear_imu_calibration() {
-  if (GetArenaForAllocation() == nullptr && _impl_.imu_calibration_ != nullptr) {
-    delete _impl_.imu_calibration_;
+  if (GetArena() == nullptr && imu_calibration_ != nullptr) {
+    delete imu_calibration_;
   }
-  _impl_.imu_calibration_ = nullptr;
+  imu_calibration_ = nullptr;
 }
 void TrajectoryData::clear_fixed_frame_origin_in_map() {
-  if (GetArenaForAllocation() == nullptr && _impl_.fixed_frame_origin_in_map_ != nullptr) {
-    delete _impl_.fixed_frame_origin_in_map_;
+  if (GetArena() == nullptr && fixed_frame_origin_in_map_ != nullptr) {
+    delete fixed_frame_origin_in_map_;
   }
-  _impl_.fixed_frame_origin_in_map_ = nullptr;
+  fixed_frame_origin_in_map_ = nullptr;
 }
-TrajectoryData::TrajectoryData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TrajectoryData::TrajectoryData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.TrajectoryData)
 }
 TrajectoryData::TrajectoryData(const TrajectoryData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TrajectoryData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_calibration_){nullptr}
-    , decltype(_impl_.fixed_frame_origin_in_map_){nullptr}
-    , decltype(_impl_.gravity_constant_){}
-    , decltype(_impl_.trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_imu_calibration()) {
-    _this->_impl_.imu_calibration_ = new ::cartographer::transform::proto::Quaterniond(*from._impl_.imu_calibration_);
+    imu_calibration_ = new ::cartographer::transform::proto::Quaterniond(*from.imu_calibration_);
+  } else {
+    imu_calibration_ = nullptr;
   }
   if (from._internal_has_fixed_frame_origin_in_map()) {
-    _this->_impl_.fixed_frame_origin_in_map_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.fixed_frame_origin_in_map_);
+    fixed_frame_origin_in_map_ = new ::cartographer::transform::proto::Rigid3d(*from.fixed_frame_origin_in_map_);
+  } else {
+    fixed_frame_origin_in_map_ = nullptr;
   }
-  ::memcpy(&_impl_.gravity_constant_, &from._impl_.gravity_constant_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.trajectory_id_) -
-    reinterpret_cast<char*>(&_impl_.gravity_constant_)) + sizeof(_impl_.trajectory_id_));
+  ::memcpy(&gravity_constant_, &from.gravity_constant_,
+    static_cast<size_t>(reinterpret_cast<char*>(&trajectory_id_) -
+    reinterpret_cast<char*>(&gravity_constant_)) + sizeof(trajectory_id_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryData)
 }
 
-inline void TrajectoryData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_calibration_){nullptr}
-    , decltype(_impl_.fixed_frame_origin_in_map_){nullptr}
-    , decltype(_impl_.gravity_constant_){0}
-    , decltype(_impl_.trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TrajectoryData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&imu_calibration_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&imu_calibration_)) + sizeof(trajectory_id_));
 }
 
 TrajectoryData::~TrajectoryData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TrajectoryData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.imu_calibration_;
-  if (this != internal_default_instance()) delete _impl_.fixed_frame_origin_in_map_;
+void TrajectoryData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete imu_calibration_;
+  if (this != internal_default_instance()) delete fixed_frame_origin_in_map_;
 }
 
+void TrajectoryData::ArenaDtor(void* object) {
+  TrajectoryData* _this = reinterpret_cast< TrajectoryData* >(object);
+  (void)_this;
+}
+void TrajectoryData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TrajectoryData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TrajectoryData& TrajectoryData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TrajectoryData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TrajectoryData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.imu_calibration_ != nullptr) {
-    delete _impl_.imu_calibration_;
+  if (GetArena() == nullptr && imu_calibration_ != nullptr) {
+    delete imu_calibration_;
   }
-  _impl_.imu_calibration_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.fixed_frame_origin_in_map_ != nullptr) {
-    delete _impl_.fixed_frame_origin_in_map_;
+  imu_calibration_ = nullptr;
+  if (GetArena() == nullptr && fixed_frame_origin_in_map_ != nullptr) {
+    delete fixed_frame_origin_in_map_;
   }
-  _impl_.fixed_frame_origin_in_map_ = nullptr;
-  ::memset(&_impl_.gravity_constant_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.trajectory_id_) -
-      reinterpret_cast<char*>(&_impl_.gravity_constant_)) + sizeof(_impl_.trajectory_id_));
+  fixed_frame_origin_in_map_ = nullptr;
+  ::memset(&gravity_constant_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&gravity_constant_)) + sizeof(trajectory_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TrajectoryData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TrajectoryData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double gravity_constant = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.gravity_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          gravity_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.transform.proto.Quaterniond imu_calibration = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_imu_calibration(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.transform.proto.Rigid3d fixed_frame_origin_in_map = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_fixed_frame_origin_in_map(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TrajectoryData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TrajectoryData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // double gravity_constant = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = this->_internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
+  if (!(this->gravity_constant() <= 0 && this->gravity_constant() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_gravity_constant(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_gravity_constant(), target);
   }
 
   // .cartographer.transform.proto.Quaterniond imu_calibration = 3;
-  if (this->_internal_has_imu_calibration()) {
+  if (this->has_imu_calibration()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::imu_calibration(this),
-        _Internal::imu_calibration(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::imu_calibration(this), target, stream);
   }
 
   // .cartographer.transform.proto.Rigid3d fixed_frame_origin_in_map = 4;
-  if (this->_internal_has_fixed_frame_origin_in_map()) {
+  if (this->has_fixed_frame_origin_in_map()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::fixed_frame_origin_in_map(this),
-        _Internal::fixed_frame_origin_in_map(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::fixed_frame_origin_in_map(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryData)
@@ -2062,75 +2283,86 @@ size_t TrajectoryData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Quaterniond imu_calibration = 3;
-  if (this->_internal_has_imu_calibration()) {
+  if (this->has_imu_calibration()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.imu_calibration_);
+        *imu_calibration_);
   }
 
   // .cartographer.transform.proto.Rigid3d fixed_frame_origin_in_map = 4;
-  if (this->_internal_has_fixed_frame_origin_in_map()) {
+  if (this->has_fixed_frame_origin_in_map()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.fixed_frame_origin_in_map_);
+        *fixed_frame_origin_in_map_);
   }
 
   // double gravity_constant = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = this->_internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
+  if (!(this->gravity_constant() <= 0 && this->gravity_constant() >= 0)) {
     total_size += 1 + 8;
   }
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TrajectoryData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TrajectoryData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TrajectoryData::GetClassData() const { return &_class_data_; }
+void TrajectoryData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TrajectoryData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TrajectoryData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryData)
+    MergeFrom(*source);
+  }
+}
 
-
-void TrajectoryData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TrajectoryData*>(&to_msg);
-  auto& from = static_cast<const TrajectoryData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TrajectoryData::MergeFrom(const TrajectoryData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_imu_calibration()) {
-    _this->_internal_mutable_imu_calibration()->::cartographer::transform::proto::Quaterniond::MergeFrom(
-        from._internal_imu_calibration());
+  if (from.has_imu_calibration()) {
+    _internal_mutable_imu_calibration()->::cartographer::transform::proto::Quaterniond::MergeFrom(from._internal_imu_calibration());
   }
-  if (from._internal_has_fixed_frame_origin_in_map()) {
-    _this->_internal_mutable_fixed_frame_origin_in_map()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_fixed_frame_origin_in_map());
+  if (from.has_fixed_frame_origin_in_map()) {
+    _internal_mutable_fixed_frame_origin_in_map()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_fixed_frame_origin_in_map());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = from._internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
-    _this->_internal_set_gravity_constant(from._internal_gravity_constant());
+  if (!(from.gravity_constant() <= 0 && from.gravity_constant() >= 0)) {
+    _internal_set_gravity_constant(from._internal_gravity_constant());
   }
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TrajectoryData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TrajectoryData::CopyFrom(const TrajectoryData& from) {
@@ -2146,23 +2378,26 @@ bool TrajectoryData::IsInitialized() const {
 
 void TrajectoryData::InternalSwap(TrajectoryData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TrajectoryData, _impl_.trajectory_id_)
-      + sizeof(TrajectoryData::_impl_.trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(TrajectoryData, _impl_.imu_calibration_)>(
-          reinterpret_cast<char*>(&_impl_.imu_calibration_),
-          reinterpret_cast<char*>(&other->_impl_.imu_calibration_));
+      PROTOBUF_FIELD_OFFSET(TrajectoryData, trajectory_id_)
+      + sizeof(TrajectoryData::trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(TrajectoryData, imu_calibration_)>(
+          reinterpret_cast<char*>(&imu_calibration_),
+          reinterpret_cast<char*>(&other->imu_calibration_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TrajectoryData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[6]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void LocalSlamResultData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_LocalSlamResultData_default_instance_._instance.get_mutable()->node_data_ = const_cast< ::cartographer::mapping::proto::TrajectoryNodeData*>(
+      ::cartographer::mapping::proto::TrajectoryNodeData::internal_default_instance());
+}
 class LocalSlamResultData::_Internal {
  public:
   static const ::cartographer::mapping::proto::TrajectoryNodeData& node_data(const LocalSlamResultData* msg);
@@ -2170,108 +2405,107 @@ class LocalSlamResultData::_Internal {
 
 const ::cartographer::mapping::proto::TrajectoryNodeData&
 LocalSlamResultData::_Internal::node_data(const LocalSlamResultData* msg) {
-  return *msg->_impl_.node_data_;
+  return *msg->node_data_;
 }
 void LocalSlamResultData::clear_node_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.node_data_ != nullptr) {
-    delete _impl_.node_data_;
+  if (GetArena() == nullptr && node_data_ != nullptr) {
+    delete node_data_;
   }
-  _impl_.node_data_ = nullptr;
+  node_data_ = nullptr;
 }
-LocalSlamResultData::LocalSlamResultData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+LocalSlamResultData::LocalSlamResultData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  submaps_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.LocalSlamResultData)
 }
 LocalSlamResultData::LocalSlamResultData(const LocalSlamResultData& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  LocalSlamResultData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submaps_){from._impl_.submaps_}
-    , decltype(_impl_.node_data_){nullptr}
-    , decltype(_impl_.timestamp_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      submaps_(from.submaps_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_node_data()) {
-    _this->_impl_.node_data_ = new ::cartographer::mapping::proto::TrajectoryNodeData(*from._impl_.node_data_);
+    node_data_ = new ::cartographer::mapping::proto::TrajectoryNodeData(*from.node_data_);
+  } else {
+    node_data_ = nullptr;
   }
-  _this->_impl_.timestamp_ = from._impl_.timestamp_;
+  timestamp_ = from.timestamp_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.LocalSlamResultData)
 }
 
-inline void LocalSlamResultData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submaps_){arena}
-    , decltype(_impl_.node_data_){nullptr}
-    , decltype(_impl_.timestamp_){int64_t{0}}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void LocalSlamResultData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  ::memset(&node_data_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&timestamp_) -
+      reinterpret_cast<char*>(&node_data_)) + sizeof(timestamp_));
 }
 
 LocalSlamResultData::~LocalSlamResultData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.LocalSlamResultData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void LocalSlamResultData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.submaps_.~RepeatedPtrField();
-  if (this != internal_default_instance()) delete _impl_.node_data_;
+void LocalSlamResultData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete node_data_;
 }
 
+void LocalSlamResultData::ArenaDtor(void* object) {
+  LocalSlamResultData* _this = reinterpret_cast< LocalSlamResultData* >(object);
+  (void)_this;
+}
+void LocalSlamResultData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void LocalSlamResultData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const LocalSlamResultData& LocalSlamResultData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LocalSlamResultData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LocalSlamResultData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.LocalSlamResultData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.submaps_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.node_data_ != nullptr) {
-    delete _impl_.node_data_;
+  submaps_.Clear();
+  if (GetArena() == nullptr && node_data_ != nullptr) {
+    delete node_data_;
   }
-  _impl_.node_data_ = nullptr;
-  _impl_.timestamp_ = int64_t{0};
+  node_data_ = nullptr;
+  timestamp_ = PROTOBUF_LONGLONG(0);
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* LocalSlamResultData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* LocalSlamResultData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int64 timestamp = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TrajectoryNodeData node_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_node_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated .cartographer.mapping.proto.Submap submaps = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2279,61 +2513,60 @@ const char* LocalSlamResultData::_InternalParse(const char* ptr, ::_pbi::ParseCo
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* LocalSlamResultData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* LocalSlamResultData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.LocalSlamResultData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 timestamp = 1;
-  if (this->_internal_timestamp() != 0) {
+  if (this->timestamp() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt64ToArray(1, this->_internal_timestamp(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_timestamp(), target);
   }
 
   // .cartographer.mapping.proto.TrajectoryNodeData node_data = 2;
-  if (this->_internal_has_node_data()) {
+  if (this->has_node_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::node_data(this),
-        _Internal::node_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::node_data(this), target, stream);
   }
 
   // repeated .cartographer.mapping.proto.Submap submaps = 3;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_submaps_size()); i < n; i++) {
-    const auto& repfield = this->_internal_submaps(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_submaps_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(3, this->_internal_submaps(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.LocalSlamResultData)
@@ -2344,56 +2577,76 @@ size_t LocalSlamResultData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.LocalSlamResultData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.Submap submaps = 3;
   total_size += 1UL * this->_internal_submaps_size();
-  for (const auto& msg : this->_impl_.submaps_) {
+  for (const auto& msg : this->submaps_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // .cartographer.mapping.proto.TrajectoryNodeData node_data = 2;
-  if (this->_internal_has_node_data()) {
+  if (this->has_node_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.node_data_);
+        *node_data_);
   }
 
   // int64 timestamp = 1;
-  if (this->_internal_timestamp() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
+  if (this->timestamp() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_timestamp());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LocalSlamResultData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    LocalSlamResultData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LocalSlamResultData::GetClassData() const { return &_class_data_; }
+void LocalSlamResultData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.LocalSlamResultData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LocalSlamResultData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LocalSlamResultData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.LocalSlamResultData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.LocalSlamResultData)
+    MergeFrom(*source);
+  }
+}
 
-
-void LocalSlamResultData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<LocalSlamResultData*>(&to_msg);
-  auto& from = static_cast<const LocalSlamResultData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LocalSlamResultData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void LocalSlamResultData::MergeFrom(const LocalSlamResultData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LocalSlamResultData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.submaps_.MergeFrom(from._impl_.submaps_);
-  if (from._internal_has_node_data()) {
-    _this->_internal_mutable_node_data()->::cartographer::mapping::proto::TrajectoryNodeData::MergeFrom(
-        from._internal_node_data());
+  submaps_.MergeFrom(from.submaps_);
+  if (from.has_node_data()) {
+    _internal_mutable_node_data()->::cartographer::mapping::proto::TrajectoryNodeData::MergeFrom(from._internal_node_data());
   }
-  if (from._internal_timestamp() != 0) {
-    _this->_internal_set_timestamp(from._internal_timestamp());
+  if (from.timestamp() != 0) {
+    _internal_set_timestamp(from._internal_timestamp());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LocalSlamResultData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.LocalSlamResultData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void LocalSlamResultData::CopyFrom(const LocalSlamResultData& from) {
@@ -2409,134 +2662,132 @@ bool LocalSlamResultData::IsInitialized() const {
 
 void LocalSlamResultData::InternalSwap(LocalSlamResultData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.submaps_.InternalSwap(&other->_impl_.submaps_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  submaps_.InternalSwap(&other->submaps_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LocalSlamResultData, _impl_.timestamp_)
-      + sizeof(LocalSlamResultData::_impl_.timestamp_)
-      - PROTOBUF_FIELD_OFFSET(LocalSlamResultData, _impl_.node_data_)>(
-          reinterpret_cast<char*>(&_impl_.node_data_),
-          reinterpret_cast<char*>(&other->_impl_.node_data_));
+      PROTOBUF_FIELD_OFFSET(LocalSlamResultData, timestamp_)
+      + sizeof(LocalSlamResultData::timestamp_)
+      - PROTOBUF_FIELD_OFFSET(LocalSlamResultData, node_data_)>(
+          reinterpret_cast<char*>(&node_data_),
+          reinterpret_cast<char*>(&other->node_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LocalSlamResultData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[7]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void SerializationHeader::InitAsDefaultInstance() {
+}
 class SerializationHeader::_Internal {
  public:
 };
 
-SerializationHeader::SerializationHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+SerializationHeader::SerializationHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.SerializationHeader)
 }
 SerializationHeader::SerializationHeader(const SerializationHeader& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SerializationHeader* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.format_version_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _this->_impl_.format_version_ = from._impl_.format_version_;
+  format_version_ = from.format_version_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SerializationHeader)
 }
 
-inline void SerializationHeader::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.format_version_){0u}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void SerializationHeader::SharedCtor() {
+  format_version_ = 0u;
 }
 
 SerializationHeader::~SerializationHeader() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SerializationHeader)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void SerializationHeader::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void SerializationHeader::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void SerializationHeader::ArenaDtor(void* object) {
+  SerializationHeader* _this = reinterpret_cast< SerializationHeader* >(object);
+  (void)_this;
+}
+void SerializationHeader::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void SerializationHeader::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const SerializationHeader& SerializationHeader::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SerializationHeader_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SerializationHeader::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SerializationHeader)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.format_version_ = 0u;
+  format_version_ = 0u;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SerializationHeader::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* SerializationHeader::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // uint32 format_version = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.format_version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          format_version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* SerializationHeader::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SerializationHeader::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SerializationHeader)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 format_version = 1;
-  if (this->_internal_format_version() != 0) {
+  if (this->format_version() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_format_version(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_format_version(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SerializationHeader)
@@ -2547,37 +2798,58 @@ size_t SerializationHeader::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SerializationHeader)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // uint32 format_version = 1;
-  if (this->_internal_format_version() != 0) {
-    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_format_version());
+  if (this->format_version() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_format_version());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SerializationHeader::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SerializationHeader::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SerializationHeader::GetClassData() const { return &_class_data_; }
+void SerializationHeader::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SerializationHeader)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SerializationHeader* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SerializationHeader>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SerializationHeader)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SerializationHeader)
+    MergeFrom(*source);
+  }
+}
 
-
-void SerializationHeader::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SerializationHeader*>(&to_msg);
-  auto& from = static_cast<const SerializationHeader&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SerializationHeader)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void SerializationHeader::MergeFrom(const SerializationHeader& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SerializationHeader)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_format_version() != 0) {
-    _this->_internal_set_format_version(from._internal_format_version());
+  if (from.format_version() != 0) {
+    _internal_set_format_version(from._internal_format_version());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SerializationHeader::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SerializationHeader)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void SerializationHeader::CopyFrom(const SerializationHeader& from) {
@@ -2593,18 +2865,37 @@ bool SerializationHeader::IsInitialized() const {
 
 void SerializationHeader::InternalSwap(SerializationHeader* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_impl_.format_version_, other->_impl_.format_version_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  swap(format_version_, other->format_version_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SerializationHeader::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[8]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void SerializedData::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.pose_graph_ = const_cast< ::cartographer::mapping::proto::PoseGraph*>(
+      ::cartographer::mapping::proto::PoseGraph::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.all_trajectory_builder_options_ = const_cast< ::cartographer::mapping::proto::AllTrajectoryBuilderOptions*>(
+      ::cartographer::mapping::proto::AllTrajectoryBuilderOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.submap_ = const_cast< ::cartographer::mapping::proto::Submap*>(
+      ::cartographer::mapping::proto::Submap::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.node_ = const_cast< ::cartographer::mapping::proto::Node*>(
+      ::cartographer::mapping::proto::Node::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.trajectory_data_ = const_cast< ::cartographer::mapping::proto::TrajectoryData*>(
+      ::cartographer::mapping::proto::TrajectoryData::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.imu_data_ = const_cast< ::cartographer::mapping::proto::ImuData*>(
+      ::cartographer::mapping::proto::ImuData::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.odometry_data_ = const_cast< ::cartographer::mapping::proto::OdometryData*>(
+      ::cartographer::mapping::proto::OdometryData::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.fixed_frame_pose_data_ = const_cast< ::cartographer::mapping::proto::FixedFramePoseData*>(
+      ::cartographer::mapping::proto::FixedFramePoseData::internal_default_instance());
+  ::cartographer::mapping::proto::_SerializedData_default_instance_.landmark_data_ = const_cast< ::cartographer::mapping::proto::LandmarkData*>(
+      ::cartographer::mapping::proto::LandmarkData::internal_default_instance());
+}
 class SerializedData::_Internal {
  public:
   static const ::cartographer::mapping::proto::PoseGraph& pose_graph(const SerializedData* msg);
@@ -2620,253 +2911,236 @@ class SerializedData::_Internal {
 
 const ::cartographer::mapping::proto::PoseGraph&
 SerializedData::_Internal::pose_graph(const SerializedData* msg) {
-  return *msg->_impl_.data_.pose_graph_;
+  return *msg->data_.pose_graph_;
 }
 const ::cartographer::mapping::proto::AllTrajectoryBuilderOptions&
 SerializedData::_Internal::all_trajectory_builder_options(const SerializedData* msg) {
-  return *msg->_impl_.data_.all_trajectory_builder_options_;
+  return *msg->data_.all_trajectory_builder_options_;
 }
 const ::cartographer::mapping::proto::Submap&
 SerializedData::_Internal::submap(const SerializedData* msg) {
-  return *msg->_impl_.data_.submap_;
+  return *msg->data_.submap_;
 }
 const ::cartographer::mapping::proto::Node&
 SerializedData::_Internal::node(const SerializedData* msg) {
-  return *msg->_impl_.data_.node_;
+  return *msg->data_.node_;
 }
 const ::cartographer::mapping::proto::TrajectoryData&
 SerializedData::_Internal::trajectory_data(const SerializedData* msg) {
-  return *msg->_impl_.data_.trajectory_data_;
+  return *msg->data_.trajectory_data_;
 }
 const ::cartographer::mapping::proto::ImuData&
 SerializedData::_Internal::imu_data(const SerializedData* msg) {
-  return *msg->_impl_.data_.imu_data_;
+  return *msg->data_.imu_data_;
 }
 const ::cartographer::mapping::proto::OdometryData&
 SerializedData::_Internal::odometry_data(const SerializedData* msg) {
-  return *msg->_impl_.data_.odometry_data_;
+  return *msg->data_.odometry_data_;
 }
 const ::cartographer::mapping::proto::FixedFramePoseData&
 SerializedData::_Internal::fixed_frame_pose_data(const SerializedData* msg) {
-  return *msg->_impl_.data_.fixed_frame_pose_data_;
+  return *msg->data_.fixed_frame_pose_data_;
 }
 const ::cartographer::mapping::proto::LandmarkData&
 SerializedData::_Internal::landmark_data(const SerializedData* msg) {
-  return *msg->_impl_.data_.landmark_data_;
+  return *msg->data_.landmark_data_;
 }
 void SerializedData::set_allocated_pose_graph(::cartographer::mapping::proto::PoseGraph* pose_graph) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (pose_graph) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
-                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(pose_graph));
+      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(pose_graph)->GetArena();
     if (message_arena != submessage_arena) {
       pose_graph = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, pose_graph, submessage_arena);
     }
     set_has_pose_graph();
-    _impl_.data_.pose_graph_ = pose_graph;
+    data_.pose_graph_ = pose_graph;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.pose_graph)
 }
 void SerializedData::clear_pose_graph() {
   if (_internal_has_pose_graph()) {
-    if (GetArenaForAllocation() == nullptr) {
-      delete _impl_.data_.pose_graph_;
+    if (GetArena() == nullptr) {
+      delete data_.pose_graph_;
     }
     clear_has_data();
   }
 }
 void SerializedData::set_allocated_all_trajectory_builder_options(::cartographer::mapping::proto::AllTrajectoryBuilderOptions* all_trajectory_builder_options) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (all_trajectory_builder_options) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(
-                reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(all_trajectory_builder_options));
+      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(all_trajectory_builder_options)->GetArena();
     if (message_arena != submessage_arena) {
       all_trajectory_builder_options = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, all_trajectory_builder_options, submessage_arena);
     }
     set_has_all_trajectory_builder_options();
-    _impl_.data_.all_trajectory_builder_options_ = all_trajectory_builder_options;
+    data_.all_trajectory_builder_options_ = all_trajectory_builder_options;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.all_trajectory_builder_options)
 }
 void SerializedData::clear_all_trajectory_builder_options() {
   if (_internal_has_all_trajectory_builder_options()) {
-    if (GetArenaForAllocation() == nullptr) {
-      delete _impl_.data_.all_trajectory_builder_options_;
+    if (GetArena() == nullptr) {
+      delete data_.all_trajectory_builder_options_;
     }
     clear_has_data();
   }
 }
 void SerializedData::set_allocated_submap(::cartographer::mapping::proto::Submap* submap) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (submap) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(submap);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(submap);
     if (message_arena != submessage_arena) {
       submap = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, submap, submessage_arena);
     }
     set_has_submap();
-    _impl_.data_.submap_ = submap;
+    data_.submap_ = submap;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.submap)
 }
 void SerializedData::set_allocated_node(::cartographer::mapping::proto::Node* node) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (node) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(node);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(node);
     if (message_arena != submessage_arena) {
       node = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, node, submessage_arena);
     }
     set_has_node();
-    _impl_.data_.node_ = node;
+    data_.node_ = node;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.node)
 }
 void SerializedData::set_allocated_trajectory_data(::cartographer::mapping::proto::TrajectoryData* trajectory_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (trajectory_data) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(trajectory_data);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(trajectory_data);
     if (message_arena != submessage_arena) {
       trajectory_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, trajectory_data, submessage_arena);
     }
     set_has_trajectory_data();
-    _impl_.data_.trajectory_data_ = trajectory_data;
+    data_.trajectory_data_ = trajectory_data;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.trajectory_data)
 }
 void SerializedData::set_allocated_imu_data(::cartographer::mapping::proto::ImuData* imu_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (imu_data) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(imu_data);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(imu_data);
     if (message_arena != submessage_arena) {
       imu_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, imu_data, submessage_arena);
     }
     set_has_imu_data();
-    _impl_.data_.imu_data_ = imu_data;
+    data_.imu_data_ = imu_data;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.imu_data)
 }
 void SerializedData::set_allocated_odometry_data(::cartographer::mapping::proto::OdometryData* odometry_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (odometry_data) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(odometry_data);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(odometry_data);
     if (message_arena != submessage_arena) {
       odometry_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, odometry_data, submessage_arena);
     }
     set_has_odometry_data();
-    _impl_.data_.odometry_data_ = odometry_data;
+    data_.odometry_data_ = odometry_data;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.odometry_data)
 }
 void SerializedData::set_allocated_fixed_frame_pose_data(::cartographer::mapping::proto::FixedFramePoseData* fixed_frame_pose_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (fixed_frame_pose_data) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(fixed_frame_pose_data);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(fixed_frame_pose_data);
     if (message_arena != submessage_arena) {
       fixed_frame_pose_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, fixed_frame_pose_data, submessage_arena);
     }
     set_has_fixed_frame_pose_data();
-    _impl_.data_.fixed_frame_pose_data_ = fixed_frame_pose_data;
+    data_.fixed_frame_pose_data_ = fixed_frame_pose_data;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.fixed_frame_pose_data)
 }
 void SerializedData::set_allocated_landmark_data(::cartographer::mapping::proto::LandmarkData* landmark_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_data();
   if (landmark_data) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(landmark_data);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(landmark_data);
     if (message_arena != submessage_arena) {
       landmark_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, landmark_data, submessage_arena);
     }
     set_has_landmark_data();
-    _impl_.data_.landmark_data_ = landmark_data;
+    data_.landmark_data_ = landmark_data;
   }
   // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SerializedData.landmark_data)
 }
-SerializedData::SerializedData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+SerializedData::SerializedData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.SerializedData)
 }
 SerializedData::SerializedData(const SerializedData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SerializedData* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.data_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , /*decltype(_impl_._oneof_case_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clear_has_data();
   switch (from.data_case()) {
     case kPoseGraph: {
-      _this->_internal_mutable_pose_graph()->::cartographer::mapping::proto::PoseGraph::MergeFrom(
-          from._internal_pose_graph());
+      _internal_mutable_pose_graph()->::cartographer::mapping::proto::PoseGraph::MergeFrom(from._internal_pose_graph());
       break;
     }
     case kAllTrajectoryBuilderOptions: {
-      _this->_internal_mutable_all_trajectory_builder_options()->::cartographer::mapping::proto::AllTrajectoryBuilderOptions::MergeFrom(
-          from._internal_all_trajectory_builder_options());
+      _internal_mutable_all_trajectory_builder_options()->::cartographer::mapping::proto::AllTrajectoryBuilderOptions::MergeFrom(from._internal_all_trajectory_builder_options());
       break;
     }
     case kSubmap: {
-      _this->_internal_mutable_submap()->::cartographer::mapping::proto::Submap::MergeFrom(
-          from._internal_submap());
+      _internal_mutable_submap()->::cartographer::mapping::proto::Submap::MergeFrom(from._internal_submap());
       break;
     }
     case kNode: {
-      _this->_internal_mutable_node()->::cartographer::mapping::proto::Node::MergeFrom(
-          from._internal_node());
+      _internal_mutable_node()->::cartographer::mapping::proto::Node::MergeFrom(from._internal_node());
       break;
     }
     case kTrajectoryData: {
-      _this->_internal_mutable_trajectory_data()->::cartographer::mapping::proto::TrajectoryData::MergeFrom(
-          from._internal_trajectory_data());
+      _internal_mutable_trajectory_data()->::cartographer::mapping::proto::TrajectoryData::MergeFrom(from._internal_trajectory_data());
       break;
     }
     case kImuData: {
-      _this->_internal_mutable_imu_data()->::cartographer::mapping::proto::ImuData::MergeFrom(
-          from._internal_imu_data());
+      _internal_mutable_imu_data()->::cartographer::mapping::proto::ImuData::MergeFrom(from._internal_imu_data());
       break;
     }
     case kOdometryData: {
-      _this->_internal_mutable_odometry_data()->::cartographer::mapping::proto::OdometryData::MergeFrom(
-          from._internal_odometry_data());
+      _internal_mutable_odometry_data()->::cartographer::mapping::proto::OdometryData::MergeFrom(from._internal_odometry_data());
       break;
     }
     case kFixedFramePoseData: {
-      _this->_internal_mutable_fixed_frame_pose_data()->::cartographer::mapping::proto::FixedFramePoseData::MergeFrom(
-          from._internal_fixed_frame_pose_data());
+      _internal_mutable_fixed_frame_pose_data()->::cartographer::mapping::proto::FixedFramePoseData::MergeFrom(from._internal_fixed_frame_pose_data());
       break;
     }
     case kLandmarkData: {
-      _this->_internal_mutable_landmark_data()->::cartographer::mapping::proto::LandmarkData::MergeFrom(
-          from._internal_landmark_data());
+      _internal_mutable_landmark_data()->::cartographer::mapping::proto::LandmarkData::MergeFrom(from._internal_landmark_data());
       break;
     }
     case DATA_NOT_SET: {
@@ -2876,92 +3150,93 @@ SerializedData::SerializedData(const SerializedData& from)
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SerializedData)
 }
 
-inline void SerializedData::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.data_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , /*decltype(_impl_._oneof_case_)*/{}
-  };
+void SerializedData::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
   clear_has_data();
 }
 
 SerializedData::~SerializedData() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SerializedData)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void SerializedData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void SerializedData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_data()) {
     clear_data();
   }
 }
 
-void SerializedData::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+void SerializedData::ArenaDtor(void* object) {
+  SerializedData* _this = reinterpret_cast< SerializedData* >(object);
+  (void)_this;
 }
+void SerializedData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SerializedData::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SerializedData& SerializedData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SerializedData_cartographer_2fmapping_2fproto_2fserialization_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SerializedData::clear_data() {
 // @@protoc_insertion_point(one_of_clear_start:cartographer.mapping.proto.SerializedData)
   switch (data_case()) {
     case kPoseGraph: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.pose_graph_;
+      if (GetArena() == nullptr) {
+        delete data_.pose_graph_;
       }
       break;
     }
     case kAllTrajectoryBuilderOptions: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.all_trajectory_builder_options_;
+      if (GetArena() == nullptr) {
+        delete data_.all_trajectory_builder_options_;
       }
       break;
     }
     case kSubmap: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.submap_;
+      if (GetArena() == nullptr) {
+        delete data_.submap_;
       }
       break;
     }
     case kNode: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.node_;
+      if (GetArena() == nullptr) {
+        delete data_.node_;
       }
       break;
     }
     case kTrajectoryData: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.trajectory_data_;
+      if (GetArena() == nullptr) {
+        delete data_.trajectory_data_;
       }
       break;
     }
     case kImuData: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.imu_data_;
+      if (GetArena() == nullptr) {
+        delete data_.imu_data_;
       }
       break;
     }
     case kOdometryData: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.odometry_data_;
+      if (GetArena() == nullptr) {
+        delete data_.odometry_data_;
       }
       break;
     }
     case kFixedFramePoseData: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.fixed_frame_pose_data_;
+      if (GetArena() == nullptr) {
+        delete data_.fixed_frame_pose_data_;
       }
       break;
     }
     case kLandmarkData: {
-      if (GetArenaForAllocation() == nullptr) {
-        delete _impl_.data_.landmark_data_;
+      if (GetArena() == nullptr) {
+        delete data_.landmark_data_;
       }
       break;
     }
@@ -2969,13 +3244,13 @@ void SerializedData::clear_data() {
       break;
     }
   }
-  _impl_._oneof_case_[0] = DATA_NOT_SET;
+  _oneof_case_[0] = DATA_NOT_SET;
 }
 
 
 void SerializedData::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SerializedData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2983,178 +3258,179 @@ void SerializedData::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SerializedData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* SerializedData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.PoseGraph pose_graph = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_pose_graph(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.AllTrajectoryBuilderOptions all_trajectory_builder_options = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_all_trajectory_builder_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Submap submap = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_submap(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.Node node = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_node(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TrajectoryData trajectory_data = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_trajectory_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.ImuData imu_data = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_imu_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.OdometryData odometry_data = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_odometry_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.FixedFramePoseData fixed_frame_pose_data = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_fixed_frame_pose_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.LandmarkData landmark_data = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_landmark_data(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* SerializedData::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SerializedData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SerializedData)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.PoseGraph pose_graph = 1;
   if (_internal_has_pose_graph()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::pose_graph(this),
-        _Internal::pose_graph(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::pose_graph(this), target, stream);
   }
 
   // .cartographer.mapping.proto.AllTrajectoryBuilderOptions all_trajectory_builder_options = 2;
   if (_internal_has_all_trajectory_builder_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::all_trajectory_builder_options(this),
-        _Internal::all_trajectory_builder_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::all_trajectory_builder_options(this), target, stream);
   }
 
   // .cartographer.mapping.proto.Submap submap = 3;
   if (_internal_has_submap()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::submap(this),
-        _Internal::submap(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::submap(this), target, stream);
   }
 
   // .cartographer.mapping.proto.Node node = 4;
   if (_internal_has_node()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::node(this),
-        _Internal::node(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::node(this), target, stream);
   }
 
   // .cartographer.mapping.proto.TrajectoryData trajectory_data = 5;
   if (_internal_has_trajectory_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::trajectory_data(this),
-        _Internal::trajectory_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        5, _Internal::trajectory_data(this), target, stream);
   }
 
   // .cartographer.mapping.proto.ImuData imu_data = 6;
   if (_internal_has_imu_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, _Internal::imu_data(this),
-        _Internal::imu_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        6, _Internal::imu_data(this), target, stream);
   }
 
   // .cartographer.mapping.proto.OdometryData odometry_data = 7;
   if (_internal_has_odometry_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, _Internal::odometry_data(this),
-        _Internal::odometry_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        7, _Internal::odometry_data(this), target, stream);
   }
 
   // .cartographer.mapping.proto.FixedFramePoseData fixed_frame_pose_data = 8;
   if (_internal_has_fixed_frame_pose_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(8, _Internal::fixed_frame_pose_data(this),
-        _Internal::fixed_frame_pose_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        8, _Internal::fixed_frame_pose_data(this), target, stream);
   }
 
   // .cartographer.mapping.proto.LandmarkData landmark_data = 9;
   if (_internal_has_landmark_data()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(9, _Internal::landmark_data(this),
-        _Internal::landmark_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        9, _Internal::landmark_data(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SerializedData)
@@ -3165,7 +3441,7 @@ size_t SerializedData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SerializedData)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3174,138 +3450,148 @@ size_t SerializedData::ByteSizeLong() const {
     case kPoseGraph: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.pose_graph_);
+          *data_.pose_graph_);
       break;
     }
     // .cartographer.mapping.proto.AllTrajectoryBuilderOptions all_trajectory_builder_options = 2;
     case kAllTrajectoryBuilderOptions: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.all_trajectory_builder_options_);
+          *data_.all_trajectory_builder_options_);
       break;
     }
     // .cartographer.mapping.proto.Submap submap = 3;
     case kSubmap: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.submap_);
+          *data_.submap_);
       break;
     }
     // .cartographer.mapping.proto.Node node = 4;
     case kNode: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.node_);
+          *data_.node_);
       break;
     }
     // .cartographer.mapping.proto.TrajectoryData trajectory_data = 5;
     case kTrajectoryData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.trajectory_data_);
+          *data_.trajectory_data_);
       break;
     }
     // .cartographer.mapping.proto.ImuData imu_data = 6;
     case kImuData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.imu_data_);
+          *data_.imu_data_);
       break;
     }
     // .cartographer.mapping.proto.OdometryData odometry_data = 7;
     case kOdometryData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.odometry_data_);
+          *data_.odometry_data_);
       break;
     }
     // .cartographer.mapping.proto.FixedFramePoseData fixed_frame_pose_data = 8;
     case kFixedFramePoseData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.fixed_frame_pose_data_);
+          *data_.fixed_frame_pose_data_);
       break;
     }
     // .cartographer.mapping.proto.LandmarkData landmark_data = 9;
     case kLandmarkData: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *_impl_.data_.landmark_data_);
+          *data_.landmark_data_);
       break;
     }
     case DATA_NOT_SET: {
       break;
     }
   }
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SerializedData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SerializedData::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SerializedData::GetClassData() const { return &_class_data_; }
+void SerializedData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SerializedData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SerializedData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SerializedData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SerializedData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SerializedData)
+    MergeFrom(*source);
+  }
+}
 
-
-void SerializedData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SerializedData*>(&to_msg);
-  auto& from = static_cast<const SerializedData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SerializedData)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void SerializedData::MergeFrom(const SerializedData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SerializedData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.data_case()) {
     case kPoseGraph: {
-      _this->_internal_mutable_pose_graph()->::cartographer::mapping::proto::PoseGraph::MergeFrom(
-          from._internal_pose_graph());
+      _internal_mutable_pose_graph()->::cartographer::mapping::proto::PoseGraph::MergeFrom(from._internal_pose_graph());
       break;
     }
     case kAllTrajectoryBuilderOptions: {
-      _this->_internal_mutable_all_trajectory_builder_options()->::cartographer::mapping::proto::AllTrajectoryBuilderOptions::MergeFrom(
-          from._internal_all_trajectory_builder_options());
+      _internal_mutable_all_trajectory_builder_options()->::cartographer::mapping::proto::AllTrajectoryBuilderOptions::MergeFrom(from._internal_all_trajectory_builder_options());
       break;
     }
     case kSubmap: {
-      _this->_internal_mutable_submap()->::cartographer::mapping::proto::Submap::MergeFrom(
-          from._internal_submap());
+      _internal_mutable_submap()->::cartographer::mapping::proto::Submap::MergeFrom(from._internal_submap());
       break;
     }
     case kNode: {
-      _this->_internal_mutable_node()->::cartographer::mapping::proto::Node::MergeFrom(
-          from._internal_node());
+      _internal_mutable_node()->::cartographer::mapping::proto::Node::MergeFrom(from._internal_node());
       break;
     }
     case kTrajectoryData: {
-      _this->_internal_mutable_trajectory_data()->::cartographer::mapping::proto::TrajectoryData::MergeFrom(
-          from._internal_trajectory_data());
+      _internal_mutable_trajectory_data()->::cartographer::mapping::proto::TrajectoryData::MergeFrom(from._internal_trajectory_data());
       break;
     }
     case kImuData: {
-      _this->_internal_mutable_imu_data()->::cartographer::mapping::proto::ImuData::MergeFrom(
-          from._internal_imu_data());
+      _internal_mutable_imu_data()->::cartographer::mapping::proto::ImuData::MergeFrom(from._internal_imu_data());
       break;
     }
     case kOdometryData: {
-      _this->_internal_mutable_odometry_data()->::cartographer::mapping::proto::OdometryData::MergeFrom(
-          from._internal_odometry_data());
+      _internal_mutable_odometry_data()->::cartographer::mapping::proto::OdometryData::MergeFrom(from._internal_odometry_data());
       break;
     }
     case kFixedFramePoseData: {
-      _this->_internal_mutable_fixed_frame_pose_data()->::cartographer::mapping::proto::FixedFramePoseData::MergeFrom(
-          from._internal_fixed_frame_pose_data());
+      _internal_mutable_fixed_frame_pose_data()->::cartographer::mapping::proto::FixedFramePoseData::MergeFrom(from._internal_fixed_frame_pose_data());
       break;
     }
     case kLandmarkData: {
-      _this->_internal_mutable_landmark_data()->::cartographer::mapping::proto::LandmarkData::MergeFrom(
-          from._internal_landmark_data());
+      _internal_mutable_landmark_data()->::cartographer::mapping::proto::LandmarkData::MergeFrom(from._internal_landmark_data());
       break;
     }
     case DATA_NOT_SET: {
       break;
     }
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SerializedData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SerializedData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void SerializedData::CopyFrom(const SerializedData& from) {
@@ -3321,60 +3607,49 @@ bool SerializedData::IsInitialized() const {
 
 void SerializedData::InternalSwap(SerializedData* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_impl_.data_, other->_impl_.data_);
-  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  swap(data_, other->data_);
+  swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SerializedData::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fserialization_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fserialization_2eproto[9]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Submap* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Submap >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Submap >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Node*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Node >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::Node* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::Node >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::Node >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ImuData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ImuData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ImuData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ImuData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::ImuData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::OdometryData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::OdometryData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::OdometryData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::OdometryData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::OdometryData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::FixedFramePoseData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::FixedFramePoseData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::FixedFramePoseData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::FixedFramePoseData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::FixedFramePoseData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LandmarkData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LandmarkData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LandmarkData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LandmarkData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::LandmarkData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::TrajectoryData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LocalSlamResultData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LocalSlamResultData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LocalSlamResultData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LocalSlamResultData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::LocalSlamResultData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SerializationHeader*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SerializationHeader >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SerializationHeader* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SerializationHeader >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::SerializationHeader >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SerializedData*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SerializedData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SerializedData* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SerializedData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::SerializedData >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

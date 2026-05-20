@@ -14,73 +14,76 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR ConnectedComponents_ConnectedComponent::ConnectedComponents_ConnectedComponent(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.trajectory_id_)*/{}
-  , /*decltype(_impl_._trajectory_id_cached_byte_size_)*/{0}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ConnectedComponents_ConnectedComponentDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ConnectedComponents_ConnectedComponentDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ConnectedComponents_ConnectedComponentDefaultTypeInternal() {}
-  union {
-    ConnectedComponents_ConnectedComponent _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ConnectedComponents_ConnectedComponentDefaultTypeInternal _ConnectedComponents_ConnectedComponent_default_instance_;
-PROTOBUF_CONSTEXPR ConnectedComponents::ConnectedComponents(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.connected_component_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ConnectedComponentsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ConnectedComponentsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ConnectedComponentsDefaultTypeInternal() {}
-  union {
-    ConnectedComponents _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ConnectedComponentsDefaultTypeInternal _ConnectedComponents_default_instance_;
+class ConnectedComponents_ConnectedComponentDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConnectedComponents_ConnectedComponent> _instance;
+} _ConnectedComponents_ConnectedComponent_default_instance_;
+class ConnectedComponentsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConnectedComponents> _instance;
+} _ConnectedComponents_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto[2];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = nullptr;
+static void InitDefaultsscc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_ConnectedComponents_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::ConnectedComponents();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::ConnectedComponents::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto}, {
+      &scc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base,}};
+
+static void InitDefaultsscc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_ConnectedComponents_ConnectedComponent_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent, _impl_.trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent, trajectory_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents, _impl_.connected_component_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConnectedComponents, connected_component_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent)},
-  { 7, -1, -1, sizeof(::cartographer::mapping::proto::ConnectedComponents)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent)},
+  { 6, -1, sizeof(::cartographer::mapping::proto::ConnectedComponents)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_ConnectedComponents_ConnectedComponent_default_instance_._instance,
-  &::cartographer::mapping::proto::_ConnectedComponents_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_ConnectedComponents_ConnectedComponent_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_ConnectedComponents_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -93,137 +96,135 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fconnected_
   "_id\030\001 \003(\005B\037B\035ConnectedComponentsOuterCla"
   "ssb\006proto3"
   ;
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = {
-    false, false, 290, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto,
-    "cartographer/mapping/proto/connected_components.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once, nullptr, 0, 2,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_sccs[2] = {
+  &scc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base,
+  &scc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto, "cartographer/mapping/proto/connected_components.proto", 290,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_deps, 2, 0,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto, 2, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void ConnectedComponents_ConnectedComponent::InitAsDefaultInstance() {
+}
 class ConnectedComponents_ConnectedComponent::_Internal {
  public:
 };
 
-ConnectedComponents_ConnectedComponent::ConnectedComponents_ConnectedComponent(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ConnectedComponents_ConnectedComponent::ConnectedComponents_ConnectedComponent(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  trajectory_id_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
 }
 ConnectedComponents_ConnectedComponent::ConnectedComponents_ConnectedComponent(const ConnectedComponents_ConnectedComponent& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  ConnectedComponents_ConnectedComponent* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){from._impl_.trajectory_id_}
-    , /*decltype(_impl_._trajectory_id_cached_byte_size_)*/{0}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      trajectory_id_(from.trajectory_id_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
 }
 
-inline void ConnectedComponents_ConnectedComponent::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){arena}
-    , /*decltype(_impl_._trajectory_id_cached_byte_size_)*/{0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void ConnectedComponents_ConnectedComponent::SharedCtor() {
 }
 
 ConnectedComponents_ConnectedComponent::~ConnectedComponents_ConnectedComponent() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void ConnectedComponents_ConnectedComponent::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.trajectory_id_.~RepeatedField();
+void ConnectedComponents_ConnectedComponent::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ConnectedComponents_ConnectedComponent::ArenaDtor(void* object) {
+  ConnectedComponents_ConnectedComponent* _this = reinterpret_cast< ConnectedComponents_ConnectedComponent* >(object);
+  (void)_this;
+}
+void ConnectedComponents_ConnectedComponent::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ConnectedComponents_ConnectedComponent::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const ConnectedComponents_ConnectedComponent& ConnectedComponents_ConnectedComponent::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ConnectedComponents_ConnectedComponent_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ConnectedComponents_ConnectedComponent::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.trajectory_id_.Clear();
+  trajectory_id_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ConnectedComponents_ConnectedComponent::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* ConnectedComponents_ConnectedComponent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // repeated int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_trajectory_id(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 8) {
-          _internal_add_trajectory_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+          _internal_add_trajectory_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* ConnectedComponents_ConnectedComponent::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ConnectedComponents_ConnectedComponent::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated int32 trajectory_id = 1;
   {
-    int byte_size = _impl_._trajectory_id_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _trajectory_id_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           1, _internal_trajectory_id(), byte_size, target);
@@ -231,7 +232,7 @@ uint8_t* ConnectedComponents_ConnectedComponent::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
@@ -242,44 +243,64 @@ size_t ConnectedComponents_ConnectedComponent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated int32 trajectory_id = 1;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      Int32Size(this->_impl_.trajectory_id_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->trajectory_id_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._trajectory_id_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _trajectory_id_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ConnectedComponents_ConnectedComponent::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    ConnectedComponents_ConnectedComponent::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ConnectedComponents_ConnectedComponent::GetClassData() const { return &_class_data_; }
+void ConnectedComponents_ConnectedComponent::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ConnectedComponents_ConnectedComponent* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ConnectedComponents_ConnectedComponent>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
+    MergeFrom(*source);
+  }
+}
 
-
-void ConnectedComponents_ConnectedComponent::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<ConnectedComponents_ConnectedComponent*>(&to_msg);
-  auto& from = static_cast<const ConnectedComponents_ConnectedComponent&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void ConnectedComponents_ConnectedComponent::MergeFrom(const ConnectedComponents_ConnectedComponent& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.trajectory_id_.MergeFrom(from._impl_.trajectory_id_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  trajectory_id_.MergeFrom(from.trajectory_id_);
+}
+
+void ConnectedComponents_ConnectedComponent::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.ConnectedComponents.ConnectedComponent)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void ConnectedComponents_ConnectedComponent::CopyFrom(const ConnectedComponents_ConnectedComponent& from) {
@@ -295,86 +316,87 @@ bool ConnectedComponents_ConnectedComponent::IsInitialized() const {
 
 void ConnectedComponents_ConnectedComponent::InternalSwap(ConnectedComponents_ConnectedComponent* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.trajectory_id_.InternalSwap(&other->_impl_.trajectory_id_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  trajectory_id_.InternalSwap(&other->trajectory_id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConnectedComponents_ConnectedComponent::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void ConnectedComponents::InitAsDefaultInstance() {
+}
 class ConnectedComponents::_Internal {
  public:
 };
 
-ConnectedComponents::ConnectedComponents(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ConnectedComponents::ConnectedComponents(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  connected_component_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.ConnectedComponents)
 }
 ConnectedComponents::ConnectedComponents(const ConnectedComponents& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  ConnectedComponents* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.connected_component_){from._impl_.connected_component_}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      connected_component_(from.connected_component_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.ConnectedComponents)
 }
 
-inline void ConnectedComponents::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.connected_component_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void ConnectedComponents::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base);
 }
 
 ConnectedComponents::~ConnectedComponents() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.ConnectedComponents)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void ConnectedComponents::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.connected_component_.~RepeatedPtrField();
+void ConnectedComponents::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ConnectedComponents::ArenaDtor(void* object) {
+  ConnectedComponents* _this = reinterpret_cast< ConnectedComponents* >(object);
+  (void)_this;
+}
+void ConnectedComponents::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ConnectedComponents::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const ConnectedComponents& ConnectedComponents::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ConnectedComponents_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ConnectedComponents::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.ConnectedComponents)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.connected_component_.Clear();
+  connected_component_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ConnectedComponents::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* ConnectedComponents::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .cartographer.mapping.proto.ConnectedComponents.ConnectedComponent connected_component = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -382,48 +404,46 @@ const char* ConnectedComponents::_InternalParse(const char* ptr, ::_pbi::ParseCo
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* ConnectedComponents::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ConnectedComponents::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.ConnectedComponents)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.ConnectedComponents.ConnectedComponent connected_component = 1;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_connected_component_size()); i < n; i++) {
-    const auto& repfield = this->_internal_connected_component(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_connected_component_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(1, this->_internal_connected_component(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.ConnectedComponents)
@@ -434,37 +454,56 @@ size_t ConnectedComponents::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.ConnectedComponents)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.ConnectedComponents.ConnectedComponent connected_component = 1;
   total_size += 1UL * this->_internal_connected_component_size();
-  for (const auto& msg : this->_impl_.connected_component_) {
+  for (const auto& msg : this->connected_component_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ConnectedComponents::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    ConnectedComponents::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ConnectedComponents::GetClassData() const { return &_class_data_; }
+void ConnectedComponents::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.ConnectedComponents)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ConnectedComponents* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ConnectedComponents>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.ConnectedComponents)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.ConnectedComponents)
+    MergeFrom(*source);
+  }
+}
 
-
-void ConnectedComponents::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<ConnectedComponents*>(&to_msg);
-  auto& from = static_cast<const ConnectedComponents&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConnectedComponents)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void ConnectedComponents::MergeFrom(const ConnectedComponents& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConnectedComponents)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.connected_component_.MergeFrom(from._impl_.connected_component_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  connected_component_.MergeFrom(from.connected_component_);
+}
+
+void ConnectedComponents::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.ConnectedComponents)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void ConnectedComponents::CopyFrom(const ConnectedComponents& from) {
@@ -480,27 +519,24 @@ bool ConnectedComponents::IsInitialized() const {
 
 void ConnectedComponents::InternalSwap(ConnectedComponents* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.connected_component_.InternalSwap(&other->_impl_.connected_component_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  connected_component_.InternalSwap(&other->connected_component_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConnectedComponents::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fconnected_5fcomponents_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::ConnectedComponents_ConnectedComponent >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConnectedComponents*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConnectedComponents >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConnectedComponents* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConnectedComponents >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::ConnectedComponents >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

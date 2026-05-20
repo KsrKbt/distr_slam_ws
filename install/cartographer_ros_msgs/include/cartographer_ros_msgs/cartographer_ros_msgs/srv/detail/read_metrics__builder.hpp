@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:srv/ReadMetrics.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/read_metrics.hpp"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__READ_METRICS__BUILDER_HPP_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__READ_METRICS__BUILDER_HPP_
 
@@ -106,80 +103,6 @@ inline
 auto build<::cartographer_ros_msgs::srv::ReadMetrics_Response>()
 {
   return cartographer_ros_msgs::srv::builder::Init_ReadMetrics_Response_status();
-}
-
-}  // namespace cartographer_ros_msgs
-
-
-namespace cartographer_ros_msgs
-{
-
-namespace srv
-{
-
-namespace builder
-{
-
-class Init_ReadMetrics_Event_response
-{
-public:
-  explicit Init_ReadMetrics_Event_response(::cartographer_ros_msgs::srv::ReadMetrics_Event & msg)
-  : msg_(msg)
-  {}
-  ::cartographer_ros_msgs::srv::ReadMetrics_Event response(::cartographer_ros_msgs::srv::ReadMetrics_Event::_response_type arg)
-  {
-    msg_.response = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::ReadMetrics_Event msg_;
-};
-
-class Init_ReadMetrics_Event_request
-{
-public:
-  explicit Init_ReadMetrics_Event_request(::cartographer_ros_msgs::srv::ReadMetrics_Event & msg)
-  : msg_(msg)
-  {}
-  Init_ReadMetrics_Event_response request(::cartographer_ros_msgs::srv::ReadMetrics_Event::_request_type arg)
-  {
-    msg_.request = std::move(arg);
-    return Init_ReadMetrics_Event_response(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::ReadMetrics_Event msg_;
-};
-
-class Init_ReadMetrics_Event_info
-{
-public:
-  Init_ReadMetrics_Event_info()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_ReadMetrics_Event_request info(::cartographer_ros_msgs::srv::ReadMetrics_Event::_info_type arg)
-  {
-    msg_.info = std::move(arg);
-    return Init_ReadMetrics_Event_request(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::ReadMetrics_Event msg_;
-};
-
-}  // namespace builder
-
-}  // namespace srv
-
-template<typename MessageType>
-auto build();
-
-template<>
-inline
-auto build<::cartographer_ros_msgs::srv::ReadMetrics_Event>()
-{
-  return cartographer_ros_msgs::srv::builder::Init_ReadMetrics_Event_info();
 }
 
 }  // namespace cartographer_ros_msgs

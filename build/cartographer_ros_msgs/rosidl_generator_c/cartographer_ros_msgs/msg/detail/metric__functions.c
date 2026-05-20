@@ -109,7 +109,7 @@ cartographer_ros_msgs__msg__Metric__copy(
 }
 
 cartographer_ros_msgs__msg__Metric *
-cartographer_ros_msgs__msg__Metric__create(void)
+cartographer_ros_msgs__msg__Metric__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__Metric * msg = (cartographer_ros_msgs__msg__Metric *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__Metric), allocator.state);

@@ -3,9 +3,6 @@
 // with input from cartographer_ros_msgs:srv/GetSlamState.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/get_slam_state.h"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__GET_SLAM_STATE__STRUCT_H_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__GET_SLAM_STATE__STRUCT_H_
 
@@ -37,6 +34,7 @@ typedef struct cartographer_ros_msgs__srv__GetSlamState_Request__Sequence
   size_t capacity;
 } cartographer_ros_msgs__srv__GetSlamState_Request__Sequence;
 
+
 // Constants defined in the message
 
 // Include directives for member types
@@ -62,42 +60,6 @@ typedef struct cartographer_ros_msgs__srv__GetSlamState_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } cartographer_ros_msgs__srv__GetSlamState_Response__Sequence;
-
-// Constants defined in the message
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.h"
-
-// constants for array fields with an upper bound
-// request
-enum
-{
-  cartographer_ros_msgs__srv__GetSlamState_Event__request__MAX_SIZE = 1
-};
-// response
-enum
-{
-  cartographer_ros_msgs__srv__GetSlamState_Event__response__MAX_SIZE = 1
-};
-
-/// Struct defined in srv/GetSlamState in the package cartographer_ros_msgs.
-typedef struct cartographer_ros_msgs__srv__GetSlamState_Event
-{
-  service_msgs__msg__ServiceEventInfo info;
-  cartographer_ros_msgs__srv__GetSlamState_Request__Sequence request;
-  cartographer_ros_msgs__srv__GetSlamState_Response__Sequence response;
-} cartographer_ros_msgs__srv__GetSlamState_Event;
-
-// Struct for a sequence of cartographer_ros_msgs__srv__GetSlamState_Event.
-typedef struct cartographer_ros_msgs__srv__GetSlamState_Event__Sequence
-{
-  cartographer_ros_msgs__srv__GetSlamState_Event * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
-} cartographer_ros_msgs__srv__GetSlamState_Event__Sequence;
 
 #ifdef __cplusplus
 }

@@ -14,158 +14,175 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Trajectory_cartographer_2fmapping_2fproto_2ftrajectory_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR SubmapId::SubmapId(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_.submap_index_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SubmapIdDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SubmapIdDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SubmapIdDefaultTypeInternal() {}
-  union {
-    SubmapId _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SubmapIdDefaultTypeInternal _SubmapId_default_instance_;
-PROTOBUF_CONSTEXPR NodeId::NodeId(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.trajectory_id_)*/0
-  , /*decltype(_impl_.node_index_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct NodeIdDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR NodeIdDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~NodeIdDefaultTypeInternal() {}
-  union {
-    NodeId _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NodeIdDefaultTypeInternal _NodeId_default_instance_;
-PROTOBUF_CONSTEXPR PoseGraph_Constraint::PoseGraph_Constraint(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.submap_id_)*/nullptr
-  , /*decltype(_impl_.node_id_)*/nullptr
-  , /*decltype(_impl_.relative_pose_)*/nullptr
-  , /*decltype(_impl_.translation_weight_)*/0
-  , /*decltype(_impl_.rotation_weight_)*/0
-  , /*decltype(_impl_.tag_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseGraph_ConstraintDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseGraph_ConstraintDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseGraph_ConstraintDefaultTypeInternal() {}
-  union {
-    PoseGraph_Constraint _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseGraph_ConstraintDefaultTypeInternal _PoseGraph_Constraint_default_instance_;
-PROTOBUF_CONSTEXPR PoseGraph_LandmarkPose::PoseGraph_LandmarkPose(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.landmark_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.global_pose_)*/nullptr
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseGraph_LandmarkPoseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseGraph_LandmarkPoseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseGraph_LandmarkPoseDefaultTypeInternal() {}
-  union {
-    PoseGraph_LandmarkPose _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseGraph_LandmarkPoseDefaultTypeInternal _PoseGraph_LandmarkPose_default_instance_;
-PROTOBUF_CONSTEXPR PoseGraph::PoseGraph(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.constraint_)*/{}
-  , /*decltype(_impl_.trajectory_)*/{}
-  , /*decltype(_impl_.landmark_poses_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseGraphDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseGraphDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseGraphDefaultTypeInternal() {}
-  union {
-    PoseGraph _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseGraphDefaultTypeInternal _PoseGraph_default_instance_;
+class SubmapIdDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SubmapId> _instance;
+} _SubmapId_default_instance_;
+class NodeIdDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NodeId> _instance;
+} _NodeId_default_instance_;
+class PoseGraph_ConstraintDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseGraph_Constraint> _instance;
+} _PoseGraph_Constraint_default_instance_;
+class PoseGraph_LandmarkPoseDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseGraph_LandmarkPose> _instance;
+} _PoseGraph_LandmarkPose_default_instance_;
+class PoseGraphDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseGraph> _instance;
+} _PoseGraph_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[5];
-static const ::_pb::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[1];
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto = nullptr;
+static void InitDefaultsscc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_NodeId_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::NodeId();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::NodeId::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto}, {}};
+
+static void InitDefaultsscc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseGraph_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseGraph();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseGraph::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto}, {
+      &scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_Trajectory_cartographer_2fmapping_2fproto_2ftrajectory_2eproto.base,
+      &scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,}};
+
+static void InitDefaultsscc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseGraph_Constraint();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseGraph_Constraint::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto}, {
+      &scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,}};
+
+static void InitDefaultsscc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseGraph_LandmarkPose_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseGraph_LandmarkPose();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseGraph_LandmarkPose::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto}, {
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,}};
+
+static void InitDefaultsscc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_SubmapId_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::SubmapId();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::SubmapId::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[5];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapId, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapId, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapId, _impl_.submap_index_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapId, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SubmapId, submap_index_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NodeId, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NodeId, _impl_.trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NodeId, _impl_.node_index_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NodeId, trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NodeId, node_index_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.submap_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.node_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.relative_pose_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, _impl_.tag_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, submap_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, node_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, relative_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_Constraint, tag_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_LandmarkPose, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_LandmarkPose, _impl_.landmark_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_LandmarkPose, _impl_.global_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_LandmarkPose, landmark_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph_LandmarkPose, global_pose_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, _impl_.constraint_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, _impl_.trajectory_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, _impl_.landmark_poses_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, constraint_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, trajectory_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseGraph, landmark_poses_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::SubmapId)},
-  { 8, -1, -1, sizeof(::cartographer::mapping::proto::NodeId)},
-  { 16, -1, -1, sizeof(::cartographer::mapping::proto::PoseGraph_Constraint)},
-  { 28, -1, -1, sizeof(::cartographer::mapping::proto::PoseGraph_LandmarkPose)},
-  { 36, -1, -1, sizeof(::cartographer::mapping::proto::PoseGraph)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::SubmapId)},
+  { 7, -1, sizeof(::cartographer::mapping::proto::NodeId)},
+  { 14, -1, sizeof(::cartographer::mapping::proto::PoseGraph_Constraint)},
+  { 25, -1, sizeof(::cartographer::mapping::proto::PoseGraph_LandmarkPose)},
+  { 32, -1, sizeof(::cartographer::mapping::proto::PoseGraph)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_SubmapId_default_instance_._instance,
-  &::cartographer::mapping::proto::_NodeId_default_instance_._instance,
-  &::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_._instance,
-  &::cartographer::mapping::proto::_PoseGraph_LandmarkPose_default_instance_._instance,
-  &::cartographer::mapping::proto::_PoseGraph_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_SubmapId_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_NodeId_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseGraph_LandmarkPose_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseGraph_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -194,25 +211,27 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgra
   "\t\022:\n\013global_pose\030\002 \001(\0132%.cartographer.tr"
   "ansform.proto.Rigid3db\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_deps[2] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_deps[2] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_2eproto,
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto = {
-    false, false, 949, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto,
-    "cartographer/mapping/proto/pose_graph.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_deps, 2, 5,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_sccs[5] = {
+  &scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+  &scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+  &scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+  &scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
+  &scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto, "cartographer/mapping/proto/pose_graph.proto", 949,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_deps, 5, 2,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto, 5, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
@@ -230,146 +249,144 @@ bool PoseGraph_Constraint_Tag_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 constexpr PoseGraph_Constraint_Tag PoseGraph_Constraint::INTRA_SUBMAP;
 constexpr PoseGraph_Constraint_Tag PoseGraph_Constraint::INTER_SUBMAP;
 constexpr PoseGraph_Constraint_Tag PoseGraph_Constraint::Tag_MIN;
 constexpr PoseGraph_Constraint_Tag PoseGraph_Constraint::Tag_MAX;
 constexpr int PoseGraph_Constraint::Tag_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 
 // ===================================================================
 
+void SubmapId::InitAsDefaultInstance() {
+}
 class SubmapId::_Internal {
  public:
 };
 
-SubmapId::SubmapId(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+SubmapId::SubmapId(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.SubmapId)
 }
 SubmapId::SubmapId(const SubmapId& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SubmapId* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){}
-    , decltype(_impl_.submap_index_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.trajectory_id_, &from._impl_.trajectory_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.submap_index_) -
-    reinterpret_cast<char*>(&_impl_.trajectory_id_)) + sizeof(_impl_.submap_index_));
+  ::memcpy(&trajectory_id_, &from.trajectory_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&submap_index_) -
+    reinterpret_cast<char*>(&trajectory_id_)) + sizeof(submap_index_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapId)
 }
 
-inline void SubmapId::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){0}
-    , decltype(_impl_.submap_index_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void SubmapId::SharedCtor() {
+  ::memset(&trajectory_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&submap_index_) -
+      reinterpret_cast<char*>(&trajectory_id_)) + sizeof(submap_index_));
 }
 
 SubmapId::~SubmapId() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapId)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void SubmapId::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void SubmapId::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void SubmapId::ArenaDtor(void* object) {
+  SubmapId* _this = reinterpret_cast< SubmapId* >(object);
+  (void)_this;
+}
+void SubmapId::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void SubmapId::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const SubmapId& SubmapId::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SubmapId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SubmapId::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.trajectory_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.submap_index_) -
-      reinterpret_cast<char*>(&_impl_.trajectory_id_)) + sizeof(_impl_.submap_index_));
+  ::memset(&trajectory_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&submap_index_) -
+      reinterpret_cast<char*>(&trajectory_id_)) + sizeof(submap_index_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SubmapId::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* SubmapId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 submap_index = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.submap_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          submap_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* SubmapId::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SubmapId::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // int32 submap_index = 2;
-  if (this->_internal_submap_index() != 0) {
+  if (this->submap_index() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_submap_index(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_submap_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapId)
@@ -380,45 +397,68 @@ size_t SubmapId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapId)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
   // int32 submap_index = 2;
-  if (this->_internal_submap_index() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_submap_index());
+  if (this->submap_index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_submap_index());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SubmapId::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SubmapId::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SubmapId::GetClassData() const { return &_class_data_; }
+void SubmapId::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapId)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SubmapId* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SubmapId>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapId)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapId)
+    MergeFrom(*source);
+  }
+}
 
-
-void SubmapId::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SubmapId*>(&to_msg);
-  auto& from = static_cast<const SubmapId&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapId)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void SubmapId::MergeFrom(const SubmapId& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapId)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  if (from._internal_submap_index() != 0) {
-    _this->_internal_set_submap_index(from._internal_submap_index());
+  if (from.submap_index() != 0) {
+    _internal_set_submap_index(from._internal_submap_index());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SubmapId::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapId)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void SubmapId::CopyFrom(const SubmapId& from) {
@@ -434,153 +474,150 @@ bool SubmapId::IsInitialized() const {
 
 void SubmapId::InternalSwap(SubmapId* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SubmapId, _impl_.submap_index_)
-      + sizeof(SubmapId::_impl_.submap_index_)
-      - PROTOBUF_FIELD_OFFSET(SubmapId, _impl_.trajectory_id_)>(
-          reinterpret_cast<char*>(&_impl_.trajectory_id_),
-          reinterpret_cast<char*>(&other->_impl_.trajectory_id_));
+      PROTOBUF_FIELD_OFFSET(SubmapId, submap_index_)
+      + sizeof(SubmapId::submap_index_)
+      - PROTOBUF_FIELD_OFFSET(SubmapId, trajectory_id_)>(
+          reinterpret_cast<char*>(&trajectory_id_),
+          reinterpret_cast<char*>(&other->trajectory_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SubmapId::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void NodeId::InitAsDefaultInstance() {
+}
 class NodeId::_Internal {
  public:
 };
 
-NodeId::NodeId(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+NodeId::NodeId(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.NodeId)
 }
 NodeId::NodeId(const NodeId& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  NodeId* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){}
-    , decltype(_impl_.node_index_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.trajectory_id_, &from._impl_.trajectory_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.node_index_) -
-    reinterpret_cast<char*>(&_impl_.trajectory_id_)) + sizeof(_impl_.node_index_));
+  ::memcpy(&trajectory_id_, &from.trajectory_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&node_index_) -
+    reinterpret_cast<char*>(&trajectory_id_)) + sizeof(node_index_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.NodeId)
 }
 
-inline void NodeId::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_id_){0}
-    , decltype(_impl_.node_index_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void NodeId::SharedCtor() {
+  ::memset(&trajectory_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&node_index_) -
+      reinterpret_cast<char*>(&trajectory_id_)) + sizeof(node_index_));
 }
 
 NodeId::~NodeId() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.NodeId)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void NodeId::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void NodeId::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void NodeId::ArenaDtor(void* object) {
+  NodeId* _this = reinterpret_cast< NodeId* >(object);
+  (void)_this;
+}
+void NodeId::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void NodeId::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const NodeId& NodeId::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NodeId_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void NodeId::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.NodeId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.trajectory_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.node_index_) -
-      reinterpret_cast<char*>(&_impl_.trajectory_id_)) + sizeof(_impl_.node_index_));
+  ::memset(&trajectory_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&node_index_) -
+      reinterpret_cast<char*>(&trajectory_id_)) + sizeof(node_index_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* NodeId::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* NodeId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 trajectory_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 node_index = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.node_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          node_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* NodeId::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* NodeId::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.NodeId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
+  if (this->trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_trajectory_id(), target);
   }
 
   // int32 node_index = 2;
-  if (this->_internal_node_index() != 0) {
+  if (this->node_index() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_node_index(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_node_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.NodeId)
@@ -591,45 +628,68 @@ size_t NodeId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.NodeId)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 trajectory_id = 1;
-  if (this->_internal_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_trajectory_id());
+  if (this->trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_trajectory_id());
   }
 
   // int32 node_index = 2;
-  if (this->_internal_node_index() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_node_index());
+  if (this->node_index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_node_index());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NodeId::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    NodeId::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NodeId::GetClassData() const { return &_class_data_; }
+void NodeId::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.NodeId)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NodeId* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NodeId>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.NodeId)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.NodeId)
+    MergeFrom(*source);
+  }
+}
 
-
-void NodeId::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<NodeId*>(&to_msg);
-  auto& from = static_cast<const NodeId&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.NodeId)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void NodeId::MergeFrom(const NodeId& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.NodeId)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_trajectory_id() != 0) {
-    _this->_internal_set_trajectory_id(from._internal_trajectory_id());
+  if (from.trajectory_id() != 0) {
+    _internal_set_trajectory_id(from._internal_trajectory_id());
   }
-  if (from._internal_node_index() != 0) {
-    _this->_internal_set_node_index(from._internal_node_index());
+  if (from.node_index() != 0) {
+    _internal_set_node_index(from._internal_node_index());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void NodeId::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.NodeId)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void NodeId::CopyFrom(const NodeId& from) {
@@ -645,23 +705,30 @@ bool NodeId::IsInitialized() const {
 
 void NodeId::InternalSwap(NodeId* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(NodeId, _impl_.node_index_)
-      + sizeof(NodeId::_impl_.node_index_)
-      - PROTOBUF_FIELD_OFFSET(NodeId, _impl_.trajectory_id_)>(
-          reinterpret_cast<char*>(&_impl_.trajectory_id_),
-          reinterpret_cast<char*>(&other->_impl_.trajectory_id_));
+      PROTOBUF_FIELD_OFFSET(NodeId, node_index_)
+      + sizeof(NodeId::node_index_)
+      - PROTOBUF_FIELD_OFFSET(NodeId, trajectory_id_)>(
+          reinterpret_cast<char*>(&trajectory_id_),
+          reinterpret_cast<char*>(&other->trajectory_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata NodeId::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PoseGraph_Constraint::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_._instance.get_mutable()->submap_id_ = const_cast< ::cartographer::mapping::proto::SubmapId*>(
+      ::cartographer::mapping::proto::SubmapId::internal_default_instance());
+  ::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_._instance.get_mutable()->node_id_ = const_cast< ::cartographer::mapping::proto::NodeId*>(
+      ::cartographer::mapping::proto::NodeId::internal_default_instance());
+  ::cartographer::mapping::proto::_PoseGraph_Constraint_default_instance_._instance.get_mutable()->relative_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+}
 class PoseGraph_Constraint::_Internal {
  public:
   static const ::cartographer::mapping::proto::SubmapId& submap_id(const PoseGraph_Constraint* msg);
@@ -671,249 +738,235 @@ class PoseGraph_Constraint::_Internal {
 
 const ::cartographer::mapping::proto::SubmapId&
 PoseGraph_Constraint::_Internal::submap_id(const PoseGraph_Constraint* msg) {
-  return *msg->_impl_.submap_id_;
+  return *msg->submap_id_;
 }
 const ::cartographer::mapping::proto::NodeId&
 PoseGraph_Constraint::_Internal::node_id(const PoseGraph_Constraint* msg) {
-  return *msg->_impl_.node_id_;
+  return *msg->node_id_;
 }
 const ::cartographer::transform::proto::Rigid3d&
 PoseGraph_Constraint::_Internal::relative_pose(const PoseGraph_Constraint* msg) {
-  return *msg->_impl_.relative_pose_;
+  return *msg->relative_pose_;
 }
 void PoseGraph_Constraint::clear_relative_pose() {
-  if (GetArenaForAllocation() == nullptr && _impl_.relative_pose_ != nullptr) {
-    delete _impl_.relative_pose_;
+  if (GetArena() == nullptr && relative_pose_ != nullptr) {
+    delete relative_pose_;
   }
-  _impl_.relative_pose_ = nullptr;
+  relative_pose_ = nullptr;
 }
-PoseGraph_Constraint::PoseGraph_Constraint(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseGraph_Constraint::PoseGraph_Constraint(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseGraph.Constraint)
 }
 PoseGraph_Constraint::PoseGraph_Constraint(const PoseGraph_Constraint& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseGraph_Constraint* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submap_id_){nullptr}
-    , decltype(_impl_.node_id_){nullptr}
-    , decltype(_impl_.relative_pose_){nullptr}
-    , decltype(_impl_.translation_weight_){}
-    , decltype(_impl_.rotation_weight_){}
-    , decltype(_impl_.tag_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_submap_id()) {
-    _this->_impl_.submap_id_ = new ::cartographer::mapping::proto::SubmapId(*from._impl_.submap_id_);
+    submap_id_ = new ::cartographer::mapping::proto::SubmapId(*from.submap_id_);
+  } else {
+    submap_id_ = nullptr;
   }
   if (from._internal_has_node_id()) {
-    _this->_impl_.node_id_ = new ::cartographer::mapping::proto::NodeId(*from._impl_.node_id_);
+    node_id_ = new ::cartographer::mapping::proto::NodeId(*from.node_id_);
+  } else {
+    node_id_ = nullptr;
   }
   if (from._internal_has_relative_pose()) {
-    _this->_impl_.relative_pose_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.relative_pose_);
+    relative_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.relative_pose_);
+  } else {
+    relative_pose_ = nullptr;
   }
-  ::memcpy(&_impl_.translation_weight_, &from._impl_.translation_weight_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.tag_) -
-    reinterpret_cast<char*>(&_impl_.translation_weight_)) + sizeof(_impl_.tag_));
+  ::memcpy(&translation_weight_, &from.translation_weight_,
+    static_cast<size_t>(reinterpret_cast<char*>(&tag_) -
+    reinterpret_cast<char*>(&translation_weight_)) + sizeof(tag_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseGraph.Constraint)
 }
 
-inline void PoseGraph_Constraint::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.submap_id_){nullptr}
-    , decltype(_impl_.node_id_){nullptr}
-    , decltype(_impl_.relative_pose_){nullptr}
-    , decltype(_impl_.translation_weight_){0}
-    , decltype(_impl_.rotation_weight_){0}
-    , decltype(_impl_.tag_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void PoseGraph_Constraint::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  ::memset(&submap_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&tag_) -
+      reinterpret_cast<char*>(&submap_id_)) + sizeof(tag_));
 }
 
 PoseGraph_Constraint::~PoseGraph_Constraint() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseGraph.Constraint)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseGraph_Constraint::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.submap_id_;
-  if (this != internal_default_instance()) delete _impl_.node_id_;
-  if (this != internal_default_instance()) delete _impl_.relative_pose_;
+void PoseGraph_Constraint::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete submap_id_;
+  if (this != internal_default_instance()) delete node_id_;
+  if (this != internal_default_instance()) delete relative_pose_;
 }
 
+void PoseGraph_Constraint::ArenaDtor(void* object) {
+  PoseGraph_Constraint* _this = reinterpret_cast< PoseGraph_Constraint* >(object);
+  (void)_this;
+}
+void PoseGraph_Constraint::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseGraph_Constraint::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseGraph_Constraint& PoseGraph_Constraint::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseGraph_Constraint_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseGraph_Constraint::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseGraph.Constraint)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.submap_id_ != nullptr) {
-    delete _impl_.submap_id_;
+  if (GetArena() == nullptr && submap_id_ != nullptr) {
+    delete submap_id_;
   }
-  _impl_.submap_id_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.node_id_ != nullptr) {
-    delete _impl_.node_id_;
+  submap_id_ = nullptr;
+  if (GetArena() == nullptr && node_id_ != nullptr) {
+    delete node_id_;
   }
-  _impl_.node_id_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.relative_pose_ != nullptr) {
-    delete _impl_.relative_pose_;
+  node_id_ = nullptr;
+  if (GetArena() == nullptr && relative_pose_ != nullptr) {
+    delete relative_pose_;
   }
-  _impl_.relative_pose_ = nullptr;
-  ::memset(&_impl_.translation_weight_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.tag_) -
-      reinterpret_cast<char*>(&_impl_.translation_weight_)) + sizeof(_impl_.tag_));
+  relative_pose_ = nullptr;
+  ::memset(&translation_weight_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&tag_) -
+      reinterpret_cast<char*>(&translation_weight_)) + sizeof(tag_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseGraph_Constraint::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseGraph_Constraint::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.SubmapId submap_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_submap_id(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.NodeId node_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_node_id(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.transform.proto.Rigid3d relative_pose = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_relative_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.PoseGraph.Constraint.Tag tag = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
-          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_tag(static_cast<::cartographer::mapping::proto::PoseGraph_Constraint_Tag>(val));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double translation_weight = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
-          _impl_.translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+          translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double rotation_weight = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
-          _impl_.rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseGraph_Constraint::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseGraph_Constraint::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseGraph.Constraint)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.SubmapId submap_id = 1;
-  if (this->_internal_has_submap_id()) {
+  if (this->has_submap_id()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::submap_id(this),
-        _Internal::submap_id(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::submap_id(this), target, stream);
   }
 
   // .cartographer.mapping.proto.NodeId node_id = 2;
-  if (this->_internal_has_node_id()) {
+  if (this->has_node_id()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::node_id(this),
-        _Internal::node_id(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::node_id(this), target, stream);
   }
 
   // .cartographer.transform.proto.Rigid3d relative_pose = 3;
-  if (this->_internal_has_relative_pose()) {
+  if (this->has_relative_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::relative_pose(this),
-        _Internal::relative_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::relative_pose(this), target, stream);
   }
 
   // .cartographer.mapping.proto.PoseGraph.Constraint.Tag tag = 5;
-  if (this->_internal_tag() != 0) {
+  if (this->tag() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       5, this->_internal_tag(), target);
   }
 
   // double translation_weight = 6;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = this->_internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
+  if (!(this->translation_weight() <= 0 && this->translation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(6, this->_internal_translation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_translation_weight(), target);
   }
 
   // double rotation_weight = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = this->_internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
+  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_rotation_weight(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseGraph.Constraint)
@@ -924,103 +977,103 @@ size_t PoseGraph_Constraint::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseGraph.Constraint)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.SubmapId submap_id = 1;
-  if (this->_internal_has_submap_id()) {
+  if (this->has_submap_id()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.submap_id_);
+        *submap_id_);
   }
 
   // .cartographer.mapping.proto.NodeId node_id = 2;
-  if (this->_internal_has_node_id()) {
+  if (this->has_node_id()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.node_id_);
+        *node_id_);
   }
 
   // .cartographer.transform.proto.Rigid3d relative_pose = 3;
-  if (this->_internal_has_relative_pose()) {
+  if (this->has_relative_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.relative_pose_);
+        *relative_pose_);
   }
 
   // double translation_weight = 6;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = this->_internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
+  if (!(this->translation_weight() <= 0 && this->translation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double rotation_weight = 7;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = this->_internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
+  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // .cartographer.mapping.proto.PoseGraph.Constraint.Tag tag = 5;
-  if (this->_internal_tag() != 0) {
+  if (this->tag() != 0) {
     total_size += 1 +
-      ::_pbi::WireFormatLite::EnumSize(this->_internal_tag());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tag());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseGraph_Constraint::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseGraph_Constraint::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseGraph_Constraint::GetClassData() const { return &_class_data_; }
+void PoseGraph_Constraint::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseGraph.Constraint)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseGraph_Constraint* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseGraph_Constraint>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseGraph.Constraint)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseGraph.Constraint)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseGraph_Constraint::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseGraph_Constraint*>(&to_msg);
-  auto& from = static_cast<const PoseGraph_Constraint&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph.Constraint)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseGraph_Constraint::MergeFrom(const PoseGraph_Constraint& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph.Constraint)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_submap_id()) {
-    _this->_internal_mutable_submap_id()->::cartographer::mapping::proto::SubmapId::MergeFrom(
-        from._internal_submap_id());
+  if (from.has_submap_id()) {
+    _internal_mutable_submap_id()->::cartographer::mapping::proto::SubmapId::MergeFrom(from._internal_submap_id());
   }
-  if (from._internal_has_node_id()) {
-    _this->_internal_mutable_node_id()->::cartographer::mapping::proto::NodeId::MergeFrom(
-        from._internal_node_id());
+  if (from.has_node_id()) {
+    _internal_mutable_node_id()->::cartographer::mapping::proto::NodeId::MergeFrom(from._internal_node_id());
   }
-  if (from._internal_has_relative_pose()) {
-    _this->_internal_mutable_relative_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_relative_pose());
+  if (from.has_relative_pose()) {
+    _internal_mutable_relative_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_relative_pose());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_translation_weight = from._internal_translation_weight();
-  uint64_t raw_translation_weight;
-  memcpy(&raw_translation_weight, &tmp_translation_weight, sizeof(tmp_translation_weight));
-  if (raw_translation_weight != 0) {
-    _this->_internal_set_translation_weight(from._internal_translation_weight());
+  if (!(from.translation_weight() <= 0 && from.translation_weight() >= 0)) {
+    _internal_set_translation_weight(from._internal_translation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_rotation_weight = from._internal_rotation_weight();
-  uint64_t raw_rotation_weight;
-  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
-  if (raw_rotation_weight != 0) {
-    _this->_internal_set_rotation_weight(from._internal_rotation_weight());
+  if (!(from.rotation_weight() <= 0 && from.rotation_weight() >= 0)) {
+    _internal_set_rotation_weight(from._internal_rotation_weight());
   }
-  if (from._internal_tag() != 0) {
-    _this->_internal_set_tag(from._internal_tag());
+  if (from.tag() != 0) {
+    _internal_set_tag(from._internal_tag());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PoseGraph_Constraint::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseGraph.Constraint)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseGraph_Constraint::CopyFrom(const PoseGraph_Constraint& from) {
@@ -1036,23 +1089,26 @@ bool PoseGraph_Constraint::IsInitialized() const {
 
 void PoseGraph_Constraint::InternalSwap(PoseGraph_Constraint* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PoseGraph_Constraint, _impl_.tag_)
-      + sizeof(PoseGraph_Constraint::_impl_.tag_)
-      - PROTOBUF_FIELD_OFFSET(PoseGraph_Constraint, _impl_.submap_id_)>(
-          reinterpret_cast<char*>(&_impl_.submap_id_),
-          reinterpret_cast<char*>(&other->_impl_.submap_id_));
+      PROTOBUF_FIELD_OFFSET(PoseGraph_Constraint, tag_)
+      + sizeof(PoseGraph_Constraint::tag_)
+      - PROTOBUF_FIELD_OFFSET(PoseGraph_Constraint, submap_id_)>(
+          reinterpret_cast<char*>(&submap_id_),
+          reinterpret_cast<char*>(&other->submap_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseGraph_Constraint::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[2]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PoseGraph_LandmarkPose::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_PoseGraph_LandmarkPose_default_instance_._instance.get_mutable()->global_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+}
 class PoseGraph_LandmarkPose::_Internal {
  public:
   static const ::cartographer::transform::proto::Rigid3d& global_pose(const PoseGraph_LandmarkPose* msg);
@@ -1060,146 +1116,137 @@ class PoseGraph_LandmarkPose::_Internal {
 
 const ::cartographer::transform::proto::Rigid3d&
 PoseGraph_LandmarkPose::_Internal::global_pose(const PoseGraph_LandmarkPose* msg) {
-  return *msg->_impl_.global_pose_;
+  return *msg->global_pose_;
 }
 void PoseGraph_LandmarkPose::clear_global_pose() {
-  if (GetArenaForAllocation() == nullptr && _impl_.global_pose_ != nullptr) {
-    delete _impl_.global_pose_;
+  if (GetArena() == nullptr && global_pose_ != nullptr) {
+    delete global_pose_;
   }
-  _impl_.global_pose_ = nullptr;
+  global_pose_ = nullptr;
 }
-PoseGraph_LandmarkPose::PoseGraph_LandmarkPose(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseGraph_LandmarkPose::PoseGraph_LandmarkPose(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseGraph.LandmarkPose)
 }
 PoseGraph_LandmarkPose::PoseGraph_LandmarkPose(const PoseGraph_LandmarkPose& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseGraph_LandmarkPose* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.landmark_id_){}
-    , decltype(_impl_.global_pose_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _impl_.landmark_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.landmark_id_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  landmark_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_landmark_id().empty()) {
-    _this->_impl_.landmark_id_.Set(from._internal_landmark_id(), 
-      _this->GetArenaForAllocation());
+    landmark_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_landmark_id(),
+      GetArena());
   }
   if (from._internal_has_global_pose()) {
-    _this->_impl_.global_pose_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.global_pose_);
+    global_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.global_pose_);
+  } else {
+    global_pose_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseGraph.LandmarkPose)
 }
 
-inline void PoseGraph_LandmarkPose::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.landmark_id_){}
-    , decltype(_impl_.global_pose_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
-  _impl_.landmark_id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.landmark_id_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+void PoseGraph_LandmarkPose::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  landmark_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  global_pose_ = nullptr;
 }
 
 PoseGraph_LandmarkPose::~PoseGraph_LandmarkPose() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseGraph.LandmarkPose)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseGraph_LandmarkPose::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.landmark_id_.Destroy();
-  if (this != internal_default_instance()) delete _impl_.global_pose_;
+void PoseGraph_LandmarkPose::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  landmark_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete global_pose_;
 }
 
+void PoseGraph_LandmarkPose::ArenaDtor(void* object) {
+  PoseGraph_LandmarkPose* _this = reinterpret_cast< PoseGraph_LandmarkPose* >(object);
+  (void)_this;
+}
+void PoseGraph_LandmarkPose::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseGraph_LandmarkPose::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseGraph_LandmarkPose& PoseGraph_LandmarkPose::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseGraph_LandmarkPose_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseGraph_LandmarkPose::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.landmark_id_.ClearToEmpty();
-  if (GetArenaForAllocation() == nullptr && _impl_.global_pose_ != nullptr) {
-    delete _impl_.global_pose_;
+  landmark_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && global_pose_ != nullptr) {
+    delete global_pose_;
   }
-  _impl_.global_pose_ = nullptr;
+  global_pose_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseGraph_LandmarkPose::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseGraph_LandmarkPose::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // string landmark_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           auto str = _internal_mutable_landmark_id();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "cartographer.mapping.proto.PoseGraph.LandmarkPose.landmark_id"));
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "cartographer.mapping.proto.PoseGraph.LandmarkPose.landmark_id"));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.transform.proto.Rigid3d global_pose = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_global_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseGraph_LandmarkPose::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseGraph_LandmarkPose::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string landmark_id = 1;
-  if (!this->_internal_landmark_id().empty()) {
+  if (this->landmark_id().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_landmark_id().data(), static_cast<int>(this->_internal_landmark_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1209,14 +1256,15 @@ uint8_t* PoseGraph_LandmarkPose::_InternalSerialize(
   }
 
   // .cartographer.transform.proto.Rigid3d global_pose = 2;
-  if (this->_internal_has_global_pose()) {
+  if (this->has_global_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::global_pose(this),
-        _Internal::global_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::global_pose(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseGraph.LandmarkPose)
@@ -1227,50 +1275,68 @@ size_t PoseGraph_LandmarkPose::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string landmark_id = 1;
-  if (!this->_internal_landmark_id().empty()) {
+  if (this->landmark_id().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_landmark_id());
   }
 
   // .cartographer.transform.proto.Rigid3d global_pose = 2;
-  if (this->_internal_has_global_pose()) {
+  if (this->has_global_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.global_pose_);
+        *global_pose_);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseGraph_LandmarkPose::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseGraph_LandmarkPose::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseGraph_LandmarkPose::GetClassData() const { return &_class_data_; }
+void PoseGraph_LandmarkPose::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseGraph_LandmarkPose* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseGraph_LandmarkPose>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseGraph.LandmarkPose)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseGraph.LandmarkPose)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseGraph_LandmarkPose::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseGraph_LandmarkPose*>(&to_msg);
-  auto& from = static_cast<const PoseGraph_LandmarkPose&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseGraph_LandmarkPose::MergeFrom(const PoseGraph_LandmarkPose& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_landmark_id().empty()) {
-    _this->_internal_set_landmark_id(from._internal_landmark_id());
+  if (from.landmark_id().size() > 0) {
+    _internal_set_landmark_id(from._internal_landmark_id());
   }
-  if (from._internal_has_global_pose()) {
-    _this->_internal_mutable_global_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_global_pose());
+  if (from.has_global_pose()) {
+    _internal_mutable_global_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_global_pose());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PoseGraph_LandmarkPose::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseGraph.LandmarkPose)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseGraph_LandmarkPose::CopyFrom(const PoseGraph_LandmarkPose& from) {
@@ -1286,103 +1352,97 @@ bool PoseGraph_LandmarkPose::IsInitialized() const {
 
 void PoseGraph_LandmarkPose::InternalSwap(PoseGraph_LandmarkPose* other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.landmark_id_, lhs_arena,
-      &other->_impl_.landmark_id_, rhs_arena
-  );
-  swap(_impl_.global_pose_, other->_impl_.global_pose_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  landmark_id_.Swap(&other->landmark_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  swap(global_pose_, other->global_pose_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseGraph_LandmarkPose::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[3]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PoseGraph::InitAsDefaultInstance() {
+}
 class PoseGraph::_Internal {
  public:
 };
 
 void PoseGraph::clear_trajectory() {
-  _impl_.trajectory_.Clear();
+  trajectory_.Clear();
 }
-PoseGraph::PoseGraph(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseGraph::PoseGraph(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  constraint_(arena),
+  trajectory_(arena),
+  landmark_poses_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseGraph)
 }
 PoseGraph::PoseGraph(const PoseGraph& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseGraph* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constraint_){from._impl_.constraint_}
-    , decltype(_impl_.trajectory_){from._impl_.trajectory_}
-    , decltype(_impl_.landmark_poses_){from._impl_.landmark_poses_}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      constraint_(from.constraint_),
+      trajectory_(from.trajectory_),
+      landmark_poses_(from.landmark_poses_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseGraph)
 }
 
-inline void PoseGraph::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constraint_){arena}
-    , decltype(_impl_.trajectory_){arena}
-    , decltype(_impl_.landmark_poses_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void PoseGraph::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
 }
 
 PoseGraph::~PoseGraph() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseGraph)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseGraph::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.constraint_.~RepeatedPtrField();
-  _impl_.trajectory_.~RepeatedPtrField();
-  _impl_.landmark_poses_.~RepeatedPtrField();
+void PoseGraph::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void PoseGraph::ArenaDtor(void* object) {
+  PoseGraph* _this = reinterpret_cast< PoseGraph* >(object);
+  (void)_this;
+}
+void PoseGraph::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseGraph::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseGraph& PoseGraph::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseGraph_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseGraph::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseGraph)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.constraint_.Clear();
-  _impl_.trajectory_.Clear();
-  _impl_.landmark_poses_.Clear();
+  constraint_.Clear();
+  trajectory_.Clear();
+  landmark_poses_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseGraph::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseGraph::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .cartographer.mapping.proto.PoseGraph.Constraint constraint = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1390,12 +1450,11 @@ const char* PoseGraph::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated .cartographer.mapping.proto.Trajectory trajectory = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1403,12 +1462,11 @@ const char* PoseGraph::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated .cartographer.mapping.proto.PoseGraph.LandmarkPose landmark_poses = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1416,64 +1474,62 @@ const char* PoseGraph::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseGraph::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseGraph::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseGraph)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.PoseGraph.Constraint constraint = 2;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_constraint_size()); i < n; i++) {
-    const auto& repfield = this->_internal_constraint(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_constraint_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(2, this->_internal_constraint(i), target, stream);
   }
 
   // repeated .cartographer.mapping.proto.Trajectory trajectory = 4;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_trajectory_size()); i < n; i++) {
-    const auto& repfield = this->_internal_trajectory(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_trajectory_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(4, this->_internal_trajectory(i), target, stream);
   }
 
   // repeated .cartographer.mapping.proto.PoseGraph.LandmarkPose landmark_poses = 5;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_landmark_poses_size()); i < n; i++) {
-    const auto& repfield = this->_internal_landmark_poses(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_landmark_poses_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(5, this->_internal_landmark_poses(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseGraph)
@@ -1484,53 +1540,72 @@ size_t PoseGraph::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseGraph)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.PoseGraph.Constraint constraint = 2;
   total_size += 1UL * this->_internal_constraint_size();
-  for (const auto& msg : this->_impl_.constraint_) {
+  for (const auto& msg : this->constraint_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .cartographer.mapping.proto.Trajectory trajectory = 4;
   total_size += 1UL * this->_internal_trajectory_size();
-  for (const auto& msg : this->_impl_.trajectory_) {
+  for (const auto& msg : this->trajectory_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .cartographer.mapping.proto.PoseGraph.LandmarkPose landmark_poses = 5;
   total_size += 1UL * this->_internal_landmark_poses_size();
-  for (const auto& msg : this->_impl_.landmark_poses_) {
+  for (const auto& msg : this->landmark_poses_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseGraph::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseGraph::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseGraph::GetClassData() const { return &_class_data_; }
+void PoseGraph::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseGraph)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseGraph* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseGraph>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseGraph)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseGraph)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseGraph::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseGraph*>(&to_msg);
-  auto& from = static_cast<const PoseGraph&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseGraph::MergeFrom(const PoseGraph& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseGraph)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.constraint_.MergeFrom(from._impl_.constraint_);
-  _this->_impl_.trajectory_.MergeFrom(from._impl_.trajectory_);
-  _this->_impl_.landmark_poses_.MergeFrom(from._impl_.landmark_poses_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  constraint_.MergeFrom(from.constraint_);
+  trajectory_.MergeFrom(from.trajectory_);
+  landmark_poses_.MergeFrom(from.landmark_poses_);
+}
+
+void PoseGraph::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseGraph)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseGraph::CopyFrom(const PoseGraph& from) {
@@ -1546,41 +1621,35 @@ bool PoseGraph::IsInitialized() const {
 
 void PoseGraph::InternalSwap(PoseGraph* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.constraint_.InternalSwap(&other->_impl_.constraint_);
-  _impl_.trajectory_.InternalSwap(&other->_impl_.trajectory_);
-  _impl_.landmark_poses_.InternalSwap(&other->_impl_.landmark_poses_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  constraint_.InternalSwap(&other->constraint_);
+  trajectory_.InternalSwap(&other->trajectory_);
+  landmark_poses_.InternalSwap(&other->landmark_poses_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseGraph::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2eproto[4]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SubmapId*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SubmapId >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SubmapId* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SubmapId >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::SubmapId >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::NodeId*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::NodeId >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::NodeId* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::NodeId >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::NodeId >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph_Constraint*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph_Constraint >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph_Constraint* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph_Constraint >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseGraph_Constraint >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph_LandmarkPose*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph_LandmarkPose >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph_LandmarkPose* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph_LandmarkPose >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseGraph_LandmarkPose >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseGraph* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseGraph >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseGraph >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

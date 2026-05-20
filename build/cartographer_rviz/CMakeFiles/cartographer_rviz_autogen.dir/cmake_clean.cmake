@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cartographer_rviz_autogen"
   "cartographer_rviz_autogen/mocs_compilation.cpp"
-  "cartographer_rviz_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

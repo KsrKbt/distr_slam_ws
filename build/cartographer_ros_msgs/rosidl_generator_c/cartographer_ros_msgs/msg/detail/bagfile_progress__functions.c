@@ -120,7 +120,7 @@ cartographer_ros_msgs__msg__BagfileProgress__copy(
 }
 
 cartographer_ros_msgs__msg__BagfileProgress *
-cartographer_ros_msgs__msg__BagfileProgress__create(void)
+cartographer_ros_msgs__msg__BagfileProgress__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__BagfileProgress * msg = (cartographer_ros_msgs__msg__BagfileProgress *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__BagfileProgress), allocator.state);

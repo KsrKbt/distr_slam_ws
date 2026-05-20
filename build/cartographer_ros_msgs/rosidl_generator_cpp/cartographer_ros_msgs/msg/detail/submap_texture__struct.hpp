@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:msg/SubmapTexture.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/msg/submap_texture.hpp"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__SUBMAP_TEXTURE__STRUCT_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__SUBMAP_TEXTURE__STRUCT_HPP_
 

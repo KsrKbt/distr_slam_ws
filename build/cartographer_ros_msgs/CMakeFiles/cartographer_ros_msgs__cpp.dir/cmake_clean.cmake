@@ -59,7 +59,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/metric.hpp"
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/metric_family.hpp"
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/metric_label.hpp"
-  "rosidl_generator_cpp/cartographer_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/status_code.hpp"
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/status_response.hpp"
   "rosidl_generator_cpp/cartographer_ros_msgs/msg/submap_entry.hpp"

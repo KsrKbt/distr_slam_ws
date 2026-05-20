@@ -80,7 +80,7 @@ cartographer_ros_msgs__msg__StatusResponse__copy(
 }
 
 cartographer_ros_msgs__msg__StatusResponse *
-cartographer_ros_msgs__msg__StatusResponse__create(void)
+cartographer_ros_msgs__msg__StatusResponse__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__StatusResponse * msg = (cartographer_ros_msgs__msg__StatusResponse *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__StatusResponse), allocator.state);

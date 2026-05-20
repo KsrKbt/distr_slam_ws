@@ -14,82 +14,80 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f3d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SubmapsOptions3D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f3d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f3d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_CeresScanMatcherOptions3D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f3d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fscan_5fmatching_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RealTimeCorrelativeScanMatcherOptions_cartographer_2fmapping_2fproto_2fscan_5fmatching_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fsensor_2fproto_2fsensor_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuData_cartographer_2fsensor_2fproto_2fsensor_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR LocalTrajectoryBuilderOptions3D::LocalTrajectoryBuilderOptions3D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.initial_poses_)*/{}
-  , /*decltype(_impl_.initial_imu_data_)*/{}
-  , /*decltype(_impl_.high_resolution_adaptive_voxel_filter_options_)*/nullptr
-  , /*decltype(_impl_.ceres_scan_matcher_options_)*/nullptr
-  , /*decltype(_impl_.motion_filter_options_)*/nullptr
-  , /*decltype(_impl_.submaps_options_)*/nullptr
-  , /*decltype(_impl_.low_resolution_adaptive_voxel_filter_options_)*/nullptr
-  , /*decltype(_impl_.real_time_correlative_scan_matcher_options_)*/nullptr
-  , /*decltype(_impl_.pose_extrapolator_options_)*/nullptr
-  , /*decltype(_impl_.min_range_)*/0
-  , /*decltype(_impl_.max_range_)*/0
-  , /*decltype(_impl_.num_accumulated_range_data_)*/0
-  , /*decltype(_impl_.voxel_filter_size_)*/0
-  , /*decltype(_impl_.imu_gravity_time_constant_)*/0
-  , /*decltype(_impl_.rotational_histogram_size_)*/0
-  , /*decltype(_impl_.use_online_correlative_scan_matching_)*/false
-  , /*decltype(_impl_.use_intensities_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct LocalTrajectoryBuilderOptions3DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LocalTrajectoryBuilderOptions3DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LocalTrajectoryBuilderOptions3DDefaultTypeInternal() {}
-  union {
-    LocalTrajectoryBuilderOptions3D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LocalTrajectoryBuilderOptions3DDefaultTypeInternal _LocalTrajectoryBuilderOptions3D_default_instance_;
+class LocalTrajectoryBuilderOptions3DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LocalTrajectoryBuilderOptions3D> _instance;
+} _LocalTrajectoryBuilderOptions3D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = nullptr;
+static void InitDefaultsscc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<8> scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 8, 0, InitDefaultsscc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto}, {
+      &scc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto.base,
+      &scc_info_RealTimeCorrelativeScanMatcherOptions_cartographer_2fmapping_2fproto_2fscan_5fmatching_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto.base,
+      &scc_info_CeresScanMatcherOptions3D_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f3d_2eproto.base,
+      &scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto.base,
+      &scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,
+      &scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto.base,
+      &scc_info_ImuData_cartographer_2fsensor_2fproto_2fsensor_2eproto.base,
+      &scc_info_SubmapsOptions3D_cartographer_2fmapping_2fproto_2fsubmaps_5foptions_5f3d_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.min_range_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.max_range_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.num_accumulated_range_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.voxel_filter_size_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.high_resolution_adaptive_voxel_filter_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.low_resolution_adaptive_voxel_filter_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.use_online_correlative_scan_matching_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.real_time_correlative_scan_matcher_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.ceres_scan_matcher_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.motion_filter_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.imu_gravity_time_constant_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.rotational_histogram_size_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.pose_extrapolator_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.initial_poses_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.initial_imu_data_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.submaps_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, _impl_.use_intensities_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, min_range_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, max_range_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, num_accumulated_range_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, voxel_filter_size_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, high_resolution_adaptive_voxel_filter_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, low_resolution_adaptive_voxel_filter_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, use_online_correlative_scan_matching_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, real_time_correlative_scan_matcher_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, ceres_scan_matcher_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, motion_filter_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, imu_gravity_time_constant_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, rotational_histogram_size_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, pose_extrapolator_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, initial_poses_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, initial_imu_data_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, submaps_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D, use_intensities_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -137,7 +135,7 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2flocal_5ftr
   ".cartographer.mapping.proto.SubmapsOptio"
   "ns3D\022\027\n\017use_intensities\030\025 \001(\010b\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_deps[8] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_deps[8] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fscan_5fmatching_2fceres_5fscan_5fmatcher_5foptions_5f3d_2eproto,
@@ -147,27 +145,41 @@ static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapp
   &::descriptor_table_cartographer_2fsensor_2fproto_2fsensor_2eproto,
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = {
-    false, false, 1717, descriptor_table_protodef_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto,
-    "cartographer/mapping/proto/local_trajectory_builder_options_3d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_deps, 8, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_sccs[1] = {
+  &scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto, "cartographer/mapping/proto/local_trajectory_builder_options_3d.proto", 1717,
+  &descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_deps, 1, 8,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void LocalTrajectoryBuilderOptions3D::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->high_resolution_adaptive_voxel_filter_options_ = const_cast< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions*>(
+      ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->low_resolution_adaptive_voxel_filter_options_ = const_cast< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions*>(
+      ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->real_time_correlative_scan_matcher_options_ = const_cast< ::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions*>(
+      ::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->ceres_scan_matcher_options_ = const_cast< ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D*>(
+      ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->motion_filter_options_ = const_cast< ::cartographer::mapping::proto::MotionFilterOptions*>(
+      ::cartographer::mapping::proto::MotionFilterOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->pose_extrapolator_options_ = const_cast< ::cartographer::mapping::proto::PoseExtrapolatorOptions*>(
+      ::cartographer::mapping::proto::PoseExtrapolatorOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_LocalTrajectoryBuilderOptions3D_default_instance_._instance.get_mutable()->submaps_options_ = const_cast< ::cartographer::mapping::proto::SubmapsOptions3D*>(
+      ::cartographer::mapping::proto::SubmapsOptions3D::internal_default_instance());
+}
 class LocalTrajectoryBuilderOptions3D::_Internal {
  public:
   static const ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions& high_resolution_adaptive_voxel_filter_options(const LocalTrajectoryBuilderOptions3D* msg);
@@ -181,352 +193,324 @@ class LocalTrajectoryBuilderOptions3D::_Internal {
 
 const ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions&
 LocalTrajectoryBuilderOptions3D::_Internal::high_resolution_adaptive_voxel_filter_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.high_resolution_adaptive_voxel_filter_options_;
+  return *msg->high_resolution_adaptive_voxel_filter_options_;
 }
 const ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions&
 LocalTrajectoryBuilderOptions3D::_Internal::low_resolution_adaptive_voxel_filter_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.low_resolution_adaptive_voxel_filter_options_;
+  return *msg->low_resolution_adaptive_voxel_filter_options_;
 }
 const ::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions&
 LocalTrajectoryBuilderOptions3D::_Internal::real_time_correlative_scan_matcher_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.real_time_correlative_scan_matcher_options_;
+  return *msg->real_time_correlative_scan_matcher_options_;
 }
 const ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D&
 LocalTrajectoryBuilderOptions3D::_Internal::ceres_scan_matcher_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.ceres_scan_matcher_options_;
+  return *msg->ceres_scan_matcher_options_;
 }
 const ::cartographer::mapping::proto::MotionFilterOptions&
 LocalTrajectoryBuilderOptions3D::_Internal::motion_filter_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.motion_filter_options_;
+  return *msg->motion_filter_options_;
 }
 const ::cartographer::mapping::proto::PoseExtrapolatorOptions&
 LocalTrajectoryBuilderOptions3D::_Internal::pose_extrapolator_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.pose_extrapolator_options_;
+  return *msg->pose_extrapolator_options_;
 }
 const ::cartographer::mapping::proto::SubmapsOptions3D&
 LocalTrajectoryBuilderOptions3D::_Internal::submaps_options(const LocalTrajectoryBuilderOptions3D* msg) {
-  return *msg->_impl_.submaps_options_;
+  return *msg->submaps_options_;
 }
 void LocalTrajectoryBuilderOptions3D::clear_high_resolution_adaptive_voxel_filter_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.high_resolution_adaptive_voxel_filter_options_ != nullptr) {
-    delete _impl_.high_resolution_adaptive_voxel_filter_options_;
+  if (GetArena() == nullptr && high_resolution_adaptive_voxel_filter_options_ != nullptr) {
+    delete high_resolution_adaptive_voxel_filter_options_;
   }
-  _impl_.high_resolution_adaptive_voxel_filter_options_ = nullptr;
+  high_resolution_adaptive_voxel_filter_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_low_resolution_adaptive_voxel_filter_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.low_resolution_adaptive_voxel_filter_options_ != nullptr) {
-    delete _impl_.low_resolution_adaptive_voxel_filter_options_;
+  if (GetArena() == nullptr && low_resolution_adaptive_voxel_filter_options_ != nullptr) {
+    delete low_resolution_adaptive_voxel_filter_options_;
   }
-  _impl_.low_resolution_adaptive_voxel_filter_options_ = nullptr;
+  low_resolution_adaptive_voxel_filter_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_real_time_correlative_scan_matcher_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.real_time_correlative_scan_matcher_options_ != nullptr) {
-    delete _impl_.real_time_correlative_scan_matcher_options_;
+  if (GetArena() == nullptr && real_time_correlative_scan_matcher_options_ != nullptr) {
+    delete real_time_correlative_scan_matcher_options_;
   }
-  _impl_.real_time_correlative_scan_matcher_options_ = nullptr;
+  real_time_correlative_scan_matcher_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_ceres_scan_matcher_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.ceres_scan_matcher_options_ != nullptr) {
-    delete _impl_.ceres_scan_matcher_options_;
+  if (GetArena() == nullptr && ceres_scan_matcher_options_ != nullptr) {
+    delete ceres_scan_matcher_options_;
   }
-  _impl_.ceres_scan_matcher_options_ = nullptr;
+  ceres_scan_matcher_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_motion_filter_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.motion_filter_options_ != nullptr) {
-    delete _impl_.motion_filter_options_;
+  if (GetArena() == nullptr && motion_filter_options_ != nullptr) {
+    delete motion_filter_options_;
   }
-  _impl_.motion_filter_options_ = nullptr;
+  motion_filter_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_pose_extrapolator_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.pose_extrapolator_options_ != nullptr) {
-    delete _impl_.pose_extrapolator_options_;
+  if (GetArena() == nullptr && pose_extrapolator_options_ != nullptr) {
+    delete pose_extrapolator_options_;
   }
-  _impl_.pose_extrapolator_options_ = nullptr;
+  pose_extrapolator_options_ = nullptr;
 }
 void LocalTrajectoryBuilderOptions3D::clear_initial_poses() {
-  _impl_.initial_poses_.Clear();
+  initial_poses_.Clear();
 }
 void LocalTrajectoryBuilderOptions3D::clear_initial_imu_data() {
-  _impl_.initial_imu_data_.Clear();
+  initial_imu_data_.Clear();
 }
 void LocalTrajectoryBuilderOptions3D::clear_submaps_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.submaps_options_ != nullptr) {
-    delete _impl_.submaps_options_;
+  if (GetArena() == nullptr && submaps_options_ != nullptr) {
+    delete submaps_options_;
   }
-  _impl_.submaps_options_ = nullptr;
+  submaps_options_ = nullptr;
 }
-LocalTrajectoryBuilderOptions3D::LocalTrajectoryBuilderOptions3D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+LocalTrajectoryBuilderOptions3D::LocalTrajectoryBuilderOptions3D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  initial_poses_(arena),
+  initial_imu_data_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
 }
 LocalTrajectoryBuilderOptions3D::LocalTrajectoryBuilderOptions3D(const LocalTrajectoryBuilderOptions3D& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  LocalTrajectoryBuilderOptions3D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.initial_poses_){from._impl_.initial_poses_}
-    , decltype(_impl_.initial_imu_data_){from._impl_.initial_imu_data_}
-    , decltype(_impl_.high_resolution_adaptive_voxel_filter_options_){nullptr}
-    , decltype(_impl_.ceres_scan_matcher_options_){nullptr}
-    , decltype(_impl_.motion_filter_options_){nullptr}
-    , decltype(_impl_.submaps_options_){nullptr}
-    , decltype(_impl_.low_resolution_adaptive_voxel_filter_options_){nullptr}
-    , decltype(_impl_.real_time_correlative_scan_matcher_options_){nullptr}
-    , decltype(_impl_.pose_extrapolator_options_){nullptr}
-    , decltype(_impl_.min_range_){}
-    , decltype(_impl_.max_range_){}
-    , decltype(_impl_.num_accumulated_range_data_){}
-    , decltype(_impl_.voxel_filter_size_){}
-    , decltype(_impl_.imu_gravity_time_constant_){}
-    , decltype(_impl_.rotational_histogram_size_){}
-    , decltype(_impl_.use_online_correlative_scan_matching_){}
-    , decltype(_impl_.use_intensities_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      initial_poses_(from.initial_poses_),
+      initial_imu_data_(from.initial_imu_data_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_high_resolution_adaptive_voxel_filter_options()) {
-    _this->_impl_.high_resolution_adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions(*from._impl_.high_resolution_adaptive_voxel_filter_options_);
+    high_resolution_adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions(*from.high_resolution_adaptive_voxel_filter_options_);
+  } else {
+    high_resolution_adaptive_voxel_filter_options_ = nullptr;
   }
   if (from._internal_has_ceres_scan_matcher_options()) {
-    _this->_impl_.ceres_scan_matcher_options_ = new ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D(*from._impl_.ceres_scan_matcher_options_);
+    ceres_scan_matcher_options_ = new ::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D(*from.ceres_scan_matcher_options_);
+  } else {
+    ceres_scan_matcher_options_ = nullptr;
   }
   if (from._internal_has_motion_filter_options()) {
-    _this->_impl_.motion_filter_options_ = new ::cartographer::mapping::proto::MotionFilterOptions(*from._impl_.motion_filter_options_);
+    motion_filter_options_ = new ::cartographer::mapping::proto::MotionFilterOptions(*from.motion_filter_options_);
+  } else {
+    motion_filter_options_ = nullptr;
   }
   if (from._internal_has_submaps_options()) {
-    _this->_impl_.submaps_options_ = new ::cartographer::mapping::proto::SubmapsOptions3D(*from._impl_.submaps_options_);
+    submaps_options_ = new ::cartographer::mapping::proto::SubmapsOptions3D(*from.submaps_options_);
+  } else {
+    submaps_options_ = nullptr;
   }
   if (from._internal_has_low_resolution_adaptive_voxel_filter_options()) {
-    _this->_impl_.low_resolution_adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions(*from._impl_.low_resolution_adaptive_voxel_filter_options_);
+    low_resolution_adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions(*from.low_resolution_adaptive_voxel_filter_options_);
+  } else {
+    low_resolution_adaptive_voxel_filter_options_ = nullptr;
   }
   if (from._internal_has_real_time_correlative_scan_matcher_options()) {
-    _this->_impl_.real_time_correlative_scan_matcher_options_ = new ::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions(*from._impl_.real_time_correlative_scan_matcher_options_);
+    real_time_correlative_scan_matcher_options_ = new ::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions(*from.real_time_correlative_scan_matcher_options_);
+  } else {
+    real_time_correlative_scan_matcher_options_ = nullptr;
   }
   if (from._internal_has_pose_extrapolator_options()) {
-    _this->_impl_.pose_extrapolator_options_ = new ::cartographer::mapping::proto::PoseExtrapolatorOptions(*from._impl_.pose_extrapolator_options_);
+    pose_extrapolator_options_ = new ::cartographer::mapping::proto::PoseExtrapolatorOptions(*from.pose_extrapolator_options_);
+  } else {
+    pose_extrapolator_options_ = nullptr;
   }
-  ::memcpy(&_impl_.min_range_, &from._impl_.min_range_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.use_intensities_) -
-    reinterpret_cast<char*>(&_impl_.min_range_)) + sizeof(_impl_.use_intensities_));
+  ::memcpy(&min_range_, &from.min_range_,
+    static_cast<size_t>(reinterpret_cast<char*>(&use_intensities_) -
+    reinterpret_cast<char*>(&min_range_)) + sizeof(use_intensities_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
 }
 
-inline void LocalTrajectoryBuilderOptions3D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.initial_poses_){arena}
-    , decltype(_impl_.initial_imu_data_){arena}
-    , decltype(_impl_.high_resolution_adaptive_voxel_filter_options_){nullptr}
-    , decltype(_impl_.ceres_scan_matcher_options_){nullptr}
-    , decltype(_impl_.motion_filter_options_){nullptr}
-    , decltype(_impl_.submaps_options_){nullptr}
-    , decltype(_impl_.low_resolution_adaptive_voxel_filter_options_){nullptr}
-    , decltype(_impl_.real_time_correlative_scan_matcher_options_){nullptr}
-    , decltype(_impl_.pose_extrapolator_options_){nullptr}
-    , decltype(_impl_.min_range_){0}
-    , decltype(_impl_.max_range_){0}
-    , decltype(_impl_.num_accumulated_range_data_){0}
-    , decltype(_impl_.voxel_filter_size_){0}
-    , decltype(_impl_.imu_gravity_time_constant_){0}
-    , decltype(_impl_.rotational_histogram_size_){0}
-    , decltype(_impl_.use_online_correlative_scan_matching_){false}
-    , decltype(_impl_.use_intensities_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void LocalTrajectoryBuilderOptions3D::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto.base);
+  ::memset(&high_resolution_adaptive_voxel_filter_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&use_intensities_) -
+      reinterpret_cast<char*>(&high_resolution_adaptive_voxel_filter_options_)) + sizeof(use_intensities_));
 }
 
 LocalTrajectoryBuilderOptions3D::~LocalTrajectoryBuilderOptions3D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void LocalTrajectoryBuilderOptions3D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.initial_poses_.~RepeatedPtrField();
-  _impl_.initial_imu_data_.~RepeatedPtrField();
-  if (this != internal_default_instance()) delete _impl_.high_resolution_adaptive_voxel_filter_options_;
-  if (this != internal_default_instance()) delete _impl_.ceres_scan_matcher_options_;
-  if (this != internal_default_instance()) delete _impl_.motion_filter_options_;
-  if (this != internal_default_instance()) delete _impl_.submaps_options_;
-  if (this != internal_default_instance()) delete _impl_.low_resolution_adaptive_voxel_filter_options_;
-  if (this != internal_default_instance()) delete _impl_.real_time_correlative_scan_matcher_options_;
-  if (this != internal_default_instance()) delete _impl_.pose_extrapolator_options_;
+void LocalTrajectoryBuilderOptions3D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete high_resolution_adaptive_voxel_filter_options_;
+  if (this != internal_default_instance()) delete ceres_scan_matcher_options_;
+  if (this != internal_default_instance()) delete motion_filter_options_;
+  if (this != internal_default_instance()) delete submaps_options_;
+  if (this != internal_default_instance()) delete low_resolution_adaptive_voxel_filter_options_;
+  if (this != internal_default_instance()) delete real_time_correlative_scan_matcher_options_;
+  if (this != internal_default_instance()) delete pose_extrapolator_options_;
 }
 
+void LocalTrajectoryBuilderOptions3D::ArenaDtor(void* object) {
+  LocalTrajectoryBuilderOptions3D* _this = reinterpret_cast< LocalTrajectoryBuilderOptions3D* >(object);
+  (void)_this;
+}
+void LocalTrajectoryBuilderOptions3D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void LocalTrajectoryBuilderOptions3D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const LocalTrajectoryBuilderOptions3D& LocalTrajectoryBuilderOptions3D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LocalTrajectoryBuilderOptions3D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.initial_poses_.Clear();
-  _impl_.initial_imu_data_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.high_resolution_adaptive_voxel_filter_options_ != nullptr) {
-    delete _impl_.high_resolution_adaptive_voxel_filter_options_;
+  initial_poses_.Clear();
+  initial_imu_data_.Clear();
+  if (GetArena() == nullptr && high_resolution_adaptive_voxel_filter_options_ != nullptr) {
+    delete high_resolution_adaptive_voxel_filter_options_;
   }
-  _impl_.high_resolution_adaptive_voxel_filter_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.ceres_scan_matcher_options_ != nullptr) {
-    delete _impl_.ceres_scan_matcher_options_;
+  high_resolution_adaptive_voxel_filter_options_ = nullptr;
+  if (GetArena() == nullptr && ceres_scan_matcher_options_ != nullptr) {
+    delete ceres_scan_matcher_options_;
   }
-  _impl_.ceres_scan_matcher_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.motion_filter_options_ != nullptr) {
-    delete _impl_.motion_filter_options_;
+  ceres_scan_matcher_options_ = nullptr;
+  if (GetArena() == nullptr && motion_filter_options_ != nullptr) {
+    delete motion_filter_options_;
   }
-  _impl_.motion_filter_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.submaps_options_ != nullptr) {
-    delete _impl_.submaps_options_;
+  motion_filter_options_ = nullptr;
+  if (GetArena() == nullptr && submaps_options_ != nullptr) {
+    delete submaps_options_;
   }
-  _impl_.submaps_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.low_resolution_adaptive_voxel_filter_options_ != nullptr) {
-    delete _impl_.low_resolution_adaptive_voxel_filter_options_;
+  submaps_options_ = nullptr;
+  if (GetArena() == nullptr && low_resolution_adaptive_voxel_filter_options_ != nullptr) {
+    delete low_resolution_adaptive_voxel_filter_options_;
   }
-  _impl_.low_resolution_adaptive_voxel_filter_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.real_time_correlative_scan_matcher_options_ != nullptr) {
-    delete _impl_.real_time_correlative_scan_matcher_options_;
+  low_resolution_adaptive_voxel_filter_options_ = nullptr;
+  if (GetArena() == nullptr && real_time_correlative_scan_matcher_options_ != nullptr) {
+    delete real_time_correlative_scan_matcher_options_;
   }
-  _impl_.real_time_correlative_scan_matcher_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.pose_extrapolator_options_ != nullptr) {
-    delete _impl_.pose_extrapolator_options_;
+  real_time_correlative_scan_matcher_options_ = nullptr;
+  if (GetArena() == nullptr && pose_extrapolator_options_ != nullptr) {
+    delete pose_extrapolator_options_;
   }
-  _impl_.pose_extrapolator_options_ = nullptr;
-  ::memset(&_impl_.min_range_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.use_intensities_) -
-      reinterpret_cast<char*>(&_impl_.min_range_)) + sizeof(_impl_.use_intensities_));
+  pose_extrapolator_options_ = nullptr;
+  ::memset(&min_range_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&use_intensities_) -
+      reinterpret_cast<char*>(&min_range_)) + sizeof(use_intensities_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* LocalTrajectoryBuilderOptions3D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* LocalTrajectoryBuilderOptions3D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // float min_range = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
-          _impl_.min_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+          min_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // float max_range = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
-          _impl_.max_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+          max_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 num_accumulated_range_data = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.num_accumulated_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          num_accumulated_range_data_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // float voxel_filter_size = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
-          _impl_.voxel_filter_size_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+          voxel_filter_size_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions high_resolution_adaptive_voxel_filter_options = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_high_resolution_adaptive_voxel_filter_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions3D ceres_scan_matcher_options = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_ceres_scan_matcher_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.MotionFilterOptions motion_filter_options = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_motion_filter_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.SubmapsOptions3D submaps_options = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_submaps_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions low_resolution_adaptive_voxel_filter_options = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_low_resolution_adaptive_voxel_filter_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool use_online_correlative_scan_matching = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 104)) {
-          _impl_.use_online_correlative_scan_matching_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
+          use_online_correlative_scan_matching_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
           ptr = ctx->ParseMessage(_internal_mutable_real_time_correlative_scan_matcher_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double imu_gravity_time_constant = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 121)) {
-          _impl_.imu_gravity_time_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 121)) {
+          imu_gravity_time_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 rotational_histogram_size = 17;
       case 17:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 136)) {
-          _impl_.rotational_histogram_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 136)) {
+          rotational_histogram_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.PoseExtrapolatorOptions pose_extrapolator_options = 18;
       case 18:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 146)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
           ptr = ctx->ParseMessage(_internal_mutable_pose_extrapolator_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated .cartographer.transform.proto.TimestampedTransform initial_poses = 19;
       case 19:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
           ptr -= 2;
           do {
             ptr += 2;
@@ -534,12 +518,11 @@ const char* LocalTrajectoryBuilderOptions3D::_InternalParse(const char* ptr, ::_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<154>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated .cartographer.sensor.proto.ImuData initial_imu_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
           ptr -= 2;
           do {
             ptr += 2;
@@ -547,177 +530,165 @@ const char* LocalTrajectoryBuilderOptions3D::_InternalParse(const char* ptr, ::_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<162>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool use_intensities = 21;
       case 21:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 168)) {
-          _impl_.use_intensities_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 168)) {
+          use_intensities_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* LocalTrajectoryBuilderOptions3D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* LocalTrajectoryBuilderOptions3D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float min_range = 1;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_range = this->_internal_min_range();
-  uint32_t raw_min_range;
-  memcpy(&raw_min_range, &tmp_min_range, sizeof(tmp_min_range));
-  if (raw_min_range != 0) {
+  if (!(this->min_range() <= 0 && this->min_range() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(1, this->_internal_min_range(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_min_range(), target);
   }
 
   // float max_range = 2;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_range = this->_internal_max_range();
-  uint32_t raw_max_range;
-  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
-  if (raw_max_range != 0) {
+  if (!(this->max_range() <= 0 && this->max_range() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_max_range(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_max_range(), target);
   }
 
   // int32 num_accumulated_range_data = 3;
-  if (this->_internal_num_accumulated_range_data() != 0) {
+  if (this->num_accumulated_range_data() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(3, this->_internal_num_accumulated_range_data(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_num_accumulated_range_data(), target);
   }
 
   // float voxel_filter_size = 4;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_voxel_filter_size = this->_internal_voxel_filter_size();
-  uint32_t raw_voxel_filter_size;
-  memcpy(&raw_voxel_filter_size, &tmp_voxel_filter_size, sizeof(tmp_voxel_filter_size));
-  if (raw_voxel_filter_size != 0) {
+  if (!(this->voxel_filter_size() <= 0 && this->voxel_filter_size() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(4, this->_internal_voxel_filter_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_voxel_filter_size(), target);
   }
 
   // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions high_resolution_adaptive_voxel_filter_options = 5;
-  if (this->_internal_has_high_resolution_adaptive_voxel_filter_options()) {
+  if (this->has_high_resolution_adaptive_voxel_filter_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::high_resolution_adaptive_voxel_filter_options(this),
-        _Internal::high_resolution_adaptive_voxel_filter_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        5, _Internal::high_resolution_adaptive_voxel_filter_options(this), target, stream);
   }
 
   // .cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions3D ceres_scan_matcher_options = 6;
-  if (this->_internal_has_ceres_scan_matcher_options()) {
+  if (this->has_ceres_scan_matcher_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, _Internal::ceres_scan_matcher_options(this),
-        _Internal::ceres_scan_matcher_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        6, _Internal::ceres_scan_matcher_options(this), target, stream);
   }
 
   // .cartographer.mapping.proto.MotionFilterOptions motion_filter_options = 7;
-  if (this->_internal_has_motion_filter_options()) {
+  if (this->has_motion_filter_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, _Internal::motion_filter_options(this),
-        _Internal::motion_filter_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        7, _Internal::motion_filter_options(this), target, stream);
   }
 
   // .cartographer.mapping.proto.SubmapsOptions3D submaps_options = 8;
-  if (this->_internal_has_submaps_options()) {
+  if (this->has_submaps_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(8, _Internal::submaps_options(this),
-        _Internal::submaps_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        8, _Internal::submaps_options(this), target, stream);
   }
 
   // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions low_resolution_adaptive_voxel_filter_options = 12;
-  if (this->_internal_has_low_resolution_adaptive_voxel_filter_options()) {
+  if (this->has_low_resolution_adaptive_voxel_filter_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(12, _Internal::low_resolution_adaptive_voxel_filter_options(this),
-        _Internal::low_resolution_adaptive_voxel_filter_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        12, _Internal::low_resolution_adaptive_voxel_filter_options(this), target, stream);
   }
 
   // bool use_online_correlative_scan_matching = 13;
-  if (this->_internal_use_online_correlative_scan_matching() != 0) {
+  if (this->use_online_correlative_scan_matching() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(13, this->_internal_use_online_correlative_scan_matching(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(13, this->_internal_use_online_correlative_scan_matching(), target);
   }
 
   // .cartographer.mapping.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 14;
-  if (this->_internal_has_real_time_correlative_scan_matcher_options()) {
+  if (this->has_real_time_correlative_scan_matcher_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(14, _Internal::real_time_correlative_scan_matcher_options(this),
-        _Internal::real_time_correlative_scan_matcher_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        14, _Internal::real_time_correlative_scan_matcher_options(this), target, stream);
   }
 
   // double imu_gravity_time_constant = 15;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = this->_internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
+  if (!(this->imu_gravity_time_constant() <= 0 && this->imu_gravity_time_constant() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(15, this->_internal_imu_gravity_time_constant(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->_internal_imu_gravity_time_constant(), target);
   }
 
   // int32 rotational_histogram_size = 17;
-  if (this->_internal_rotational_histogram_size() != 0) {
+  if (this->rotational_histogram_size() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(17, this->_internal_rotational_histogram_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(17, this->_internal_rotational_histogram_size(), target);
   }
 
   // .cartographer.mapping.proto.PoseExtrapolatorOptions pose_extrapolator_options = 18;
-  if (this->_internal_has_pose_extrapolator_options()) {
+  if (this->has_pose_extrapolator_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(18, _Internal::pose_extrapolator_options(this),
-        _Internal::pose_extrapolator_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        18, _Internal::pose_extrapolator_options(this), target, stream);
   }
 
   // repeated .cartographer.transform.proto.TimestampedTransform initial_poses = 19;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_initial_poses_size()); i < n; i++) {
-    const auto& repfield = this->_internal_initial_poses(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_initial_poses_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(19, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(19, this->_internal_initial_poses(i), target, stream);
   }
 
   // repeated .cartographer.sensor.proto.ImuData initial_imu_data = 20;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_initial_imu_data_size()); i < n; i++) {
-    const auto& repfield = this->_internal_initial_imu_data(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_initial_imu_data_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(20, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(20, this->_internal_initial_imu_data(i), target, stream);
   }
 
   // bool use_intensities = 21;
-  if (this->_internal_use_intensities() != 0) {
+  if (this->use_intensities() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(21, this->_internal_use_intensities(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(21, this->_internal_use_intensities(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
@@ -728,220 +699,202 @@ size_t LocalTrajectoryBuilderOptions3D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.transform.proto.TimestampedTransform initial_poses = 19;
   total_size += 2UL * this->_internal_initial_poses_size();
-  for (const auto& msg : this->_impl_.initial_poses_) {
+  for (const auto& msg : this->initial_poses_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .cartographer.sensor.proto.ImuData initial_imu_data = 20;
   total_size += 2UL * this->_internal_initial_imu_data_size();
-  for (const auto& msg : this->_impl_.initial_imu_data_) {
+  for (const auto& msg : this->initial_imu_data_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions high_resolution_adaptive_voxel_filter_options = 5;
-  if (this->_internal_has_high_resolution_adaptive_voxel_filter_options()) {
+  if (this->has_high_resolution_adaptive_voxel_filter_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.high_resolution_adaptive_voxel_filter_options_);
+        *high_resolution_adaptive_voxel_filter_options_);
   }
 
   // .cartographer.mapping.scan_matching.proto.CeresScanMatcherOptions3D ceres_scan_matcher_options = 6;
-  if (this->_internal_has_ceres_scan_matcher_options()) {
+  if (this->has_ceres_scan_matcher_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.ceres_scan_matcher_options_);
+        *ceres_scan_matcher_options_);
   }
 
   // .cartographer.mapping.proto.MotionFilterOptions motion_filter_options = 7;
-  if (this->_internal_has_motion_filter_options()) {
+  if (this->has_motion_filter_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.motion_filter_options_);
+        *motion_filter_options_);
   }
 
   // .cartographer.mapping.proto.SubmapsOptions3D submaps_options = 8;
-  if (this->_internal_has_submaps_options()) {
+  if (this->has_submaps_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.submaps_options_);
+        *submaps_options_);
   }
 
   // .cartographer.sensor.proto.AdaptiveVoxelFilterOptions low_resolution_adaptive_voxel_filter_options = 12;
-  if (this->_internal_has_low_resolution_adaptive_voxel_filter_options()) {
+  if (this->has_low_resolution_adaptive_voxel_filter_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.low_resolution_adaptive_voxel_filter_options_);
+        *low_resolution_adaptive_voxel_filter_options_);
   }
 
   // .cartographer.mapping.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 14;
-  if (this->_internal_has_real_time_correlative_scan_matcher_options()) {
+  if (this->has_real_time_correlative_scan_matcher_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.real_time_correlative_scan_matcher_options_);
+        *real_time_correlative_scan_matcher_options_);
   }
 
   // .cartographer.mapping.proto.PoseExtrapolatorOptions pose_extrapolator_options = 18;
-  if (this->_internal_has_pose_extrapolator_options()) {
+  if (this->has_pose_extrapolator_options()) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.pose_extrapolator_options_);
+        *pose_extrapolator_options_);
   }
 
   // float min_range = 1;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_range = this->_internal_min_range();
-  uint32_t raw_min_range;
-  memcpy(&raw_min_range, &tmp_min_range, sizeof(tmp_min_range));
-  if (raw_min_range != 0) {
+  if (!(this->min_range() <= 0 && this->min_range() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float max_range = 2;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_range = this->_internal_max_range();
-  uint32_t raw_max_range;
-  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
-  if (raw_max_range != 0) {
+  if (!(this->max_range() <= 0 && this->max_range() >= 0)) {
     total_size += 1 + 4;
   }
 
   // int32 num_accumulated_range_data = 3;
-  if (this->_internal_num_accumulated_range_data() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_num_accumulated_range_data());
+  if (this->num_accumulated_range_data() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_num_accumulated_range_data());
   }
 
   // float voxel_filter_size = 4;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_voxel_filter_size = this->_internal_voxel_filter_size();
-  uint32_t raw_voxel_filter_size;
-  memcpy(&raw_voxel_filter_size, &tmp_voxel_filter_size, sizeof(tmp_voxel_filter_size));
-  if (raw_voxel_filter_size != 0) {
+  if (!(this->voxel_filter_size() <= 0 && this->voxel_filter_size() >= 0)) {
     total_size += 1 + 4;
   }
 
   // double imu_gravity_time_constant = 15;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = this->_internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
+  if (!(this->imu_gravity_time_constant() <= 0 && this->imu_gravity_time_constant() >= 0)) {
     total_size += 1 + 8;
   }
 
   // int32 rotational_histogram_size = 17;
-  if (this->_internal_rotational_histogram_size() != 0) {
+  if (this->rotational_histogram_size() != 0) {
     total_size += 2 +
-      ::_pbi::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_rotational_histogram_size());
   }
 
   // bool use_online_correlative_scan_matching = 13;
-  if (this->_internal_use_online_correlative_scan_matching() != 0) {
+  if (this->use_online_correlative_scan_matching() != 0) {
     total_size += 1 + 1;
   }
 
   // bool use_intensities = 21;
-  if (this->_internal_use_intensities() != 0) {
+  if (this->use_intensities() != 0) {
     total_size += 2 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LocalTrajectoryBuilderOptions3D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    LocalTrajectoryBuilderOptions3D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LocalTrajectoryBuilderOptions3D::GetClassData() const { return &_class_data_; }
+void LocalTrajectoryBuilderOptions3D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LocalTrajectoryBuilderOptions3D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LocalTrajectoryBuilderOptions3D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
+    MergeFrom(*source);
+  }
+}
 
-
-void LocalTrajectoryBuilderOptions3D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<LocalTrajectoryBuilderOptions3D*>(&to_msg);
-  auto& from = static_cast<const LocalTrajectoryBuilderOptions3D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void LocalTrajectoryBuilderOptions3D::MergeFrom(const LocalTrajectoryBuilderOptions3D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.initial_poses_.MergeFrom(from._impl_.initial_poses_);
-  _this->_impl_.initial_imu_data_.MergeFrom(from._impl_.initial_imu_data_);
-  if (from._internal_has_high_resolution_adaptive_voxel_filter_options()) {
-    _this->_internal_mutable_high_resolution_adaptive_voxel_filter_options()->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::MergeFrom(
-        from._internal_high_resolution_adaptive_voxel_filter_options());
+  initial_poses_.MergeFrom(from.initial_poses_);
+  initial_imu_data_.MergeFrom(from.initial_imu_data_);
+  if (from.has_high_resolution_adaptive_voxel_filter_options()) {
+    _internal_mutable_high_resolution_adaptive_voxel_filter_options()->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::MergeFrom(from._internal_high_resolution_adaptive_voxel_filter_options());
   }
-  if (from._internal_has_ceres_scan_matcher_options()) {
-    _this->_internal_mutable_ceres_scan_matcher_options()->::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D::MergeFrom(
-        from._internal_ceres_scan_matcher_options());
+  if (from.has_ceres_scan_matcher_options()) {
+    _internal_mutable_ceres_scan_matcher_options()->::cartographer::mapping::scan_matching::proto::CeresScanMatcherOptions3D::MergeFrom(from._internal_ceres_scan_matcher_options());
   }
-  if (from._internal_has_motion_filter_options()) {
-    _this->_internal_mutable_motion_filter_options()->::cartographer::mapping::proto::MotionFilterOptions::MergeFrom(
-        from._internal_motion_filter_options());
+  if (from.has_motion_filter_options()) {
+    _internal_mutable_motion_filter_options()->::cartographer::mapping::proto::MotionFilterOptions::MergeFrom(from._internal_motion_filter_options());
   }
-  if (from._internal_has_submaps_options()) {
-    _this->_internal_mutable_submaps_options()->::cartographer::mapping::proto::SubmapsOptions3D::MergeFrom(
-        from._internal_submaps_options());
+  if (from.has_submaps_options()) {
+    _internal_mutable_submaps_options()->::cartographer::mapping::proto::SubmapsOptions3D::MergeFrom(from._internal_submaps_options());
   }
-  if (from._internal_has_low_resolution_adaptive_voxel_filter_options()) {
-    _this->_internal_mutable_low_resolution_adaptive_voxel_filter_options()->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::MergeFrom(
-        from._internal_low_resolution_adaptive_voxel_filter_options());
+  if (from.has_low_resolution_adaptive_voxel_filter_options()) {
+    _internal_mutable_low_resolution_adaptive_voxel_filter_options()->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::MergeFrom(from._internal_low_resolution_adaptive_voxel_filter_options());
   }
-  if (from._internal_has_real_time_correlative_scan_matcher_options()) {
-    _this->_internal_mutable_real_time_correlative_scan_matcher_options()->::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::MergeFrom(
-        from._internal_real_time_correlative_scan_matcher_options());
+  if (from.has_real_time_correlative_scan_matcher_options()) {
+    _internal_mutable_real_time_correlative_scan_matcher_options()->::cartographer::mapping::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::MergeFrom(from._internal_real_time_correlative_scan_matcher_options());
   }
-  if (from._internal_has_pose_extrapolator_options()) {
-    _this->_internal_mutable_pose_extrapolator_options()->::cartographer::mapping::proto::PoseExtrapolatorOptions::MergeFrom(
-        from._internal_pose_extrapolator_options());
+  if (from.has_pose_extrapolator_options()) {
+    _internal_mutable_pose_extrapolator_options()->::cartographer::mapping::proto::PoseExtrapolatorOptions::MergeFrom(from._internal_pose_extrapolator_options());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_min_range = from._internal_min_range();
-  uint32_t raw_min_range;
-  memcpy(&raw_min_range, &tmp_min_range, sizeof(tmp_min_range));
-  if (raw_min_range != 0) {
-    _this->_internal_set_min_range(from._internal_min_range());
+  if (!(from.min_range() <= 0 && from.min_range() >= 0)) {
+    _internal_set_min_range(from._internal_min_range());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_max_range = from._internal_max_range();
-  uint32_t raw_max_range;
-  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
-  if (raw_max_range != 0) {
-    _this->_internal_set_max_range(from._internal_max_range());
+  if (!(from.max_range() <= 0 && from.max_range() >= 0)) {
+    _internal_set_max_range(from._internal_max_range());
   }
-  if (from._internal_num_accumulated_range_data() != 0) {
-    _this->_internal_set_num_accumulated_range_data(from._internal_num_accumulated_range_data());
+  if (from.num_accumulated_range_data() != 0) {
+    _internal_set_num_accumulated_range_data(from._internal_num_accumulated_range_data());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_voxel_filter_size = from._internal_voxel_filter_size();
-  uint32_t raw_voxel_filter_size;
-  memcpy(&raw_voxel_filter_size, &tmp_voxel_filter_size, sizeof(tmp_voxel_filter_size));
-  if (raw_voxel_filter_size != 0) {
-    _this->_internal_set_voxel_filter_size(from._internal_voxel_filter_size());
+  if (!(from.voxel_filter_size() <= 0 && from.voxel_filter_size() >= 0)) {
+    _internal_set_voxel_filter_size(from._internal_voxel_filter_size());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = from._internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
-    _this->_internal_set_imu_gravity_time_constant(from._internal_imu_gravity_time_constant());
+  if (!(from.imu_gravity_time_constant() <= 0 && from.imu_gravity_time_constant() >= 0)) {
+    _internal_set_imu_gravity_time_constant(from._internal_imu_gravity_time_constant());
   }
-  if (from._internal_rotational_histogram_size() != 0) {
-    _this->_internal_set_rotational_histogram_size(from._internal_rotational_histogram_size());
+  if (from.rotational_histogram_size() != 0) {
+    _internal_set_rotational_histogram_size(from._internal_rotational_histogram_size());
   }
-  if (from._internal_use_online_correlative_scan_matching() != 0) {
-    _this->_internal_set_use_online_correlative_scan_matching(from._internal_use_online_correlative_scan_matching());
+  if (from.use_online_correlative_scan_matching() != 0) {
+    _internal_set_use_online_correlative_scan_matching(from._internal_use_online_correlative_scan_matching());
   }
-  if (from._internal_use_intensities() != 0) {
-    _this->_internal_set_use_intensities(from._internal_use_intensities());
+  if (from.use_intensities() != 0) {
+    _internal_set_use_intensities(from._internal_use_intensities());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LocalTrajectoryBuilderOptions3D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void LocalTrajectoryBuilderOptions3D::CopyFrom(const LocalTrajectoryBuilderOptions3D& from) {
@@ -957,30 +910,28 @@ bool LocalTrajectoryBuilderOptions3D::IsInitialized() const {
 
 void LocalTrajectoryBuilderOptions3D::InternalSwap(LocalTrajectoryBuilderOptions3D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.initial_poses_.InternalSwap(&other->_impl_.initial_poses_);
-  _impl_.initial_imu_data_.InternalSwap(&other->_impl_.initial_imu_data_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  initial_poses_.InternalSwap(&other->initial_poses_);
+  initial_imu_data_.InternalSwap(&other->initial_imu_data_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LocalTrajectoryBuilderOptions3D, _impl_.use_intensities_)
-      + sizeof(LocalTrajectoryBuilderOptions3D::_impl_.use_intensities_)
-      - PROTOBUF_FIELD_OFFSET(LocalTrajectoryBuilderOptions3D, _impl_.high_resolution_adaptive_voxel_filter_options_)>(
-          reinterpret_cast<char*>(&_impl_.high_resolution_adaptive_voxel_filter_options_),
-          reinterpret_cast<char*>(&other->_impl_.high_resolution_adaptive_voxel_filter_options_));
+      PROTOBUF_FIELD_OFFSET(LocalTrajectoryBuilderOptions3D, use_intensities_)
+      + sizeof(LocalTrajectoryBuilderOptions3D::use_intensities_)
+      - PROTOBUF_FIELD_OFFSET(LocalTrajectoryBuilderOptions3D, high_resolution_adaptive_voxel_filter_options_)>(
+          reinterpret_cast<char*>(&high_resolution_adaptive_voxel_filter_options_),
+          reinterpret_cast<char*>(&other->high_resolution_adaptive_voxel_filter_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LocalTrajectoryBuilderOptions3D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

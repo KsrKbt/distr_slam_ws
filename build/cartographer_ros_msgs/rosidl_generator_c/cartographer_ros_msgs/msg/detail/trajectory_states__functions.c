@@ -113,7 +113,7 @@ cartographer_ros_msgs__msg__TrajectoryStates__copy(
 }
 
 cartographer_ros_msgs__msg__TrajectoryStates *
-cartographer_ros_msgs__msg__TrajectoryStates__create(void)
+cartographer_ros_msgs__msg__TrajectoryStates__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__TrajectoryStates * msg = (cartographer_ros_msgs__msg__TrajectoryStates *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__TrajectoryStates), allocator.state);

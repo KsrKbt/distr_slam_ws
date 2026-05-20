@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:msg/LandmarkList.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/msg/landmark_list.h"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__STRUCT_H_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__STRUCT_H_
 
@@ -16,6 +13,7 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
+
 
 // Constants defined in the message
 

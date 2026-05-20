@@ -9,23 +9,11 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
-#include "cartographer_ros_msgs/msg/detail/landmark_entry__struct.h"
-#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_serialize_cartographer_ros_msgs__msg__LandmarkEntry(
-  const cartographer_ros_msgs__msg__LandmarkEntry * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_deserialize_cartographer_ros_msgs__msg__LandmarkEntry(
-  eprosima::fastcdr::Cdr &,
-  cartographer_ros_msgs__msg__LandmarkEntry * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t get_serialized_size_cartographer_ros_msgs__msg__LandmarkEntry(
@@ -34,22 +22,6 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__LandmarkEntry(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t max_serialized_size_cartographer_ros_msgs__msg__LandmarkEntry(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_serialize_key_cartographer_ros_msgs__msg__LandmarkEntry(
-  const cartographer_ros_msgs__msg__LandmarkEntry * ros_message,
-  eprosima::fastcdr::Cdr & cdr);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-size_t get_serialized_size_key_cartographer_ros_msgs__msg__LandmarkEntry(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-size_t max_serialized_size_key_cartographer_ros_msgs__msg__LandmarkEntry(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

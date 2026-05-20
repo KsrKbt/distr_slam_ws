@@ -57,7 +57,7 @@ cartographer_ros_msgs__msg__StatusCode__copy(
 }
 
 cartographer_ros_msgs__msg__StatusCode *
-cartographer_ros_msgs__msg__StatusCode__create(void)
+cartographer_ros_msgs__msg__StatusCode__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__StatusCode * msg = (cartographer_ros_msgs__msg__StatusCode *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__StatusCode), allocator.state);

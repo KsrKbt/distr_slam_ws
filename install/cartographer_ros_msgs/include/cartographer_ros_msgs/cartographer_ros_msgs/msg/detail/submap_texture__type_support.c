@@ -100,7 +100,6 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     true,  // is array
     0,  // array size
     false,  // is upper bound
@@ -118,7 +117,6 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -136,7 +134,6 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -154,7 +151,6 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -172,7 +168,6 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -192,7 +187,6 @@ static const rosidl_typesupport_introspection_c__MessageMembers cartographer_ros
   "SubmapTexture",  // message name
   5,  // number of fields
   sizeof(cartographer_ros_msgs__msg__SubmapTexture),
-  false,  // has_any_key_member_
   cartographer_ros_msgs__msg__SubmapTexture__rosidl_typesupport_introspection_c__SubmapTexture_message_member_array,  // message members
   cartographer_ros_msgs__msg__SubmapTexture__rosidl_typesupport_introspection_c__SubmapTexture_init_function,  // function to initialize message memory (memory has to be allocated)
   cartographer_ros_msgs__msg__SubmapTexture__rosidl_typesupport_introspection_c__SubmapTexture_fini_function  // function to terminate message instance (will not free memory)
@@ -204,9 +198,6 @@ static rosidl_message_type_support_t cartographer_ros_msgs__msg__SubmapTexture__
   0,
   &cartographer_ros_msgs__msg__SubmapTexture__rosidl_typesupport_introspection_c__SubmapTexture_message_members,
   get_message_typesupport_handle_function,
-  &cartographer_ros_msgs__msg__SubmapTexture__get_type_hash,
-  &cartographer_ros_msgs__msg__SubmapTexture__get_type_description,
-  &cartographer_ros_msgs__msg__SubmapTexture__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cartographer_ros_msgs

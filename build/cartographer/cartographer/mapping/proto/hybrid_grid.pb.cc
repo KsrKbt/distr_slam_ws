@@ -14,62 +14,52 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR HybridGrid::HybridGrid(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.x_indices_)*/{}
-  , /*decltype(_impl_._x_indices_cached_byte_size_)*/{0}
-  , /*decltype(_impl_.y_indices_)*/{}
-  , /*decltype(_impl_._y_indices_cached_byte_size_)*/{0}
-  , /*decltype(_impl_.z_indices_)*/{}
-  , /*decltype(_impl_._z_indices_cached_byte_size_)*/{0}
-  , /*decltype(_impl_.values_)*/{}
-  , /*decltype(_impl_._values_cached_byte_size_)*/{0}
-  , /*decltype(_impl_.resolution_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct HybridGridDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR HybridGridDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~HybridGridDefaultTypeInternal() {}
-  union {
-    HybridGrid _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 HybridGridDefaultTypeInternal _HybridGrid_default_instance_;
+class HybridGridDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HybridGrid> _instance;
+} _HybridGrid_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = nullptr;
+static void InitDefaultsscc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_HybridGrid_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::HybridGrid();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::HybridGrid::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _impl_.resolution_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _impl_.x_indices_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _impl_.y_indices_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _impl_.z_indices_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, _impl_.values_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, resolution_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, x_indices_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, y_indices_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, z_indices_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::HybridGrid, values_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::HybridGrid)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::HybridGrid)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_HybridGrid_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_HybridGrid_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -79,210 +69,189 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fhybrid_5fg
   "s\030\003 \003(\021\022\021\n\ty_indices\030\004 \003(\021\022\021\n\tz_indices\030"
   "\005 \003(\021\022\016\n\006values\030\006 \003(\005b\006proto3"
   ;
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = {
-    false, false, 189, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto,
-    "cartographer/mapping/proto/hybrid_grid.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_once, nullptr, 0, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_sccs[1] = {
+  &scc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto, "cartographer/mapping/proto/hybrid_grid.proto", 189,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_deps, 1, 0,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void HybridGrid::InitAsDefaultInstance() {
+}
 class HybridGrid::_Internal {
  public:
 };
 
-HybridGrid::HybridGrid(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+HybridGrid::HybridGrid(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  x_indices_(arena),
+  y_indices_(arena),
+  z_indices_(arena),
+  values_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.HybridGrid)
 }
 HybridGrid::HybridGrid(const HybridGrid& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  HybridGrid* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.x_indices_){from._impl_.x_indices_}
-    , /*decltype(_impl_._x_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.y_indices_){from._impl_.y_indices_}
-    , /*decltype(_impl_._y_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.z_indices_){from._impl_.z_indices_}
-    , /*decltype(_impl_._z_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.values_){from._impl_.values_}
-    , /*decltype(_impl_._values_cached_byte_size_)*/{0}
-    , decltype(_impl_.resolution_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      x_indices_(from.x_indices_),
+      y_indices_(from.y_indices_),
+      z_indices_(from.z_indices_),
+      values_(from.values_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _this->_impl_.resolution_ = from._impl_.resolution_;
+  resolution_ = from.resolution_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.HybridGrid)
 }
 
-inline void HybridGrid::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.x_indices_){arena}
-    , /*decltype(_impl_._x_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.y_indices_){arena}
-    , /*decltype(_impl_._y_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.z_indices_){arena}
-    , /*decltype(_impl_._z_indices_cached_byte_size_)*/{0}
-    , decltype(_impl_.values_){arena}
-    , /*decltype(_impl_._values_cached_byte_size_)*/{0}
-    , decltype(_impl_.resolution_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void HybridGrid::SharedCtor() {
+  resolution_ = 0;
 }
 
 HybridGrid::~HybridGrid() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.HybridGrid)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void HybridGrid::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.x_indices_.~RepeatedField();
-  _impl_.y_indices_.~RepeatedField();
-  _impl_.z_indices_.~RepeatedField();
-  _impl_.values_.~RepeatedField();
+void HybridGrid::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void HybridGrid::ArenaDtor(void* object) {
+  HybridGrid* _this = reinterpret_cast< HybridGrid* >(object);
+  (void)_this;
+}
+void HybridGrid::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void HybridGrid::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const HybridGrid& HybridGrid::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HybridGrid_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void HybridGrid::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.HybridGrid)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.x_indices_.Clear();
-  _impl_.y_indices_.Clear();
-  _impl_.z_indices_.Clear();
-  _impl_.values_.Clear();
-  _impl_.resolution_ = 0;
+  x_indices_.Clear();
+  y_indices_.Clear();
+  z_indices_.Clear();
+  values_.Clear();
+  resolution_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* HybridGrid::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* HybridGrid::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // float resolution = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
-          _impl_.resolution_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+          resolution_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated sint32 x_indices = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedSInt32Parser(_internal_mutable_x_indices(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 24) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
           _internal_add_x_indices(::PROTOBUF_NAMESPACE_ID::internal::ReadVarintZigZag32(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated sint32 y_indices = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedSInt32Parser(_internal_mutable_y_indices(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 32) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
           _internal_add_y_indices(::PROTOBUF_NAMESPACE_ID::internal::ReadVarintZigZag32(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated sint32 z_indices = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedSInt32Parser(_internal_mutable_z_indices(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 40) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
           _internal_add_z_indices(::PROTOBUF_NAMESPACE_ID::internal::ReadVarintZigZag32(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // repeated int32 values = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_values(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<uint8_t>(tag) == 48) {
-          _internal_add_values(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+          _internal_add_values(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* HybridGrid::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* HybridGrid::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.HybridGrid)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float resolution = 1;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_resolution = this->_internal_resolution();
-  uint32_t raw_resolution;
-  memcpy(&raw_resolution, &tmp_resolution, sizeof(tmp_resolution));
-  if (raw_resolution != 0) {
+  if (!(this->resolution() <= 0 && this->resolution() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(1, this->_internal_resolution(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_resolution(), target);
   }
 
   // repeated sint32 x_indices = 3;
   {
-    int byte_size = _impl_._x_indices_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _x_indices_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteSInt32Packed(
           3, _internal_x_indices(), byte_size, target);
@@ -291,7 +260,7 @@ uint8_t* HybridGrid::_InternalSerialize(
 
   // repeated sint32 y_indices = 4;
   {
-    int byte_size = _impl_._y_indices_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _y_indices_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteSInt32Packed(
           4, _internal_y_indices(), byte_size, target);
@@ -300,7 +269,7 @@ uint8_t* HybridGrid::_InternalSerialize(
 
   // repeated sint32 z_indices = 5;
   {
-    int byte_size = _impl_._z_indices_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _z_indices_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteSInt32Packed(
           5, _internal_z_indices(), byte_size, target);
@@ -309,7 +278,7 @@ uint8_t* HybridGrid::_InternalSerialize(
 
   // repeated int32 values = 6;
   {
-    int byte_size = _impl_._values_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _values_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           6, _internal_values(), byte_size, target);
@@ -317,7 +286,7 @@ uint8_t* HybridGrid::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.HybridGrid)
@@ -328,105 +297,120 @@ size_t HybridGrid::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.HybridGrid)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated sint32 x_indices = 3;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      SInt32Size(this->_impl_.x_indices_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      SInt32Size(this->x_indices_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._x_indices_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _x_indices_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // repeated sint32 y_indices = 4;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      SInt32Size(this->_impl_.y_indices_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      SInt32Size(this->y_indices_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._y_indices_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _y_indices_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // repeated sint32 z_indices = 5;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      SInt32Size(this->_impl_.z_indices_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      SInt32Size(this->z_indices_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._z_indices_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _z_indices_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // repeated int32 values = 6;
   {
-    size_t data_size = ::_pbi::WireFormatLite::
-      Int32Size(this->_impl_.values_);
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->values_);
     if (data_size > 0) {
       total_size += 1 +
-        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::_pbi::ToCachedSize(data_size);
-    _impl_._values_cached_byte_size_.store(cached_size,
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _values_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
   // float resolution = 1;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_resolution = this->_internal_resolution();
-  uint32_t raw_resolution;
-  memcpy(&raw_resolution, &tmp_resolution, sizeof(tmp_resolution));
-  if (raw_resolution != 0) {
+  if (!(this->resolution() <= 0 && this->resolution() >= 0)) {
     total_size += 1 + 4;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HybridGrid::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    HybridGrid::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HybridGrid::GetClassData() const { return &_class_data_; }
+void HybridGrid::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.HybridGrid)
+  GOOGLE_DCHECK_NE(&from, this);
+  const HybridGrid* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HybridGrid>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.HybridGrid)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.HybridGrid)
+    MergeFrom(*source);
+  }
+}
 
-
-void HybridGrid::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<HybridGrid*>(&to_msg);
-  auto& from = static_cast<const HybridGrid&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.HybridGrid)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void HybridGrid::MergeFrom(const HybridGrid& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.HybridGrid)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.x_indices_.MergeFrom(from._impl_.x_indices_);
-  _this->_impl_.y_indices_.MergeFrom(from._impl_.y_indices_);
-  _this->_impl_.z_indices_.MergeFrom(from._impl_.z_indices_);
-  _this->_impl_.values_.MergeFrom(from._impl_.values_);
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_resolution = from._internal_resolution();
-  uint32_t raw_resolution;
-  memcpy(&raw_resolution, &tmp_resolution, sizeof(tmp_resolution));
-  if (raw_resolution != 0) {
-    _this->_internal_set_resolution(from._internal_resolution());
+  x_indices_.MergeFrom(from.x_indices_);
+  y_indices_.MergeFrom(from.y_indices_);
+  z_indices_.MergeFrom(from.z_indices_);
+  values_.MergeFrom(from.values_);
+  if (!(from.resolution() <= 0 && from.resolution() >= 0)) {
+    _internal_set_resolution(from._internal_resolution());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void HybridGrid::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.HybridGrid)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void HybridGrid::CopyFrom(const HybridGrid& from) {
@@ -442,27 +426,25 @@ bool HybridGrid::IsInitialized() const {
 
 void HybridGrid::InternalSwap(HybridGrid* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.x_indices_.InternalSwap(&other->_impl_.x_indices_);
-  _impl_.y_indices_.InternalSwap(&other->_impl_.y_indices_);
-  _impl_.z_indices_.InternalSwap(&other->_impl_.z_indices_);
-  _impl_.values_.InternalSwap(&other->_impl_.values_);
-  swap(_impl_.resolution_, other->_impl_.resolution_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  x_indices_.InternalSwap(&other->x_indices_);
+  y_indices_.InternalSwap(&other->y_indices_);
+  z_indices_.InternalSwap(&other->z_indices_);
+  values_.InternalSwap(&other->values_);
+  swap(resolution_, other->resolution_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HybridGrid::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fhybrid_5fgrid_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::HybridGrid*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::HybridGrid >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::HybridGrid* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::HybridGrid >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::HybridGrid >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

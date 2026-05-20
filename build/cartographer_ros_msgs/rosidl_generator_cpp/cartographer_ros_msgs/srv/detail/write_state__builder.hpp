@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:srv/WriteState.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/write_state.hpp"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__WRITE_STATE__BUILDER_HPP_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__WRITE_STATE__BUILDER_HPP_
 
@@ -110,80 +107,6 @@ inline
 auto build<::cartographer_ros_msgs::srv::WriteState_Response>()
 {
   return cartographer_ros_msgs::srv::builder::Init_WriteState_Response_status();
-}
-
-}  // namespace cartographer_ros_msgs
-
-
-namespace cartographer_ros_msgs
-{
-
-namespace srv
-{
-
-namespace builder
-{
-
-class Init_WriteState_Event_response
-{
-public:
-  explicit Init_WriteState_Event_response(::cartographer_ros_msgs::srv::WriteState_Event & msg)
-  : msg_(msg)
-  {}
-  ::cartographer_ros_msgs::srv::WriteState_Event response(::cartographer_ros_msgs::srv::WriteState_Event::_response_type arg)
-  {
-    msg_.response = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::WriteState_Event msg_;
-};
-
-class Init_WriteState_Event_request
-{
-public:
-  explicit Init_WriteState_Event_request(::cartographer_ros_msgs::srv::WriteState_Event & msg)
-  : msg_(msg)
-  {}
-  Init_WriteState_Event_response request(::cartographer_ros_msgs::srv::WriteState_Event::_request_type arg)
-  {
-    msg_.request = std::move(arg);
-    return Init_WriteState_Event_response(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::WriteState_Event msg_;
-};
-
-class Init_WriteState_Event_info
-{
-public:
-  Init_WriteState_Event_info()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_WriteState_Event_request info(::cartographer_ros_msgs::srv::WriteState_Event::_info_type arg)
-  {
-    msg_.info = std::move(arg);
-    return Init_WriteState_Event_request(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::WriteState_Event msg_;
-};
-
-}  // namespace builder
-
-}  // namespace srv
-
-template<typename MessageType>
-auto build();
-
-template<>
-inline
-auto build<::cartographer_ros_msgs::srv::WriteState_Event>()
-{
-  return cartographer_ros_msgs::srv::builder::Init_WriteState_Event_info();
 }
 
 }  // namespace cartographer_ros_msgs

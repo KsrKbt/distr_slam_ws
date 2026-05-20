@@ -93,7 +93,7 @@ cartographer_ros_msgs__msg__LandmarkList__copy(
 }
 
 cartographer_ros_msgs__msg__LandmarkList *
-cartographer_ros_msgs__msg__LandmarkList__create(void)
+cartographer_ros_msgs__msg__LandmarkList__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__LandmarkList * msg = (cartographer_ros_msgs__msg__LandmarkList *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__LandmarkList), allocator.state);

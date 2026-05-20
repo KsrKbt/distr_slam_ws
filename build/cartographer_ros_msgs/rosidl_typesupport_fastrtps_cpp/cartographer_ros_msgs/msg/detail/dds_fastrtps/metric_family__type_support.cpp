@@ -2,10 +2,8 @@
 // with input from cartographer_ros_msgs:msg/MetricFamily.idl
 // generated code does not contain a copyright notice
 #include "cartographer_ros_msgs/msg/detail/metric_family__rosidl_typesupport_fastrtps_cpp.hpp"
-#include "cartographer_ros_msgs/msg/detail/metric_family__functions.h"
 #include "cartographer_ros_msgs/msg/detail/metric_family__struct.hpp"
 
-#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -13,7 +11,6 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
-#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -39,17 +36,6 @@ max_serialized_size_Metric(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
-bool cdr_serialize_key(
-  const cartographer_ros_msgs::msg::Metric &,
-  eprosima::fastcdr::Cdr &);
-size_t get_serialized_size_key(
-  const cartographer_ros_msgs::msg::Metric &,
-  size_t current_alignment);
-size_t
-max_serialized_size_key_Metric(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
 }  // namespace cartographer_ros_msgs
@@ -64,7 +50,6 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
-
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
 cdr_serialize(
@@ -73,10 +58,8 @@ cdr_serialize(
 {
   // Member: name
   cdr << ros_message.name;
-
   // Member: description
   cdr << ros_message.description;
-
   // Member: metrics
   {
     size_t size = ros_message.metrics.size();
@@ -87,7 +70,6 @@ cdr_serialize(
         cdr);
     }
   }
-
   return true;
 }
 
@@ -110,9 +92,9 @@ cdr_deserialize(
     size_t size = static_cast<size_t>(cdrSize);
 
     // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.get_state();
+    auto old_state = cdr.getState();
     bool correct_size = cdr.jump(size);
-    cdr.set_state(old_state);
+    cdr.setState(old_state);
     if (!correct_size) {
       fprintf(stderr, "sequence size exceeds remaining buffer\n");
       return false;
@@ -127,7 +109,6 @@ cdr_deserialize(
 
   return true;
 }  // NOLINT(readability/fn_size)
-
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
@@ -146,17 +127,17 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.name.size() + 1);
-
   // Member: description
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.description.size() + 1);
-
   // Member: metrics
   {
     size_t array_size = ros_message.metrics.size();
+
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
         cartographer_ros_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
@@ -166,7 +147,6 @@ get_serialized_size(
 
   return current_alignment - initial_alignment;
 }
-
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
@@ -187,9 +167,11 @@ max_serialized_size_MetricFamily(
   full_bounded = true;
   is_plain = true;
 
+
   // Member: name
   {
     size_t array_size = 1;
+
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -198,9 +180,11 @@ max_serialized_size_MetricFamily(
         1;
     }
   }
+
   // Member: description
   {
     size_t array_size = 1;
+
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -209,6 +193,7 @@ max_serialized_size_MetricFamily(
         1;
     }
   }
+
   // Member: metrics
   {
     size_t array_size = 0;
@@ -216,6 +201,8 @@ max_serialized_size_MetricFamily(
     is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -245,151 +232,6 @@ max_serialized_size_MetricFamily(
 
   return ret_val;
 }
-
-bool
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
-cdr_serialize_key(
-  const cartographer_ros_msgs::msg::MetricFamily & ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Member: name
-  cdr << ros_message.name;
-
-  // Member: description
-  cdr << ros_message.description;
-
-  // Member: metrics
-  {
-    size_t size = ros_message.metrics.size();
-    cdr << static_cast<uint32_t>(size);
-    for (size_t i = 0; i < size; i++) {
-      cartographer_ros_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
-        ros_message.metrics[i],
-        cdr);
-    }
-  }
-
-  return true;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
-get_serialized_size_key(
-  const cartographer_ros_msgs::msg::MetricFamily & ros_message,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
-
-  // Member: description
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.description.size() + 1);
-
-  // Member: metrics
-  {
-    size_t array_size = ros_message.metrics.size();
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment +=
-        cartographer_ros_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
-        ros_message.metrics[index], current_alignment);
-    }
-  }
-
-  return current_alignment - initial_alignment;
-}
-
-size_t
-ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
-max_serialized_size_key_MetricFamily(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-
-  // Member: name
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: description
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: metrics
-  {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        cartographer_ros_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_Metric(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = cartographer_ros_msgs::msg::MetricFamily;
-    is_plain =
-      (
-      offsetof(DataType, metrics) +
-      last_member_size
-      ) == ret_val;
-  }
-
-  return ret_val;
-}
-
 
 static bool _MetricFamily__cdr_serialize(
   const void * untyped_ros_message,
@@ -440,17 +282,13 @@ static message_type_support_callbacks_t _MetricFamily__callbacks = {
   _MetricFamily__cdr_serialize,
   _MetricFamily__cdr_deserialize,
   _MetricFamily__get_serialized_size,
-  _MetricFamily__max_serialized_size,
-  nullptr
+  _MetricFamily__max_serialized_size
 };
 
 static rosidl_message_type_support_t _MetricFamily__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_MetricFamily__callbacks,
   get_message_typesupport_handle_function,
-  &cartographer_ros_msgs__msg__MetricFamily__get_type_hash,
-  &cartographer_ros_msgs__msg__MetricFamily__get_type_description,
-  &cartographer_ros_msgs__msg__MetricFamily__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

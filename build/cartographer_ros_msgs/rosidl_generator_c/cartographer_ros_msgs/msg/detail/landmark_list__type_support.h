@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:msg/LandmarkList.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/msg/landmark_list.h"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__TYPE_SUPPORT_H_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__TYPE_SUPPORT_H_
 
@@ -27,7 +24,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   cartographer_ros_msgs,
   msg,
   LandmarkList
-)(void);
+)();
 
 #ifdef __cplusplus
 }

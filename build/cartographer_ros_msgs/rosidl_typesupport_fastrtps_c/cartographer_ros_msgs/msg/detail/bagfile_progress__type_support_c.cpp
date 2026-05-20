@@ -5,11 +5,9 @@
 
 
 #include <cassert>
-#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
-#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -44,12 +42,15 @@ extern "C"
 
 using _BagfileProgress__ros_msg_type = cartographer_ros_msgs__msg__BagfileProgress;
 
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_serialize_cartographer_ros_msgs__msg__BagfileProgress(
-  const cartographer_ros_msgs__msg__BagfileProgress * ros_message,
+static bool _BagfileProgress__cdr_serialize(
+  const void * untyped_ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const _BagfileProgress__ros_msg_type * ros_message = static_cast<const _BagfileProgress__ros_msg_type *>(untyped_ros_message);
   // Field name: current_bagfile_name
   {
     const rosidl_runtime_c__String * str = &ros_message->current_bagfile_name;
@@ -97,11 +98,15 @@ bool cdr_serialize_cartographer_ros_msgs__msg__BagfileProgress(
   return true;
 }
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_deserialize_cartographer_ros_msgs__msg__BagfileProgress(
+static bool _BagfileProgress__cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
-  cartographer_ros_msgs__msg__BagfileProgress * ros_message)
+  void * untyped_ros_message)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  _BagfileProgress__ros_msg_type * ros_message = static_cast<_BagfileProgress__ros_msg_type *>(untyped_ros_message);
   // Field name: current_bagfile_name
   {
     std::string tmp;
@@ -151,7 +156,6 @@ bool cdr_deserialize_cartographer_ros_msgs__msg__BagfileProgress(
   return true;
 }  // NOLINT(readability/fn_size)
 
-
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t get_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
   const void * untyped_ros_message,
@@ -166,47 +170,41 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: current_bagfile_name
+  // field.name current_bagfile_name
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->current_bagfile_name.size + 1);
-
-  // Field name: current_bagfile_id
+  // field.name current_bagfile_id
   {
     size_t item_size = sizeof(ros_message->current_bagfile_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: total_bagfiles
+  // field.name total_bagfiles
   {
     size_t item_size = sizeof(ros_message->total_bagfiles);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: total_messages
+  // field.name total_messages
   {
     size_t item_size = sizeof(ros_message->total_messages);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: processed_messages
+  // field.name processed_messages
   {
     size_t item_size = sizeof(ros_message->processed_messages);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: total_seconds
+  // field.name total_seconds
   {
     size_t item_size = sizeof(ros_message->total_seconds);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: processed_seconds
+  // field.name processed_seconds
   {
     size_t item_size = sizeof(ros_message->processed_seconds);
     current_alignment += item_size +
@@ -216,6 +214,12 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
   return current_alignment - initial_alignment;
 }
 
+static uint32_t _BagfileProgress__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
+      untyped_ros_message, 0));
+}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t max_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
@@ -235,9 +239,10 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: current_bagfile_name
+  // member: current_bagfile_name
   {
     size_t array_size = 1;
+
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -246,260 +251,50 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
         1;
     }
   }
-
-  // Field name: current_bagfile_id
+  // member: current_bagfile_id
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-
-  // Field name: total_bagfiles
+  // member: total_bagfiles
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-
-  // Field name: total_messages
+  // member: total_messages
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-
-  // Field name: processed_messages
+  // member: processed_messages
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-
-  // Field name: total_seconds
+  // member: total_seconds
   {
     size_t array_size = 1;
+
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-
-  // Field name: processed_seconds
+  // member: processed_seconds
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
 
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = cartographer_ros_msgs__msg__BagfileProgress;
-    is_plain =
-      (
-      offsetof(DataType, processed_seconds) +
-      last_member_size
-      ) == ret_val;
-  }
-  return ret_val;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-bool cdr_serialize_key_cartographer_ros_msgs__msg__BagfileProgress(
-  const cartographer_ros_msgs__msg__BagfileProgress * ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Field name: current_bagfile_name
-  {
-    const rosidl_runtime_c__String * str = &ros_message->current_bagfile_name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
-  // Field name: current_bagfile_id
-  {
-    cdr << ros_message->current_bagfile_id;
-  }
-
-  // Field name: total_bagfiles
-  {
-    cdr << ros_message->total_bagfiles;
-  }
-
-  // Field name: total_messages
-  {
-    cdr << ros_message->total_messages;
-  }
-
-  // Field name: processed_messages
-  {
-    cdr << ros_message->processed_messages;
-  }
-
-  // Field name: total_seconds
-  {
-    cdr << ros_message->total_seconds;
-  }
-
-  // Field name: processed_seconds
-  {
-    cdr << ros_message->processed_seconds;
-  }
-
-  return true;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-size_t get_serialized_size_key_cartographer_ros_msgs__msg__BagfileProgress(
-  const void * untyped_ros_message,
-  size_t current_alignment)
-{
-  const _BagfileProgress__ros_msg_type * ros_message = static_cast<const _BagfileProgress__ros_msg_type *>(untyped_ros_message);
-  (void)ros_message;
-
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Field name: current_bagfile_name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->current_bagfile_name.size + 1);
-
-  // Field name: current_bagfile_id
-  {
-    size_t item_size = sizeof(ros_message->current_bagfile_id);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: total_bagfiles
-  {
-    size_t item_size = sizeof(ros_message->total_bagfiles);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: total_messages
-  {
-    size_t item_size = sizeof(ros_message->total_messages);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: processed_messages
-  {
-    size_t item_size = sizeof(ros_message->processed_messages);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: total_seconds
-  {
-    size_t item_size = sizeof(ros_message->total_seconds);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: processed_seconds
-  {
-    size_t item_size = sizeof(ros_message->processed_seconds);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  return current_alignment - initial_alignment;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
-size_t max_serialized_size_key_cartographer_ros_msgs__msg__BagfileProgress(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-  // Field name: current_bagfile_name
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Field name: current_bagfile_id
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Field name: total_bagfiles
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Field name: total_messages
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Field name: processed_messages
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Field name: total_seconds
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Field name: processed_seconds
-  {
-    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
@@ -517,41 +312,8 @@ size_t max_serialized_size_key_cartographer_ros_msgs__msg__BagfileProgress(
       last_member_size
       ) == ret_val;
   }
+
   return ret_val;
-}
-
-
-static bool _BagfileProgress__cdr_serialize(
-  const void * untyped_ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const cartographer_ros_msgs__msg__BagfileProgress * ros_message = static_cast<const cartographer_ros_msgs__msg__BagfileProgress *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_serialize_cartographer_ros_msgs__msg__BagfileProgress(ros_message, cdr);
-}
-
-static bool _BagfileProgress__cdr_deserialize(
-  eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  cartographer_ros_msgs__msg__BagfileProgress * ros_message = static_cast<cartographer_ros_msgs__msg__BagfileProgress *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_deserialize_cartographer_ros_msgs__msg__BagfileProgress(cdr, ros_message);
-}
-
-static uint32_t _BagfileProgress__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_cartographer_ros_msgs__msg__BagfileProgress(
-      untyped_ros_message, 0));
 }
 
 static size_t _BagfileProgress__max_serialized_size(char & bounds_info)
@@ -576,17 +338,13 @@ static message_type_support_callbacks_t __callbacks_BagfileProgress = {
   _BagfileProgress__cdr_serialize,
   _BagfileProgress__cdr_deserialize,
   _BagfileProgress__get_serialized_size,
-  _BagfileProgress__max_serialized_size,
-  nullptr
+  _BagfileProgress__max_serialized_size
 };
 
 static rosidl_message_type_support_t _BagfileProgress__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_BagfileProgress,
   get_message_typesupport_handle_function,
-  &cartographer_ros_msgs__msg__BagfileProgress__get_type_hash,
-  &cartographer_ros_msgs__msg__BagfileProgress__get_type_description,
-  &cartographer_ros_msgs__msg__BagfileProgress__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

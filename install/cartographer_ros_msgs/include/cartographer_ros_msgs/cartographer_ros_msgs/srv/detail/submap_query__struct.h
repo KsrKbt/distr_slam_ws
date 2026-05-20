@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:srv/SubmapQuery.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/submap_query.h"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__SUBMAP_QUERY__STRUCT_H_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__SUBMAP_QUERY__STRUCT_H_
 
@@ -37,6 +34,7 @@ typedef struct cartographer_ros_msgs__srv__SubmapQuery_Request__Sequence
   size_t capacity;
 } cartographer_ros_msgs__srv__SubmapQuery_Request__Sequence;
 
+
 // Constants defined in the message
 
 // Include directives for member types
@@ -62,42 +60,6 @@ typedef struct cartographer_ros_msgs__srv__SubmapQuery_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } cartographer_ros_msgs__srv__SubmapQuery_Response__Sequence;
-
-// Constants defined in the message
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.h"
-
-// constants for array fields with an upper bound
-// request
-enum
-{
-  cartographer_ros_msgs__srv__SubmapQuery_Event__request__MAX_SIZE = 1
-};
-// response
-enum
-{
-  cartographer_ros_msgs__srv__SubmapQuery_Event__response__MAX_SIZE = 1
-};
-
-/// Struct defined in srv/SubmapQuery in the package cartographer_ros_msgs.
-typedef struct cartographer_ros_msgs__srv__SubmapQuery_Event
-{
-  service_msgs__msg__ServiceEventInfo info;
-  cartographer_ros_msgs__srv__SubmapQuery_Request__Sequence request;
-  cartographer_ros_msgs__srv__SubmapQuery_Response__Sequence response;
-} cartographer_ros_msgs__srv__SubmapQuery_Event;
-
-// Struct for a sequence of cartographer_ros_msgs__srv__SubmapQuery_Event.
-typedef struct cartographer_ros_msgs__srv__SubmapQuery_Event__Sequence
-{
-  cartographer_ros_msgs__srv__SubmapQuery_Event * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
-} cartographer_ros_msgs__srv__SubmapQuery_Event__Sequence;
 
 #ifdef __cplusplus
 }

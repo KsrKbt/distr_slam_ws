@@ -14,54 +14,50 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR MotionFilterOptions::MotionFilterOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.max_time_seconds_)*/0
-  , /*decltype(_impl_.max_distance_meters_)*/0
-  , /*decltype(_impl_.max_angle_radians_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct MotionFilterOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR MotionFilterOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~MotionFilterOptionsDefaultTypeInternal() {}
-  union {
-    MotionFilterOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MotionFilterOptionsDefaultTypeInternal _MotionFilterOptions_default_instance_;
+class MotionFilterOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MotionFilterOptions> _instance;
+} _MotionFilterOptions_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = nullptr;
+static void InitDefaultsscc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_MotionFilterOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::MotionFilterOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::MotionFilterOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, _impl_.max_time_seconds_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, _impl_.max_distance_meters_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, _impl_.max_angle_radians_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, max_time_seconds_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, max_distance_meters_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::MotionFilterOptions, max_angle_radians_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::MotionFilterOptions)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::MotionFilterOptions)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_MotionFilterOptions_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_MotionFilterOptions_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -71,185 +67,168 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fmotion_5ff
   "seconds\030\001 \001(\001\022\033\n\023max_distance_meters\030\002 \001"
   "(\001\022\031\n\021max_angle_radians\030\003 \001(\001b\006proto3"
   ;
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = {
-    false, false, 197, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
-    "cartographer/mapping/proto/motion_filter_options.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_once, nullptr, 0, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_sccs[1] = {
+  &scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto, "cartographer/mapping/proto/motion_filter_options.proto", 197,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_deps, 1, 0,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void MotionFilterOptions::InitAsDefaultInstance() {
+}
 class MotionFilterOptions::_Internal {
  public:
 };
 
-MotionFilterOptions::MotionFilterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+MotionFilterOptions::MotionFilterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.MotionFilterOptions)
 }
 MotionFilterOptions::MotionFilterOptions(const MotionFilterOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  MotionFilterOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_time_seconds_){}
-    , decltype(_impl_.max_distance_meters_){}
-    , decltype(_impl_.max_angle_radians_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.max_time_seconds_, &from._impl_.max_time_seconds_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.max_angle_radians_) -
-    reinterpret_cast<char*>(&_impl_.max_time_seconds_)) + sizeof(_impl_.max_angle_radians_));
+  ::memcpy(&max_time_seconds_, &from.max_time_seconds_,
+    static_cast<size_t>(reinterpret_cast<char*>(&max_angle_radians_) -
+    reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.MotionFilterOptions)
 }
 
-inline void MotionFilterOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_time_seconds_){0}
-    , decltype(_impl_.max_distance_meters_){0}
-    , decltype(_impl_.max_angle_radians_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void MotionFilterOptions::SharedCtor() {
+  ::memset(&max_time_seconds_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_angle_radians_) -
+      reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
 }
 
 MotionFilterOptions::~MotionFilterOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.MotionFilterOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void MotionFilterOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void MotionFilterOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void MotionFilterOptions::ArenaDtor(void* object) {
+  MotionFilterOptions* _this = reinterpret_cast< MotionFilterOptions* >(object);
+  (void)_this;
+}
+void MotionFilterOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void MotionFilterOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const MotionFilterOptions& MotionFilterOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void MotionFilterOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.MotionFilterOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.max_time_seconds_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.max_angle_radians_) -
-      reinterpret_cast<char*>(&_impl_.max_time_seconds_)) + sizeof(_impl_.max_angle_radians_));
+  ::memset(&max_time_seconds_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_angle_radians_) -
+      reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MotionFilterOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* MotionFilterOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // double max_time_seconds = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
-          _impl_.max_time_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          max_time_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double max_distance_meters = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.max_distance_meters_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          max_distance_meters_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double max_angle_radians = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
-          _impl_.max_angle_radians_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          max_angle_radians_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* MotionFilterOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MotionFilterOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.MotionFilterOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double max_time_seconds = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_time_seconds = this->_internal_max_time_seconds();
-  uint64_t raw_max_time_seconds;
-  memcpy(&raw_max_time_seconds, &tmp_max_time_seconds, sizeof(tmp_max_time_seconds));
-  if (raw_max_time_seconds != 0) {
+  if (!(this->max_time_seconds() <= 0 && this->max_time_seconds() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_max_time_seconds(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_max_time_seconds(), target);
   }
 
   // double max_distance_meters = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_distance_meters = this->_internal_max_distance_meters();
-  uint64_t raw_max_distance_meters;
-  memcpy(&raw_max_distance_meters, &tmp_max_distance_meters, sizeof(tmp_max_distance_meters));
-  if (raw_max_distance_meters != 0) {
+  if (!(this->max_distance_meters() <= 0 && this->max_distance_meters() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_max_distance_meters(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_max_distance_meters(), target);
   }
 
   // double max_angle_radians = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_angle_radians = this->_internal_max_angle_radians();
-  uint64_t raw_max_angle_radians;
-  memcpy(&raw_max_angle_radians, &tmp_max_angle_radians, sizeof(tmp_max_angle_radians));
-  if (raw_max_angle_radians != 0) {
+  if (!(this->max_angle_radians() <= 0 && this->max_angle_radians() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_max_angle_radians(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_max_angle_radians(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.MotionFilterOptions)
@@ -260,77 +239,72 @@ size_t MotionFilterOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.MotionFilterOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // double max_time_seconds = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_time_seconds = this->_internal_max_time_seconds();
-  uint64_t raw_max_time_seconds;
-  memcpy(&raw_max_time_seconds, &tmp_max_time_seconds, sizeof(tmp_max_time_seconds));
-  if (raw_max_time_seconds != 0) {
+  if (!(this->max_time_seconds() <= 0 && this->max_time_seconds() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double max_distance_meters = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_distance_meters = this->_internal_max_distance_meters();
-  uint64_t raw_max_distance_meters;
-  memcpy(&raw_max_distance_meters, &tmp_max_distance_meters, sizeof(tmp_max_distance_meters));
-  if (raw_max_distance_meters != 0) {
+  if (!(this->max_distance_meters() <= 0 && this->max_distance_meters() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double max_angle_radians = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_angle_radians = this->_internal_max_angle_radians();
-  uint64_t raw_max_angle_radians;
-  memcpy(&raw_max_angle_radians, &tmp_max_angle_radians, sizeof(tmp_max_angle_radians));
-  if (raw_max_angle_radians != 0) {
+  if (!(this->max_angle_radians() <= 0 && this->max_angle_radians() >= 0)) {
     total_size += 1 + 8;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData MotionFilterOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    MotionFilterOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*MotionFilterOptions::GetClassData() const { return &_class_data_; }
+void MotionFilterOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.MotionFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MotionFilterOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MotionFilterOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.MotionFilterOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.MotionFilterOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void MotionFilterOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<MotionFilterOptions*>(&to_msg);
-  auto& from = static_cast<const MotionFilterOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.MotionFilterOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void MotionFilterOptions::MergeFrom(const MotionFilterOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.MotionFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_time_seconds = from._internal_max_time_seconds();
-  uint64_t raw_max_time_seconds;
-  memcpy(&raw_max_time_seconds, &tmp_max_time_seconds, sizeof(tmp_max_time_seconds));
-  if (raw_max_time_seconds != 0) {
-    _this->_internal_set_max_time_seconds(from._internal_max_time_seconds());
+  if (!(from.max_time_seconds() <= 0 && from.max_time_seconds() >= 0)) {
+    _internal_set_max_time_seconds(from._internal_max_time_seconds());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_distance_meters = from._internal_max_distance_meters();
-  uint64_t raw_max_distance_meters;
-  memcpy(&raw_max_distance_meters, &tmp_max_distance_meters, sizeof(tmp_max_distance_meters));
-  if (raw_max_distance_meters != 0) {
-    _this->_internal_set_max_distance_meters(from._internal_max_distance_meters());
+  if (!(from.max_distance_meters() <= 0 && from.max_distance_meters() >= 0)) {
+    _internal_set_max_distance_meters(from._internal_max_distance_meters());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_max_angle_radians = from._internal_max_angle_radians();
-  uint64_t raw_max_angle_radians;
-  memcpy(&raw_max_angle_radians, &tmp_max_angle_radians, sizeof(tmp_max_angle_radians));
-  if (raw_max_angle_radians != 0) {
-    _this->_internal_set_max_angle_radians(from._internal_max_angle_radians());
+  if (!(from.max_angle_radians() <= 0 && from.max_angle_radians() >= 0)) {
+    _internal_set_max_angle_radians(from._internal_max_angle_radians());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void MotionFilterOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.MotionFilterOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void MotionFilterOptions::CopyFrom(const MotionFilterOptions& from) {
@@ -346,28 +320,26 @@ bool MotionFilterOptions::IsInitialized() const {
 
 void MotionFilterOptions::InternalSwap(MotionFilterOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MotionFilterOptions, _impl_.max_angle_radians_)
-      + sizeof(MotionFilterOptions::_impl_.max_angle_radians_)
-      - PROTOBUF_FIELD_OFFSET(MotionFilterOptions, _impl_.max_time_seconds_)>(
-          reinterpret_cast<char*>(&_impl_.max_time_seconds_),
-          reinterpret_cast<char*>(&other->_impl_.max_time_seconds_));
+      PROTOBUF_FIELD_OFFSET(MotionFilterOptions, max_angle_radians_)
+      + sizeof(MotionFilterOptions::max_angle_radians_)
+      - PROTOBUF_FIELD_OFFSET(MotionFilterOptions, max_time_seconds_)>(
+          reinterpret_cast<char*>(&max_time_seconds_),
+          reinterpret_cast<char*>(&other->max_time_seconds_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MotionFilterOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::MotionFilterOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::MotionFilterOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::MotionFilterOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::MotionFilterOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::MotionFilterOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

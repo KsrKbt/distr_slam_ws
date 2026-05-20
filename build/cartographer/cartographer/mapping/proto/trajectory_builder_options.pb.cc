@@ -14,182 +14,207 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_LocalTrajectoryBuilderOptions2D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f2d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<8> scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR InitialTrajectoryPose::InitialTrajectoryPose(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.relative_pose_)*/nullptr
-  , /*decltype(_impl_.timestamp_)*/int64_t{0}
-  , /*decltype(_impl_.to_trajectory_id_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct InitialTrajectoryPoseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR InitialTrajectoryPoseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~InitialTrajectoryPoseDefaultTypeInternal() {}
-  union {
-    InitialTrajectoryPose _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InitialTrajectoryPoseDefaultTypeInternal _InitialTrajectoryPose_default_instance_;
-PROTOBUF_CONSTEXPR TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.max_submaps_to_keep_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TrajectoryBuilderOptions_PureLocalizationTrimmerOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TrajectoryBuilderOptions_PureLocalizationTrimmerOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TrajectoryBuilderOptions_PureLocalizationTrimmerOptionsDefaultTypeInternal() {}
-  union {
-    TrajectoryBuilderOptions_PureLocalizationTrimmerOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TrajectoryBuilderOptions_PureLocalizationTrimmerOptionsDefaultTypeInternal _TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_default_instance_;
-PROTOBUF_CONSTEXPR TrajectoryBuilderOptions::TrajectoryBuilderOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.trajectory_builder_2d_options_)*/nullptr
-  , /*decltype(_impl_.trajectory_builder_3d_options_)*/nullptr
-  , /*decltype(_impl_.initial_trajectory_pose_)*/nullptr
-  , /*decltype(_impl_.pure_localization_trimmer_)*/nullptr
-  , /*decltype(_impl_.pose_graph_odometry_motion_filter_)*/nullptr
-  , /*decltype(_impl_.pure_localization_)*/false
-  , /*decltype(_impl_.collate_fixed_frame_)*/false
-  , /*decltype(_impl_.collate_landmarks_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TrajectoryBuilderOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TrajectoryBuilderOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TrajectoryBuilderOptionsDefaultTypeInternal() {}
-  union {
-    TrajectoryBuilderOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TrajectoryBuilderOptionsDefaultTypeInternal _TrajectoryBuilderOptions_default_instance_;
-PROTOBUF_CONSTEXPR SensorId::SensorId(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.type_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SensorIdDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SensorIdDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SensorIdDefaultTypeInternal() {}
-  union {
-    SensorId _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SensorIdDefaultTypeInternal _SensorId_default_instance_;
-PROTOBUF_CONSTEXPR TrajectoryBuilderOptionsWithSensorIds::TrajectoryBuilderOptionsWithSensorIds(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.sensor_id_)*/{}
-  , /*decltype(_impl_.trajectory_builder_options_)*/nullptr
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TrajectoryBuilderOptionsWithSensorIdsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TrajectoryBuilderOptionsWithSensorIdsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TrajectoryBuilderOptionsWithSensorIdsDefaultTypeInternal() {}
-  union {
-    TrajectoryBuilderOptionsWithSensorIds _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TrajectoryBuilderOptionsWithSensorIdsDefaultTypeInternal _TrajectoryBuilderOptionsWithSensorIds_default_instance_;
-PROTOBUF_CONSTEXPR AllTrajectoryBuilderOptions::AllTrajectoryBuilderOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.options_with_sensor_ids_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct AllTrajectoryBuilderOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AllTrajectoryBuilderOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~AllTrajectoryBuilderOptionsDefaultTypeInternal() {}
-  union {
-    AllTrajectoryBuilderOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AllTrajectoryBuilderOptionsDefaultTypeInternal _AllTrajectoryBuilderOptions_default_instance_;
+class InitialTrajectoryPoseDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InitialTrajectoryPose> _instance;
+} _InitialTrajectoryPose_default_instance_;
+class TrajectoryBuilderOptions_PureLocalizationTrimmerOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TrajectoryBuilderOptions_PureLocalizationTrimmerOptions> _instance;
+} _TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_default_instance_;
+class TrajectoryBuilderOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TrajectoryBuilderOptions> _instance;
+} _TrajectoryBuilderOptions_default_instance_;
+class SensorIdDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SensorId> _instance;
+} _SensorId_default_instance_;
+class TrajectoryBuilderOptionsWithSensorIdsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TrajectoryBuilderOptionsWithSensorIds> _instance;
+} _TrajectoryBuilderOptionsWithSensorIds_default_instance_;
+class AllTrajectoryBuilderOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AllTrajectoryBuilderOptions> _instance;
+} _AllTrajectoryBuilderOptions_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[6];
-static const ::_pb::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[1];
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto = nullptr;
+static void InitDefaultsscc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_AllTrajectoryBuilderOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::AllTrajectoryBuilderOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::AllTrajectoryBuilderOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {
+      &scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,}};
+
+static void InitDefaultsscc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_InitialTrajectoryPose_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::InitialTrajectoryPose();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::InitialTrajectoryPose::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,}};
+
+static void InitDefaultsscc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_SensorId_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::SensorId();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::SensorId::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {}};
+
+static void InitDefaultsscc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::TrajectoryBuilderOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::TrajectoryBuilderOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 5, 0, InitDefaultsscc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {
+      &scc_info_LocalTrajectoryBuilderOptions2D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f2d_2eproto.base,
+      &scc_info_LocalTrajectoryBuilderOptions3D_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto.base,
+      &scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+      &scc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+      &scc_info_MotionFilterOptions_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto.base,}};
+
+static void InitDefaultsscc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {}};
+
+static void InitDefaultsscc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_TrajectoryBuilderOptionsWithSensorIds_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto}, {
+      &scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+      &scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[6];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, _impl_.relative_pose_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, _impl_.to_trajectory_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, _impl_.timestamp_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, relative_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, to_trajectory_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::InitialTrajectoryPose, timestamp_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions, _impl_.max_submaps_to_keep_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions, max_submaps_to_keep_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.trajectory_builder_2d_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.trajectory_builder_3d_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.initial_trajectory_pose_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.pure_localization_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.pure_localization_trimmer_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.collate_fixed_frame_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.collate_landmarks_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, _impl_.pose_graph_odometry_motion_filter_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, trajectory_builder_2d_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, trajectory_builder_3d_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, initial_trajectory_pose_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, pure_localization_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, pure_localization_trimmer_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, collate_fixed_frame_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, collate_landmarks_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptions, pose_graph_odometry_motion_filter_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SensorId, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SensorId, _impl_.type_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SensorId, _impl_.id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SensorId, type_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::SensorId, id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds, _impl_.sensor_id_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds, _impl_.trajectory_builder_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds, sensor_id_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds, trajectory_builder_options_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::AllTrajectoryBuilderOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::AllTrajectoryBuilderOptions, _impl_.options_with_sensor_ids_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::AllTrajectoryBuilderOptions, options_with_sensor_ids_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::InitialTrajectoryPose)},
-  { 9, -1, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions)},
-  { 16, -1, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptions)},
-  { 30, -1, -1, sizeof(::cartographer::mapping::proto::SensorId)},
-  { 38, -1, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds)},
-  { 46, -1, -1, sizeof(::cartographer::mapping::proto::AllTrajectoryBuilderOptions)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::InitialTrajectoryPose)},
+  { 8, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions)},
+  { 14, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptions)},
+  { 27, -1, sizeof(::cartographer::mapping::proto::SensorId)},
+  { 34, -1, sizeof(::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds)},
+  { 41, -1, sizeof(::cartographer::mapping::proto::AllTrajectoryBuilderOptions)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_InitialTrajectoryPose_default_instance_._instance,
-  &::cartographer::mapping::proto::_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_default_instance_._instance,
-  &::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance,
-  &::cartographer::mapping::proto::_SensorId_default_instance_._instance,
-  &::cartographer::mapping::proto::_TrajectoryBuilderOptionsWithSensorIds_default_instance_._instance,
-  &::cartographer::mapping::proto::_AllTrajectoryBuilderOptions_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_InitialTrajectoryPose_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_SensorId_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_TrajectoryBuilderOptionsWithSensorIds_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_AllTrajectoryBuilderOptions_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -236,27 +261,30 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftrajectory
   "tographer.mapping.proto.TrajectoryBuilde"
   "rOptionsWithSensorIdsb\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_deps[4] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_deps[4] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f2d_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_5f3d_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2fmotion_5ffilter_5foptions_2eproto,
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto = {
-    false, false, 1669, descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto,
-    "cartographer/mapping/proto/trajectory_builder_options.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_deps, 4, 6,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_sccs[6] = {
+  &scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+  &scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+  &scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+  &scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+  &scc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
+  &scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto, "cartographer/mapping/proto/trajectory_builder_options.proto", 1669,
+  &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_deps, 6, 4,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto, 6, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
@@ -278,7 +306,7 @@ bool SensorId_SensorType_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 constexpr SensorId_SensorType SensorId::RANGE;
 constexpr SensorId_SensorType SensorId::IMU;
 constexpr SensorId_SensorType SensorId::ODOMETRY;
@@ -288,10 +316,14 @@ constexpr SensorId_SensorType SensorId::LOCAL_SLAM_RESULT;
 constexpr SensorId_SensorType SensorId::SensorType_MIN;
 constexpr SensorId_SensorType SensorId::SensorType_MAX;
 constexpr int SensorId::SensorType_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 
 // ===================================================================
 
+void InitialTrajectoryPose::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_InitialTrajectoryPose_default_instance_._instance.get_mutable()->relative_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+}
 class InitialTrajectoryPose::_Internal {
  public:
   static const ::cartographer::transform::proto::Rigid3d& relative_pose(const InitialTrajectoryPose* msg);
@@ -299,165 +331,162 @@ class InitialTrajectoryPose::_Internal {
 
 const ::cartographer::transform::proto::Rigid3d&
 InitialTrajectoryPose::_Internal::relative_pose(const InitialTrajectoryPose* msg) {
-  return *msg->_impl_.relative_pose_;
+  return *msg->relative_pose_;
 }
 void InitialTrajectoryPose::clear_relative_pose() {
-  if (GetArenaForAllocation() == nullptr && _impl_.relative_pose_ != nullptr) {
-    delete _impl_.relative_pose_;
+  if (GetArena() == nullptr && relative_pose_ != nullptr) {
+    delete relative_pose_;
   }
-  _impl_.relative_pose_ = nullptr;
+  relative_pose_ = nullptr;
 }
-InitialTrajectoryPose::InitialTrajectoryPose(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+InitialTrajectoryPose::InitialTrajectoryPose(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.InitialTrajectoryPose)
 }
 InitialTrajectoryPose::InitialTrajectoryPose(const InitialTrajectoryPose& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  InitialTrajectoryPose* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.relative_pose_){nullptr}
-    , decltype(_impl_.timestamp_){}
-    , decltype(_impl_.to_trajectory_id_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_relative_pose()) {
-    _this->_impl_.relative_pose_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.relative_pose_);
+    relative_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.relative_pose_);
+  } else {
+    relative_pose_ = nullptr;
   }
-  ::memcpy(&_impl_.timestamp_, &from._impl_.timestamp_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.to_trajectory_id_) -
-    reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.to_trajectory_id_));
+  ::memcpy(&timestamp_, &from.timestamp_,
+    static_cast<size_t>(reinterpret_cast<char*>(&to_trajectory_id_) -
+    reinterpret_cast<char*>(&timestamp_)) + sizeof(to_trajectory_id_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.InitialTrajectoryPose)
 }
 
-inline void InitialTrajectoryPose::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.relative_pose_){nullptr}
-    , decltype(_impl_.timestamp_){int64_t{0}}
-    , decltype(_impl_.to_trajectory_id_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void InitialTrajectoryPose::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  ::memset(&relative_pose_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&to_trajectory_id_) -
+      reinterpret_cast<char*>(&relative_pose_)) + sizeof(to_trajectory_id_));
 }
 
 InitialTrajectoryPose::~InitialTrajectoryPose() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.InitialTrajectoryPose)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void InitialTrajectoryPose::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.relative_pose_;
+void InitialTrajectoryPose::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete relative_pose_;
 }
 
+void InitialTrajectoryPose::ArenaDtor(void* object) {
+  InitialTrajectoryPose* _this = reinterpret_cast< InitialTrajectoryPose* >(object);
+  (void)_this;
+}
+void InitialTrajectoryPose::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void InitialTrajectoryPose::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const InitialTrajectoryPose& InitialTrajectoryPose::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InitialTrajectoryPose_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void InitialTrajectoryPose::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.InitialTrajectoryPose)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.relative_pose_ != nullptr) {
-    delete _impl_.relative_pose_;
+  if (GetArena() == nullptr && relative_pose_ != nullptr) {
+    delete relative_pose_;
   }
-  _impl_.relative_pose_ = nullptr;
-  ::memset(&_impl_.timestamp_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.to_trajectory_id_) -
-      reinterpret_cast<char*>(&_impl_.timestamp_)) + sizeof(_impl_.to_trajectory_id_));
+  relative_pose_ = nullptr;
+  ::memset(&timestamp_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&to_trajectory_id_) -
+      reinterpret_cast<char*>(&timestamp_)) + sizeof(to_trajectory_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InitialTrajectoryPose::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* InitialTrajectoryPose::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.transform.proto.Rigid3d relative_pose = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_relative_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int32 to_trajectory_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
-          _impl_.to_trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          to_trajectory_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // int64 timestamp = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* InitialTrajectoryPose::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* InitialTrajectoryPose::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.InitialTrajectoryPose)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d relative_pose = 1;
-  if (this->_internal_has_relative_pose()) {
+  if (this->has_relative_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::relative_pose(this),
-        _Internal::relative_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::relative_pose(this), target, stream);
   }
 
   // int32 to_trajectory_id = 2;
-  if (this->_internal_to_trajectory_id() != 0) {
+  if (this->to_trajectory_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_to_trajectory_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_to_trajectory_id(), target);
   }
 
   // int64 timestamp = 3;
-  if (this->_internal_timestamp() != 0) {
+  if (this->timestamp() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt64ToArray(3, this->_internal_timestamp(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_timestamp(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.InitialTrajectoryPose)
@@ -468,56 +497,78 @@ size_t InitialTrajectoryPose::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.InitialTrajectoryPose)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d relative_pose = 1;
-  if (this->_internal_has_relative_pose()) {
+  if (this->has_relative_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.relative_pose_);
+        *relative_pose_);
   }
 
   // int64 timestamp = 3;
-  if (this->_internal_timestamp() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
+  if (this->timestamp() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_timestamp());
   }
 
   // int32 to_trajectory_id = 2;
-  if (this->_internal_to_trajectory_id() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_to_trajectory_id());
+  if (this->to_trajectory_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_to_trajectory_id());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InitialTrajectoryPose::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    InitialTrajectoryPose::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InitialTrajectoryPose::GetClassData() const { return &_class_data_; }
+void InitialTrajectoryPose::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.InitialTrajectoryPose)
+  GOOGLE_DCHECK_NE(&from, this);
+  const InitialTrajectoryPose* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InitialTrajectoryPose>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.InitialTrajectoryPose)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.InitialTrajectoryPose)
+    MergeFrom(*source);
+  }
+}
 
-
-void InitialTrajectoryPose::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<InitialTrajectoryPose*>(&to_msg);
-  auto& from = static_cast<const InitialTrajectoryPose&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.InitialTrajectoryPose)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void InitialTrajectoryPose::MergeFrom(const InitialTrajectoryPose& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.InitialTrajectoryPose)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_relative_pose()) {
-    _this->_internal_mutable_relative_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_relative_pose());
+  if (from.has_relative_pose()) {
+    _internal_mutable_relative_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_relative_pose());
   }
-  if (from._internal_timestamp() != 0) {
-    _this->_internal_set_timestamp(from._internal_timestamp());
+  if (from.timestamp() != 0) {
+    _internal_set_timestamp(from._internal_timestamp());
   }
-  if (from._internal_to_trajectory_id() != 0) {
-    _this->_internal_set_to_trajectory_id(from._internal_to_trajectory_id());
+  if (from.to_trajectory_id() != 0) {
+    _internal_set_to_trajectory_id(from._internal_to_trajectory_id());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void InitialTrajectoryPose::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.InitialTrajectoryPose)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void InitialTrajectoryPose::CopyFrom(const InitialTrajectoryPose& from) {
@@ -533,133 +584,131 @@ bool InitialTrajectoryPose::IsInitialized() const {
 
 void InitialTrajectoryPose::InternalSwap(InitialTrajectoryPose* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InitialTrajectoryPose, _impl_.to_trajectory_id_)
-      + sizeof(InitialTrajectoryPose::_impl_.to_trajectory_id_)
-      - PROTOBUF_FIELD_OFFSET(InitialTrajectoryPose, _impl_.relative_pose_)>(
-          reinterpret_cast<char*>(&_impl_.relative_pose_),
-          reinterpret_cast<char*>(&other->_impl_.relative_pose_));
+      PROTOBUF_FIELD_OFFSET(InitialTrajectoryPose, to_trajectory_id_)
+      + sizeof(InitialTrajectoryPose::to_trajectory_id_)
+      - PROTOBUF_FIELD_OFFSET(InitialTrajectoryPose, relative_pose_)>(
+          reinterpret_cast<char*>(&relative_pose_),
+          reinterpret_cast<char*>(&other->relative_pose_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InitialTrajectoryPose::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::InitAsDefaultInstance() {
+}
 class TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_Internal {
  public:
 };
 
-TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
 }
 TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_submaps_to_keep_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _this->_impl_.max_submaps_to_keep_ = from._impl_.max_submaps_to_keep_;
+  max_submaps_to_keep_ = from.max_submaps_to_keep_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
 }
 
-inline void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.max_submaps_to_keep_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::SharedCtor() {
+  max_submaps_to_keep_ = 0;
 }
 
 TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::~TrajectoryBuilderOptions_PureLocalizationTrimmerOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::ArenaDtor(void* object) {
+  TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* _this = reinterpret_cast< TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* >(object);
+  (void)_this;
+}
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions& TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TrajectoryBuilderOptions_PureLocalizationTrimmerOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.max_submaps_to_keep_ = 0;
+  max_submaps_to_keep_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 max_submaps_to_keep = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.max_submaps_to_keep_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          max_submaps_to_keep_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 max_submaps_to_keep = 1;
-  if (this->_internal_max_submaps_to_keep() != 0) {
+  if (this->max_submaps_to_keep() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_max_submaps_to_keep(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_max_submaps_to_keep(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
@@ -670,37 +719,58 @@ size_t TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::ByteSizeLong() c
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 max_submaps_to_keep = 1;
-  if (this->_internal_max_submaps_to_keep() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_max_submaps_to_keep());
+  if (this->max_submaps_to_keep() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_max_submaps_to_keep());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::GetClassData() const { return &_class_data_; }
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TrajectoryBuilderOptions_PureLocalizationTrimmerOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TrajectoryBuilderOptions_PureLocalizationTrimmerOptions*>(&to_msg);
-  auto& from = static_cast<const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeFrom(const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_max_submaps_to_keep() != 0) {
-    _this->_internal_set_max_submaps_to_keep(from._internal_max_submaps_to_keep());
+  if (from.max_submaps_to_keep() != 0) {
+    _internal_set_max_submaps_to_keep(from._internal_max_submaps_to_keep());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::CopyFrom(const TrajectoryBuilderOptions_PureLocalizationTrimmerOptions& from) {
@@ -716,18 +786,29 @@ bool TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::IsInitialized() co
 
 void TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::InternalSwap(TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_impl_.max_submaps_to_keep_, other->_impl_.max_submaps_to_keep_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  swap(max_submaps_to_keep_, other->max_submaps_to_keep_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void TrajectoryBuilderOptions::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance.get_mutable()->trajectory_builder_2d_options_ = const_cast< ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D*>(
+      ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D::internal_default_instance());
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance.get_mutable()->trajectory_builder_3d_options_ = const_cast< ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D*>(
+      ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D::internal_default_instance());
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance.get_mutable()->initial_trajectory_pose_ = const_cast< ::cartographer::mapping::proto::InitialTrajectoryPose*>(
+      ::cartographer::mapping::proto::InitialTrajectoryPose::internal_default_instance());
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance.get_mutable()->pure_localization_trimmer_ = const_cast< ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions*>(
+      ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptions_default_instance_._instance.get_mutable()->pose_graph_odometry_motion_filter_ = const_cast< ::cartographer::mapping::proto::MotionFilterOptions*>(
+      ::cartographer::mapping::proto::MotionFilterOptions::internal_default_instance());
+}
 class TrajectoryBuilderOptions::_Internal {
  public:
   static const ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D& trajectory_builder_2d_options(const TrajectoryBuilderOptions* msg);
@@ -739,309 +820,303 @@ class TrajectoryBuilderOptions::_Internal {
 
 const ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D&
 TrajectoryBuilderOptions::_Internal::trajectory_builder_2d_options(const TrajectoryBuilderOptions* msg) {
-  return *msg->_impl_.trajectory_builder_2d_options_;
+  return *msg->trajectory_builder_2d_options_;
 }
 const ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D&
 TrajectoryBuilderOptions::_Internal::trajectory_builder_3d_options(const TrajectoryBuilderOptions* msg) {
-  return *msg->_impl_.trajectory_builder_3d_options_;
+  return *msg->trajectory_builder_3d_options_;
 }
 const ::cartographer::mapping::proto::InitialTrajectoryPose&
 TrajectoryBuilderOptions::_Internal::initial_trajectory_pose(const TrajectoryBuilderOptions* msg) {
-  return *msg->_impl_.initial_trajectory_pose_;
+  return *msg->initial_trajectory_pose_;
 }
 const ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions&
 TrajectoryBuilderOptions::_Internal::pure_localization_trimmer(const TrajectoryBuilderOptions* msg) {
-  return *msg->_impl_.pure_localization_trimmer_;
+  return *msg->pure_localization_trimmer_;
 }
 const ::cartographer::mapping::proto::MotionFilterOptions&
 TrajectoryBuilderOptions::_Internal::pose_graph_odometry_motion_filter(const TrajectoryBuilderOptions* msg) {
-  return *msg->_impl_.pose_graph_odometry_motion_filter_;
+  return *msg->pose_graph_odometry_motion_filter_;
 }
 void TrajectoryBuilderOptions::clear_trajectory_builder_2d_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.trajectory_builder_2d_options_ != nullptr) {
-    delete _impl_.trajectory_builder_2d_options_;
+  if (GetArena() == nullptr && trajectory_builder_2d_options_ != nullptr) {
+    delete trajectory_builder_2d_options_;
   }
-  _impl_.trajectory_builder_2d_options_ = nullptr;
+  trajectory_builder_2d_options_ = nullptr;
 }
 void TrajectoryBuilderOptions::clear_trajectory_builder_3d_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.trajectory_builder_3d_options_ != nullptr) {
-    delete _impl_.trajectory_builder_3d_options_;
+  if (GetArena() == nullptr && trajectory_builder_3d_options_ != nullptr) {
+    delete trajectory_builder_3d_options_;
   }
-  _impl_.trajectory_builder_3d_options_ = nullptr;
+  trajectory_builder_3d_options_ = nullptr;
 }
 void TrajectoryBuilderOptions::clear_pose_graph_odometry_motion_filter() {
-  if (GetArenaForAllocation() == nullptr && _impl_.pose_graph_odometry_motion_filter_ != nullptr) {
-    delete _impl_.pose_graph_odometry_motion_filter_;
+  if (GetArena() == nullptr && pose_graph_odometry_motion_filter_ != nullptr) {
+    delete pose_graph_odometry_motion_filter_;
   }
-  _impl_.pose_graph_odometry_motion_filter_ = nullptr;
+  pose_graph_odometry_motion_filter_ = nullptr;
 }
-TrajectoryBuilderOptions::TrajectoryBuilderOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TrajectoryBuilderOptions::TrajectoryBuilderOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.TrajectoryBuilderOptions)
 }
 TrajectoryBuilderOptions::TrajectoryBuilderOptions(const TrajectoryBuilderOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TrajectoryBuilderOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_builder_2d_options_){nullptr}
-    , decltype(_impl_.trajectory_builder_3d_options_){nullptr}
-    , decltype(_impl_.initial_trajectory_pose_){nullptr}
-    , decltype(_impl_.pure_localization_trimmer_){nullptr}
-    , decltype(_impl_.pose_graph_odometry_motion_filter_){nullptr}
-    , decltype(_impl_.pure_localization_){}
-    , decltype(_impl_.collate_fixed_frame_){}
-    , decltype(_impl_.collate_landmarks_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_trajectory_builder_2d_options()) {
-    _this->_impl_.trajectory_builder_2d_options_ = new ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D(*from._impl_.trajectory_builder_2d_options_);
+    trajectory_builder_2d_options_ = new ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D(*from.trajectory_builder_2d_options_);
+  } else {
+    trajectory_builder_2d_options_ = nullptr;
   }
   if (from._internal_has_trajectory_builder_3d_options()) {
-    _this->_impl_.trajectory_builder_3d_options_ = new ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D(*from._impl_.trajectory_builder_3d_options_);
+    trajectory_builder_3d_options_ = new ::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D(*from.trajectory_builder_3d_options_);
+  } else {
+    trajectory_builder_3d_options_ = nullptr;
   }
   if (from._internal_has_initial_trajectory_pose()) {
-    _this->_impl_.initial_trajectory_pose_ = new ::cartographer::mapping::proto::InitialTrajectoryPose(*from._impl_.initial_trajectory_pose_);
+    initial_trajectory_pose_ = new ::cartographer::mapping::proto::InitialTrajectoryPose(*from.initial_trajectory_pose_);
+  } else {
+    initial_trajectory_pose_ = nullptr;
   }
   if (from._internal_has_pure_localization_trimmer()) {
-    _this->_impl_.pure_localization_trimmer_ = new ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(*from._impl_.pure_localization_trimmer_);
+    pure_localization_trimmer_ = new ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions(*from.pure_localization_trimmer_);
+  } else {
+    pure_localization_trimmer_ = nullptr;
   }
   if (from._internal_has_pose_graph_odometry_motion_filter()) {
-    _this->_impl_.pose_graph_odometry_motion_filter_ = new ::cartographer::mapping::proto::MotionFilterOptions(*from._impl_.pose_graph_odometry_motion_filter_);
+    pose_graph_odometry_motion_filter_ = new ::cartographer::mapping::proto::MotionFilterOptions(*from.pose_graph_odometry_motion_filter_);
+  } else {
+    pose_graph_odometry_motion_filter_ = nullptr;
   }
-  ::memcpy(&_impl_.pure_localization_, &from._impl_.pure_localization_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.collate_landmarks_) -
-    reinterpret_cast<char*>(&_impl_.pure_localization_)) + sizeof(_impl_.collate_landmarks_));
+  ::memcpy(&pure_localization_, &from.pure_localization_,
+    static_cast<size_t>(reinterpret_cast<char*>(&collate_landmarks_) -
+    reinterpret_cast<char*>(&pure_localization_)) + sizeof(collate_landmarks_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryBuilderOptions)
 }
 
-inline void TrajectoryBuilderOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.trajectory_builder_2d_options_){nullptr}
-    , decltype(_impl_.trajectory_builder_3d_options_){nullptr}
-    , decltype(_impl_.initial_trajectory_pose_){nullptr}
-    , decltype(_impl_.pure_localization_trimmer_){nullptr}
-    , decltype(_impl_.pose_graph_odometry_motion_filter_){nullptr}
-    , decltype(_impl_.pure_localization_){false}
-    , decltype(_impl_.collate_fixed_frame_){false}
-    , decltype(_impl_.collate_landmarks_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TrajectoryBuilderOptions::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  ::memset(&trajectory_builder_2d_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&collate_landmarks_) -
+      reinterpret_cast<char*>(&trajectory_builder_2d_options_)) + sizeof(collate_landmarks_));
 }
 
 TrajectoryBuilderOptions::~TrajectoryBuilderOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryBuilderOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TrajectoryBuilderOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.trajectory_builder_2d_options_;
-  if (this != internal_default_instance()) delete _impl_.trajectory_builder_3d_options_;
-  if (this != internal_default_instance()) delete _impl_.initial_trajectory_pose_;
-  if (this != internal_default_instance()) delete _impl_.pure_localization_trimmer_;
-  if (this != internal_default_instance()) delete _impl_.pose_graph_odometry_motion_filter_;
+void TrajectoryBuilderOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete trajectory_builder_2d_options_;
+  if (this != internal_default_instance()) delete trajectory_builder_3d_options_;
+  if (this != internal_default_instance()) delete initial_trajectory_pose_;
+  if (this != internal_default_instance()) delete pure_localization_trimmer_;
+  if (this != internal_default_instance()) delete pose_graph_odometry_motion_filter_;
 }
 
+void TrajectoryBuilderOptions::ArenaDtor(void* object) {
+  TrajectoryBuilderOptions* _this = reinterpret_cast< TrajectoryBuilderOptions* >(object);
+  (void)_this;
+}
+void TrajectoryBuilderOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TrajectoryBuilderOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TrajectoryBuilderOptions& TrajectoryBuilderOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TrajectoryBuilderOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.trajectory_builder_2d_options_ != nullptr) {
-    delete _impl_.trajectory_builder_2d_options_;
+  if (GetArena() == nullptr && trajectory_builder_2d_options_ != nullptr) {
+    delete trajectory_builder_2d_options_;
   }
-  _impl_.trajectory_builder_2d_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.trajectory_builder_3d_options_ != nullptr) {
-    delete _impl_.trajectory_builder_3d_options_;
+  trajectory_builder_2d_options_ = nullptr;
+  if (GetArena() == nullptr && trajectory_builder_3d_options_ != nullptr) {
+    delete trajectory_builder_3d_options_;
   }
-  _impl_.trajectory_builder_3d_options_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.initial_trajectory_pose_ != nullptr) {
-    delete _impl_.initial_trajectory_pose_;
+  trajectory_builder_3d_options_ = nullptr;
+  if (GetArena() == nullptr && initial_trajectory_pose_ != nullptr) {
+    delete initial_trajectory_pose_;
   }
-  _impl_.initial_trajectory_pose_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.pure_localization_trimmer_ != nullptr) {
-    delete _impl_.pure_localization_trimmer_;
+  initial_trajectory_pose_ = nullptr;
+  if (GetArena() == nullptr && pure_localization_trimmer_ != nullptr) {
+    delete pure_localization_trimmer_;
   }
-  _impl_.pure_localization_trimmer_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.pose_graph_odometry_motion_filter_ != nullptr) {
-    delete _impl_.pose_graph_odometry_motion_filter_;
+  pure_localization_trimmer_ = nullptr;
+  if (GetArena() == nullptr && pose_graph_odometry_motion_filter_ != nullptr) {
+    delete pose_graph_odometry_motion_filter_;
   }
-  _impl_.pose_graph_odometry_motion_filter_ = nullptr;
-  ::memset(&_impl_.pure_localization_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.collate_landmarks_) -
-      reinterpret_cast<char*>(&_impl_.pure_localization_)) + sizeof(_impl_.collate_landmarks_));
+  pose_graph_odometry_motion_filter_ = nullptr;
+  ::memset(&pure_localization_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&collate_landmarks_) -
+      reinterpret_cast<char*>(&pure_localization_)) + sizeof(collate_landmarks_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TrajectoryBuilderOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TrajectoryBuilderOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions2D trajectory_builder_2d_options = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_trajectory_builder_2d_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D trajectory_builder_3d_options = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_trajectory_builder_3d_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool pure_localization = 3 [deprecated = true];
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
-          _impl_.pure_localization_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          pure_localization_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.InitialTrajectoryPose initial_trajectory_pose = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_initial_trajectory_pose(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions pure_localization_trimmer = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_pure_localization_trimmer(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool collate_fixed_frame = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
-          _impl_.collate_fixed_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          collate_fixed_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // bool collate_landmarks = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
-          _impl_.collate_landmarks_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          collate_landmarks_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.MotionFilterOptions pose_graph_odometry_motion_filter = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_pose_graph_odometry_motion_filter(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TrajectoryBuilderOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TrajectoryBuilderOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions2D trajectory_builder_2d_options = 1;
-  if (this->_internal_has_trajectory_builder_2d_options()) {
+  if (this->has_trajectory_builder_2d_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::trajectory_builder_2d_options(this),
-        _Internal::trajectory_builder_2d_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        1, _Internal::trajectory_builder_2d_options(this), target, stream);
   }
 
   // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D trajectory_builder_3d_options = 2;
-  if (this->_internal_has_trajectory_builder_3d_options()) {
+  if (this->has_trajectory_builder_3d_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::trajectory_builder_3d_options(this),
-        _Internal::trajectory_builder_3d_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::trajectory_builder_3d_options(this), target, stream);
   }
 
   // bool pure_localization = 3 [deprecated = true];
-  if (this->_internal_pure_localization() != 0) {
+  if (this->pure_localization() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_pure_localization(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_pure_localization(), target);
   }
 
   // .cartographer.mapping.proto.InitialTrajectoryPose initial_trajectory_pose = 4;
-  if (this->_internal_has_initial_trajectory_pose()) {
+  if (this->has_initial_trajectory_pose()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, _Internal::initial_trajectory_pose(this),
-        _Internal::initial_trajectory_pose(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        4, _Internal::initial_trajectory_pose(this), target, stream);
   }
 
   // .cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions pure_localization_trimmer = 6;
-  if (this->_internal_has_pure_localization_trimmer()) {
+  if (this->has_pure_localization_trimmer()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, _Internal::pure_localization_trimmer(this),
-        _Internal::pure_localization_trimmer(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        6, _Internal::pure_localization_trimmer(this), target, stream);
   }
 
   // bool collate_fixed_frame = 7;
-  if (this->_internal_collate_fixed_frame() != 0) {
+  if (this->collate_fixed_frame() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(7, this->_internal_collate_fixed_frame(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_collate_fixed_frame(), target);
   }
 
   // bool collate_landmarks = 8;
-  if (this->_internal_collate_landmarks() != 0) {
+  if (this->collate_landmarks() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_collate_landmarks(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_collate_landmarks(), target);
   }
 
   // .cartographer.mapping.proto.MotionFilterOptions pose_graph_odometry_motion_filter = 9;
-  if (this->_internal_has_pose_graph_odometry_motion_filter()) {
+  if (this->has_pose_graph_odometry_motion_filter()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(9, _Internal::pose_graph_odometry_motion_filter(this),
-        _Internal::pose_graph_odometry_motion_filter(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        9, _Internal::pose_graph_odometry_motion_filter(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryBuilderOptions)
@@ -1052,108 +1127,122 @@ size_t TrajectoryBuilderOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions2D trajectory_builder_2d_options = 1;
-  if (this->_internal_has_trajectory_builder_2d_options()) {
+  if (this->has_trajectory_builder_2d_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.trajectory_builder_2d_options_);
+        *trajectory_builder_2d_options_);
   }
 
   // .cartographer.mapping.proto.LocalTrajectoryBuilderOptions3D trajectory_builder_3d_options = 2;
-  if (this->_internal_has_trajectory_builder_3d_options()) {
+  if (this->has_trajectory_builder_3d_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.trajectory_builder_3d_options_);
+        *trajectory_builder_3d_options_);
   }
 
   // .cartographer.mapping.proto.InitialTrajectoryPose initial_trajectory_pose = 4;
-  if (this->_internal_has_initial_trajectory_pose()) {
+  if (this->has_initial_trajectory_pose()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.initial_trajectory_pose_);
+        *initial_trajectory_pose_);
   }
 
   // .cartographer.mapping.proto.TrajectoryBuilderOptions.PureLocalizationTrimmerOptions pure_localization_trimmer = 6;
-  if (this->_internal_has_pure_localization_trimmer()) {
+  if (this->has_pure_localization_trimmer()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.pure_localization_trimmer_);
+        *pure_localization_trimmer_);
   }
 
   // .cartographer.mapping.proto.MotionFilterOptions pose_graph_odometry_motion_filter = 9;
-  if (this->_internal_has_pose_graph_odometry_motion_filter()) {
+  if (this->has_pose_graph_odometry_motion_filter()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.pose_graph_odometry_motion_filter_);
+        *pose_graph_odometry_motion_filter_);
   }
 
   // bool pure_localization = 3 [deprecated = true];
-  if (this->_internal_pure_localization() != 0) {
+  if (this->pure_localization() != 0) {
     total_size += 1 + 1;
   }
 
   // bool collate_fixed_frame = 7;
-  if (this->_internal_collate_fixed_frame() != 0) {
+  if (this->collate_fixed_frame() != 0) {
     total_size += 1 + 1;
   }
 
   // bool collate_landmarks = 8;
-  if (this->_internal_collate_landmarks() != 0) {
+  if (this->collate_landmarks() != 0) {
     total_size += 1 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TrajectoryBuilderOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TrajectoryBuilderOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TrajectoryBuilderOptions::GetClassData() const { return &_class_data_; }
+void TrajectoryBuilderOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TrajectoryBuilderOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TrajectoryBuilderOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryBuilderOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryBuilderOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void TrajectoryBuilderOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TrajectoryBuilderOptions*>(&to_msg);
-  auto& from = static_cast<const TrajectoryBuilderOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TrajectoryBuilderOptions::MergeFrom(const TrajectoryBuilderOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_trajectory_builder_2d_options()) {
-    _this->_internal_mutable_trajectory_builder_2d_options()->::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D::MergeFrom(
-        from._internal_trajectory_builder_2d_options());
+  if (from.has_trajectory_builder_2d_options()) {
+    _internal_mutable_trajectory_builder_2d_options()->::cartographer::mapping::proto::LocalTrajectoryBuilderOptions2D::MergeFrom(from._internal_trajectory_builder_2d_options());
   }
-  if (from._internal_has_trajectory_builder_3d_options()) {
-    _this->_internal_mutable_trajectory_builder_3d_options()->::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D::MergeFrom(
-        from._internal_trajectory_builder_3d_options());
+  if (from.has_trajectory_builder_3d_options()) {
+    _internal_mutable_trajectory_builder_3d_options()->::cartographer::mapping::proto::LocalTrajectoryBuilderOptions3D::MergeFrom(from._internal_trajectory_builder_3d_options());
   }
-  if (from._internal_has_initial_trajectory_pose()) {
-    _this->_internal_mutable_initial_trajectory_pose()->::cartographer::mapping::proto::InitialTrajectoryPose::MergeFrom(
-        from._internal_initial_trajectory_pose());
+  if (from.has_initial_trajectory_pose()) {
+    _internal_mutable_initial_trajectory_pose()->::cartographer::mapping::proto::InitialTrajectoryPose::MergeFrom(from._internal_initial_trajectory_pose());
   }
-  if (from._internal_has_pure_localization_trimmer()) {
-    _this->_internal_mutable_pure_localization_trimmer()->::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeFrom(
-        from._internal_pure_localization_trimmer());
+  if (from.has_pure_localization_trimmer()) {
+    _internal_mutable_pure_localization_trimmer()->::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions::MergeFrom(from._internal_pure_localization_trimmer());
   }
-  if (from._internal_has_pose_graph_odometry_motion_filter()) {
-    _this->_internal_mutable_pose_graph_odometry_motion_filter()->::cartographer::mapping::proto::MotionFilterOptions::MergeFrom(
-        from._internal_pose_graph_odometry_motion_filter());
+  if (from.has_pose_graph_odometry_motion_filter()) {
+    _internal_mutable_pose_graph_odometry_motion_filter()->::cartographer::mapping::proto::MotionFilterOptions::MergeFrom(from._internal_pose_graph_odometry_motion_filter());
   }
-  if (from._internal_pure_localization() != 0) {
-    _this->_internal_set_pure_localization(from._internal_pure_localization());
+  if (from.pure_localization() != 0) {
+    _internal_set_pure_localization(from._internal_pure_localization());
   }
-  if (from._internal_collate_fixed_frame() != 0) {
-    _this->_internal_set_collate_fixed_frame(from._internal_collate_fixed_frame());
+  if (from.collate_fixed_frame() != 0) {
+    _internal_set_collate_fixed_frame(from._internal_collate_fixed_frame());
   }
-  if (from._internal_collate_landmarks() != 0) {
-    _this->_internal_set_collate_landmarks(from._internal_collate_landmarks());
+  if (from.collate_landmarks() != 0) {
+    _internal_set_collate_landmarks(from._internal_collate_landmarks());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TrajectoryBuilderOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryBuilderOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TrajectoryBuilderOptions::CopyFrom(const TrajectoryBuilderOptions& from) {
@@ -1169,161 +1258,151 @@ bool TrajectoryBuilderOptions::IsInitialized() const {
 
 void TrajectoryBuilderOptions::InternalSwap(TrajectoryBuilderOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TrajectoryBuilderOptions, _impl_.collate_landmarks_)
-      + sizeof(TrajectoryBuilderOptions::_impl_.collate_landmarks_)
-      - PROTOBUF_FIELD_OFFSET(TrajectoryBuilderOptions, _impl_.trajectory_builder_2d_options_)>(
-          reinterpret_cast<char*>(&_impl_.trajectory_builder_2d_options_),
-          reinterpret_cast<char*>(&other->_impl_.trajectory_builder_2d_options_));
+      PROTOBUF_FIELD_OFFSET(TrajectoryBuilderOptions, collate_landmarks_)
+      + sizeof(TrajectoryBuilderOptions::collate_landmarks_)
+      - PROTOBUF_FIELD_OFFSET(TrajectoryBuilderOptions, trajectory_builder_2d_options_)>(
+          reinterpret_cast<char*>(&trajectory_builder_2d_options_),
+          reinterpret_cast<char*>(&other->trajectory_builder_2d_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TrajectoryBuilderOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[2]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void SensorId::InitAsDefaultInstance() {
+}
 class SensorId::_Internal {
  public:
 };
 
-SensorId::SensorId(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+SensorId::SensorId(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.SensorId)
 }
 SensorId::SensorId(const SensorId& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SensorId* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.id_){}
-    , decltype(_impl_.type_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _impl_.id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.id_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_id().empty()) {
-    _this->_impl_.id_.Set(from._internal_id(), 
-      _this->GetArenaForAllocation());
+    id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_id(),
+      GetArena());
   }
-  _this->_impl_.type_ = from._impl_.type_;
+  type_ = from.type_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SensorId)
 }
 
-inline void SensorId::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.id_){}
-    , decltype(_impl_.type_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
-  _impl_.id_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.id_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+void SensorId::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
 }
 
 SensorId::~SensorId() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SensorId)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void SensorId::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.id_.Destroy();
+void SensorId::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void SensorId::ArenaDtor(void* object) {
+  SensorId* _this = reinterpret_cast< SensorId* >(object);
+  (void)_this;
+}
+void SensorId::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void SensorId::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const SensorId& SensorId::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SensorId_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SensorId::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SensorId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.id_.ClearToEmpty();
-  _impl_.type_ = 0;
+  id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  type_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SensorId::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* SensorId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.SensorId.SensorType type = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_type(static_cast<::cartographer::mapping::proto::SensorId_SensorType>(val));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // string id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           auto str = _internal_mutable_id();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "cartographer.mapping.proto.SensorId.id"));
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "cartographer.mapping.proto.SensorId.id"));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* SensorId::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SensorId::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SensorId)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.SensorId.SensorType type = 1;
-  if (this->_internal_type() != 0) {
+  if (this->type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteEnumToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_type(), target);
   }
 
   // string id = 2;
-  if (!this->_internal_id().empty()) {
+  if (this->id().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1333,7 +1412,7 @@ uint8_t* SensorId::_InternalSerialize(
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SensorId)
@@ -1344,48 +1423,67 @@ size_t SensorId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SensorId)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string id = 2;
-  if (!this->_internal_id().empty()) {
+  if (this->id().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_id());
   }
 
   // .cartographer.mapping.proto.SensorId.SensorType type = 1;
-  if (this->_internal_type() != 0) {
+  if (this->type() != 0) {
     total_size += 1 +
-      ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SensorId::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SensorId::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SensorId::GetClassData() const { return &_class_data_; }
+void SensorId::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SensorId)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SensorId* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SensorId>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SensorId)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SensorId)
+    MergeFrom(*source);
+  }
+}
 
-
-void SensorId::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SensorId*>(&to_msg);
-  auto& from = static_cast<const SensorId&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SensorId)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void SensorId::MergeFrom(const SensorId& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SensorId)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_id().empty()) {
-    _this->_internal_set_id(from._internal_id());
+  if (from.id().size() > 0) {
+    _internal_set_id(from._internal_id());
   }
-  if (from._internal_type() != 0) {
-    _this->_internal_set_type(from._internal_type());
+  if (from.type() != 0) {
+    _internal_set_type(from._internal_type());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SensorId::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SensorId)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void SensorId::CopyFrom(const SensorId& from) {
@@ -1401,24 +1499,22 @@ bool SensorId::IsInitialized() const {
 
 void SensorId::InternalSwap(SensorId* other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.id_, lhs_arena,
-      &other->_impl_.id_, rhs_arena
-  );
-  swap(_impl_.type_, other->_impl_.type_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  swap(type_, other->type_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SensorId::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[3]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void TrajectoryBuilderOptionsWithSensorIds::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_TrajectoryBuilderOptionsWithSensorIds_default_instance_._instance.get_mutable()->trajectory_builder_options_ = const_cast< ::cartographer::mapping::proto::TrajectoryBuilderOptions*>(
+      ::cartographer::mapping::proto::TrajectoryBuilderOptions::internal_default_instance());
+}
 class TrajectoryBuilderOptionsWithSensorIds::_Internal {
  public:
   static const ::cartographer::mapping::proto::TrajectoryBuilderOptions& trajectory_builder_options(const TrajectoryBuilderOptionsWithSensorIds* msg);
@@ -1426,82 +1522,83 @@ class TrajectoryBuilderOptionsWithSensorIds::_Internal {
 
 const ::cartographer::mapping::proto::TrajectoryBuilderOptions&
 TrajectoryBuilderOptionsWithSensorIds::_Internal::trajectory_builder_options(const TrajectoryBuilderOptionsWithSensorIds* msg) {
-  return *msg->_impl_.trajectory_builder_options_;
+  return *msg->trajectory_builder_options_;
 }
-TrajectoryBuilderOptionsWithSensorIds::TrajectoryBuilderOptionsWithSensorIds(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TrajectoryBuilderOptionsWithSensorIds::TrajectoryBuilderOptionsWithSensorIds(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  sensor_id_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
 }
 TrajectoryBuilderOptionsWithSensorIds::TrajectoryBuilderOptionsWithSensorIds(const TrajectoryBuilderOptionsWithSensorIds& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TrajectoryBuilderOptionsWithSensorIds* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.sensor_id_){from._impl_.sensor_id_}
-    , decltype(_impl_.trajectory_builder_options_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      sensor_id_(from.sensor_id_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_trajectory_builder_options()) {
-    _this->_impl_.trajectory_builder_options_ = new ::cartographer::mapping::proto::TrajectoryBuilderOptions(*from._impl_.trajectory_builder_options_);
+    trajectory_builder_options_ = new ::cartographer::mapping::proto::TrajectoryBuilderOptions(*from.trajectory_builder_options_);
+  } else {
+    trajectory_builder_options_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
 }
 
-inline void TrajectoryBuilderOptionsWithSensorIds::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.sensor_id_){arena}
-    , decltype(_impl_.trajectory_builder_options_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TrajectoryBuilderOptionsWithSensorIds::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  trajectory_builder_options_ = nullptr;
 }
 
 TrajectoryBuilderOptionsWithSensorIds::~TrajectoryBuilderOptionsWithSensorIds() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TrajectoryBuilderOptionsWithSensorIds::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.sensor_id_.~RepeatedPtrField();
-  if (this != internal_default_instance()) delete _impl_.trajectory_builder_options_;
+void TrajectoryBuilderOptionsWithSensorIds::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete trajectory_builder_options_;
 }
 
+void TrajectoryBuilderOptionsWithSensorIds::ArenaDtor(void* object) {
+  TrajectoryBuilderOptionsWithSensorIds* _this = reinterpret_cast< TrajectoryBuilderOptionsWithSensorIds* >(object);
+  (void)_this;
+}
+void TrajectoryBuilderOptionsWithSensorIds::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TrajectoryBuilderOptionsWithSensorIds::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TrajectoryBuilderOptionsWithSensorIds& TrajectoryBuilderOptionsWithSensorIds::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TrajectoryBuilderOptionsWithSensorIds_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TrajectoryBuilderOptionsWithSensorIds::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.sensor_id_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.trajectory_builder_options_ != nullptr) {
-    delete _impl_.trajectory_builder_options_;
+  sensor_id_.Clear();
+  if (GetArena() == nullptr && trajectory_builder_options_ != nullptr) {
+    delete trajectory_builder_options_;
   }
-  _impl_.trajectory_builder_options_ = nullptr;
+  trajectory_builder_options_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TrajectoryBuilderOptionsWithSensorIds::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TrajectoryBuilderOptionsWithSensorIds::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .cartographer.mapping.proto.SensorId sensor_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1509,63 +1606,61 @@ const char* TrajectoryBuilderOptionsWithSensorIds::_InternalParse(const char* pt
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TrajectoryBuilderOptions trajectory_builder_options = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_trajectory_builder_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TrajectoryBuilderOptionsWithSensorIds::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TrajectoryBuilderOptionsWithSensorIds::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.SensorId sensor_id = 1;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_sensor_id_size()); i < n; i++) {
-    const auto& repfield = this->_internal_sensor_id(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_sensor_id_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(1, this->_internal_sensor_id(i), target, stream);
   }
 
   // .cartographer.mapping.proto.TrajectoryBuilderOptions trajectory_builder_options = 2;
-  if (this->_internal_has_trajectory_builder_options()) {
+  if (this->has_trajectory_builder_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::trajectory_builder_options(this),
-        _Internal::trajectory_builder_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::trajectory_builder_options(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
@@ -1576,48 +1671,66 @@ size_t TrajectoryBuilderOptionsWithSensorIds::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.SensorId sensor_id = 1;
   total_size += 1UL * this->_internal_sensor_id_size();
-  for (const auto& msg : this->_impl_.sensor_id_) {
+  for (const auto& msg : this->sensor_id_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // .cartographer.mapping.proto.TrajectoryBuilderOptions trajectory_builder_options = 2;
-  if (this->_internal_has_trajectory_builder_options()) {
+  if (this->has_trajectory_builder_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.trajectory_builder_options_);
+        *trajectory_builder_options_);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TrajectoryBuilderOptionsWithSensorIds::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TrajectoryBuilderOptionsWithSensorIds::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TrajectoryBuilderOptionsWithSensorIds::GetClassData() const { return &_class_data_; }
+void TrajectoryBuilderOptionsWithSensorIds::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TrajectoryBuilderOptionsWithSensorIds* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TrajectoryBuilderOptionsWithSensorIds>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
+    MergeFrom(*source);
+  }
+}
 
-
-void TrajectoryBuilderOptionsWithSensorIds::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TrajectoryBuilderOptionsWithSensorIds*>(&to_msg);
-  auto& from = static_cast<const TrajectoryBuilderOptionsWithSensorIds&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TrajectoryBuilderOptionsWithSensorIds::MergeFrom(const TrajectoryBuilderOptionsWithSensorIds& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.sensor_id_.MergeFrom(from._impl_.sensor_id_);
-  if (from._internal_has_trajectory_builder_options()) {
-    _this->_internal_mutable_trajectory_builder_options()->::cartographer::mapping::proto::TrajectoryBuilderOptions::MergeFrom(
-        from._internal_trajectory_builder_options());
+  sensor_id_.MergeFrom(from.sensor_id_);
+  if (from.has_trajectory_builder_options()) {
+    _internal_mutable_trajectory_builder_options()->::cartographer::mapping::proto::TrajectoryBuilderOptions::MergeFrom(from._internal_trajectory_builder_options());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TrajectoryBuilderOptionsWithSensorIds::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TrajectoryBuilderOptionsWithSensorIds::CopyFrom(const TrajectoryBuilderOptionsWithSensorIds& from) {
@@ -1633,87 +1746,88 @@ bool TrajectoryBuilderOptionsWithSensorIds::IsInitialized() const {
 
 void TrajectoryBuilderOptionsWithSensorIds::InternalSwap(TrajectoryBuilderOptionsWithSensorIds* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.sensor_id_.InternalSwap(&other->_impl_.sensor_id_);
-  swap(_impl_.trajectory_builder_options_, other->_impl_.trajectory_builder_options_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  sensor_id_.InternalSwap(&other->sensor_id_);
+  swap(trajectory_builder_options_, other->trajectory_builder_options_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TrajectoryBuilderOptionsWithSensorIds::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[4]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void AllTrajectoryBuilderOptions::InitAsDefaultInstance() {
+}
 class AllTrajectoryBuilderOptions::_Internal {
  public:
 };
 
-AllTrajectoryBuilderOptions::AllTrajectoryBuilderOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+AllTrajectoryBuilderOptions::AllTrajectoryBuilderOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  options_with_sensor_ids_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
 }
 AllTrajectoryBuilderOptions::AllTrajectoryBuilderOptions(const AllTrajectoryBuilderOptions& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  AllTrajectoryBuilderOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.options_with_sensor_ids_){from._impl_.options_with_sensor_ids_}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      options_with_sensor_ids_(from.options_with_sensor_ids_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
 }
 
-inline void AllTrajectoryBuilderOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.options_with_sensor_ids_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void AllTrajectoryBuilderOptions::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
 }
 
 AllTrajectoryBuilderOptions::~AllTrajectoryBuilderOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void AllTrajectoryBuilderOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.options_with_sensor_ids_.~RepeatedPtrField();
+void AllTrajectoryBuilderOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void AllTrajectoryBuilderOptions::ArenaDtor(void* object) {
+  AllTrajectoryBuilderOptions* _this = reinterpret_cast< AllTrajectoryBuilderOptions* >(object);
+  (void)_this;
+}
+void AllTrajectoryBuilderOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void AllTrajectoryBuilderOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const AllTrajectoryBuilderOptions& AllTrajectoryBuilderOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AllTrajectoryBuilderOptions_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AllTrajectoryBuilderOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.options_with_sensor_ids_.Clear();
+  options_with_sensor_ids_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AllTrajectoryBuilderOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* AllTrajectoryBuilderOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds options_with_sensor_ids = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1721,48 +1835,46 @@ const char* AllTrajectoryBuilderOptions::_InternalParse(const char* ptr, ::_pbi:
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* AllTrajectoryBuilderOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* AllTrajectoryBuilderOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds options_with_sensor_ids = 1;
-  for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_options_with_sensor_ids_size()); i < n; i++) {
-    const auto& repfield = this->_internal_options_with_sensor_ids(i);
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_options_with_sensor_ids_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+      InternalWriteMessage(1, this->_internal_options_with_sensor_ids(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
@@ -1773,37 +1885,56 @@ size_t AllTrajectoryBuilderOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .cartographer.mapping.proto.TrajectoryBuilderOptionsWithSensorIds options_with_sensor_ids = 1;
   total_size += 1UL * this->_internal_options_with_sensor_ids_size();
-  for (const auto& msg : this->_impl_.options_with_sensor_ids_) {
+  for (const auto& msg : this->options_with_sensor_ids_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AllTrajectoryBuilderOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    AllTrajectoryBuilderOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AllTrajectoryBuilderOptions::GetClassData() const { return &_class_data_; }
+void AllTrajectoryBuilderOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AllTrajectoryBuilderOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AllTrajectoryBuilderOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void AllTrajectoryBuilderOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<AllTrajectoryBuilderOptions*>(&to_msg);
-  auto& from = static_cast<const AllTrajectoryBuilderOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void AllTrajectoryBuilderOptions::MergeFrom(const AllTrajectoryBuilderOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.options_with_sensor_ids_.MergeFrom(from._impl_.options_with_sensor_ids_);
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  options_with_sensor_ids_.MergeFrom(from.options_with_sensor_ids_);
+}
+
+void AllTrajectoryBuilderOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.AllTrajectoryBuilderOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void AllTrajectoryBuilderOptions::CopyFrom(const AllTrajectoryBuilderOptions& from) {
@@ -1819,43 +1950,36 @@ bool AllTrajectoryBuilderOptions::IsInitialized() const {
 
 void AllTrajectoryBuilderOptions::InternalSwap(AllTrajectoryBuilderOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.options_with_sensor_ids_.InternalSwap(&other->_impl_.options_with_sensor_ids_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  options_with_sensor_ids_.InternalSwap(&other->options_with_sensor_ids_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AllTrajectoryBuilderOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2ftrajectory_5fbuilder_5foptions_2eproto[5]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::InitialTrajectoryPose*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::InitialTrajectoryPose >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::InitialTrajectoryPose* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::InitialTrajectoryPose >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::InitialTrajectoryPose >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::TrajectoryBuilderOptions_PureLocalizationTrimmerOptions >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::TrajectoryBuilderOptions >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SensorId*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SensorId >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::SensorId* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::SensorId >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::SensorId >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::TrajectoryBuilderOptionsWithSensorIds >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::AllTrajectoryBuilderOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::AllTrajectoryBuilderOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::AllTrajectoryBuilderOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::AllTrajectoryBuilderOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::AllTrajectoryBuilderOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -14,52 +14,51 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2ftransform_2fproto_2ftransform_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto;
 namespace cartographer {
 namespace transform {
 namespace proto {
-PROTOBUF_CONSTEXPR TimestampedTransform::TimestampedTransform(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.transform_)*/nullptr
-  , /*decltype(_impl_.time_)*/int64_t{0}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct TimestampedTransformDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR TimestampedTransformDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~TimestampedTransformDefaultTypeInternal() {}
-  union {
-    TimestampedTransform _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TimestampedTransformDefaultTypeInternal _TimestampedTransform_default_instance_;
+class TimestampedTransformDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TimestampedTransform> _instance;
+} _TimestampedTransform_default_instance_;
 }  // namespace proto
 }  // namespace transform
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = nullptr;
+static void InitDefaultsscc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::transform::proto::_TimestampedTransform_default_instance_;
+    new (ptr) ::cartographer::transform::proto::TimestampedTransform();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::transform::proto::TimestampedTransform::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto}, {
+      &scc_info_Rigid3d_cartographer_2ftransform_2fproto_2ftransform_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::transform::proto::TimestampedTransform, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::transform::proto::TimestampedTransform, _impl_.time_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::transform::proto::TimestampedTransform, _impl_.transform_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::transform::proto::TimestampedTransform, time_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::transform::proto::TimestampedTransform, transform_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::transform::proto::TimestampedTransform)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::transform::proto::TimestampedTransform)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::transform::proto::_TimestampedTransform_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::transform::proto::_TimestampedTransform_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -70,30 +69,32 @@ const char descriptor_table_protodef_cartographer_2ftransform_2fproto_2ftimestam
   "\n\004time\030\001 \001(\003\0228\n\ttransform\030\002 \001(\0132%.cartog"
   "rapher.transform.proto.Rigid3db\006proto3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_deps[1] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_deps[1] = {
   &::descriptor_table_cartographer_2ftransform_2fproto_2ftransform_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = {
-    false, false, 238, descriptor_table_protodef_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto,
-    "cartographer/transform/proto/timestamped_transform.proto",
-    &descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_once, descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_deps, 1, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto::offsets,
-    file_level_metadata_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto, file_level_enum_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto,
-    file_level_service_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_sccs[1] = {
+  &scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_getter() {
-  return &descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto, "cartographer/transform/proto/timestamped_transform.proto", 238,
+  &descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_once, descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_sccs, descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_deps, 1, 1,
+  schemas, file_default_instances, TableStruct_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto::offsets,
+  file_level_metadata_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto, 1, file_level_enum_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto, file_level_service_descriptors_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto(&descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto);
+static bool dynamic_init_dummy_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto)), true);
 namespace cartographer {
 namespace transform {
 namespace proto {
 
 // ===================================================================
 
+void TimestampedTransform::InitAsDefaultInstance() {
+  ::cartographer::transform::proto::_TimestampedTransform_default_instance_._instance.get_mutable()->transform_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+}
 class TimestampedTransform::_Internal {
  public:
   static const ::cartographer::transform::proto::Rigid3d& transform(const TimestampedTransform* msg);
@@ -101,145 +102,145 @@ class TimestampedTransform::_Internal {
 
 const ::cartographer::transform::proto::Rigid3d&
 TimestampedTransform::_Internal::transform(const TimestampedTransform* msg) {
-  return *msg->_impl_.transform_;
+  return *msg->transform_;
 }
 void TimestampedTransform::clear_transform() {
-  if (GetArenaForAllocation() == nullptr && _impl_.transform_ != nullptr) {
-    delete _impl_.transform_;
+  if (GetArena() == nullptr && transform_ != nullptr) {
+    delete transform_;
   }
-  _impl_.transform_ = nullptr;
+  transform_ = nullptr;
 }
-TimestampedTransform::TimestampedTransform(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+TimestampedTransform::TimestampedTransform(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.transform.proto.TimestampedTransform)
 }
 TimestampedTransform::TimestampedTransform(const TimestampedTransform& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  TimestampedTransform* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.transform_){nullptr}
-    , decltype(_impl_.time_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_transform()) {
-    _this->_impl_.transform_ = new ::cartographer::transform::proto::Rigid3d(*from._impl_.transform_);
+    transform_ = new ::cartographer::transform::proto::Rigid3d(*from.transform_);
+  } else {
+    transform_ = nullptr;
   }
-  _this->_impl_.time_ = from._impl_.time_;
+  time_ = from.time_;
   // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.TimestampedTransform)
 }
 
-inline void TimestampedTransform::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.transform_){nullptr}
-    , decltype(_impl_.time_){int64_t{0}}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void TimestampedTransform::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto.base);
+  ::memset(&transform_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&transform_)) + sizeof(time_));
 }
 
 TimestampedTransform::~TimestampedTransform() {
   // @@protoc_insertion_point(destructor:cartographer.transform.proto.TimestampedTransform)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void TimestampedTransform::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.transform_;
+void TimestampedTransform::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete transform_;
 }
 
+void TimestampedTransform::ArenaDtor(void* object) {
+  TimestampedTransform* _this = reinterpret_cast< TimestampedTransform* >(object);
+  (void)_this;
+}
+void TimestampedTransform::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void TimestampedTransform::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const TimestampedTransform& TimestampedTransform::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TimestampedTransform_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TimestampedTransform::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.TimestampedTransform)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.transform_ != nullptr) {
-    delete _impl_.transform_;
+  if (GetArena() == nullptr && transform_ != nullptr) {
+    delete transform_;
   }
-  _impl_.transform_ = nullptr;
-  _impl_.time_ = int64_t{0};
+  transform_ = nullptr;
+  time_ = PROTOBUF_LONGLONG(0);
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TimestampedTransform::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* TimestampedTransform::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int64 time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.transform.proto.Rigid3d transform = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_transform(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* TimestampedTransform::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TimestampedTransform::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.TimestampedTransform)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 time = 1;
-  if (this->_internal_time() != 0) {
+  if (this->time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt64ToArray(1, this->_internal_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_time(), target);
   }
 
   // .cartographer.transform.proto.Rigid3d transform = 2;
-  if (this->_internal_has_transform()) {
+  if (this->has_transform()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::transform(this),
-        _Internal::transform(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::transform(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.TimestampedTransform)
@@ -250,48 +251,68 @@ size_t TimestampedTransform::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.TimestampedTransform)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.transform.proto.Rigid3d transform = 2;
-  if (this->_internal_has_transform()) {
+  if (this->has_transform()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.transform_);
+        *transform_);
   }
 
   // int64 time = 1;
-  if (this->_internal_time() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_time());
+  if (this->time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_time());
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TimestampedTransform::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    TimestampedTransform::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TimestampedTransform::GetClassData() const { return &_class_data_; }
+void TimestampedTransform::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.TimestampedTransform)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TimestampedTransform* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TimestampedTransform>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.TimestampedTransform)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.TimestampedTransform)
+    MergeFrom(*source);
+  }
+}
 
-
-void TimestampedTransform::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<TimestampedTransform*>(&to_msg);
-  auto& from = static_cast<const TimestampedTransform&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.TimestampedTransform)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void TimestampedTransform::MergeFrom(const TimestampedTransform& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.TimestampedTransform)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_transform()) {
-    _this->_internal_mutable_transform()->::cartographer::transform::proto::Rigid3d::MergeFrom(
-        from._internal_transform());
+  if (from.has_transform()) {
+    _internal_mutable_transform()->::cartographer::transform::proto::Rigid3d::MergeFrom(from._internal_transform());
   }
-  if (from._internal_time() != 0) {
-    _this->_internal_set_time(from._internal_time());
+  if (from.time() != 0) {
+    _internal_set_time(from._internal_time());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void TimestampedTransform::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.TimestampedTransform)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void TimestampedTransform::CopyFrom(const TimestampedTransform& from) {
@@ -307,28 +328,26 @@ bool TimestampedTransform::IsInitialized() const {
 
 void TimestampedTransform::InternalSwap(TimestampedTransform* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TimestampedTransform, _impl_.time_)
-      + sizeof(TimestampedTransform::_impl_.time_)
-      - PROTOBUF_FIELD_OFFSET(TimestampedTransform, _impl_.transform_)>(
-          reinterpret_cast<char*>(&_impl_.transform_),
-          reinterpret_cast<char*>(&other->_impl_.transform_));
+      PROTOBUF_FIELD_OFFSET(TimestampedTransform, time_)
+      + sizeof(TimestampedTransform::time_)
+      - PROTOBUF_FIELD_OFFSET(TimestampedTransform, transform_)>(
+          reinterpret_cast<char*>(&transform_),
+          reinterpret_cast<char*>(&other->transform_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TimestampedTransform::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_getter, &descriptor_table_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto_once,
-      file_level_metadata_cartographer_2ftransform_2fproto_2ftimestamped_5ftransform_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace transform
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::transform::proto::TimestampedTransform*
-Arena::CreateMaybeMessage< ::cartographer::transform::proto::TimestampedTransform >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::transform::proto::TimestampedTransform* Arena::CreateMaybeMessage< ::cartographer::transform::proto::TimestampedTransform >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::transform::proto::TimestampedTransform >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

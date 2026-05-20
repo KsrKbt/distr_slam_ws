@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:srv/WriteState.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/write_state.h"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__WRITE_STATE__STRUCT_H_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__WRITE_STATE__STRUCT_H_
 
@@ -41,6 +38,7 @@ typedef struct cartographer_ros_msgs__srv__WriteState_Request__Sequence
   size_t capacity;
 } cartographer_ros_msgs__srv__WriteState_Request__Sequence;
 
+
 // Constants defined in the message
 
 // Include directives for member types
@@ -62,42 +60,6 @@ typedef struct cartographer_ros_msgs__srv__WriteState_Response__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } cartographer_ros_msgs__srv__WriteState_Response__Sequence;
-
-// Constants defined in the message
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.h"
-
-// constants for array fields with an upper bound
-// request
-enum
-{
-  cartographer_ros_msgs__srv__WriteState_Event__request__MAX_SIZE = 1
-};
-// response
-enum
-{
-  cartographer_ros_msgs__srv__WriteState_Event__response__MAX_SIZE = 1
-};
-
-/// Struct defined in srv/WriteState in the package cartographer_ros_msgs.
-typedef struct cartographer_ros_msgs__srv__WriteState_Event
-{
-  service_msgs__msg__ServiceEventInfo info;
-  cartographer_ros_msgs__srv__WriteState_Request__Sequence request;
-  cartographer_ros_msgs__srv__WriteState_Response__Sequence response;
-} cartographer_ros_msgs__srv__WriteState_Event;
-
-// Struct for a sequence of cartographer_ros_msgs__srv__WriteState_Event.
-typedef struct cartographer_ros_msgs__srv__WriteState_Event__Sequence
-{
-  cartographer_ros_msgs__srv__WriteState_Event * data;
-  /// The number of valid items in data
-  size_t size;
-  /// The number of allocated items in data
-  size_t capacity;
-} cartographer_ros_msgs__srv__WriteState_Event__Sequence;
 
 #ifdef __cplusplus
 }

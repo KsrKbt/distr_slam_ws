@@ -30,12 +30,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/urdf_reader.cpp" "CMakeFiles/cartographer_ros.dir/src/urdf_reader.cpp.o" "gcc" "CMakeFiles/cartographer_ros.dir/src/urdf_reader.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

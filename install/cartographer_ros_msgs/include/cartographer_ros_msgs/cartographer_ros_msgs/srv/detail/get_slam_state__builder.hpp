@@ -2,9 +2,6 @@
 // with input from cartographer_ros_msgs:srv/GetSlamState.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "cartographer_ros_msgs/srv/get_slam_state.hpp"
-
-
 #ifndef CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__GET_SLAM_STATE__BUILDER_HPP_
 #define CARTOGRAPHER_ROS_MSGS__SRV__DETAIL__GET_SLAM_STATE__BUILDER_HPP_
 
@@ -90,80 +87,6 @@ inline
 auto build<::cartographer_ros_msgs::srv::GetSlamState_Response>()
 {
   return cartographer_ros_msgs::srv::builder::Init_GetSlamState_Response_status();
-}
-
-}  // namespace cartographer_ros_msgs
-
-
-namespace cartographer_ros_msgs
-{
-
-namespace srv
-{
-
-namespace builder
-{
-
-class Init_GetSlamState_Event_response
-{
-public:
-  explicit Init_GetSlamState_Event_response(::cartographer_ros_msgs::srv::GetSlamState_Event & msg)
-  : msg_(msg)
-  {}
-  ::cartographer_ros_msgs::srv::GetSlamState_Event response(::cartographer_ros_msgs::srv::GetSlamState_Event::_response_type arg)
-  {
-    msg_.response = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::GetSlamState_Event msg_;
-};
-
-class Init_GetSlamState_Event_request
-{
-public:
-  explicit Init_GetSlamState_Event_request(::cartographer_ros_msgs::srv::GetSlamState_Event & msg)
-  : msg_(msg)
-  {}
-  Init_GetSlamState_Event_response request(::cartographer_ros_msgs::srv::GetSlamState_Event::_request_type arg)
-  {
-    msg_.request = std::move(arg);
-    return Init_GetSlamState_Event_response(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::GetSlamState_Event msg_;
-};
-
-class Init_GetSlamState_Event_info
-{
-public:
-  Init_GetSlamState_Event_info()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_GetSlamState_Event_request info(::cartographer_ros_msgs::srv::GetSlamState_Event::_info_type arg)
-  {
-    msg_.info = std::move(arg);
-    return Init_GetSlamState_Event_request(msg_);
-  }
-
-private:
-  ::cartographer_ros_msgs::srv::GetSlamState_Event msg_;
-};
-
-}  // namespace builder
-
-}  // namespace srv
-
-template<typename MessageType>
-auto build();
-
-template<>
-inline
-auto build<::cartographer_ros_msgs::srv::GetSlamState_Event>()
-{
-  return cartographer_ros_msgs::srv::builder::Init_GetSlamState_Event_info();
 }
 
 }  // namespace cartographer_ros_msgs

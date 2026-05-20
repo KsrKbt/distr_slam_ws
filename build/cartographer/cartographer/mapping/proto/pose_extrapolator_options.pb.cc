@@ -14,116 +14,117 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto;
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR ConstantVelocityPoseExtrapolatorOptions::ConstantVelocityPoseExtrapolatorOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.imu_gravity_time_constant_)*/0
-  , /*decltype(_impl_.pose_queue_duration_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ConstantVelocityPoseExtrapolatorOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ConstantVelocityPoseExtrapolatorOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ConstantVelocityPoseExtrapolatorOptionsDefaultTypeInternal() {}
-  union {
-    ConstantVelocityPoseExtrapolatorOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ConstantVelocityPoseExtrapolatorOptionsDefaultTypeInternal _ConstantVelocityPoseExtrapolatorOptions_default_instance_;
-PROTOBUF_CONSTEXPR ImuBasedPoseExtrapolatorOptions::ImuBasedPoseExtrapolatorOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.solver_options_)*/nullptr
-  , /*decltype(_impl_.pose_queue_duration_)*/0
-  , /*decltype(_impl_.gravity_constant_)*/0
-  , /*decltype(_impl_.pose_translation_weight_)*/0
-  , /*decltype(_impl_.pose_rotation_weight_)*/0
-  , /*decltype(_impl_.imu_acceleration_weight_)*/0
-  , /*decltype(_impl_.imu_rotation_weight_)*/0
-  , /*decltype(_impl_.odometry_translation_weight_)*/0
-  , /*decltype(_impl_.odometry_rotation_weight_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ImuBasedPoseExtrapolatorOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ImuBasedPoseExtrapolatorOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ImuBasedPoseExtrapolatorOptionsDefaultTypeInternal() {}
-  union {
-    ImuBasedPoseExtrapolatorOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ImuBasedPoseExtrapolatorOptionsDefaultTypeInternal _ImuBasedPoseExtrapolatorOptions_default_instance_;
-PROTOBUF_CONSTEXPR PoseExtrapolatorOptions::PoseExtrapolatorOptions(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.constant_velocity_)*/nullptr
-  , /*decltype(_impl_.imu_based_)*/nullptr
-  , /*decltype(_impl_.use_imu_based_)*/false
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PoseExtrapolatorOptionsDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PoseExtrapolatorOptionsDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PoseExtrapolatorOptionsDefaultTypeInternal() {}
-  union {
-    PoseExtrapolatorOptions _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PoseExtrapolatorOptionsDefaultTypeInternal _PoseExtrapolatorOptions_default_instance_;
+class ConstantVelocityPoseExtrapolatorOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConstantVelocityPoseExtrapolatorOptions> _instance;
+} _ConstantVelocityPoseExtrapolatorOptions_default_instance_;
+class ImuBasedPoseExtrapolatorOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ImuBasedPoseExtrapolatorOptions> _instance;
+} _ImuBasedPoseExtrapolatorOptions_default_instance_;
+class PoseExtrapolatorOptionsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PoseExtrapolatorOptions> _instance;
+} _PoseExtrapolatorOptions_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[3];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = nullptr;
+static void InitDefaultsscc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_ConstantVelocityPoseExtrapolatorOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto}, {}};
+
+static void InitDefaultsscc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_ImuBasedPoseExtrapolatorOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto}, {
+      &scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto.base,}};
+
+static void InitDefaultsscc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::cartographer::mapping::proto::_PoseExtrapolatorOptions_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::PoseExtrapolatorOptions();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::PoseExtrapolatorOptions::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto}, {
+      &scc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,
+      &scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[3];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions, _impl_.imu_gravity_time_constant_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions, _impl_.pose_queue_duration_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions, imu_gravity_time_constant_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions, pose_queue_duration_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.pose_queue_duration_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.gravity_constant_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.pose_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.pose_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.imu_acceleration_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.imu_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.solver_options_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.odometry_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, _impl_.odometry_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, pose_queue_duration_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, gravity_constant_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, pose_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, pose_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, imu_acceleration_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, imu_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, solver_options_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, odometry_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions, odometry_rotation_weight_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, _impl_.use_imu_based_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, _impl_.constant_velocity_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, _impl_.imu_based_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, use_imu_based_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, constant_velocity_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::PoseExtrapolatorOptions, imu_based_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions)},
-  { 8, -1, -1, sizeof(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions)},
-  { 23, -1, -1, sizeof(::cartographer::mapping::proto::PoseExtrapolatorOptions)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions)},
+  { 7, -1, sizeof(::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions)},
+  { 21, -1, sizeof(::cartographer::mapping::proto::PoseExtrapolatorOptions)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_ConstantVelocityPoseExtrapolatorOptions_default_instance_._instance,
-  &::cartographer::mapping::proto::_ImuBasedPoseExtrapolatorOptions_default_instance_._instance,
-  &::cartographer::mapping::proto::_PoseExtrapolatorOptions_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_ConstantVelocityPoseExtrapolatorOptions_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_ImuBasedPoseExtrapolatorOptions_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_PoseExtrapolatorOptions_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -150,168 +151,158 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fext
   "to.ImuBasedPoseExtrapolatorOptionsb\006prot"
   "o3"
   ;
-static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_deps[1] = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_deps[1] = {
   &::descriptor_table_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto,
 };
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = {
-    false, false, 842, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto,
-    "cartographer/mapping/proto/pose_extrapolator_options.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_deps, 1, 3,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_sccs[3] = {
+  &scc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,
+  &scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,
+  &scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto, "cartographer/mapping/proto/pose_extrapolator_options.proto", 842,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_deps, 3, 1,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto, 3, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void ConstantVelocityPoseExtrapolatorOptions::InitAsDefaultInstance() {
+}
 class ConstantVelocityPoseExtrapolatorOptions::_Internal {
  public:
 };
 
-ConstantVelocityPoseExtrapolatorOptions::ConstantVelocityPoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ConstantVelocityPoseExtrapolatorOptions::ConstantVelocityPoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
 }
 ConstantVelocityPoseExtrapolatorOptions::ConstantVelocityPoseExtrapolatorOptions(const ConstantVelocityPoseExtrapolatorOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  ConstantVelocityPoseExtrapolatorOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_gravity_time_constant_){}
-    , decltype(_impl_.pose_queue_duration_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.imu_gravity_time_constant_, &from._impl_.imu_gravity_time_constant_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.pose_queue_duration_) -
-    reinterpret_cast<char*>(&_impl_.imu_gravity_time_constant_)) + sizeof(_impl_.pose_queue_duration_));
+  ::memcpy(&imu_gravity_time_constant_, &from.imu_gravity_time_constant_,
+    static_cast<size_t>(reinterpret_cast<char*>(&pose_queue_duration_) -
+    reinterpret_cast<char*>(&imu_gravity_time_constant_)) + sizeof(pose_queue_duration_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
 }
 
-inline void ConstantVelocityPoseExtrapolatorOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.imu_gravity_time_constant_){0}
-    , decltype(_impl_.pose_queue_duration_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void ConstantVelocityPoseExtrapolatorOptions::SharedCtor() {
+  ::memset(&imu_gravity_time_constant_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&pose_queue_duration_) -
+      reinterpret_cast<char*>(&imu_gravity_time_constant_)) + sizeof(pose_queue_duration_));
 }
 
 ConstantVelocityPoseExtrapolatorOptions::~ConstantVelocityPoseExtrapolatorOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void ConstantVelocityPoseExtrapolatorOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void ConstantVelocityPoseExtrapolatorOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ConstantVelocityPoseExtrapolatorOptions::ArenaDtor(void* object) {
+  ConstantVelocityPoseExtrapolatorOptions* _this = reinterpret_cast< ConstantVelocityPoseExtrapolatorOptions* >(object);
+  (void)_this;
+}
+void ConstantVelocityPoseExtrapolatorOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ConstantVelocityPoseExtrapolatorOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const ConstantVelocityPoseExtrapolatorOptions& ConstantVelocityPoseExtrapolatorOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ConstantVelocityPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ConstantVelocityPoseExtrapolatorOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.imu_gravity_time_constant_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.pose_queue_duration_) -
-      reinterpret_cast<char*>(&_impl_.imu_gravity_time_constant_)) + sizeof(_impl_.pose_queue_duration_));
+  ::memset(&imu_gravity_time_constant_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&pose_queue_duration_) -
+      reinterpret_cast<char*>(&imu_gravity_time_constant_)) + sizeof(pose_queue_duration_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ConstantVelocityPoseExtrapolatorOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* ConstantVelocityPoseExtrapolatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // double imu_gravity_time_constant = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
-          _impl_.imu_gravity_time_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          imu_gravity_time_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double pose_queue_duration = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.pose_queue_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          pose_queue_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* ConstantVelocityPoseExtrapolatorOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ConstantVelocityPoseExtrapolatorOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double imu_gravity_time_constant = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = this->_internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
+  if (!(this->imu_gravity_time_constant() <= 0 && this->imu_gravity_time_constant() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_imu_gravity_time_constant(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_imu_gravity_time_constant(), target);
   }
 
   // double pose_queue_duration = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = this->_internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
+  if (!(this->pose_queue_duration() <= 0 && this->pose_queue_duration() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_pose_queue_duration(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_pose_queue_duration(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
@@ -322,61 +313,64 @@ size_t ConstantVelocityPoseExtrapolatorOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // double imu_gravity_time_constant = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = this->_internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
+  if (!(this->imu_gravity_time_constant() <= 0 && this->imu_gravity_time_constant() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double pose_queue_duration = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = this->_internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
+  if (!(this->pose_queue_duration() <= 0 && this->pose_queue_duration() >= 0)) {
     total_size += 1 + 8;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ConstantVelocityPoseExtrapolatorOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    ConstantVelocityPoseExtrapolatorOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ConstantVelocityPoseExtrapolatorOptions::GetClassData() const { return &_class_data_; }
+void ConstantVelocityPoseExtrapolatorOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ConstantVelocityPoseExtrapolatorOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ConstantVelocityPoseExtrapolatorOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void ConstantVelocityPoseExtrapolatorOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<ConstantVelocityPoseExtrapolatorOptions*>(&to_msg);
-  auto& from = static_cast<const ConstantVelocityPoseExtrapolatorOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void ConstantVelocityPoseExtrapolatorOptions::MergeFrom(const ConstantVelocityPoseExtrapolatorOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_gravity_time_constant = from._internal_imu_gravity_time_constant();
-  uint64_t raw_imu_gravity_time_constant;
-  memcpy(&raw_imu_gravity_time_constant, &tmp_imu_gravity_time_constant, sizeof(tmp_imu_gravity_time_constant));
-  if (raw_imu_gravity_time_constant != 0) {
-    _this->_internal_set_imu_gravity_time_constant(from._internal_imu_gravity_time_constant());
+  if (!(from.imu_gravity_time_constant() <= 0 && from.imu_gravity_time_constant() >= 0)) {
+    _internal_set_imu_gravity_time_constant(from._internal_imu_gravity_time_constant());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = from._internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
-    _this->_internal_set_pose_queue_duration(from._internal_pose_queue_duration());
+  if (!(from.pose_queue_duration() <= 0 && from.pose_queue_duration() >= 0)) {
+    _internal_set_pose_queue_duration(from._internal_pose_queue_duration());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ConstantVelocityPoseExtrapolatorOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void ConstantVelocityPoseExtrapolatorOptions::CopyFrom(const ConstantVelocityPoseExtrapolatorOptions& from) {
@@ -392,23 +386,26 @@ bool ConstantVelocityPoseExtrapolatorOptions::IsInitialized() const {
 
 void ConstantVelocityPoseExtrapolatorOptions::InternalSwap(ConstantVelocityPoseExtrapolatorOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ConstantVelocityPoseExtrapolatorOptions, _impl_.pose_queue_duration_)
-      + sizeof(ConstantVelocityPoseExtrapolatorOptions::_impl_.pose_queue_duration_)
-      - PROTOBUF_FIELD_OFFSET(ConstantVelocityPoseExtrapolatorOptions, _impl_.imu_gravity_time_constant_)>(
-          reinterpret_cast<char*>(&_impl_.imu_gravity_time_constant_),
-          reinterpret_cast<char*>(&other->_impl_.imu_gravity_time_constant_));
+      PROTOBUF_FIELD_OFFSET(ConstantVelocityPoseExtrapolatorOptions, pose_queue_duration_)
+      + sizeof(ConstantVelocityPoseExtrapolatorOptions::pose_queue_duration_)
+      - PROTOBUF_FIELD_OFFSET(ConstantVelocityPoseExtrapolatorOptions, imu_gravity_time_constant_)>(
+          reinterpret_cast<char*>(&imu_gravity_time_constant_),
+          reinterpret_cast<char*>(&other->imu_gravity_time_constant_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConstantVelocityPoseExtrapolatorOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void ImuBasedPoseExtrapolatorOptions::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_ImuBasedPoseExtrapolatorOptions_default_instance_._instance.get_mutable()->solver_options_ = const_cast< ::cartographer::common::proto::CeresSolverOptions*>(
+      ::cartographer::common::proto::CeresSolverOptions::internal_default_instance());
+}
 class ImuBasedPoseExtrapolatorOptions::_Internal {
  public:
   static const ::cartographer::common::proto::CeresSolverOptions& solver_options(const ImuBasedPoseExtrapolatorOptions* msg);
@@ -416,293 +413,240 @@ class ImuBasedPoseExtrapolatorOptions::_Internal {
 
 const ::cartographer::common::proto::CeresSolverOptions&
 ImuBasedPoseExtrapolatorOptions::_Internal::solver_options(const ImuBasedPoseExtrapolatorOptions* msg) {
-  return *msg->_impl_.solver_options_;
+  return *msg->solver_options_;
 }
 void ImuBasedPoseExtrapolatorOptions::clear_solver_options() {
-  if (GetArenaForAllocation() == nullptr && _impl_.solver_options_ != nullptr) {
-    delete _impl_.solver_options_;
+  if (GetArena() == nullptr && solver_options_ != nullptr) {
+    delete solver_options_;
   }
-  _impl_.solver_options_ = nullptr;
+  solver_options_ = nullptr;
 }
-ImuBasedPoseExtrapolatorOptions::ImuBasedPoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ImuBasedPoseExtrapolatorOptions::ImuBasedPoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
 }
 ImuBasedPoseExtrapolatorOptions::ImuBasedPoseExtrapolatorOptions(const ImuBasedPoseExtrapolatorOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  ImuBasedPoseExtrapolatorOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.solver_options_){nullptr}
-    , decltype(_impl_.pose_queue_duration_){}
-    , decltype(_impl_.gravity_constant_){}
-    , decltype(_impl_.pose_translation_weight_){}
-    , decltype(_impl_.pose_rotation_weight_){}
-    , decltype(_impl_.imu_acceleration_weight_){}
-    , decltype(_impl_.imu_rotation_weight_){}
-    , decltype(_impl_.odometry_translation_weight_){}
-    , decltype(_impl_.odometry_rotation_weight_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_solver_options()) {
-    _this->_impl_.solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from._impl_.solver_options_);
+    solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from.solver_options_);
+  } else {
+    solver_options_ = nullptr;
   }
-  ::memcpy(&_impl_.pose_queue_duration_, &from._impl_.pose_queue_duration_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.odometry_rotation_weight_) -
-    reinterpret_cast<char*>(&_impl_.pose_queue_duration_)) + sizeof(_impl_.odometry_rotation_weight_));
+  ::memcpy(&pose_queue_duration_, &from.pose_queue_duration_,
+    static_cast<size_t>(reinterpret_cast<char*>(&odometry_rotation_weight_) -
+    reinterpret_cast<char*>(&pose_queue_duration_)) + sizeof(odometry_rotation_weight_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
 }
 
-inline void ImuBasedPoseExtrapolatorOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.solver_options_){nullptr}
-    , decltype(_impl_.pose_queue_duration_){0}
-    , decltype(_impl_.gravity_constant_){0}
-    , decltype(_impl_.pose_translation_weight_){0}
-    , decltype(_impl_.pose_rotation_weight_){0}
-    , decltype(_impl_.imu_acceleration_weight_){0}
-    , decltype(_impl_.imu_rotation_weight_){0}
-    , decltype(_impl_.odometry_translation_weight_){0}
-    , decltype(_impl_.odometry_rotation_weight_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void ImuBasedPoseExtrapolatorOptions::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base);
+  ::memset(&solver_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&odometry_rotation_weight_) -
+      reinterpret_cast<char*>(&solver_options_)) + sizeof(odometry_rotation_weight_));
 }
 
 ImuBasedPoseExtrapolatorOptions::~ImuBasedPoseExtrapolatorOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void ImuBasedPoseExtrapolatorOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.solver_options_;
+void ImuBasedPoseExtrapolatorOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete solver_options_;
 }
 
+void ImuBasedPoseExtrapolatorOptions::ArenaDtor(void* object) {
+  ImuBasedPoseExtrapolatorOptions* _this = reinterpret_cast< ImuBasedPoseExtrapolatorOptions* >(object);
+  (void)_this;
+}
+void ImuBasedPoseExtrapolatorOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ImuBasedPoseExtrapolatorOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const ImuBasedPoseExtrapolatorOptions& ImuBasedPoseExtrapolatorOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ImuBasedPoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ImuBasedPoseExtrapolatorOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.solver_options_ != nullptr) {
-    delete _impl_.solver_options_;
+  if (GetArena() == nullptr && solver_options_ != nullptr) {
+    delete solver_options_;
   }
-  _impl_.solver_options_ = nullptr;
-  ::memset(&_impl_.pose_queue_duration_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.odometry_rotation_weight_) -
-      reinterpret_cast<char*>(&_impl_.pose_queue_duration_)) + sizeof(_impl_.odometry_rotation_weight_));
+  solver_options_ = nullptr;
+  ::memset(&pose_queue_duration_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&odometry_rotation_weight_) -
+      reinterpret_cast<char*>(&pose_queue_duration_)) + sizeof(odometry_rotation_weight_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ImuBasedPoseExtrapolatorOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* ImuBasedPoseExtrapolatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // double pose_queue_duration = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
-          _impl_.pose_queue_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          pose_queue_duration_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double gravity_constant = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
-          _impl_.gravity_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          gravity_constant_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double pose_translation_weight = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
-          _impl_.pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double pose_rotation_weight = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
-          _impl_.pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+          pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double imu_acceleration_weight = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
-          _impl_.imu_acceleration_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+          imu_acceleration_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double imu_rotation_weight = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
-          _impl_.imu_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+          imu_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.common.proto.CeresSolverOptions solver_options = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_solver_options(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double odometry_translation_weight = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
-          _impl_.odometry_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+          odometry_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // double odometry_rotation_weight = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
-          _impl_.odometry_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+          odometry_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* ImuBasedPoseExtrapolatorOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ImuBasedPoseExtrapolatorOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double pose_queue_duration = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = this->_internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
+  if (!(this->pose_queue_duration() <= 0 && this->pose_queue_duration() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_pose_queue_duration(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_pose_queue_duration(), target);
   }
 
   // double gravity_constant = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = this->_internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
+  if (!(this->gravity_constant() <= 0 && this->gravity_constant() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_gravity_constant(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_gravity_constant(), target);
   }
 
   // double pose_translation_weight = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_translation_weight = this->_internal_pose_translation_weight();
-  uint64_t raw_pose_translation_weight;
-  memcpy(&raw_pose_translation_weight, &tmp_pose_translation_weight, sizeof(tmp_pose_translation_weight));
-  if (raw_pose_translation_weight != 0) {
+  if (!(this->pose_translation_weight() <= 0 && this->pose_translation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_pose_translation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_pose_translation_weight(), target);
   }
 
   // double pose_rotation_weight = 4;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_rotation_weight = this->_internal_pose_rotation_weight();
-  uint64_t raw_pose_rotation_weight;
-  memcpy(&raw_pose_rotation_weight, &tmp_pose_rotation_weight, sizeof(tmp_pose_rotation_weight));
-  if (raw_pose_rotation_weight != 0) {
+  if (!(this->pose_rotation_weight() <= 0 && this->pose_rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(4, this->_internal_pose_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_pose_rotation_weight(), target);
   }
 
   // double imu_acceleration_weight = 5;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_acceleration_weight = this->_internal_imu_acceleration_weight();
-  uint64_t raw_imu_acceleration_weight;
-  memcpy(&raw_imu_acceleration_weight, &tmp_imu_acceleration_weight, sizeof(tmp_imu_acceleration_weight));
-  if (raw_imu_acceleration_weight != 0) {
+  if (!(this->imu_acceleration_weight() <= 0 && this->imu_acceleration_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_imu_acceleration_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_imu_acceleration_weight(), target);
   }
 
   // double imu_rotation_weight = 6;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_rotation_weight = this->_internal_imu_rotation_weight();
-  uint64_t raw_imu_rotation_weight;
-  memcpy(&raw_imu_rotation_weight, &tmp_imu_rotation_weight, sizeof(tmp_imu_rotation_weight));
-  if (raw_imu_rotation_weight != 0) {
+  if (!(this->imu_rotation_weight() <= 0 && this->imu_rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(6, this->_internal_imu_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_imu_rotation_weight(), target);
   }
 
   // .cartographer.common.proto.CeresSolverOptions solver_options = 7;
-  if (this->_internal_has_solver_options()) {
+  if (this->has_solver_options()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, _Internal::solver_options(this),
-        _Internal::solver_options(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        7, _Internal::solver_options(this), target, stream);
   }
 
   // double odometry_translation_weight = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_translation_weight = this->_internal_odometry_translation_weight();
-  uint64_t raw_odometry_translation_weight;
-  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
-  if (raw_odometry_translation_weight != 0) {
+  if (!(this->odometry_translation_weight() <= 0 && this->odometry_translation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_odometry_translation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_odometry_translation_weight(), target);
   }
 
   // double odometry_rotation_weight = 9;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_rotation_weight = this->_internal_odometry_rotation_weight();
-  uint64_t raw_odometry_rotation_weight;
-  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
-  if (raw_odometry_rotation_weight != 0) {
+  if (!(this->odometry_rotation_weight() <= 0 && this->odometry_rotation_weight() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteDoubleToArray(9, this->_internal_odometry_rotation_weight(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_odometry_rotation_weight(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
@@ -713,168 +657,122 @@ size_t ImuBasedPoseExtrapolatorOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.common.proto.CeresSolverOptions solver_options = 7;
-  if (this->_internal_has_solver_options()) {
+  if (this->has_solver_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.solver_options_);
+        *solver_options_);
   }
 
   // double pose_queue_duration = 1;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = this->_internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
+  if (!(this->pose_queue_duration() <= 0 && this->pose_queue_duration() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double gravity_constant = 2;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = this->_internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
+  if (!(this->gravity_constant() <= 0 && this->gravity_constant() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double pose_translation_weight = 3;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_translation_weight = this->_internal_pose_translation_weight();
-  uint64_t raw_pose_translation_weight;
-  memcpy(&raw_pose_translation_weight, &tmp_pose_translation_weight, sizeof(tmp_pose_translation_weight));
-  if (raw_pose_translation_weight != 0) {
+  if (!(this->pose_translation_weight() <= 0 && this->pose_translation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double pose_rotation_weight = 4;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_rotation_weight = this->_internal_pose_rotation_weight();
-  uint64_t raw_pose_rotation_weight;
-  memcpy(&raw_pose_rotation_weight, &tmp_pose_rotation_weight, sizeof(tmp_pose_rotation_weight));
-  if (raw_pose_rotation_weight != 0) {
+  if (!(this->pose_rotation_weight() <= 0 && this->pose_rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double imu_acceleration_weight = 5;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_acceleration_weight = this->_internal_imu_acceleration_weight();
-  uint64_t raw_imu_acceleration_weight;
-  memcpy(&raw_imu_acceleration_weight, &tmp_imu_acceleration_weight, sizeof(tmp_imu_acceleration_weight));
-  if (raw_imu_acceleration_weight != 0) {
+  if (!(this->imu_acceleration_weight() <= 0 && this->imu_acceleration_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double imu_rotation_weight = 6;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_rotation_weight = this->_internal_imu_rotation_weight();
-  uint64_t raw_imu_rotation_weight;
-  memcpy(&raw_imu_rotation_weight, &tmp_imu_rotation_weight, sizeof(tmp_imu_rotation_weight));
-  if (raw_imu_rotation_weight != 0) {
+  if (!(this->imu_rotation_weight() <= 0 && this->imu_rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double odometry_translation_weight = 8;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_translation_weight = this->_internal_odometry_translation_weight();
-  uint64_t raw_odometry_translation_weight;
-  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
-  if (raw_odometry_translation_weight != 0) {
+  if (!(this->odometry_translation_weight() <= 0 && this->odometry_translation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
   // double odometry_rotation_weight = 9;
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_rotation_weight = this->_internal_odometry_rotation_weight();
-  uint64_t raw_odometry_rotation_weight;
-  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
-  if (raw_odometry_rotation_weight != 0) {
+  if (!(this->odometry_rotation_weight() <= 0 && this->odometry_rotation_weight() >= 0)) {
     total_size += 1 + 8;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ImuBasedPoseExtrapolatorOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    ImuBasedPoseExtrapolatorOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ImuBasedPoseExtrapolatorOptions::GetClassData() const { return &_class_data_; }
+void ImuBasedPoseExtrapolatorOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ImuBasedPoseExtrapolatorOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ImuBasedPoseExtrapolatorOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void ImuBasedPoseExtrapolatorOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<ImuBasedPoseExtrapolatorOptions*>(&to_msg);
-  auto& from = static_cast<const ImuBasedPoseExtrapolatorOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void ImuBasedPoseExtrapolatorOptions::MergeFrom(const ImuBasedPoseExtrapolatorOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_solver_options()) {
-    _this->_internal_mutable_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(
-        from._internal_solver_options());
+  if (from.has_solver_options()) {
+    _internal_mutable_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(from._internal_solver_options());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_queue_duration = from._internal_pose_queue_duration();
-  uint64_t raw_pose_queue_duration;
-  memcpy(&raw_pose_queue_duration, &tmp_pose_queue_duration, sizeof(tmp_pose_queue_duration));
-  if (raw_pose_queue_duration != 0) {
-    _this->_internal_set_pose_queue_duration(from._internal_pose_queue_duration());
+  if (!(from.pose_queue_duration() <= 0 && from.pose_queue_duration() >= 0)) {
+    _internal_set_pose_queue_duration(from._internal_pose_queue_duration());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_gravity_constant = from._internal_gravity_constant();
-  uint64_t raw_gravity_constant;
-  memcpy(&raw_gravity_constant, &tmp_gravity_constant, sizeof(tmp_gravity_constant));
-  if (raw_gravity_constant != 0) {
-    _this->_internal_set_gravity_constant(from._internal_gravity_constant());
+  if (!(from.gravity_constant() <= 0 && from.gravity_constant() >= 0)) {
+    _internal_set_gravity_constant(from._internal_gravity_constant());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_translation_weight = from._internal_pose_translation_weight();
-  uint64_t raw_pose_translation_weight;
-  memcpy(&raw_pose_translation_weight, &tmp_pose_translation_weight, sizeof(tmp_pose_translation_weight));
-  if (raw_pose_translation_weight != 0) {
-    _this->_internal_set_pose_translation_weight(from._internal_pose_translation_weight());
+  if (!(from.pose_translation_weight() <= 0 && from.pose_translation_weight() >= 0)) {
+    _internal_set_pose_translation_weight(from._internal_pose_translation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_pose_rotation_weight = from._internal_pose_rotation_weight();
-  uint64_t raw_pose_rotation_weight;
-  memcpy(&raw_pose_rotation_weight, &tmp_pose_rotation_weight, sizeof(tmp_pose_rotation_weight));
-  if (raw_pose_rotation_weight != 0) {
-    _this->_internal_set_pose_rotation_weight(from._internal_pose_rotation_weight());
+  if (!(from.pose_rotation_weight() <= 0 && from.pose_rotation_weight() >= 0)) {
+    _internal_set_pose_rotation_weight(from._internal_pose_rotation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_acceleration_weight = from._internal_imu_acceleration_weight();
-  uint64_t raw_imu_acceleration_weight;
-  memcpy(&raw_imu_acceleration_weight, &tmp_imu_acceleration_weight, sizeof(tmp_imu_acceleration_weight));
-  if (raw_imu_acceleration_weight != 0) {
-    _this->_internal_set_imu_acceleration_weight(from._internal_imu_acceleration_weight());
+  if (!(from.imu_acceleration_weight() <= 0 && from.imu_acceleration_weight() >= 0)) {
+    _internal_set_imu_acceleration_weight(from._internal_imu_acceleration_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_imu_rotation_weight = from._internal_imu_rotation_weight();
-  uint64_t raw_imu_rotation_weight;
-  memcpy(&raw_imu_rotation_weight, &tmp_imu_rotation_weight, sizeof(tmp_imu_rotation_weight));
-  if (raw_imu_rotation_weight != 0) {
-    _this->_internal_set_imu_rotation_weight(from._internal_imu_rotation_weight());
+  if (!(from.imu_rotation_weight() <= 0 && from.imu_rotation_weight() >= 0)) {
+    _internal_set_imu_rotation_weight(from._internal_imu_rotation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_translation_weight = from._internal_odometry_translation_weight();
-  uint64_t raw_odometry_translation_weight;
-  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
-  if (raw_odometry_translation_weight != 0) {
-    _this->_internal_set_odometry_translation_weight(from._internal_odometry_translation_weight());
+  if (!(from.odometry_translation_weight() <= 0 && from.odometry_translation_weight() >= 0)) {
+    _internal_set_odometry_translation_weight(from._internal_odometry_translation_weight());
   }
-  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
-  double tmp_odometry_rotation_weight = from._internal_odometry_rotation_weight();
-  uint64_t raw_odometry_rotation_weight;
-  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
-  if (raw_odometry_rotation_weight != 0) {
-    _this->_internal_set_odometry_rotation_weight(from._internal_odometry_rotation_weight());
+  if (!(from.odometry_rotation_weight() <= 0 && from.odometry_rotation_weight() >= 0)) {
+    _internal_set_odometry_rotation_weight(from._internal_odometry_rotation_weight());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ImuBasedPoseExtrapolatorOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void ImuBasedPoseExtrapolatorOptions::CopyFrom(const ImuBasedPoseExtrapolatorOptions& from) {
@@ -890,23 +788,28 @@ bool ImuBasedPoseExtrapolatorOptions::IsInitialized() const {
 
 void ImuBasedPoseExtrapolatorOptions::InternalSwap(ImuBasedPoseExtrapolatorOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ImuBasedPoseExtrapolatorOptions, _impl_.odometry_rotation_weight_)
-      + sizeof(ImuBasedPoseExtrapolatorOptions::_impl_.odometry_rotation_weight_)
-      - PROTOBUF_FIELD_OFFSET(ImuBasedPoseExtrapolatorOptions, _impl_.solver_options_)>(
-          reinterpret_cast<char*>(&_impl_.solver_options_),
-          reinterpret_cast<char*>(&other->_impl_.solver_options_));
+      PROTOBUF_FIELD_OFFSET(ImuBasedPoseExtrapolatorOptions, odometry_rotation_weight_)
+      + sizeof(ImuBasedPoseExtrapolatorOptions::odometry_rotation_weight_)
+      - PROTOBUF_FIELD_OFFSET(ImuBasedPoseExtrapolatorOptions, solver_options_)>(
+          reinterpret_cast<char*>(&solver_options_),
+          reinterpret_cast<char*>(&other->solver_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ImuBasedPoseExtrapolatorOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PoseExtrapolatorOptions::InitAsDefaultInstance() {
+  ::cartographer::mapping::proto::_PoseExtrapolatorOptions_default_instance_._instance.get_mutable()->constant_velocity_ = const_cast< ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions*>(
+      ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions::internal_default_instance());
+  ::cartographer::mapping::proto::_PoseExtrapolatorOptions_default_instance_._instance.get_mutable()->imu_based_ = const_cast< ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions*>(
+      ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions::internal_default_instance());
+}
 class PoseExtrapolatorOptions::_Internal {
  public:
   static const ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions& constant_velocity(const PoseExtrapolatorOptions* msg);
@@ -915,168 +818,168 @@ class PoseExtrapolatorOptions::_Internal {
 
 const ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions&
 PoseExtrapolatorOptions::_Internal::constant_velocity(const PoseExtrapolatorOptions* msg) {
-  return *msg->_impl_.constant_velocity_;
+  return *msg->constant_velocity_;
 }
 const ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions&
 PoseExtrapolatorOptions::_Internal::imu_based(const PoseExtrapolatorOptions* msg) {
-  return *msg->_impl_.imu_based_;
+  return *msg->imu_based_;
 }
-PoseExtrapolatorOptions::PoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+PoseExtrapolatorOptions::PoseExtrapolatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.PoseExtrapolatorOptions)
 }
 PoseExtrapolatorOptions::PoseExtrapolatorOptions(const PoseExtrapolatorOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  PoseExtrapolatorOptions* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constant_velocity_){nullptr}
-    , decltype(_impl_.imu_based_){nullptr}
-    , decltype(_impl_.use_imu_based_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_constant_velocity()) {
-    _this->_impl_.constant_velocity_ = new ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions(*from._impl_.constant_velocity_);
+    constant_velocity_ = new ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions(*from.constant_velocity_);
+  } else {
+    constant_velocity_ = nullptr;
   }
   if (from._internal_has_imu_based()) {
-    _this->_impl_.imu_based_ = new ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions(*from._impl_.imu_based_);
+    imu_based_ = new ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions(*from.imu_based_);
+  } else {
+    imu_based_ = nullptr;
   }
-  _this->_impl_.use_imu_based_ = from._impl_.use_imu_based_;
+  use_imu_based_ = from.use_imu_based_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.PoseExtrapolatorOptions)
 }
 
-inline void PoseExtrapolatorOptions::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.constant_velocity_){nullptr}
-    , decltype(_impl_.imu_based_){nullptr}
-    , decltype(_impl_.use_imu_based_){false}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void PoseExtrapolatorOptions::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base);
+  ::memset(&constant_velocity_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&use_imu_based_) -
+      reinterpret_cast<char*>(&constant_velocity_)) + sizeof(use_imu_based_));
 }
 
 PoseExtrapolatorOptions::~PoseExtrapolatorOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.PoseExtrapolatorOptions)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PoseExtrapolatorOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.constant_velocity_;
-  if (this != internal_default_instance()) delete _impl_.imu_based_;
+void PoseExtrapolatorOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete constant_velocity_;
+  if (this != internal_default_instance()) delete imu_based_;
 }
 
+void PoseExtrapolatorOptions::ArenaDtor(void* object) {
+  PoseExtrapolatorOptions* _this = reinterpret_cast< PoseExtrapolatorOptions* >(object);
+  (void)_this;
+}
+void PoseExtrapolatorOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void PoseExtrapolatorOptions::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const PoseExtrapolatorOptions& PoseExtrapolatorOptions::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PoseExtrapolatorOptions_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PoseExtrapolatorOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.constant_velocity_ != nullptr) {
-    delete _impl_.constant_velocity_;
+  if (GetArena() == nullptr && constant_velocity_ != nullptr) {
+    delete constant_velocity_;
   }
-  _impl_.constant_velocity_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.imu_based_ != nullptr) {
-    delete _impl_.imu_based_;
+  constant_velocity_ = nullptr;
+  if (GetArena() == nullptr && imu_based_ != nullptr) {
+    delete imu_based_;
   }
-  _impl_.imu_based_ = nullptr;
-  _impl_.use_imu_based_ = false;
+  imu_based_ = nullptr;
+  use_imu_based_ = false;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PoseExtrapolatorOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* PoseExtrapolatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // bool use_imu_based = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.use_imu_based_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          use_imu_based_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions constant_velocity = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_constant_velocity(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions imu_based = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_imu_based(), ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* PoseExtrapolatorOptions::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PoseExtrapolatorOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bool use_imu_based = 1;
-  if (this->_internal_use_imu_based() != 0) {
+  if (this->use_imu_based() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteBoolToArray(1, this->_internal_use_imu_based(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_use_imu_based(), target);
   }
 
   // .cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions constant_velocity = 2;
-  if (this->_internal_has_constant_velocity()) {
+  if (this->has_constant_velocity()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::constant_velocity(this),
-        _Internal::constant_velocity(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        2, _Internal::constant_velocity(this), target, stream);
   }
 
   // .cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions imu_based = 3;
-  if (this->_internal_has_imu_based()) {
+  if (this->has_imu_based()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::imu_based(this),
-        _Internal::imu_based(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(
+        3, _Internal::imu_based(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.PoseExtrapolatorOptions)
@@ -1087,59 +990,76 @@ size_t PoseExtrapolatorOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.ConstantVelocityPoseExtrapolatorOptions constant_velocity = 2;
-  if (this->_internal_has_constant_velocity()) {
+  if (this->has_constant_velocity()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.constant_velocity_);
+        *constant_velocity_);
   }
 
   // .cartographer.mapping.proto.ImuBasedPoseExtrapolatorOptions imu_based = 3;
-  if (this->_internal_has_imu_based()) {
+  if (this->has_imu_based()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.imu_based_);
+        *imu_based_);
   }
 
   // bool use_imu_based = 1;
-  if (this->_internal_use_imu_based() != 0) {
+  if (this->use_imu_based() != 0) {
     total_size += 1 + 1;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PoseExtrapolatorOptions::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    PoseExtrapolatorOptions::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PoseExtrapolatorOptions::GetClassData() const { return &_class_data_; }
+void PoseExtrapolatorOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PoseExtrapolatorOptions* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PoseExtrapolatorOptions>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.PoseExtrapolatorOptions)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.PoseExtrapolatorOptions)
+    MergeFrom(*source);
+  }
+}
 
-
-void PoseExtrapolatorOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<PoseExtrapolatorOptions*>(&to_msg);
-  auto& from = static_cast<const PoseExtrapolatorOptions&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void PoseExtrapolatorOptions::MergeFrom(const PoseExtrapolatorOptions& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_constant_velocity()) {
-    _this->_internal_mutable_constant_velocity()->::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions::MergeFrom(
-        from._internal_constant_velocity());
+  if (from.has_constant_velocity()) {
+    _internal_mutable_constant_velocity()->::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions::MergeFrom(from._internal_constant_velocity());
   }
-  if (from._internal_has_imu_based()) {
-    _this->_internal_mutable_imu_based()->::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions::MergeFrom(
-        from._internal_imu_based());
+  if (from.has_imu_based()) {
+    _internal_mutable_imu_based()->::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions::MergeFrom(from._internal_imu_based());
   }
-  if (from._internal_use_imu_based() != 0) {
-    _this->_internal_set_use_imu_based(from._internal_use_imu_based());
+  if (from.use_imu_based() != 0) {
+    _internal_set_use_imu_based(from._internal_use_imu_based());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PoseExtrapolatorOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.PoseExtrapolatorOptions)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PoseExtrapolatorOptions::CopyFrom(const PoseExtrapolatorOptions& from) {
@@ -1155,36 +1075,32 @@ bool PoseExtrapolatorOptions::IsInitialized() const {
 
 void PoseExtrapolatorOptions::InternalSwap(PoseExtrapolatorOptions* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PoseExtrapolatorOptions, _impl_.use_imu_based_)
-      + sizeof(PoseExtrapolatorOptions::_impl_.use_imu_based_)
-      - PROTOBUF_FIELD_OFFSET(PoseExtrapolatorOptions, _impl_.constant_velocity_)>(
-          reinterpret_cast<char*>(&_impl_.constant_velocity_),
-          reinterpret_cast<char*>(&other->_impl_.constant_velocity_));
+      PROTOBUF_FIELD_OFFSET(PoseExtrapolatorOptions, use_imu_based_)
+      + sizeof(PoseExtrapolatorOptions::use_imu_based_)
+      - PROTOBUF_FIELD_OFFSET(PoseExtrapolatorOptions, constant_velocity_)>(
+          reinterpret_cast<char*>(&constant_velocity_),
+          reinterpret_cast<char*>(&other->constant_velocity_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PoseExtrapolatorOptions::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fextrapolator_5foptions_2eproto[2]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::ConstantVelocityPoseExtrapolatorOptions >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::ImuBasedPoseExtrapolatorOptions >(arena);
 }
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseExtrapolatorOptions*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseExtrapolatorOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::PoseExtrapolatorOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::PoseExtrapolatorOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::PoseExtrapolatorOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

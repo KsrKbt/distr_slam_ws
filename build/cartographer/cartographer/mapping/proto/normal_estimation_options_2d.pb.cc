@@ -14,52 +14,49 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
-
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
 namespace cartographer {
 namespace mapping {
 namespace proto {
-PROTOBUF_CONSTEXPR NormalEstimationOptions2D::NormalEstimationOptions2D(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.num_normal_samples_)*/0
-  , /*decltype(_impl_.sample_radius_)*/0
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct NormalEstimationOptions2DDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR NormalEstimationOptions2DDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~NormalEstimationOptions2DDefaultTypeInternal() {}
-  union {
-    NormalEstimationOptions2D _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NormalEstimationOptions2DDefaultTypeInternal _NormalEstimationOptions2D_default_instance_;
+class NormalEstimationOptions2DDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NormalEstimationOptions2D> _instance;
+} _NormalEstimationOptions2D_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = nullptr;
+static void InitDefaultsscc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  {
+    void* ptr = &::cartographer::mapping::proto::_NormalEstimationOptions2D_default_instance_;
+    new (ptr) ::cartographer::mapping::proto::NormalEstimationOptions2D();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::cartographer::mapping::proto::NormalEstimationOptions2D::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = nullptr;
+
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NormalEstimationOptions2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NormalEstimationOptions2D, _impl_.num_normal_samples_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NormalEstimationOptions2D, _impl_.sample_radius_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NormalEstimationOptions2D, num_normal_samples_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::NormalEstimationOptions2D, sample_radius_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::cartographer::mapping::proto::NormalEstimationOptions2D)},
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, sizeof(::cartographer::mapping::proto::NormalEstimationOptions2D)},
 };
 
-static const ::_pb::Message* const file_default_instances[] = {
-  &::cartographer::mapping::proto::_NormalEstimationOptions2D_default_instance_._instance,
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_NormalEstimationOptions2D_default_instance_),
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -69,161 +66,155 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fnormal_5fe
   "\022\032\n\022num_normal_samples\030\001 \001(\005\022\025\n\rsample_r"
   "adius\030\002 \001(\002b\006proto3"
   ;
-static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = {
-    false, false, 179, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto,
-    "cartographer/mapping/proto/normal_estimation_options_2d.proto",
-    &descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_once, nullptr, 0, 1,
-    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto::offsets,
-    file_level_metadata_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto,
-    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_getter() {
-  return &descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto;
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_sccs[1] = {
+  &scc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = {
+  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto, "cartographer/mapping/proto/normal_estimation_options_2d.proto", 179,
+  &descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_deps, 1, 0,
+  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto::offsets,
+  file_level_metadata_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto);
+static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto)), true);
 namespace cartographer {
 namespace mapping {
 namespace proto {
 
 // ===================================================================
 
+void NormalEstimationOptions2D::InitAsDefaultInstance() {
+}
 class NormalEstimationOptions2D::_Internal {
  public:
 };
 
-NormalEstimationOptions2D::NormalEstimationOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+NormalEstimationOptions2D::NormalEstimationOptions2D(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.NormalEstimationOptions2D)
 }
 NormalEstimationOptions2D::NormalEstimationOptions2D(const NormalEstimationOptions2D& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  NormalEstimationOptions2D* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.num_normal_samples_){}
-    , decltype(_impl_.sample_radius_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.num_normal_samples_, &from._impl_.num_normal_samples_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.sample_radius_) -
-    reinterpret_cast<char*>(&_impl_.num_normal_samples_)) + sizeof(_impl_.sample_radius_));
+  ::memcpy(&num_normal_samples_, &from.num_normal_samples_,
+    static_cast<size_t>(reinterpret_cast<char*>(&sample_radius_) -
+    reinterpret_cast<char*>(&num_normal_samples_)) + sizeof(sample_radius_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.NormalEstimationOptions2D)
 }
 
-inline void NormalEstimationOptions2D::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
-  (void)arena;
-  (void)is_message_owned;
-  new (&_impl_) Impl_{
-      decltype(_impl_.num_normal_samples_){0}
-    , decltype(_impl_.sample_radius_){0}
-    , /*decltype(_impl_._cached_size_)*/{}
-  };
+void NormalEstimationOptions2D::SharedCtor() {
+  ::memset(&num_normal_samples_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&sample_radius_) -
+      reinterpret_cast<char*>(&num_normal_samples_)) + sizeof(sample_radius_));
 }
 
 NormalEstimationOptions2D::~NormalEstimationOptions2D() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.NormalEstimationOptions2D)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
-  (void)arena;
-    return;
-  }
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void NormalEstimationOptions2D::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void NormalEstimationOptions2D::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void NormalEstimationOptions2D::ArenaDtor(void* object) {
+  NormalEstimationOptions2D* _this = reinterpret_cast< NormalEstimationOptions2D* >(object);
+  (void)_this;
+}
+void NormalEstimationOptions2D::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void NormalEstimationOptions2D::SetCachedSize(int size) const {
-  _impl_._cached_size_.Set(size);
+  _cached_size_.Set(size);
 }
+const NormalEstimationOptions2D& NormalEstimationOptions2D::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NormalEstimationOptions2D_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void NormalEstimationOptions2D::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.NormalEstimationOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.num_normal_samples_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&_impl_.sample_radius_) -
-      reinterpret_cast<char*>(&_impl_.num_normal_samples_)) + sizeof(_impl_.sample_radius_));
+  ::memset(&num_normal_samples_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&sample_radius_) -
+      reinterpret_cast<char*>(&num_normal_samples_)) + sizeof(sample_radius_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* NormalEstimationOptions2D::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* NormalEstimationOptions2D::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 num_normal_samples = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
-          _impl_.num_normal_samples_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          num_normal_samples_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
       // float sample_radius = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
-          _impl_.sample_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+          sample_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else
-          goto handle_unusual;
+        } else goto handle_unusual;
         continue;
-      default:
-        goto handle_unusual;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
     }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
   }  // while
-message_done:
+success:
   return ptr;
 failure:
   ptr = nullptr;
-  goto message_done;
+  goto success;
 #undef CHK_
 }
 
-uint8_t* NormalEstimationOptions2D::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::PROTOBUF_NAMESPACE_ID::uint8* NormalEstimationOptions2D::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.NormalEstimationOptions2D)
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 num_normal_samples = 1;
-  if (this->_internal_num_normal_samples() != 0) {
+  if (this->num_normal_samples() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_num_normal_samples(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_num_normal_samples(), target);
   }
 
   // float sample_radius = 2;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_sample_radius = this->_internal_sample_radius();
-  uint32_t raw_sample_radius;
-  memcpy(&raw_sample_radius, &tmp_sample_radius, sizeof(tmp_sample_radius));
-  if (raw_sample_radius != 0) {
+  if (!(this->sample_radius() <= 0 && this->sample_radius() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_sample_radius(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_sample_radius(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.NormalEstimationOptions2D)
@@ -234,53 +225,66 @@ size_t NormalEstimationOptions2D::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.NormalEstimationOptions2D)
   size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 num_normal_samples = 1;
-  if (this->_internal_num_normal_samples() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_num_normal_samples());
+  if (this->num_normal_samples() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_num_normal_samples());
   }
 
   // float sample_radius = 2;
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_sample_radius = this->_internal_sample_radius();
-  uint32_t raw_sample_radius;
-  memcpy(&raw_sample_radius, &tmp_sample_radius, sizeof(tmp_sample_radius));
-  if (raw_sample_radius != 0) {
+  if (!(this->sample_radius() <= 0 && this->sample_radius() >= 0)) {
     total_size += 1 + 4;
   }
 
-  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NormalEstimationOptions2D::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    NormalEstimationOptions2D::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NormalEstimationOptions2D::GetClassData() const { return &_class_data_; }
+void NormalEstimationOptions2D::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.NormalEstimationOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NormalEstimationOptions2D* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NormalEstimationOptions2D>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.NormalEstimationOptions2D)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.NormalEstimationOptions2D)
+    MergeFrom(*source);
+  }
+}
 
-
-void NormalEstimationOptions2D::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<NormalEstimationOptions2D*>(&to_msg);
-  auto& from = static_cast<const NormalEstimationOptions2D&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.NormalEstimationOptions2D)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+void NormalEstimationOptions2D::MergeFrom(const NormalEstimationOptions2D& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.NormalEstimationOptions2D)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_num_normal_samples() != 0) {
-    _this->_internal_set_num_normal_samples(from._internal_num_normal_samples());
+  if (from.num_normal_samples() != 0) {
+    _internal_set_num_normal_samples(from._internal_num_normal_samples());
   }
-  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
-  float tmp_sample_radius = from._internal_sample_radius();
-  uint32_t raw_sample_radius;
-  memcpy(&raw_sample_radius, &tmp_sample_radius, sizeof(tmp_sample_radius));
-  if (raw_sample_radius != 0) {
-    _this->_internal_set_sample_radius(from._internal_sample_radius());
+  if (!(from.sample_radius() <= 0 && from.sample_radius() >= 0)) {
+    _internal_set_sample_radius(from._internal_sample_radius());
   }
-  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void NormalEstimationOptions2D::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.NormalEstimationOptions2D)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void NormalEstimationOptions2D::CopyFrom(const NormalEstimationOptions2D& from) {
@@ -296,28 +300,26 @@ bool NormalEstimationOptions2D::IsInitialized() const {
 
 void NormalEstimationOptions2D::InternalSwap(NormalEstimationOptions2D* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(NormalEstimationOptions2D, _impl_.sample_radius_)
-      + sizeof(NormalEstimationOptions2D::_impl_.sample_radius_)
-      - PROTOBUF_FIELD_OFFSET(NormalEstimationOptions2D, _impl_.num_normal_samples_)>(
-          reinterpret_cast<char*>(&_impl_.num_normal_samples_),
-          reinterpret_cast<char*>(&other->_impl_.num_normal_samples_));
+      PROTOBUF_FIELD_OFFSET(NormalEstimationOptions2D, sample_radius_)
+      + sizeof(NormalEstimationOptions2D::sample_radius_)
+      - PROTOBUF_FIELD_OFFSET(NormalEstimationOptions2D, num_normal_samples_)>(
+          reinterpret_cast<char*>(&num_normal_samples_),
+          reinterpret_cast<char*>(&other->num_normal_samples_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata NormalEstimationOptions2D::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto_once,
-      file_level_metadata_cartographer_2fmapping_2fproto_2fnormal_5festimation_5foptions_5f2d_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::NormalEstimationOptions2D*
-Arena::CreateMaybeMessage< ::cartographer::mapping::proto::NormalEstimationOptions2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::NormalEstimationOptions2D* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::NormalEstimationOptions2D >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::NormalEstimationOptions2D >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
