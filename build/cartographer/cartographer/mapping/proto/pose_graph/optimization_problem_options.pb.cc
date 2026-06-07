@@ -14,67 +14,82 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace cartographer {
 namespace mapping {
 namespace optimization {
 namespace proto {
-class OptimizationProblemOptionsDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OptimizationProblemOptions> _instance;
-} _OptimizationProblemOptions_default_instance_;
+PROTOBUF_CONSTEXPR OptimizationProblemOptions::OptimizationProblemOptions(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.ceres_solver_options_)*/nullptr
+  , /*decltype(_impl_.huber_scale_)*/0
+  , /*decltype(_impl_.acceleration_weight_)*/0
+  , /*decltype(_impl_.rotation_weight_)*/0
+  , /*decltype(_impl_.fixed_frame_pose_translation_weight_)*/0
+  , /*decltype(_impl_.fixed_frame_pose_rotation_weight_)*/0
+  , /*decltype(_impl_.local_slam_pose_translation_weight_)*/0
+  , /*decltype(_impl_.local_slam_pose_rotation_weight_)*/0
+  , /*decltype(_impl_.odometry_translation_weight_)*/0
+  , /*decltype(_impl_.odometry_rotation_weight_)*/0
+  , /*decltype(_impl_.fixed_frame_pose_tolerant_loss_param_a_)*/0
+  , /*decltype(_impl_.fixed_frame_pose_tolerant_loss_param_b_)*/0
+  , /*decltype(_impl_.fixed_frame_pose_use_tolerant_loss_)*/false
+  , /*decltype(_impl_.fix_z_in_3d_)*/false
+  , /*decltype(_impl_.use_online_imu_extrinsics_in_3d_)*/false
+  , /*decltype(_impl_.log_solver_summary_)*/false
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct OptimizationProblemOptionsDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptimizationProblemOptionsDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptimizationProblemOptionsDefaultTypeInternal() {}
+  union {
+    OptimizationProblemOptions _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptimizationProblemOptionsDefaultTypeInternal _OptimizationProblemOptions_default_instance_;
 }  // namespace proto
 }  // namespace optimization
 }  // namespace mapping
 }  // namespace cartographer
-static void InitDefaultsscc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto[1];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = nullptr;
 
-  {
-    void* ptr = &::cartographer::mapping::optimization::proto::_OptimizationProblemOptions_default_instance_;
-    new (ptr) ::cartographer::mapping::optimization::proto::OptimizationProblemOptions();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::cartographer::mapping::optimization::proto::OptimizationProblemOptions::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto}, {
-      &scc_info_CeresSolverOptions_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto.base,}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, huber_scale_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, acceleration_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, local_slam_pose_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, local_slam_pose_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, odometry_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, odometry_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fixed_frame_pose_translation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fixed_frame_pose_rotation_weight_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fixed_frame_pose_use_tolerant_loss_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fixed_frame_pose_tolerant_loss_param_a_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fixed_frame_pose_tolerant_loss_param_b_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, fix_z_in_3d_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, use_online_imu_extrinsics_in_3d_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, log_solver_summary_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, ceres_solver_options_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.huber_scale_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.acceleration_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.local_slam_pose_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.local_slam_pose_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.odometry_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.odometry_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fixed_frame_pose_translation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fixed_frame_pose_rotation_weight_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fixed_frame_pose_use_tolerant_loss_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fixed_frame_pose_tolerant_loss_param_a_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fixed_frame_pose_tolerant_loss_param_b_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.fix_z_in_3d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.use_online_imu_extrinsics_in_3d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.log_solver_summary_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::optimization::proto::OptimizationProblemOptions, _impl_.ceres_solver_options_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::cartographer::mapping::optimization::proto::OptimizationProblemOptions)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::cartographer::mapping::optimization::proto::OptimizationProblemOptions)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::optimization::proto::_OptimizationProblemOptions_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::cartographer::mapping::optimization::proto::_OptimizationProblemOptions_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -100,22 +115,24 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgra
   "lver_options\030\007 \001(\0132-.cartographer.common"
   ".proto.CeresSolverOptionsJ\004\010\024\020\027b\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_deps[1] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_deps[1] = {
   &::descriptor_table_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_sccs[1] = {
-  &scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto.base,
+static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = {
+    false, false, 839, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto,
+    "cartographer/mapping/proto/pose_graph/optimization_problem_options.proto",
+    &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_deps, 1, 1,
+    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto::offsets,
+    file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto,
+    file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = {
-  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto, "cartographer/mapping/proto/pose_graph/optimization_problem_options.proto", 839,
-  &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_deps, 1, 1,
-  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto::offsets,
-  file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_getter() {
+  return &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto);
 namespace cartographer {
 namespace mapping {
 namespace optimization {
@@ -123,10 +140,6 @@ namespace proto {
 
 // ===================================================================
 
-void OptimizationProblemOptions::InitAsDefaultInstance() {
-  ::cartographer::mapping::optimization::proto::_OptimizationProblemOptions_default_instance_._instance.get_mutable()->ceres_solver_options_ = const_cast< ::cartographer::common::proto::CeresSolverOptions*>(
-      ::cartographer::common::proto::CeresSolverOptions::internal_default_instance());
-}
 class OptimizationProblemOptions::_Internal {
  public:
   static const ::cartographer::common::proto::CeresSolverOptions& ceres_solver_options(const OptimizationProblemOptions* msg);
@@ -134,331 +147,417 @@ class OptimizationProblemOptions::_Internal {
 
 const ::cartographer::common::proto::CeresSolverOptions&
 OptimizationProblemOptions::_Internal::ceres_solver_options(const OptimizationProblemOptions* msg) {
-  return *msg->ceres_solver_options_;
+  return *msg->_impl_.ceres_solver_options_;
 }
 void OptimizationProblemOptions::clear_ceres_solver_options() {
-  if (GetArena() == nullptr && ceres_solver_options_ != nullptr) {
-    delete ceres_solver_options_;
+  if (GetArenaForAllocation() == nullptr && _impl_.ceres_solver_options_ != nullptr) {
+    delete _impl_.ceres_solver_options_;
   }
-  ceres_solver_options_ = nullptr;
+  _impl_.ceres_solver_options_ = nullptr;
 }
-OptimizationProblemOptions::OptimizationProblemOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+OptimizationProblemOptions::OptimizationProblemOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
 }
 OptimizationProblemOptions::OptimizationProblemOptions(const OptimizationProblemOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  OptimizationProblemOptions* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ceres_solver_options_){nullptr}
+    , decltype(_impl_.huber_scale_){}
+    , decltype(_impl_.acceleration_weight_){}
+    , decltype(_impl_.rotation_weight_){}
+    , decltype(_impl_.fixed_frame_pose_translation_weight_){}
+    , decltype(_impl_.fixed_frame_pose_rotation_weight_){}
+    , decltype(_impl_.local_slam_pose_translation_weight_){}
+    , decltype(_impl_.local_slam_pose_rotation_weight_){}
+    , decltype(_impl_.odometry_translation_weight_){}
+    , decltype(_impl_.odometry_rotation_weight_){}
+    , decltype(_impl_.fixed_frame_pose_tolerant_loss_param_a_){}
+    , decltype(_impl_.fixed_frame_pose_tolerant_loss_param_b_){}
+    , decltype(_impl_.fixed_frame_pose_use_tolerant_loss_){}
+    , decltype(_impl_.fix_z_in_3d_){}
+    , decltype(_impl_.use_online_imu_extrinsics_in_3d_){}
+    , decltype(_impl_.log_solver_summary_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_ceres_solver_options()) {
-    ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from.ceres_solver_options_);
-  } else {
-    ceres_solver_options_ = nullptr;
+    _this->_impl_.ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from._impl_.ceres_solver_options_);
   }
-  ::memcpy(&huber_scale_, &from.huber_scale_,
-    static_cast<size_t>(reinterpret_cast<char*>(&fixed_frame_pose_tolerant_loss_param_b_) -
-    reinterpret_cast<char*>(&huber_scale_)) + sizeof(fixed_frame_pose_tolerant_loss_param_b_));
+  ::memcpy(&_impl_.huber_scale_, &from._impl_.huber_scale_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.log_solver_summary_) -
+    reinterpret_cast<char*>(&_impl_.huber_scale_)) + sizeof(_impl_.log_solver_summary_));
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
 }
 
-void OptimizationProblemOptions::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto.base);
-  ::memset(&ceres_solver_options_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&fixed_frame_pose_tolerant_loss_param_b_) -
-      reinterpret_cast<char*>(&ceres_solver_options_)) + sizeof(fixed_frame_pose_tolerant_loss_param_b_));
+inline void OptimizationProblemOptions::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ceres_solver_options_){nullptr}
+    , decltype(_impl_.huber_scale_){0}
+    , decltype(_impl_.acceleration_weight_){0}
+    , decltype(_impl_.rotation_weight_){0}
+    , decltype(_impl_.fixed_frame_pose_translation_weight_){0}
+    , decltype(_impl_.fixed_frame_pose_rotation_weight_){0}
+    , decltype(_impl_.local_slam_pose_translation_weight_){0}
+    , decltype(_impl_.local_slam_pose_rotation_weight_){0}
+    , decltype(_impl_.odometry_translation_weight_){0}
+    , decltype(_impl_.odometry_rotation_weight_){0}
+    , decltype(_impl_.fixed_frame_pose_tolerant_loss_param_a_){0}
+    , decltype(_impl_.fixed_frame_pose_tolerant_loss_param_b_){0}
+    , decltype(_impl_.fixed_frame_pose_use_tolerant_loss_){false}
+    , decltype(_impl_.fix_z_in_3d_){false}
+    , decltype(_impl_.use_online_imu_extrinsics_in_3d_){false}
+    , decltype(_impl_.log_solver_summary_){false}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 OptimizationProblemOptions::~OptimizationProblemOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OptimizationProblemOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete ceres_solver_options_;
+inline void OptimizationProblemOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.ceres_solver_options_;
 }
 
-void OptimizationProblemOptions::ArenaDtor(void* object) {
-  OptimizationProblemOptions* _this = reinterpret_cast< OptimizationProblemOptions* >(object);
-  (void)_this;
-}
-void OptimizationProblemOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void OptimizationProblemOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const OptimizationProblemOptions& OptimizationProblemOptions::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OptimizationProblemOptions_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void OptimizationProblemOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && ceres_solver_options_ != nullptr) {
-    delete ceres_solver_options_;
+  if (GetArenaForAllocation() == nullptr && _impl_.ceres_solver_options_ != nullptr) {
+    delete _impl_.ceres_solver_options_;
   }
-  ceres_solver_options_ = nullptr;
-  ::memset(&huber_scale_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&fixed_frame_pose_tolerant_loss_param_b_) -
-      reinterpret_cast<char*>(&huber_scale_)) + sizeof(fixed_frame_pose_tolerant_loss_param_b_));
+  _impl_.ceres_solver_options_ = nullptr;
+  ::memset(&_impl_.huber_scale_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.log_solver_summary_) -
+      reinterpret_cast<char*>(&_impl_.huber_scale_)) + sizeof(_impl_.log_solver_summary_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* OptimizationProblemOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* OptimizationProblemOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // double huber_scale = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
-          huber_scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
+          _impl_.huber_scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool log_solver_summary = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          log_solver_summary_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _impl_.log_solver_summary_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_ceres_solver_options(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double acceleration_weight = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
-          acceleration_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
+          _impl_.acceleration_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double rotation_weight = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
-          rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
+          _impl_.rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double fixed_frame_pose_translation_weight = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 89)) {
-          fixed_frame_pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 89)) {
+          _impl_.fixed_frame_pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double fixed_frame_pose_rotation_weight = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 97)) {
-          fixed_frame_pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 97)) {
+          _impl_.fixed_frame_pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool fix_z_in_3d = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
-          fix_z_in_3d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 104)) {
+          _impl_.fix_z_in_3d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double local_slam_pose_translation_weight = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 113)) {
-          local_slam_pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 113)) {
+          _impl_.local_slam_pose_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double local_slam_pose_rotation_weight = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 121)) {
-          local_slam_pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 121)) {
+          _impl_.local_slam_pose_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double odometry_translation_weight = 16;
       case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 129)) {
-          odometry_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 129)) {
+          _impl_.odometry_translation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double odometry_rotation_weight = 17;
       case 17:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 137)) {
-          odometry_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 137)) {
+          _impl_.odometry_rotation_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool use_online_imu_extrinsics_in_3d = 18;
       case 18:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
-          use_online_imu_extrinsics_in_3d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _impl_.use_online_imu_extrinsics_in_3d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool fixed_frame_pose_use_tolerant_loss = 23;
       case 23:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 184)) {
-          fixed_frame_pose_use_tolerant_loss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 184)) {
+          _impl_.fixed_frame_pose_use_tolerant_loss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double fixed_frame_pose_tolerant_loss_param_a = 24;
       case 24:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 193)) {
-          fixed_frame_pose_tolerant_loss_param_a_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 193)) {
+          _impl_.fixed_frame_pose_tolerant_loss_param_a_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // double fixed_frame_pose_tolerant_loss_param_b = 25;
       case 25:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 201)) {
-          fixed_frame_pose_tolerant_loss_param_b_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 201)) {
+          _impl_.fixed_frame_pose_tolerant_loss_param_b_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* OptimizationProblemOptions::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* OptimizationProblemOptions::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // double huber_scale = 1;
-  if (!(this->huber_scale() <= 0 && this->huber_scale() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_huber_scale = this->_internal_huber_scale();
+  uint64_t raw_huber_scale;
+  memcpy(&raw_huber_scale, &tmp_huber_scale, sizeof(tmp_huber_scale));
+  if (raw_huber_scale != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_huber_scale(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_huber_scale(), target);
   }
 
   // bool log_solver_summary = 5;
-  if (this->log_solver_summary() != 0) {
+  if (this->_internal_log_solver_summary() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_log_solver_summary(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(5, this->_internal_log_solver_summary(), target);
   }
 
   // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
-  if (this->has_ceres_solver_options()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_ceres_solver_options()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::ceres_solver_options(this), target, stream);
+      InternalWriteMessage(7, _Internal::ceres_solver_options(this),
+        _Internal::ceres_solver_options(this).GetCachedSize(), target, stream);
   }
 
   // double acceleration_weight = 8;
-  if (!(this->acceleration_weight() <= 0 && this->acceleration_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_acceleration_weight = this->_internal_acceleration_weight();
+  uint64_t raw_acceleration_weight;
+  memcpy(&raw_acceleration_weight, &tmp_acceleration_weight, sizeof(tmp_acceleration_weight));
+  if (raw_acceleration_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_acceleration_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_acceleration_weight(), target);
   }
 
   // double rotation_weight = 9;
-  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_rotation_weight = this->_internal_rotation_weight();
+  uint64_t raw_rotation_weight;
+  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
+  if (raw_rotation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_rotation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(9, this->_internal_rotation_weight(), target);
   }
 
   // double fixed_frame_pose_translation_weight = 11;
-  if (!(this->fixed_frame_pose_translation_weight() <= 0 && this->fixed_frame_pose_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_translation_weight = this->_internal_fixed_frame_pose_translation_weight();
+  uint64_t raw_fixed_frame_pose_translation_weight;
+  memcpy(&raw_fixed_frame_pose_translation_weight, &tmp_fixed_frame_pose_translation_weight, sizeof(tmp_fixed_frame_pose_translation_weight));
+  if (raw_fixed_frame_pose_translation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(11, this->_internal_fixed_frame_pose_translation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(11, this->_internal_fixed_frame_pose_translation_weight(), target);
   }
 
   // double fixed_frame_pose_rotation_weight = 12;
-  if (!(this->fixed_frame_pose_rotation_weight() <= 0 && this->fixed_frame_pose_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_rotation_weight = this->_internal_fixed_frame_pose_rotation_weight();
+  uint64_t raw_fixed_frame_pose_rotation_weight;
+  memcpy(&raw_fixed_frame_pose_rotation_weight, &tmp_fixed_frame_pose_rotation_weight, sizeof(tmp_fixed_frame_pose_rotation_weight));
+  if (raw_fixed_frame_pose_rotation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(12, this->_internal_fixed_frame_pose_rotation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(12, this->_internal_fixed_frame_pose_rotation_weight(), target);
   }
 
   // bool fix_z_in_3d = 13;
-  if (this->fix_z_in_3d() != 0) {
+  if (this->_internal_fix_z_in_3d() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(13, this->_internal_fix_z_in_3d(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(13, this->_internal_fix_z_in_3d(), target);
   }
 
   // double local_slam_pose_translation_weight = 14;
-  if (!(this->local_slam_pose_translation_weight() <= 0 && this->local_slam_pose_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_translation_weight = this->_internal_local_slam_pose_translation_weight();
+  uint64_t raw_local_slam_pose_translation_weight;
+  memcpy(&raw_local_slam_pose_translation_weight, &tmp_local_slam_pose_translation_weight, sizeof(tmp_local_slam_pose_translation_weight));
+  if (raw_local_slam_pose_translation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(14, this->_internal_local_slam_pose_translation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(14, this->_internal_local_slam_pose_translation_weight(), target);
   }
 
   // double local_slam_pose_rotation_weight = 15;
-  if (!(this->local_slam_pose_rotation_weight() <= 0 && this->local_slam_pose_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_rotation_weight = this->_internal_local_slam_pose_rotation_weight();
+  uint64_t raw_local_slam_pose_rotation_weight;
+  memcpy(&raw_local_slam_pose_rotation_weight, &tmp_local_slam_pose_rotation_weight, sizeof(tmp_local_slam_pose_rotation_weight));
+  if (raw_local_slam_pose_rotation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->_internal_local_slam_pose_rotation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(15, this->_internal_local_slam_pose_rotation_weight(), target);
   }
 
   // double odometry_translation_weight = 16;
-  if (!(this->odometry_translation_weight() <= 0 && this->odometry_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_translation_weight = this->_internal_odometry_translation_weight();
+  uint64_t raw_odometry_translation_weight;
+  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
+  if (raw_odometry_translation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(16, this->_internal_odometry_translation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(16, this->_internal_odometry_translation_weight(), target);
   }
 
   // double odometry_rotation_weight = 17;
-  if (!(this->odometry_rotation_weight() <= 0 && this->odometry_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_rotation_weight = this->_internal_odometry_rotation_weight();
+  uint64_t raw_odometry_rotation_weight;
+  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
+  if (raw_odometry_rotation_weight != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(17, this->_internal_odometry_rotation_weight(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(17, this->_internal_odometry_rotation_weight(), target);
   }
 
   // bool use_online_imu_extrinsics_in_3d = 18;
-  if (this->use_online_imu_extrinsics_in_3d() != 0) {
+  if (this->_internal_use_online_imu_extrinsics_in_3d() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(18, this->_internal_use_online_imu_extrinsics_in_3d(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(18, this->_internal_use_online_imu_extrinsics_in_3d(), target);
   }
 
   // bool fixed_frame_pose_use_tolerant_loss = 23;
-  if (this->fixed_frame_pose_use_tolerant_loss() != 0) {
+  if (this->_internal_fixed_frame_pose_use_tolerant_loss() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(23, this->_internal_fixed_frame_pose_use_tolerant_loss(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(23, this->_internal_fixed_frame_pose_use_tolerant_loss(), target);
   }
 
   // double fixed_frame_pose_tolerant_loss_param_a = 24;
-  if (!(this->fixed_frame_pose_tolerant_loss_param_a() <= 0 && this->fixed_frame_pose_tolerant_loss_param_a() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_a = this->_internal_fixed_frame_pose_tolerant_loss_param_a();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_a;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_a, &tmp_fixed_frame_pose_tolerant_loss_param_a, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_a));
+  if (raw_fixed_frame_pose_tolerant_loss_param_a != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(24, this->_internal_fixed_frame_pose_tolerant_loss_param_a(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(24, this->_internal_fixed_frame_pose_tolerant_loss_param_a(), target);
   }
 
   // double fixed_frame_pose_tolerant_loss_param_b = 25;
-  if (!(this->fixed_frame_pose_tolerant_loss_param_b() <= 0 && this->fixed_frame_pose_tolerant_loss_param_b() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_b = this->_internal_fixed_frame_pose_tolerant_loss_param_b();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_b;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_b, &tmp_fixed_frame_pose_tolerant_loss_param_b, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_b));
+  if (raw_fixed_frame_pose_tolerant_loss_param_b != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(25, this->_internal_fixed_frame_pose_tolerant_loss_param_b(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(25, this->_internal_fixed_frame_pose_tolerant_loss_param_b(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
@@ -469,178 +568,248 @@ size_t OptimizationProblemOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
-  if (this->has_ceres_solver_options()) {
+  if (this->_internal_has_ceres_solver_options()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *ceres_solver_options_);
+        *_impl_.ceres_solver_options_);
   }
 
   // double huber_scale = 1;
-  if (!(this->huber_scale() <= 0 && this->huber_scale() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_huber_scale = this->_internal_huber_scale();
+  uint64_t raw_huber_scale;
+  memcpy(&raw_huber_scale, &tmp_huber_scale, sizeof(tmp_huber_scale));
+  if (raw_huber_scale != 0) {
     total_size += 1 + 8;
   }
 
   // double acceleration_weight = 8;
-  if (!(this->acceleration_weight() <= 0 && this->acceleration_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_acceleration_weight = this->_internal_acceleration_weight();
+  uint64_t raw_acceleration_weight;
+  memcpy(&raw_acceleration_weight, &tmp_acceleration_weight, sizeof(tmp_acceleration_weight));
+  if (raw_acceleration_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double rotation_weight = 9;
-  if (!(this->rotation_weight() <= 0 && this->rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_rotation_weight = this->_internal_rotation_weight();
+  uint64_t raw_rotation_weight;
+  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
+  if (raw_rotation_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double fixed_frame_pose_translation_weight = 11;
-  if (!(this->fixed_frame_pose_translation_weight() <= 0 && this->fixed_frame_pose_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_translation_weight = this->_internal_fixed_frame_pose_translation_weight();
+  uint64_t raw_fixed_frame_pose_translation_weight;
+  memcpy(&raw_fixed_frame_pose_translation_weight, &tmp_fixed_frame_pose_translation_weight, sizeof(tmp_fixed_frame_pose_translation_weight));
+  if (raw_fixed_frame_pose_translation_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double fixed_frame_pose_rotation_weight = 12;
-  if (!(this->fixed_frame_pose_rotation_weight() <= 0 && this->fixed_frame_pose_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_rotation_weight = this->_internal_fixed_frame_pose_rotation_weight();
+  uint64_t raw_fixed_frame_pose_rotation_weight;
+  memcpy(&raw_fixed_frame_pose_rotation_weight, &tmp_fixed_frame_pose_rotation_weight, sizeof(tmp_fixed_frame_pose_rotation_weight));
+  if (raw_fixed_frame_pose_rotation_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double local_slam_pose_translation_weight = 14;
-  if (!(this->local_slam_pose_translation_weight() <= 0 && this->local_slam_pose_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_translation_weight = this->_internal_local_slam_pose_translation_weight();
+  uint64_t raw_local_slam_pose_translation_weight;
+  memcpy(&raw_local_slam_pose_translation_weight, &tmp_local_slam_pose_translation_weight, sizeof(tmp_local_slam_pose_translation_weight));
+  if (raw_local_slam_pose_translation_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double local_slam_pose_rotation_weight = 15;
-  if (!(this->local_slam_pose_rotation_weight() <= 0 && this->local_slam_pose_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_rotation_weight = this->_internal_local_slam_pose_rotation_weight();
+  uint64_t raw_local_slam_pose_rotation_weight;
+  memcpy(&raw_local_slam_pose_rotation_weight, &tmp_local_slam_pose_rotation_weight, sizeof(tmp_local_slam_pose_rotation_weight));
+  if (raw_local_slam_pose_rotation_weight != 0) {
     total_size += 1 + 8;
   }
 
   // double odometry_translation_weight = 16;
-  if (!(this->odometry_translation_weight() <= 0 && this->odometry_translation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_translation_weight = this->_internal_odometry_translation_weight();
+  uint64_t raw_odometry_translation_weight;
+  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
+  if (raw_odometry_translation_weight != 0) {
     total_size += 2 + 8;
   }
 
   // double odometry_rotation_weight = 17;
-  if (!(this->odometry_rotation_weight() <= 0 && this->odometry_rotation_weight() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_rotation_weight = this->_internal_odometry_rotation_weight();
+  uint64_t raw_odometry_rotation_weight;
+  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
+  if (raw_odometry_rotation_weight != 0) {
     total_size += 2 + 8;
   }
 
-  // bool fixed_frame_pose_use_tolerant_loss = 23;
-  if (this->fixed_frame_pose_use_tolerant_loss() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool fix_z_in_3d = 13;
-  if (this->fix_z_in_3d() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool use_online_imu_extrinsics_in_3d = 18;
-  if (this->use_online_imu_extrinsics_in_3d() != 0) {
-    total_size += 2 + 1;
-  }
-
-  // bool log_solver_summary = 5;
-  if (this->log_solver_summary() != 0) {
-    total_size += 1 + 1;
-  }
-
   // double fixed_frame_pose_tolerant_loss_param_a = 24;
-  if (!(this->fixed_frame_pose_tolerant_loss_param_a() <= 0 && this->fixed_frame_pose_tolerant_loss_param_a() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_a = this->_internal_fixed_frame_pose_tolerant_loss_param_a();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_a;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_a, &tmp_fixed_frame_pose_tolerant_loss_param_a, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_a));
+  if (raw_fixed_frame_pose_tolerant_loss_param_a != 0) {
     total_size += 2 + 8;
   }
 
   // double fixed_frame_pose_tolerant_loss_param_b = 25;
-  if (!(this->fixed_frame_pose_tolerant_loss_param_b() <= 0 && this->fixed_frame_pose_tolerant_loss_param_b() >= 0)) {
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_b = this->_internal_fixed_frame_pose_tolerant_loss_param_b();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_b;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_b, &tmp_fixed_frame_pose_tolerant_loss_param_b, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_b));
+  if (raw_fixed_frame_pose_tolerant_loss_param_b != 0) {
     total_size += 2 + 8;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
+  // bool fixed_frame_pose_use_tolerant_loss = 23;
+  if (this->_internal_fixed_frame_pose_use_tolerant_loss() != 0) {
+    total_size += 2 + 1;
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+
+  // bool fix_z_in_3d = 13;
+  if (this->_internal_fix_z_in_3d() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool use_online_imu_extrinsics_in_3d = 18;
+  if (this->_internal_use_online_imu_extrinsics_in_3d() != 0) {
+    total_size += 2 + 1;
+  }
+
+  // bool log_solver_summary = 5;
+  if (this->_internal_log_solver_summary() != 0) {
+    total_size += 1 + 1;
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void OptimizationProblemOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OptimizationProblemOptions* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OptimizationProblemOptions>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OptimizationProblemOptions::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    OptimizationProblemOptions::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OptimizationProblemOptions::GetClassData() const { return &_class_data_; }
 
-void OptimizationProblemOptions::MergeFrom(const OptimizationProblemOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void OptimizationProblemOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<OptimizationProblemOptions*>(&to_msg);
+  auto& from = static_cast<const OptimizationProblemOptions&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_ceres_solver_options()) {
-    _internal_mutable_ceres_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(from._internal_ceres_solver_options());
+  if (from._internal_has_ceres_solver_options()) {
+    _this->_internal_mutable_ceres_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(
+        from._internal_ceres_solver_options());
   }
-  if (!(from.huber_scale() <= 0 && from.huber_scale() >= 0)) {
-    _internal_set_huber_scale(from._internal_huber_scale());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_huber_scale = from._internal_huber_scale();
+  uint64_t raw_huber_scale;
+  memcpy(&raw_huber_scale, &tmp_huber_scale, sizeof(tmp_huber_scale));
+  if (raw_huber_scale != 0) {
+    _this->_internal_set_huber_scale(from._internal_huber_scale());
   }
-  if (!(from.acceleration_weight() <= 0 && from.acceleration_weight() >= 0)) {
-    _internal_set_acceleration_weight(from._internal_acceleration_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_acceleration_weight = from._internal_acceleration_weight();
+  uint64_t raw_acceleration_weight;
+  memcpy(&raw_acceleration_weight, &tmp_acceleration_weight, sizeof(tmp_acceleration_weight));
+  if (raw_acceleration_weight != 0) {
+    _this->_internal_set_acceleration_weight(from._internal_acceleration_weight());
   }
-  if (!(from.rotation_weight() <= 0 && from.rotation_weight() >= 0)) {
-    _internal_set_rotation_weight(from._internal_rotation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_rotation_weight = from._internal_rotation_weight();
+  uint64_t raw_rotation_weight;
+  memcpy(&raw_rotation_weight, &tmp_rotation_weight, sizeof(tmp_rotation_weight));
+  if (raw_rotation_weight != 0) {
+    _this->_internal_set_rotation_weight(from._internal_rotation_weight());
   }
-  if (!(from.fixed_frame_pose_translation_weight() <= 0 && from.fixed_frame_pose_translation_weight() >= 0)) {
-    _internal_set_fixed_frame_pose_translation_weight(from._internal_fixed_frame_pose_translation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_translation_weight = from._internal_fixed_frame_pose_translation_weight();
+  uint64_t raw_fixed_frame_pose_translation_weight;
+  memcpy(&raw_fixed_frame_pose_translation_weight, &tmp_fixed_frame_pose_translation_weight, sizeof(tmp_fixed_frame_pose_translation_weight));
+  if (raw_fixed_frame_pose_translation_weight != 0) {
+    _this->_internal_set_fixed_frame_pose_translation_weight(from._internal_fixed_frame_pose_translation_weight());
   }
-  if (!(from.fixed_frame_pose_rotation_weight() <= 0 && from.fixed_frame_pose_rotation_weight() >= 0)) {
-    _internal_set_fixed_frame_pose_rotation_weight(from._internal_fixed_frame_pose_rotation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_rotation_weight = from._internal_fixed_frame_pose_rotation_weight();
+  uint64_t raw_fixed_frame_pose_rotation_weight;
+  memcpy(&raw_fixed_frame_pose_rotation_weight, &tmp_fixed_frame_pose_rotation_weight, sizeof(tmp_fixed_frame_pose_rotation_weight));
+  if (raw_fixed_frame_pose_rotation_weight != 0) {
+    _this->_internal_set_fixed_frame_pose_rotation_weight(from._internal_fixed_frame_pose_rotation_weight());
   }
-  if (!(from.local_slam_pose_translation_weight() <= 0 && from.local_slam_pose_translation_weight() >= 0)) {
-    _internal_set_local_slam_pose_translation_weight(from._internal_local_slam_pose_translation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_translation_weight = from._internal_local_slam_pose_translation_weight();
+  uint64_t raw_local_slam_pose_translation_weight;
+  memcpy(&raw_local_slam_pose_translation_weight, &tmp_local_slam_pose_translation_weight, sizeof(tmp_local_slam_pose_translation_weight));
+  if (raw_local_slam_pose_translation_weight != 0) {
+    _this->_internal_set_local_slam_pose_translation_weight(from._internal_local_slam_pose_translation_weight());
   }
-  if (!(from.local_slam_pose_rotation_weight() <= 0 && from.local_slam_pose_rotation_weight() >= 0)) {
-    _internal_set_local_slam_pose_rotation_weight(from._internal_local_slam_pose_rotation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_local_slam_pose_rotation_weight = from._internal_local_slam_pose_rotation_weight();
+  uint64_t raw_local_slam_pose_rotation_weight;
+  memcpy(&raw_local_slam_pose_rotation_weight, &tmp_local_slam_pose_rotation_weight, sizeof(tmp_local_slam_pose_rotation_weight));
+  if (raw_local_slam_pose_rotation_weight != 0) {
+    _this->_internal_set_local_slam_pose_rotation_weight(from._internal_local_slam_pose_rotation_weight());
   }
-  if (!(from.odometry_translation_weight() <= 0 && from.odometry_translation_weight() >= 0)) {
-    _internal_set_odometry_translation_weight(from._internal_odometry_translation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_translation_weight = from._internal_odometry_translation_weight();
+  uint64_t raw_odometry_translation_weight;
+  memcpy(&raw_odometry_translation_weight, &tmp_odometry_translation_weight, sizeof(tmp_odometry_translation_weight));
+  if (raw_odometry_translation_weight != 0) {
+    _this->_internal_set_odometry_translation_weight(from._internal_odometry_translation_weight());
   }
-  if (!(from.odometry_rotation_weight() <= 0 && from.odometry_rotation_weight() >= 0)) {
-    _internal_set_odometry_rotation_weight(from._internal_odometry_rotation_weight());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_odometry_rotation_weight = from._internal_odometry_rotation_weight();
+  uint64_t raw_odometry_rotation_weight;
+  memcpy(&raw_odometry_rotation_weight, &tmp_odometry_rotation_weight, sizeof(tmp_odometry_rotation_weight));
+  if (raw_odometry_rotation_weight != 0) {
+    _this->_internal_set_odometry_rotation_weight(from._internal_odometry_rotation_weight());
   }
-  if (from.fixed_frame_pose_use_tolerant_loss() != 0) {
-    _internal_set_fixed_frame_pose_use_tolerant_loss(from._internal_fixed_frame_pose_use_tolerant_loss());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_a = from._internal_fixed_frame_pose_tolerant_loss_param_a();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_a;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_a, &tmp_fixed_frame_pose_tolerant_loss_param_a, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_a));
+  if (raw_fixed_frame_pose_tolerant_loss_param_a != 0) {
+    _this->_internal_set_fixed_frame_pose_tolerant_loss_param_a(from._internal_fixed_frame_pose_tolerant_loss_param_a());
   }
-  if (from.fix_z_in_3d() != 0) {
-    _internal_set_fix_z_in_3d(from._internal_fix_z_in_3d());
+  static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
+  double tmp_fixed_frame_pose_tolerant_loss_param_b = from._internal_fixed_frame_pose_tolerant_loss_param_b();
+  uint64_t raw_fixed_frame_pose_tolerant_loss_param_b;
+  memcpy(&raw_fixed_frame_pose_tolerant_loss_param_b, &tmp_fixed_frame_pose_tolerant_loss_param_b, sizeof(tmp_fixed_frame_pose_tolerant_loss_param_b));
+  if (raw_fixed_frame_pose_tolerant_loss_param_b != 0) {
+    _this->_internal_set_fixed_frame_pose_tolerant_loss_param_b(from._internal_fixed_frame_pose_tolerant_loss_param_b());
   }
-  if (from.use_online_imu_extrinsics_in_3d() != 0) {
-    _internal_set_use_online_imu_extrinsics_in_3d(from._internal_use_online_imu_extrinsics_in_3d());
+  if (from._internal_fixed_frame_pose_use_tolerant_loss() != 0) {
+    _this->_internal_set_fixed_frame_pose_use_tolerant_loss(from._internal_fixed_frame_pose_use_tolerant_loss());
   }
-  if (from.log_solver_summary() != 0) {
-    _internal_set_log_solver_summary(from._internal_log_solver_summary());
+  if (from._internal_fix_z_in_3d() != 0) {
+    _this->_internal_set_fix_z_in_3d(from._internal_fix_z_in_3d());
   }
-  if (!(from.fixed_frame_pose_tolerant_loss_param_a() <= 0 && from.fixed_frame_pose_tolerant_loss_param_a() >= 0)) {
-    _internal_set_fixed_frame_pose_tolerant_loss_param_a(from._internal_fixed_frame_pose_tolerant_loss_param_a());
+  if (from._internal_use_online_imu_extrinsics_in_3d() != 0) {
+    _this->_internal_set_use_online_imu_extrinsics_in_3d(from._internal_use_online_imu_extrinsics_in_3d());
   }
-  if (!(from.fixed_frame_pose_tolerant_loss_param_b() <= 0 && from.fixed_frame_pose_tolerant_loss_param_b() >= 0)) {
-    _internal_set_fixed_frame_pose_tolerant_loss_param_b(from._internal_fixed_frame_pose_tolerant_loss_param_b());
+  if (from._internal_log_solver_summary() != 0) {
+    _this->_internal_set_log_solver_summary(from._internal_log_solver_summary());
   }
-}
-
-void OptimizationProblemOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.optimization.proto.OptimizationProblemOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OptimizationProblemOptions::CopyFrom(const OptimizationProblemOptions& from) {
@@ -656,19 +825,20 @@ bool OptimizationProblemOptions::IsInitialized() const {
 
 void OptimizationProblemOptions::InternalSwap(OptimizationProblemOptions* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(OptimizationProblemOptions, fixed_frame_pose_tolerant_loss_param_b_)
-      + sizeof(OptimizationProblemOptions::fixed_frame_pose_tolerant_loss_param_b_)
-      - PROTOBUF_FIELD_OFFSET(OptimizationProblemOptions, ceres_solver_options_)>(
-          reinterpret_cast<char*>(&ceres_solver_options_),
-          reinterpret_cast<char*>(&other->ceres_solver_options_));
+      PROTOBUF_FIELD_OFFSET(OptimizationProblemOptions, _impl_.log_solver_summary_)
+      + sizeof(OptimizationProblemOptions::_impl_.log_solver_summary_)
+      - PROTOBUF_FIELD_OFFSET(OptimizationProblemOptions, _impl_.ceres_solver_options_)>(
+          reinterpret_cast<char*>(&_impl_.ceres_solver_options_),
+          reinterpret_cast<char*>(&other->_impl_.ceres_solver_options_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata OptimizationProblemOptions::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto_once,
+      file_level_metadata_cartographer_2fmapping_2fproto_2fpose_5fgraph_2foptimization_5fproblem_5foptions_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
@@ -676,7 +846,8 @@ void OptimizationProblemOptions::InternalSwap(OptimizationProblemOptions* other)
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::optimization::proto::OptimizationProblemOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::optimization::proto::OptimizationProblemOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::optimization::proto::OptimizationProblemOptions*
+Arena::CreateMaybeMessage< ::cartographer::mapping::optimization::proto::OptimizationProblemOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::optimization::proto::OptimizationProblemOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

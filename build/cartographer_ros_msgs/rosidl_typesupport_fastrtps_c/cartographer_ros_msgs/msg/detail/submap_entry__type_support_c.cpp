@@ -5,9 +5,11 @@
 
 
 #include <cassert>
+#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
+#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -37,6 +39,17 @@ extern "C"
 #include "geometry_msgs/msg/detail/pose__functions.h"  // pose
 
 // forward declare type support functions
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
+bool cdr_serialize_geometry_msgs__msg__Pose(
+  const geometry_msgs__msg__Pose * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
+bool cdr_deserialize_geometry_msgs__msg__Pose(
+  eprosima::fastcdr::Cdr & cdr,
+  geometry_msgs__msg__Pose * ros_message);
+
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
 size_t get_serialized_size_geometry_msgs__msg__Pose(
   const void * untyped_ros_message,
@@ -49,21 +62,34 @@ size_t max_serialized_size_geometry_msgs__msg__Pose(
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
+bool cdr_serialize_key_geometry_msgs__msg__Pose(
+  const geometry_msgs__msg__Pose * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
+size_t get_serialized_size_key_geometry_msgs__msg__Pose(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
+size_t max_serialized_size_key_geometry_msgs__msg__Pose(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_cartographer_ros_msgs
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose)();
 
 
 using _SubmapEntry__ros_msg_type = cartographer_ros_msgs__msg__SubmapEntry;
 
-static bool _SubmapEntry__cdr_serialize(
-  const void * untyped_ros_message,
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_serialize_cartographer_ros_msgs__msg__SubmapEntry(
+  const cartographer_ros_msgs__msg__SubmapEntry * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const _SubmapEntry__ros_msg_type * ros_message = static_cast<const _SubmapEntry__ros_msg_type *>(untyped_ros_message);
   // Field name: trajectory_id
   {
     cdr << ros_message->trajectory_id;
@@ -81,16 +107,8 @@ static bool _SubmapEntry__cdr_serialize(
 
   // Field name: pose
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->pose, cdr))
-    {
-      return false;
-    }
+    cdr_serialize_geometry_msgs__msg__Pose(
+      &ros_message->pose, cdr);
   }
 
   // Field name: is_frozen
@@ -101,15 +119,11 @@ static bool _SubmapEntry__cdr_serialize(
   return true;
 }
 
-static bool _SubmapEntry__cdr_deserialize(
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_deserialize_cartographer_ros_msgs__msg__SubmapEntry(
   eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
+  cartographer_ros_msgs__msg__SubmapEntry * ros_message)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  _SubmapEntry__ros_msg_type * ros_message = static_cast<_SubmapEntry__ros_msg_type *>(untyped_ros_message);
   // Field name: trajectory_id
   {
     cdr >> ros_message->trajectory_id;
@@ -127,16 +141,7 @@ static bool _SubmapEntry__cdr_deserialize(
 
   // Field name: pose
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->pose))
-    {
-      return false;
-    }
+    cdr_deserialize_geometry_msgs__msg__Pose(cdr, &ros_message->pose);
   }
 
   // Field name: is_frozen
@@ -148,6 +153,7 @@ static bool _SubmapEntry__cdr_deserialize(
 
   return true;
 }  // NOLINT(readability/fn_size)
+
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t get_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
@@ -163,29 +169,32 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
   (void)padding;
   (void)wchar_size;
 
-  // field.name trajectory_id
+  // Field name: trajectory_id
   {
     size_t item_size = sizeof(ros_message->trajectory_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name submap_index
+
+  // Field name: submap_index
   {
     size_t item_size = sizeof(ros_message->submap_index);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name submap_version
+
+  // Field name: submap_version
   {
     size_t item_size = sizeof(ros_message->submap_version);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name pose
 
+  // Field name: pose
   current_alignment += get_serialized_size_geometry_msgs__msg__Pose(
     &(ros_message->pose), current_alignment);
-  // field.name is_frozen
+
+  // Field name: is_frozen
   {
     size_t item_size = sizeof(ros_message->is_frozen);
     current_alignment += item_size +
@@ -195,12 +204,6 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
   return current_alignment - initial_alignment;
 }
 
-static uint32_t _SubmapEntry__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
-      untyped_ros_message, 0));
-}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t max_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
@@ -220,35 +223,33 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
   full_bounded = true;
   is_plain = true;
 
-  // member: trajectory_id
+  // Field name: trajectory_id
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: submap_index
+
+  // Field name: submap_index
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: submap_version
+
+  // Field name: submap_version
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: pose
+
+  // Field name: pose
   {
     size_t array_size = 1;
-
-
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -263,10 +264,176 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
       is_plain &= inner_is_plain;
     }
   }
-  // member: is_frozen
+
+  // Field name: is_frozen
   {
     size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = cartographer_ros_msgs__msg__SubmapEntry;
+    is_plain =
+      (
+      offsetof(DataType, is_frozen) +
+      last_member_size
+      ) == ret_val;
+  }
+  return ret_val;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_serialize_key_cartographer_ros_msgs__msg__SubmapEntry(
+  const cartographer_ros_msgs__msg__SubmapEntry * ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Field name: trajectory_id
+  {
+    cdr << ros_message->trajectory_id;
+  }
+
+  // Field name: submap_index
+  {
+    cdr << ros_message->submap_index;
+  }
+
+  // Field name: submap_version
+  {
+    cdr << ros_message->submap_version;
+  }
+
+  // Field name: pose
+  {
+    cdr_serialize_key_geometry_msgs__msg__Pose(
+      &ros_message->pose, cdr);
+  }
+
+  // Field name: is_frozen
+  {
+    cdr << (ros_message->is_frozen ? true : false);
+  }
+
+  return true;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+size_t get_serialized_size_key_cartographer_ros_msgs__msg__SubmapEntry(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _SubmapEntry__ros_msg_type * ros_message = static_cast<const _SubmapEntry__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Field name: trajectory_id
+  {
+    size_t item_size = sizeof(ros_message->trajectory_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: submap_index
+  {
+    size_t item_size = sizeof(ros_message->submap_index);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: submap_version
+  {
+    size_t item_size = sizeof(ros_message->submap_version);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: pose
+  current_alignment += get_serialized_size_key_geometry_msgs__msg__Pose(
+    &(ros_message->pose), current_alignment);
+
+  // Field name: is_frozen
+  {
+    size_t item_size = sizeof(ros_message->is_frozen);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+size_t max_serialized_size_key_cartographer_ros_msgs__msg__SubmapEntry(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+  // Field name: trajectory_id
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: submap_index
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: submap_version
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: pose
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_key_geometry_msgs__msg__Pose(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Field name: is_frozen
+  {
+    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
@@ -283,8 +450,41 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
       last_member_size
       ) == ret_val;
   }
-
   return ret_val;
+}
+
+
+static bool _SubmapEntry__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const cartographer_ros_msgs__msg__SubmapEntry * ros_message = static_cast<const cartographer_ros_msgs__msg__SubmapEntry *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_serialize_cartographer_ros_msgs__msg__SubmapEntry(ros_message, cdr);
+}
+
+static bool _SubmapEntry__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  cartographer_ros_msgs__msg__SubmapEntry * ros_message = static_cast<cartographer_ros_msgs__msg__SubmapEntry *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_deserialize_cartographer_ros_msgs__msg__SubmapEntry(cdr, ros_message);
+}
+
+static uint32_t _SubmapEntry__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_cartographer_ros_msgs__msg__SubmapEntry(
+      untyped_ros_message, 0));
 }
 
 static size_t _SubmapEntry__max_serialized_size(char & bounds_info)
@@ -309,13 +509,17 @@ static message_type_support_callbacks_t __callbacks_SubmapEntry = {
   _SubmapEntry__cdr_serialize,
   _SubmapEntry__cdr_deserialize,
   _SubmapEntry__get_serialized_size,
-  _SubmapEntry__max_serialized_size
+  _SubmapEntry__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _SubmapEntry__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_SubmapEntry,
   get_message_typesupport_handle_function,
+  &cartographer_ros_msgs__msg__SubmapEntry__get_type_hash,
+  &cartographer_ros_msgs__msg__SubmapEntry__get_type_description,
+  &cartographer_ros_msgs__msg__SubmapEntry__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

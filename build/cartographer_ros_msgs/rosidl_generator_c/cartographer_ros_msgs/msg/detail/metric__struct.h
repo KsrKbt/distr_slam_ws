@@ -2,6 +2,9 @@
 // with input from cartographer_ros_msgs:msg/Metric.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "cartographer_ros_msgs/msg/metric.h"
+
+
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__METRIC__STRUCT_H_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__METRIC__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

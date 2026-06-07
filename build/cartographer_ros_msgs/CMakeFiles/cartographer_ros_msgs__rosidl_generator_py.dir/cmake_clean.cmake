@@ -43,8 +43,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_trajectory_query_s.c.o.d"
   "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o"
   "CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o.d"
-  "rosidl_generator_py/cartographer_ros_msgs/libcartographer_ros_msgs__rosidl_generator_py.pdb"
-  "rosidl_generator_py/cartographer_ros_msgs/libcartographer_ros_msgs__rosidl_generator_py.so"
+  "libcartographer_ros_msgs__rosidl_generator_py.pdb"
+  "libcartographer_ros_msgs__rosidl_generator_py.so"
 )
 
 # Per-language clean rules from dependency scanning.

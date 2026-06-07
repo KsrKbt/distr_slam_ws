@@ -1,3 +1,4 @@
+import os
 import rclpy
 from rclpy.node import Node
 from flask import Flask, request, jsonify
@@ -15,33 +16,35 @@ import logging
 app = Flask(__name__)
 ros_node = None
 
-# Werkzeugのデフォルトログを無効化
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 server_log = logging.getLogger("server")
 server_log.setLevel(logging.INFO)
 
+STATIC_EDGES = {
+    ('base_footprint', 'base_link'),
+    ('base_link', 'base_scan'),
+    ('base_link', 'imu_link'),
+    ('base_link', 'caster_back'),
+}
+
 class ROS2PublisherNode(Node):
     def __init__(self):
         super().__init__('data_publisher_node')
-        
+
         qos_profile = QoSProfile(
             reliability=ReliabilityPolicy.RELIABLE,
             history=HistoryPolicy.KEEP_LAST,
             depth=10,
             durability=DurabilityPolicy.VOLATILE
         )
-        qos_profile_tf_static = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
-            history=HistoryPolicy.KEEP_LAST,
-            depth=10,
-            durability=DurabilityPolicy.TRANSIENT_LOCAL
-        )
-        
+
         self.scan_pub = self.create_publisher(LaserScan, '/scan', qos_profile)
         self.odom_pub = self.create_publisher(Odometry, '/odom', qos_profile)
         self.tf_pub = self.create_publisher(TFMessage, '/tf', qos_profile)
-        self.tf_static_pub = self.create_publisher(TFMessage, '/tf_static', qos_profile_tf_static)
+
+        # standby では False のまま
+        self.input_enabled = False
 
     def dict_to_header(self, header_dict):
         return Header(
@@ -89,7 +92,7 @@ class ROS2PublisherNode(Node):
         msg = Odometry()
         msg.header = self.dict_to_header(odom_dict['header'])
         msg.child_frame_id = odom_dict['child_frame_id']
-        
+
         pose_dict = odom_dict['pose']['pose']
         msg.pose.pose.position = self.dict_to_point(pose_dict['position'])
         msg.pose.pose.orientation = self.dict_to_quaternion(pose_dict['orientation'])
@@ -99,29 +102,48 @@ class ROS2PublisherNode(Node):
         msg.twist.twist.linear = self.dict_to_vector3(twist_dict['linear'])
         msg.twist.twist.angular = self.dict_to_vector3(twist_dict['angular'])
         msg.twist.covariance = odom_dict['twist']['covariance']
-        
+
         self.odom_pub.publish(msg)
 
-    def publish_tf(self, tf_dict, is_static=False):
-        msg = TFMessage(transforms=[
-            self.dict_to_transform_stamped(t) for t in tf_dict['transforms']
-        ])
-        if is_static:
-            self.tf_static_pub.publish(msg)
-        else:
-            self.tf_pub.publish(msg)
+    def publish_tf(self, tf_dict):
+        transforms = []
+        for t in tf_dict['transforms']:
+            edge = (t['header']['frame_id'], t['child_frame_id'])
+            if edge in STATIC_EDGES:
+                continue
+            transforms.append(self.dict_to_transform_stamped(t))
+
+        if transforms:
+            self.tf_pub.publish(TFMessage(transforms=transforms))
 
 def spin_ros():
     while rclpy.ok():
         rclpy.spin_once(ros_node)
         time.sleep(0.001)
 
+@app.route('/enable_input', methods=['POST'])
+def enable_input():
+    ros_node.input_enabled = True
+    return jsonify({"status": "enabled"}), 200
+
+@app.route('/disable_input', methods=['POST'])
+def disable_input():
+    ros_node.input_enabled = False
+    return jsonify({"status": "disabled"}), 200
+
+@app.route('/healthz', methods=['GET'])
+def healthz():
+    return jsonify({"input_enabled": ros_node.input_enabled}), 200
+
 @app.route('/receive_data', methods=['POST'])
 def receive_data():
     try:
+        if not ros_node.input_enabled:
+            return jsonify({"error": "receiver disabled"}), 503
+
         if request.content_type != 'application/json':
             return jsonify({"error": "Unsupported Media Type"}), 415
-        
+
         data = request.get_json()
         if not data:
             return jsonify({"error": "No data received"}), 400
@@ -131,9 +153,9 @@ def receive_data():
         if 'odom' in data:
             ros_node.publish_odom(data['odom'])
         if 'tf' in data:
-            ros_node.publish_tf(data['tf'], is_static=False)
+            ros_node.publish_tf(data['tf'])
         if 'tf_static' in data:
-            ros_node.publish_tf(data['tf_static'], is_static=True)
+            server_log.info("Ignoring tf_static because robot_state_publisher owns static TF.")
 
         return jsonify({"status": "success"}), 200
     except Exception as e:

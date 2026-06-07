@@ -1,0 +1,146 @@
+[0.016s] Invoking command in '/root/distr_slam_ws/build/cartographer_rviz': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/distr_slam_ws/src/cartographer_ros/cartographer_rviz -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_rviz
+[0.082s] -- The C compiler identification is GNU 13.3.0
+[0.153s] -- The CXX compiler identification is GNU 13.3.0
+[0.172s] -- Detecting C compiler ABI info
+[0.278s] -- Detecting C compiler ABI info - done
+[0.291s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.291s] -- Detecting C compile features
+[0.292s] -- Detecting C compile features - done
+[0.303s] -- Detecting CXX compiler ABI info
+[0.427s] -- Detecting CXX compiler ABI info - done
+[0.439s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.440s] -- Detecting CXX compile features
+[0.440s] -- Detecting CXX compile features - done
+[0.445s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.620s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.881s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.991s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.992s] -- Found Threads: TRUE  
+[1.504s] -- Found AMD headers in: /usr/include/suitesparse
+[1.505s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[1.506s] -- Found CAMD headers in: /usr/include/suitesparse
+[1.507s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[1.507s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[1.508s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[1.509s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[1.510s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[1.510s] -- Found COLAMD headers in: /usr/include/suitesparse
+[1.511s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[1.512s] -- Found SPQR headers in: /usr/include/suitesparse
+[1.513s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[1.513s] -- Found Config headers in: /usr/include/suitesparse
+[1.514s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[1.519s] -- Found Intel Thread Building Blocks (TBB) library (2021.11 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[1.519s] -- Looking for shm_open in rt
+[1.621s] -- Looking for shm_open in rt - found
+[1.621s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[1.627s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[1.628s] -- Found SuiteSparse: /usr/include/suitesparse (found suitable version "7.6.1", minimum required is "7.6.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config 
+[1.643s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[1.655s] -- Found required Ceres dependency: glog
+[1.655s] -- Found required Ceres dependency: gflags
+[1.656s] -- Found Ceres version: 2.2.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]
+[1.682s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: iostreams 
+[1.684s] -- Build type: Release
+[1.688s] Files /root/distr_slam_ws/build/cartographer_rviz/AllFiles.cmake and - differ
+[1.695s] -- Found cartographer_ros: 2.0.9003 (/root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake)
+[1.746s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.764s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.786s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.809s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.027s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.031s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.123s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.142s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.174s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.310s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[2.574s] -- Found rviz_common: 14.1.20 (/opt/ros/jazzy/share/rviz_common/cmake)
+[2.594s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[2.596s] -- Found OGRE
+[2.596s] --   static     : OFF
+[2.596s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[2.596s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.596s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[2.596s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[2.596s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[2.597s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.597s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[2.597s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.597s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.597s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.597s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.598s] -- Could not find freeimage library
+[2.625s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[2.636s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[2.781s] -- Found X11: /usr/include   
+[2.781s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.888s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.888s] -- Looking for gethostbyname
+[2.991s] -- Looking for gethostbyname - found
+[2.991s] -- Looking for connect
+[3.093s] -- Looking for connect - found
+[3.094s] -- Looking for remove
+[3.197s] -- Looking for remove - found
+[3.197s] -- Looking for shmat
+[3.301s] -- Looking for shmat - found
+[3.301s] -- Looking for IceConnectionNumber in ICE
+[3.406s] -- Looking for IceConnectionNumber in ICE - found
+[3.547s] -- Deploy OGRE media
+[3.552s] -- Configuring done (3.5s)
+[3.617s] -- Generating done (0.0s)
+[3.626s] -- Build files have been written to: /root/distr_slam_ws/build/cartographer_rviz
+[3.645s] Invoked command in '/root/distr_slam_ws/build/cartographer_rviz' returned '0': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/distr_slam_ws/src/cartographer_ros/cartographer_rviz -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer_rviz
+[3.647s] Invoking command in '/root/distr_slam_ws/build/cartographer_rviz': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_rviz -- -j8 -l8
+[3.717s] [  0%] Built target cartographer_rviz_autogen_timestamp_deps
+[3.721s] [  0%] Built target cartographer_rviz_detect_changes
+[3.743s] [ 14%] [34m[1mAutomatic MOC for target cartographer_rviz[0m
+[8.167s] [ 14%] Built target cartographer_rviz_autogen
+[8.231s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_rviz.dir/src/drawable_submap.cpp.o[0m
+[8.231s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_rviz.dir/src/ogre_slice.cpp.o[0m
+[8.234s] [ 57%] [32mBuilding CXX object CMakeFiles/cartographer_rviz.dir/cartographer_rviz_autogen/mocs_compilation.cpp.o[0m
+[8.235s] [ 71%] [32mBuilding CXX object CMakeFiles/cartographer_rviz.dir/src/submaps_display.cpp.o[0m
+[37.485s] [ 85%] [32m[1mLinking CXX shared library libcartographer_rviz.so[0m
+[40.819s] [100%] Built target cartographer_rviz
+[40.835s] Invoked command in '/root/distr_slam_ws/build/cartographer_rviz' returned '0': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_rviz -- -j8 -l8
+[40.837s] Invoking command in '/root/distr_slam_ws/build/cartographer_rviz': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_rviz
+[40.849s] -- Install configuration: "Release"
+[40.849s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/rviz_plugin_description.xml
+[40.849s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/lib/libcartographer_rviz.so
+[40.852s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_rviz/lib/libcartographer_rviz.so" to ""
+[40.852s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/include/cartographer_rviz
+[40.852s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/include/cartographer_rviz/cartographer_rviz
+[40.852s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/include/cartographer_rviz/cartographer_rviz/drawable_submap.h
+[40.852s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/include/cartographer_rviz/cartographer_rviz/ogre_slice.h
+[40.852s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/include/cartographer_rviz/cartographer_rviz/submaps_display.h
+[40.853s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/library_path.sh
+[40.853s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/library_path.dsv
+[40.853s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/ament_index/resource_index/package_run_dependencies/cartographer_rviz
+[40.854s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/ament_index/resource_index/parent_prefix_path/cartographer_rviz
+[40.854s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/ament_prefix_path.sh
+[40.854s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/ament_prefix_path.dsv
+[40.855s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/path.sh
+[40.855s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/environment/path.dsv
+[40.855s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/local_setup.bash
+[40.855s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/local_setup.sh
+[40.856s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/local_setup.zsh
+[40.856s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/local_setup.dsv
+[40.856s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/package.dsv
+[40.857s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/ament_index/resource_index/packages/cartographer_rviz
+[40.857s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/ament_index/resource_index/rviz_common__pluginlib__plugin/cartographer_rviz
+[40.857s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120
+[40.858s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.frag
+[40.858s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.vert
+[40.858s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/glsl120.program
+[40.858s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/scripts
+[40.858s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/scripts/submap.material
+[40.859s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/ament_index/resource_index/rviz_ogre_media_exports/cartographer_rviz
+[40.859s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport.cmake
+[40.859s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport-release.cmake
+[40.860s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/ament_cmake_export_include_directories-extras.cmake
+[40.860s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/ament_cmake_export_libraries-extras.cmake
+[40.860s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/ament_cmake_export_targets-extras.cmake
+[40.860s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/ament_cmake_export_dependencies-extras.cmake
+[40.861s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizConfig.cmake
+[40.861s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizConfig-version.cmake
+[40.861s] -- Installing: /root/distr_slam_ws/install/cartographer_rviz/share/cartographer_rviz/package.xml
+[40.864s] Invoked command in '/root/distr_slam_ws/build/cartographer_rviz' returned '0': AMENT_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros:/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros/lib:/root/distr_slam_ws/install/cartographer_ros_msgs/lib:${LD_LIBRARY_PATH} PATH=/root/distr_slam_ws/install/cartographer/bin:${PATH} PKG_CONFIG_PATH=/root/distr_slam_ws/install/cartographer/lib/x86_64-linux-gnu/pkgconfig:/root/distr_slam_ws/install/cartographer/lib/pkgconfig PYTHONPATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_rviz

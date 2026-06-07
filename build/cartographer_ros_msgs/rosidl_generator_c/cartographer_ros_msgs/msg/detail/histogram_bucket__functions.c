@@ -65,7 +65,7 @@ cartographer_ros_msgs__msg__HistogramBucket__copy(
 }
 
 cartographer_ros_msgs__msg__HistogramBucket *
-cartographer_ros_msgs__msg__HistogramBucket__create()
+cartographer_ros_msgs__msg__HistogramBucket__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__HistogramBucket * msg = (cartographer_ros_msgs__msg__HistogramBucket *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__HistogramBucket), allocator.state);

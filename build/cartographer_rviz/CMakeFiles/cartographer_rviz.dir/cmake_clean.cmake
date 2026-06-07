@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cartographer_rviz.dir/src/ogre_slice.cpp.o.d"
   "CMakeFiles/cartographer_rviz.dir/src/submaps_display.cpp.o"
   "CMakeFiles/cartographer_rviz.dir/src/submaps_display.cpp.o.d"
+  "cartographer_rviz_autogen/mocs_compilation.cpp"
+  "cartographer_rviz_autogen/timestamp"
   "libcartographer_rviz.pdb"
   "libcartographer_rviz.so"
 )

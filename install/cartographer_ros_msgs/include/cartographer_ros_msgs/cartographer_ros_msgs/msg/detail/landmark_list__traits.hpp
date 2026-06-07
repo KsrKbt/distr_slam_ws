@@ -2,6 +2,9 @@
 // with input from cartographer_ros_msgs:msg/LandmarkList.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "cartographer_ros_msgs/msg/landmark_list.hpp"
+
+
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__TRAITS_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__LANDMARK_LIST__TRAITS_HPP_
 

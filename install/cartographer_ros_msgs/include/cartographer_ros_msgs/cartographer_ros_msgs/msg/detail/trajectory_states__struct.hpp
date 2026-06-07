@@ -2,6 +2,9 @@
 // with input from cartographer_ros_msgs:msg/TrajectoryStates.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "cartographer_ros_msgs/msg/trajectory_states.hpp"
+
+
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__TRAJECTORY_STATES__STRUCT_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__TRAJECTORY_STATES__STRUCT_HPP_
 

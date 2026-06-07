@@ -2,6 +2,13 @@
 # with input from cartographer_ros_msgs:msg/BagfileProgress.idl
 # generated code does not contain a copyright notice
 
+# This is being done at the module level and not on the instance level to avoid looking
+# for the same variable multiple times on each instance. This variable is not supposed to
+# change during runtime so it makes sense to only look for it once.
+from os import getenv
+
+ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
+
 
 # Import statements for member types
 
@@ -64,6 +71,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
         '_processed_messages',
         '_total_seconds',
         '_processed_seconds',
+        '_check_fields',
     ]
 
     _fields_and_field_types = {
@@ -76,6 +84,8 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
         'processed_seconds': 'float',
     }
 
+    # This attribute is used to store an rosidl_parser.definition variable
+    # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
@@ -87,9 +97,14 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
     )
 
     def __init__(self, **kwargs):
-        assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
-            'Invalid arguments passed to constructor: %s' % \
-            ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        if 'check_fields' in kwargs:
+            self._check_fields = kwargs['check_fields']
+        else:
+            self._check_fields = ros_python_check_fields == '1'
+        if self._check_fields:
+            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+                'Invalid arguments passed to constructor: %s' % \
+                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.current_bagfile_name = kwargs.get('current_bagfile_name', str())
         self.current_bagfile_id = kwargs.get('current_bagfile_id', int())
         self.total_bagfiles = kwargs.get('total_bagfiles', int())
@@ -103,7 +118,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
         typename.pop()
         typename.append(self.__class__.__name__)
         args = []
-        for s, t in zip(self.__slots__, self.SLOT_TYPES):
+        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
             field = getattr(self, s)
             fieldstr = repr(field)
             # We use Python array type for fields that can be directly stored
@@ -117,11 +132,12 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
                 if len(field) == 0:
                     fieldstr = '[]'
                 else:
-                    assert fieldstr.startswith('array(')
+                    if self._check_fields:
+                        assert fieldstr.startswith('array(')
                     prefix = "array('X', "
                     suffix = ')'
                     fieldstr = fieldstr[len(prefix):-len(suffix)]
-            args.append(s[1:] + '=' + fieldstr)
+            args.append(s + '=' + fieldstr)
         return '%s(%s)' % ('.'.join(typename), ', '.join(args))
 
     def __eq__(self, other):
@@ -155,7 +171,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @current_bagfile_name.setter
     def current_bagfile_name(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, str), \
                 "The 'current_bagfile_name' field must be of type 'str'"
@@ -168,7 +184,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @current_bagfile_id.setter
     def current_bagfile_id(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'current_bagfile_id' field must be of type 'int'"
@@ -183,7 +199,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @total_bagfiles.setter
     def total_bagfiles(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'total_bagfiles' field must be of type 'int'"
@@ -198,7 +214,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @total_messages.setter
     def total_messages(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'total_messages' field must be of type 'int'"
@@ -213,7 +229,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @processed_messages.setter
     def processed_messages(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'processed_messages' field must be of type 'int'"
@@ -228,7 +244,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @total_seconds.setter
     def total_seconds(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'total_seconds' field must be of type 'float'"
@@ -243,7 +259,7 @@ class BagfileProgress(metaclass=Metaclass_BagfileProgress):
 
     @processed_seconds.setter
     def processed_seconds(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'processed_seconds' field must be of type 'float'"

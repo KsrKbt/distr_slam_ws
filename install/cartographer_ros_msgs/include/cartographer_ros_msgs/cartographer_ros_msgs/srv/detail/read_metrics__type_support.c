@@ -37,6 +37,7 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -56,6 +57,7 @@ static const rosidl_typesupport_introspection_c__MessageMembers cartographer_ros
   "ReadMetrics_Request",  // message name
   1,  // number of fields
   sizeof(cartographer_ros_msgs__srv__ReadMetrics_Request),
+  false,  // has_any_key_member_
   cartographer_ros_msgs__srv__ReadMetrics_Request__rosidl_typesupport_introspection_c__ReadMetrics_Request_message_member_array,  // message members
   cartographer_ros_msgs__srv__ReadMetrics_Request__rosidl_typesupport_introspection_c__ReadMetrics_Request_init_function,  // function to initialize message memory (memory has to be allocated)
   cartographer_ros_msgs__srv__ReadMetrics_Request__rosidl_typesupport_introspection_c__ReadMetrics_Request_fini_function  // function to terminate message instance (will not free memory)
@@ -67,6 +69,9 @@ static rosidl_message_type_support_t cartographer_ros_msgs__srv__ReadMetrics_Req
   0,
   &cartographer_ros_msgs__srv__ReadMetrics_Request__rosidl_typesupport_introspection_c__ReadMetrics_Request_message_members,
   get_message_typesupport_handle_function,
+  &cartographer_ros_msgs__srv__ReadMetrics_Request__get_type_hash,
+  &cartographer_ros_msgs__srv__ReadMetrics_Request__get_type_description,
+  &cartographer_ros_msgs__srv__ReadMetrics_Request__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cartographer_ros_msgs
@@ -194,6 +199,7 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -211,6 +217,7 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
+    false,  // is key
     true,  // is array
     0,  // array size
     false,  // is upper bound
@@ -228,6 +235,7 @@ static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -247,6 +255,7 @@ static const rosidl_typesupport_introspection_c__MessageMembers cartographer_ros
   "ReadMetrics_Response",  // message name
   3,  // number of fields
   sizeof(cartographer_ros_msgs__srv__ReadMetrics_Response),
+  false,  // has_any_key_member_
   cartographer_ros_msgs__srv__ReadMetrics_Response__rosidl_typesupport_introspection_c__ReadMetrics_Response_message_member_array,  // message members
   cartographer_ros_msgs__srv__ReadMetrics_Response__rosidl_typesupport_introspection_c__ReadMetrics_Response_init_function,  // function to initialize message memory (memory has to be allocated)
   cartographer_ros_msgs__srv__ReadMetrics_Response__rosidl_typesupport_introspection_c__ReadMetrics_Response_fini_function  // function to terminate message instance (will not free memory)
@@ -258,6 +267,9 @@ static rosidl_message_type_support_t cartographer_ros_msgs__srv__ReadMetrics_Res
   0,
   &cartographer_ros_msgs__srv__ReadMetrics_Response__rosidl_typesupport_introspection_c__ReadMetrics_Response_message_members,
   get_message_typesupport_handle_function,
+  &cartographer_ros_msgs__srv__ReadMetrics_Response__get_type_hash,
+  &cartographer_ros_msgs__srv__ReadMetrics_Response__get_type_description,
+  &cartographer_ros_msgs__srv__ReadMetrics_Response__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cartographer_ros_msgs
@@ -279,6 +291,264 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 }
 #endif
 
+// already included above
+// #include <stddef.h>
+// already included above
+// #include "cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_introspection_c.h"
+// already included above
+// #include "cartographer_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+// already included above
+// #include "rosidl_typesupport_introspection_c/field_types.h"
+// already included above
+// #include "rosidl_typesupport_introspection_c/identifier.h"
+// already included above
+// #include "rosidl_typesupport_introspection_c/message_introspection.h"
+// already included above
+// #include "cartographer_ros_msgs/srv/detail/read_metrics__functions.h"
+// already included above
+// #include "cartographer_ros_msgs/srv/detail/read_metrics__struct.h"
+
+
+// Include directives for member types
+// Member `info`
+#include "service_msgs/msg/service_event_info.h"
+// Member `info`
+#include "service_msgs/msg/detail/service_event_info__rosidl_typesupport_introspection_c.h"
+// Member `request`
+// Member `response`
+#include "cartographer_ros_msgs/srv/read_metrics.h"
+// Member `request`
+// Member `response`
+// already included above
+// #include "cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_introspection_c.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_init_function(
+  void * message_memory, enum rosidl_runtime_c__message_initialization _init)
+{
+  // TODO(karsten1987): initializers are not yet implemented for typesupport c
+  // see https://github.com/ros2/ros2/issues/397
+  (void) _init;
+  cartographer_ros_msgs__srv__ReadMetrics_Event__init(message_memory);
+}
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_fini_function(void * message_memory)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Event__fini(message_memory);
+}
+
+size_t cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__size_function__ReadMetrics_Event__request(
+  const void * untyped_member)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence * member =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__request(
+  const void * untyped_member, size_t index)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence * member =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__request(
+  void * untyped_member, size_t index)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence * member =
+    (cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__fetch_function__ReadMetrics_Event__request(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Request * item =
+    ((const cartographer_ros_msgs__srv__ReadMetrics_Request *)
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__request(untyped_member, index));
+  cartographer_ros_msgs__srv__ReadMetrics_Request * value =
+    (cartographer_ros_msgs__srv__ReadMetrics_Request *)(untyped_value);
+  *value = *item;
+}
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__assign_function__ReadMetrics_Event__request(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Request * item =
+    ((cartographer_ros_msgs__srv__ReadMetrics_Request *)
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__request(untyped_member, index));
+  const cartographer_ros_msgs__srv__ReadMetrics_Request * value =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Request *)(untyped_value);
+  *item = *value;
+}
+
+bool cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__resize_function__ReadMetrics_Event__request(
+  void * untyped_member, size_t size)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence * member =
+    (cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence *)(untyped_member);
+  cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence__fini(member);
+  return cartographer_ros_msgs__srv__ReadMetrics_Request__Sequence__init(member, size);
+}
+
+size_t cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__size_function__ReadMetrics_Event__response(
+  const void * untyped_member)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence * member =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__response(
+  const void * untyped_member, size_t index)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence * member =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__response(
+  void * untyped_member, size_t index)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence * member =
+    (cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__fetch_function__ReadMetrics_Event__response(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const cartographer_ros_msgs__srv__ReadMetrics_Response * item =
+    ((const cartographer_ros_msgs__srv__ReadMetrics_Response *)
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__response(untyped_member, index));
+  cartographer_ros_msgs__srv__ReadMetrics_Response * value =
+    (cartographer_ros_msgs__srv__ReadMetrics_Response *)(untyped_value);
+  *value = *item;
+}
+
+void cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__assign_function__ReadMetrics_Event__response(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Response * item =
+    ((cartographer_ros_msgs__srv__ReadMetrics_Response *)
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__response(untyped_member, index));
+  const cartographer_ros_msgs__srv__ReadMetrics_Response * value =
+    (const cartographer_ros_msgs__srv__ReadMetrics_Response *)(untyped_value);
+  *item = *value;
+}
+
+bool cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__resize_function__ReadMetrics_Event__response(
+  void * untyped_member, size_t size)
+{
+  cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence * member =
+    (cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence *)(untyped_member);
+  cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence__fini(member);
+  return cartographer_ros_msgs__srv__ReadMetrics_Response__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_member_array[3] = {
+  {
+    "info",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cartographer_ros_msgs__srv__ReadMetrics_Event, info),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "request",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(cartographer_ros_msgs__srv__ReadMetrics_Event, request),  // bytes offset in struct
+    NULL,  // default value
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__size_function__ReadMetrics_Event__request,  // size() function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__request,  // get_const(index) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__request,  // get(index) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__fetch_function__ReadMetrics_Event__request,  // fetch(index, &value) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__assign_function__ReadMetrics_Event__request,  // assign(index, value) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__resize_function__ReadMetrics_Event__request  // resize(index) function pointer
+  },
+  {
+    "response",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is key
+    true,  // is array
+    1,  // array size
+    true,  // is upper bound
+    offsetof(cartographer_ros_msgs__srv__ReadMetrics_Event, response),  // bytes offset in struct
+    NULL,  // default value
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__size_function__ReadMetrics_Event__response,  // size() function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_const_function__ReadMetrics_Event__response,  // get_const(index) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__get_function__ReadMetrics_Event__response,  // get(index) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__fetch_function__ReadMetrics_Event__response,  // fetch(index, &value) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__assign_function__ReadMetrics_Event__response,  // assign(index, value) function pointer
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__resize_function__ReadMetrics_Event__response  // resize(index) function pointer
+  }
+};
+
+static const rosidl_typesupport_introspection_c__MessageMembers cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_members = {
+  "cartographer_ros_msgs__srv",  // message namespace
+  "ReadMetrics_Event",  // message name
+  3,  // number of fields
+  sizeof(cartographer_ros_msgs__srv__ReadMetrics_Event),
+  false,  // has_any_key_member_
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_member_array,  // message members
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_init_function,  // function to initialize message memory (memory has to be allocated)
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_fini_function  // function to terminate message instance (will not free memory)
+};
+
+// this is not const since it must be initialized on first access
+// since C does not allow non-integral compile-time constants
+static rosidl_message_type_support_t cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_type_support_handle = {
+  0,
+  &cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_members,
+  get_message_typesupport_handle_function,
+  &cartographer_ros_msgs__srv__ReadMetrics_Event__get_type_hash,
+  &cartographer_ros_msgs__srv__ReadMetrics_Event__get_type_description,
+  &cartographer_ros_msgs__srv__ReadMetrics_Event__get_type_description_sources,
+};
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cartographer_ros_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Event)() {
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, service_msgs, msg, ServiceEventInfo)();
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Request)();
+  cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_member_array[2].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Response)();
+  if (!cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_type_support_handle.typesupport_identifier) {
+    cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_type_support_handle.typesupport_identifier =
+      rosidl_typesupport_introspection_c__identifier;
+  }
+  return &cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_type_support_handle;
+}
+#ifdef __cplusplus
+}
+#endif
+
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "cartographer_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h"
@@ -292,29 +562,53 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 static rosidl_typesupport_introspection_c__ServiceMembers cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_members = {
   "cartographer_ros_msgs__srv",  // service namespace
   "ReadMetrics",  // service name
-  // these two fields are initialized below on the first access
+  // the following fields are initialized below on first access
   NULL,  // request message
   // cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_Request_message_type_support_handle,
-  NULL  // response message
+  NULL,  // response message
+  // cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_Response_message_type_support_handle
+  NULL  // event_message
   // cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_Response_message_type_support_handle
 };
+
 
 static rosidl_service_type_support_t cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_type_support_handle = {
   0,
   &cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_members,
   get_service_typesupport_handle_function,
+  &cartographer_ros_msgs__srv__ReadMetrics_Request__rosidl_typesupport_introspection_c__ReadMetrics_Request_message_type_support_handle,
+  &cartographer_ros_msgs__srv__ReadMetrics_Response__rosidl_typesupport_introspection_c__ReadMetrics_Response_message_type_support_handle,
+  &cartographer_ros_msgs__srv__ReadMetrics_Event__rosidl_typesupport_introspection_c__ReadMetrics_Event_message_type_support_handle,
+  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_CREATE_EVENT_MESSAGE_SYMBOL_NAME(
+    rosidl_typesupport_c,
+    cartographer_ros_msgs,
+    srv,
+    ReadMetrics
+  ),
+  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_DESTROY_EVENT_MESSAGE_SYMBOL_NAME(
+    rosidl_typesupport_c,
+    cartographer_ros_msgs,
+    srv,
+    ReadMetrics
+  ),
+  &cartographer_ros_msgs__srv__ReadMetrics__get_type_hash,
+  &cartographer_ros_msgs__srv__ReadMetrics__get_type_description,
+  &cartographer_ros_msgs__srv__ReadMetrics__get_type_description_sources,
 };
 
-// Forward declaration of request/response type support functions
+// Forward declaration of message type support functions for service members
 const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Request)();
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Request)(void);
 
 const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Response)();
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Response)(void);
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Event)(void);
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_cartographer_ros_msgs
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics)() {
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics)(void) {
   if (!cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_type_support_handle.typesupport_identifier) {
     cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
@@ -331,6 +625,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspecti
     service_members->response_members_ =
       (const rosidl_typesupport_introspection_c__MessageMembers *)
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Response)()->data;
+  }
+  if (!service_members->event_members_) {
+    service_members->event_members_ =
+      (const rosidl_typesupport_introspection_c__MessageMembers *)
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, cartographer_ros_msgs, srv, ReadMetrics_Event)()->data;
   }
 
   return &cartographer_ros_msgs__srv__detail__read_metrics__rosidl_typesupport_introspection_c__ReadMetrics_service_type_support_handle;

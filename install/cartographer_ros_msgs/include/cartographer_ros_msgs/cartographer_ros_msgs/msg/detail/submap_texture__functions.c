@@ -117,7 +117,7 @@ cartographer_ros_msgs__msg__SubmapTexture__copy(
 }
 
 cartographer_ros_msgs__msg__SubmapTexture *
-cartographer_ros_msgs__msg__SubmapTexture__create()
+cartographer_ros_msgs__msg__SubmapTexture__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__SubmapTexture * msg = (cartographer_ros_msgs__msg__SubmapTexture *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__SubmapTexture), allocator.state);

@@ -1,4 +1,0 @@
-
-# Response
-cartographer_ros_msgs/StatusCode status
-string ram_disk_path  # 出力されたメモリ上のパス (例: /dev/shm/state.pbstream)

@@ -5,6 +5,7 @@
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__BAGFILE_PROGRESS__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__BAGFILE_PROGRESS__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
 
+#include <cstddef>
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
@@ -54,6 +55,25 @@ get_serialized_size(
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
 max_serialized_size_BagfileProgress(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
+cdr_serialize_key(
+  const cartographer_ros_msgs::msg::BagfileProgress & ros_message,
+  eprosima::fastcdr::Cdr &);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
+get_serialized_size_key(
+  const cartographer_ros_msgs::msg::BagfileProgress & ros_message,
+  size_t current_alignment);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_cartographer_ros_msgs
+max_serialized_size_key_BagfileProgress(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

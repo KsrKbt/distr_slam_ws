@@ -104,7 +104,7 @@ cartographer_ros_msgs__msg__SubmapEntry__copy(
 }
 
 cartographer_ros_msgs__msg__SubmapEntry *
-cartographer_ros_msgs__msg__SubmapEntry__create()
+cartographer_ros_msgs__msg__SubmapEntry__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   cartographer_ros_msgs__msg__SubmapEntry * msg = (cartographer_ros_msgs__msg__SubmapEntry *)allocator.allocate(sizeof(cartographer_ros_msgs__msg__SubmapEntry), allocator.state);

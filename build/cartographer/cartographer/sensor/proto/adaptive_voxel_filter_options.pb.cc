@@ -14,50 +14,54 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace cartographer {
 namespace sensor {
 namespace proto {
-class AdaptiveVoxelFilterOptionsDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AdaptiveVoxelFilterOptions> _instance;
-} _AdaptiveVoxelFilterOptions_default_instance_;
+PROTOBUF_CONSTEXPR AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.max_length_)*/0
+  , /*decltype(_impl_.min_num_points_)*/0
+  , /*decltype(_impl_.max_range_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct AdaptiveVoxelFilterOptionsDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR AdaptiveVoxelFilterOptionsDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~AdaptiveVoxelFilterOptionsDefaultTypeInternal() {}
+  union {
+    AdaptiveVoxelFilterOptions _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AdaptiveVoxelFilterOptionsDefaultTypeInternal _AdaptiveVoxelFilterOptions_default_instance_;
 }  // namespace proto
 }  // namespace sensor
 }  // namespace cartographer
-static void InitDefaultsscc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto[1];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = nullptr;
 
-  {
-    void* ptr = &::cartographer::sensor::proto::_AdaptiveVoxelFilterOptions_default_instance_;
-    new (ptr) ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto}, {}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, max_length_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, min_num_points_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, max_range_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, _impl_.max_length_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, _impl_.min_num_points_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions, _impl_.max_range_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::sensor::proto::_AdaptiveVoxelFilterOptions_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::cartographer::sensor::proto::_AdaptiveVoxelFilterOptions_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -67,168 +71,185 @@ const char descriptor_table_protodef_cartographer_2fsensor_2fproto_2fadaptive_5f
   "\022\022\n\nmax_length\030\001 \001(\002\022\026\n\016min_num_points\030\002"
   " \001(\002\022\021\n\tmax_range\030\003 \001(\002b\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_deps[1] = {
+static ::_pbi::once_flag descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = {
+    false, false, 191, descriptor_table_protodef_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto,
+    "cartographer/sensor/proto/adaptive_voxel_filter_options.proto",
+    &descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_once, nullptr, 0, 1,
+    schemas, file_default_instances, TableStruct_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::offsets,
+    file_level_metadata_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto,
+    file_level_service_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_sccs[1] = {
-  &scc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto.base,
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = {
-  false, false, descriptor_table_protodef_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto, "cartographer/sensor/proto/adaptive_voxel_filter_options.proto", 191,
-  &descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_once, descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_sccs, descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_deps, 1, 0,
-  schemas, file_default_instances, TableStruct_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::offsets,
-  file_level_metadata_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto, 1, file_level_enum_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto, file_level_service_descriptors_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_getter() {
+  return &descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto(&descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto);
 namespace cartographer {
 namespace sensor {
 namespace proto {
 
 // ===================================================================
 
-void AdaptiveVoxelFilterOptions::InitAsDefaultInstance() {
-}
 class AdaptiveVoxelFilterOptions::_Internal {
  public:
 };
 
-AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
 }
 AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions(const AdaptiveVoxelFilterOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AdaptiveVoxelFilterOptions* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.max_length_){}
+    , decltype(_impl_.min_num_points_){}
+    , decltype(_impl_.max_range_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&max_length_, &from.max_length_,
-    static_cast<size_t>(reinterpret_cast<char*>(&max_range_) -
-    reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
+  ::memcpy(&_impl_.max_length_, &from._impl_.max_length_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.max_range_) -
+    reinterpret_cast<char*>(&_impl_.max_length_)) + sizeof(_impl_.max_range_));
   // @@protoc_insertion_point(copy_constructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
 }
 
-void AdaptiveVoxelFilterOptions::SharedCtor() {
-  ::memset(&max_length_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&max_range_) -
-      reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
+inline void AdaptiveVoxelFilterOptions::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.max_length_){0}
+    , decltype(_impl_.min_num_points_){0}
+    , decltype(_impl_.max_range_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 AdaptiveVoxelFilterOptions::~AdaptiveVoxelFilterOptions() {
   // @@protoc_insertion_point(destructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AdaptiveVoxelFilterOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void AdaptiveVoxelFilterOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void AdaptiveVoxelFilterOptions::ArenaDtor(void* object) {
-  AdaptiveVoxelFilterOptions* _this = reinterpret_cast< AdaptiveVoxelFilterOptions* >(object);
-  (void)_this;
-}
-void AdaptiveVoxelFilterOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AdaptiveVoxelFilterOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const AdaptiveVoxelFilterOptions& AdaptiveVoxelFilterOptions::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AdaptiveVoxelFilterOptions_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void AdaptiveVoxelFilterOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&max_length_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&max_range_) -
-      reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
+  ::memset(&_impl_.max_length_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.max_range_) -
+      reinterpret_cast<char*>(&_impl_.max_length_)) + sizeof(_impl_.max_range_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AdaptiveVoxelFilterOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AdaptiveVoxelFilterOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // float max_length = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
-          max_length_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
+          _impl_.max_length_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float min_num_points = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
-          min_num_points_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
+          _impl_.min_num_points_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float max_range = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
-          max_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
+          _impl_.max_range_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AdaptiveVoxelFilterOptions::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AdaptiveVoxelFilterOptions::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float max_length = 1;
-  if (!(this->max_length() <= 0 && this->max_length() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_length = this->_internal_max_length();
+  uint32_t raw_max_length;
+  memcpy(&raw_max_length, &tmp_max_length, sizeof(tmp_max_length));
+  if (raw_max_length != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_max_length(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(1, this->_internal_max_length(), target);
   }
 
   // float min_num_points = 2;
-  if (!(this->min_num_points() <= 0 && this->min_num_points() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min_num_points = this->_internal_min_num_points();
+  uint32_t raw_min_num_points;
+  memcpy(&raw_min_num_points, &tmp_min_num_points, sizeof(tmp_min_num_points));
+  if (raw_min_num_points != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_min_num_points(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_min_num_points(), target);
   }
 
   // float max_range = 3;
-  if (!(this->max_range() <= 0 && this->max_range() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_range = this->_internal_max_range();
+  uint32_t raw_max_range;
+  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
+  if (raw_max_range != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_max_range(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(3, this->_internal_max_range(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
@@ -239,72 +260,77 @@ size_t AdaptiveVoxelFilterOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float max_length = 1;
-  if (!(this->max_length() <= 0 && this->max_length() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_length = this->_internal_max_length();
+  uint32_t raw_max_length;
+  memcpy(&raw_max_length, &tmp_max_length, sizeof(tmp_max_length));
+  if (raw_max_length != 0) {
     total_size += 1 + 4;
   }
 
   // float min_num_points = 2;
-  if (!(this->min_num_points() <= 0 && this->min_num_points() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min_num_points = this->_internal_min_num_points();
+  uint32_t raw_min_num_points;
+  memcpy(&raw_min_num_points, &tmp_min_num_points, sizeof(tmp_min_num_points));
+  if (raw_min_num_points != 0) {
     total_size += 1 + 4;
   }
 
   // float max_range = 3;
-  if (!(this->max_range() <= 0 && this->max_range() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_range = this->_internal_max_range();
+  uint32_t raw_max_range;
+  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
+  if (raw_max_range != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AdaptiveVoxelFilterOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AdaptiveVoxelFilterOptions* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AdaptiveVoxelFilterOptions>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AdaptiveVoxelFilterOptions::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AdaptiveVoxelFilterOptions::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AdaptiveVoxelFilterOptions::GetClassData() const { return &_class_data_; }
 
-void AdaptiveVoxelFilterOptions::MergeFrom(const AdaptiveVoxelFilterOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AdaptiveVoxelFilterOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AdaptiveVoxelFilterOptions*>(&to_msg);
+  auto& from = static_cast<const AdaptiveVoxelFilterOptions&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.max_length() <= 0 && from.max_length() >= 0)) {
-    _internal_set_max_length(from._internal_max_length());
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_length = from._internal_max_length();
+  uint32_t raw_max_length;
+  memcpy(&raw_max_length, &tmp_max_length, sizeof(tmp_max_length));
+  if (raw_max_length != 0) {
+    _this->_internal_set_max_length(from._internal_max_length());
   }
-  if (!(from.min_num_points() <= 0 && from.min_num_points() >= 0)) {
-    _internal_set_min_num_points(from._internal_min_num_points());
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min_num_points = from._internal_min_num_points();
+  uint32_t raw_min_num_points;
+  memcpy(&raw_min_num_points, &tmp_min_num_points, sizeof(tmp_min_num_points));
+  if (raw_min_num_points != 0) {
+    _this->_internal_set_min_num_points(from._internal_min_num_points());
   }
-  if (!(from.max_range() <= 0 && from.max_range() >= 0)) {
-    _internal_set_max_range(from._internal_max_range());
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max_range = from._internal_max_range();
+  uint32_t raw_max_range;
+  memcpy(&raw_max_range, &tmp_max_range, sizeof(tmp_max_range));
+  if (raw_max_range != 0) {
+    _this->_internal_set_max_range(from._internal_max_range());
   }
-}
-
-void AdaptiveVoxelFilterOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AdaptiveVoxelFilterOptions::CopyFrom(const AdaptiveVoxelFilterOptions& from) {
@@ -320,26 +346,28 @@ bool AdaptiveVoxelFilterOptions::IsInitialized() const {
 
 void AdaptiveVoxelFilterOptions::InternalSwap(AdaptiveVoxelFilterOptions* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_range_)
-      + sizeof(AdaptiveVoxelFilterOptions::max_range_)
-      - PROTOBUF_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_length_)>(
-          reinterpret_cast<char*>(&max_length_),
-          reinterpret_cast<char*>(&other->max_length_));
+      PROTOBUF_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _impl_.max_range_)
+      + sizeof(AdaptiveVoxelFilterOptions::_impl_.max_range_)
+      - PROTOBUF_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _impl_.max_length_)>(
+          reinterpret_cast<char*>(&_impl_.max_length_),
+          reinterpret_cast<char*>(&other->_impl_.max_length_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AdaptiveVoxelFilterOptions::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_getter, &descriptor_table_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_once,
+      file_level_metadata_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace sensor
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions* Arena::CreateMaybeMessage< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions*
+Arena::CreateMaybeMessage< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

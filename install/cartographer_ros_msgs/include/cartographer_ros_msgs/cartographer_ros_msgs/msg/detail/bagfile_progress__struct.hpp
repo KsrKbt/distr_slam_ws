@@ -2,6 +2,9 @@
 // with input from cartographer_ros_msgs:msg/BagfileProgress.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "cartographer_ros_msgs/msg/bagfile_progress.hpp"
+
+
 #ifndef CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__BAGFILE_PROGRESS__STRUCT_HPP_
 #define CARTOGRAPHER_ROS_MSGS__MSG__DETAIL__BAGFILE_PROGRESS__STRUCT_HPP_
 

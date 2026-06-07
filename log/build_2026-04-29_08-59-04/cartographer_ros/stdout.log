@@ -1,9 +1,0 @@
-[ 60%] Built target cartographer_ros
-[ 71%] Built target cartographer_pbstream_to_ros_map
-[ 71%] Built target cartographer_pbstream_map_publisher
-[ 88%] Built target cartographer_assets_writer
-[ 88%] Built target cartographer_occupancy_grid_node
-[ 88%] [32mBuilding CXX object CMakeFiles/cartographer_node.dir/src/node_main.cpp.o[0m
-[ 91%] Built target cartographer_offline_node
-[ 97%] Built target cartographer_rosbag_validate
-[100%] [32m[1mLinking CXX executable cartographer_node[0m

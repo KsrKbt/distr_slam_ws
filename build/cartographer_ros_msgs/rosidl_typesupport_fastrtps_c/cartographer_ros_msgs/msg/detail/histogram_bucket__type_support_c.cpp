@@ -5,9 +5,11 @@
 
 
 #include <cassert>
+#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
+#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -40,15 +42,12 @@ extern "C"
 
 using _HistogramBucket__ros_msg_type = cartographer_ros_msgs__msg__HistogramBucket;
 
-static bool _HistogramBucket__cdr_serialize(
-  const void * untyped_ros_message,
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_serialize_cartographer_ros_msgs__msg__HistogramBucket(
+  const cartographer_ros_msgs__msg__HistogramBucket * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const _HistogramBucket__ros_msg_type * ros_message = static_cast<const _HistogramBucket__ros_msg_type *>(untyped_ros_message);
   // Field name: bucket_boundary
   {
     cdr << ros_message->bucket_boundary;
@@ -62,15 +61,11 @@ static bool _HistogramBucket__cdr_serialize(
   return true;
 }
 
-static bool _HistogramBucket__cdr_deserialize(
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_deserialize_cartographer_ros_msgs__msg__HistogramBucket(
   eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
+  cartographer_ros_msgs__msg__HistogramBucket * ros_message)
 {
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  _HistogramBucket__ros_msg_type * ros_message = static_cast<_HistogramBucket__ros_msg_type *>(untyped_ros_message);
   // Field name: bucket_boundary
   {
     cdr >> ros_message->bucket_boundary;
@@ -83,6 +78,7 @@ static bool _HistogramBucket__cdr_deserialize(
 
   return true;
 }  // NOLINT(readability/fn_size)
+
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t get_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
@@ -98,13 +94,14 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
   (void)padding;
   (void)wchar_size;
 
-  // field.name bucket_boundary
+  // Field name: bucket_boundary
   {
     size_t item_size = sizeof(ros_message->bucket_boundary);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name count
+
+  // Field name: count
   {
     size_t item_size = sizeof(ros_message->count);
     current_alignment += item_size +
@@ -114,12 +111,6 @@ size_t get_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
   return current_alignment - initial_alignment;
 }
 
-static uint32_t _HistogramBucket__get_serialized_size(const void * untyped_ros_message)
-{
-  return static_cast<uint32_t>(
-    get_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
-      untyped_ros_message, 0));
-}
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
 size_t max_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
@@ -139,18 +130,116 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
   full_bounded = true;
   is_plain = true;
 
-  // member: bucket_boundary
+  // Field name: bucket_boundary
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: count
+
+  // Field name: count
   {
     size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
 
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = cartographer_ros_msgs__msg__HistogramBucket;
+    is_plain =
+      (
+      offsetof(DataType, count) +
+      last_member_size
+      ) == ret_val;
+  }
+  return ret_val;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+bool cdr_serialize_key_cartographer_ros_msgs__msg__HistogramBucket(
+  const cartographer_ros_msgs__msg__HistogramBucket * ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Field name: bucket_boundary
+  {
+    cdr << ros_message->bucket_boundary;
+  }
+
+  // Field name: count
+  {
+    cdr << ros_message->count;
+  }
+
+  return true;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+size_t get_serialized_size_key_cartographer_ros_msgs__msg__HistogramBucket(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _HistogramBucket__ros_msg_type * ros_message = static_cast<const _HistogramBucket__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Field name: bucket_boundary
+  {
+    size_t item_size = sizeof(ros_message->bucket_boundary);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: count
+  {
+    size_t item_size = sizeof(ros_message->count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_cartographer_ros_msgs
+size_t max_serialized_size_key_cartographer_ros_msgs__msg__HistogramBucket(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+  // Field name: bucket_boundary
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Field name: count
+  {
+    size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
@@ -168,8 +257,41 @@ size_t max_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
       last_member_size
       ) == ret_val;
   }
-
   return ret_val;
+}
+
+
+static bool _HistogramBucket__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const cartographer_ros_msgs__msg__HistogramBucket * ros_message = static_cast<const cartographer_ros_msgs__msg__HistogramBucket *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_serialize_cartographer_ros_msgs__msg__HistogramBucket(ros_message, cdr);
+}
+
+static bool _HistogramBucket__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  cartographer_ros_msgs__msg__HistogramBucket * ros_message = static_cast<cartographer_ros_msgs__msg__HistogramBucket *>(untyped_ros_message);
+  (void)ros_message;
+  return cdr_deserialize_cartographer_ros_msgs__msg__HistogramBucket(cdr, ros_message);
+}
+
+static uint32_t _HistogramBucket__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_cartographer_ros_msgs__msg__HistogramBucket(
+      untyped_ros_message, 0));
 }
 
 static size_t _HistogramBucket__max_serialized_size(char & bounds_info)
@@ -194,13 +316,17 @@ static message_type_support_callbacks_t __callbacks_HistogramBucket = {
   _HistogramBucket__cdr_serialize,
   _HistogramBucket__cdr_deserialize,
   _HistogramBucket__get_serialized_size,
-  _HistogramBucket__max_serialized_size
+  _HistogramBucket__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _HistogramBucket__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_HistogramBucket,
   get_message_typesupport_handle_function,
+  &cartographer_ros_msgs__msg__HistogramBucket__get_type_hash,
+  &cartographer_ros_msgs__msg__HistogramBucket__get_type_description,
+  &cartographer_ros_msgs__msg__HistogramBucket__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

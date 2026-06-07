@@ -14,54 +14,54 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2fprobability_5fgrid_5frange_5fdata_5finserter_5foptions_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProbabilityGridRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2fprobability_5fgrid_5frange_5fdata_5finserter_5foptions_5f2d_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace cartographer {
 namespace mapping {
 namespace proto {
-class RangeDataInserterOptionsDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RangeDataInserterOptions> _instance;
-} _RangeDataInserterOptions_default_instance_;
+PROTOBUF_CONSTEXPR RangeDataInserterOptions::RangeDataInserterOptions(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.probability_grid_range_data_inserter_options_2d_)*/nullptr
+  , /*decltype(_impl_.tsdf_range_data_inserter_options_2d_)*/nullptr
+  , /*decltype(_impl_.range_data_inserter_type_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct RangeDataInserterOptionsDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RangeDataInserterOptionsDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RangeDataInserterOptionsDefaultTypeInternal() {}
+  union {
+    RangeDataInserterOptions _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RangeDataInserterOptionsDefaultTypeInternal _RangeDataInserterOptions_default_instance_;
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
-static void InitDefaultsscc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[1];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[1];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto = nullptr;
 
-  {
-    void* ptr = &::cartographer::mapping::proto::_RangeDataInserterOptions_default_instance_;
-    new (ptr) ::cartographer::mapping::proto::RangeDataInserterOptions();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::cartographer::mapping::proto::RangeDataInserterOptions::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto}, {
-      &scc_info_ProbabilityGridRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2fprobability_5fgrid_5frange_5fdata_5finserter_5foptions_5f2d_2eproto.base,
-      &scc_info_TSDFRangeDataInserterOptions2D_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto.base,}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[1];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, range_data_inserter_type_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, probability_grid_range_data_inserter_options_2d_),
-  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, tsdf_range_data_inserter_options_2d_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, _impl_.range_data_inserter_type_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, _impl_.probability_grid_range_data_inserter_options_2d_),
+  PROTOBUF_FIELD_OFFSET(::cartographer::mapping::proto::RangeDataInserterOptions, _impl_.tsdf_range_data_inserter_options_2d_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::cartographer::mapping::proto::RangeDataInserterOptions)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::cartographer::mapping::proto::RangeDataInserterOptions)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::cartographer::mapping::proto::_RangeDataInserterOptions_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::cartographer::mapping::proto::_RangeDataInserterOptions_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -85,23 +85,25 @@ const char descriptor_table_protodef_cartographer_2fmapping_2fproto_2frange_5fda
   "D_INSERTER_2D\020\001\022\024\n\020TSDF_INSERTER_2D\020\002b\006p"
   "roto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_deps[2] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_deps[2] = {
   &::descriptor_table_cartographer_2fmapping_2fproto_2fprobability_5fgrid_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
   &::descriptor_table_cartographer_2fmapping_2fproto_2ftsdf_5frange_5fdata_5finserter_5foptions_5f2d_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_sccs[1] = {
-  &scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto.base,
+static ::_pbi::once_flag descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto = {
+    false, false, 725, descriptor_table_protodef_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto,
+    "cartographer/mapping/proto/range_data_inserter_options.proto",
+    &descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_deps, 2, 1,
+    schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto::offsets,
+    file_level_metadata_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto,
+    file_level_service_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto = {
-  false, false, descriptor_table_protodef_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto, "cartographer/mapping/proto/range_data_inserter_options.proto", 725,
-  &descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_once, descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_sccs, descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_deps, 1, 2,
-  schemas, file_default_instances, TableStruct_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto::offsets,
-  file_level_metadata_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto, 1, file_level_enum_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto, file_level_service_descriptors_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_getter() {
+  return &descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto(&descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto);
 namespace cartographer {
 namespace mapping {
 namespace proto {
@@ -120,23 +122,17 @@ bool RangeDataInserterOptions_RangeDataInserterType_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 constexpr RangeDataInserterOptions_RangeDataInserterType RangeDataInserterOptions::INVALID_INSERTER;
 constexpr RangeDataInserterOptions_RangeDataInserterType RangeDataInserterOptions::PROBABILITY_GRID_INSERTER_2D;
 constexpr RangeDataInserterOptions_RangeDataInserterType RangeDataInserterOptions::TSDF_INSERTER_2D;
 constexpr RangeDataInserterOptions_RangeDataInserterType RangeDataInserterOptions::RangeDataInserterType_MIN;
 constexpr RangeDataInserterOptions_RangeDataInserterType RangeDataInserterOptions::RangeDataInserterType_MAX;
 constexpr int RangeDataInserterOptions::RangeDataInserterType_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 
 // ===================================================================
 
-void RangeDataInserterOptions::InitAsDefaultInstance() {
-  ::cartographer::mapping::proto::_RangeDataInserterOptions_default_instance_._instance.get_mutable()->probability_grid_range_data_inserter_options_2d_ = const_cast< ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D*>(
-      ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D::internal_default_instance());
-  ::cartographer::mapping::proto::_RangeDataInserterOptions_default_instance_._instance.get_mutable()->tsdf_range_data_inserter_options_2d_ = const_cast< ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D*>(
-      ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D::internal_default_instance());
-}
 class RangeDataInserterOptions::_Internal {
  public:
   static const ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D& probability_grid_range_data_inserter_options_2d(const RangeDataInserterOptions* msg);
@@ -145,182 +141,182 @@ class RangeDataInserterOptions::_Internal {
 
 const ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D&
 RangeDataInserterOptions::_Internal::probability_grid_range_data_inserter_options_2d(const RangeDataInserterOptions* msg) {
-  return *msg->probability_grid_range_data_inserter_options_2d_;
+  return *msg->_impl_.probability_grid_range_data_inserter_options_2d_;
 }
 const ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D&
 RangeDataInserterOptions::_Internal::tsdf_range_data_inserter_options_2d(const RangeDataInserterOptions* msg) {
-  return *msg->tsdf_range_data_inserter_options_2d_;
+  return *msg->_impl_.tsdf_range_data_inserter_options_2d_;
 }
 void RangeDataInserterOptions::clear_probability_grid_range_data_inserter_options_2d() {
-  if (GetArena() == nullptr && probability_grid_range_data_inserter_options_2d_ != nullptr) {
-    delete probability_grid_range_data_inserter_options_2d_;
+  if (GetArenaForAllocation() == nullptr && _impl_.probability_grid_range_data_inserter_options_2d_ != nullptr) {
+    delete _impl_.probability_grid_range_data_inserter_options_2d_;
   }
-  probability_grid_range_data_inserter_options_2d_ = nullptr;
+  _impl_.probability_grid_range_data_inserter_options_2d_ = nullptr;
 }
 void RangeDataInserterOptions::clear_tsdf_range_data_inserter_options_2d() {
-  if (GetArena() == nullptr && tsdf_range_data_inserter_options_2d_ != nullptr) {
-    delete tsdf_range_data_inserter_options_2d_;
+  if (GetArenaForAllocation() == nullptr && _impl_.tsdf_range_data_inserter_options_2d_ != nullptr) {
+    delete _impl_.tsdf_range_data_inserter_options_2d_;
   }
-  tsdf_range_data_inserter_options_2d_ = nullptr;
+  _impl_.tsdf_range_data_inserter_options_2d_ = nullptr;
 }
-RangeDataInserterOptions::RangeDataInserterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+RangeDataInserterOptions::RangeDataInserterOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:cartographer.mapping.proto.RangeDataInserterOptions)
 }
 RangeDataInserterOptions::RangeDataInserterOptions(const RangeDataInserterOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  RangeDataInserterOptions* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.probability_grid_range_data_inserter_options_2d_){nullptr}
+    , decltype(_impl_.tsdf_range_data_inserter_options_2d_){nullptr}
+    , decltype(_impl_.range_data_inserter_type_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_probability_grid_range_data_inserter_options_2d()) {
-    probability_grid_range_data_inserter_options_2d_ = new ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D(*from.probability_grid_range_data_inserter_options_2d_);
-  } else {
-    probability_grid_range_data_inserter_options_2d_ = nullptr;
+    _this->_impl_.probability_grid_range_data_inserter_options_2d_ = new ::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D(*from._impl_.probability_grid_range_data_inserter_options_2d_);
   }
   if (from._internal_has_tsdf_range_data_inserter_options_2d()) {
-    tsdf_range_data_inserter_options_2d_ = new ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D(*from.tsdf_range_data_inserter_options_2d_);
-  } else {
-    tsdf_range_data_inserter_options_2d_ = nullptr;
+    _this->_impl_.tsdf_range_data_inserter_options_2d_ = new ::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D(*from._impl_.tsdf_range_data_inserter_options_2d_);
   }
-  range_data_inserter_type_ = from.range_data_inserter_type_;
+  _this->_impl_.range_data_inserter_type_ = from._impl_.range_data_inserter_type_;
   // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.RangeDataInserterOptions)
 }
 
-void RangeDataInserterOptions::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto.base);
-  ::memset(&probability_grid_range_data_inserter_options_2d_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&range_data_inserter_type_) -
-      reinterpret_cast<char*>(&probability_grid_range_data_inserter_options_2d_)) + sizeof(range_data_inserter_type_));
+inline void RangeDataInserterOptions::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.probability_grid_range_data_inserter_options_2d_){nullptr}
+    , decltype(_impl_.tsdf_range_data_inserter_options_2d_){nullptr}
+    , decltype(_impl_.range_data_inserter_type_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 RangeDataInserterOptions::~RangeDataInserterOptions() {
   // @@protoc_insertion_point(destructor:cartographer.mapping.proto.RangeDataInserterOptions)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void RangeDataInserterOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete probability_grid_range_data_inserter_options_2d_;
-  if (this != internal_default_instance()) delete tsdf_range_data_inserter_options_2d_;
+inline void RangeDataInserterOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.probability_grid_range_data_inserter_options_2d_;
+  if (this != internal_default_instance()) delete _impl_.tsdf_range_data_inserter_options_2d_;
 }
 
-void RangeDataInserterOptions::ArenaDtor(void* object) {
-  RangeDataInserterOptions* _this = reinterpret_cast< RangeDataInserterOptions* >(object);
-  (void)_this;
-}
-void RangeDataInserterOptions::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void RangeDataInserterOptions::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const RangeDataInserterOptions& RangeDataInserterOptions::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RangeDataInserterOptions_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void RangeDataInserterOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.RangeDataInserterOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && probability_grid_range_data_inserter_options_2d_ != nullptr) {
-    delete probability_grid_range_data_inserter_options_2d_;
+  if (GetArenaForAllocation() == nullptr && _impl_.probability_grid_range_data_inserter_options_2d_ != nullptr) {
+    delete _impl_.probability_grid_range_data_inserter_options_2d_;
   }
-  probability_grid_range_data_inserter_options_2d_ = nullptr;
-  if (GetArena() == nullptr && tsdf_range_data_inserter_options_2d_ != nullptr) {
-    delete tsdf_range_data_inserter_options_2d_;
+  _impl_.probability_grid_range_data_inserter_options_2d_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && _impl_.tsdf_range_data_inserter_options_2d_ != nullptr) {
+    delete _impl_.tsdf_range_data_inserter_options_2d_;
   }
-  tsdf_range_data_inserter_options_2d_ = nullptr;
-  range_data_inserter_type_ = 0;
+  _impl_.tsdf_range_data_inserter_options_2d_ = nullptr;
+  _impl_.range_data_inserter_type_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* RangeDataInserterOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* RangeDataInserterOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .cartographer.mapping.proto.RangeDataInserterOptions.RangeDataInserterType range_data_inserter_type = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_range_data_inserter_type(static_cast<::cartographer::mapping::proto::RangeDataInserterOptions_RangeDataInserterType>(val));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.ProbabilityGridRangeDataInserterOptions2D probability_grid_range_data_inserter_options_2d = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_probability_grid_range_data_inserter_options_2d(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .cartographer.mapping.proto.TSDFRangeDataInserterOptions2D tsdf_range_data_inserter_options_2d = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_tsdf_range_data_inserter_options_2d(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RangeDataInserterOptions::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RangeDataInserterOptions::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.RangeDataInserterOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.RangeDataInserterOptions.RangeDataInserterType range_data_inserter_type = 1;
-  if (this->range_data_inserter_type() != 0) {
+  if (this->_internal_range_data_inserter_type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_range_data_inserter_type(), target);
   }
 
   // .cartographer.mapping.proto.ProbabilityGridRangeDataInserterOptions2D probability_grid_range_data_inserter_options_2d = 2;
-  if (this->has_probability_grid_range_data_inserter_options_2d()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_probability_grid_range_data_inserter_options_2d()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::probability_grid_range_data_inserter_options_2d(this), target, stream);
+      InternalWriteMessage(2, _Internal::probability_grid_range_data_inserter_options_2d(this),
+        _Internal::probability_grid_range_data_inserter_options_2d(this).GetCachedSize(), target, stream);
   }
 
   // .cartographer.mapping.proto.TSDFRangeDataInserterOptions2D tsdf_range_data_inserter_options_2d = 3;
-  if (this->has_tsdf_range_data_inserter_options_2d()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_tsdf_range_data_inserter_options_2d()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::tsdf_range_data_inserter_options_2d(this), target, stream);
+      InternalWriteMessage(3, _Internal::tsdf_range_data_inserter_options_2d(this),
+        _Internal::tsdf_range_data_inserter_options_2d(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.RangeDataInserterOptions)
@@ -331,77 +327,60 @@ size_t RangeDataInserterOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.RangeDataInserterOptions)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .cartographer.mapping.proto.ProbabilityGridRangeDataInserterOptions2D probability_grid_range_data_inserter_options_2d = 2;
-  if (this->has_probability_grid_range_data_inserter_options_2d()) {
+  if (this->_internal_has_probability_grid_range_data_inserter_options_2d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *probability_grid_range_data_inserter_options_2d_);
+        *_impl_.probability_grid_range_data_inserter_options_2d_);
   }
 
   // .cartographer.mapping.proto.TSDFRangeDataInserterOptions2D tsdf_range_data_inserter_options_2d = 3;
-  if (this->has_tsdf_range_data_inserter_options_2d()) {
+  if (this->_internal_has_tsdf_range_data_inserter_options_2d()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *tsdf_range_data_inserter_options_2d_);
+        *_impl_.tsdf_range_data_inserter_options_2d_);
   }
 
   // .cartographer.mapping.proto.RangeDataInserterOptions.RangeDataInserterType range_data_inserter_type = 1;
-  if (this->range_data_inserter_type() != 0) {
+  if (this->_internal_range_data_inserter_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_range_data_inserter_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_range_data_inserter_type());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void RangeDataInserterOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.RangeDataInserterOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RangeDataInserterOptions* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RangeDataInserterOptions>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.RangeDataInserterOptions)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.RangeDataInserterOptions)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RangeDataInserterOptions::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    RangeDataInserterOptions::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RangeDataInserterOptions::GetClassData() const { return &_class_data_; }
 
-void RangeDataInserterOptions::MergeFrom(const RangeDataInserterOptions& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.RangeDataInserterOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void RangeDataInserterOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<RangeDataInserterOptions*>(&to_msg);
+  auto& from = static_cast<const RangeDataInserterOptions&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.RangeDataInserterOptions)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_probability_grid_range_data_inserter_options_2d()) {
-    _internal_mutable_probability_grid_range_data_inserter_options_2d()->::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D::MergeFrom(from._internal_probability_grid_range_data_inserter_options_2d());
+  if (from._internal_has_probability_grid_range_data_inserter_options_2d()) {
+    _this->_internal_mutable_probability_grid_range_data_inserter_options_2d()->::cartographer::mapping::proto::ProbabilityGridRangeDataInserterOptions2D::MergeFrom(
+        from._internal_probability_grid_range_data_inserter_options_2d());
   }
-  if (from.has_tsdf_range_data_inserter_options_2d()) {
-    _internal_mutable_tsdf_range_data_inserter_options_2d()->::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D::MergeFrom(from._internal_tsdf_range_data_inserter_options_2d());
+  if (from._internal_has_tsdf_range_data_inserter_options_2d()) {
+    _this->_internal_mutable_tsdf_range_data_inserter_options_2d()->::cartographer::mapping::proto::TSDFRangeDataInserterOptions2D::MergeFrom(
+        from._internal_tsdf_range_data_inserter_options_2d());
   }
-  if (from.range_data_inserter_type() != 0) {
-    _internal_set_range_data_inserter_type(from._internal_range_data_inserter_type());
+  if (from._internal_range_data_inserter_type() != 0) {
+    _this->_internal_set_range_data_inserter_type(from._internal_range_data_inserter_type());
   }
-}
-
-void RangeDataInserterOptions::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.RangeDataInserterOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RangeDataInserterOptions::CopyFrom(const RangeDataInserterOptions& from) {
@@ -417,26 +396,28 @@ bool RangeDataInserterOptions::IsInitialized() const {
 
 void RangeDataInserterOptions::InternalSwap(RangeDataInserterOptions* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RangeDataInserterOptions, range_data_inserter_type_)
-      + sizeof(RangeDataInserterOptions::range_data_inserter_type_)
-      - PROTOBUF_FIELD_OFFSET(RangeDataInserterOptions, probability_grid_range_data_inserter_options_2d_)>(
-          reinterpret_cast<char*>(&probability_grid_range_data_inserter_options_2d_),
-          reinterpret_cast<char*>(&other->probability_grid_range_data_inserter_options_2d_));
+      PROTOBUF_FIELD_OFFSET(RangeDataInserterOptions, _impl_.range_data_inserter_type_)
+      + sizeof(RangeDataInserterOptions::_impl_.range_data_inserter_type_)
+      - PROTOBUF_FIELD_OFFSET(RangeDataInserterOptions, _impl_.probability_grid_range_data_inserter_options_2d_)>(
+          reinterpret_cast<char*>(&_impl_.probability_grid_range_data_inserter_options_2d_),
+          reinterpret_cast<char*>(&other->_impl_.probability_grid_range_data_inserter_options_2d_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RangeDataInserterOptions::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_getter, &descriptor_table_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto_once,
+      file_level_metadata_cartographer_2fmapping_2fproto_2frange_5fdata_5finserter_5foptions_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace mapping
 }  // namespace cartographer
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::RangeDataInserterOptions* Arena::CreateMaybeMessage< ::cartographer::mapping::proto::RangeDataInserterOptions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::cartographer::mapping::proto::RangeDataInserterOptions*
+Arena::CreateMaybeMessage< ::cartographer::mapping::proto::RangeDataInserterOptions >(Arena* arena) {
   return Arena::CreateMessageInternal< ::cartographer::mapping::proto::RangeDataInserterOptions >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
