@@ -215,6 +215,18 @@ class Node {
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr export_state_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr import_state_service_;
 
+  std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
+  struct SavedPose {
+    geometry_msgs::msg::Pose pose;
+    int relative_to_trajectory_id = 0;
+  };
+  bool LookupCurrentRobotPoseInMap(geometry_msgs::msg::Pose* pose);
+  bool SaveCurrentPosesToRedis();
+  bool LookupPoseAsJson(const std::string& parent_frame,
+                      const std::string& child_frame,
+                      std::string* json_out);
+  bool LoadSavedPoseFromRedis(SavedPose* saved_pose);
+
   struct TrajectorySensorSamplers {
     TrajectorySensorSamplers(const double rangefinder_sampling_ratio,
                              const double odometry_sampling_ratio,

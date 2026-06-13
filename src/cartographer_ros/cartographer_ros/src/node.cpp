@@ -54,6 +54,10 @@
 #include "cartographer/io/proto_stream.h"
 #include <hiredis/hiredis.h>
 #include "std_srvs/srv/trigger.hpp"
+//tf pose保存のため
+#include <sstream>
+#include <regex>
+#include "tf2/exceptions.h"
 
 namespace cartographer_ros {
 
@@ -93,6 +97,29 @@ std::string TrajectoryStateToString(const TrajectoryState trajectory_state) {
   return "";
 }
 
+constexpr char kRedisStateKey[] = "robot1_state";
+constexpr char kRedisPoseKey[] = "robot1_pose"; //これいらないかも
+constexpr char kRedisMapPoseKey[] = "robot1_map_pose";
+constexpr char kRedisOdomPoseKey[] = "robot1_odom_pose";
+
+int FindReferenceTrajectoryId(
+    const std::map<int, TrajectoryState>& trajectory_states) {
+  // export 時は ACTIVE trajectory を優先
+  for (const auto& entry : trajectory_states) {
+    if (entry.second == TrajectoryState::ACTIVE) {
+      return entry.first;
+    }
+  }
+  // 念のため fallback
+  for (const auto& entry : trajectory_states) {
+    if (entry.second == TrajectoryState::FROZEN ||
+        entry.second == TrajectoryState::FINISHED) {
+      return entry.first;
+    }
+  }
+  return -1;
+}
+
 }  // namespace
 
 Node::Node(
@@ -104,6 +131,9 @@ Node::Node(
     : node_options_(node_options)
 {
   node_ = node;
+  // 追加
+  tf_buffer_ = tf_buffer;
+
   tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(node_) ;
   map_builder_bridge_.reset(new cartographer_ros::MapBuilderBridge(node_options_, std::move(map_builder), tf_buffer.get()));
 
@@ -938,54 +968,229 @@ void Node::MaybeWarnAboutTopicMismatch() {
 //  }
 }
 
+bool Node::LookupPoseAsJson(const std::string& parent_frame,
+                            const std::string& child_frame,
+                            std::string* json_out) {
+  if (!tf_buffer_) {
+    RCLCPP_ERROR(node_->get_logger(), "tf_buffer_ is null.");
+    return false;
+  }
 
+  geometry_msgs::msg::TransformStamped tf_msg;
+  try {
+    tf_msg = tf_buffer_->lookupTransform(
+        parent_frame, child_frame,
+        tf2::TimePointZero,
+        tf2::durationFromSec(0.5));
+  } catch (const tf2::TransformException& e) {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Failed to lookup %s->%s during export: %s",
+                 parent_frame.c_str(), child_frame.c_str(), e.what());
+    return false;
+  }
 
-// ==========================================
-// コンテナA側: Redisへのエクスポート (RAMディスク経由)
-// ==========================================
+  std::ostringstream oss;
+  oss << "{"
+      << "\"frame_id\":\"" << parent_frame << "\","
+      << "\"child_frame_id\":\"" << child_frame << "\","
+      << "\"px\":" << tf_msg.transform.translation.x << ","
+      << "\"py\":" << tf_msg.transform.translation.y << ","
+      << "\"pz\":" << tf_msg.transform.translation.z << ","
+      << "\"qx\":" << tf_msg.transform.rotation.x << ","
+      << "\"qy\":" << tf_msg.transform.rotation.y << ","
+      << "\"qz\":" << tf_msg.transform.rotation.z << ","
+      << "\"qw\":" << tf_msg.transform.rotation.w
+      << "}";
+
+  *json_out = oss.str();
+  return true;
+}
+
+bool Node::SaveCurrentPosesToRedis() {
+  std::string map_pose_json;
+  std::string odom_pose_json;
+
+  if (!LookupPoseAsJson("map", "base_footprint", &map_pose_json)) {
+    return false;
+  }
+  if (!LookupPoseAsJson("odom", "base_footprint", &odom_pose_json)) {
+    return false;
+  }
+
+  const int relative_to_trajectory_id =
+      FindReferenceTrajectoryId(map_builder_bridge_->GetTrajectoryStates());
+  if (relative_to_trajectory_id < 0) {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Could not determine reference trajectory id.");
+    return false;
+  }
+
+  {
+    // map pose 側に relative_to_trajectory_id を追加
+    const std::string suffix =
+        std::string(",\"relative_to_trajectory_id\":") +
+        std::to_string(relative_to_trajectory_id) + "}";
+    map_pose_json.pop_back();   // remove trailing '}'
+    map_pose_json += suffix;
+  }
+
+  redisContext* c = redisConnect("redis_host", 6379);
+  if (c == nullptr || c->err) {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Failed to connect to Redis for pose save.");
+    if (c) redisFree(c);
+    return false;
+  }
+
+  redisReply* reply1 = static_cast<redisReply*>(
+      redisCommand(c, "SET %s %b",
+                   kRedisMapPoseKey,
+                   map_pose_json.data(), map_pose_json.size()));
+
+  redisReply* reply2 = static_cast<redisReply*>(
+      redisCommand(c, "SET %s %b",
+                   kRedisOdomPoseKey,
+                   odom_pose_json.data(), odom_pose_json.size()));
+
+  const bool ok = (reply1 != nullptr && reply2 != nullptr);
+
+  if (reply1) freeReplyObject(reply1);
+  if (reply2) freeReplyObject(reply2);
+  redisFree(c);
+
+  if (!ok) {
+    RCLCPP_ERROR(node_->get_logger(), "Failed to save poses to Redis.");
+    return false;
+  }
+
+  RCLCPP_INFO(node_->get_logger(),
+              "Saved map pose to Redis key '%s': %s",
+              kRedisMapPoseKey, map_pose_json.c_str());
+  RCLCPP_INFO(node_->get_logger(),
+              "Saved odom pose to Redis key '%s': %s",
+              kRedisOdomPoseKey, odom_pose_json.c_str());
+
+  return true;
+}
+
+/*bool Node::SaveCurrentPoseToRedis() {
+  if (!tf_buffer_) {
+    RCLCPP_ERROR(node_->get_logger(), "tf_buffer_ is null.");
+    return false;
+  }
+
+  geometry_msgs::msg::TransformStamped tf_msg;
+  try {
+    tf_msg = tf_buffer_->lookupTransform(
+        "map", "base_footprint", tf2::TimePointZero,
+        tf2::durationFromSec(0.5));
+  } catch (const tf2::TransformException& e) {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Failed to lookup map->base_footprint during export: %s",
+                 e.what());
+    return false;
+  }
+
+  const int relative_to_trajectory_id =
+      FindReferenceTrajectoryId(map_builder_bridge_->GetTrajectoryStates());
+
+  if (relative_to_trajectory_id < 0) {
+    RCLCPP_ERROR(node_->get_logger(),
+                 "Could not determine reference trajectory id.");
+    return false;
+  }
+
+  std::ostringstream oss;
+  oss << "{"
+      << "\"frame_id\":\"map\","
+      << "\"child_frame_id\":\"base_footprint\","
+      << "\"px\":" << tf_msg.transform.translation.x << ","
+      << "\"py\":" << tf_msg.transform.translation.y << ","
+      << "\"pz\":" << tf_msg.transform.translation.z << ","
+      << "\"qx\":" << tf_msg.transform.rotation.x << ","
+      << "\"qy\":" << tf_msg.transform.rotation.y << ","
+      << "\"qz\":" << tf_msg.transform.rotation.z << ","
+      << "\"qw\":" << tf_msg.transform.rotation.w << ","
+      << "\"relative_to_trajectory_id\":" << relative_to_trajectory_id
+      << "}";
+
+  const std::string pose_json = oss.str();
+
+  redisContext* c = redisConnect("redis_host", 6379);
+  if (c == nullptr || c->err) {
+    RCLCPP_ERROR(node_->get_logger(), "Failed to connect to Redis for pose save.");
+    if (c) redisFree(c);
+    return false;
+  }
+
+  redisReply* reply = static_cast<redisReply*>(
+      redisCommand(c, "SET %s %b",
+                   kRedisPoseKey, pose_json.data(), pose_json.size()));
+
+  const bool ok = (reply != nullptr);
+  if (reply) freeReplyObject(reply);
+  redisFree(c);
+
+  if (!ok) {
+    RCLCPP_ERROR(node_->get_logger(), "Failed to save pose JSON to Redis.");
+    return false;
+  }
+
+  RCLCPP_INFO(node_->get_logger(),
+              "Saved current pose to Redis key '%s': %s",
+              kRedisPoseKey, pose_json.c_str());
+  return true;
+}*/
+
+// Redisへのエクスポート (RAMディスク経由)
 void Node::HandleExportStateToRedis(
     const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
-  // 警告回避
   (void)request;
-  
-  // 修正1: absl::Mutex を使った正しいロック
+
   absl::MutexLock lock(&mutex_);
 
-  // RAMディスク上のファイルパス (完全にメモリ上での処理)
+  // 1) export 時点の map pose / odom pose を保存
+  if (!SaveCurrentPosesToRedis()) {
+    response->success = false;
+    response->message = "Failed to save current map/odom poses to Redis.";
+    return;
+  }
+
+  // 2) pbstream を従来どおり export
   const std::string ram_file = "/dev/shm/export_state.pbstream";
-  // ブリッジの標準関数に直接ファイルパスとフラグ(未完成を除外=false)を渡す
-  bool write_success = map_builder_bridge_->SerializeState(ram_file, true);
+  const bool write_success = map_builder_bridge_->SerializeState(ram_file, true);
   if (!write_success) {
     response->success = false;
     response->message = "Failed to serialize state to RAM disk.";
     return;
   }
-  // RAM上のファイルからバイト列を std::string に一括読み込み
+
   std::ifstream in(ram_file, std::ios::binary);
-  std::string state_data((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+  std::string state_data((std::istreambuf_iterator<char>(in)),
+                         std::istreambuf_iterator<char>());
   in.close();
 
-  // Redisへの書き込み
-  redisContext *c = redisConnect("redis_host", 6379);
+  redisContext* c = redisConnect("redis_host", 6379);
   if (c != nullptr && !c->err) {
-    redisReply *reply = (redisReply*)redisCommand(c, "SET robot1_state %b", state_data.data(), state_data.size());
-    freeReplyObject(reply);
+    redisReply* reply = static_cast<redisReply*>(
+        redisCommand(c, "SET %s %b",
+                     kRedisStateKey,
+                     state_data.data(), state_data.size()));
+    if (reply) freeReplyObject(reply);
     response->success = true;
-    response->message = "Minimal state exported to Redis (via RAM disk).";
+    response->message =
+        "State and current map/odom poses exported to Redis.";
   } else {
     response->success = false;
     response->message = "Failed to connect to Redis.";
   }
   if (c) redisFree(c);
 
-  // 一時ファイル(RAM)を削除してメモリを解放
   std::remove(ram_file.c_str());
 }
 
-// ==========================================
-// コンテナB側: Redisからのインポートと起動 (RAMディスク経由)
-// ==========================================
+// Redisからのインポートと起動 (RAMディスク経由)
 void Node::HandleImportStateFromRedis(
     const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
@@ -1017,7 +1222,7 @@ void Node::HandleImportStateFromRedis(
     std::remove(ram_file.c_str());
 
     response->success = true;
-    response->message = "State loaded successfully. Ready to start new trajectory.";
+    response->message = "State loaded successfully. Ready to start new trajectory from corrected pose.";
   } else {
     response->success = false;
     response->message = "No state found in Redis.";
