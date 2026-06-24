@@ -13,7 +13,13 @@ from nav_msgs.msg import Odometry
 from tf2_msgs.msg import TFMessage
 from geometry_msgs.msg import TransformStamped, Vector3, Quaternion, Transform, Point
 from std_msgs.msg import Header
-from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
+from rclpy.qos import (
+    QoSProfile,
+    ReliabilityPolicy,
+    HistoryPolicy,
+    DurabilityPolicy,
+    qos_profile_sensor_data,
+)
 from builtin_interfaces.msg import Time
 
 app = Flask(__name__)
@@ -36,7 +42,7 @@ class ROS2PublisherNode(Node):
     def __init__(self):
         super().__init__('data_publisher_node')
 
-        qos_profile = QoSProfile(
+        qos_profile_tf = QoSProfile(
             reliability=ReliabilityPolicy.RELIABLE,
             history=HistoryPolicy.KEEP_LAST,
             depth=10,
@@ -48,12 +54,18 @@ class ROS2PublisherNode(Node):
             depth=10,
             durability=DurabilityPolicy.TRANSIENT_LOCAL,
         )
+        joint_qos = QoSProfile(
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+            history=HistoryPolicy.KEEP_LAST,
+            depth=20,
+            durability=DurabilityPolicy.VOLATILE,
+        )
 
-        self.scan_pub = self.create_publisher(LaserScan, '/scan', qos_profile)
-        self.odom_pub = self.create_publisher(Odometry, '/odom', qos_profile)
-        self.tf_pub = self.create_publisher(TFMessage, '/tf', qos_profile)
+        self.scan_pub = self.create_publisher(LaserScan, '/scan', qos_profile_sensor_data)
+        self.odom_pub = self.create_publisher(Odometry, '/odom', qos_profile_sensor_data)
+        self.tf_pub = self.create_publisher(TFMessage, '/tf', qos_profile_tf)
         self.tf_static_pub = self.create_publisher(TFMessage, '/tf_static', qos_profile_tf_static)
-        self.joint_states_pub = self.create_publisher(JointState, '/joint_states', qos_profile)
+        self.joint_states_pub = self.create_publisher(JointState, '/joint_states', joint_qos)
 
         self.accept_external_tf_static = env_bool('ACCEPT_EXTERNAL_TF_STATIC', False)
         self.forward_joint_states = env_bool('FORWARD_JOINT_STATES', False)
@@ -65,18 +77,31 @@ class ROS2PublisherNode(Node):
 
     def dict_to_header(self, header_dict):
         return Header(
-            stamp=Time(sec=header_dict['stamp']['sec'], nanosec=header_dict['stamp']['nanosec']),
+            stamp=Time(sec=int(header_dict['stamp']['sec']), nanosec=int(header_dict['stamp']['nanosec'])),
             frame_id=header_dict['frame_id'],
         )
 
     def dict_to_vector3(self, vector_dict):
-        return Vector3(x=vector_dict['x'], y=vector_dict['y'], z=vector_dict['z'])
+        return Vector3(
+            x=float(vector_dict['x']),
+            y=float(vector_dict['y']),
+            z=float(vector_dict['z']),
+        )
 
     def dict_to_point(self, point_dict):
-        return Point(x=point_dict['x'], y=point_dict['y'], z=point_dict['z'])
+        return Point(
+            x=float(point_dict['x']),
+            y=float(point_dict['y']),
+            z=float(point_dict['z']),
+        )
 
     def dict_to_quaternion(self, quat_dict):
-        return Quaternion(x=quat_dict['x'], y=quat_dict['y'], z=quat_dict['z'], w=quat_dict['w'])
+        return Quaternion(
+            x=float(quat_dict['x']),
+            y=float(quat_dict['y']),
+            z=float(quat_dict['z']),
+            w=float(quat_dict['w']),
+        )
 
     def dict_to_transform(self, transform_dict):
         return Transform(
@@ -99,15 +124,15 @@ class ROS2PublisherNode(Node):
     def publish_scan(self, scan_dict):
         msg = LaserScan()
         msg.header = self.dict_to_header(scan_dict['header'])
-        msg.angle_min = scan_dict['angle_min']
-        msg.angle_max = scan_dict['angle_max']
-        msg.angle_increment = scan_dict['angle_increment']
-        msg.time_increment = scan_dict['time_increment']
-        msg.scan_time = scan_dict['scan_time']
-        msg.range_min = scan_dict['range_min']
-        msg.range_max = scan_dict['range_max']
-        msg.ranges = scan_dict['ranges']
-        msg.intensities = scan_dict['intensities']
+        msg.angle_min = float(scan_dict['angle_min'])
+        msg.angle_max = float(scan_dict['angle_max'])
+        msg.angle_increment = float(scan_dict['angle_increment'])
+        msg.time_increment = float(scan_dict['time_increment'])
+        msg.scan_time = float(scan_dict['scan_time'])
+        msg.range_min = float(scan_dict['range_min'])
+        msg.range_max = float(scan_dict['range_max'])
+        msg.ranges = [float(x) for x in scan_dict['ranges']]
+        msg.intensities = [float(x) for x in scan_dict['intensities']]
         self.scan_pub.publish(msg)
 
     def publish_odom(self, odom_dict):
@@ -118,21 +143,21 @@ class ROS2PublisherNode(Node):
         pose_dict = odom_dict['pose']['pose']
         msg.pose.pose.position = self.dict_to_point(pose_dict['position'])
         msg.pose.pose.orientation = self.dict_to_quaternion(pose_dict['orientation'])
-        msg.pose.covariance = odom_dict['pose']['covariance']
+        msg.pose.covariance = [float(x) for x in odom_dict['pose']['covariance']]
 
         twist_dict = odom_dict['twist']['twist']
         msg.twist.twist.linear = self.dict_to_vector3(twist_dict['linear'])
         msg.twist.twist.angular = self.dict_to_vector3(twist_dict['angular'])
-        msg.twist.covariance = odom_dict['twist']['covariance']
+        msg.twist.covariance = [float(x) for x in odom_dict['twist']['covariance']]
 
         self.odom_pub.publish(msg)
 
         tf = TransformStamped()
         tf.header = msg.header
         tf.child_frame_id = msg.child_frame_id
-        tf.transform.translation.x = msg.pose.pose.position.x
-        tf.transform.translation.y = msg.pose.pose.position.y
-        tf.transform.translation.z = msg.pose.pose.position.z
+        tf.transform.translation.x = float(msg.pose.pose.position.x)
+        tf.transform.translation.y = float(msg.pose.pose.position.y)
+        tf.transform.translation.z = float(msg.pose.pose.position.z)
         tf.transform.rotation = msg.pose.pose.orientation
         self.publish_tf_message([tf])
 
@@ -143,9 +168,9 @@ class ROS2PublisherNode(Node):
 
     def publish_joint_states(self, joint_states_dict):
         names = list(joint_states_dict.get('name', []))
-        positions = list(joint_states_dict.get('position', []))
-        velocities = list(joint_states_dict.get('velocity', []))
-        efforts = list(joint_states_dict.get('effort', []))
+        positions = [float(x) for x in joint_states_dict.get('position', [])]
+        velocities = [float(x) for x in joint_states_dict.get('velocity', [])]
+        efforts = [float(x) for x in joint_states_dict.get('effort', [])]
 
         if not names:
             server_log.info('Dropping empty joint_states.')
@@ -181,6 +206,29 @@ def spin_ros():
         time.sleep(0.001)
 
 
+def process_message(msg):
+    topic = msg['topic']
+    payload = msg['payload']
+
+    if topic == 'scan':
+        server_log.info('received scan')
+        ros_node.publish_scan(payload)
+    elif topic == 'odom':
+        server_log.info('received odom')
+        ros_node.publish_odom(payload)
+    elif topic == 'joint_states':
+        if ros_node.forward_joint_states:
+            server_log.info('received joint_states')
+            ros_node.publish_joint_states(payload)
+    elif topic == 'tf':
+        server_log.info('Ignoring external tf because dynamic TF is rebuilt from /odom.')
+    elif topic == 'tf_static':
+        if ros_node.accept_external_tf_static:
+            ros_node.publish_tf_static(payload)
+        else:
+            server_log.info('Ignoring tf_static because robot_state_publisher owns static TF.')
+
+
 @app.route('/healthz', methods=['GET'])
 def healthz():
     return jsonify({
@@ -200,23 +248,20 @@ def receive_data():
         if not data:
             return jsonify({'error': 'No data received'}), 400
 
-        if 'scan' in data:
-            ros_node.publish_scan(data['scan'])
-
-        if 'odom' in data:
-            ros_node.publish_odom(data['odom'])
-
-        if 'joint_states' in data and ros_node.forward_joint_states:
-            ros_node.publish_joint_states(data['joint_states'])
-
-        if 'tf' in data:
-            server_log.info('Ignoring external tf because dynamic TF is rebuilt from /odom.')
-
-        if 'tf_static' in data:
-            if ros_node.accept_external_tf_static:
-                ros_node.publish_tf_static(data['tf_static'])
-            else:
-                server_log.info('Ignoring tf_static because robot_state_publisher owns static TF.')
+        if 'messages' in data:
+            for msg in data['messages']:
+                process_message(msg)
+        else:
+            if 'scan' in data:
+                process_message({'topic': 'scan', 'payload': data['scan']})
+            if 'odom' in data:
+                process_message({'topic': 'odom', 'payload': data['odom']})
+            if 'joint_states' in data:
+                process_message({'topic': 'joint_states', 'payload': data['joint_states']})
+            if 'tf' in data:
+                process_message({'topic': 'tf', 'payload': data['tf']})
+            if 'tf_static' in data:
+                process_message({'topic': 'tf_static', 'payload': data['tf_static']})
 
         return jsonify({'status': 'success'}), 200
     except Exception as e:
@@ -234,7 +279,7 @@ def main():
 
     port = int(os.getenv('SERVER_PORT', '80'))
     print(f'Starting server on port {port}...')
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
 
     ros_node.destroy_node()
     rclpy.shutdown()

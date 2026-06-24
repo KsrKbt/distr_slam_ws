@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h"
-#include "cartographer_ros_msgs/srv/detail/set_slam_state__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "cartographer_ros_msgs/srv/detail/set_slam_state__functions.h"
+#include "cartographer_ros_msgs/srv/detail/set_slam_state__struct.h"
+#include "cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "cartographer_ros_msgs/srv/detail/trajectory_query__type_support.h"
 #include "cartographer_ros_msgs/srv/detail/trajectory_query__struct.h"
 #include "cartographer_ros_msgs/srv/detail/trajectory_query__functions.h"
-#include "cartographer_ros_msgs/srv/detail/trajectory_query__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

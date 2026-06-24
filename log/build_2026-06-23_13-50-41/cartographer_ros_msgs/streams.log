@@ -1,0 +1,942 @@
+[0.013s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros_msgs -- -j8 -l8
+[0.090s] [  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.090s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.100s] [  1%] Built target ament_cmake_python_copy_cartographer_ros_msgs
+[0.395s] running egg_info
+[0.397s] creating cartographer_ros_msgs.egg-info
+[0.422s] writing cartographer_ros_msgs.egg-info/PKG-INFO
+[0.422s] writing dependency_links to cartographer_ros_msgs.egg-info/dependency_links.txt
+[0.423s] writing top-level names to cartographer_ros_msgs.egg-info/top_level.txt
+[0.423s] writing manifest file 'cartographer_ros_msgs.egg-info/SOURCES.txt'
+[0.522s] reading manifest file 'cartographer_ros_msgs.egg-info/SOURCES.txt'
+[0.523s] writing manifest file 'cartographer_ros_msgs.egg-info/SOURCES.txt'
+[0.561s] [  1%] Built target ament_cmake_python_build_cartographer_ros_msgs_egg
+[1.532s] [  1%] Built target cartographer_ros_msgs__rosidl_generator_type_description
+[1.549s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.562s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.696s] [  2%] Built target cartographer_ros_msgs__rs
+[8.216s] [  2%] Built target cartographer_ros_msgs__cpp
+[9.117s] [  3%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__functions.c.o[0m
+[9.117s] [  3%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c.o[0m
+[9.117s] [  3%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.c.o[0m
+[9.121s] [  3%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/histogram_bucket__description.c.o[0m
+[9.126s] [  4%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/histogram_bucket__functions.c.o[0m
+[9.132s] [  4%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_entry__functions.c.o[0m
+[9.132s] [  4%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.c.o[0m
+[9.136s] [  5%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_entry__description.c.o[0m
+[9.258s] [  5%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.c.o[0m
+[9.291s] [  6%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_list__description.c.o[0m
+[9.309s] [  6%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_list__functions.c.o[0m
+[9.330s] [  7%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/landmark_list__type_support.c.o[0m
+[9.351s] [  7%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_family__description.c.o[0m
+[9.367s] [  7%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_family__functions.c.o[0m
+[9.401s] [  8%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_family__type_support.c.o[0m
+[9.411s] [  9%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_label__functions.c.o[0m
+[9.424s] [  9%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_label__description.c.o[0m
+[9.473s] [  9%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric_label__type_support.c.o[0m
+[9.495s] [  9%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric__description.c.o[0m
+[9.553s] [ 10%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric__functions.c.o[0m
+[9.568s] [ 10%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/metric__type_support.c.o[0m
+[9.581s] [ 11%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_code__description.c.o[0m
+[9.610s] [ 11%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_code__functions.c.o[0m
+[9.640s] [ 12%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_code__type_support.c.o[0m
+[9.653s] [ 12%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_response__functions.c.o[0m
+[9.660s] [ 12%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_response__description.c.o[0m
+[9.700s] [ 12%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_entry__description.c.o[0m
+[9.706s] [ 13%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/status_response__type_support.c.o[0m
+[9.750s] [ 14%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_entry__functions.c.o[0m
+[9.774s] [ 14%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_entry__type_support.c.o[0m
+[9.794s] [ 14%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_list__description.c.o[0m
+[9.828s] [ 15%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_list__functions.c.o[0m
+[9.865s] [ 15%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_list__type_support.c.o[0m
+[9.874s] [ 15%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_texture__functions.c.o[0m
+[9.880s] [ 16%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_texture__description.c.o[0m
+[9.894s] [ 16%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/submap_texture__type_support.c.o[0m
+[9.922s] [ 17%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/trajectory_states__description.c.o[0m
+[9.934s] [ 17%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/trajectory_states__functions.c.o[0m
+[9.967s] [ 18%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.c.o[0m
+[10.022s] [ 18%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__description.c.o[0m
+[10.071s] [ 18%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__description.c.o[0m
+[10.078s] [ 19%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.c.o[0m
+[10.086s] [ 19%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/finish_trajectory__functions.c.o[0m
+[10.111s] [ 20%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__functions.c.o[0m
+[10.112s] [ 20%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.c.o[0m
+[10.115s] [ 21%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__description.c.o[0m
+[10.190s] [ 21%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__functions.c.o[0m
+[10.259s] [ 21%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/read_metrics__type_support.c.o[0m
+[10.287s] [ 22%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__description.c.o[0m
+[10.333s] [ 22%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__functions.c.o[0m
+[10.352s] [ 23%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.c.o[0m
+[10.359s] [ 23%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/trajectory_query__description.c.o[0m
+[10.411s] [ 23%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/trajectory_query__functions.c.o[0m
+[10.461s] [ 24%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.c.o[0m
+[10.475s] [ 24%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/submap_query__description.c.o[0m
+[10.522s] [ 25%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/submap_query__functions.c.o[0m
+[10.526s] [ 25%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/submap_query__type_support.c.o[0m
+[10.582s] [ 25%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__description.c.o[0m
+[10.624s] [ 26%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__functions.c.o[0m
+[10.651s] [ 26%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.o[0m
+[10.675s] [ 27%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__description.c.o[0m
+[10.720s] [ 27%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c.o[0m
+[10.720s] [ 27%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o[0m
+[10.775s] [ 28%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__description.c.o[0m
+[10.827s] [ 28%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c.o[0m
+[10.839s] [ 29%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o[0m
+[11.172s] [ 29%] [32m[1mLinking C shared library libcartographer_ros_msgs__rosidl_generator_c.so[0m
+[11.428s] [ 29%] Built target cartographer_ros_msgs__rosidl_generator_c
+[11.483s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.484s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.484s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.484s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.486s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.489s] [ 31%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[18.777s] [ 32%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp.o[0m
+[18.777s] [ 31%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/histogram_bucket__type_support.cpp.o[0m
+[18.799s] [ 33%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/landmark_entry__type_support.cpp.o[0m
+[18.998s] [ 33%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/landmark_list__type_support.cpp.o[0m
+[19.004s] [ 33%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/metric_family__type_support.cpp.o[0m
+[19.107s] [ 34%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/metric_label__type_support.cpp.o[0m
+[19.252s] [ 34%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/metric__type_support.cpp.o[0m
+[19.313s] [ 35%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/status_code__type_support.cpp.o[0m
+[19.323s] [ 35%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/status_response__type_support.cpp.o[0m
+[19.501s] [ 35%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/submap_entry__type_support.cpp.o[0m
+[19.507s] [ 36%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/submap_list__type_support.cpp.o[0m
+[19.540s] [ 36%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/submap_texture__type_support.cpp.o[0m
+[19.728s] [ 37%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/msg/trajectory_states__type_support.cpp.o[0m
+[19.735s] [ 37%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/finish_trajectory__type_support.cpp.o[0m
+[19.761s] [ 37%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/bagfile_progress__type_support.cpp.o[0m
+[19.772s] [ 37%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/get_trajectory_states__type_support.cpp.o[0m
+[19.972s] [ 38%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/read_metrics__type_support.cpp.o[0m
+[20.006s] [ 38%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/start_trajectory__type_support.cpp.o[0m
+[20.100s] [ 39%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/histogram_bucket__type_support.cpp.o[0m
+[20.206s] [ 39%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/landmark_entry__type_support.cpp.o[0m
+[20.263s] [ 40%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/trajectory_query__type_support.cpp.o[0m
+[20.532s] [ 40%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/submap_query__type_support.cpp.o[0m
+[20.792s] [ 40%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/write_state__type_support.cpp.o[0m
+[21.056s] [ 41%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o[0m
+[21.179s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/landmark_list__type_support.cpp.o[0m
+[21.301s] [ 42%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o[0m
+[21.572s] [ 43%] [32m[1mLinking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_c.so[0m
+[21.676s] [ 44%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.cpp.o[0m
+[21.680s] [ 44%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/metric_family__type_support.cpp.o[0m
+[21.691s] [ 45%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/metric_label__type_support.cpp.o[0m
+[21.824s] [ 45%] Built target cartographer_ros_msgs__rosidl_typesupport_c
+[21.859s] [ 45%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.cpp.o[0m
+[22.081s] [ 46%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.c.o[0m
+[22.299s] [ 46%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.c.o[0m
+[22.490s] [ 47%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.c.o[0m
+[22.756s] [ 47%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/landmark_list__type_support.c.o[0m
+[22.843s] [ 47%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/metric__type_support.cpp.o[0m
+[23.010s] [ 48%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/metric_family__type_support.c.o[0m
+[23.017s] [ 48%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/status_code__type_support.cpp.o[0m
+[23.188s] [ 48%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/metric_label__type_support.c.o[0m
+[23.290s] [ 48%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/metric__type_support.c.o[0m
+[23.387s] [ 49%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/status_code__type_support.c.o[0m
+[23.411s] [ 50%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/status_response__type_support.cpp.o[0m
+[23.510s] [ 50%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.cpp.o[0m
+[23.607s] [ 50%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/submap_entry__type_support.cpp.o[0m
+[23.633s] [ 50%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/status_response__type_support.c.o[0m
+[23.828s] [ 51%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/submap_entry__type_support.c.o[0m
+[23.973s] [ 51%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/submap_list__type_support.c.o[0m
+[24.136s] [ 51%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/submap_texture__type_support.c.o[0m
+[24.385s] [ 52%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.c.o[0m
+[24.710s] [ 52%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.c.o[0m
+[24.795s] [ 53%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/landmark_list__type_support.cpp.o[0m
+[24.853s] [ 53%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/bagfile_progress__type_support.cpp.o[0m
+[24.855s] [ 54%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.c.o[0m
+[25.004s] [ 54%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/read_metrics__type_support.c.o[0m
+[25.057s] [ 54%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support_c.cpp.o[0m
+[25.194s] [ 55%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support_c.cpp.o[0m
+[25.224s] [ 55%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.c.o[0m
+[25.246s] [ 56%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/submap_list__type_support.cpp.o[0m
+[25.273s] [ 56%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/metric_family__type_support.cpp.o[0m
+[25.321s] [ 56%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/submap_texture__type_support.cpp.o[0m
+[25.503s] [ 57%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.c.o[0m
+[25.730s] [ 57%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/submap_query__type_support.c.o[0m
+[25.920s] [ 58%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/write_state__type_support.c.o[0m
+[26.134s] [ 58%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c.o[0m
+[26.345s] [ 58%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c.o[0m
+[26.542s] [ 59%] [32m[1mLinking C shared library libcartographer_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[26.632s] [ 60%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/metric_label__type_support.cpp.o[0m
+[26.770s] [ 60%] Built target cartographer_ros_msgs__rosidl_typesupport_introspection_c
+[26.808s] [ 60%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/histogram_bucket__type_support.cpp.o[0m
+[26.874s] [ 60%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/landmark_entry__type_support_c.cpp.o[0m
+[27.089s] [ 60%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/msg/trajectory_states__type_support.cpp.o[0m
+[27.306s] [ 61%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/landmark_list__type_support_c.cpp.o[0m
+[27.514s] [ 61%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/metric__type_support.cpp.o[0m
+[27.690s] [ 62%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/finish_trajectory__type_support.cpp.o[0m
+[27.897s] [ 62%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/metric_family__type_support_c.cpp.o[0m
+[28.317s] [ 63%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/landmark_entry__type_support.cpp.o[0m
+[28.881s] [ 63%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/landmark_list__type_support.cpp.o[0m
+[28.982s] [ 63%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_trajectory_states__type_support.cpp.o[0m
+[29.127s] [ 64%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/status_code__type_support.cpp.o[0m
+[29.702s] [ 65%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/metric_family__type_support.cpp.o[0m
+[30.051s] [ 65%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/start_trajectory__type_support.cpp.o[0m
+[30.057s] [ 66%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/read_metrics__type_support.cpp.o[0m
+[30.201s] [ 66%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/status_response__type_support.cpp.o[0m
+[30.414s] [ 66%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/metric_label__type_support_c.cpp.o[0m
+[31.174s] [ 66%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/trajectory_query__type_support.cpp.o[0m
+[31.391s] [ 66%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/submap_entry__type_support.cpp.o[0m
+[31.402s] [ 67%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/metric__type_support_c.cpp.o[0m
+[32.167s] [ 67%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/metric_label__type_support.cpp.o[0m
+[32.171s] [ 68%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/metric__type_support.cpp.o[0m
+[32.403s] [ 69%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/submap_list__type_support.cpp.o[0m
+[32.487s] [ 70%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/submap_query__type_support.cpp.o[0m
+[32.563s] [ 70%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/status_code__type_support_c.cpp.o[0m
+[32.933s] [ 71%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/status_response__type_support_c.cpp.o[0m
+[33.328s] [ 71%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/status_code__type_support.cpp.o[0m
+[34.187s] [ 71%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/submap_texture__type_support.cpp.o[0m
+[34.323s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.cpp.o[0m
+[34.333s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.cpp.o[0m
+[34.773s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/write_state__type_support.cpp.o[0m
+[34.880s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/submap_entry__type_support_c.cpp.o[0m
+[35.294s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/submap_list__type_support_c.cpp.o[0m
+[35.654s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/status_response__type_support.cpp.o[0m
+[35.724s] [ 72%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.cpp.o[0m
+[36.020s] [ 73%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/read_metrics__type_support.cpp.o[0m
+[36.047s] [ 74%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/submap_entry__type_support.cpp.o[0m
+[36.806s] [ 75%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/get_slam_state__type_support.cpp.o[0m
+[37.386s] [ 75%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.cpp.o[0m
+[37.469s] [ 75%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/submap_list__type_support.cpp.o[0m
+[37.893s] [ 76%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/submap_texture__type_support_c.cpp.o[0m
+[38.497s] [ 76%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/msg/detail/trajectory_states__type_support_c.cpp.o[0m
+[38.624s] [ 77%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support_c.cpp.o[0m
+[38.701s] [ 77%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cartographer_ros_msgs/srv/set_slam_state__type_support.cpp.o[0m
+[39.374s] [ 78%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.cpp.o[0m
+[39.692s] [ 78%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/submap_query__type_support.cpp.o[0m
+[39.876s] [ 79%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/submap_texture__type_support.cpp.o[0m
+[40.386s] [ 79%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/msg/detail/dds_fastrtps/trajectory_states__type_support.cpp.o[0m
+[40.683s] [ 79%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/finish_trajectory__type_support.cpp.o[0m
+[40.725s] [ 79%] [32m[1mLinking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_cpp.so[0m
+[41.229s] [ 79%] Built target cartographer_ros_msgs__rosidl_typesupport_cpp
+[41.260s] [ 79%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support_c.cpp.o[0m
+[41.279s] [ 80%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/get_trajectory_states__type_support.cpp.o[0m
+[41.653s] [ 80%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/write_state__type_support.cpp.o[0m
+[42.196s] [ 81%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.cpp.o[0m
+[43.503s] [ 81%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/read_metrics__type_support_c.cpp.o[0m
+[44.627s] [ 82%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/start_trajectory__type_support.cpp.o[0m
+[44.747s] [ 82%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.cpp.o[0m
+[45.135s] [ 82%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/write_state__type_support_c.cpp.o[0m
+[46.466s] [ 83%] [32m[1mLinking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[47.007s] [ 83%] Built target cartographer_ros_msgs__rosidl_typesupport_introspection_cpp
+[47.010s] [ 83%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/get_slam_state__type_support_c.cpp.o[0m
+[47.191s] [ 83%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/trajectory_query__type_support.cpp.o[0m
+[48.437s] [ 84%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/set_slam_state__type_support_c.cpp.o[0m
+[48.958s] [ 85%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/write_state__type_support.cpp.o[0m
+[49.763s] [ 86%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/submap_query__type_support_c.cpp.o[0m
+[50.336s] [ 87%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/set_slam_state__type_support.cpp.o[0m
+[50.636s] [ 87%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/trajectory_query__type_support_c.cpp.o[0m
+[51.352s] [ 87%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/get_slam_state__type_support.cpp.o[0m
+[51.460s] [ 88%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cartographer_ros_msgs/srv/detail/start_trajectory__type_support_c.cpp.o[0m
+[52.207s] [ 88%] [32m[1mLinking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[52.251s] [ 88%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/submap_query__type_support.cpp.o[0m
+[52.339s] [ 88%] Built target cartographer_ros_msgs__rosidl_typesupport_fastrtps_c
+[53.256s] [ 88%] [32mBuilding CXX object CMakeFiles/cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cartographer_ros_msgs/srv/detail/dds_fastrtps/read_metrics__type_support.cpp.o[0m
+[54.340s] [ 88%] [32m[1mLinking CXX shared library libcartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[54.523s] [ 88%] Built target cartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[54.551s] [ 88%] Built target cartographer_ros_msgs
+[54.583s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[65.940s] [ 88%] Built target cartographer_ros_msgs__py
+[66.004s] [ 89%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_histogram_bucket_s.c.o[0m
+[66.006s] [ 89%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_bagfile_progress_s.c.o[0m
+[66.593s] [ 89%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_status_code_s.c.o[0m
+[66.619s] [ 90%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_status_response_s.c.o[0m
+[67.002s] [ 91%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_submap_list_s.c.o[0m
+[67.011s] [ 91%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_submap_entry_s.c.o[0m
+[67.442s] [ 91%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_submap_texture_s.c.o[0m
+[67.518s] [ 91%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_trajectory_states_s.c.o[0m
+[68.054s] [ 92%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_finish_trajectory_s.c.o[0m
+[68.088s] [ 92%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_trajectory_states_s.c.o[0m
+[68.698s] [ 92%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_start_trajectory_s.c.o[0m
+[69.163s] [ 92%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_trajectory_query_s.c.o[0m
+[69.652s] [ 93%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_submap_query_s.c.o[0m
+[70.126s] [ 93%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_write_state_s.c.o[0m
+[70.577s] [ 94%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_get_slam_state_s.c.o[0m
+[71.031s] [ 94%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_set_slam_state_s.c.o[0m
+[71.478s] [ 95%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/srv/_read_metrics_s.c.o[0m
+[71.939s] [ 95%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_metric_s.c.o[0m
+[72.354s] [ 96%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_metric_label_s.c.o[0m
+[72.745s] [ 96%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_metric_family_s.c.o[0m
+[73.146s] [ 97%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_landmark_list_s.c.o[0m
+[73.533s] [ 97%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/cartographer_ros_msgs/msg/_landmark_entry_s.c.o[0m
+[73.915s] [ 97%] [32m[1mLinking C shared library libcartographer_ros_msgs__rosidl_generator_py.so[0m
+[74.062s] [ 97%] Built target cartographer_ros_msgs__rosidl_generator_py
+[74.109s] [ 97%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[74.800s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[74.889s] [ 98%] Built target cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c
+[74.934s] [ 98%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[75.599s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_c.so[0m
+[75.688s] [ 99%] Built target cartographer_ros_msgs_s__rosidl_typesupport_c
+[75.734s] [ 99%] [32mBuilding C object CMakeFiles/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[76.302s] [100%] [32m[1mLinking C shared module rosidl_generator_py/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[76.365s] [100%] Built target cartographer_ros_msgs_s__rosidl_typesupport_introspection_c
+[76.387s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros_msgs -- -j8 -l8
+[76.403s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_ros_msgs
+[76.416s] -- Install configuration: ""
+[76.417s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/cartographer_ros_msgs
+[76.417s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/BagfileProgress.json
+[76.418s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/HistogramBucket.json
+[76.418s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkEntry.json
+[76.418s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkList.json
+[76.419s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricFamily.json
+[76.419s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricLabel.json
+[76.419s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/Metric.json
+[76.420s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusCode.json
+[76.420s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusResponse.json
+[76.420s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapEntry.json
+[76.421s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapList.json
+[76.421s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapTexture.json
+[76.421s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/TrajectoryStates.json
+[76.422s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/FinishTrajectory.json
+[76.422s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetTrajectoryStates.json
+[76.423s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/ReadMetrics.json
+[76.423s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/StartTrajectory.json
+[76.423s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/TrajectoryQuery.json
+[76.424s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SubmapQuery.json
+[76.424s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/WriteState.json
+[76.424s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetSlamState.json
+[76.425s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SetSlamState.json
+[76.425s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.425s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.426s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_texture.h
+[76.426s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/status_code.h
+[76.426s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/bagfile_progress.h
+[76.426s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/landmark_list.h
+[76.427s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/trajectory_states.h
+[76.427s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric.h
+[76.427s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[76.428s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_list.h
+[76.428s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric_label.h
+[76.428s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/landmark_entry.h
+[76.428s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_entry.h
+[76.429s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/histogram_bucket.h
+[76.429s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric_family.h
+[76.429s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/status_response.h
+[76.430s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.430s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__description.c
+[76.430s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__description.c
+[76.431s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__type_support.c
+[76.431s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__functions.c
+[76.431s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__functions.c
+[76.432s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__type_support.c
+[76.432s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__functions.h
+[76.432s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__struct.h
+[76.433s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__functions.c
+[76.433s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__struct.h
+[76.433s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__struct.h
+[76.434s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__type_support.c
+[76.434s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__functions.h
+[76.434s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__description.c
+[76.434s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__type_support.h
+[76.435s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__functions.c
+[76.435s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__functions.h
+[76.435s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.h
+[76.436s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__description.c
+[76.436s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.h
+[76.436s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__type_support.h
+[76.437s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.h
+[76.437s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__functions.c
+[76.437s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__description.c
+[76.438s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.c
+[76.438s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__functions.c
+[76.438s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__struct.h
+[76.439s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__type_support.c
+[76.439s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__functions.h
+[76.439s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__functions.h
+[76.440s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__functions.c
+[76.440s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__description.c
+[76.440s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__struct.h
+[76.440s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__description.c
+[76.441s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.h
+[76.441s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__type_support.h
+[76.441s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__struct.h
+[76.442s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__description.c
+[76.442s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__functions.h
+[76.442s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__struct.h
+[76.443s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__type_support.h
+[76.443s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__functions.c
+[76.443s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__type_support.h
+[76.444s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.c
+[76.444s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__struct.h
+[76.444s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__struct.h
+[76.445s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__functions.c
+[76.445s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__struct.h
+[76.446s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__type_support.c
+[76.446s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__description.c
+[76.446s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__functions.h
+[76.447s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__description.c
+[76.447s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__functions.h
+[76.447s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__description.c
+[76.447s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__type_support.c
+[76.448s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__functions.c
+[76.448s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__type_support.h
+[76.449s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__type_support.c
+[76.449s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__functions.h
+[76.449s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__functions.h
+[76.450s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__type_support.c
+[76.450s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__functions.h
+[76.450s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__functions.h
+[76.450s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__functions.h
+[76.451s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.c
+[76.451s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__functions.c
+[76.452s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__struct.h
+[76.452s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.c
+[76.452s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__struct.h
+[76.453s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__functions.c
+[76.453s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__type_support.c
+[76.453s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__functions.c
+[76.454s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__description.c
+[76.454s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__type_support.h
+[76.454s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__type_support.h
+[76.455s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__struct.h
+[76.455s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__type_support.h
+[76.455s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__description.c
+[76.456s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.456s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/finish_trajectory.h
+[76.456s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/start_trajectory.h
+[76.456s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/get_trajectory_states.h
+[76.457s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/write_state.h
+[76.457s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/get_slam_state.h
+[76.457s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/submap_query.h
+[76.458s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/trajectory_query.h
+[76.458s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/set_slam_state.h
+[76.458s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/read_metrics.h
+[76.458s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.459s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.h
+[76.459s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__struct.h
+[76.459s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__functions.h
+[76.460s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
+[76.460s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__description.c
+[76.460s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.c
+[76.461s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.c
+[76.461s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__functions.c
+[76.461s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__functions.h
+[76.462s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__functions.h
+[76.462s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__struct.h
+[76.462s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__struct.h
+[76.463s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__description.c
+[76.463s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.h
+[76.463s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__functions.h
+[76.464s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.h
+[76.464s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__functions.c
+[76.464s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__struct.h
+[76.464s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__functions.c
+[76.465s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__struct.h
+[76.465s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__description.c
+[76.465s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.h
+[76.466s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__struct.h
+[76.466s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__functions.h
+[76.466s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__description.c
+[76.467s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+[76.467s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__functions.h
+[76.467s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__functions.h
+[76.468s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__functions.c
+[76.468s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__functions.c
+[76.468s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__type_support.h
+[76.469s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__type_support.h
+[76.469s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__type_support.c
+[76.470s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__functions.c
+[76.470s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__functions.h
+[76.470s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.c
+[76.470s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.h
+[76.471s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__struct.h
+[76.471s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__type_support.h
+[76.471s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.c
+[76.472s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__struct.h
+[76.472s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__functions.c
+[76.472s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__struct.h
+[76.473s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__functions.c
+[76.473s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__functions.c
+[76.473s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__description.c
+[76.474s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__type_support.c
+[76.474s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__functions.h
+[76.474s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.h
+[76.475s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__description.c
+[76.475s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__description.c
+[76.475s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__type_support.c
+[76.476s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__description.c
+[76.476s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__description.c
+[76.477s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/library_path.sh
+[76.477s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/library_path.dsv
+[76.478s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_generator_c.so
+[76.479s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_generator_c.so" to ""
+[76.480s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.480s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.480s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[76.481s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.481s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__rosidl_typesupport_fastrtps_c.h
+[76.481s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__rosidl_typesupport_fastrtps_c.h
+[76.481s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__rosidl_typesupport_fastrtps_c.h
+[76.482s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__rosidl_typesupport_fastrtps_c.h
+[76.482s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__rosidl_typesupport_fastrtps_c.h
+[76.482s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__rosidl_typesupport_fastrtps_c.h
+[76.482s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__rosidl_typesupport_fastrtps_c.h
+[76.483s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__rosidl_typesupport_fastrtps_c.h
+[76.483s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__rosidl_typesupport_fastrtps_c.h
+[76.483s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__rosidl_typesupport_fastrtps_c.h
+[76.483s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__rosidl_typesupport_fastrtps_c.h
+[76.484s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__rosidl_typesupport_fastrtps_c.h
+[76.484s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__rosidl_typesupport_fastrtps_c.h
+[76.484s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.485s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.485s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__rosidl_typesupport_fastrtps_c.h
+[76.485s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__rosidl_typesupport_fastrtps_c.h
+[76.486s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_fastrtps_c.h
+[76.486s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__rosidl_typesupport_fastrtps_c.h
+[76.486s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__rosidl_typesupport_fastrtps_c.h
+[76.486s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__rosidl_typesupport_fastrtps_c.h
+[76.487s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__rosidl_typesupport_fastrtps_c.h
+[76.487s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__rosidl_typesupport_fastrtps_c.h
+[76.487s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__rosidl_typesupport_fastrtps_c.h
+[76.488s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[76.489s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[76.490s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.490s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.490s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[76.491s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.491s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__rosidl_typesupport_introspection_c.h
+[76.491s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__rosidl_typesupport_introspection_c.h
+[76.492s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__type_support.c
+[76.492s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__rosidl_typesupport_introspection_c.h
+[76.492s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__type_support.c
+[76.492s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__rosidl_typesupport_introspection_c.h
+[76.493s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__type_support.c
+[76.493s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__rosidl_typesupport_introspection_c.h
+[76.493s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__rosidl_typesupport_introspection_c.h
+[76.494s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.c
+[76.494s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__type_support.c
+[76.494s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__rosidl_typesupport_introspection_c.h
+[76.495s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__rosidl_typesupport_introspection_c.h
+[76.495s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.c
+[76.496s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__type_support.c
+[76.496s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__type_support.c
+[76.496s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__type_support.c
+[76.497s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__rosidl_typesupport_introspection_c.h
+[76.497s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__type_support.c
+[76.498s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.c
+[76.498s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.c
+[76.498s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__rosidl_typesupport_introspection_c.h
+[76.499s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__type_support.c
+[76.499s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__rosidl_typesupport_introspection_c.h
+[76.499s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__rosidl_typesupport_introspection_c.h
+[76.500s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__rosidl_typesupport_introspection_c.h
+[76.500s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.500s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.501s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.c
+[76.501s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.c
+[76.501s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.c
+[76.502s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__rosidl_typesupport_introspection_c.h
+[76.502s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__rosidl_typesupport_introspection_c.h
+[76.502s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__rosidl_typesupport_introspection_c.h
+[76.503s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__rosidl_typesupport_introspection_c.h
+[76.503s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.c
+[76.503s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__rosidl_typesupport_introspection_c.h
+[76.504s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_introspection_c.h
+[76.504s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__rosidl_typesupport_introspection_c.h
+[76.504s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__type_support.c
+[76.505s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.c
+[76.505s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.c
+[76.506s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__rosidl_typesupport_introspection_c.h
+[76.506s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__rosidl_typesupport_introspection_c.h
+[76.506s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__type_support.c
+[76.507s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__type_support.c
+[76.508s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_introspection_c.so
+[76.509s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[76.509s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_c.so
+[76.510s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_c.so" to ""
+[76.510s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.511s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.511s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/landmark_entry.hpp
+[76.511s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric.hpp
+[76.512s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/bagfile_progress.hpp
+[76.512s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_texture.hpp
+[76.512s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[76.512s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric_label.hpp
+[76.513s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_list.hpp
+[76.513s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/histogram_bucket.hpp
+[76.513s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/trajectory_states.hpp
+[76.514s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/submap_entry.hpp
+[76.514s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/landmark_list.hpp
+[76.514s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/status_code.hpp
+[76.514s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/status_response.hpp
+[76.515s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.515s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__builder.hpp
+[76.515s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__type_support.hpp
+[76.516s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__traits.hpp
+[76.516s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__builder.hpp
+[76.516s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__traits.hpp
+[76.517s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__struct.hpp
+[76.517s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__type_support.hpp
+[76.517s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__struct.hpp
+[76.518s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__type_support.hpp
+[76.518s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__struct.hpp
+[76.518s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__builder.hpp
+[76.519s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.hpp
+[76.519s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__traits.hpp
+[76.519s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__builder.hpp
+[76.520s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__traits.hpp
+[76.520s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__type_support.hpp
+[76.520s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__struct.hpp
+[76.521s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__traits.hpp
+[76.521s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__struct.hpp
+[76.521s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__builder.hpp
+[76.522s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__struct.hpp
+[76.522s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.hpp
+[76.522s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__traits.hpp
+[76.523s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__struct.hpp
+[76.523s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__builder.hpp
+[76.523s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__builder.hpp
+[76.524s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__type_support.hpp
+[76.524s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__builder.hpp
+[76.524s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__traits.hpp
+[76.525s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__struct.hpp
+[76.525s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__traits.hpp
+[76.525s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__traits.hpp
+[76.526s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.hpp
+[76.526s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__builder.hpp
+[76.527s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__struct.hpp
+[76.527s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__struct.hpp
+[76.527s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__traits.hpp
+[76.528s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__builder.hpp
+[76.528s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__builder.hpp
+[76.528s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__struct.hpp
+[76.529s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__struct.hpp
+[76.529s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__struct.hpp
+[76.529s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__traits.hpp
+[76.530s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__type_support.hpp
+[76.530s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__type_support.hpp
+[76.530s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__builder.hpp
+[76.531s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__type_support.hpp
+[76.531s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__builder.hpp
+[76.531s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__traits.hpp
+[76.532s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.hpp
+[76.532s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__traits.hpp
+[76.532s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__type_support.hpp
+[76.533s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/metric_family.hpp
+[76.533s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.533s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/start_trajectory.hpp
+[76.534s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/read_metrics.hpp
+[76.534s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/trajectory_query.hpp
+[76.534s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/write_state.hpp
+[76.535s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/get_slam_state.hpp
+[76.535s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/submap_query.hpp
+[76.535s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/get_trajectory_states.hpp
+[76.535s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/set_slam_state.hpp
+[76.536s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/finish_trajectory.hpp
+[76.536s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.536s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__traits.hpp
+[76.537s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__builder.hpp
+[76.537s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.hpp
+[76.537s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.hpp
+[76.538s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__traits.hpp
+[76.538s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.hpp
+[76.538s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__traits.hpp
+[76.539s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.hpp
+[76.539s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__traits.hpp
+[76.539s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__builder.hpp
+[76.540s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__builder.hpp
+[76.540s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__struct.hpp
+[76.541s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.hpp
+[76.541s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__builder.hpp
+[76.541s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__builder.hpp
+[76.542s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__type_support.hpp
+[76.542s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__traits.hpp
+[76.542s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__type_support.hpp
+[76.543s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__struct.hpp
+[76.543s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__builder.hpp
+[76.543s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__type_support.hpp
+[76.544s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__struct.hpp
+[76.544s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__struct.hpp
+[76.545s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__struct.hpp
+[76.545s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__struct.hpp
+[76.545s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__traits.hpp
+[76.546s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__builder.hpp
+[76.546s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__builder.hpp
+[76.547s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__traits.hpp
+[76.547s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.hpp
+[76.547s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__struct.hpp
+[76.548s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__traits.hpp
+[76.548s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__struct.hpp
+[76.548s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__traits.hpp
+[76.549s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__struct.hpp
+[76.549s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__builder.hpp
+[76.550s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.550s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.550s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[76.551s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.551s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__rosidl_typesupport_fastrtps_cpp.hpp
+[76.551s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__rosidl_typesupport_fastrtps_cpp.hpp
+[76.551s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__rosidl_typesupport_fastrtps_cpp.hpp
+[76.552s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__rosidl_typesupport_fastrtps_cpp.hpp
+[76.552s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__rosidl_typesupport_fastrtps_cpp.hpp
+[76.552s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__rosidl_typesupport_fastrtps_cpp.hpp
+[76.553s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__rosidl_typesupport_fastrtps_cpp.hpp
+[76.553s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__rosidl_typesupport_fastrtps_cpp.hpp
+[76.553s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__rosidl_typesupport_fastrtps_cpp.hpp
+[76.554s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__rosidl_typesupport_fastrtps_cpp.hpp
+[76.554s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__rosidl_typesupport_fastrtps_cpp.hpp
+[76.554s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/dds_fastrtps
+[76.555s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__rosidl_typesupport_fastrtps_cpp.hpp
+[76.555s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__rosidl_typesupport_fastrtps_cpp.hpp
+[76.556s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.556s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.556s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__rosidl_typesupport_fastrtps_cpp.hpp
+[76.556s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__rosidl_typesupport_fastrtps_cpp.hpp
+[76.557s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__rosidl_typesupport_fastrtps_cpp.hpp
+[76.557s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[76.557s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__rosidl_typesupport_fastrtps_cpp.hpp
+[76.558s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[76.558s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_fastrtps_cpp.hpp
+[76.558s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/dds_fastrtps
+[76.559s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__rosidl_typesupport_fastrtps_cpp.hpp
+[76.559s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__rosidl_typesupport_fastrtps_cpp.hpp
+[76.560s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[76.562s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[76.563s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs
+[76.563s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg
+[76.563s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail
+[76.563s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__type_support.cpp
+[76.564s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__type_support.cpp
+[76.564s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__type_support.cpp
+[76.564s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__rosidl_typesupport_introspection_cpp.hpp
+[76.565s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__rosidl_typesupport_introspection_cpp.hpp
+[76.565s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__type_support.cpp
+[76.565s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__type_support.cpp
+[76.565s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__rosidl_typesupport_introspection_cpp.hpp
+[76.566s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__type_support.cpp
+[76.566s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_family__rosidl_typesupport_introspection_cpp.hpp
+[76.566s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_list__rosidl_typesupport_introspection_cpp.hpp
+[76.567s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__rosidl_typesupport_introspection_cpp.hpp
+[76.567s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_entry__rosidl_typesupport_introspection_cpp.hpp
+[76.567s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__rosidl_typesupport_introspection_cpp.hpp
+[76.568s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_code__rosidl_typesupport_introspection_cpp.hpp
+[76.568s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__rosidl_typesupport_introspection_cpp.hpp
+[76.568s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_list__rosidl_typesupport_introspection_cpp.hpp
+[76.569s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/trajectory_states__type_support.cpp
+[76.569s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric__type_support.cpp
+[76.570s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__type_support.cpp
+[76.570s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/submap_texture__rosidl_typesupport_introspection_cpp.hpp
+[76.570s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/histogram_bucket__rosidl_typesupport_introspection_cpp.hpp
+[76.571s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.cpp
+[76.571s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/status_response__type_support.cpp
+[76.571s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/metric_label__type_support.cpp
+[76.572s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/msg/detail/landmark_entry__type_support.cpp
+[76.572s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv
+[76.572s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail
+[76.573s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__type_support.cpp
+[76.573s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[76.573s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__rosidl_typesupport_introspection_cpp.hpp
+[76.573s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__type_support.cpp
+[76.574s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__type_support.cpp
+[76.574s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__type_support.cpp
+[76.575s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__rosidl_typesupport_introspection_cpp.hpp
+[76.575s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__type_support.cpp
+[76.575s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/trajectory_query__type_support.cpp
+[76.576s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/submap_query__rosidl_typesupport_introspection_cpp.hpp
+[76.576s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/read_metrics__rosidl_typesupport_introspection_cpp.hpp
+[76.576s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/write_state__rosidl_typesupport_introspection_cpp.hpp
+[76.577s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_slam_state__rosidl_typesupport_introspection_cpp.hpp
+[76.577s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/get_trajectory_states__rosidl_typesupport_introspection_cpp.hpp
+[76.577s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/start_trajectory__type_support.cpp
+[76.578s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__type_support.cpp
+[76.578s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/finish_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[76.579s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/include/cartographer_ros_msgs/cartographer_ros_msgs/srv/detail/set_slam_state__type_support.cpp
+[76.579s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[76.582s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[76.582s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_cpp.so
+[76.584s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[76.584s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/pythonpath.sh
+[76.584s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/pythonpath.dsv
+[76.585s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs-2.0.9003-py3.12.egg-info
+[76.585s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs-2.0.9003-py3.12.egg-info/PKG-INFO
+[76.585s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs-2.0.9003-py3.12.egg-info/dependency_links.txt
+[76.586s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs-2.0.9003-py3.12.egg-info/top_level.txt
+[76.586s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs-2.0.9003-py3.12.egg-info/SOURCES.txt
+[76.587s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs
+[76.587s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[76.587s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[76.588s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[76.588s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_c.so
+[76.589s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/__init__.py
+[76.589s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg
+[76.589s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_histogram_bucket.py
+[76.590s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_texture_s.c
+[76.590s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_list_s.c
+[76.590s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_label_s.c
+[76.591s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_s.c
+[76.591s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_entry.py
+[76.591s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_histogram_bucket_s.c
+[76.591s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_code.py
+[76.592s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_entry_s.c
+[76.592s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_list.py
+[76.592s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_code_s.c
+[76.593s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_family.py
+[76.593s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_list.py
+[76.593s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_entry_s.c
+[76.594s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_label.py
+[76.594s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_trajectory_states.py
+[76.594s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_response.py
+[76.595s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_bagfile_progress.py
+[76.595s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_bagfile_progress_s.c
+[76.595s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_entry.py
+[76.596s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_list_s.c
+[76.596s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_texture.py
+[76.596s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric.py
+[76.597s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/__init__.py
+[76.597s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_trajectory_states_s.c
+[76.597s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_family_s.c
+[76.598s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_response_s.c
+[76.598s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv
+[76.598s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_trajectory_states_s.c
+[76.599s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_read_metrics.py
+[76.599s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_write_state.py
+[76.599s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_trajectory_states.py
+[76.600s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_set_slam_state_s.c
+[76.600s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_start_trajectory_s.c
+[76.600s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_trajectory_query_s.c
+[76.601s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_slam_state_s.c
+[76.601s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_finish_trajectory.py
+[76.601s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_set_slam_state.py
+[76.602s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_slam_state.py
+[76.602s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_finish_trajectory_s.c
+[76.602s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_submap_query_s.c
+[76.603s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_read_metrics_s.c
+[76.603s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_start_trajectory.py
+[76.603s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_write_state_s.c
+[76.604s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/__init__.py
+[76.604s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_trajectory_query.py
+[76.604s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_submap_query.py
+[76.605s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[76.605s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/_cartographer_ros_msgs_s.ep.rosidl_typesupport_c.c
+[76.761s] Listing '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs'...
+[76.761s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/__init__.py'...
+[76.761s] Listing '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg'...
+[76.761s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/__init__.py'...
+[76.762s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_bagfile_progress.py'...
+[76.762s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_histogram_bucket.py'...
+[76.762s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_entry.py'...
+[76.762s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_landmark_list.py'...
+[76.763s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric.py'...
+[76.763s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_family.py'...
+[76.763s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_metric_label.py'...
+[76.763s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_code.py'...
+[76.764s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_status_response.py'...
+[76.764s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_entry.py'...
+[76.764s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_list.py'...
+[76.764s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_submap_texture.py'...
+[76.764s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/msg/_trajectory_states.py'...
+[76.765s] Listing '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv'...
+[76.765s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/__init__.py'...
+[76.765s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_finish_trajectory.py'...
+[76.765s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_slam_state.py'...
+[76.766s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_get_trajectory_states.py'...
+[76.766s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_read_metrics.py'...
+[76.766s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_set_slam_state.py'...
+[76.766s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_start_trajectory.py'...
+[76.767s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_submap_query.py'...
+[76.767s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_trajectory_query.py'...
+[76.767s] Compiling '/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/srv/_write_state.py'...
+[76.772s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[76.773s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[76.773s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[76.774s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[76.775s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_c.so
+[76.776s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/python3.12/site-packages/cartographer_ros_msgs/cartographer_ros_msgs_s__rosidl_typesupport_c.so" to ""
+[76.776s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_generator_py.so
+[76.778s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros_msgs/lib/libcartographer_ros_msgs__rosidl_generator_py.so" to ""
+[76.778s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/ament_index/resource_index/rust_packages/cartographer_ros_msgs
+[76.778s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust
+[76.779s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/Cargo.toml
+[76.779s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src
+[76.779s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/srv.rs
+[76.779s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/msg.rs
+[76.780s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/lib.rs
+[76.780s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/msg
+[76.780s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/msg/rmw.rs
+[76.781s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/srv
+[76.781s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/src/srv/rmw.rs
+[76.781s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/rust/build.rs
+[76.781s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/BagfileProgress.idl
+[76.782s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/HistogramBucket.idl
+[76.782s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkEntry.idl
+[76.782s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkList.idl
+[76.783s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricFamily.idl
+[76.783s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricLabel.idl
+[76.784s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/Metric.idl
+[76.784s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusCode.idl
+[76.785s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusResponse.idl
+[76.785s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapEntry.idl
+[76.785s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapList.idl
+[76.786s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapTexture.idl
+[76.786s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/TrajectoryStates.idl
+[76.787s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/FinishTrajectory.idl
+[76.787s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetTrajectoryStates.idl
+[76.788s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/ReadMetrics.idl
+[76.788s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/StartTrajectory.idl
+[76.788s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/TrajectoryQuery.idl
+[76.789s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SubmapQuery.idl
+[76.789s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/WriteState.idl
+[76.790s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetSlamState.idl
+[76.790s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SetSlamState.idl
+[76.791s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/BagfileProgress.msg
+[76.791s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/HistogramBucket.msg
+[76.791s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkEntry.msg
+[76.792s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/LandmarkList.msg
+[76.792s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricFamily.msg
+[76.793s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/MetricLabel.msg
+[76.793s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/Metric.msg
+[76.794s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusCode.msg
+[76.794s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/StatusResponse.msg
+[76.794s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapEntry.msg
+[76.795s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapList.msg
+[76.795s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/SubmapTexture.msg
+[76.796s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/msg/TrajectoryStates.msg
+[76.796s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/FinishTrajectory.srv
+[76.797s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetTrajectoryStates.srv
+[76.797s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/ReadMetrics.srv
+[76.797s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/StartTrajectory.srv
+[76.798s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/TrajectoryQuery.srv
+[76.798s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SubmapQuery.srv
+[76.799s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/WriteState.srv
+[76.799s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/GetSlamState.srv
+[76.800s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/srv/SetSlamState.srv
+[76.800s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/ament_index/resource_index/package_run_dependencies/cartographer_ros_msgs
+[76.801s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/ament_index/resource_index/parent_prefix_path/cartographer_ros_msgs
+[76.801s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/ament_prefix_path.sh
+[76.801s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/ament_prefix_path.dsv
+[76.802s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/path.sh
+[76.802s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/environment/path.dsv
+[76.803s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/local_setup.bash
+[76.803s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/local_setup.sh
+[76.804s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/local_setup.zsh
+[76.804s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/local_setup.dsv
+[76.804s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.dsv
+[76.805s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/ament_index/resource_index/packages/cartographer_ros_msgs
+[76.805s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_generator_cExport.cmake
+[76.806s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[76.807s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[76.807s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[76.808s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[76.808s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[76.808s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_cExport.cmake
+[76.809s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[76.809s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_generator_cppExport.cmake
+[76.810s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[76.810s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[76.811s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[76.811s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[76.812s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_cppExport.cmake
+[76.812s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[76.813s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_generator_pyExport.cmake
+[76.813s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/export_cartographer_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[76.814s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[76.814s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[76.814s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[76.815s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[76.815s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[76.816s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[76.816s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[76.817s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgsConfig.cmake
+[76.817s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/cmake/cartographer_ros_msgsConfig-version.cmake
+[76.817s] -- Installing: /root/distr_slam_ws/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.xml
+[76.822s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_ros_msgs

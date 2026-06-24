@@ -69,9 +69,9 @@ cartographer_ros_msgs__srv__GetTrajectoryStates_Event__get_type_hash(
 
 // Include directives for referenced types
 #include "service_msgs/msg/detail/service_event_info__functions.h"
-#include "cartographer_ros_msgs/msg/detail/status_response__functions.h"
 #include "cartographer_ros_msgs/msg/detail/trajectory_states__functions.h"
 #include "std_msgs/msg/detail/header__functions.h"
+#include "cartographer_ros_msgs/msg/detail/status_response__functions.h"
 #include "builtin_interfaces/msg/detail/time__functions.h"
 
 // Hashes for external referenced types
