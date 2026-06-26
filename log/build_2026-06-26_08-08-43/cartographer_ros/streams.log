@@ -1,0 +1,145 @@
+[0.015s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j8 -l8
+[0.292s] [  2%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/node.cpp.o[0m
+[8.682s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[8.682s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[8.682s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/time_conversion.h:22[m[K,
+[8.683s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/tf_bridge.h:23[m[K,
+[8.683s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/sensor_bridge.h:28[m[K,
+[8.683s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/map_builder_bridge.h:31[m[K,
+[8.683s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/node.h:31[m[K,
+[8.683s]                  from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:17[m[K:
+[8.683s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K In member function ‘[01m[Kbool cartographer_ros::Node::[01;32m[KSaveCurrentPoseToRedis[m[K()[m[K’:
+[8.683s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1020:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.683s]  1020 |         [01;31m[Knode_handle_[m[K->get_logger(),
+[8.683s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[8.684s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1019:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.684s]  1019 |     [01;31m[KRCLCPP_ERROR[m[K(
+[8.684s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.684s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1034:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksw[m[K’ has not been declared
+[8.684s]  1034 |     [01;31m[Ksw[m[K::redis::Redis redis(
+[8.684s]       |     [01;31m[K^~[m[K
+[8.695s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ was not declared in this scope
+[8.695s]  1037 |     auto save_transform = [&[01;31m[Kredis[m[K](const std::string& key_prefix,
+[8.695s]       |                             [01;31m[K^~~~~[m[K
+[8.696s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K In lambda function:
+[8.696s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1039:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.696s]  1039 |       [01;31m[Kredis[m[K.hset(key_prefix, "header_frame_id", tf.header.frame_id);
+[8.696s]       |       [01;31m[K^~~~~[m[K
+[8.696s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.697s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.697s]       |                                  [01;36m[K^[m[K
+[8.697s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.697s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.697s]       |                             [01;36m[K^~~~~[m[K
+[8.697s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1040:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.698s]  1040 |       [01;31m[Kredis[m[K.hset(key_prefix, "child_frame_id", tf.child_frame_id);
+[8.698s]       |       [01;31m[K^~~~~[m[K
+[8.698s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.698s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.698s]       |                                  [01;36m[K^[m[K
+[8.698s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.698s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.698s]       |                             [01;36m[K^~~~~[m[K
+[8.698s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1042:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.698s]  1042 |       [01;31m[Kredis[m[K.hset(key_prefix, "tx", std::to_string(tf.transform.translation.x));
+[8.699s]       |       [01;31m[K^~~~~[m[K
+[8.699s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.699s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.699s]       |                                  [01;36m[K^[m[K
+[8.699s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.699s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.699s]       |                             [01;36m[K^~~~~[m[K
+[8.699s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1043:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.699s]  1043 |       [01;31m[Kredis[m[K.hset(key_prefix, "ty", std::to_string(tf.transform.translation.y));
+[8.699s]       |       [01;31m[K^~~~~[m[K
+[8.699s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.700s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.700s]       |                                  [01;36m[K^[m[K
+[8.700s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.700s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.700s]       |                             [01;36m[K^~~~~[m[K
+[8.700s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1044:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.700s]  1044 |       [01;31m[Kredis[m[K.hset(key_prefix, "tz", std::to_string(tf.transform.translation.z));
+[8.700s]       |       [01;31m[K^~~~~[m[K
+[8.700s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.700s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.701s]       |                                  [01;36m[K^[m[K
+[8.701s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.701s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.701s]       |                             [01;36m[K^~~~~[m[K
+[8.701s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1046:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.701s]  1046 |       [01;31m[Kredis[m[K.hset(key_prefix, "qx", std::to_string(tf.transform.rotation.x));
+[8.701s]       |       [01;31m[K^~~~~[m[K
+[8.701s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.701s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.701s]       |                                  [01;36m[K^[m[K
+[8.701s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.702s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.702s]       |                             [01;36m[K^~~~~[m[K
+[8.702s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1047:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.702s]  1047 |       [01;31m[Kredis[m[K.hset(key_prefix, "qy", std::to_string(tf.transform.rotation.y));
+[8.702s]       |       [01;31m[K^~~~~[m[K
+[8.702s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.702s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.702s]       |                                  [01;36m[K^[m[K
+[8.702s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.702s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.702s]       |                             [01;36m[K^~~~~[m[K
+[8.703s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1048:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.703s]  1048 |       [01;31m[Kredis[m[K.hset(key_prefix, "qz", std::to_string(tf.transform.rotation.z));
+[8.703s]       |       [01;31m[K^~~~~[m[K
+[8.703s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.703s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.703s]       |                                  [01;36m[K^[m[K
+[8.703s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.703s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.703s]       |                             [01;36m[K^~~~~[m[K
+[8.703s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1049:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kredis[m[K’ is not captured
+[8.703s]  1049 |       [01;31m[Kredis[m[K.hset(key_prefix, "qw", std::to_string(tf.transform.rotation.w));
+[8.704s]       |       [01;31m[K^~~~~[m[K
+[8.704s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:34:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[8.704s]  1037 |     auto save_transform = [&redis[01;36m[K][m[K(const std::string& key_prefix,
+[8.704s]       |                                  [01;36m[K^[m[K
+[8.704s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1037:29:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>redis[m[K’ declared here
+[8.704s]  1037 |     auto save_transform = [&[01;36m[Kredis[m[K](const std::string& key_prefix,
+[8.704s]       |                             [01;36m[K^~~~~[m[K
+[8.717s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K In member function ‘[01m[Kbool cartographer_ros::Node::[01;32m[KSaveCurrentPoseToRedis[m[K()[m[K’:
+[8.718s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1060:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.718s]  1060 |           [01;31m[Knode_handle_[m[K->get_logger(),
+[8.718s]       |           [01;31m[K^~~~~~~~~~~~[m[K
+[8.718s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1059:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.718s]  1059 |       [01;31m[KRCLCPP_WARN[m[K(
+[8.718s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[8.740s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1068:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.740s]  1068 |           [01;31m[Knode_handle_[m[K->get_logger(),
+[8.740s]       |           [01;31m[K^~~~~~~~~~~~[m[K
+[8.740s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1067:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.740s]  1067 |       [01;31m[KRCLCPP_WARN[m[K(
+[8.740s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[8.761s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1073:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.761s]  1073 |         [01;31m[Knode_handle_[m[K->get_logger(),
+[8.761s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[8.761s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1072:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.761s]  1072 |     [01;31m[KRCLCPP_INFO[m[K(
+[8.761s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[8.782s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1082:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.782s]  1082 |         [01;31m[Knode_handle_[m[K->get_logger(),
+[8.782s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[8.782s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1081:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.782s]  1081 |     [01;31m[KRCLCPP_ERROR[m[K(
+[8.782s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.807s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K In member function ‘[01m[Kbool cartographer_ros::Node::[01;32m[KLookupTransformWithRetry[m[K(const std::string&, const std::string&, geometry_msgs::msg::TransformStamped*, int, int)[m[K’:
+[8.807s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1260:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+[8.807s]  1260 |           [01;31m[Knode_handle_[m[K->get_logger(),
+[8.807s]       |           [01;31m[K^~~~~~~~~~~~[m[K
+[8.808s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1259:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[8.808s]  1259 |       [01;31m[KRCLCPP_WARN[m[K(
+[8.808s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[24.117s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K At global scope:
+[24.117s] [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:108:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint cartographer_ros::{anonymous}::[01;32m[KFindReferenceTrajectoryId[m[K(const std::map<int, cartographer::mapping::PoseGraphInterface::TrajectoryState>&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[24.118s]   108 | int [01;35m[KFindReferenceTrajectoryId[m[K(
+[24.118s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.272s] gmake[2]: *** [CMakeFiles/cartographer_ros.dir/build.make:132: CMakeFiles/cartographer_ros.dir/src/node.cpp.o] Error 1
+[24.272s] gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/cartographer_ros.dir/all] Error 2
+[24.273s] gmake: *** [Makefile:146: all] Error 2
+[24.275s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '2': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j8 -l8

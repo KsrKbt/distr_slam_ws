@@ -1,0 +1,18 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/time_conversion.h:22[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/tf_bridge.h:23[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/sensor_bridge.h:28[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/map_builder_bridge.h:31[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/node.h:31[m[K,
+                 from [01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:17[m[K:
+[01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:[m[K In member function ‘[01m[Kbool cartographer_ros::Node::[01;32m[KLookupTransformWithRetry[m[K(const std::string&, const std::string&, geometry_msgs::msg::TransformStamped*, int, int)[m[K’:
+[01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1250:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope
+ 1250 |           [01;31m[Knode_handle_[m[K->get_logger(),
+      |           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/root/distr_slam_ws/src/cartographer_ros/cartographer_ros/src/node.cpp:1249:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1249 |       [01;31m[KRCLCPP_WARN[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cartographer_ros.dir/build.make:132: CMakeFiles/cartographer_ros.dir/src/node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/cartographer_ros.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
