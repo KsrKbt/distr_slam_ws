@@ -70,6 +70,9 @@ class ROS2PublisherNode(Node):
         self.accept_external_tf_static = env_bool('ACCEPT_EXTERNAL_TF_STATIC', False)
         self.forward_joint_states = env_bool('FORWARD_JOINT_STATES', False)
 
+        self.last_scan_time = 0.0
+        self.last_odom_time = 0.0
+
         self.get_logger().info(
             f"accept_external_tf_static={self.accept_external_tf_static}, "
             f"forward_joint_states={self.forward_joint_states}"
@@ -134,6 +137,7 @@ class ROS2PublisherNode(Node):
         msg.ranges = [float(x) for x in scan_dict['ranges']]
         msg.intensities = [float(x) for x in scan_dict['intensities']]
         self.scan_pub.publish(msg)
+        self.last_scan_time = time.time()
 
     def publish_odom(self, odom_dict):
         msg = Odometry()
@@ -160,6 +164,7 @@ class ROS2PublisherNode(Node):
         tf.transform.translation.z = float(msg.pose.pose.position.z)
         tf.transform.rotation = msg.pose.pose.orientation
         self.publish_tf_message([tf])
+        self.last_odom_time = time.time()
 
     def publish_tf_static(self, tf_dict):
         transforms = [self.dict_to_transform_stamped(t) for t in tf_dict['transforms']]
@@ -235,6 +240,17 @@ def healthz():
         'accept_external_tf_static': ros_node.accept_external_tf_static,
         'forward_joint_states': ros_node.forward_joint_states,
         'dynamic_tf_source': 'odometry',
+    }), 200
+
+
+@app.route('/worker_ready', methods=['GET'])
+def worker_ready():
+    return jsonify({
+        'server_alive': True,
+        'recent_scan': (time.time() - ros_node.last_scan_time) < 2.0 if ros_node.last_scan_time else False,
+        'recent_odom': (time.time() - ros_node.last_odom_time) < 2.0 if ros_node.last_odom_time else False,
+        'last_scan_wall_time': ros_node.last_scan_time,
+        'last_odom_wall_time': ros_node.last_odom_time,
     }), 200
 
 
