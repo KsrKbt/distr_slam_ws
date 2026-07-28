@@ -1,0 +1,39 @@
+[0.025s] Invoking command in '/root/distr_slam_ws/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/distr_slam_ws/src/cartographer -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer
+[0.347s] -- The C compiler identification is GNU 13.3.0
+[0.613s] -- The CXX compiler identification is GNU 13.3.0
+[0.656s] -- Detecting C compiler ABI info
+[0.914s] -- Detecting C compiler ABI info - done
+[0.944s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.949s] -- Detecting C compile features
+[0.950s] -- Detecting C compile features - done
+[0.979s] -- Detecting CXX compiler ABI info
+[1.261s] -- Detecting CXX compiler ABI info - done
+[1.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.279s] -- Detecting CXX compile features
+[1.279s] -- Detecting CXX compile features - done
+[1.281s] -- Build type: Release
+[1.300s] Files /root/distr_slam_ws/build/cartographer/AllFiles.cmake and - differ
+[1.591s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.595s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.752s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.755s] -- Found Threads: TRUE  
+[1.771s] -- Found GMock: gmock_main  
+[1.795s] [31mCMake Error at CMakeLists.txt:32 (find_package):
+[1.795s]   By not providing "Findabsl.cmake" in CMAKE_MODULE_PATH this project has
+[1.796s]   asked CMake to find a package configuration file provided by "absl", but
+[1.796s]   CMake did not find one.
+[1.796s] 
+[1.796s]   Could not find a package configuration file provided by "absl" with any of
+[1.796s]   the following names:
+[1.796s] 
+[1.796s]     abslConfig.cmake
+[1.796s]     absl-config.cmake
+[1.797s] 
+[1.797s]   Add the installation prefix of "absl" to CMAKE_PREFIX_PATH or set
+[1.797s]   "absl_DIR" to a directory containing one of the above files.  If "absl"
+[1.797s]   provides a separate development package or SDK, be sure it has been
+[1.797s]   installed.
+[1.797s] 
+[1.797s] [0m
+[1.797s] -- Configuring incomplete, errors occurred!
+[1.805s] Invoked command in '/root/distr_slam_ws/build/cartographer' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/distr_slam_ws/src/cartographer -DCMAKE_INSTALL_PREFIX=/root/distr_slam_ws/install/cartographer

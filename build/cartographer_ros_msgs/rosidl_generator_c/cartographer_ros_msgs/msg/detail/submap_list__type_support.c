@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "cartographer_ros_msgs/msg/detail/submap_list__functions.h"
-#include "cartographer_ros_msgs/msg/detail/submap_list__type_support.h"
 #include "cartographer_ros_msgs/msg/detail/submap_list__struct.h"
+#include "cartographer_ros_msgs/msg/detail/submap_list__type_support.h"
+#include "cartographer_ros_msgs/msg/detail/submap_list__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

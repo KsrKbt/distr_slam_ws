@@ -69,8 +69,8 @@ cartographer_ros_msgs__srv__GetSlamState_Event__get_type_hash(
 
 // Include directives for referenced types
 #include "service_msgs/msg/detail/service_event_info__functions.h"
-#include "cartographer_ros_msgs/msg/detail/status_code__functions.h"
 #include "builtin_interfaces/msg/detail/time__functions.h"
+#include "cartographer_ros_msgs/msg/detail/status_code__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

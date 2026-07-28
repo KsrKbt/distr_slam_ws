@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "cartographer_ros_msgs/srv/detail/submap_query__type_support.h"
-#include "cartographer_ros_msgs/srv/detail/submap_query__struct.h"
 #include "cartographer_ros_msgs/srv/detail/submap_query__functions.h"
+#include "cartographer_ros_msgs/srv/detail/submap_query__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

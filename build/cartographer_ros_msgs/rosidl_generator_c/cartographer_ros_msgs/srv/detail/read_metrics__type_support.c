@@ -6,8 +6,8 @@
 
 #include "cartographer_ros_msgs/srv/detail/read_metrics__type_support.h"
 #include "cartographer_ros_msgs/srv/detail/read_metrics__struct.h"
-#include "cartographer_ros_msgs/srv/detail/read_metrics__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "cartographer_ros_msgs/srv/detail/read_metrics__functions.h"
 
 #ifdef __cplusplus
 extern "C"
