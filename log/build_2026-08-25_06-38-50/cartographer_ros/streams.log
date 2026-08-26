@@ -1,0 +1,135 @@
+[0.019s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j8 -l8
+[0.307s] [  2%] [32mBuilding CXX object CMakeFiles/cartographer_ros.dir/src/node.cpp.o[0m
+[52.557s] [  5%] [32m[1mLinking CXX shared library libcartographer_ros.so[0m
+[57.170s] [ 60%] Built target cartographer_ros
+[57.246s] [ 65%] [32m[1mLinking CXX executable cartographer_assets_writer[0m
+[57.246s] [ 65%] [32m[1mLinking CXX executable cartographer_offline_node[0m
+[57.248s] [ 68%] [32m[1mLinking CXX executable cartographer_pbstream_to_ros_map[0m
+[57.249s] [ 71%] [32m[1mLinking CXX executable cartographer_occupancy_grid_node[0m
+[57.249s] [ 74%] [32m[1mLinking CXX executable cartographer_pbstream_map_publisher[0m
+[57.251s] [ 77%] [32m[1mLinking CXX executable cartographer_node[0m
+[57.257s] [ 80%] [32m[1mLinking CXX executable cartographer_rosbag_validate[0m
+[68.475s] [ 82%] Built target cartographer_pbstream_to_ros_map
+[68.574s] [ 85%] Built target cartographer_offline_node
+[68.627s] [ 88%] Built target cartographer_rosbag_validate
+[68.644s] [ 91%] Built target cartographer_assets_writer
+[68.754s] [ 94%] Built target cartographer_pbstream_map_publisher
+[68.882s] [ 97%] Built target cartographer_node
+[68.982s] [100%] Built target cartographer_occupancy_grid_node
+[69.002s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '0': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /root/distr_slam_ws/build/cartographer_ros -- -j8 -l8
+[69.004s] Invoking command in '/root/distr_slam_ws/build/cartographer_ros': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_ros
+[69.017s] -- Install configuration: ""
+[69.018s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/libcartographer_ros.so
+[69.077s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/libcartographer_ros.so" to ""
+[69.077s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_node
+[69.081s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_node" to ""
+[69.081s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_occupancy_grid_node
+[69.089s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_occupancy_grid_node" to ""
+[69.094s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_offline_node
+[69.095s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_offline_node" to ""
+[69.096s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_assets_writer
+[69.098s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_assets_writer" to ""
+[69.099s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_map_publisher
+[69.102s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_map_publisher" to ""
+[69.102s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_to_ros_map
+[69.103s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_pbstream_to_ros_map" to ""
+[69.104s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_rosbag_validate
+[69.106s] -- Set non-toolchain portion of runtime path of "/root/distr_slam_ws/install/cartographer_ros/lib/cartographer_ros/cartographer_rosbag_validate" to ""
+[69.107s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros
+[69.107s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros
+[69.107s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/time_conversion.h
+[69.107s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics
+[69.108s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/family_factory.h
+[69.108s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal
+[69.109s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/counter.h
+[69.109s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/family.h
+[69.109s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/gauge.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/metrics/internal/histogram.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_log_sink.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/urdf_reader.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_map_writing_points_processor.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/msg_conversion.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/assets_writer.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node.h
+[69.110s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/offline_node.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/submap.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/sensor_bridge.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node_options.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/playable_bag.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/trajectory_options.h
+[69.111s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/ros_map.h
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/node_constants.h
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/map_builder_bridge.h
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/include/cartographer_ros/cartographer_ros/tf_bridge.h
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/visualize_pbstream.lua
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/taurob_tracker.lua
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_localization.lua
+[69.112s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_2d.lua
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/mir-100-mapping.lua
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_ros_map.lua
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/demo_3d.rviz
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/demo_2d.rviz
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_3d.lua
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_3d_localization.lua
+[69.113s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/my_robot.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_3d.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/revo_lds.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/pr2.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_server.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/assets_writer_backpack_2d_ci.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/transform.lua
+[69.114s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d.lua
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//configuration_files/backpack_2d_localization_evaluation.lua
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/mir-100.urdf
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/my_robot.urdf
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/backpack_2d.urdf
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//urdf/backpack_3d.urdf
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_mir_100_rviz.launch.py
+[69.115s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_backpack_3d.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/taurob_tracker.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_revo_lds.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_node.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_ros_map.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/visualize_pbstream.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_pr2.launch
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_taurob_tracker.launch.py
+[69.116s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/assets_writer_backpack_2d.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_3d.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d_localization.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/grpc_demo_backpack_2d_localization.launch
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/backpack_3d.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/my_robot.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/my_robot_handover.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_backpack_3d.launch.py
+[69.117s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_3d_localization.launch.py
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/backpack_2d.launch.py
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/grpc_demo_backpack_2d.launch
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/offline_backpack_2d.launch.py
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d.launch.py
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/library_path.sh
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/library_path.dsv
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/package_run_dependencies/cartographer_ros
+[69.118s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/parent_prefix_path/cartographer_ros
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/ament_prefix_path.sh
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/ament_prefix_path.dsv
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/path.sh
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/environment/path.dsv
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.bash
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.sh
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.zsh
+[69.119s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/local_setup.dsv
+[69.119s] -- Installing: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/package.dsv
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/ament_index/resource_index/packages/cartographer_ros
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosExport.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosExport-noconfig.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_targets-extras.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.120s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosConfig.cmake
+[69.121s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/cmake/cartographer_rosConfig-version.cmake
+[69.121s] -- Up-to-date: /root/distr_slam_ws/install/cartographer_ros/share/cartographer_ros/package.xml
+[69.123s] Invoked command in '/root/distr_slam_ws/build/cartographer_ros' returned '0': CMAKE_PREFIX_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs:/root/distr_slam_ws/install/cartographer:/root/distr_slam_ws/install/cartographer_rviz:/root/distr_slam_ws/install/cartographer_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/root/distr_slam_ws/install/cartographer_ros_msgs/lib:/root/distr_slam_ws/install/cartographer_rviz/lib:/root/distr_slam_ws/install/cartographer_ros/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /root/distr_slam_ws/build/cartographer_ros

@@ -16,7 +16,9 @@
 
 #include "cartographer_ros/node.h"
 
+#include <atomic>
 #include <chrono>
+#include <cstdint>
 #include <string>
 #include <vector>
 
@@ -39,6 +41,7 @@
 #include "cartographer_ros/time_conversion.h"
 #include "cartographer_ros_msgs/msg/status_code.hpp"
 #include "cartographer_ros_msgs/msg/status_response.hpp"
+#include "builtin_interfaces/msg/time.hpp"
 #include "geometry_msgs/msg/point_stamped.hpp"
 #include "glog/logging.h"
 #include "nav_msgs/msg/odometry.hpp"
@@ -49,6 +52,7 @@
 
 //以下追加
 #include <fstream>
+#include <iomanip>
 #include <cstdio>
 #include "absl/synchronization/mutex.h"
 #include "cartographer/io/proto_stream.h"
@@ -120,6 +124,46 @@ int FindReferenceTrajectoryId(
   return -1;
 }
 
+using HandoverSteadyClock = std::chrono::steady_clock;
+
+double HandoverMilliseconds(const HandoverSteadyClock::duration duration) {
+  return std::chrono::duration_cast<std::chrono::duration<double, std::milli>>(
+             duration)
+      .count();
+}
+
+// Measurement-only sensor-time markers. One cartographer_ros::Node is assumed
+// per process, which matches the current slam_a/slam_b container design.
+std::atomic<int64_t> g_first_processed_odom_stamp_ns{0};
+std::atomic<int64_t> g_last_processed_odom_stamp_ns{0};
+std::atomic<int64_t> g_first_processed_scan_stamp_ns{0};
+std::atomic<int64_t> g_last_processed_scan_stamp_ns{0};
+
+int64_t RosStampToNanoseconds(const builtin_interfaces::msg::Time& stamp) {
+  return static_cast<int64_t>(stamp.sec) * 1000000000LL +
+         static_cast<int64_t>(stamp.nanosec);
+}
+
+void RecordProcessedSensorStamp(
+    const int64_t stamp_ns, std::atomic<int64_t>* first_stamp_ns,
+    std::atomic<int64_t>* last_stamp_ns) {
+  if (stamp_ns <= 0) {
+    return;
+  }
+
+  int64_t expected = 0;
+  first_stamp_ns->compare_exchange_strong(
+      expected, stamp_ns, std::memory_order_relaxed);
+
+  // Keep the greatest processed sensor timestamp. This remains robust even if
+  // callbacks arrive slightly out of timestamp order.
+  int64_t observed = last_stamp_ns->load(std::memory_order_relaxed);
+  while (stamp_ns > observed &&
+         !last_stamp_ns->compare_exchange_weak(
+             observed, stamp_ns, std::memory_order_relaxed)) {
+  }
+}
+
 }  // namespace
 
 Node::Node(
@@ -130,6 +174,12 @@ Node::Node(
     const bool collect_metrics)
     : node_options_(node_options)
 {
+  // Reset measurement markers whenever a fresh Cartographer Node is created.
+  g_first_processed_odom_stamp_ns.store(0, std::memory_order_relaxed);
+  g_last_processed_odom_stamp_ns.store(0, std::memory_order_relaxed);
+  g_first_processed_scan_stamp_ns.store(0, std::memory_order_relaxed);
+  g_last_processed_scan_stamp_ns.store(0, std::memory_order_relaxed);
+
   node_ = node;
   // 追加
   tf_buffer_ = tf_buffer;
@@ -851,6 +901,13 @@ void Node::HandleOdometryMessage(const int trajectory_id,
     extrapolators_.at(trajectory_id).AddOdometryData(*odometry_data_ptr);
   }
   sensor_bridge_ptr->HandleOdometryMessage(sensor_id, msg);
+
+  // The callback still holds mutex_. Therefore an export that acquires the
+  // same mutex afterwards can safely regard this as a fully handled odometry
+  // message at the Node/SensorBridge boundary.
+  RecordProcessedSensorStamp(
+      RosStampToNanoseconds(msg->header.stamp),
+      &g_first_processed_odom_stamp_ns, &g_last_processed_odom_stamp_ns);
 }
 
 void Node::HandleNavSatFixMessage(const int trajectory_id,
@@ -899,6 +956,10 @@ void Node::HandleLaserScanMessage(const int trajectory_id,
   }
   map_builder_bridge_->sensor_bridge(trajectory_id)
       ->HandleLaserScanMessage(sensor_id, msg);
+
+  RecordProcessedSensorStamp(
+      RosStampToNanoseconds(msg->header.stamp),
+      &g_first_processed_scan_stamp_ns, &g_last_processed_scan_stamp_ns);
 }
 
 void Node::HandleMultiEchoLaserScanMessage(
@@ -1148,46 +1209,164 @@ void Node::HandleExportStateToRedis(
     std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
   (void)request;
 
+  const auto total_begin = HandoverSteadyClock::now();
+  const auto mutex_wait_begin = HandoverSteadyClock::now();
   absl::MutexLock lock(&mutex_);
+  const auto mutex_acquired = HandoverSteadyClock::now();
+
+  // Sensor callbacks use the same mutex_. Capture these immediately after
+  // acquiring the lock so they identify the sensor-time boundary of the state
+  // that is about to be serialized. No newer Node sensor callback can run
+  // until this export releases mutex_.
+  const int64_t first_processed_odom_stamp_ns =
+      g_first_processed_odom_stamp_ns.load(std::memory_order_relaxed);
+  const int64_t export_state_odom_stamp_ns =
+      g_last_processed_odom_stamp_ns.load(std::memory_order_relaxed);
+  const int64_t first_processed_scan_stamp_ns =
+      g_first_processed_scan_stamp_ns.load(std::memory_order_relaxed);
+  const int64_t export_state_scan_stamp_ns =
+      g_last_processed_scan_stamp_ns.load(std::memory_order_relaxed);
 
   // 1) export 時点の map pose / odom pose を保存
+  const auto pose_save_begin = HandoverSteadyClock::now();
   if (!SaveCurrentPosesToRedis()) {
+    const auto failure_time = HandoverSteadyClock::now();
     response->success = false;
-    response->message = "Failed to save current map/odom poses to Redis.";
+    std::ostringstream oss;
+    oss << "Failed to save current map/odom poses to Redis. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=pose_save"
+        << " mutex_wait_ms=" << std::fixed << std::setprecision(3)
+        << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
+        << " elapsed_ms="
+        << HandoverMilliseconds(failure_time - total_begin);
+    response->message = oss.str();
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
     return;
   }
+  const auto pose_save_end = HandoverSteadyClock::now();
 
   // 2) pbstream を従来どおり export
   const std::string ram_file = "/dev/shm/export_state.pbstream";
+  const auto serialize_begin = HandoverSteadyClock::now();
   const bool write_success = map_builder_bridge_->SerializeState(ram_file, true);
+  const auto serialize_end = HandoverSteadyClock::now();
   if (!write_success) {
     response->success = false;
-    response->message = "Failed to serialize state to RAM disk.";
+    std::ostringstream oss;
+    oss << "Failed to serialize state to RAM disk. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=serialize"
+        << " mutex_wait_ms=" << std::fixed << std::setprecision(3)
+        << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
+        << " pose_save_ms="
+        << HandoverMilliseconds(pose_save_end - pose_save_begin)
+        << " serialize_ms="
+        << HandoverMilliseconds(serialize_end - serialize_begin);
+    response->message = oss.str();
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    std::remove(ram_file.c_str());
     return;
   }
 
+  const auto file_read_begin = HandoverSteadyClock::now();
   std::ifstream in(ram_file, std::ios::binary);
+  if (!in.is_open()) {
+    response->success = false;
+    response->message =
+        "Failed to open serialized state file. "
+        "[HANDOVER_EXPORT_ERROR] failed_stage=file_open";
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    std::remove(ram_file.c_str());
+    return;
+  }
   std::string state_data((std::istreambuf_iterator<char>(in)),
                          std::istreambuf_iterator<char>());
+  const bool file_read_ok = !in.bad();
   in.close();
-
-  redisContext* c = redisConnect("redis_host", 6379);
-  if (c != nullptr && !c->err) {
-    redisReply* reply = static_cast<redisReply*>(
-        redisCommand(c, "SET %s %b",
-                     kRedisStateKey,
-                     state_data.data(), state_data.size()));
-    if (reply) freeReplyObject(reply);
-    response->success = true;
-    response->message =
-        "State and current map/odom poses exported to Redis.";
-  } else {
+  const auto file_read_end = HandoverSteadyClock::now();
+  if (!file_read_ok) {
     response->success = false;
-    response->message = "Failed to connect to Redis.";
+    response->message =
+        "Failed while reading serialized state file. "
+        "[HANDOVER_EXPORT_ERROR] failed_stage=file_read";
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    std::remove(ram_file.c_str());
+    return;
   }
-  if (c) redisFree(c);
 
+  const auto redis_connect_begin = HandoverSteadyClock::now();
+  redisContext* c = redisConnect("redis_host", 6379);
+  const auto redis_connect_end = HandoverSteadyClock::now();
+  if (c == nullptr || c->err) {
+    response->success = false;
+    response->message =
+        "Failed to connect to Redis. "
+        "[HANDOVER_EXPORT_ERROR] failed_stage=redis_connect";
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    if (c) redisFree(c);
+    std::remove(ram_file.c_str());
+    return;
+  }
+
+  const auto redis_set_begin = HandoverSteadyClock::now();
+  redisReply* reply = static_cast<redisReply*>(
+      redisCommand(c, "SET %s %b", kRedisStateKey, state_data.data(),
+                   state_data.size()));
+  const auto redis_set_end = HandoverSteadyClock::now();
+
+  const bool redis_set_ok =
+      reply != nullptr && reply->type != REDIS_REPLY_ERROR;
+  std::string redis_error;
+  if (reply != nullptr && reply->type == REDIS_REPLY_ERROR && reply->str) {
+    redis_error.assign(reply->str, static_cast<std::size_t>(reply->len));
+  }
+  if (reply) freeReplyObject(reply);
+  redisFree(c);
   std::remove(ram_file.c_str());
+
+  if (!redis_set_ok) {
+    response->success = false;
+    std::ostringstream oss;
+    oss << "Failed to save state to Redis. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=redis_set";
+    if (!redis_error.empty()) {
+      oss << " redis_error=" << redis_error;
+    }
+    response->message = oss.str();
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    return;
+  }
+
+  const auto total_end = HandoverSteadyClock::now();
+
+  // docker logs が利用できない起動方法でもホスト側から回収できるように、
+  // 計測値を Trigger.Response.message 自体へ含める。
+  std::ostringstream metrics;
+  metrics << "[HANDOVER_EXPORT]"
+          << " pbstream_bytes=" << state_data.size()
+          << " first_processed_odom_stamp_ns=" << first_processed_odom_stamp_ns
+          << " export_state_odom_stamp_ns=" << export_state_odom_stamp_ns
+          << " first_processed_scan_stamp_ns=" << first_processed_scan_stamp_ns
+          << " export_state_scan_stamp_ns=" << export_state_scan_stamp_ns
+          << std::fixed << std::setprecision(3)
+          << " mutex_wait_ms="
+          << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
+          << " pose_save_ms="
+          << HandoverMilliseconds(pose_save_end - pose_save_begin)
+          << " serialize_ms="
+          << HandoverMilliseconds(serialize_end - serialize_begin)
+          << " file_read_ms="
+          << HandoverMilliseconds(file_read_end - file_read_begin)
+          << " redis_connect_ms="
+          << HandoverMilliseconds(redis_connect_end - redis_connect_begin)
+          << " redis_set_ms="
+          << HandoverMilliseconds(redis_set_end - redis_set_begin)
+          << " total_ms="
+          << HandoverMilliseconds(total_end - total_begin);
+
+  const std::string metrics_string = metrics.str();
+  response->success = true;
+  response->message = metrics_string;
+  RCLCPP_INFO(node_->get_logger(), "%s", metrics_string.c_str());
 }
 
 // Redisからのインポートと起動 (RAMディスク経由)
@@ -1195,40 +1374,111 @@ void Node::HandleImportStateFromRedis(
     const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
   (void)request;
-  
-  absl::MutexLock lock(&mutex_);
 
-  redisContext *c = redisConnect("redis_host", 6379);
+  const auto total_begin = HandoverSteadyClock::now();
+  const auto mutex_wait_begin = HandoverSteadyClock::now();
+  absl::MutexLock lock(&mutex_);
+  const auto mutex_acquired = HandoverSteadyClock::now();
+
+  const auto redis_connect_begin = HandoverSteadyClock::now();
+  redisContext* c = redisConnect("redis_host", 6379);
+  const auto redis_connect_end = HandoverSteadyClock::now();
   if (c == nullptr || c->err) {
     response->success = false;
-    response->message = "Failed to connect to Redis.";
+    response->message =
+        "Failed to connect to Redis. "
+        "[HANDOVER_IMPORT_ERROR] failed_stage=redis_connect";
     if (c) redisFree(c);
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
     return;
   }
 
-  redisReply *reply = (redisReply*)redisCommand(c, "GET robot1_state");
-  if (reply->type == REDIS_REPLY_STRING) {
-    const std::string ram_file = "/dev/shm/import_state.pbstream";
-    
-    // Redisのバイト列をRAMディスクに書き出し
-    std::ofstream out(ram_file, std::ios::binary);
-    out.write(reply->str, reply->len);
-    out.close();
+  const auto redis_get_begin = HandoverSteadyClock::now();
+  redisReply* reply = static_cast<redisReply*>(
+      redisCommand(c, "GET %s", kRedisStateKey));
+  const auto redis_get_end = HandoverSteadyClock::now();
 
-    // 修正3: 標準APIを使ってファイルパスからロード
-    map_builder_bridge_->LoadState(ram_file, true);
-
-    // 一時ファイル(RAM)を削除
-    std::remove(ram_file.c_str());
-
-    response->success = true;
-    response->message = "State loaded successfully. Ready to start new trajectory from corrected pose.";
-  } else {
+  if (reply == nullptr) {
     response->success = false;
-    response->message = "No state found in Redis.";
+    response->message =
+        "Redis GET failed. [HANDOVER_IMPORT_ERROR] failed_stage=redis_get";
+    redisFree(c);
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    return;
   }
+
+  if (reply->type != REDIS_REPLY_STRING) {
+    response->success = false;
+    response->message =
+        "No state found in Redis. "
+        "[HANDOVER_IMPORT_ERROR] failed_stage=redis_get_reply";
+    freeReplyObject(reply);
+    redisFree(c);
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    return;
+  }
+
+  const std::size_t pbstream_bytes = static_cast<std::size_t>(reply->len);
+  const std::string ram_file = "/dev/shm/import_state.pbstream";
+
+  const auto file_write_begin = HandoverSteadyClock::now();
+  std::ofstream out(ram_file, std::ios::binary);
+  if (!out.is_open()) {
+    response->success = false;
+    response->message =
+        "Failed to open import state file. "
+        "[HANDOVER_IMPORT_ERROR] failed_stage=file_open";
+    freeReplyObject(reply);
+    redisFree(c);
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    return;
+  }
+  out.write(reply->str, reply->len);
+  const bool file_write_ok = out.good();
+  out.close();
+  const auto file_write_end = HandoverSteadyClock::now();
+
   freeReplyObject(reply);
   redisFree(c);
+
+  if (!file_write_ok) {
+    response->success = false;
+    response->message =
+        "Failed while writing import state file. "
+        "[HANDOVER_IMPORT_ERROR] failed_stage=file_write";
+    std::remove(ram_file.c_str());
+    RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
+    return;
+  }
+
+  const auto load_state_begin = HandoverSteadyClock::now();
+  map_builder_bridge_->LoadState(ram_file, true);
+  const auto load_state_end = HandoverSteadyClock::now();
+
+  std::remove(ram_file.c_str());
+  const auto total_end = HandoverSteadyClock::now();
+
+  std::ostringstream metrics;
+  metrics << "[HANDOVER_IMPORT]"
+          << " pbstream_bytes=" << pbstream_bytes
+          << std::fixed << std::setprecision(3)
+          << " mutex_wait_ms="
+          << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
+          << " redis_connect_ms="
+          << HandoverMilliseconds(redis_connect_end - redis_connect_begin)
+          << " redis_get_ms="
+          << HandoverMilliseconds(redis_get_end - redis_get_begin)
+          << " file_write_ms="
+          << HandoverMilliseconds(file_write_end - file_write_begin)
+          << " load_state_ms="
+          << HandoverMilliseconds(load_state_end - load_state_begin)
+          << " total_ms="
+          << HandoverMilliseconds(total_end - total_begin);
+
+  const std::string metrics_string = metrics.str();
+  response->success = true;
+  response->message = metrics_string;
+  RCLCPP_INFO(node_->get_logger(), "%s", metrics_string.c_str());
 }
 
 }  // namespace cartographer_ros
