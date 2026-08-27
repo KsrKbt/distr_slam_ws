@@ -124,6 +124,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/cartographer_autogenerate_ground_truth.dir/DependInfo.cmake"
   "CMakeFiles/cartographer_compute_relations_metrics.dir/DependInfo.cmake"
   "CMakeFiles/cartographer_pbstream.dir/DependInfo.cmake"
+  "CMakeFiles/cartographer_pbstream_component_stats.dir/DependInfo.cmake"
   "CMakeFiles/cartographer_print_configuration.dir/DependInfo.cmake"
   "CMakeFiles/cartographer_test_library.dir/DependInfo.cmake"
   "CMakeFiles/cartographer.common.configuration_files_test.dir/DependInfo.cmake"

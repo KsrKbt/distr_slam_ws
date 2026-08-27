@@ -237,6 +237,19 @@ cartographer_pbstream/fast:
 .PHONY : cartographer_pbstream/fast
 
 #=============================================================================
+# Target rules for targets named cartographer_pbstream_component_stats
+
+# Build rule for target.
+cartographer_pbstream_component_stats: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cartographer_pbstream_component_stats
+.PHONY : cartographer_pbstream_component_stats
+
+# fast build rule for target.
+cartographer_pbstream_component_stats/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartographer_pbstream_component_stats.dir/build.make CMakeFiles/cartographer_pbstream_component_stats.dir/build
+.PHONY : cartographer_pbstream_component_stats/fast
+
+#=============================================================================
 # Target rules for targets named cartographer_print_configuration
 
 # Build rule for target.
@@ -2438,6 +2451,30 @@ cartographer/io/outlier_removing_points_processor.s: cartographer/io/outlier_rem
 cartographer/io/outlier_removing_points_processor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartographer.dir/build.make CMakeFiles/cartographer.dir/cartographer/io/outlier_removing_points_processor.cc.s
 .PHONY : cartographer/io/outlier_removing_points_processor.cc.s
+
+cartographer/io/pbstream_component_stats_main.o: cartographer/io/pbstream_component_stats_main.cc.o
+.PHONY : cartographer/io/pbstream_component_stats_main.o
+
+# target to build an object file
+cartographer/io/pbstream_component_stats_main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartographer_pbstream_component_stats.dir/build.make CMakeFiles/cartographer_pbstream_component_stats.dir/cartographer/io/pbstream_component_stats_main.cc.o
+.PHONY : cartographer/io/pbstream_component_stats_main.cc.o
+
+cartographer/io/pbstream_component_stats_main.i: cartographer/io/pbstream_component_stats_main.cc.i
+.PHONY : cartographer/io/pbstream_component_stats_main.i
+
+# target to preprocess a source file
+cartographer/io/pbstream_component_stats_main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartographer_pbstream_component_stats.dir/build.make CMakeFiles/cartographer_pbstream_component_stats.dir/cartographer/io/pbstream_component_stats_main.cc.i
+.PHONY : cartographer/io/pbstream_component_stats_main.cc.i
+
+cartographer/io/pbstream_component_stats_main.s: cartographer/io/pbstream_component_stats_main.cc.s
+.PHONY : cartographer/io/pbstream_component_stats_main.s
+
+# target to generate assembly for a file
+cartographer/io/pbstream_component_stats_main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartographer_pbstream_component_stats.dir/build.make CMakeFiles/cartographer_pbstream_component_stats.dir/cartographer/io/pbstream_component_stats_main.cc.s
+.PHONY : cartographer/io/pbstream_component_stats_main.cc.s
 
 cartographer/io/pbstream_main.o: cartographer/io/pbstream_main.cc.o
 .PHONY : cartographer/io/pbstream_main.o
@@ -7531,6 +7568,7 @@ help:
 	@echo "... cartographer_autogenerate_ground_truth"
 	@echo "... cartographer_compute_relations_metrics"
 	@echo "... cartographer_pbstream"
+	@echo "... cartographer_pbstream_component_stats"
 	@echo "... cartographer_print_configuration"
 	@echo "... cartographer_test_library"
 	@echo "... gmock"
@@ -7669,6 +7707,9 @@ help:
 	@echo "... cartographer/io/outlier_removing_points_processor.o"
 	@echo "... cartographer/io/outlier_removing_points_processor.i"
 	@echo "... cartographer/io/outlier_removing_points_processor.s"
+	@echo "... cartographer/io/pbstream_component_stats_main.o"
+	@echo "... cartographer/io/pbstream_component_stats_main.i"
+	@echo "... cartographer/io/pbstream_component_stats_main.s"
 	@echo "... cartographer/io/pbstream_main.o"
 	@echo "... cartographer/io/pbstream_main.i"
 	@echo "... cartographer/io/pbstream_main.s"

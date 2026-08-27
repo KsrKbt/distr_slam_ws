@@ -1321,9 +1321,12 @@ void Node::HandleExportStateToRedis(
   }
   if (reply) freeReplyObject(reply);
   redisFree(c);
-  std::remove(ram_file.c_str());
 
+  // Diagnostic build: keep the exact pbstream written to Redis so the
+  // standalone component analyzer can inspect this same snapshot after the
+  // service returns. Failure paths still remove the temporary file.
   if (!redis_set_ok) {
+    std::remove(ram_file.c_str());
     response->success = false;
     std::ostringstream oss;
     oss << "Failed to save state to Redis. "
@@ -1343,6 +1346,7 @@ void Node::HandleExportStateToRedis(
   std::ostringstream metrics;
   metrics << "[HANDOVER_EXPORT]"
           << " pbstream_bytes=" << state_data.size()
+          << " diagnostic_pbstream_kept=1"
           << " first_processed_odom_stamp_ns=" << first_processed_odom_stamp_ns
           << " export_state_odom_stamp_ns=" << export_state_odom_stamp_ns
           << " first_processed_scan_stamp_ns=" << first_processed_scan_stamp_ns

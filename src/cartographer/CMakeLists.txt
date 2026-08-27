@@ -205,6 +205,11 @@ google_binary(cartographer_pbstream
   cartographer/io/pbstream_main.cc
 )
 
+google_binary(cartographer_pbstream_component_stats
+  SRCS
+  cartographer/io/pbstream_component_stats_main.cc
+)
+
 google_binary(cartographer_print_configuration
   SRCS
   cartographer/common/print_configuration_main.cc

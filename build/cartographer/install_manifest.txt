@@ -13,6 +13,7 @@
 /root/distr_slam_ws/install/cartographer/bin/cartographer_autogenerate_ground_truth
 /root/distr_slam_ws/install/cartographer/bin/cartographer_compute_relations_metrics
 /root/distr_slam_ws/install/cartographer/bin/cartographer_pbstream
+/root/distr_slam_ws/install/cartographer/bin/cartographer_pbstream_component_stats
 /root/distr_slam_ws/install/cartographer/bin/cartographer_print_configuration
 /root/distr_slam_ws/install/cartographer/lib/libcartographer.a
 /root/distr_slam_ws/install/cartographer/include/cartographer/common/configuration_file_resolver.h

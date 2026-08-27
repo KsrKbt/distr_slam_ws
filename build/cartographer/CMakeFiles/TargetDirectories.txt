@@ -3,6 +3,7 @@
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_autogenerate_ground_truth.dir
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_compute_relations_metrics.dir
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_pbstream.dir
+/root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_pbstream_component_stats.dir
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_print_configuration.dir
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer_test_library.dir
 /root/distr_slam_ws/build/cartographer/CMakeFiles/cartographer.common.configuration_files_test.dir

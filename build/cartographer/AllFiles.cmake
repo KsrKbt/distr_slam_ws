@@ -232,6 +232,7 @@
 #/root/distr_slam_ws/src/cartographer/cartographer/io/null_points_processor.h
 #/root/distr_slam_ws/src/cartographer/cartographer/io/outlier_removing_points_processor.cc
 #/root/distr_slam_ws/src/cartographer/cartographer/io/outlier_removing_points_processor.h
+#/root/distr_slam_ws/src/cartographer/cartographer/io/pbstream_component_stats_main.cc
 #/root/distr_slam_ws/src/cartographer/cartographer/io/pbstream_main.cc
 #/root/distr_slam_ws/src/cartographer/cartographer/io/pcd_writing_points_processor.cc
 #/root/distr_slam_ws/src/cartographer/cartographer/io/pcd_writing_points_processor.h
