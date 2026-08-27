@@ -17,6 +17,7 @@
 #ifndef CARTOGRAPHER_ROS_CARTOGRAPHER_ROS_MAP_BUILDER_BRIDGE_H
 #define CARTOGRAPHER_ROS_CARTOGRAPHER_ROS_MAP_BUILDER_BRIDGE_H
 
+#include <cstddef>
 #include <memory>
 #include <set>
 #include <string>
@@ -82,6 +83,15 @@ class MapBuilderBridge {
   void RunFinalOptimization();
   bool SerializeState(const std::string& filename,
                       const bool include_unfinished_submaps);
+
+  // Serializes a handover state that is intended to be loaded with
+  // load_frozen_state=true. The stream keeps the standard pbstream format,
+  // but omits OdometryData records because frozen-state loading does not add
+  // those records back to the pose graph. All submaps, trajectory nodes, pose
+  // graph data, trajectory options, and trajectory data are retained.
+  bool SerializeHandoverState(const std::string& filename,
+                              const bool include_unfinished_submaps,
+                              std::size_t* omitted_odometry_records);
 
   void HandleSubmapQuery(
       const cartographer_ros_msgs::srv::SubmapQuery::Request::SharedPtr request,

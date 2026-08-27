@@ -281,6 +281,15 @@ Node::Node(
       HandleExportStateToRedis(request, response);
     });
 
+  export_handover_state_service_ =
+      node_->create_service<std_srvs::srv::Trigger>(
+          "export_handover_state_to_redis",
+          [this](
+              const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+              std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+            HandleExportHandoverStateToRedis(request, response);
+          });
+
   import_state_service_ = node_->create_service<std_srvs::srv::Trigger>(
     "import_state_from_redis",
     [this](const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
@@ -1204,10 +1213,31 @@ bool Node::SaveCurrentPosesToRedis() {
 }*/
 
 // Redisへのエクスポート (RAMディスク経由)
+// Baseline: standard Cartographer pbstream containing all sensor histories.
 void Node::HandleExportStateToRedis(
     const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+  HandleExportStateToRedisImpl(request, response, false);
+}
+
+// Proposal Phase 1: standard pbstream format with OdometryData records omitted.
+// This state is intended only for the existing frozen import path
+// LoadState(..., true).
+void Node::HandleExportHandoverStateToRedis(
+    const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+  HandleExportStateToRedisImpl(request, response, true);
+}
+
+void Node::HandleExportStateToRedisImpl(
+    const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response,
+    const bool omit_odometry_data) {
   (void)request;
+
+  const char* const state_mode =
+      omit_odometry_data ? "odometry_filtered" : "full";
+  std::size_t omitted_odometry_records = 0;
 
   const auto total_begin = HandoverSteadyClock::now();
   const auto mutex_wait_begin = HandoverSteadyClock::now();
@@ -1227,7 +1257,8 @@ void Node::HandleExportStateToRedis(
   const int64_t export_state_scan_stamp_ns =
       g_last_processed_scan_stamp_ns.load(std::memory_order_relaxed);
 
-  // 1) export 時点の map pose / odom pose を保存
+  // 1) Save the map/odom poses at the export boundary. This behavior is shared
+  // by both baseline and proposal modes.
   const auto pose_save_begin = HandoverSteadyClock::now();
   if (!SaveCurrentPosesToRedis()) {
     const auto failure_time = HandoverSteadyClock::now();
@@ -1235,6 +1266,7 @@ void Node::HandleExportStateToRedis(
     std::ostringstream oss;
     oss << "Failed to save current map/odom poses to Redis. "
         << "[HANDOVER_EXPORT_ERROR] failed_stage=pose_save"
+        << " state_mode=" << state_mode
         << " mutex_wait_ms=" << std::fixed << std::setprecision(3)
         << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
         << " elapsed_ms="
@@ -1245,16 +1277,25 @@ void Node::HandleExportStateToRedis(
   }
   const auto pose_save_end = HandoverSteadyClock::now();
 
-  // 2) pbstream を従来どおり export
-  const std::string ram_file = "/dev/shm/export_state.pbstream";
+  // 2) Serialize the state. Both modes keep unfinished submaps. The proposal
+  // differs only by filtering OdometryData before compression/file output.
+  const std::string ram_file = omit_odometry_data
+                                   ? "/dev/shm/export_handover_state.pbstream"
+                                   : "/dev/shm/export_state.pbstream";
   const auto serialize_begin = HandoverSteadyClock::now();
-  const bool write_success = map_builder_bridge_->SerializeState(ram_file, true);
+  const bool write_success =
+      omit_odometry_data
+          ? map_builder_bridge_->SerializeHandoverState(
+                ram_file, true, &omitted_odometry_records)
+          : map_builder_bridge_->SerializeState(ram_file, true);
   const auto serialize_end = HandoverSteadyClock::now();
   if (!write_success) {
     response->success = false;
     std::ostringstream oss;
     oss << "Failed to serialize state to RAM disk. "
         << "[HANDOVER_EXPORT_ERROR] failed_stage=serialize"
+        << " state_mode=" << state_mode
+        << " omitted_odometry_records=" << omitted_odometry_records
         << " mutex_wait_ms=" << std::fixed << std::setprecision(3)
         << HandoverMilliseconds(mutex_acquired - mutex_wait_begin)
         << " pose_save_ms="
@@ -1271,9 +1312,11 @@ void Node::HandleExportStateToRedis(
   std::ifstream in(ram_file, std::ios::binary);
   if (!in.is_open()) {
     response->success = false;
-    response->message =
-        "Failed to open serialized state file. "
-        "[HANDOVER_EXPORT_ERROR] failed_stage=file_open";
+    std::ostringstream oss;
+    oss << "Failed to open serialized state file. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=file_open"
+        << " state_mode=" << state_mode;
+    response->message = oss.str();
     RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
     std::remove(ram_file.c_str());
     return;
@@ -1285,9 +1328,11 @@ void Node::HandleExportStateToRedis(
   const auto file_read_end = HandoverSteadyClock::now();
   if (!file_read_ok) {
     response->success = false;
-    response->message =
-        "Failed while reading serialized state file. "
-        "[HANDOVER_EXPORT_ERROR] failed_stage=file_read";
+    std::ostringstream oss;
+    oss << "Failed while reading serialized state file. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=file_read"
+        << " state_mode=" << state_mode;
+    response->message = oss.str();
     RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
     std::remove(ram_file.c_str());
     return;
@@ -1298,9 +1343,11 @@ void Node::HandleExportStateToRedis(
   const auto redis_connect_end = HandoverSteadyClock::now();
   if (c == nullptr || c->err) {
     response->success = false;
-    response->message =
-        "Failed to connect to Redis. "
-        "[HANDOVER_EXPORT_ERROR] failed_stage=redis_connect";
+    std::ostringstream oss;
+    oss << "Failed to connect to Redis. "
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=redis_connect"
+        << " state_mode=" << state_mode;
+    response->message = oss.str();
     RCLCPP_ERROR(node_->get_logger(), "%s", response->message.c_str());
     if (c) redisFree(c);
     std::remove(ram_file.c_str());
@@ -1327,7 +1374,8 @@ void Node::HandleExportStateToRedis(
     response->success = false;
     std::ostringstream oss;
     oss << "Failed to save state to Redis. "
-        << "[HANDOVER_EXPORT_ERROR] failed_stage=redis_set";
+        << "[HANDOVER_EXPORT_ERROR] failed_stage=redis_set"
+        << " state_mode=" << state_mode;
     if (!redis_error.empty()) {
       oss << " redis_error=" << redis_error;
     }
@@ -1338,10 +1386,12 @@ void Node::HandleExportStateToRedis(
 
   const auto total_end = HandoverSteadyClock::now();
 
-  // docker logs が利用できない起動方法でもホスト側から回収できるように、
-  // 計測値を Trigger.Response.message 自体へ含める。
+  // Return metrics in Trigger.Response.message so host-side measurements do
+  // not depend on Docker stdout wiring.
   std::ostringstream metrics;
   metrics << "[HANDOVER_EXPORT]"
+          << " state_mode=" << state_mode
+          << " omitted_odometry_records=" << omitted_odometry_records
           << " pbstream_bytes=" << state_data.size()
           << " first_processed_odom_stamp_ns=" << first_processed_odom_stamp_ns
           << " export_state_odom_stamp_ns=" << export_state_odom_stamp_ns

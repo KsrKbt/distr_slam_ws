@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
 #include "cartographer_ros_msgs/msg/detail/submap_texture__type_support.h"
 #include "cartographer_ros_msgs/msg/detail/submap_texture__struct.h"
 #include "cartographer_ros_msgs/msg/detail/submap_texture__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

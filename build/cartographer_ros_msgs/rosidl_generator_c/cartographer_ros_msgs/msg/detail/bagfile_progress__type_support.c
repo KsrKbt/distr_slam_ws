@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
+#include "cartographer_ros_msgs/msg/detail/bagfile_progress__functions.h"
 #include "cartographer_ros_msgs/msg/detail/bagfile_progress__type_support.h"
 #include "cartographer_ros_msgs/msg/detail/bagfile_progress__struct.h"
-#include "cartographer_ros_msgs/msg/detail/bagfile_progress__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

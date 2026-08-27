@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "cartographer_ros_msgs/msg/detail/status_code__struct.h"
-#include "cartographer_ros_msgs/msg/detail/status_code__functions.h"
-#include "cartographer_ros_msgs/msg/detail/status_code__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "cartographer_ros_msgs/msg/detail/status_code__type_support.h"
+#include "cartographer_ros_msgs/msg/detail/status_code__functions.h"
+#include "cartographer_ros_msgs/msg/detail/status_code__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -159,6 +159,20 @@ class Node {
       const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
       std::shared_ptr<std_srvs::srv::Trigger::Response> response);
 
+  // Handover-specific export. The resulting pbstream keeps the standard
+  // Cartographer format but omits OdometryData records that are ignored by
+  // LoadState(..., true).
+  void HandleExportHandoverStateToRedis(
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> response);
+
+  // Shared implementation used by the baseline and proposed export services
+  // so their timing scopes remain identical except for the serializer.
+  void HandleExportStateToRedisImpl(
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> response,
+      bool omit_odometry_data);
+
   void HandleImportStateFromRedis(
       const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
       std::shared_ptr<std_srvs::srv::Trigger::Response> response);
@@ -213,6 +227,8 @@ class Node {
   ::rclcpp::Service<cartographer_ros_msgs::srv::ReadMetrics>::SharedPtr read_metrics_server_;
   // ＝＝＝ ここから追加 ＝＝＝
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr export_state_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr
+      export_handover_state_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr import_state_service_;
 
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;

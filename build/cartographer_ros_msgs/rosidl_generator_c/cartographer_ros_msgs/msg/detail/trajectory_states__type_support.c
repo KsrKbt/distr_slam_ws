@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "cartographer_ros_msgs/msg/detail/trajectory_states__struct.h"
-#include "cartographer_ros_msgs/msg/detail/trajectory_states__type_support.h"
-#include "cartographer_ros_msgs/msg/detail/trajectory_states__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "cartographer_ros_msgs/msg/detail/trajectory_states__functions.h"
+#include "cartographer_ros_msgs/msg/detail/trajectory_states__type_support.h"
+#include "cartographer_ros_msgs/msg/detail/trajectory_states__struct.h"
 
 #ifdef __cplusplus
 extern "C"

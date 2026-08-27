@@ -19,6 +19,7 @@
 #include "absl/memory/memory.h"
 #include "cartographer/io/color.h"
 #include "cartographer/io/proto_stream.h"
+#include "cartographer/mapping/proto/serialization.pb.h"
 #include "cartographer_ros/msg_conversion.h"
 #include "cartographer_ros/time_conversion.h"
 #include "cartographer_ros_msgs/msg/status_code.hpp"
@@ -32,6 +33,47 @@ using ::cartographer::transform::Rigid3d;
 constexpr double kTrajectoryLineStripMarkerScale = 0.07;
 constexpr double kLandmarkMarkerScale = 0.2;
 constexpr double kConstraintMarkerScale = 0.025;
+
+
+// A pbstream writer used only for handover snapshots that will later be loaded
+// with load_frozen_state=true. It preserves the normal Cartographer pbstream
+// format while discarding SerializedData::OdometryData records before they
+// reach ProtoStreamWriter, so those records are neither gzip-compressed nor
+// written to disk.
+class HandoverFilteringProtoStreamWriter
+    : public cartographer::io::ProtoStreamWriterInterface {
+ public:
+  explicit HandoverFilteringProtoStreamWriter(const std::string& filename)
+      : writer_(filename) {}
+
+  HandoverFilteringProtoStreamWriter(
+      const HandoverFilteringProtoStreamWriter&) = delete;
+  HandoverFilteringProtoStreamWriter& operator=(
+      const HandoverFilteringProtoStreamWriter&) = delete;
+
+  void WriteProto(const google::protobuf::Message& proto) override {
+    const auto* serialized_data =
+        dynamic_cast<const cartographer::mapping::proto::SerializedData*>(
+            &proto);
+    if (serialized_data != nullptr &&
+        serialized_data->data_case() ==
+            cartographer::mapping::proto::SerializedData::kOdometryData) {
+      ++omitted_odometry_records_;
+      return;
+    }
+    writer_.WriteProto(proto);
+  }
+
+  bool Close() override { return writer_.Close(); }
+
+  std::size_t omitted_odometry_records() const {
+    return omitted_odometry_records_;
+  }
+
+ private:
+  cartographer::io::ProtoStreamWriter writer_;
+  std::size_t omitted_odometry_records_ = 0;
+};
 
 ::std_msgs::msg::ColorRGBA ToMessage(const cartographer::io::FloatColor& color) {
   ::std_msgs::msg::ColorRGBA result;
@@ -166,6 +208,21 @@ bool MapBuilderBridge::SerializeState(const std::string& filename,
                                       const bool include_unfinished_submaps) {
   return map_builder_->SerializeStateToFile(include_unfinished_submaps,
                                             filename);
+}
+
+bool MapBuilderBridge::SerializeHandoverState(
+    const std::string& filename, const bool include_unfinished_submaps,
+    std::size_t* const omitted_odometry_records) {
+  if (omitted_odometry_records == nullptr) {
+    LOG(ERROR) << "SerializeHandoverState requires a non-null "
+                  "omitted_odometry_records output pointer.";
+    return false;
+  }
+
+  HandoverFilteringProtoStreamWriter writer(filename);
+  map_builder_->SerializeState(include_unfinished_submaps, &writer);
+  *omitted_odometry_records = writer.omitted_odometry_records();
+  return writer.Close();
 }
 
 void MapBuilderBridge::HandleSubmapQuery(
